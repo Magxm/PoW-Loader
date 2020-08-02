@@ -6,7 +6,7 @@ namespace PoW_ModAPI
 {
     public class Loader
     {
-        private static GameObject _inspector;
+        //private static GameObject _inspector;
         private static GameObject _main;
         public static void Init()
         {
@@ -15,10 +15,11 @@ namespace PoW_ModAPI
             _main = new GameObject();
             _main.AddComponent<Main>();
             GameObject.DontDestroyOnLoad(_main);
-
+            /*
             _inspector = new GameObject();
             _inspector.AddComponent<InspectorScript>();
             GameObject.DontDestroyOnLoad(_inspector);
+            */
         }
 
         public static void Unload()
@@ -29,7 +30,7 @@ namespace PoW_ModAPI
         private static void _Unload()
         {
             GameObject.Destroy(_main);
-            GameObject.Destroy(_inspector);
+            //GameObject.Destroy(_inspector);
         }
     }
 }
