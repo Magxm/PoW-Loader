@@ -5,6 +5,8 @@ using System.Management;
 using System.Runtime.InteropServices;
 using System.Threading;
 
+using Microsoft.Win32;
+
 using SharpMonoInjector;
 
 namespace PoW_Loader
@@ -120,6 +122,16 @@ namespace PoW_Loader
                 ErrorExit();
             }
 
+            //Getting steam folder
+            string steamInstallPath = Registry.GetValue(@"HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Valve\Steam", "InstallPath", "") as string;
+            if (steamInstallPath == "")
+            {
+                Console.WriteLine("Did not find 64bit Steam installation...");
+                ErrorExit();
+            }
+
+            Console.WriteLine("Found Steam at " + steamInstallPath);
+
             //Killing the game if already running
             Process[] gP = Process.GetProcessesByName("PathOfWuxia");
             if (gP.Length > 0)
@@ -144,7 +156,7 @@ namespace PoW_Loader
 
             //Starting the game
             ProcessStartInfo gameStartOverSteam = new ProcessStartInfo(@"Cmd.exe");
-            gameStartOverSteam.Arguments = "/C START \"C:\\Program Files (x86)\\Steam.exe\" steam://rungameid/1189630";
+            gameStartOverSteam.Arguments = "/C START \"" + steamInstallPath + "\\Steam.exe\" steam://rungameid/1189630";
             gameStartOverSteam.UseShellExecute = false;
             gameStartOverSteam.RedirectStandardInput = true;
             gameStartOverSteam.RedirectStandardOutput = true;
@@ -218,27 +230,26 @@ namespace PoW_Loader
             //Thread.Sleep(5000);
 
 
-            //We inject the ressource patcher.
+            //We inject the english patch.
             Injector injector = new Injector(gameProcessId);
             string assemblyPath = Path.GetFullPath("PoW_EnglishPatch.dll");
             byte[] assembly = null;
             try
             {
-                Console.WriteLine("Loading Resource Patcher Module...");
+                Console.WriteLine("Loading English Patch Module...");
                 assembly = File.ReadAllBytes(assemblyPath);
             }
             catch
             {
-                ResumeProcess(gameProcessId);
                 System.Console.WriteLine("ERROR: Could not read the file " + assemblyPath);
                 ErrorExit();
             }
 
             if (assembly != null)
             {
-                Console.WriteLine("Injecting Resource Patcher...");
+                Console.WriteLine("Injecting English Patch...");
                 injector.Inject(assembly, @"PoW_EnglishPatch", @"Loader", @"Init");
-                Console.WriteLine("Injected Resource Patcher!");
+                Console.WriteLine("Injected English Patch!");
             }
             else
             {
@@ -246,6 +257,36 @@ namespace PoW_Loader
                 ErrorExit();
 
             }
+
+            Console.WriteLine("Waiting 5 seconds so Unity can load core functionalities...");
+            Thread.Sleep(5000);
+
+            //Injectiong ModAPI
+            assemblyPath = Path.GetFullPath("PoW_ModAPI.dll");
+            assembly = null;
+            try
+            {
+                Console.WriteLine("Loading ModAPI Module...");
+                assembly = File.ReadAllBytes(assemblyPath);
+            }
+            catch
+            {
+                System.Console.WriteLine("ERROR: Could not read the file " + assemblyPath);
+                ErrorExit();
+            }
+
+            if (assembly != null)
+            {
+                Console.WriteLine("Injecting ModAPI...");
+                injector.Inject(assembly, @"PoW_ModAPI", @"Loader", @"Init");
+                Console.WriteLine("Injected ModAPI!");
+            }
+            else
+            {
+                Console.WriteLine("ERROR: Assembly is empty...");
+                ErrorExit();
+            }
+
 
             Console.WriteLine("Done!");
             Console.ReadKey();
