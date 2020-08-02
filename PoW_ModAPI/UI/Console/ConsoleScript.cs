@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace PoW_ModAPI
 {
@@ -18,7 +20,7 @@ namespace PoW_ModAPI
         /// <summary>
         /// The hotkey to show and hide the console window.
         /// </summary>
-        public KeyCode toggleKey = KeyCode.F10;
+        public KeyCode toggleKey = KeyCode.F9;
 
         /// <summary>
         /// Whether to open as soon as the game starts.
@@ -225,10 +227,18 @@ namespace PoW_ModAPI
         {
             GUILayout.BeginHorizontal();
 
+            GUILayout.BeginVertical();
             if (GUILayout.Button(clearLabel))
             {
                 logs.Clear();
             }
+
+            if (GUILayout.Button("Reload Scene"))
+            {
+                Scene scene = SceneManager.GetActiveScene();
+                SceneManager.LoadScene(scene.name);
+            }
+            GUILayout.EndVertical();
 
             foreach (LogType logType in Enum.GetValues(typeof(LogType)))
             {
