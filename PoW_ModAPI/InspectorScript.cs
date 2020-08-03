@@ -1,10 +1,12 @@
-﻿using PoW_ModAPI.UI;
-using System;
+﻿using System;
 using System.Collections.Generic;
+
+using ModAPI.UI;
+
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-namespace PoW_ModAPI
+namespace ModAPI
 {
     class InspectorScript : MonoBehaviour
     {
@@ -12,7 +14,7 @@ namespace PoW_ModAPI
         /// Amount to scale UI by.
         /// </summary>
         public float scaleFactor = 1f;
-        private GUIWindow window = new GUIWindow("Inspector", 50, 50, 500, 500, 20, 40, 5);
+        private GUIWindow Window = new GUIWindow("Inspector", 50, 50, 500, 500, 20, 40, 5);
 
         private Dictionary<Type, List<Type>> derivedTypes = new Dictionary<Type, List<Type>>();
         private string GetTypeString(GameObject obj)
@@ -133,11 +135,11 @@ namespace PoW_ModAPI
             GUILayout.Label("Currently hovered UI Elements:");
             DisplayCurrentlyPressedUINames();
 
-            window.MakeDragable();
+            Window.MakeDragable();
         }
         public void OnGUI()
         {
-            window.Render(OnDraw);
+            Window.Render(OnDraw);
         }
     }
 }

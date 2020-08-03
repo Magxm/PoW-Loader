@@ -5,7 +5,7 @@ using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-namespace PoW_ModAPI
+namespace ModAPI
 {
     //Shamelessly ripped from https://github.com/mminer/consolation/blob/master/Console.cs :)
     /// <summary>
@@ -57,7 +57,7 @@ namespace PoW_ModAPI
         /// <summary>
         /// Number of logs to keep before removing old ones.
         /// </summary>
-        public int maxLogCount = 1000;
+        public int maxLogCount = 100;
 
         /// <summary>
         /// Font size to display log entries with.

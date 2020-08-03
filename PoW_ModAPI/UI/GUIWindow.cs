@@ -1,7 +1,8 @@
 ﻿using System;
+
 using UnityEngine;
 
-namespace PoW_ModAPI.UI
+namespace ModAPI.UI
 {
 
     class GUIWindow

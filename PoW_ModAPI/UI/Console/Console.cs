@@ -1,15 +1,15 @@
 ﻿using UnityEngine;
 
-namespace PoW_ModAPI.UI.Console
+namespace ModAPI.UI
 {
     class Console
     {
-        private static GameObject _console;
+        private static GameObject _Console;
         public static void Init()
         {
-            _console = new GameObject();
-            _console.AddComponent<ConsoleScript>();
-            GameObject.DontDestroyOnLoad(_console);
+            _Console = new GameObject();
+            _Console.AddComponent<ConsoleScript>();
+            GameObject.DontDestroyOnLoad(_Console);
         }
 
         public static void Unload()
@@ -19,7 +19,7 @@ namespace PoW_ModAPI.UI.Console
 
         private static void _Unload()
         {
-            GameObject.Destroy(_console);
+            GameObject.Destroy(_Console);
         }
     }
 }

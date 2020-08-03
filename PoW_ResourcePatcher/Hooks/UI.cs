@@ -6,7 +6,7 @@ using Heluo.UI;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace PoW_EnglishPatch.Hooks
+namespace EnglishPatch.Hooks
 {
 
     [HarmonyPatch(typeof(WGText), "set_Text")]
