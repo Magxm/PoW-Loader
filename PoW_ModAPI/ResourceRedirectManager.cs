@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Reflection;
 using System.Text;
 
@@ -10,8 +9,6 @@ using BepInEx;
 using HarmonyLib;
 
 using Heluo.Resource;
-
-using PoW_ModAPI.Utils;
 
 using UnityEngine;
 
@@ -40,7 +37,7 @@ namespace ModAPI
             PathRedirections.TryGetValue(path, out result);
             if (!string.IsNullOrEmpty(result))
             {
-                Debug.Log(path + " redirects to RootPath " + result);
+                //Debug.Log(path + " redirects to RootPath " + result);
                 return result;
             }
             else
@@ -128,12 +125,7 @@ namespace ModAPI
             path = path.Replace("\\", "/");
             rootPath = rootPath.Replace("\\", "/");
 
-            if (!UTF8Checker.IsUtf8(path.Select(c => (byte)c).ToArray(), path.Length))
-            {
-                Debug.LogError("AddFileToPathRedirection path Parameter " + path + " is not UTF8");
-            }
-
-            Debug.Log("[ResourceRedirectManager] Adding redirect for file " + path + " over root folder " + rootPath);
+            //Debug.Log("[ResourceRedirectManager] Adding redirect for file " + path + " over root folder " + rootPath);
             if (ExistsRedirect(path))
             {
                 Debug.LogWarning("[ResourceRedirectManager] Mod Collision: Overwritting Resource Redirect " + path + " from " + GetRedirect(path) + " to " + rootPath);
