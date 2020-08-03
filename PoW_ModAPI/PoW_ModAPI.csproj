@@ -41,7 +41,7 @@
     <AssemblyOriginatorKeyFile>ModLoaderKey.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="ResourceRedirectManager.cs" />
+    <Compile Include="ResourceRedirection\ResourceRedirectManager.cs" />
     <Compile Include="UI\Console\Console.cs" />
     <Compile Include="UI\Console\ConsoleScript.cs" />
     <Compile Include="InspectorScript.cs" />
@@ -72,6 +72,30 @@
     </Reference>
     <Reference Include="BepInEx">
       <HintPath>..\Dependencies\BepInEx.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Mono.Cecil">
+      <HintPath>G:\SteamLibrary\steamapps\common\PathOfWuxia\BepInEx\core\Mono.Cecil.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Mono.Cecil.Mdb">
+      <HintPath>G:\SteamLibrary\steamapps\common\PathOfWuxia\BepInEx\core\Mono.Cecil.Mdb.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Mono.Cecil.Pdb">
+      <HintPath>G:\SteamLibrary\steamapps\common\PathOfWuxia\BepInEx\core\Mono.Cecil.Pdb.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Mono.Cecil.Rocks">
+      <HintPath>G:\SteamLibrary\steamapps\common\PathOfWuxia\BepInEx\core\Mono.Cecil.Rocks.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MonoMod.RuntimeDetour">
+      <HintPath>G:\SteamLibrary\steamapps\common\PathOfWuxia\BepInEx\core\MonoMod.RuntimeDetour.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MonoMod.Utils">
+      <HintPath>G:\SteamLibrary\steamapps\common\PathOfWuxia\BepInEx\core\MonoMod.Utils.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />

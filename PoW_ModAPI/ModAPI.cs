@@ -1,4 +1,6 @@
 ﻿
+using System.IO;
+
 using BepInEx;
 using BepInEx.Bootstrap;
 
@@ -35,6 +37,7 @@ namespace ModAPI
             _HM = new Harmony("ModAPI");
             _HM.PatchAll();
 
+            ResourceRedirector.AddRessourceFolder("Mods" + Path.DirectorySeparatorChar + "ImageTest");
 
             //Initing in game console (basically just a log viewer right now)
             UI.Console.Init();

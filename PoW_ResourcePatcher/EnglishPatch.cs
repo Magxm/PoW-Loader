@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿
+using System.IO;
 
 using BepInEx;
 
@@ -17,7 +18,7 @@ namespace EnglishPatch
         void Awake()
         {
 
-            ModAPI.ModAPI.GetInstance().ResourceRedirector.AddRessourceFolder(@"Mods" + Path.DirectorySeparatorChar + "EnglishTranslate");
+            ModAPI.ModAPI.GetInstance().ResourceRedirector.AddRessourceFolder("Mods" + Path.DirectorySeparatorChar + "EnglishTranslate");
 
             _HM = new Harmony("EnglishPatch");
             _HM.PatchAll();
