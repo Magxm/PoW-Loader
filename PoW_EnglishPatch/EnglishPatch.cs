@@ -1,9 +1,8 @@
-﻿
-using System.IO;
-
-using BepInEx;
+﻿using BepInEx;
 
 using HarmonyLib;
+
+using System.IO;
 
 namespace EnglishPatch
 {

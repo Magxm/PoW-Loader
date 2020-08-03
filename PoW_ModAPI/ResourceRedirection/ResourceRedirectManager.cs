@@ -13,6 +13,8 @@ using Heluo.Resource;
 
 using UnityEngine;
 
+using XUnity.ResourceRedirector;
+
 namespace ModAPI
 {
 
@@ -47,6 +49,28 @@ namespace ModAPI
     }
 
     [HarmonyPatch]
+    public class ResourceManagerr_Load_Hook
+    {
+        public static MethodBase TargetMethod()
+        {
+            return typeof(ResourceManager).GetMethod("Reset");
+        }
+
+        public static void Postfix(ref IChainedResourceProvider ___provider)
+        {
+            //Flipping arround the first provider with it's successor. This way ExternalResourcePRovider will be before BuiltinResourceProvider
+            IChainedResourceProvider builtinProvider = ___provider;
+            IChainedResourceProvider externalProvider = builtinProvider.Successor;
+            IChainedResourceProvider thirdProvider = externalProvider.Successor;
+
+            ___provider = externalProvider;
+            externalProvider.Successor = builtinProvider;
+            builtinProvider.Successor = thirdProvider;
+        }
+
+    }
+
+    [HarmonyPatch]
     public class ExternalResourceProvider_Load_Hook
     {
 
@@ -59,6 +83,7 @@ namespace ModAPI
         //So we gotta do all the loading ourself and return the proper thing.
         public static bool Prefix(ref string path, ref UnityEngine.Object __result)
         {
+            UnityEngine.Debug.Log("[ResourceRedirectManager] Loading Request: " + path);
             string rootRedirect = ResourceRedirectManager.GetInstance().GetRedirect(path);
             if (string.IsNullOrEmpty(rootRedirect))
             {
@@ -110,12 +135,22 @@ namespace ModAPI
     }
 
 
-    //Actual ResourceRedirectManager that handles managing the different redirect paths
+    /*
+     * Actual ResourceRedirectManager that handles managing the different redirect paths.
+     * We have hooked the ExternalResourceProvider, however if something still goes throuhg, we use XUnity.ResourceRedirector to catch them directly in the asset loading pipeline.
+    */
     public class ResourceRedirectManager
     {
+        //Constructor
         private ResourceRedirectManager()
         {
             PathRedirections = new Dictionary<string, string>(IgnoreCaseStringComparer);
+        }
+
+        //XUnity.ResourceRedirector stuff
+        public void AssetLoaded(AssetLoadedContext context)
+        {
+
         }
 
         //Singleton stuff
