@@ -49,7 +49,7 @@ namespace ModAPI
     }
 
     [HarmonyPatch]
-    public class ResourceManagerr_Load_Hook
+    public class ResourceManager_Reset_Hook
     {
         public static MethodBase TargetMethod()
         {
@@ -58,7 +58,7 @@ namespace ModAPI
 
         public static void Postfix(ref IChainedResourceProvider ___provider)
         {
-            //Flipping arround the first provider with it's successor. This way ExternalResourcePRovider will be before BuiltinResourceProvider
+            //Flipping arround the first provider with it's successor. This way ExternalResourceProvider will be before BuiltinResourceProvider
             IChainedResourceProvider builtinProvider = ___provider;
             IChainedResourceProvider externalProvider = builtinProvider.Successor;
             IChainedResourceProvider thirdProvider = externalProvider.Successor;
@@ -69,6 +69,7 @@ namespace ModAPI
         }
 
     }
+
 
     [HarmonyPatch]
     public class ExternalResourceProvider_Load_Hook
@@ -123,6 +124,7 @@ namespace ModAPI
                     break;
                 case ".prefab":
                     //Parse GameObject
+                    __result = null;
                     break;
                 default:
                     UnityEngine.Debug.LogError("[ResourceRedirectManager] Error while loading " + path + " with redirect " + rootRedirect + ". Unknown Extension " + extension);
@@ -141,17 +143,20 @@ namespace ModAPI
     */
     public class ResourceRedirectManager
     {
+        //XUnity.ResourceRedirector stuff
+        public void AssetLoading(AssetLoadingContext obj)
+        {
+            Debug.LogError("Loading request: " + obj.Parameters.Name);
+        }
+
         //Constructor
         private ResourceRedirectManager()
         {
             PathRedirections = new Dictionary<string, string>(IgnoreCaseStringComparer);
+            //ResourceRedirection.LogAllLoadedResources = true;
+            //ResourceRedirection.Initialize();
         }
 
-        //XUnity.ResourceRedirector stuff
-        public void AssetLoaded(AssetLoadedContext context)
-        {
-
-        }
 
         //Singleton stuff
         private static ResourceRedirectManager instance = null;
