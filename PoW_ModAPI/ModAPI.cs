@@ -10,8 +10,10 @@ using UnityEngine;
 
 namespace ModAPI
 {
+    [BepInDependency("gravydevsupreme.xunity.resourceredirector", BepInDependency.DependencyFlags.HardDependency)]
     [BepInPlugin("plugins.modapi", "Mod API", "1.0.0.0")]
     [BepInProcess("PathOfWuxia.exe")]
+
     public class ModAPI : BaseUnityPlugin
     {
 
