@@ -11,6 +11,7 @@ The only thing that is missing is the Mods/EnglishTranslate folder.
 
 It includes an already configured BepInEx.
 If BepInEx is updated/replaced by a new verion it is important to update the BepInEx.cfg and replace the following Entry
+it is also important that that the winhttp.dll from UnityDoorstop is replaced with a version from this fork https://github.com/Magxm/UnityDoorstop as it allows loading a native dll, which we need for the resource redirection.
 
 ```ini
 [Preloader.Entrypoint]
