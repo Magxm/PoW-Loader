@@ -36,8 +36,8 @@ namespace ModAPI
             this.name = "ModAPI";
 
             //Hooking
-            _HM = new Harmony("ModAPI");
-            _HM.PatchAll();
+            //_HM = new Harmony("ModAPI");
+            //_HM.PatchAll();
 
             ResourceRedirector.AddRessourceFolder("Mods" + Path.DirectorySeparatorChar + "ImageTest");
 

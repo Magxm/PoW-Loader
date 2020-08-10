@@ -1,15 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Reflection;
 using System.Text;
 
 using BepInEx;
-
-using HarmonyLib;
-
-using Heluo;
-using Heluo.Resource;
 
 using UnityEngine;
 
@@ -17,126 +11,6 @@ using XUnity.ResourceRedirector;
 
 namespace ModAPI
 {
-
-    /*
-    [HarmonyPatch(typeof(string), "IsNullOrEmpty", new Type[] { typeof(string) })]
-    public class String_IsNullOrEmpty_Hook
-    {
-        public static void Prefix(ref string value)
-        {
-            var stackFrame = new StackFrame(2, false);
-            var methodBase = stackFrame.GetMethod();
-            if (methodBase.DeclaringType == typeof(ExternalResourceProvider) && methodBase.Name.Equals("Load"))
-            {
-                var mi = methodBase as MethodInfo;
-                var t = mi.ReturnType;
-                UnityEngine.Debug.LogWarning(mi.FullDescription() + " from " + (new StackFrame(3, false).GetMethod() as MethodInfo).FullDescription());
-            }
-        }
-    }
-    */
-
-    //Hooks of LoadBytes and Load<T> that redirect the loading if needed. This is the games own ExternalResourceProvider and will work for thes language files and some assets.
-    //This will not work for all bundles tho.
-    [HarmonyPatch(typeof(ExternalResourceProvider), "LoadBytes", new Type[] { typeof(string) })]
-    public class ExternalResourceProvider_LoadBytes_Hook
-    {
-        public static void Prefix(ref string ___ExternalDirectory, ref string path)
-        {
-            UnityEngine.Debug.Log("Loading Raw " + path);
-            ___ExternalDirectory = ResourceRedirectManager.GetInstance().GetRedirect(path);
-        }
-    }
-
-    [HarmonyPatch]
-    public class ResourceManager_Reset_Hook
-    {
-        public static MethodBase TargetMethod()
-        {
-            return typeof(ResourceManager).GetMethod("Reset");
-        }
-
-        public static void Postfix(ref IChainedResourceProvider ___provider)
-        {
-            //Flipping arround the first provider with it's successor. This way ExternalResourceProvider will be before BuiltinResourceProvider
-            IChainedResourceProvider builtinProvider = ___provider;
-            IChainedResourceProvider externalProvider = builtinProvider.Successor;
-            IChainedResourceProvider thirdProvider = externalProvider.Successor;
-
-            ___provider = externalProvider;
-            externalProvider.Successor = builtinProvider;
-            builtinProvider.Successor = thirdProvider;
-        }
-
-    }
-
-
-    [HarmonyPatch]
-    public class ExternalResourceProvider_Load_Hook
-    {
-
-        public static MethodBase TargetMethod()
-        {
-            return typeof(ExternalResourceProvider).GetMethod("Load").MakeGenericMethod(typeof(UnityEngine.Object));
-        }
-
-        //This hook breaks the Load<T> function. All of them are Load<UnityEngine.Object> now.
-        //So we gotta do all the loading ourself and return the proper thing.
-        public static bool Prefix(ref string path, ref UnityEngine.Object __result)
-        {
-            UnityEngine.Debug.Log("[ResourceRedirectManager] Loading Request: " + path);
-            string rootRedirect = ResourceRedirectManager.GetInstance().GetRedirect(path);
-            if (string.IsNullOrEmpty(rootRedirect))
-            {
-                //We do not have a redirect. Return null and do not execute original function
-                UnityEngine.Debug.Log("No redirect found for " + path);
-                __result = null;
-                return false;
-            }
-
-            bool flag = path.Contains("Config") && path.Contains(GameConfig.Language);
-            if (flag)
-            {
-                path.Replace("/" + GameConfig.Language, "");
-            }
-
-            UnityEngine.Debug.Log("[ResourceRedirectManager] Loading " + path);
-
-            string absolutePath = Paths.GameRootPath + Path.DirectorySeparatorChar + rootRedirect + Path.DirectorySeparatorChar + path;
-
-            if (!File.Exists(absolutePath))
-            {
-                UnityEngine.Debug.LogError("[ResourceRedirectManager] Error while loading " + absolutePath + ". File does not exist!");
-                __result = null;
-                return false;
-            }
-
-            string extension = Path.GetExtension(path);
-            switch (extension)
-            {
-                case ".png":
-                    //Parse Sprite
-                    byte[] data = File.ReadAllBytes(absolutePath);
-                    Texture2D texture2D = new Texture2D(2, 2);
-                    texture2D.LoadImage(data);
-                    Sprite sprite = Sprite.Create(texture2D, new Rect(0f, 0f, (float)texture2D.width, (float)texture2D.height), new Vector2((float)(texture2D.width / 2), (float)(texture2D.height / 2)));
-                    __result = sprite;
-                    break;
-                case ".prefab":
-                    //Parse GameObject
-                    __result = null;
-                    break;
-                default:
-                    UnityEngine.Debug.LogError("[ResourceRedirectManager] Error while loading " + path + " with redirect " + rootRedirect + ". Unknown Extension " + extension);
-                    __result = null;
-                    break;
-            }
-
-            return false;
-        }
-    }
-
-
     /*
      * Actual ResourceRedirectManager that handles managing the different redirect paths.
      * We have hooked the ExternalResourceProvider, however if something still goes throuhg, we use XUnity.ResourceRedirector to catch them directly in the asset loading pipeline.
@@ -144,17 +18,105 @@ namespace ModAPI
     public class ResourceRedirectManager
     {
         //XUnity.ResourceRedirector stuff
-        public void AssetLoading(AssetLoadingContext obj)
+        public void AssetLoading(AssetLoadingContext context)
         {
-            Debug.LogError("Loading request: " + obj.Parameters.Name);
+            string path = context.Parameters.Name;
+            if (path.StartsWith("Assets/"))
+            {
+                path = path.Substring(7);
+            }
+
+            //Debug.LogError("AssetLoading: " + context.Parameters.Name);
+            string rootRedirect = GetRedirect(path);
+            if (string.IsNullOrEmpty(rootRedirect))
+            {
+                Debug.LogError("Found no redirect for " + path);
+                context.Complete(false, false, false);
+                return;
+            }
+
+            string absolutePath = Paths.GameRootPath + Path.DirectorySeparatorChar + rootRedirect + Path.DirectorySeparatorChar + path;
+
+            byte[] data = File.ReadAllBytes(absolutePath);
+            if (context.Parameters.Type == typeof(Texture2D) || context.Parameters.Type == typeof(Sprite))
+            {
+
+                Texture2D texture2D = new Texture2D(2, 2);
+                texture2D.LoadImage(data);
+                if (context.Parameters.Type == typeof(Sprite))
+                {
+                    Sprite sprite = Sprite.Create(texture2D, new Rect(0f, 0f, (float)texture2D.width, (float)texture2D.height), new Vector2((float)(texture2D.width / 2), (float)(texture2D.height / 2)));
+                    context.Asset = sprite;
+                }
+                else
+                {
+                    context.Asset = texture2D;
+                }
+            }
+            else if (context.Parameters.Type == typeof(TextAsset))
+            {
+                TextAsset ta = new TextAsset(Encoding.UTF8.GetString(data, 0, data.Length));
+                context.Asset = ta;
+            }
+            context.Complete(true, true, true);
         }
+
+        public void AssetLoaded(AssetLoadedContext context)
+        {
+            //Debug.LogError("AssetLoaded: " + context.Parameters.Name);
+            context.Complete(false);
+        }
+
+        public void AsyncAssetLoading(AsyncAssetLoadingContext context)
+        {
+            //Debug.LogError("AsyncAssetLoading: " + context.Parameters.Name);
+            context.Complete(false, false, false);
+        }
+
+        public void AssetBundleLoading(AssetBundleLoadingContext context)
+        {
+            //Debug.LogError("AssetBundleLoading: " + context.Parameters.Path);
+            context.Complete(false, false, false);
+        }
+
+        public void AssetBundleLoaded(AssetBundleLoadedContext context)
+        {
+            //Debug.LogError("AssetBundleLoaded: " + context.Parameters.Path);
+            context.Complete(false);
+        }
+
+        public void AsyncAssetBundleLoading(AsyncAssetBundleLoadingContext context)
+        {
+            //Debug.LogError("AsyncAssetBundleLoading: " + context.Parameters.Path);
+            context.Complete(false, false, false);
+        }
+
+        public void ResourceLoaded(ResourceLoadedContext context)
+        {
+            //Debug.LogError("ResourceLoaded: " + context.Parameters.Path);
+            context.Complete(false);
+        }
+
 
         //Constructor
         private ResourceRedirectManager()
         {
             PathRedirections = new Dictionary<string, string>(IgnoreCaseStringComparer);
-            //ResourceRedirection.LogAllLoadedResources = true;
-            //ResourceRedirection.Initialize();
+            ResourceRedirection.LogAllLoadedResources = true;
+            ResourceRedirection.EnableRedirectMissingAssetBundlesToEmptyAssetBundle(0);
+            ResourceRedirection.DisableRecursionPermanently();
+            ResourceRedirection.EnableRedirectMissingAssetBundlesToEmptyAssetBundle(0);
+
+            ResourceRedirection.RegisterAssetLoadedHook(HookBehaviour.OneCallbackPerResourceLoaded, 0, AssetLoaded);
+            ResourceRedirection.RegisterAssetLoadingHook(0, AssetLoading);
+            ResourceRedirection.RegisterAsyncAssetLoadingHook(0, AsyncAssetLoading);
+
+            ResourceRedirection.RegisterAssetBundleLoadingHook(0, AssetBundleLoading);
+            ResourceRedirection.RegisterAssetBundleLoadedHook(0, AssetBundleLoaded);
+            ResourceRedirection.RegisterAsyncAssetBundleLoadingHook(0, AsyncAssetBundleLoading);
+
+
+            ResourceRedirection.RegisterResourceLoadedHook(HookBehaviour.OneCallbackPerResourceLoaded, 0, ResourceLoaded);
         }
 
 

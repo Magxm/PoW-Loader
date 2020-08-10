@@ -57,7 +57,7 @@ namespace ModAPI
         /// <summary>
         /// Number of logs to keep before removing old ones.
         /// </summary>
-        public int maxLogCount = 100;
+        public int maxLogCount = 25;
 
         /// <summary>
         /// Font size to display log entries with.
