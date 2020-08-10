@@ -1,24 +1,17 @@
-# Path Of Wuxia ModLoader
-BepInEx is the actual ModLoader.
+# Path Of Wuxia ModLoader + English Patch
+
+Join our discord! 
+https://discord.com/invite/PH4Z4Dn
+
+-------------------------------------------
+BepInEx is the actual unerlying ModLoader.
 This repository contains a ModAPI plugin containing base functionalities for Mods (WIP).
 It currently allows dynamic registration of external Asset folders, which allows several mods to register asset overrides.
 
-Additionally this repository contains a EnglishPatch Plugin which registers Mods/EnglishTranslate as a resource folder (So place the translated Asset files into Mods/EnglishTranslate).
+Additionally this repository contains a EnglishPatch Plugin which registers Mods/EnglishTranslate as a resource folder (So place the translated Asset files into Mods/EnglishTranslate) and fixes several issues with displaying the English Text.
 
-and fixes several issues with displaying the English Text.
-
-The Output folder contains an almost full release after building.
-
-The only thing that is missing is the Mods/EnglishTranslate folder.
-
-
-It includes an already configured BepInEx.
-
+The Output folder contains an almost full release after building, containing more or less up to date English files and an already configured BepInEx.
 If BepInEx is updated/replaced by a new verion it is important to update the BepInEx.cfg and replace the following Entry.
-
-It is also important that that the winhttp.dll from UnityDoorstop is from this fork https://github.com/Magxm/UnityDoorstop as it allows loading a native dll, which we need for the resource redirection.
-Remember this for if you ever replace the BepInEx or UnityDoorstep version (Which should never be needed to begin with).
-
 ```ini
 [Preloader.Entrypoint]
 
