@@ -4,7 +4,7 @@ Join our discord!
 https://discord.com/invite/PH4Z4Dn
 
 -------------------------------------------
-BepInEx is the actual unerlying ModLoader.
+BepInEx is the actual underlying ModLoader.
 This repository contains a ModAPI plugin containing base functionalities for Mods (WIP).
 It currently allows dynamic registration of external Asset folders, which allows several mods to register asset overrides.
 
