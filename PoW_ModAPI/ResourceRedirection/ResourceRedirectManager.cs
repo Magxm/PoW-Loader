@@ -293,7 +293,8 @@ namespace ModAPI
             assetCache = new Dictionary<string, object>(IgnoreCaseStringComparer);
             assetNameToPath = new Dictionary<string, string>(IgnoreCaseStringComparer);
 
-            ResourceRedirection.LogAllLoadedResources = true;
+            //ResourceRedirection.LogAllLoadedResources = true;
+
             ResourceRedirection.EnableRedirectMissingAssetBundlesToEmptyAssetBundle(0);
             ResourceRedirection.DisableRecursionPermanently();
             ResourceRedirection.EnableRedirectMissingAssetBundlesToEmptyAssetBundle(0);
