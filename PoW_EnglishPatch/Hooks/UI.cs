@@ -6,13 +6,18 @@ using Heluo.UI;
 using UnityEngine;
 using UnityEngine.UI;
 
+using System.Reflection;
+
 namespace EnglishPatch.Hooks
 {
 
-    [HarmonyPatch(typeof(WGText), "set_Text")]
+    [HarmonyPatch]
     public class WGText_setText_Hook
     {
-
+        public static MethodBase TargetMethod()
+        {
+            return typeof(WGText).GetProperty("Text").GetSetMethod();
+        }
 
         public static void Postfix(ref WGText __instance, ref Text ___text)
         {
@@ -34,8 +39,6 @@ namespace EnglishPatch.Hooks
     [HarmonyPatch(typeof(WGStringTable), "UpdateString")]
     public class WGStringTable_UpdateString_Hook
     {
-
-
         public static void Postfix(ref WGStringTable __instance)
         {
             __instance.GetComponent<Text>().font = Resources.GetBuiltinResource<Font>("Arial.ttf");
