@@ -91,11 +91,6 @@
       <HintPath>..\Output\Mod\BepInEx\core\MonoMod.Utils.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="PoW_EnglishPatch, Version=1.0.0.0, Culture=neutral, processorArchitecture=AMD64">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\Output\Mod\BepInEx\plugins\PoW_EnglishPatch.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="UnityEngine">
       <HintPath>..\Dependencies\UnityEngine.dll</HintPath>
       <Private>False</Private>
@@ -371,9 +366,8 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\PoW_ModAPI\PoW_ModAPI.csproj">
-      <Project>{0e6b6166-6bd6-4baa-ac7d-8b61c20abc39}</Project>
+      <Project>{0E6B6166-6BD6-4BAA-AC7D-8B61C20ABC39}</Project>
       <Name>PoW_ModAPI</Name>
-      <Private>False</Private>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
