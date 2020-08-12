@@ -161,7 +161,7 @@ namespace ModAPI
             string rootRedirect = GetRedirect(path);
             if (string.IsNullOrEmpty(rootRedirect))
             {
-                Debug.Log("[ResourceRedirectManager] Found no redirect for " + path);
+                //Debug.Log("[ResourceRedirectManager] Found no redirect for " + path);
                 context.Complete(false, false, false);
                 return;
             }
@@ -212,7 +212,7 @@ namespace ModAPI
                                 if (ExistsRedirect(path))
                                 {
                                     //We have a replacement for the sprite
-                                    Debug.Log("Overriding the texture of the over Prefab loaded Sprite  " + childImage.sprite.name + " with the texture " + path);
+                                    //Debug.Log("Overriding the texture of the over Prefab loaded Sprite  " + childImage.sprite.name + " with the texture " + path);
                                     //Overwritting Sprite Texture
                                     string rootRedirect = GetRedirect(path);
                                     string absolutePath = Paths.GameRootPath + Path.DirectorySeparatorChar + rootRedirect + Path.DirectorySeparatorChar + path;
