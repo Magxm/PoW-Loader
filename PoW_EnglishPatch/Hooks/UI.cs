@@ -1,4 +1,7 @@
-﻿using HarmonyLib;
+﻿
+using System.Reflection;
+
+using HarmonyLib;
 
 using Heluo.Platform;
 using Heluo.UI;
@@ -6,11 +9,8 @@ using Heluo.UI;
 using UnityEngine;
 using UnityEngine.UI;
 
-using System.Reflection;
-
 namespace EnglishPatch.Hooks
 {
-
     [HarmonyPatch]
     public class WGText_setText_Hook
     {
@@ -216,4 +216,95 @@ namespace EnglishPatch.Hooks
         }
     }
 
+    /*
+     * Updating Date to display Year and Month in English
+     * Updating the Units in SetMonth and adding a . after the number in both SetYear and SetMonth
+    */
+    [HarmonyPatch(typeof(UIDate), "SetYear")]
+    public class UIDate_SetYear_Hook
+    {
+        public static void Prefix(ref string yearStr)
+        {
+            yearStr = yearStr + ".";
+        }
+    }
+
+    [HarmonyPatch(typeof(UIDate), "SetMonth")]
+    public class UIDate_SetMonth_Hook
+    {
+        public static void Prefix(ref UIDate __instance, ref string monthStr)
+        {
+
+            monthStr = monthStr + ".";
+
+            //Getting child 0, which is the RectTransform
+            RectTransform UI_Date_rectTransform = __instance.gameObject.transform.GetChild(0) as RectTransform;
+
+            //Getting the Date_BG which is the first child again (Index 0)
+            RectTransform dateBG_rectTransform = UI_Date_rectTransform.gameObject.transform.GetChild(0) as RectTransform;
+
+            //Here now we can get the Unit(child 0),Year (child 1), YearUnit(child 2) Month(child 3) and monthUnit(child 4)
+            RectTransform unit = dateBG_rectTransform.gameObject.transform.GetChild(0) as RectTransform;
+            RectTransform year = dateBG_rectTransform.gameObject.transform.GetChild(1) as RectTransform;
+            RectTransform yearUnit = dateBG_rectTransform.gameObject.transform.GetChild(2) as RectTransform;
+            RectTransform month = dateBG_rectTransform.gameObject.transform.GetChild(3) as RectTransform;
+            RectTransform monthUnit = dateBG_rectTransform.gameObject.transform.GetChild(4) as RectTransform;
+
+            //Disabling "Unit" since we do not need it in English
+            unit.localPosition = new Vector3(0, 0, 0);
+            unit.gameObject.SetActive(false);
+            //Moving the Unit/Year/YearUnit/Month/monthUnit to hardcoded positions that look good
+            year.localPosition = new Vector3(-60f, 41.5f, 0f);
+            yearUnit.localPosition = new Vector3(-20f, 41.5f, 0);
+            yearUnit.sizeDelta = new Vector2(70f, 50f);
+            month.localPosition = new Vector3(35f, 41.5f, 0f);
+            monthUnit.localPosition = new Vector3(86f, 41.5f, 0);
+            monthUnit.sizeDelta = new Vector2(70f, 50f);
+
+            //Lastly we overwrite the text they contain
+            unit.gameObject.GetComponent<UnityEngine.UI.Text>().text = "";
+            UnityEngine.UI.Text YearUnitText = yearUnit.gameObject.GetComponent<UnityEngine.UI.Text>();
+            YearUnitText.text = "Year";
+            YearUnitText.fontSize = 28;
+            UnityEngine.UI.Text monthUnitText = monthUnit.gameObject.GetComponent<UnityEngine.UI.Text>();
+            monthUnitText.text = "Month";
+            monthUnitText.fontSize = 28;
+        }
+    }
+
+    /*
+    * Do all MainUI manipulation in this function.
+    */
+    [HarmonyPatch(typeof(UIMain), "Show")]
+    public class UIMain_Show_Hook
+    {
+        public static void Postfix(ref UIMain __instance)
+        {
+            RectTransform menu = (RectTransform)__instance.transform.Find("Menu");
+            //Updating the Credits Button Text
+            RectTransform btnMember = (RectTransform)menu.Find("BtnMember");
+            RectTransform btn = (RectTransform)btnMember.Find("Btn");
+            RectTransform btn_text = (RectTransform)btn.Find("Text");
+            UnityEngine.UI.Text btn_text_text = (UnityEngine.UI.Text)btn_text.gameObject.GetComponentInChildren(typeof(UnityEngine.UI.Text));
+            btn_text_text.text = "Credits";
+
+            //Reducing Menu Button Font Size
+            menu.Find("BtnContinue").Find("Btn").Find("Text").GetComponent<Text>().fontSize = 23;
+            menu.Find("BtnNewGame").Find("Btn").Find("Text").GetComponent<Text>().fontSize = 23;
+            menu.Find("BtnLoadGame").Find("Btn").Find("Text").GetComponent<Text>().fontSize = 23;
+            menu.Find("BtnSystem").Find("Btn").Find("Text").GetComponent<Text>().fontSize = 23;
+            menu.Find("BtnQuitGame").Find("Btn").Find("Text").GetComponent<Text>().fontSize = 23;
+
+            //Focing the UI to update itself after all the changes we made. We just force every RectTransform to update itself
+            for (int i = 0; i < __instance.transform.childCount; ++i)
+            {
+                Transform t = __instance.transform.GetChild(i);
+                if (t != null && t.GetType() == typeof(RectTransform))
+                {
+                    RectTransform rt = t as RectTransform;
+                    rt.ForceUpdateRectTransforms();
+                }
+            }
+        }
+    }
 }
