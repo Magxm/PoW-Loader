@@ -2587,16 +2587,16 @@ t1101101_009	in0201	0	0	<color=#FF0000>Benevolence first, Chivalry follows</colo
 t1101101_010		0	1	(These two have differing ideals and each held their own grounds... )		0	t1101101_019		0	0
 t1101101_011		0	3	Based on benevolence, preserve life and stop killing, that is the chivalrous path!		0			0	{ "MultiAction" : [ { "SetFlagAction" : 0, 1, "fe1101101_2_00"} , { "RewardAction" : "re7000001_03"}  ]}
 t1101101_012		0	4	The world can only see peace when all evildoers are eliminated!		0			0	{ "MultiAction" : [ { "SetFlagAction" : 0, 2, "fe1101101_2_00"} , { "RewardAction" : "re7000002_03"}  ]}
-t1101101_013		0	1	(<color=#FF0000>[Move]</color> Now you are too far from your opponent, you must first get closer.)		0	t1101101_015		0	0
+t1101101_013		0	1	(<color=#FF0000>【Move】</color> Now you are too far from your opponent, you must first get closer.)		0	t1101101_015		0	0
 t1101101_014		0	1	(Press and hold the <color=#FF0000>{button_cancel}</color> and drag to <color=#FF0000>Rotate The Camera</color>; press the <color=#FF0000>{button_up}</color>, <color=#FF0000>{button_down}</color>, <color=#FF0000>{button_left}</color>, <color=#FF0000>{button_right}</color>, to <color=#FF0000>Pan The Camera</color>.)		0			0	0
-t1101101_015		0	1	（<color=#FF0000>【移动】</color>选定我方角色後，点击角色四周<color=#FF0000>绿色网格</color>，可使角色<color=#FF0000>移动到指定网格</color>。）		0	t1101101_059		0	0
-t1101101_016		0	1	（<color=#FF0000>【移动】</color>点击画面右下角<color=#FF0000>待命</color>按钮或<color=#FF0000>快捷键{button_skill08}</color>，可<color=#FF0000>结束角色在当前回合的行动</color>。）		0	t1101101_017		0	0
+t1101101_015		0	1	(<color=#FF0000>【Move】</color> Click the <color=#FF0000> green grid</color> around the character with the <color=#FF0000> left mouse button</color> to make the character <color=#FF0000> move to the specified grid</color>.)		0	t1101101_059		0	0
+t1101101_016		0	1	(<color=#FF0000>【Move】]</color>Click the <color=#FF0000> standby</color> button in the lower right corner of the screen with the <color=#FF0000> left mouse button to <color=#FF0000> end the character's action in the current turn</color>.)		0	t1101101_017		0	0
 t1101101_017		0	1	(Now, move towards your opponent and perform any move!)		0			0	0
-t1101101_018		0	1	（<color=#FF0000>【视角】</color>按住并拖曳<color=#FF0000>鼠标右键</color>可以<color=#FF0000>转动视角</color>；快捷键{button_pan_left}、{button_pan_right}。）		0	t1101101_022		0	0
+t1101101_018		0	1	(<color=#FF0000>【Camera】</color>Press and hold the <color=#FF0000> right mouse button</color> and drag to turn the view angle</color>.		0	t1101101_022		0	0
 t1101101_019		0	1	(But if you ask yourself, what is your answer?)		1	t1101101_011,t1101101_012		0	0
 t1101101_020		0	1	(Now, please launch a second offensive against your opponent!)		0			0	0
 t1101101_021		0	1	(As a witness to this duel, I can’t help but think back to the chance encounter that set me on my path to enter the Hall.)		0	t1101101_023		0	0
-t1101101_022		0	1	（<color=#FF0000>【视角】</color>前后滚动<color=#FF0000>鼠标滚轮</color>，则可以<color=#FF0000>拉动画面远近</color>；快捷键{button_zoom_in}、{button_zoom_out}。）		0	t1101101_060		0	0
+t1101101_022		0	1	(<color=#FF0000>【Camera】</color>Zoom in and out using the <color=#FF0000>Mouse wheel</color>.		0	t1101101_060		0	0
 t1101101_023		0	1	(The Automaton factory that night was the beginning of everything... )		0			0	{ "MultiAction" : [ { "ChangeCharacterDescription" : "in0201", "Hall master of the martial arts academy，Chivalry Hall. Sentimental and merciful，he is a wise and perceptive leader. <br>Extremly well versed with a sword，and known for his chivalrous spirit of fighting to subdue rather than kill. Known in the Jianghu as White Plum Sword Hero."}  ]}
 t1101101_024	in0201	0	0	What you do will only cause more hatred and disasters. Do you still intend to continue down this path?		0	t1101101_025		0	0
 t1101101_025	in0202	0	0	The hatred and calamity that spawned is but the ashes from the fires of war.		0	t1101101_026		0	0
@@ -2632,8 +2632,8 @@ t1101101_055	in0201	0	0	<color=#FF0000> Benevolence first, chivalry follows</col
 t1101101_056		0	1	(These two have differing ideals and each held their own grounds... )		1	t1101101_057,t1101101_058		0	0
 t1101101_057		0	4	The world can only see peace when all evildoers are eliminated!		0			0	{ "MultiAction" : [ { "SetFlagAction" : 0, 2, "fe1101101_2_00"} , { "RewardAction" : "re7000002_03"}  ]}
 t1101101_058		0	3	Based on benevolence, preserve life and stop killing, that is the chivalrous path!		0			0	{ "MultiAction" : [ { "SetFlagAction" : 0, 1, "fe1101101_2_00"} , { "RewardAction" : "re7000001_03"}  ]}
-t1101101_059		0	1	（<color=#FF0000>【移动】</color>若不满意移动後的位置，按下<color=#FF0000>{button_cancel}</color>可让角色<color=#FF0000>回到移动前的位置</color>。）		0	t1101101_016		0	0
-t1101101_060		0	1	（<color=#FF0000>【角色信息】</color>六角格光标选定角色并点击<color=#FF0000>{button_status}键</color>，即可开启该角色的<color=#FF0000>详细信息</color>。）		0	t1101101_020		0	0
+t1101101_059		0	1	(<color=#FF0000>【Move】</color>If you are not satisfied with the position after moving, pressing the <color=#FF0000>Esc key</color> will bring the character back to the <color=#FF0000> position before the move</color>)		0	t1101101_016		0	0
+t1101101_060		0	1	(<color=#FF0000>【Character Information】</color> Click on the character</color> with the <color=#FF0000> right mouse button to open the character's <color=#FF0000> details</color>.		0	t1101101_020		0	0
 t1101102_200	in15012	0	0	This is not good!		0	t1101102_201	m_stand00_talk40	0	{ "MultiAction" : [ { "NurturanceOpenOrder" : "Nurturance_01"}  ]}
 t1101102_201	in15021	0	0	Those Automatons have appeared again!		0			0	0
 t1101102_202	in15001	0	0	What? Be clear! Automatons... appeared again?		0	t1101102_203	m_stand00_talk02	0	0
@@ -11619,7 +11619,7 @@ t2109201_020	in0102	3	0	... In fact, Dad left the Chivalry Hall, just to find ou
 t2109201_021	in0103	4	0	Huh? All this just to catch one person? He's been away from home for so long...that person is that evil? He must be apprehended?		0	t2109201_022	m_stand00_talk41	0	0
 t2109201_022	in0102	0	0	His martial arts skills is actually only secondary to his cunning and villanry. This person has hurt many innocnet people just for fun.		0			0	0
 t2109201_023	in0102	3	0	Dad was always a person who hates evil, and he has some personal grudges against this person as well...		0	t2109201_024		0	0
-t2109201_024	in0102	3	0	If we don't remove the problem from teh roots, I think my dad would find it difficult to keep going on...		1	t2109201_025,t2109201_026		0	0
+t2109201_024	in0102	3	0	If we don't remove the problem from the roots, I think my dad would find it difficult to keep going on...		1	t2109201_025,t2109201_026		0	0
 t2109201_025		0	3	You father is a respectable hero...		0	t2109201_027		0	{ "MultiAction" : [ { "RewardAction" : "re7000402_06"}  ]}
 t2109201_026		0	4	How dare he let Miss duan grow up alone...		0	t2109201_028		0	0
 t2109201_027	in0102	1	0	{friend_1} {name_1}, thank you. I have always admired Daddy's determination to rid the world of evil. 		0		f_stand00_talk00	0	0
@@ -12642,7 +12642,7 @@ t3060201_002	in0209	0	0	No matter how well you've practiced, it's the same today
 t3060201_003	in0209	0	0	This Fan form today comes from a poem.		0	t3060201_006		0	0
 t3060201_004	in0209	0	0	If you are a slow learner, and can't practice to keep up, then give up now.		0	t3060201_005		0	0
 t3060201_005		0	1	(Try to practice <color=#FF0000>Smoldering Stalks Lament</color> until <color=#FF0000>Level 7</color> before your next class!)		0			0	0
-t3060201_006	in0209	0	0	Cook the beans for the soup, filtering them to extract juice. The beanstalks were burnt under the cauldron, and the beans in the cauldron wailed. We were originally grown from the same root. Why should we hound each other to death with such impatience?		0	t3060201_007		0	0
+t3060201_006	in0209	0	0	Cook the beans for the soup, filtering them to extract juice.The beanstalks were burnt under the cauldron, and the beans in the cauldron wailed. "We were originally grown from the same root. Why should we hound each other to death with such impatience?		0	t3060201_007		0	0
 t3060201_007	in0106	4	0	Hrm...this poem..I think I remmber reading it somewhere...something about cooking beans.		0	t3060201_019		0	0
 t3060201_008	in0106	3	0	Ah..sorry, it's not talking about cooking beans.		0	t3060201_032		0	0
 t3060201_009	in0209	0	0	Today I will teach you one of the moves, <color=#FF0000>Smoldering Stalks Lament</color>.		0			0	0
@@ -13101,16 +13101,16 @@ t3140301_011	in0103	3	0	{friend_2} {name_1}, are you okay? If you are hurt, Brot
 t3140301_012	in0107	0	0	... Don't force yourself		0			0	0
 t3140301_013		0	1	(Before going back to work, keep your <color=#FF0000>Energy levels</color> at <color=#FF0000>energetic</color>!)		0			0	0
 t3140301_014	in0109	0	0	You are responsible for the bathhouse.		0			0	0
-t3140302_000	in0207	0	0	Haha... Good morning, the daily water of everyone in the pavilion will trouble you little ones to pick it back for us.		0	t3140302_001		0	0
-t3140302_001	in0207	0	0	According to the usual practice, pick the most burdened disciple. Sister, I will massage him and massage his muscles and bones. It is comfortable and comfortable.		0		f_stand00_talk23	0	0
-t3140302_002	in04004	0	0	Goo... Good... This time I will be able to... 		0	t3140302_003	m_stand00_talk13	0	0
-t3140302_003	in0103	3	0	Really... Sister Fox is not afraid of misunderstandings... 		0	t3140302_004	f_stand00_talk01	0	0
+t3140302_000	in0207	0	0	Haha... Good morning cuties, we will have to trouble you to carry back the daily waters for use back here at the hall.		0	t3140302_001		0	0
+t3140302_001	in0207	0	0	As usual, big sis will give the disciple who carried the most a comfortable massage, so make sure you work hard!		0		f_stand00_talk23	0	0
+t3140302_002	in04004	0	0	Ugh... Yes ... This time I will for sure... 		0	t3140302_003	m_stand00_talk13	0	0
+t3140302_003	in0103	3	0	Oh dear... Sister Fox sure isn't afraid of misunderstandings... 		0	t3140302_004	f_stand00_talk01	0	0
 t3140302_004	in0107	5	0	... will get used to it.		0	t3140302_005		0	0
-t3140302_005	in0103	3	0	Brother Cheng said this every time... 		0		f_stand00_talk30	0	0
-t3140302_006		0	1	(Carrying a bucket with the same door, steady footsteps, no dripping!)		0	t3140302_007		0	{ "MultiAction" : [ { "RewardAction" : "re8021403_03"}  ]}
-t3140302_007		0	1	(Master Xuanhu is very satisfied with you!)		0			0	{ "MultiAction" : [ { "SetFlagAction" : 1, 2, "fg0207_MasterLove"}  ]}
-t3140302_008	in0207	0	0	Haha... Little {name_2} worked very hard, so the sister should give you some corresponding rewards.		0	t3140302_009		0	0
-t3140302_009	in0207	0	0	Come to my sister's room later, and my sister will rub your legs for you... 		0	t3140302_010	f_stand00_talk23	0	0
+t3140302_005	in0103	3	0	Brother Cheng says this every time... 		0		f_stand00_talk30	0	0
+t3140302_006		0	1	(Carrying a bucket with sectmates, you were steady on your feet and not a single drop of water fell out of the bucket.)		0	t3140302_007		0	{ "MultiAction" : [ { "RewardAction" : "re8021403_03"}  ]}
+t3140302_007		0	1	(Master Fox is very satisfied with you!)		0			0	{ "MultiAction" : [ { "SetFlagAction" : 1, 2, "fg0207_MasterLove"}  ]}
+t3140302_008	in0207	0	0	Haha... Little {name_2} worked very hard, so big sister will reward your appropriately.		0	t3140302_009		0	0
+t3140302_009	in0207	0	0	Come to my room later, big sis will give you a leg massage... 		0	t3140302_010	f_stand00_talk23	0	0
 t3140302_010	in0103	2	0	No... No! {friend_2} {name_1}! Do not share a room with Master!	t3140302_020	0	t3140302_011	m_stand00_talk44	{ "LogicalNode" : [ { "CheckPlayerGender" : True}  ], 0}	0
 t3140302_011	in0103	0	0	I... go with me! I have to stare at you beside me!		0	t3140302_012		0	0
 t3140302_012	in0107	0	0	... Xia Sister Fox, we look at you.		0		m_stand00_talk00	0	0
@@ -17300,7 +17300,7 @@ t6070101_011		0	1	(Using painting into martial arts, I learned a stick technique
 t7010201_000	in0102	0	0	{friend_1} {name_1}, I passed by Wuming Building earlier and saw the pavilion master and Master Jing tidying up the things in the building.		0	t7010201_001		0	0
 t7010201_001	in0102	0	0	There are a lot of scrolls and ancient books in the building, and it takes a lot of time to sort them out.		0	t7010201_002		0	0
 t7010201_002	in0102	0	0	We as disciples are limited in what we can do, but at least we should be able to help share in tasks such as organizing the environment.		0	t7010201_008		0	0
-t7010201_003		0	0	(Duan Hong'er suddenly asks for something. If he promises to help, it will be <color=#FF0000>time-consuming</color>... Do you want to promise him?		1	t7010201_004,t7010201_005		0	0
+t7010201_003		0	0	(Duan Hong'er came with a sudden request, if you agree to help, it will <color=#FF0000>take some time</color>... Do you want to help her?		1	t7010201_004,t7010201_005		0	0
 t7010201_004		0	4	Sorry Miss Duan, it is not convenient now.		0	t7010201_007		0	0
 t7010201_005		0	3	OK, let's go together.		0	t7010201_006		0	{ "MultiAction" : [ { "SetFlagAction" : 0, 1, "fe7010201_2_01"}  ]}
 t7010201_006	in0102	1	0	Thank you {friend_1} {name_1}, with your help, it will be smoother.		0			0	0
