@@ -1,8 +1,10 @@
-﻿using BepInEx;
+﻿using System.IO;
+
+using BepInEx;
 
 using HarmonyLib;
 
-using System.IO;
+using ModAPI;
 
 namespace EnglishPatch
 {
@@ -11,9 +13,16 @@ namespace EnglishPatch
 
     [BepInPlugin("plugins.englishpatch", "English Patch", "1.0.0.0")]
     [BepInProcess("PathOfWuxia.exe")]
-    public class EnglishPatch : BaseUnityPlugin
+    public class EnglishPatch : BaseUnityPlugin, PoWMod
     {
+        private static string _VERSION = "0.9.0";
+        public string GetVersion()
+        {
+            return _VERSION;
+        }
+
         private Harmony _HM;
+
         void Awake()
         {
 

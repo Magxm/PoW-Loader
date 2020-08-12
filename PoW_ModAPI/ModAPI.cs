@@ -14,8 +14,13 @@ namespace ModAPI
     [BepInPlugin("plugins.modapi", "Mod API", "1.0.0.0")]
     [BepInProcess("PathOfWuxia.exe")]
 
-    public class ModAPI : BaseUnityPlugin
+    public class ModAPI : BaseUnityPlugin, PoWMod
     {
+        private static string _VERSION = "0.3.2";
+        public string GetVersion()
+        {
+            return _VERSION;
+        }
 
         public static ModAPI GetInstance()
         {
