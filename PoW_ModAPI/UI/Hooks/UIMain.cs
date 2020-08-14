@@ -1,0 +1,3 @@
+﻿namespace PoW_ModAPI
+{
+}
