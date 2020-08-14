@@ -288,12 +288,14 @@ namespace EnglishPatch.Hooks
             UnityEngine.UI.Text btn_text_text = (UnityEngine.UI.Text)btn_text.gameObject.GetComponentInChildren(typeof(UnityEngine.UI.Text));
             btn_text_text.text = "Credits";
 
+            /*
             //Reducing Menu Button Font Size
-            menu.Find("BtnContinue").Find("Btn").Find("Text").GetComponent<Text>().fontSize = 23;
+            menu.Find("BtnContinue").Find("Btn").Find("Text").GetComponent<Text>().fontSize = 20;
             menu.Find("BtnNewGame").Find("Btn").Find("Text").GetComponent<Text>().fontSize = 23;
             menu.Find("BtnLoadGame").Find("Btn").Find("Text").GetComponent<Text>().fontSize = 23;
-            menu.Find("BtnSystem").Find("Btn").Find("Text").GetComponent<Text>().fontSize = 23;
+            menu.Find("BtnSystem").Find("Btn").Find("Text").GetComponent<Text>().fontSize = 16;
             menu.Find("BtnQuitGame").Find("Btn").Find("Text").GetComponent<Text>().fontSize = 23;
+            */
 
             //Focing the UI to update itself after all the changes we made. We just force every RectTransform to update itself
             for (int i = 0; i < __instance.transform.childCount; ++i)
