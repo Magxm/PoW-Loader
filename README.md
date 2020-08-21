@@ -35,3 +35,7 @@ Method = .cctor
 
 otherwise the Entrypoint will be too late and some language files are already loaded.
 
+-------------------------------------------
+
+The dependency folder contains parts of the game and unitys assembly since they are needed for plugins.
+I do not hold any copyright to any file inside the Dependency folder.
