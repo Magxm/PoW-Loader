@@ -12,7 +12,7 @@ It also supports modifying textures inside prefabs, though that is experimental
 Additionally this repository contains the EnglishPatch Plugin, which registers Mods/EnglishTranslate as a resource folder (So place the translated Asset files into Mods/EnglishTranslate) as well as fixing several issues with displaying the English Text in the game.
 
 The Output folder contains an almost full release after building, containing more or less up to date English files and an already configured BepInEx.
-If BepInEx is updated/replaced by a new verion it is important to update the BepInEx.cfg and replace the following Entry.
+If BepInEx is updated/replaced by a new version it is important to update the BepInEx.cfg and replace the following Entry.
 
 ```ini
 [Preloader.Entrypoint]
