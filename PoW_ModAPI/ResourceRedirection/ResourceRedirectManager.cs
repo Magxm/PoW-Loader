@@ -178,6 +178,10 @@ namespace ModAPI
             {
                 context.Asset = LoadText(path);
             }
+            else if (context.Parameters.Type == typeof(Shader))
+            {
+                Debug.LogError("Loading Shader " + context.Parameters.Name);
+            }
 
             context.Complete(true, true, true);
         }
