@@ -63,7 +63,7 @@ namespace PoW_Tool_SheetUtilities
 
             //Filling SpreadsheetIDs dictionary with key name and value ID
             SpreadsheetIDs = new Dictionary<string, string>();
-            SpreadsheetIDs.Add("Talk", "1issvIcnWPXgWTreL0EXqZcFemqj7aSgl_VidaEIA0Dw");
+            SpreadsheetIDs.Add("Talk", "1DOehGiI6-qr4UHp5OO3IvGN830ynjtcaxaTn3hgaWmU");
         }
     }
 }

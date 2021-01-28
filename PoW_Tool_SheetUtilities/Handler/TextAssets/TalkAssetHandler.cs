@@ -191,7 +191,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
             ValueRange response = request.Execute();
             List<IList<object>> values = (List<IList<object>>)response.Values;
             int rowC = 1;
-            if (values != null && values.Count > 0)
+            if (false && values != null && values.Count > 0)
             {
                 foreach (var row in values)
                 {
@@ -215,15 +215,13 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                     rowC++;
                 }
             }
-
-            BingTranslator translator = new BingTranslator();
             //UpdatingRequests
-
             var updateRequests = new List<Request>();
 
             //Parse every line in the game file
             System.IO.StreamReader reader = new System.IO.StreamReader(gameFilePath);
             string line;
+            int c = 0;
             while ((line = reader.ReadLine()) != null)
             {
                 //We first parse the line into the parts
@@ -351,9 +349,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                     newEntry.TextChanged = true;
 
                     //Doing intial ML Translation
-                    var tTask = translator.Translate(originalText);
-                    tTask.Wait();
-                    string translatedText = tTask.Result;
+                    var translatedText = TranslationManager.GetInstance().Translate(originalText);
                     newEntry.Text = translatedText;
                     newEntry.TextMLTranslated = true;
 
@@ -363,6 +359,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                 }
             }
 
+            Console.WriteLine("Updating spreadsheet...");
             BatchUpdateSpreadsheetRequest batchUpdate = new BatchUpdateSpreadsheetRequest();
             batchUpdate.Requests = new List<Request>();
             int reqHandled = 0;
@@ -379,6 +376,8 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                     batchUpdate.Requests = new List<Request>();
                 }
             }
+
+            Console.WriteLine("Done!");
         }
     }
 }

@@ -8,7 +8,7 @@ using Newtonsoft.Json;
 
 namespace PoW_Tool_SheetUtilities.MachineTranslator
 {
-    class BingTranslator
+    class BingTranslator : ITranslator
     {
         internal class TranslationResult
         {
@@ -28,6 +28,10 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
             public string Text { get; set; }
             public string Script { get; set; }
         }
+        internal class Alignment
+        {
+            public string Proj { get; set; }
+        }
 
         internal class Translation
         {
@@ -38,30 +42,18 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
             public SentenceLength SentLen { get; set; }
         }
 
-        internal class Alignment
-        {
-            public string Proj { get; set; }
-        }
-
         internal class SentenceLength
         {
             public int[] SrcSentLen { get; set; }
             public int[] TransSentLen { get; set; }
         }
 
-        private static BingTranslator __Instance;
-        public static BingTranslator GetInstance()
+        private bool Useable = false;
+        public bool IsUseable()
         {
-            if (__Instance == null)
-            {
-                __Instance = new BingTranslator();
-            }
-
-            return __Instance;
+            return Useable;
         }
 
-
-        public bool InitSuccessful = false;
         private HttpClient httpClient = new HttpClient();
         private string authKey;
         private string endPoint;
@@ -71,13 +63,13 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
             //Reading Subscription key from file
             if (!File.Exists("AzureTranslateAuthKey.txt"))
             {
-                Console.WriteLine("AzureTranslateAuthKey.txt not found! Not using ML Translation...");
+                Console.WriteLine("AzureTranslateAuthKey.txt not found! Not using Bing translator...");
                 return;
             }
 
             if (!File.Exists("AzureTranslateEndpoint.txt"))
             {
-                Console.WriteLine("AzureTranslateEndpoint.txt not found! Not using ML Translation...");
+                Console.WriteLine("AzureTranslateEndpoint.txt not found! Not using Bing translator...");
                 return;
             }
 
@@ -85,15 +77,21 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
             authKey = File.ReadAllText("AzureTranslateAuthKey.txt");
             endPoint = File.ReadAllText("AzureTranslateEndpoint.txt");
 
-            InitSuccessful = true;
+            Useable = true;
         }
 
-        public async Task<string> Translate(string original)
+        public string Translate(string original)
         {
-            if (!InitSuccessful)
+            if (!IsUseable())
             {
                 return null;
             }
+
+            if (string.IsNullOrEmpty(original))
+            {
+                return "";
+            }
+
             //Creating request json
             object[] body = new object[] { new { Text = original } };
             var requestBody = JsonConvert.SerializeObject(body);
@@ -110,9 +108,11 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
                 request.Headers.Add("Ocp-Apim-Subscription-Region", "westeurope");
 
                 // Send the request and get response.
-                HttpResponseMessage response = await httpClient.SendAsync(request).ConfigureAwait(false);
+                var responseTask = httpClient.SendAsync(request).ConfigureAwait(false);
+                HttpResponseMessage response = responseTask.GetAwaiter().GetResult();
                 // Read response as a string.
-                string result = await response.Content.ReadAsStringAsync();
+                var resultTask = response.Content.ReadAsStringAsync();
+                var result =resultTask.GetAwaiter().GetResult();
                 // Deserialize the response using the classes created earlier.
                 TranslationResult[] deserializedOutput = JsonConvert.DeserializeObject<TranslationResult[]>(result);
                 // Iterate over the deserialized results.
@@ -129,6 +129,7 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
             }
 
             Console.WriteLine("Request failed!");
+            Useable = false;
             return null;
         }
     }
