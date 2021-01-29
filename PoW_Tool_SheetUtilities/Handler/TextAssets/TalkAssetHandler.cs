@@ -32,7 +32,8 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
             public string K = null;
             public string Script = null;
             public string SecondScript = null;
-            public string TranslatorNotes = "_UNTOUCHED_";
+            public string TranslatorNotes = "";
+            public string StandardizedTermLocator = "";
             public int row = -1;
 
             public bool TextChanged = false;
@@ -51,11 +52,14 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
 
                 var TextCellData = new CellData()
                 {
-                    UserEnteredValue = new ExtendedValue() { StringValue = Text }
+                    UserEnteredValue = new ExtendedValue() { StringValue = Text },
+                    UserEnteredFormat = null
                 };
+                var Fields = "userEnteredValue";
 
                 if (TextChanged)
                 {
+                    Fields = "userEnteredValue,userEnteredFormat";
                     if (TextMLTranslated)
                     {
                         TextCellData.UserEnteredFormat = new CellFormat()
@@ -144,6 +148,10 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                                     new CellData() {
                                         UserEnteredValue = new ExtendedValue() { StringValue = TranslatorNotes }
                                     },
+
+                                    new CellData() {
+                                        UserEnteredValue = new ExtendedValue() { StringValue = StandardizedTermLocator }
+                                    },
                                 },
                             },
                         };
@@ -159,7 +167,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                             EndRowIndex = row + 1,
                         },
                         Rows = Rows,
-                        Fields = "*"
+                        Fields = Fields
                     };
                 }
                 else
@@ -168,7 +176,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                     {
                         Rows = Rows,
                         SheetId = 0,
-                        Fields = "*"
+                        Fields = Fields
                     };
                 }
 
@@ -186,12 +194,12 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
             //Getting all current entries
             Dictionary<string, TalkEntry> talkEntries = new Dictionary<string, TalkEntry>();
 
-            string range = "A2:N";
+            string range = "A2:O";
             SpreadsheetsResource.ValuesResource.GetRequest request = gsc.Service.Spreadsheets.Values.Get(talkSpreadsheetId, range);
             ValueRange response = request.Execute();
             List<IList<object>> values = (List<IList<object>>)response.Values;
             int rowC = 1;
-            if (false && values != null && values.Count > 0)
+            if (values != null && values.Count > 0)
             {
                 foreach (var row in values)
                 {
@@ -208,7 +216,15 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                     te.K = (string)row[10];
                     te.Script = (string)row[11];
                     te.SecondScript = (string)row[12];
-                    te.TranslatorNotes = (string)row[13];
+                    if (row.Count > 13)
+                    {
+                        te.TranslatorNotes = (string)row[13];
+                    }
+                    if (row.Count > 14)
+                    {
+                        te.StandardizedTermLocator = (string)row[14];
+                    }
+
                     te.row = rowC;
 
                     talkEntries[te.DialogID] = te;
@@ -218,10 +234,11 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
             //UpdatingRequests
             var updateRequests = new List<Request>();
 
+            var standardizedTermLocator = StandardizedTermManager.GetInstance();
+
             //Parse every line in the game file
             System.IO.StreamReader reader = new System.IO.StreamReader(gameFilePath);
             string line;
-            int c = 0;
             while ((line = reader.ReadLine()) != null)
             {
                 //We first parse the line into the parts
@@ -238,6 +255,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                 string valueK = data[8];
                 string script = data[9];
                 string secondScript = data[10];
+                string standardizedTermText = standardizedTermLocator.GetTermLocatorText(originalText);
 
                 if (talkEntries.ContainsKey(dialogID))
                 {
@@ -254,6 +272,13 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
 
                         existingEntry.PreviousOriginalText = existingEntry.OriginalText;
                         existingEntry.OriginalText = originalText;
+                        existingEntry.StandardizedTermLocator = standardizedTermText;
+                        needsUpdate = true;
+                    }
+
+                    if (string.IsNullOrEmpty(existingEntry.StandardizedTermLocator)  && !string.IsNullOrEmpty(standardizedTermText))
+                    {
+                        existingEntry.StandardizedTermLocator = standardizedTermText;
                         needsUpdate = true;
                     }
 
@@ -345,6 +370,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                     newEntry.I = valueI;
                     newEntry.Script = script;
                     newEntry.SecondScript = secondScript;
+                    newEntry.StandardizedTermLocator = standardizedTermText;
 
                     newEntry.TextChanged = true;
 
@@ -363,11 +389,12 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
             BatchUpdateSpreadsheetRequest batchUpdate = new BatchUpdateSpreadsheetRequest();
             batchUpdate.Requests = new List<Request>();
             int reqHandled = 0;
+            //updateRequests.RemoveRange(2, updateRequests.Count - 2);
             foreach (var req in updateRequests)
             {
                 batchUpdate.Requests.Add(req);
                 reqHandled++;
-                if (batchUpdate.Requests.Count >= 100 || reqHandled >= updateRequests.Count)
+                if (batchUpdate.Requests.Count >= 500 || reqHandled >= updateRequests.Count)
                 {
                     var updateRequest = gsc.Service.Spreadsheets.BatchUpdate(batchUpdate, talkSpreadsheetId);
                     updateRequest.Execute();
