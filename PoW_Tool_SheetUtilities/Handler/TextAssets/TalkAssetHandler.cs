@@ -375,7 +375,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                     newEntry.TextChanged = true;
 
                     //Doing intial ML Translation
-                    var translatedText = TranslationManager.GetInstance().Translate(originalText);
+                    var translatedText = TranslationManager.GetInstance().Translate(standardizedTermText);
                     newEntry.Text = translatedText;
                     newEntry.TextMLTranslated = true;
 
