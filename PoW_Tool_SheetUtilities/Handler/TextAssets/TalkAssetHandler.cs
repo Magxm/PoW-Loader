@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 
 using Google.Apis.Sheets.v4;
 using Google.Apis.Sheets.v4.Data;
@@ -12,9 +13,50 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
 {
     internal class TalkAssetHandler : IFileHandler
     {
-        public void BuildGameDataFromSheet(string outRootPath)
+        public void BuildGameDataFromSheet(string outPath)
         {
-            throw new System.NotImplementedException();
+            GoogleSheetConnector gsc = GoogleSheetConnector.GetInstance();
+            string talkSpreadsheetId = gsc.SpreadsheetIDs["Talk"];
+
+            Console.WriteLine("Getting Talk Spreadsheet content");
+
+            //Getting all current entries
+            string range = "A2:O";
+            SpreadsheetsResource.ValuesResource.GetRequest request = gsc.Service.Spreadsheets.Values.Get(talkSpreadsheetId, range);
+            ValueRange response = request.Execute();
+            List<IList<object>> values = (List<IList<object>>)response.Values;
+
+            //Clearing talk File
+            string rootPath = Path.GetDirectoryName(outPath);
+            if (!Directory.Exists(rootPath))
+            {
+                Directory.CreateDirectory(rootPath);
+            }
+            File.WriteAllText(outPath, "");
+
+            //Getting all Sheet entries and dumping them into Talk.txt in right format
+
+            using (StreamWriter sw = File.AppendText(outPath))
+            {
+                if (values != null && values.Count > 0)
+                {
+                    foreach (var row in values)
+                    {
+                        sw.Write((string)row[0] + '\t'); //DialogID
+                        sw.Write((string)row[1] + '\t'); //TalkerID
+                        sw.Write((string)row[2] + '\t'); //C
+                        sw.Write((string)row[3] + '\t'); //D
+                        sw.Write((string)row[4] + '\t'); //The translated Text as Text
+                        sw.Write((string)row[7] + '\t'); //NextDialogId
+                        sw.Write((string)row[8] + '\t'); //I
+                        sw.Write((string)row[9] + '\t'); //AlternativeNextDialogId
+                        sw.Write((string)row[10] + '\t'); //K
+                        sw.Write((string)row[11] + '\t'); //Script
+                        sw.Write((string)row[12] + '\t'); //SecondScript
+                        sw.Write('\r');
+                    }
+                }
+            }
         }
 
         private class TalkEntry

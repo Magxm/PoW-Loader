@@ -23,6 +23,7 @@ namespace PoW_Tool_SheetUtilities
                     break;
                 case '2':
                     Console.WriteLine("Selected building English Mod data from spreadsheets");
+                    SpreadsheetUpdater.ExportToMod();
                     break;
                 default:
                     Console.WriteLine("ERROR: Invalid option!");

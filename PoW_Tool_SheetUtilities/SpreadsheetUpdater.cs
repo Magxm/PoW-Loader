@@ -20,5 +20,18 @@ namespace PoW_Tool_SheetUtilities
             TalkAssetHandler talkAssetHandler = new TalkAssetHandler();
             talkAssetHandler.UpdateSheetFromGameFile(talkPath);
         }
+
+        public static void ExportToMod()
+        {
+            //Get input folder path
+            string workingDirectory = Environment.CurrentDirectory;
+            string outputFolder = workingDirectory + Path.DirectorySeparatorChar + "Output";
+
+            string textAssetFolder = outputFolder + Path.DirectorySeparatorChar + "chs" + Path.DirectorySeparatorChar + "textfiles";
+
+            string talkPath = textAssetFolder + Path.DirectorySeparatorChar + "Talk.txt";
+            TalkAssetHandler talkAssetHandler = new TalkAssetHandler();
+            talkAssetHandler.BuildGameDataFromSheet(talkPath);
+        }
     }
 }
