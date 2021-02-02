@@ -13,16 +13,18 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
 {
     internal class TalkAssetHandler : IFileHandler
     {
-        public void BuildGameDataFromSheet(string outPath)
+        public static string SheetRange = "A2:O";
+
+        public void BuildGameDataFromSheet(string outRootPath)
         {
+            string outPath = outRootPath + Path.DirectorySeparatorChar + "Talk.txt";
             GoogleSheetConnector gsc = GoogleSheetConnector.GetInstance();
             string talkSpreadsheetId = gsc.SpreadsheetIDs["Talk"];
 
             Console.WriteLine("Getting Talk Spreadsheet content");
 
             //Getting all current entries
-            string range = "A2:O";
-            SpreadsheetsResource.ValuesResource.GetRequest request = gsc.Service.Spreadsheets.Values.Get(talkSpreadsheetId, range);
+            SpreadsheetsResource.ValuesResource.GetRequest request = gsc.Service.Spreadsheets.Values.Get(talkSpreadsheetId, SheetRange);
             ValueRange response = request.Execute();
             List<IList<object>> values = (List<IList<object>>)response.Values;
 
@@ -198,7 +200,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                             },
                         };
 
-                if (row >= 2)
+                if (row >= 1)
                 {
                     updateRequest.UpdateCells = new UpdateCellsRequest
                     {
@@ -226,8 +228,10 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
             }
         }
 
-        public void UpdateSheetFromGameFile(string gameFilePath)
+
+        public void UpdateSheetFromGameFile(string gameFileRootPath)
         {
+            string gameFilePath = gameFileRootPath + Path.DirectorySeparatorChar + "Talk.bytes";
             GoogleSheetConnector gsc = GoogleSheetConnector.GetInstance();
             string talkSpreadsheetId = gsc.SpreadsheetIDs["Talk"];
 
@@ -235,9 +239,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
 
             //Getting all current entries
             Dictionary<string, TalkEntry> talkEntries = new Dictionary<string, TalkEntry>();
-
-            string range = "A2:O";
-            SpreadsheetsResource.ValuesResource.GetRequest request = gsc.Service.Spreadsheets.Values.Get(talkSpreadsheetId, range);
+            SpreadsheetsResource.ValuesResource.GetRequest request = gsc.Service.Spreadsheets.Values.Get(talkSpreadsheetId, SheetRange);
             ValueRange response = request.Execute();
             List<IList<object>> values = (List<IList<object>>)response.Values;
             int rowC = 1;
@@ -275,15 +277,15 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
             }
             //UpdatingRequests
             var updateRequests = new List<Request>();
-
             var standardizedTermLocator = StandardizedTermManager.GetInstance();
 
+            Console.WriteLine("Comparing with games version and calculating updates...");
             //Parse every line in the game file
             System.IO.StreamReader reader = new System.IO.StreamReader(gameFilePath);
             string line;
             while ((line = reader.ReadLine()) != null)
             {
-                //We first parse the line into the parts
+                //We first splite the line into the parts
                 string[] data = line.Split('\t');
 
                 string dialogID = data[0];

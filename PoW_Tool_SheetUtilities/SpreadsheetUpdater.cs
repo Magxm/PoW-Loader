@@ -15,10 +15,8 @@ namespace PoW_Tool_SheetUtilities
 
             //Parsing TextAssets
             string textAssetFolder = inputFolder + Path.DirectorySeparatorChar + "chs" + Path.DirectorySeparatorChar + "textfiles";
-
-            string talkPath = textAssetFolder + Path.DirectorySeparatorChar + "Talk.bytes";
-            TalkAssetHandler talkAssetHandler = new TalkAssetHandler();
-            talkAssetHandler.UpdateSheetFromGameFile(talkPath);
+            //new TalkAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
+            new AchievementAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
         }
 
         public static void ExportToMod()
@@ -30,8 +28,7 @@ namespace PoW_Tool_SheetUtilities
             string textAssetFolder = outputFolder + Path.DirectorySeparatorChar + "chs" + Path.DirectorySeparatorChar + "textfiles";
 
             string talkPath = textAssetFolder + Path.DirectorySeparatorChar + "Talk.txt";
-            TalkAssetHandler talkAssetHandler = new TalkAssetHandler();
-            talkAssetHandler.BuildGameDataFromSheet(talkPath);
+            new TalkAssetHandler().BuildGameDataFromSheet(talkPath);
         }
     }
 }

@@ -2,7 +2,7 @@
 {
     interface IFileHandler
     {
-        void UpdateSheetFromGameFile(string gameFilePath);
+        void UpdateSheetFromGameFile(string gameFileRootPath);
         void BuildGameDataFromSheet(string outRootPath);
     }
 }
