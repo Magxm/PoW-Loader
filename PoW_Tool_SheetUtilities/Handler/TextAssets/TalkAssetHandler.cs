@@ -37,7 +37,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
             File.WriteAllText(outPath, "");
 
             //Getting all Sheet entries and dumping them into Talk.txt in right format
-
+            Console.WriteLine("Constructing Talk.txt...");
             using (StreamWriter sw = File.AppendText(outPath))
             {
                 if (values != null && values.Count > 0)
@@ -59,6 +59,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                     }
                 }
             }
+            Console.WriteLine("Done!");
         }
 
         private class TalkEntry
@@ -131,7 +132,6 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                         };
                     }
                 }
-
 
                 var Rows = new List<RowData>
                  {
@@ -228,7 +228,6 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
             }
         }
 
-
         public void UpdateSheetFromGameFile(string gameFileRootPath)
         {
             string gameFilePath = gameFileRootPath + Path.DirectorySeparatorChar + "Talk.bytes";
@@ -320,7 +319,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                         needsUpdate = true;
                     }
 
-                    if (string.IsNullOrEmpty(existingEntry.StandardizedTermLocator)  && !string.IsNullOrEmpty(standardizedTermText))
+                    if (string.IsNullOrEmpty(existingEntry.StandardizedTermLocator) && !string.IsNullOrEmpty(standardizedTermText))
                     {
                         existingEntry.StandardizedTermLocator = standardizedTermText;
                         needsUpdate = true;
@@ -353,7 +352,6 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                         needsUpdate = true;
                     }
 
-
                     //Updating C, D, I and K
                     if (existingEntry.C != valueC)
                     {
@@ -378,8 +376,6 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                         existingEntry.K = valueK;
                         needsUpdate = true;
                     }
-
-
 
                     //Updating Script and SecondScript
 
@@ -422,7 +418,6 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                     var translatedText = TranslationManager.GetInstance().Translate(standardizedTermText);
                     newEntry.Text = translatedText;
                     newEntry.TextMLTranslated = true;
-
 
                     rowC++;
                     updateRequests.Add(newEntry.ToGoogleSheetUpdateRequest());

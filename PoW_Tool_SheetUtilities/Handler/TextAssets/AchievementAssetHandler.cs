@@ -12,9 +12,10 @@ using System.Threading.Tasks;
 
 namespace PoW_Tool_SheetUtilities.Handler.TextAssets
 {
-    class AchievementAssetHandler : IFileHandler
+    internal class AchievementAssetHandler : IFileHandler
     {
         public static string SheetRange = "A2:F";
+
         private class AchievementEntry
         {
             public string ID;
@@ -26,12 +27,12 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
             public int row = -1;
 
             public bool ShortTextChanged = false;
-            public bool ShortTextMLTranslated = false;
             public bool LongTextChanged = false;
-            public bool LongTextMLTranslated = false;
+            public bool MLTranslated = false;
 
             public AchievementEntry()
-            {}
+            { }
+
             public AchievementEntry(IList<object> row)
             {
                 ID = (string)row[0];
@@ -63,9 +64,20 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                 if (ShortTextChanged || LongTextChanged)
                 {
                     Fields = "userEnteredValue,userEnteredFormat";
-                    if (ShortTextMLTranslated)
+                    if (MLTranslated)
                     {
                         ShortTextCellData.UserEnteredFormat = new CellFormat()
+                        {
+                            BackgroundColor = new Color()
+                            {
+                                Alpha = 1.0f,
+                                Red = 1.0f,
+                                Green = 0.66f,
+                                Blue = 0.0f
+                            }
+                        };
+
+                        LongTextCellData.UserEnteredFormat = new CellFormat()
                         {
                             BackgroundColor = new Color()
                             {
@@ -88,23 +100,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                                 Blue = 0.02f
                             }
                         };
-                    }
 
-                    if (LongTextMLTranslated)
-                    {
-                        LongTextCellData.UserEnteredFormat = new CellFormat()
-                        {
-                            BackgroundColor = new Color()
-                            {
-                                Alpha = 1.0f,
-                                Red = 1.0f,
-                                Green = 0.66f,
-                                Blue = 0.0f
-                            }
-                        };
-                    }
-                    else
-                    {
                         LongTextCellData.UserEnteredFormat = new CellFormat()
                         {
                             BackgroundColor = new Color()
@@ -176,7 +172,41 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
 
         public void BuildGameDataFromSheet(string outRootPath)
         {
-            throw new NotImplementedException();
+            string outPath = outRootPath + Path.DirectorySeparatorChar + "Achievment.txt";
+            GoogleSheetConnector gsc = GoogleSheetConnector.GetInstance();
+            string talkSpreadsheetId = gsc.SpreadsheetIDs["Achievement"];
+
+            Console.WriteLine("Getting Achievement Spreadsheet content");
+
+            //Getting all current entries
+            SpreadsheetsResource.ValuesResource.GetRequest request = gsc.Service.Spreadsheets.Values.Get(talkSpreadsheetId, SheetRange);
+            ValueRange response = request.Execute();
+            List<IList<object>> values = (List<IList<object>>)response.Values;
+
+            //Clearing talk File
+            string rootPath = Path.GetDirectoryName(outPath);
+            if (!Directory.Exists(rootPath))
+            {
+                Directory.CreateDirectory(rootPath);
+            }
+            File.WriteAllText(outPath, "");
+
+            Console.WriteLine("Constructing Achievment.txt...");
+            using (StreamWriter sw = File.AppendText(outPath))
+            {
+                if (values != null && values.Count > 0)
+                {
+                    foreach (var row in values)
+                    {
+                        sw.Write((string)row[0] + '\t'); //ID
+                        sw.Write((string)row[1] + '\t'); //ShortText
+                        sw.Write((string)row[3] + '\t'); //LongText
+                        sw.Write((string)row[5] + '\t'); //D
+                        sw.Write('\r');
+                    }
+                }
+            }
+            Console.WriteLine("Done!");
         }
 
         public void UpdateSheetFromGameFile(string gameFileRootPath)
@@ -203,7 +233,6 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                     rowC++;
                 }
             }
-
 
             //UpdatingRequests
             var updateRequests = new List<Request>();
@@ -262,12 +291,11 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                     newEntry.ShortOriginalText = ShortOriginalText;
                     newEntry.ShortText = TranslationManager.GetInstance().Translate(ShortOriginalText);
                     newEntry.ShortTextChanged = true;
-                    newEntry.ShortTextMLTranslated = true;
                     newEntry.LongOriginalText = LongOriginalText;
                     newEntry.LongText = TranslationManager.GetInstance().Translate(LongOriginalText);
                     newEntry.D = D;
                     newEntry.LongTextChanged = true;
-                    newEntry.LongTextMLTranslated = true;
+                    newEntry.MLTranslated = true;
 
                     updateRequests.Add(newEntry.ToGoogleSheetUpdateRequest());
                 }

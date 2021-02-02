@@ -10,10 +10,11 @@ using Google.Apis.Util.Store;
 
 namespace PoW_Tool_SheetUtilities
 {
-    class GoogleSheetConnector
+    internal class GoogleSheetConnector
     {
         //Singleton
         private static GoogleSheetConnector __Instance = null;
+
         public static GoogleSheetConnector GetInstance()
         {
             if (__Instance == null)
@@ -30,6 +31,7 @@ namespace PoW_Tool_SheetUtilities
         public Dictionary<string, string> SpreadsheetIDs;
         public Dictionary<string, string> SpreadsheetIDInts;
         public SheetsService Service = null;
+
         private GoogleSheetConnector()
         {
             Console.WriteLine("Connecting to Google Sheets API...");
@@ -66,6 +68,7 @@ namespace PoW_Tool_SheetUtilities
             SpreadsheetIDs.Add("Talk", "1lmIjyewgIZfy2tqanCz1h1aPaKDcsbMOKOu1W5sjQzw");
             SpreadsheetIDs.Add("StandardizedTerms", "1GVyGWijCuuSlgkyOzTLwutRiS-mlCf5Lc35Y-mY7TR4");
             SpreadsheetIDs.Add("Achievement", "1M4b0Io5_KMvyoobHybAqrGJdU_qfrmh74U4OPT_k7dM");
+            SpreadsheetIDs.Add("Adjustment", "1y32hg87yVTc67Bay6pF_ZhMPVf6lo1UpEULwZOn92o8");
         }
     }
 }
