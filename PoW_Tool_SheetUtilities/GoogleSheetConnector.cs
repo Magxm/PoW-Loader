@@ -65,6 +65,7 @@ namespace PoW_Tool_SheetUtilities
             SpreadsheetIDs = new Dictionary<string, string>();
             SpreadsheetIDs.Add("Talk", "1lmIjyewgIZfy2tqanCz1h1aPaKDcsbMOKOu1W5sjQzw");
             SpreadsheetIDs.Add("StandardizedTerms", "1GVyGWijCuuSlgkyOzTLwutRiS-mlCf5Lc35Y-mY7TR4");
+            SpreadsheetIDs.Add("Achievement", "1M4b0Io5_KMvyoobHybAqrGJdU_qfrmh74U4OPT_k7dM");
         }
     }
 }
