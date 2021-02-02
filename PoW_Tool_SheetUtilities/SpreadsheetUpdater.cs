@@ -16,8 +16,8 @@ namespace PoW_Tool_SheetUtilities
             //Parsing TextAssets
             string textAssetFolder = inputFolder + Path.DirectorySeparatorChar + "chs" + Path.DirectorySeparatorChar + "textfiles";
             //new TalkAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
-            //new AchievementAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
-            //new AdjustmentAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
+            new AchievementAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
+            new AdjustmentAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
             new AlchemyAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
         }
 

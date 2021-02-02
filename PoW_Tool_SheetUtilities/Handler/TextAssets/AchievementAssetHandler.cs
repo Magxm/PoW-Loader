@@ -14,7 +14,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
 {
     internal class AchievementAssetHandler : IFileHandler
     {
-        public static string SheetRange = "A2:F";
+        public static string SheetRange = "A2:H";
 
         private class AchievementEntry
         {
@@ -24,6 +24,9 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
             public string LongText;
             public string LongOriginalText;
             public string D;
+
+            public string StandardizedTerm_Short = "";
+            public string StandardizedTerm_Long = "";
             public int row = -1;
 
             public bool ShortTextChanged = false;
@@ -41,6 +44,14 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                 LongText = (string)row[3];
                 LongOriginalText = (string)row[4];
                 D = (string)row[5];
+                if (row.Count > 6)
+                {
+                    StandardizedTerm_Short = (string)row[6];
+                }
+                if (row.Count > 7)
+                {
+                    StandardizedTerm_Short = (string)row[7];
+                }
             }
 
             public Request ToGoogleSheetUpdateRequest()
@@ -137,6 +148,14 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                             new CellData()
                             {
                                 UserEnteredValue = new ExtendedValue(){StringValue = D}
+                            },
+                            new CellData()
+                            {
+                                UserEnteredValue = new ExtendedValue(){StringValue = StandardizedTerm_Short}
+                            },
+                            new CellData()
+                            {
+                                UserEnteredValue = new ExtendedValue(){StringValue = StandardizedTerm_Long}
                             },
                         }
                     }
@@ -252,6 +271,9 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                 string LongOriginalText = data[2];
                 string D = data[3];
 
+                string StandardizedTerm_Short = StandardizedTermManager.GetInstance().GetTermLocatorText(ShortOriginalText);
+                string StandardizedTerm_Long = StandardizedTermManager.GetInstance().GetTermLocatorText(LongOriginalText);
+
                 if (achievementEntries.ContainsKey(ID))
                 {
                     //Compare and update
@@ -272,6 +294,18 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                         needsUpdate = true;
                     }
 
+                    if (!string.IsNullOrEmpty(StandardizedTerm_Short) && existingEntry.StandardizedTerm_Short != StandardizedTerm_Short)
+                    {
+                        existingEntry.StandardizedTerm_Short = StandardizedTerm_Short;
+                        needsUpdate = true;
+                    }
+
+                    if (!string.IsNullOrEmpty(StandardizedTerm_Long) && existingEntry.StandardizedTerm_Long != StandardizedTerm_Long)
+                    {
+                        existingEntry.StandardizedTerm_Long = StandardizedTerm_Long;
+                        needsUpdate = true;
+                    }
+
                     if (existingEntry.D != D)
                     {
                         existingEntry.D = D;
@@ -289,13 +323,15 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                     AchievementEntry newEntry = new AchievementEntry();
                     newEntry.ID = ID;
                     newEntry.ShortOriginalText = ShortOriginalText;
-                    newEntry.ShortText = TranslationManager.GetInstance().Translate(ShortOriginalText);
+                    newEntry.ShortText = TranslationManager.GetInstance().Translate(StandardizedTerm_Short);
                     newEntry.ShortTextChanged = true;
                     newEntry.LongOriginalText = LongOriginalText;
-                    newEntry.LongText = TranslationManager.GetInstance().Translate(LongOriginalText);
+                    newEntry.LongText = TranslationManager.GetInstance().Translate(StandardizedTerm_Long);
                     newEntry.D = D;
                     newEntry.LongTextChanged = true;
                     newEntry.MLTranslated = true;
+                    newEntry.StandardizedTerm_Short = StandardizedTerm_Short;
+                    newEntry.StandardizedTerm_Long = StandardizedTerm_Long;
 
                     updateRequests.Add(newEntry.ToGoogleSheetUpdateRequest());
                 }
