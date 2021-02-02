@@ -17,7 +17,8 @@ namespace PoW_Tool_SheetUtilities
             string textAssetFolder = inputFolder + Path.DirectorySeparatorChar + "chs" + Path.DirectorySeparatorChar + "textfiles";
             //new TalkAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
             //new AchievementAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
-            new AdjustmentAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
+            //new AdjustmentAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
+            new AlchemyAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
         }
 
         public static void ExportToMod()
@@ -31,6 +32,7 @@ namespace PoW_Tool_SheetUtilities
             new TalkAssetHandler().BuildGameDataFromSheet(textAssetFolder);
             new AchievementAssetHandler().BuildGameDataFromSheet(textAssetFolder);
             new AdjustmentAssetHandler().BuildGameDataFromSheet(textAssetFolder);
+            new AlchemyAssetHandler().BuildGameDataFromSheet(textAssetFolder);
         }
     }
 }
