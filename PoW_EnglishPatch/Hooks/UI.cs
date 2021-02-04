@@ -269,44 +269,44 @@ namespace EnglishPatch.Hooks
             UnityEngine.UI.Text monthUnitText = monthUnit.gameObject.GetComponent<UnityEngine.UI.Text>();
             monthUnitText.text = "Month";
             monthUnitText.fontSize = 28;
-        }
+       }
     }
 
     /*
     * Do all MainUI manipulation in this function.
     */
-    [HarmonyPatch(typeof(UIMain), "Show")]
-    public class UIMain_Show_Hook
-    {
-        public static void Postfix(ref UIMain __instance)
-        {
-            RectTransform menu = (RectTransform)__instance.transform.Find("Menu");
-            //Updating the Credits Button Text
-            RectTransform btnMember = (RectTransform)menu.Find("BtnMember");
-            RectTransform btn = (RectTransform)btnMember.Find("Btn");
-            RectTransform btn_text = (RectTransform)btn.Find("Text");
-            UnityEngine.UI.Text btn_text_text = (UnityEngine.UI.Text)btn_text.gameObject.GetComponentInChildren(typeof(UnityEngine.UI.Text));
-            btn_text_text.text = "Credits";
+  //  [HarmonyPatch(typeof(UIMain), "Show")]
+   // public class UIMain_Show_Hook
+   // {
+     //   public static void Postfix(ref UIMain __instance)
+    //    {
+     //       RectTransform menu = (RectTransform)__instance.transform.Find("Menu");
+       //     //Updating the Credits Button Text
+         //   RectTransform btnMember = (RectTransform)menu.Find("BtnMember");
+           // RectTransform btn = (RectTransform)btnMember.Find("Btn");
+          //  RectTransform btn_text = (RectTransform)btn.Find("Text");
+         //   UnityEngine.UI.Text btn_text_text = (UnityEngine.UI.Text)btn_text.gameObject.GetComponentInChildren(typeof(UnityEngine.UI.Text));
+         //   btn_text_text.text = "Credits";
 
             /*
             //Reducing Menu Button Font Size
-            menu.Find("BtnContinue").Find("Btn").Find("Text").GetComponent<Text>().fontSize = 20;
-            menu.Find("BtnNewGame").Find("Btn").Find("Text").GetComponent<Text>().fontSize = 23;
-            menu.Find("BtnLoadGame").Find("Btn").Find("Text").GetComponent<Text>().fontSize = 23;
-            menu.Find("BtnSystem").Find("Btn").Find("Text").GetComponent<Text>().fontSize = 16;
-            menu.Find("BtnQuitGame").Find("Btn").Find("Text").GetComponent<Text>().fontSize = 23;
+        //    menu.Find("BtnContinue").Find("Btn").Find("Text").GetComponent<Text>().fontSize = 20;
+       //     menu.Find("BtnNewGame").Find("Btn").Find("Text").GetComponent<Text>().fontSize = 23;
+       //     menu.Find("BtnLoadGame").Find("Btn").Find("Text").GetComponent<Text>().fontSize = 23;
+       //    menu.Find("BtnSystem").Find("Btn").Find("Text").GetComponent<Text>().fontSize = 16;
+        //    menu.Find("BtnQuitGame").Find("Btn").Find("Text").GetComponent<Text>().fontSize = 23;
             */
 
             //Focing the UI to update itself after all the changes we made. We just force every RectTransform to update itself
-            for (int i = 0; i < __instance.transform.childCount; ++i)
-            {
-                Transform t = __instance.transform.GetChild(i);
-                if (t != null && t.GetType() == typeof(RectTransform))
-                {
-                    RectTransform rt = t as RectTransform;
-                    rt.ForceUpdateRectTransforms();
-                }
-            }
-        }
-    }
+            //for (int i = 0; i < __instance.transform.childCount; ++i)
+            //{
+            //    Transform t = __instance.transform.GetChild(i);
+            //    if (t != null && t.GetType() == typeof(RectTransform))
+            //    {
+            //        RectTransform rt = t as RectTransform;
+            //        rt.ForceUpdateRectTransforms();
+            //    }
+    //        }
+   //     }
+   // }
 }
