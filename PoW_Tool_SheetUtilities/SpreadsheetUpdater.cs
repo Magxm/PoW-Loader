@@ -5,7 +5,7 @@ using PoW_Tool_SheetUtilities.Handler.TextAssets;
 
 namespace PoW_Tool_SheetUtilities
 {
-    class SpreadsheetUpdater
+    internal class SpreadsheetUpdater
     {
         public static void UpdateSpreadsheetsFromGameFiles()
         {
@@ -15,10 +15,10 @@ namespace PoW_Tool_SheetUtilities
 
             //Parsing TextAssets
             string textAssetFolder = inputFolder + Path.DirectorySeparatorChar + "chs" + Path.DirectorySeparatorChar + "textfiles";
-
-            string talkPath = textAssetFolder + Path.DirectorySeparatorChar + "Talk.bytes";
-            TalkAssetHandler talkAssetHandler = new TalkAssetHandler();
-            talkAssetHandler.UpdateSheetFromGameFile(talkPath);
+            //new TalkAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
+            new AchievementAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
+            new AdjustmentAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
+            new AlchemyAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
         }
 
         public static void ExportToMod()
@@ -29,9 +29,10 @@ namespace PoW_Tool_SheetUtilities
 
             string textAssetFolder = outputFolder + Path.DirectorySeparatorChar + "chs" + Path.DirectorySeparatorChar + "textfiles";
 
-            string talkPath = textAssetFolder + Path.DirectorySeparatorChar + "Talk.txt";
-            TalkAssetHandler talkAssetHandler = new TalkAssetHandler();
-            talkAssetHandler.BuildGameDataFromSheet(talkPath);
+            new TalkAssetHandler().BuildGameDataFromSheet(textAssetFolder);
+            new AchievementAssetHandler().BuildGameDataFromSheet(textAssetFolder);
+            new AdjustmentAssetHandler().BuildGameDataFromSheet(textAssetFolder);
+            new AlchemyAssetHandler().BuildGameDataFromSheet(textAssetFolder);
         }
     }
 }
