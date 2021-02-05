@@ -70,6 +70,7 @@ namespace PoW_Tool_SheetUtilities
             SpreadsheetIDs.Add("Achievement", "1M4b0Io5_KMvyoobHybAqrGJdU_qfrmh74U4OPT_k7dM");
             SpreadsheetIDs.Add("Adjustment", "1y32hg87yVTc67Bay6pF_ZhMPVf6lo1UpEULwZOn92o8");
             SpreadsheetIDs.Add("Alchemy", "1mEpb_0IGXA-DlU30uz6kLZye4fzCqA7Dga9Qqg1YEgk");
+            SpreadsheetIDs.Add("Skill", "1DgoiJ-o9cJhZI9mNhpi7XK38DGAkZrb__fODcUUGDRU");
         }
     }
 }
