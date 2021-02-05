@@ -21,7 +21,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
             public string ID2;
             public string StandardizedTermLocator_Name = "";
 
-            public int row;
+            public int row = -1;
 
             public bool NameChanged = false;
             public bool MLTranslated = false;
