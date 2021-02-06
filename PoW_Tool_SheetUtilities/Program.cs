@@ -22,6 +22,7 @@ namespace PoW_Tool_SheetUtilities
 
             string outputFolder;
             var input = Console.ReadKey().KeyChar;
+            Console.WriteLine("\r          \n");
             switch (input)
             {
                 case '1':
