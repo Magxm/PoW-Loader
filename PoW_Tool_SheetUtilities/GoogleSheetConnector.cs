@@ -71,6 +71,7 @@ namespace PoW_Tool_SheetUtilities
             SpreadsheetIDs.Add("Adjustment", "1y32hg87yVTc67Bay6pF_ZhMPVf6lo1UpEULwZOn92o8");
             SpreadsheetIDs.Add("Alchemy", "1mEpb_0IGXA-DlU30uz6kLZye4fzCqA7Dga9Qqg1YEgk");
             SpreadsheetIDs.Add("Skill", "1DgoiJ-o9cJhZI9mNhpi7XK38DGAkZrb__fODcUUGDRU");
+            SpreadsheetIDs.Add("Buffer", "149AKUIe9dudiedmI99tGd0WxC-YmE30TgaZYEo2vNyg");
         }
     }
 }

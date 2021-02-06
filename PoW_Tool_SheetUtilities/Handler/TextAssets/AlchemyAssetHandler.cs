@@ -288,7 +288,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                 }
             }
 
-            Console.WriteLine("Done!");
+            Console.WriteLine("Done! Updated" + reqHandled + " Entries!");
         }
     }
 }
