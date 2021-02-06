@@ -191,7 +191,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
 
         public void BuildGameDataFromSheet(string outRootPath)
         {
-            string outPath = outRootPath + Path.DirectorySeparatorChar + "Achievment.txt";
+            string outPath = outRootPath + Path.DirectorySeparatorChar + "Achievement.txt";
             GoogleSheetConnector gsc = GoogleSheetConnector.GetInstance();
             string talkSpreadsheetId = gsc.SpreadsheetIDs["Achievement"];
 
@@ -210,7 +210,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
             }
             File.WriteAllText(outPath, "");
 
-            Console.WriteLine("Constructing Achievment.txt...");
+            Console.WriteLine("Constructing Achievement.txt...");
             using (StreamWriter sw = File.AppendText(outPath))
             {
                 if (values != null && values.Count > 0)
