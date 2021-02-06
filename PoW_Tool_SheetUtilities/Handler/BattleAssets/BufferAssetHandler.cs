@@ -498,7 +498,7 @@ namespace PoW_Tool_SheetUtilities.Handler.BattleAssets
                 }
             }
 
-            Console.WriteLine("Done! Updated" + reqHandled + " Entries!");
+            Console.WriteLine("Done! Updated " + reqHandled + " Entries!");
         }
     }
 }

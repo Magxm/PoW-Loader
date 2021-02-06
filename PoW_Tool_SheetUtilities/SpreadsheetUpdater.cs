@@ -27,11 +27,9 @@ namespace PoW_Tool_SheetUtilities
             new BufferAssetHandler().UpdateSheetFromGameFile(battleAssetFolder);
         }
 
-        public static void ExportToMod()
+        public static void ExportToMod(string outputFolder)
         {
             //Get input folder path
-            string workingDirectory = Environment.CurrentDirectory;
-            string outputFolder = workingDirectory + Path.DirectorySeparatorChar + "Output";
             string textAssetFolder = outputFolder + Path.DirectorySeparatorChar + "chs" + Path.DirectorySeparatorChar + "textfiles";
 
             //Exporting TextAssets
