@@ -298,7 +298,7 @@ namespace PoW_Tool_SheetUtilities.Handler.BattleAssets
                         dataString += (string)row[12] + '\t';  //Pos/Neg
                         dataString += (string)row[13] + '\t'; //N
                         dataString += (string)row[14] + '\t'; //O
-                        dataString += (string)row[15] + '\t'; //Script
+                        dataString += (string)row[15]; //Script
 
                         string bufferFilePath = buffersPath + Path.DirectorySeparatorChar + (string)row[0];
                         File.WriteAllText(bufferFilePath, dataString);

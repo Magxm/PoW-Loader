@@ -220,7 +220,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                         sw.Write((string)row[0] + '\t'); //ID
                         sw.Write((string)row[1] + '\t'); //ShortText
                         sw.Write((string)row[3] + '\t'); //LongText
-                        sw.Write((string)row[5] + '\t'); //D
+                        sw.Write((string)row[5]); //D
                         sw.Write('\r');
                     }
                 }

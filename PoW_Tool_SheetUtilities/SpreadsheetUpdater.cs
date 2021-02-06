@@ -16,12 +16,12 @@ namespace PoW_Tool_SheetUtilities
 
             //Updating TextAssets
             string textAssetFolder = inputFolder + Path.DirectorySeparatorChar + "chs" + Path.DirectorySeparatorChar + "textfiles";
-            //new TalkAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
-            //new AchievementAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
-            //new AdjustmentAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
-            //new AlchemyAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
+            new TalkAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
+            new AchievementAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
+            new AdjustmentAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
+            new AlchemyAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
             //new AnimationMappingAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
-            //new SkillAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
+            new SkillAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
             //Updating battle related Assets
             string battleAssetFolder = inputFolder + Path.DirectorySeparatorChar + "chs" + Path.DirectorySeparatorChar + "battle";
             new BufferAssetHandler().UpdateSheetFromGameFile(battleAssetFolder);

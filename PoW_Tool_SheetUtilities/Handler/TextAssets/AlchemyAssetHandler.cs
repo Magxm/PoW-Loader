@@ -172,7 +172,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                     {
                         sw.Write((string)row[0] + '\t'); //ID
                         sw.Write((string)row[1] + '\t'); //Name
-                        sw.Write((string)row[3] + '\t'); //ID2
+                        sw.Write((string)row[3]); //ID2
                         sw.Write('\r');
                     }
                 }

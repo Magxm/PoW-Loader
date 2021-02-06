@@ -54,7 +54,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                         sw.Write((string)row[9] + '\t'); //AlternativeNextDialogId
                         sw.Write((string)row[10] + '\t'); //K
                         sw.Write((string)row[11] + '\t'); //Script
-                        sw.Write((string)row[12] + '\t'); //SecondScript
+                        sw.Write((string)row[12]); //SecondScript
                         sw.Write('\r');
                     }
                 }

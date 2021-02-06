@@ -306,7 +306,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                         sw.Write((string)row[9] + '\t'); //J
                         sw.Write((string)row[10] + '\t'); //H
                         sw.Write((string)row[11] + '\t'); //NPC ID 1
-                        sw.Write((string)row[12] + '\t'); //NPC ID 2
+                        sw.Write((string)row[12]); //NPC ID 2
                         sw.Write('\r');
                     }
                 }

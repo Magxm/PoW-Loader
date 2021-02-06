@@ -420,7 +420,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                         sw.Write((string)row[30] + '\t'); //AE
                         sw.Write((string)row[31] + '\t'); //AF
                         sw.Write((string)row[32] + '\t'); //AG
-                        sw.Write((string)row[33] + '\t'); //Script
+                        sw.Write((string)row[33]); //Script
                         sw.Write('\r');
                     }
                 }
