@@ -13,6 +13,48 @@ namespace PoW_Tool_SheetUtilities
             SpreadsheetUpdater.UpdateSpreadsheetsFromGameFiles();
         }
 
+        private static void CheckAssetFormat()
+        {
+            Console.WriteLine("Enter File Name:");
+            string fileName = Console.ReadLine();
+            var filePath = Environment.CurrentDirectory + Path.DirectorySeparatorChar + "Input" + Path.DirectorySeparatorChar + "chs" + Path.DirectorySeparatorChar + "textfiles" + Path.DirectorySeparatorChar + fileName + ".bytes";
+
+            string line;
+            int variableAmount = 0;
+
+            string[] exampleEntry = null;
+            int exampleEntryUnemptyEntries = 0;
+            System.IO.StreamReader reader = new System.IO.StreamReader(filePath);
+            while ((line = reader.ReadLine()) != null)
+            {
+                string[] data = line.Split('\t');
+                variableAmount = data.Length;
+                if (exampleEntry == null)
+                {
+                    exampleEntry = new string[variableAmount];
+                }
+                for (int i = 0; i < variableAmount; i++)
+                {
+                    if (string.IsNullOrEmpty(exampleEntry[i]) && !string.IsNullOrEmpty(data[i]))
+                    {
+                        exampleEntry[i] = data[i];
+                    }
+                }
+            }
+
+            if (exampleEntry != null)
+            {
+                Console.WriteLine("Variable count: " + variableAmount);
+                Console.WriteLine("Example values (this is not an existing entry, but glued together so all values are none null): ");
+                for (int i = 0; i < variableAmount; i++)
+                {
+                    Console.WriteLine("\t\t" + i + ": " + exampleEntry[i]);
+                }
+            }
+
+            reader.Close();
+        }
+
         private static void Export()
         {
             string workingDirectory = Environment.CurrentDirectory;
@@ -43,9 +85,12 @@ namespace PoW_Tool_SheetUtilities
 
         private static void Main(string[] args)
         {
+            Console.OutputEncoding = System.Text.Encoding.Unicode;
+
             Console.WriteLine("Do you want to update the spreadsheets after a game update or do you want to build the English Mod data from the spreadsheets?");
             Console.WriteLine("     1: Update after game update");
             Console.WriteLine("     2: Build English Mod data");
+            Console.WriteLine("     3: Get Asset Formats");
 
             var input = Console.ReadKey().KeyChar;
             Console.WriteLine("\r          \n");
@@ -59,6 +104,11 @@ namespace PoW_Tool_SheetUtilities
                 case '2':
                     Console.WriteLine("Selected building English Mod data from spreadsheets");
                     Export();
+                    break;
+
+                case '3':
+                    Console.WriteLine("Checking Asset Formats");
+                    CheckAssetFormat();
                     break;
 
                 default:
