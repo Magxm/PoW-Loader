@@ -67,12 +67,23 @@ namespace PoW_Tool_SheetUtilities.Handler
             Definition = varDef;
         }
 
+        private string GetOneColumnAndGoForward(IList<object> row, ref int columnIndex)
+        {
+            if (columnIndex < row.Count)
+            {
+                return (string)row[columnIndex++];
+            }
+
+            columnIndex++;
+            return "";
+        }
+
         public void ParseSheetData(IList<object> row, ref int columnIndex)
         {
             if (Definition.VariableType == AssetVariableType.NoTranslate)
             {
                 //Simple variable
-                OriginalValue = (string)row[columnIndex++];
+                OriginalValue = GetOneColumnAndGoForward(row, ref columnIndex);
             }
             else
             {
@@ -81,9 +92,9 @@ namespace PoW_Tool_SheetUtilities.Handler
                     There will be 4 Entries: Translated, Original Value and Standardized Term Locator
                 */
 
-                Translation = (string)row[columnIndex++];
-                OriginalValue = (string)row[columnIndex++];
-                StandardizedTermLocator = (string)row[columnIndex++];
+                Translation = GetOneColumnAndGoForward(row, ref columnIndex); ;
+                OriginalValue = GetOneColumnAndGoForward(row, ref columnIndex); ;
+                StandardizedTermLocator = GetOneColumnAndGoForward(row, ref columnIndex); ;
             }
         }
 
