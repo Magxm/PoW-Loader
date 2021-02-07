@@ -10,6 +10,7 @@ namespace PoW_Tool_SheetUtilities.Handler
     internal enum AssetVariableType
     {
         Translate,
+        MachineTL,
         NoTranslate,
     }
 
@@ -85,13 +86,18 @@ namespace PoW_Tool_SheetUtilities.Handler
                 //Simple variable
                 OriginalValue = GetOneColumnAndGoForward(row, ref columnIndex);
             }
+            else if (Definition.VariableType == AssetVariableType.MachineTL)
+            {
+                //Translation + Original
+                Translation = GetOneColumnAndGoForward(row, ref columnIndex);
+                OriginalValue = GetOneColumnAndGoForward(row, ref columnIndex);
+            }
             else
             {
                 /*
                     We want to translate this variable:
                     There will be 4 Entries: Translated, Original Value and Standardized Term Locator
                 */
-
                 Translation = GetOneColumnAndGoForward(row, ref columnIndex); ;
                 OriginalValue = GetOneColumnAndGoForward(row, ref columnIndex); ;
                 StandardizedTermLocator = GetOneColumnAndGoForward(row, ref columnIndex); ;
@@ -143,6 +149,49 @@ namespace PoW_Tool_SheetUtilities.Handler
                 }
                 columnIndex++;
             }
+            else if (Definition.VariableType == AssetVariableType.MachineTL)
+            {
+                if (OriginalValue != NewOriginalValue)
+                {
+                    //We get a new ML Translation
+                    Translation = MachineTranslator.TranslationManager.GetInstance().Translate(NewStandardizedTermLocator);
+
+                    //We update the translation and the original
+                    Request updateReq = new Request();
+                    updateReq.UpdateCells = new UpdateCellsRequest
+                    {
+                        Range = new GridRange()
+                        {
+                            SheetId = 0,
+                            StartRowIndex = row,
+                            EndRowIndex = row + 1,
+                            StartColumnIndex = columnIndex,
+                            EndColumnIndex = columnIndex + 2
+                        },
+                        Rows = new List<RowData>()
+                            {
+                                new RowData()
+                                {
+                                    Values = new List<CellData>()
+                                    {
+                                        new CellData()
+                                        {
+                                            UserEnteredValue = new ExtendedValue() { StringValue = Translation},
+                                        },
+                                        new CellData()
+                                        {
+                                            UserEnteredValue = new ExtendedValue() { StringValue = NewOriginalValue},
+                                        },
+                                    }
+                                },
+                            },
+                        Fields = "userEnteredValue",
+                    };
+                    columnIndex++; //Translation
+                    columnIndex++; //OriginalValue
+                    updateRequests.Add(updateReq);
+                }
+            }
             else
             {
                 //A variable we translate. We check if original changed.
@@ -157,14 +206,14 @@ namespace PoW_Tool_SheetUtilities.Handler
                 {
                     //We want to first mark the translation as needing to be rechecked
                     {
-                        Request markRequest = new Request();
+                        Request updateReq = new Request();
                         Color fColor = NeedsCheckColor;
                         if (MLTranslationAdded)
                         {
                             fColor = MTLColor;
                         }
 
-                        markRequest.UpdateCells = new UpdateCellsRequest
+                        updateReq.UpdateCells = new UpdateCellsRequest
                         {
                             Range = new GridRange()
                             {
@@ -194,7 +243,7 @@ namespace PoW_Tool_SheetUtilities.Handler
                             Fields = "userEnteredValue,userEnteredFormat",
                         };
                         columnIndex++; //Translation
-                        updateRequests.Add(markRequest);
+                        updateRequests.Add(updateReq);
                     }
                     //We update OriginalValue
                     OriginalValue = NewOriginalValue;
@@ -209,7 +258,7 @@ namespace PoW_Tool_SheetUtilities.Handler
                                 StartRowIndex = row,
                                 EndRowIndex = row + 1,
                                 StartColumnIndex = columnIndex,
-                                EndColumnIndex = columnIndex + 2
+                                EndColumnIndex = columnIndex + 1
                             },
                             Rows = new List<RowData>
                             {
@@ -275,7 +324,6 @@ namespace PoW_Tool_SheetUtilities.Handler
 
         public List<CellData> GenerateAppendCellData()
         {
-            Translation = MachineTranslator.TranslationManager.GetInstance().Translate(NewStandardizedTermLocator);
             if (Definition.VariableType == AssetVariableType.NoTranslate)
             {
                 return new List<CellData>()
@@ -290,8 +338,32 @@ namespace PoW_Tool_SheetUtilities.Handler
                     }
                 };
             }
+            else if (Definition.VariableType == AssetVariableType.MachineTL)
+            {
+                Translation = MachineTranslator.TranslationManager.GetInstance().Translate(NewStandardizedTermLocator);
+                return new List<CellData>()
+                {
+                    new CellData()
+                    {
+                        UserEnteredValue = new ExtendedValue() { StringValue = Translation },
+                        UserEnteredFormat = new CellFormat()
+                        {
+                            BackgroundColor = DoNotTouchColor,
+                        }
+                    },
+                    new CellData()
+                    {
+                        UserEnteredValue = new ExtendedValue() { StringValue = NewOriginalValue},
+                        UserEnteredFormat = new CellFormat()
+                        {
+                            BackgroundColor = DoNotTouchColor,
+                        }
+                    },
+                };
+            }
             else
             {
+                Translation = MachineTranslator.TranslationManager.GetInstance().Translate(NewStandardizedTermLocator);
                 return new List<CellData>()
                 {
                     new CellData()
