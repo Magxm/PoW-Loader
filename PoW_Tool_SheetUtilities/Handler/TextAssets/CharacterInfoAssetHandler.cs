@@ -69,7 +69,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                 new AssetVariableDefinition()
                 {
                     Name = "M",
-                    VariableType = AssetVariableType.Translate
+                    VariableType = AssetVariableType.NoTranslate
                 },
                 new AssetVariableDefinition()
                 {
