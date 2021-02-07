@@ -59,7 +59,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                 H = (string)row[10];
                 NpcId1 = (string)row[11];
                 NpcId2 = (string)row[12];
-                NpcId2 = (string)row[13];
+                NpcId3 = (string)row[13];
                 if (row.Count > 14)
                 {
                     StandardizedTermLocator_Title = (string)row[14];
@@ -426,6 +426,8 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
 
                     if (existingEntry.NpcId2 != NpcId2)
                     {
+                        int sLength = NpcId2.Length;
+                        int s2Length = existingEntry.NpcId2.Length;
                         existingEntry.NpcId2 = NpcId2;
                         needsUpdate = true;
                     }
