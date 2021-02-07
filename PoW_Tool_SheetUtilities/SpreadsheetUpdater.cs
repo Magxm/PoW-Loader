@@ -14,6 +14,8 @@ namespace PoW_Tool_SheetUtilities
             string workingDirectory = Environment.CurrentDirectory;
             string inputFolder = workingDirectory + Path.DirectorySeparatorChar + "Input";
 
+            new MantraAssetHandler().UpdateSheetFromGameFile(inputFolder);
+
             //Updating TextAssets
             string textAssetFolder = inputFolder + Path.DirectorySeparatorChar + "chs" + Path.DirectorySeparatorChar + "textfiles";
             new TalkAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
