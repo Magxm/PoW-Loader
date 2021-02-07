@@ -8,7 +8,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
     {
         public EventCubeAssetHandler()
         {
-            SheetId = "1Kx4Vf18HXxPuxAQoa0dC4ICi77R4F02EYgrDZy3-k7E";
+            SheetId = "1jThxvxlGtm1Lqj9W8u9oqmG-aZ_9SBd00pz0bmHBjeQ";
             AssetName = "EventCube";
             SheetRange = "A2:J";
             FilePathWithoutExtension = "chs" + Path.DirectorySeparatorChar + "textfiles" + Path.DirectorySeparatorChar + "EventCube";
