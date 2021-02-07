@@ -10,7 +10,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
         {
             SheetId = "1jThxvxlGtm1Lqj9W8u9oqmG-aZ_9SBd00pz0bmHBjeQ";
             AssetName = "EventCube";
-            SheetRange = "A2:J";
+            SheetRange = "A2:V";
             FilePathWithoutExtension = "chs" + Path.DirectorySeparatorChar + "textfiles" + Path.DirectorySeparatorChar + "EventCube";
             OutputExtension = ".txt";
 
