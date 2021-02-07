@@ -54,6 +54,14 @@ namespace PoW_Tool_SheetUtilities.Handler
             Blue = 0.6f
         };
 
+        public static Color TranslatedColor = new Color()
+        {
+            Alpha = 1.0f,
+            Red = 0.71372549019f,
+            Green = 0.8431372549f,
+            Blue = 0.65882352941f
+        };
+
         public AssetVariableDefinition Definition;
 
         private string NewOriginalValue;
@@ -147,7 +155,7 @@ namespace PoW_Tool_SheetUtilities.Handler
                     updateRequests.Add(updateValueReq);
                     OriginalValue = NewOriginalValue;
                 }
-                columnIndex++;
+                columnIndex++; //Original Value
             }
             else if (Definition.VariableType == AssetVariableType.MachineTL)
             {
@@ -187,16 +195,16 @@ namespace PoW_Tool_SheetUtilities.Handler
                             },
                         Fields = "userEnteredValue",
                     };
-                    columnIndex++; //Translation
-                    columnIndex++; //OriginalValue
                     updateRequests.Add(updateReq);
                 }
+                columnIndex++; //Translation
+                columnIndex++; //OriginalValue
             }
             else
             {
                 //A variable we translate. We check if original changed.
                 bool MLTranslationAdded = false;
-                if (!string.IsNullOrEmpty(OriginalValue) && string.IsNullOrEmpty(Translation))
+                if (!string.IsNullOrEmpty(NewOriginalValue) && string.IsNullOrEmpty(Translation))
                 {
                     MLTranslationAdded = true;
                     Translation = MachineTranslator.TranslationManager.GetInstance().Translate(NewStandardizedTermLocator);
@@ -208,7 +216,12 @@ namespace PoW_Tool_SheetUtilities.Handler
                     {
                         Request updateReq = new Request();
                         Color fColor = NeedsCheckColor;
-                        if (MLTranslationAdded)
+
+                        if (string.IsNullOrEmpty(Translation) || Translation == "0")
+                        {
+                            fColor = TranslatedColor;
+                        }
+                        else if (MLTranslationAdded)
                         {
                             fColor = MTLColor;
                         }
@@ -364,6 +377,13 @@ namespace PoW_Tool_SheetUtilities.Handler
             else
             {
                 Translation = MachineTranslator.TranslationManager.GetInstance().Translate(NewStandardizedTermLocator);
+
+                Color fColor = MTLColor;
+                if (string.IsNullOrEmpty(Translation) || Translation == "0")
+                {
+                    fColor = TranslatedColor;
+                }
+
                 return new List<CellData>()
                 {
                     new CellData()
@@ -371,7 +391,7 @@ namespace PoW_Tool_SheetUtilities.Handler
                         UserEnteredValue = new ExtendedValue() { StringValue = Translation },
                         UserEnteredFormat = new CellFormat()
                         {
-                            BackgroundColor = MTLColor,
+                            BackgroundColor = fColor,
                         }
                     },
                     new CellData()
