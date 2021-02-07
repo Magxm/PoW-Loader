@@ -146,11 +146,26 @@ namespace PoW_Tool_SheetUtilities.Handler
             else
             {
                 //A variable we translate. We check if original changed.
-                if (OriginalValue != NewOriginalValue)
+                bool MLTranslationAdded = false;
+                if (!string.IsNullOrEmpty(OriginalValue) && string.IsNullOrEmpty(Translation))
+                {
+                    MLTranslationAdded = true;
+                    Translation = MachineTranslator.TranslationManager.GetInstance().Translate(NewStandardizedTermLocator);
+                }
+
+                if (OriginalValue != NewOriginalValue || MLTranslationAdded)
                 {
                     //We want to first mark the translation as needing to be rechecked
                     {
                         Request markRequest = new Request();
+                        string fields = "userEnteredFormat";
+                        Color fColor = NeedsCheckColor;
+                        if (MLTranslationAdded)
+                        {
+                            fields = "userEnteredValue,userEnteredFormat";
+                            fColor = MTLColor;
+                        }
+
                         markRequest.UpdateCells = new UpdateCellsRequest
                         {
                             Range = new GridRange()
@@ -162,22 +177,22 @@ namespace PoW_Tool_SheetUtilities.Handler
                                 EndColumnIndex = columnIndex + 1
                             },
                             Rows = new List<RowData>()
+                            {
+                                new RowData()
                                 {
-                                     new RowData()
-                                     {
-                                        Values = new List<CellData>()
+                                    Values = new List<CellData>()
+                                    {
+                                        new CellData()
                                         {
-                                            new CellData()
+                                            UserEnteredFormat = new CellFormat()
                                             {
-                                                UserEnteredFormat = new CellFormat()
-                                                {
-                                                    BackgroundColor = NeedsCheckColor
-                                                }
-                                            },
-                                        }
-                                    },
+                                                BackgroundColor = fColor
+                                            }
+                                        },
+                                    }
                                 },
-                            Fields = "userEnteredFormat"
+                            },
+                            Fields = fields,
                         };
                         columnIndex++; //Translation
                         updateRequests.Add(markRequest);
