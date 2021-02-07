@@ -3,6 +3,9 @@
 Join our discord! 
 https://discord.com/invite/PH4Z4Dn
 
+We are always in search for new Translators between Chinese and English, but we are also thankful about Proof Readers, Coders and more!
+You are also very welcome to just come and hang out.
+
 -------------------------------------------
 BepInEx is the actual underlying ModLoader.
 This repository contains a ModAPI plugin containing base functionalities for other Mods and Plugins.
