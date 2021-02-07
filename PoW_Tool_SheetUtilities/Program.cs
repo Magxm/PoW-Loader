@@ -35,7 +35,7 @@ namespace PoW_Tool_SheetUtilities
                 }
                 for (int i = 0; i < variableAmount; i++)
                 {
-                    if (string.IsNullOrEmpty(exampleEntry[i]) && !string.IsNullOrEmpty(data[i]))
+                    if (!string.IsNullOrEmpty(data[i]) && (string.IsNullOrEmpty(exampleEntry[i]) || exampleEntry[i] == "0" || data[i].Length > exampleEntry[i].Length))
                     {
                         exampleEntry[i] = data[i];
                     }
@@ -45,7 +45,7 @@ namespace PoW_Tool_SheetUtilities
             if (exampleEntry != null)
             {
                 Console.WriteLine("Variable count: " + variableAmount);
-                Console.WriteLine("Example values (this is not an existing entry, but glued together so all values are none null): ");
+                Console.WriteLine("Example values (this is not an existing entry, but glued together so all values are as representative as possible): ");
                 for (int i = 0; i < variableAmount; i++)
                 {
                     Console.WriteLine("\t\t" + i + ": " + exampleEntry[i]);
