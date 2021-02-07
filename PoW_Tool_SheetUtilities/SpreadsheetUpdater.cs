@@ -14,6 +14,8 @@ namespace PoW_Tool_SheetUtilities
             string workingDirectory = Environment.CurrentDirectory;
             string inputFolder = workingDirectory + Path.DirectorySeparatorChar + "Input";
 
+            new EventCubeAssetHandler().UpdateSheetFromGameFile(inputFolder);
+            new NpcAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new CharacterInfoAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new BattleAreaAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new MantraAssetHandler().UpdateSheetFromGameFile(inputFolder);
