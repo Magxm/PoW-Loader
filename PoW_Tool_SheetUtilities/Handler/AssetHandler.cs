@@ -441,9 +441,11 @@ namespace PoW_Tool_SheetUtilities.Handler
             Console.WriteLine("Comparing with games version and calculating updates...");
             //Parse every line in the game asset file
             System.IO.StreamReader reader = new System.IO.StreamReader(gameFilePath);
-            string line;
-            while ((line = reader.ReadLine()) != null)
+            string[] lines = File.ReadAllLines(gameFilePath);
+            for (int i = 0; i < lines.Length; i++)
             {
+                string line = lines[i];
+                Console.Title = "[" + AssetName + "] Processing " + i + "/" + lines.Length;
                 //Splitting
                 string[] data = line.Split('\t');
                 AssetEntry entry;
