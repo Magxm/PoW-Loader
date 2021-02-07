@@ -158,11 +158,9 @@ namespace PoW_Tool_SheetUtilities.Handler
                     //We want to first mark the translation as needing to be rechecked
                     {
                         Request markRequest = new Request();
-                        string fields = "userEnteredFormat";
                         Color fColor = NeedsCheckColor;
                         if (MLTranslationAdded)
                         {
-                            fields = "userEnteredValue,userEnteredFormat";
                             fColor = MTLColor;
                         }
 
@@ -184,6 +182,7 @@ namespace PoW_Tool_SheetUtilities.Handler
                                     {
                                         new CellData()
                                         {
+                                            UserEnteredValue = new ExtendedValue() { StringValue = Translation},
                                             UserEnteredFormat = new CellFormat()
                                             {
                                                 BackgroundColor = fColor
@@ -192,7 +191,7 @@ namespace PoW_Tool_SheetUtilities.Handler
                                     }
                                 },
                             },
-                            Fields = fields,
+                            Fields = "userEnteredValue,userEnteredFormat",
                         };
                         columnIndex++; //Translation
                         updateRequests.Add(markRequest);
