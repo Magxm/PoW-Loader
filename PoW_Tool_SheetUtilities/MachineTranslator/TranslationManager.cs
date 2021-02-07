@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace PoW_Tool_SheetUtilities.MachineTranslator
 {
-    class TranslationManager
+    internal class TranslationManager
     {
         private List<ITranslator> Translators;
 
         private static TranslationManager __Instance;
+
         public static TranslationManager GetInstance()
         {
             if (__Instance == null)
@@ -30,7 +31,12 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
 
         public string Translate(string original)
         {
-            foreach(var translator in Translators)
+            if (string.IsNullOrEmpty(original) || original == "0")
+            {
+                return original;
+            }
+
+            foreach (var translator in Translators)
             {
                 if (translator.IsUseable())
                 {
