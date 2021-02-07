@@ -14,6 +14,7 @@ namespace PoW_Tool_SheetUtilities
             string workingDirectory = Environment.CurrentDirectory;
             string inputFolder = workingDirectory + Path.DirectorySeparatorChar + "Input";
 
+            new BattleAreaAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new MantraAssetHandler().UpdateSheetFromGameFile(inputFolder);
 
             //Updating TextAssets
