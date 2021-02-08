@@ -83,6 +83,19 @@ namespace PoW_Tool_SheetUtilities
             SpreadsheetUpdater.ExportToMod(outputFolder);
         }
 
+        private static void GetTranslationStats()
+        {
+            int proofReadCount = 0, translatedCount = 0, needsCheckCount = 0, MTLCount = 0, otherCount = 0;
+            SpreadsheetUpdater.GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref MTLCount, ref otherCount);
+
+            Console.WriteLine("Stats:");
+            Console.WriteLine("\tProofread Lines:\t\t" + proofReadCount);
+            Console.WriteLine("\tTranslated Lines:\t\t" + translatedCount);
+            Console.WriteLine("\tMarked as needing check(Usually due to game update) Lines:\t\t" + needsCheckCount);
+            Console.WriteLine("\tMachine Translated Lines:\t\t" + MTLCount);
+            Console.WriteLine("\tLines marked in unknown cell color (Manually marked):\t\t" + otherCount);
+        }
+
         private static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.Unicode;
@@ -91,6 +104,7 @@ namespace PoW_Tool_SheetUtilities
             Console.WriteLine("     1: Update after game update");
             Console.WriteLine("     2: Build English Mod data");
             Console.WriteLine("     3: Get Asset Formats");
+            Console.WriteLine("     4: Get Translation Stats");
 
             var input = Console.ReadKey().KeyChar;
             Console.WriteLine("\r          \n");
@@ -109,6 +123,11 @@ namespace PoW_Tool_SheetUtilities
                 case '3':
                     Console.WriteLine("Checking Asset Formats");
                     CheckAssetFormat();
+                    break;
+
+                case '4':
+                    Console.WriteLine("Get Translation Stats");
+                    GetTranslationStats();
                     break;
 
                 default:

@@ -1,8 +1,13 @@
-﻿using Google.Apis.Sheets.v4;
+﻿using Google.Apis.Auth.OAuth2;
+using Google.Apis.Services;
+using Google.Apis.Sheets.v4;
 using Google.Apis.Sheets.v4.Data;
+
+using Newtonsoft.Json;
 
 using System;
 using System.Collections.Generic;
+
 using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
@@ -24,8 +29,35 @@ namespace PoW_Tool_SheetUtilities.Handler
         public bool IsScriptField_FilterNoText = false;
     }
 
+    public class SheetCellWithColor
+    {
+        public string Value = "";
+        public Color Color = null;
+
+        public SheetCellWithColor(CellData cell)
+        {
+            if (cell.UserEnteredValue != null)
+            {
+                Value = cell.UserEnteredValue.StringValue;
+            }
+            if (cell.UserEnteredFormat != null)
+            {
+                Color = cell.UserEnteredFormat.BackgroundColor;
+            }
+        }
+    }
+
     public class AssetVariable
     {
+        private static bool IsSameColor(Color a, Color b)
+        {
+            if (a == null || b == null)
+            {
+                return a == null && b == null;
+            }
+            return a.Blue == b.Blue && a.Red == b.Red && a.Green == b.Green;
+        }
+
         public static Color NeedsCheckColor = new Color()
         {
             Alpha = 1.0f,
@@ -64,6 +96,14 @@ namespace PoW_Tool_SheetUtilities.Handler
             Red = 0.71372549019f,
             Green = 0.8431372549f,
             Blue = 0.65882352941f
+        };
+
+        public static Color ProofReadColor = new Color()
+        {
+            Alpha = 1.0f,
+            Red = 0.78823529411f,
+            Green = 0.85490196078f,
+            Blue = 0.9725490196f
         };
 
         public AssetVariableDefinition Definition;
@@ -453,7 +493,7 @@ namespace PoW_Tool_SheetUtilities.Handler
             }
         }
 
-        internal void AppendToFile(StreamWriter sw)
+        public void AppendToFile(StreamWriter sw)
         {
             if (Definition.VariableType == AssetVariableType.NoTranslate)
             {
@@ -466,6 +506,48 @@ namespace PoW_Tool_SheetUtilities.Handler
             else
             {
                 sw.Write(Translation);
+            }
+        }
+
+        public void CalculateTranslationStats(SheetCellWithColor[] rowRaw, ref int columnIndex, ref int proofReadCount, ref int translatedCount, ref int needsCheckCount, ref int MLTranslatedCount, ref int otherCount)
+        {
+            if (Definition.VariableType == AssetVariableType.NoTranslate)
+            {
+                columnIndex++; //Original
+                return;
+            }
+            else if (Definition.VariableType == AssetVariableType.MachineTL)
+            {
+                columnIndex++; //MTL
+                columnIndex++; //Original
+                return;
+            }
+            else
+            {
+                Color colorOfEntry = rowRaw[columnIndex++].Color; //Translation
+                columnIndex++;//Original
+                columnIndex++;//Standardized Term Locator
+
+                if (IsSameColor(colorOfEntry, ProofReadColor))
+                {
+                    proofReadCount++;
+                }
+                else if (IsSameColor(colorOfEntry, TranslatedColor))
+                {
+                    translatedCount++;
+                }
+                else if (IsSameColor(colorOfEntry, MTLColor))
+                {
+                    MLTranslatedCount++;
+                }
+                else if (IsSameColor(colorOfEntry, NeedsCheckColor))
+                {
+                    needsCheckCount++;
+                }
+                else
+                {
+                    otherCount++;
+                }
             }
         }
     }
@@ -566,6 +648,15 @@ namespace PoW_Tool_SheetUtilities.Handler
             }
 
             sw.Write('\r');
+        }
+
+        public void CalculateTranslationStats(SheetCellWithColor[] rowRaw, ref int proofReadCount, ref int translatedCount, ref int needsCheckCount, ref int MLTranslatedCount, ref int otherCount)
+        {
+            int columnIndex = 0;
+            for (int i = 0; i < Variables.Length; i++)
+            {
+                Variables[i].CalculateTranslationStats(rowRaw, ref columnIndex, ref proofReadCount, ref translatedCount, ref needsCheckCount, ref MLTranslatedCount, ref otherCount);
+            }
         }
     }
 
@@ -704,6 +795,32 @@ namespace PoW_Tool_SheetUtilities.Handler
 
             Console.WriteLine("Done!");
             Console.WriteLine("");
+        }
+
+        public void GetTranslationStats(ref int proofReadCount, ref int translatedCount, ref int needsCheckCount, ref int MLTranslatedCount, ref int otherCount)
+        {
+            Console.WriteLine("Calculating Translation Statistic for " + AssetName);
+            SpreadsheetsResource.GetRequest request = GoogleSheetConnector.GetInstance().Service.Spreadsheets.Get(SheetId);
+            request.Ranges = SheetRange;
+            request.IncludeGridData = true;
+            Spreadsheet sheet = request.Execute();
+            IList<GridData> grid = sheet.Sheets[0].Data;
+            //Getting each range (should only be one)
+            AssetEntry tmpEntry = new AssetEntry(VariableDefinitions);
+            foreach (GridData gridData in grid)
+            {
+                //For each row
+                foreach (var row in gridData.RowData)
+                {
+                    SheetCellWithColor[] rowRaw = new SheetCellWithColor[row.Values.Count];
+                    for (int i = 0; i < row.Values.Count; i++)
+                    {
+                        rowRaw[i] = new SheetCellWithColor(row.Values[i]);
+                    }
+
+                    tmpEntry.CalculateTranslationStats(rowRaw, ref proofReadCount, ref translatedCount, ref needsCheckCount, ref MLTranslatedCount, ref otherCount);
+                }
+            }
         }
     }
 }
