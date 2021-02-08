@@ -384,7 +384,14 @@ namespace PoW_Tool_SheetUtilities.Handler
             }
             else
             {
-                Translation = MachineTranslator.TranslationManager.GetInstance().Translate(NewStandardizedTermLocator);
+                if (Definition.AutoML)
+                {
+                    Translation = MachineTranslator.TranslationManager.GetInstance().Translate(NewStandardizedTermLocator);
+                }
+                else
+                {
+                    Translation = OriginalValue;
+                }
 
                 Color fColor = MTLColor;
                 if (string.IsNullOrEmpty(Translation) || Translation == "0")
@@ -648,7 +655,7 @@ namespace PoW_Tool_SheetUtilities.Handler
                     updateRequests.Add(req);
                 }
 
-                if (updateRequests.Count >= 500)
+                if (updateRequests.Count >= 1000)
                 {
                     HandleUpdateRequests(ref updateRequests);
                 }
