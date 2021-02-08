@@ -10,7 +10,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
         {
             SheetId = "14sKOP4deJ6-e4_iBNac6MtOBjPtNAJKGXr-Ba6FBLXY";
             AssetName = "CharacterInfo";
-            SheetRange = "A2:O";
+            SheetRange = "A2:Q";
             FilePathWithoutExtension = "chs" + Path.DirectorySeparatorChar + "textfiles" + Path.DirectorySeparatorChar + "CharacterInfo";
             OutputExtension = ".txt";
 
@@ -79,6 +79,16 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                 new AssetVariableDefinition()
                 {
                     Name = "O",
+                    VariableType = AssetVariableType.NoTranslate
+                },
+                new AssetVariableDefinition()
+                {
+                    Name = "P",
+                    VariableType = AssetVariableType.NoTranslate
+                },
+                new AssetVariableDefinition()
+                {
+                    Name = "Q",
                     VariableType = AssetVariableType.NoTranslate
                 },
             };
