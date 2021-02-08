@@ -15,6 +15,7 @@ namespace PoW_Tool_SheetUtilities
             string workingDirectory = Environment.CurrentDirectory;
             string inputFolder = workingDirectory + Path.DirectorySeparatorChar + "Input";
 
+            new BookAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new BattleAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new TraitAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new StringTableAssetHandler().UpdateSheetFromGameFile(inputFolder);
@@ -26,6 +27,7 @@ namespace PoW_Tool_SheetUtilities
             new CharacterInfoAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new BattleAreaAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new MantraAssetHandler().UpdateSheetFromGameFile(inputFolder);
+            new TalkAssetHandler().UpdateSheetFromGameFile(inputFolder);
 
             Console.WriteLine("Waiting 10 seconds because of Google API Quotas...");
             Thread.Sleep(10000);
@@ -33,7 +35,6 @@ namespace PoW_Tool_SheetUtilities
             //OLD HANDLERS
             //Updating TextAssets
             string textAssetFolder = inputFolder + Path.DirectorySeparatorChar + "chs" + Path.DirectorySeparatorChar + "textfiles";
-            new TalkAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
             new AchievementAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
             new AdjustmentAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
             new AlchemyAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
@@ -49,6 +50,7 @@ namespace PoW_Tool_SheetUtilities
             //Get input folder path
             string textAssetFolder = outputFolder + Path.DirectorySeparatorChar + "chs" + Path.DirectorySeparatorChar + "textfiles";
 
+            new BookAssetHandler().BuildGameDataFromSheet(outputFolder);
             new BattleAssetHandler().BuildGameDataFromSheet(outputFolder);
             new TraitAssetHandler().BuildGameDataFromSheet(outputFolder);
             new StringTableAssetHandler().BuildGameDataFromSheet(outputFolder);
