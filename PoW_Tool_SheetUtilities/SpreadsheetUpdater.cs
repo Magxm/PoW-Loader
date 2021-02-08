@@ -77,10 +77,11 @@ namespace PoW_Tool_SheetUtilities
             Thread.Sleep(3000);
             new MantraAssetHandler().BuildGameDataFromSheet(outputFolder);
             Thread.Sleep(3000);
+            new TalkAssetHandler().BuildGameDataFromSheet(outputFolder);
 
             //OLD HANDLERS
             //Exporting TextAssets
-            new TalkAssetHandler().BuildGameDataFromSheet(textAssetFolder);
+
             Thread.Sleep(3000);
             new AchievementAssetHandler().BuildGameDataFromSheet(textAssetFolder);
             Thread.Sleep(3000);
