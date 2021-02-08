@@ -64,12 +64,12 @@ namespace PoW_Tool_SheetUtilities.Handler
 
         public AssetVariableDefinition Definition;
 
-        private string NewOriginalValue;
-        private string NewStandardizedTermLocator;
+        public string NewOriginalValue;
+        public string NewStandardizedTermLocator;
 
-        private string Translation;
-        private string OriginalValue;
-        private string StandardizedTermLocator;
+        public string Translation;
+        public string OriginalValue;
+        public string StandardizedTermLocator;
 
         public AssetVariable(AssetVariableDefinition varDef)
         {
@@ -409,6 +409,22 @@ namespace PoW_Tool_SheetUtilities.Handler
                 };
             }
         }
+
+        internal void AppendToFile(StreamWriter sw)
+        {
+            if (Definition.VariableType == AssetVariableType.NoTranslate)
+            {
+                sw.Write(OriginalValue);
+            }
+            else if (Definition.VariableType == AssetVariableType.MachineTL)
+            {
+                sw.Write(OriginalValue);
+            }
+            else
+            {
+                sw.Write(Translation);
+            }
+        }
     }
 
     public class AssetEntry
@@ -491,6 +507,20 @@ namespace PoW_Tool_SheetUtilities.Handler
 
             return requests;
         }
+
+        public void AppendToFile(StreamWriter sw, AssetEntry thisEntry)
+        {
+            for (int i = 0; i < VariableDefinitions.Count; i++)
+            {
+                if (i > 0)
+                {
+                    sw.Write('\t');
+                }
+                Variables[i].AppendToFile(sw);
+            }
+
+            sw.Write('\r');
+        }
     }
 
     public class AssetHandler : IFileHandler
@@ -504,7 +534,37 @@ namespace PoW_Tool_SheetUtilities.Handler
 
         public void BuildGameDataFromSheet(string outRootPath)
         {
-            throw new NotImplementedException();
+            string outFilePath = outRootPath + FilePathWithoutExtension + OutputExtension;
+            Console.WriteLine("Getting " + AssetName + " Spreadsheet content");
+
+            SpreadsheetsResource.ValuesResource.GetRequest request = GoogleSheetConnector.GetInstance().Service.Spreadsheets.Values.Get(SheetId, SheetRange);
+            ValueRange response = request.Execute();
+            List<IList<object>> values = (List<IList<object>>)response.Values;
+
+            //Clearing Asset File
+            string outDirectory = Path.GetDirectoryName(outFilePath);
+            if (!Directory.Exists(outDirectory))
+            {
+                Directory.CreateDirectory(outDirectory);
+            }
+            //Resetting file
+            File.WriteAllText(outFilePath, "");
+
+            //Getting all Sheet entries and dumping them into Talk.txt in right format
+            Console.WriteLine("Extracting to " + FilePathWithoutExtension + OutputExtension);
+            StreamWriter sw = File.AppendText(outFilePath);
+
+            if (values != null && values.Count > 0)
+            {
+                foreach (var row in values)
+                {
+                    AssetEntry thisEntry = new AssetEntry(VariableDefinitions);
+                    thisEntry.PopulateBySheetRow(row);
+                    thisEntry.AppendToFile(sw, thisEntry);
+                }
+            }
+
+            sw.Close();
         }
 
         public void HandleUpdateRequests(ref List<Request> updateRequests)
@@ -526,11 +586,10 @@ namespace PoW_Tool_SheetUtilities.Handler
             string gameFilePath = inputFolder + Path.DirectorySeparatorChar + FilePathWithoutExtension + ".bytes";
             //Getting all current entries
             Dictionary<string, AssetEntry> entries = new Dictionary<string, AssetEntry>();
-            GoogleSheetConnector gsc = GoogleSheetConnector.GetInstance();
 
             Console.WriteLine("Getting " + AssetName + " Spreadsheet content");
 
-            SpreadsheetsResource.ValuesResource.GetRequest request = gsc.Service.Spreadsheets.Values.Get(SheetId, SheetRange);
+            SpreadsheetsResource.ValuesResource.GetRequest request = GoogleSheetConnector.GetInstance().Service.Spreadsheets.Values.Get(SheetId, SheetRange);
             ValueRange response = request.Execute();
             List<IList<object>> values = (List<IList<object>>)response.Values;
 
@@ -585,6 +644,9 @@ namespace PoW_Tool_SheetUtilities.Handler
             }
 
             HandleUpdateRequests(ref updateRequests);
+
+            Console.WriteLine("Done!");
+            Console.WriteLine("");
         }
     }
 }

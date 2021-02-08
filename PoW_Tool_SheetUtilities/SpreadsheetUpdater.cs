@@ -26,6 +26,7 @@ namespace PoW_Tool_SheetUtilities
             new BattleAreaAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new MantraAssetHandler().UpdateSheetFromGameFile(inputFolder);
 
+            //OLD HANDLERS
             //Updating TextAssets
             string textAssetFolder = inputFolder + Path.DirectorySeparatorChar + "chs" + Path.DirectorySeparatorChar + "textfiles";
             new TalkAssetHandler().UpdateSheetFromGameFile(textAssetFolder);
@@ -44,6 +45,19 @@ namespace PoW_Tool_SheetUtilities
             //Get input folder path
             string textAssetFolder = outputFolder + Path.DirectorySeparatorChar + "chs" + Path.DirectorySeparatorChar + "textfiles";
 
+            new BattleAssetHandler().BuildGameDataFromSheet(outputFolder);
+            new TraitAssetHandler().BuildGameDataFromSheet(outputFolder);
+            new StringTableAssetHandler().BuildGameDataFromSheet(outputFolder);
+            new QuestAssetHandler().BuildGameDataFromSheet(outputFolder);
+            new PropsAssetHandler().BuildGameDataFromSheet(outputFolder);
+            new NurturanceAssetHandler().BuildGameDataFromSheet(outputFolder);
+            new EventCubeAssetHandler().BuildGameDataFromSheet(outputFolder);
+            new NpcAssetHandler().BuildGameDataFromSheet(outputFolder);
+            new CharacterInfoAssetHandler().BuildGameDataFromSheet(outputFolder);
+            new BattleAreaAssetHandler().BuildGameDataFromSheet(outputFolder);
+            new MantraAssetHandler().BuildGameDataFromSheet(outputFolder);
+
+            //OLD HANDLERS
             //Exporting TextAssets
             new TalkAssetHandler().BuildGameDataFromSheet(textAssetFolder);
             new AchievementAssetHandler().BuildGameDataFromSheet(textAssetFolder);

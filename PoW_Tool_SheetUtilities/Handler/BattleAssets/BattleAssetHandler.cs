@@ -29,6 +29,20 @@ namespace PoW_Tool_SheetUtilities.Handler.BattleAssets
                 Variables[i] = new AssetVariable(varDef);
             }
         }
+
+        public new void AppendToFile(StreamWriter sw, AssetEntry thisEntry)
+        {
+            for (int i = 1; i < VariableDefinitions.Count; i++)
+            {
+                if (i > 1)
+                {
+                    sw.Write('\t');
+                }
+                Variables[i].AppendToFile(sw);
+            }
+
+            sw.Write('\r');
+        }
     }
 
     public class BattleAssetHandler : AssetHandler
@@ -81,6 +95,54 @@ namespace PoW_Tool_SheetUtilities.Handler.BattleAssets
                     VariableType = AssetVariableType.Translate
                 },
             };
+        }
+
+        public new void BuildGameDataFromSheet(string outRootPath)
+        {
+            string mergeFilePath = outRootPath + FilePathWithoutExtension + OutputExtension;
+            Console.WriteLine("Getting " + AssetName + " Spreadsheet content");
+
+            SpreadsheetsResource.ValuesResource.GetRequest request = GoogleSheetConnector.GetInstance().Service.Spreadsheets.Values.Get(SheetId, SheetRange);
+            ValueRange response = request.Execute();
+            List<IList<object>> values = (List<IList<object>>)response.Values;
+
+            //Clearing Asset File
+            string outDirectory = Path.GetDirectoryName(mergeFilePath);
+            if (!Directory.Exists(outDirectory))
+            {
+                Directory.CreateDirectory(outDirectory);
+            }
+            //Resetting file
+            File.WriteAllText(mergeFilePath, "");
+
+            string scheduleRelativeFolderPath = "chs" + Path.DirectorySeparatorChar + "battle" + Path.DirectorySeparatorChar + "schedule";
+            string scheduleFolderPath = outRootPath + Path.DirectorySeparatorChar + scheduleRelativeFolderPath;
+
+            //Getting all Sheet entries and dumping them into Talk.txt in right format
+            Console.WriteLine("Extracting to " + FilePathWithoutExtension + OutputExtension + " and the schedules folder");
+            StreamWriter mergeFileWriter = File.AppendText(mergeFilePath);
+
+            if (values != null && values.Count > 0)
+            {
+                foreach (var row in values)
+                {
+                    BattleAsset thisEntry = new BattleAsset(VariableDefinitions);
+                    thisEntry.PopulateBySheetRow(row);
+
+                    //Writing to merge file
+                    thisEntry.AppendToFile(mergeFileWriter, thisEntry);
+
+                    //Writting to .json file
+                    string fileName = thisEntry.Variables[0].OriginalValue;
+                    string filePath = scheduleFolderPath + Path.DirectorySeparatorChar + fileName;
+                    File.WriteAllText(filePath, "");
+                    StreamWriter scheduleFileWriter = File.AppendText(filePath);
+                    thisEntry.AppendToFile(scheduleFileWriter, thisEntry);
+                    scheduleFileWriter.Close();
+                }
+            }
+
+            mergeFileWriter.Close();
         }
 
         public new void UpdateSheetFromGameFile(string inputFolder)
