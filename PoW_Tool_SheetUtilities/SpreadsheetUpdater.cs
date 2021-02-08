@@ -15,6 +15,7 @@ namespace PoW_Tool_SheetUtilities
             string workingDirectory = Environment.CurrentDirectory;
             string inputFolder = workingDirectory + Path.DirectorySeparatorChar + "Input";
 
+            new ElectiveAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new CharacterExteriorAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new CharacterBehaviourAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new BookAssetHandler().UpdateSheetFromGameFile(inputFolder);
@@ -52,6 +53,8 @@ namespace PoW_Tool_SheetUtilities
             //Get input folder path
             string textAssetFolder = outputFolder + Path.DirectorySeparatorChar + "chs" + Path.DirectorySeparatorChar + "textfiles";
 
+            new ElectiveAssetHandler().BuildGameDataFromSheet(outputFolder);
+            Thread.Sleep(3000);
             new CharacterExteriorAssetHandler().BuildGameDataFromSheet(outputFolder);
             Thread.Sleep(3000);
             new CharacterBehaviourAssetHandler().BuildGameDataFromSheet(outputFolder);
