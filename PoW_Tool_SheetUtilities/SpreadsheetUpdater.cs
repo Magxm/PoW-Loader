@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Threading;
 
 using PoW_Tool_SheetUtilities.Handler.BattleAssets;
 using PoW_Tool_SheetUtilities.Handler.TextAssets;
@@ -25,6 +26,9 @@ namespace PoW_Tool_SheetUtilities
             new CharacterInfoAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new BattleAreaAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new MantraAssetHandler().UpdateSheetFromGameFile(inputFolder);
+
+            Console.WriteLine("Waiting 10 seconds because of Google API Quotas...");
+            Thread.Sleep(10000);
 
             //OLD HANDLERS
             //Updating TextAssets
@@ -56,6 +60,9 @@ namespace PoW_Tool_SheetUtilities
             new CharacterInfoAssetHandler().BuildGameDataFromSheet(outputFolder);
             new BattleAreaAssetHandler().BuildGameDataFromSheet(outputFolder);
             new MantraAssetHandler().BuildGameDataFromSheet(outputFolder);
+
+            Console.WriteLine("Waiting 10 seconds because of Google API Quotas...");
+            Thread.Sleep(10000);
 
             //OLD HANDLERS
             //Exporting TextAssets
