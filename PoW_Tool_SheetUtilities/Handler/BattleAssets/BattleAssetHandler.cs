@@ -77,7 +77,8 @@ namespace PoW_Tool_SheetUtilities.Handler.BattleAssets
                 new AssetVariableDefinition()
                 {
                     Name = "BattleSchedules",
-                    VariableType = AssetVariableType.NoTranslate
+                    VariableType = AssetVariableType.Translate,
+                    AutoML = false
                 },
                 new AssetVariableDefinition()
                 {
