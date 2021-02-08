@@ -433,6 +433,8 @@ namespace PoW_Tool_SheetUtilities.Handler
         public AssetVariable[] Variables;
         public int Row = -1;
 
+        public bool FoundInGameData = false;
+
         public AssetEntry()
         {
         }
@@ -457,6 +459,7 @@ namespace PoW_Tool_SheetUtilities.Handler
 
         public void PopulateByGameAssetRow(string[] row)
         {
+            FoundInGameData = true;
             int columnIndex = 0;
             for (int i = 0; i < VariableDefinitions.Count; i++)
                 Variables[i].SetNewOriginal(row[columnIndex++]);
@@ -644,6 +647,17 @@ namespace PoW_Tool_SheetUtilities.Handler
             }
 
             HandleUpdateRequests(ref updateRequests);
+
+            foreach (var aeE in entries)
+            {
+                AssetEntry ae = aeE.Value;
+                if (!ae.FoundInGameData)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Unreferenced Entry " + aeE.Key + " in Row " + (ae.Row + 1));
+                    Console.ForegroundColor = ConsoleColor.White;
+                }
+            }
 
             Console.WriteLine("Done!");
             Console.WriteLine("");
