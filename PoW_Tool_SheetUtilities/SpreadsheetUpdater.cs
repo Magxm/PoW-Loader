@@ -15,6 +15,8 @@ namespace PoW_Tool_SheetUtilities
             string workingDirectory = Environment.CurrentDirectory;
             string inputFolder = workingDirectory + Path.DirectorySeparatorChar + "Input";
 
+            new RewardAssetHandler().UpdateSheetFromGameFile(inputFolder);
+            new RefiningAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new MapAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new ForgeAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new FavorabilityAssetHandler().UpdateSheetFromGameFile(inputFolder);
@@ -54,6 +56,10 @@ namespace PoW_Tool_SheetUtilities
 
         public static void ExportToMod(string outputFolder)
         {
+            new RewardAssetHandler().BuildGameDataFromSheet(outputFolder);
+            Thread.Sleep(3000);
+            new RefiningAssetHandler().BuildGameDataFromSheet(outputFolder);
+            Thread.Sleep(3000);
             new MapAssetHandler().BuildGameDataFromSheet(outputFolder);
             Thread.Sleep(3000);
             new ForgeAssetHandler().BuildGameDataFromSheet(outputFolder);
