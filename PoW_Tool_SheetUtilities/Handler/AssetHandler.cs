@@ -4,6 +4,8 @@ using Google.Apis.Sheets.v4.Data;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace PoW_Tool_SheetUtilities.Handler
 {
@@ -19,6 +21,7 @@ namespace PoW_Tool_SheetUtilities.Handler
         public string Name;
         public AssetVariableType VariableType;
         public bool AutoML = true;
+        public bool IsScriptField_FilterNoText = false;
     }
 
     public class AssetVariable
@@ -117,6 +120,18 @@ namespace PoW_Tool_SheetUtilities.Handler
         {
             NewOriginalValue = value;
             NewStandardizedTermLocator = StandardizedTermManager.GetInstance().GetTermLocatorText(NewOriginalValue);
+        }
+
+        private static readonly Regex cjkCharRegex = new Regex(@"\p{IsCJKUnifiedIdeographs}");
+
+        private static bool IsChineseCharacter(char c)
+        {
+            return cjkCharRegex.IsMatch(c.ToString());
+        }
+
+        private static bool IsStringContainsChineseCharacters(string s)
+        {
+            return s.Any(c => IsChineseCharacter(c));
         }
 
         public List<Request> GenerateUpdateRequests(int row, ref int columnIndex)
@@ -232,6 +247,19 @@ namespace PoW_Tool_SheetUtilities.Handler
                         else if (MLTranslationAdded)
                         {
                             fColor = MTLColor;
+                        }
+
+                        if (Definition.IsScriptField_FilterNoText)
+                        {
+                            Translation = NewOriginalValue;
+                            if (!IsStringContainsChineseCharacters(NewOriginalValue))
+                            {
+                                fColor = TranslatedColor;
+                            }
+                            else
+                            {
+                                fColor = NeedsCheckColor;
+                            }
                         }
 
                         updateReq.UpdateCells = new UpdateCellsRequest
@@ -394,7 +422,7 @@ namespace PoW_Tool_SheetUtilities.Handler
                 }
 
                 Color fColor = MTLColor;
-                if (string.IsNullOrEmpty(Translation) || Translation == "0")
+                if (string.IsNullOrEmpty(Translation) || Translation == "0" || (Definition.IsScriptField_FilterNoText && !IsStringContainsChineseCharacters(NewOriginalValue)))
                 {
                     fColor = TranslatedColor;
                 }
@@ -655,7 +683,7 @@ namespace PoW_Tool_SheetUtilities.Handler
                     updateRequests.Add(req);
                 }
 
-                if (updateRequests.Count >= 1000)
+                if (updateRequests.Count >= 2500)
                 {
                     HandleUpdateRequests(ref updateRequests);
                 }

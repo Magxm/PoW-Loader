@@ -71,6 +71,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                     Name = "Behaviour",
                     VariableType = AssetVariableType.Translate,
                     AutoML = false,
+                    IsScriptField_FilterNoText = true,
                 },
             };
         }

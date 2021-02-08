@@ -14,7 +14,7 @@ namespace PoW_Tool_SheetUtilities
             //Get input folder path
             string workingDirectory = Environment.CurrentDirectory;
             string inputFolder = workingDirectory + Path.DirectorySeparatorChar + "Input";
-
+            new BattleAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new TalentAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new ShopAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new RewardAssetHandler().UpdateSheetFromGameFile(inputFolder);
@@ -27,7 +27,7 @@ namespace PoW_Tool_SheetUtilities
             new CharacterExteriorAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new CharacterBehaviourAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new BookAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            new BattleAssetHandler().UpdateSheetFromGameFile(inputFolder);
+
             new TraitAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new StringTableAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new QuestAssetHandler().UpdateSheetFromGameFile(inputFolder);

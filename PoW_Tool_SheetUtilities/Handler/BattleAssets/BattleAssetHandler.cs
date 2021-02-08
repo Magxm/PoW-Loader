@@ -53,7 +53,7 @@ namespace PoW_Tool_SheetUtilities.Handler.BattleAssets
         {
             SheetId = "1Rva4xUTKRovzb8rXKEwC7gzSFjCJVuUwVaP1rymGNi0";
             AssetName = "Battle";
-            SheetRange = "A2:M";
+            SheetRange = "A2:O";
             FilePathWithoutExtension = "chs" + Path.DirectorySeparatorChar + "battle" + Path.DirectorySeparatorChar + "merge" + Path.DirectorySeparatorChar + "Schedule";
             OutputExtension = ".txt";
 
@@ -78,7 +78,8 @@ namespace PoW_Tool_SheetUtilities.Handler.BattleAssets
                 {
                     Name = "BattleSchedules",
                     VariableType = AssetVariableType.Translate,
-                    AutoML = false
+                    AutoML = false,
+                    IsScriptField_FilterNoText = true,
                 },
                 new AssetVariableDefinition()
                 {
@@ -219,7 +220,7 @@ namespace PoW_Tool_SheetUtilities.Handler.BattleAssets
                     updateRequests.Add(req);
                 }
 
-                if (updateRequests.Count >= 500)
+                if (updateRequests.Count >= 2500)
                 {
                     HandleUpdateRequests(ref updateRequests);
                 }
