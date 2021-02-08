@@ -7,498 +7,241 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-namespace PoW_Tool_SheetUtilities.Handler.BattleAssets
+namespace PoW_Tool_SheetUtilities.Handler.BufferAssets
 {
-    internal class BufferAssetHandler : IFileHandler
+    public class BufferAsset : AssetEntry
     {
-        public static string SheetRange = "A2:P";
-
-        private class BuffEntry
+        public void PopulateByGameAssetRow(string fileName, string[] row)
         {
-            public string FileName;
-            public string ID;
-            public string BuffName;
-            public string OriginalBuffName;
-            public string Description;
-            public string OriginalDescription;
-            public string Tooltip;
-            public string OriginalTooltip;
-            public string BuffCategory;
-            public string PosNeg;
-            public string N;
-            public string O;
-            public string Script;
+            //Setting fileName
+            Variables[0].SetNewOriginal(fileName);
+            //Setting other variables
+            int columnIndex = 0;
+            for (int i = 1; i < VariableDefinitions.Count; i++) //Skipping filePath
+                Variables[i].SetNewOriginal(row[columnIndex++]);
+        }
 
-            public string StandardizedTermLocator_BuffName = "";
-            public string StandardizedTermLocator_Description = "";
-            public string StandardizedTermLocator_Tooltip = "";
-
-            public int row = -1;
-
-            public bool SomeOriginalChanged = false;
-            public bool MLTranslated = false;
-
-            public BuffEntry()
+        public BufferAsset(List<AssetVariableDefinition> variableDefinitions)
+        {
+            VariableDefinitions = variableDefinitions;
+            Variables = new AssetVariable[VariableDefinitions.Count];
+            for (int i = 0; i < VariableDefinitions.Count; i++)
             {
-            }
-
-            public BuffEntry(IList<object> row)
-            {
-                FileName = (string)row[0];
-                ID = (string)row[1];
-                BuffName = (string)row[2];
-                OriginalBuffName = (string)row[3];
-                StandardizedTermLocator_BuffName = (string)row[4];
-                Description = (string)row[5];
-                OriginalDescription = (string)row[6];
-                StandardizedTermLocator_Description = (string)row[7];
-                Tooltip = (string)row[8];
-                OriginalTooltip = (string)row[9];
-                StandardizedTermLocator_Tooltip = (string)row[10];
-                BuffCategory = (string)row[11];
-                PosNeg = (string)row[12];
-                N = (string)row[13];
-                O = (string)row[14];
-                Script = (string)row[15];
-            }
-
-            public Request ToGoogleSheetUpdateRequest()
-            {
-                GoogleSheetConnector gsc = GoogleSheetConnector.GetInstance();
-                string talkSpreadsheetId = gsc.SpreadsheetIDs["Buffer"];
-                Request updateRequest = new Request();
-
-                var NameTextCellData = new CellData()
-                {
-                    UserEnteredValue = new ExtendedValue() { StringValue = BuffName },
-                    UserEnteredFormat = null
-                };
-
-                var DescriptionTextCellData = new CellData()
-                {
-                    UserEnteredValue = new ExtendedValue() { StringValue = Description },
-                    UserEnteredFormat = null
-                };
-
-                var TooltipTextCellData = new CellData()
-                {
-                    UserEnteredValue = new ExtendedValue() { StringValue = Tooltip },
-                    UserEnteredFormat = null
-                };
-
-                var Fields = "userEnteredValue";
-
-                if (SomeOriginalChanged)
-                {
-                    Fields = "userEnteredValue,userEnteredFormat";
-                    if (MLTranslated)
-                    {
-                        NameTextCellData.UserEnteredFormat = new CellFormat()
-                        {
-                            BackgroundColor = new Color()
-                            {
-                                Alpha = 1.0f,
-                                Red = 1.0f,
-                                Green = 0.66f,
-                                Blue = 0.0f
-                            }
-                        };
-                        DescriptionTextCellData.UserEnteredFormat = new CellFormat()
-                        {
-                            BackgroundColor = new Color()
-                            {
-                                Alpha = 1.0f,
-                                Red = 1.0f,
-                                Green = 0.66f,
-                                Blue = 0.0f
-                            }
-                        };
-
-                        TooltipTextCellData.UserEnteredFormat = new CellFormat()
-                        {
-                            BackgroundColor = new Color()
-                            {
-                                Alpha = 1.0f,
-                                Red = 1.0f,
-                                Green = 0.66f,
-                                Blue = 0.0f
-                            }
-                        };
-                    }
-                    else
-                    {
-                        NameTextCellData.UserEnteredFormat = new CellFormat()
-                        {
-                            BackgroundColor = new Color()
-                            {
-                                Alpha = 1.0f,
-                                Red = 0.8f,
-                                Green = 0.8f,
-                                Blue = 0.02f
-                            }
-                        };
-                        DescriptionTextCellData.UserEnteredFormat = new CellFormat()
-                        {
-                            BackgroundColor = new Color()
-                            {
-                                Alpha = 1.0f,
-                                Red = 0.8f,
-                                Green = 0.8f,
-                                Blue = 0.02f
-                            }
-                        };
-                        TooltipTextCellData.UserEnteredFormat = new CellFormat()
-                        {
-                            BackgroundColor = new Color()
-                            {
-                                Alpha = 1.0f,
-                                Red = 0.8f,
-                                Green = 0.8f,
-                                Blue = 0.02f
-                            }
-                        };
-                    }
-                }
-
-                var Rows = new List<RowData>
-                {
-                    new RowData()
-                    {
-                        Values = new List<CellData>()
-                        {
-                            new CellData()
-                            {
-                                UserEnteredValue = new ExtendedValue(){StringValue = FileName}
-                            },
-                            new CellData()
-                            {
-                                UserEnteredValue = new ExtendedValue(){StringValue = ID}
-                            },
-                            //Name
-                            NameTextCellData,
-                            new CellData()
-                            {
-                                UserEnteredValue = new ExtendedValue(){StringValue = OriginalBuffName}
-                            },
-                            new CellData()
-                            {
-                                UserEnteredValue = new ExtendedValue(){StringValue = StandardizedTermLocator_BuffName}
-                            },
-                            //Description
-                            DescriptionTextCellData,
-                            new CellData()
-                            {
-                                UserEnteredValue = new ExtendedValue(){StringValue = OriginalDescription}
-                            },
-                            new CellData()
-                            {
-                                UserEnteredValue = new ExtendedValue(){StringValue = StandardizedTermLocator_Description}
-                            },
-                            //Tooltip
-                            TooltipTextCellData,
-                            new CellData()
-                            {
-                                UserEnteredValue = new ExtendedValue(){StringValue = OriginalTooltip}
-                            },
-                            new CellData()
-                            {
-                                UserEnteredValue = new ExtendedValue(){StringValue = StandardizedTermLocator_Tooltip}
-                            },
-                            //Others
-                            new CellData()
-                            {
-                                UserEnteredValue = new ExtendedValue(){StringValue = BuffCategory}
-                            },
-                            new CellData()
-                            {
-                                UserEnteredValue = new ExtendedValue(){StringValue = PosNeg}
-                            },
-                            new CellData()
-                            {
-                                UserEnteredValue = new ExtendedValue(){StringValue = N}
-                            },
-                            new CellData()
-                            {
-                                UserEnteredValue = new ExtendedValue(){StringValue = O}
-                            },
-                            new CellData()
-                            {
-                                UserEnteredValue = new ExtendedValue(){StringValue = Script}
-                            }
-                        }
-                    }
-                };
-
-                if (row >= 1)
-                {
-                    updateRequest.UpdateCells = new UpdateCellsRequest
-                    {
-                        Range = new GridRange()
-                        {
-                            SheetId = 0,
-                            StartRowIndex = row,
-                            EndRowIndex = row + 1,
-                        },
-                        Rows = Rows,
-                        Fields = Fields
-                    };
-                }
-                else
-                {
-                    updateRequest.AppendCells = new AppendCellsRequest
-                    {
-                        Rows = Rows,
-                        SheetId = 0,
-                        Fields = Fields
-                    };
-                }
-
-                return updateRequest;
+                AssetVariableDefinition varDef = VariableDefinitions[i];
+                Variables[i] = new AssetVariable(varDef);
             }
         }
 
-        public void BuildGameDataFromSheet(string battleDirectory)
+        public new void AppendToFile(StreamWriter sw, AssetEntry thisEntry)
         {
-            string buffersPath = battleDirectory + Path.DirectorySeparatorChar + "buffer";
-            string mergeFilePath = battleDirectory + Path.DirectorySeparatorChar + "merge" + Path.DirectorySeparatorChar + "Buffer.txt";
-            GoogleSheetConnector gsc = GoogleSheetConnector.GetInstance();
-            string talkSpreadsheetId = gsc.SpreadsheetIDs["Buffer"];
+            for (int i = 1; i < VariableDefinitions.Count; i++)
+            {
+                if (i > 1)
+                {
+                    sw.Write('\t');
+                }
+                Variables[i].AppendToFile(sw);
+            }
 
-            Console.WriteLine("Getting Buff/Debuff Spreadsheet content");
+            sw.Write('\r');
+        }
+    }
 
-            //Getting all current entries
-            SpreadsheetsResource.ValuesResource.GetRequest request = gsc.Service.Spreadsheets.Values.Get(talkSpreadsheetId, SheetRange);
+    public class BufferAssetHandler : AssetHandler
+    {
+        public BufferAsset[] Variables;
+
+        public BufferAssetHandler()
+        {
+            SheetId = "149AKUIe9dudiedmI99tGd0WxC-YmE30TgaZYEo2vNyg";
+            AssetName = "Buffer";
+            SheetRange = "A2:P";
+            FilePathWithoutExtension = "chs" + Path.DirectorySeparatorChar + "battle" + Path.DirectorySeparatorChar + "merge" + Path.DirectorySeparatorChar + "Buffer";
+            OutputExtension = ".txt";
+
+            VariableDefinitions = new List<AssetVariableDefinition>()
+            {
+                new AssetVariableDefinition()
+                {
+                    Name = "FileName",
+                    VariableType = AssetVariableType.NoTranslate
+                },
+                new AssetVariableDefinition()
+                {
+                    Name = "ID",
+                    VariableType = AssetVariableType.NoTranslate
+                },
+                new AssetVariableDefinition()
+                {
+                    Name = "BuffName",
+                    VariableType = AssetVariableType.Translate
+                },
+                new AssetVariableDefinition()
+                {
+                    Name = "Description",
+                    VariableType = AssetVariableType.Translate
+                },
+                new AssetVariableDefinition()
+                {
+                    Name = "Tooltip",
+                    VariableType = AssetVariableType.Translate
+                },
+                new AssetVariableDefinition()
+                {
+                    Name = "Buff Category",
+                    VariableType = AssetVariableType.NoTranslate
+                },
+                new AssetVariableDefinition()
+                {
+                    Name = "PosNeg",
+                    VariableType = AssetVariableType.NoTranslate
+                },
+                new AssetVariableDefinition()
+                {
+                    Name = "N",
+                    VariableType = AssetVariableType.NoTranslate
+                },
+                new AssetVariableDefinition()
+                {
+                    Name = "O",
+                    VariableType = AssetVariableType.NoTranslate
+                },
+                new AssetVariableDefinition()
+                {
+                    Name = "Script",
+                    VariableType = AssetVariableType.NoTranslate
+                },
+            };
+        }
+
+        public new void BuildGameDataFromSheet(string outRootPath)
+        {
+            string mergeFilePath = outRootPath + Path.DirectorySeparatorChar + FilePathWithoutExtension + OutputExtension;
+            Console.WriteLine("Getting " + AssetName + " Spreadsheet content");
+
+            SpreadsheetsResource.ValuesResource.GetRequest request = GoogleSheetConnector.GetInstance().Service.Spreadsheets.Values.Get(SheetId, SheetRange);
             ValueRange response = request.Execute();
             List<IList<object>> values = (List<IList<object>>)response.Values;
 
-            //Clearing folders
-            string mergeRootFolder = Path.GetDirectoryName(mergeFilePath);
-            if (!Directory.Exists(mergeRootFolder))
+            //Clearing Asset File
+            string outDirectory = Path.GetDirectoryName(mergeFilePath);
+            if (!Directory.Exists(outDirectory))
             {
-                Directory.CreateDirectory(mergeRootFolder);
+                Directory.CreateDirectory(outDirectory);
             }
-            if (!Directory.Exists(buffersPath))
-            {
-                Directory.CreateDirectory(buffersPath);
-            }
+            //Resetting file
             File.WriteAllText(mergeFilePath, "");
 
-            Console.WriteLine("Constructing Buff JSONs and merger file...");
-            using (StreamWriter mergeFileWriter = File.AppendText(mergeFilePath))
+            string scheduleRelativeFolderPath = Path.DirectorySeparatorChar + "chs" + Path.DirectorySeparatorChar + "battle" + Path.DirectorySeparatorChar + "buffer";
+            string bufferFolderPath = outRootPath + Path.DirectorySeparatorChar + scheduleRelativeFolderPath;
+
+            //Getting all Sheet entries and dumping them into Talk.txt in right format
+            Console.WriteLine("Extracting to " + FilePathWithoutExtension + OutputExtension + " and the schedules folder");
+            StreamWriter mergeFileWriter = File.AppendText(mergeFilePath);
+
+            if (values != null && values.Count > 0)
             {
-                if (values != null && values.Count > 0)
+                foreach (var row in values)
                 {
-                    foreach (var row in values)
+                    BufferAsset thisEntry = new BufferAsset(VariableDefinitions);
+                    thisEntry.PopulateBySheetRow(row);
+
+                    //Writing to merge file
+                    thisEntry.AppendToFile(mergeFileWriter, thisEntry);
+
+                    //Writting to .json file
+                    string fileName = thisEntry.Variables[0].OriginalValue;
+                    string filePath = bufferFolderPath + Path.DirectorySeparatorChar + fileName;
+                    outDirectory = Path.GetDirectoryName(filePath);
+                    if (!Directory.Exists(outDirectory))
                     {
-                        string dataString = (string)row[1] + '\t'; //ID
-                        dataString += (string)row[2] + '\t'; //Buff name
-                        dataString += (string)row[5] + '\t'; //Description
-                        dataString += (string)row[8] + '\t'; //Tooltip
-                        dataString += (string)row[11] + '\t'; //Buff Category
-                        dataString += (string)row[12] + '\t';  //Pos/Neg
-                        dataString += (string)row[13] + '\t'; //N
-                        dataString += (string)row[14] + '\t'; //O
-                        dataString += (string)row[15]; //Script
-
-                        string bufferFilePath = buffersPath + Path.DirectorySeparatorChar + (string)row[0];
-                        File.WriteAllText(bufferFilePath, dataString);
-
-                        mergeFileWriter.Write(dataString + '\r');
+                        Directory.CreateDirectory(outDirectory);
                     }
+
+                    File.WriteAllText(filePath, "");
+                    StreamWriter scheduleFileWriter = File.AppendText(filePath);
+                    thisEntry.AppendToFile(scheduleFileWriter, thisEntry);
+                    scheduleFileWriter.Close();
                 }
             }
-            Console.WriteLine("Done!");
+
+            mergeFileWriter.Close();
         }
 
-        public void UpdateSheetFromGameFile(string battleDirectory)
+        public new void UpdateSheetFromGameFile(string inputFolder)
         {
-            string bufferFolderPath = battleDirectory + Path.DirectorySeparatorChar + "buffer";
+            string bufferFolderPath = inputFolder + Path.DirectorySeparatorChar + "chs" + Path.DirectorySeparatorChar + "battle" + Path.DirectorySeparatorChar + "buffer";
 
             //Getting all current entries
-            Dictionary<string, BuffEntry> buffEntries = new Dictionary<string, BuffEntry>();
-
-            Console.WriteLine("Getting Buff/Debuff Spreadsheet content");
+            Dictionary<string, BufferAsset> entries = new Dictionary<string, BufferAsset>();
             GoogleSheetConnector gsc = GoogleSheetConnector.GetInstance();
-            string talkSpreadsheetId = gsc.SpreadsheetIDs["Buffer"];
-            SpreadsheetsResource.ValuesResource.GetRequest request = gsc.Service.Spreadsheets.Values.Get(talkSpreadsheetId, SheetRange);
+
+            Console.WriteLine("Getting " + AssetName + " Spreadsheet content");
+
+            SpreadsheetsResource.ValuesResource.GetRequest request = gsc.Service.Spreadsheets.Values.Get(SheetId, SheetRange);
             ValueRange response = request.Execute();
             List<IList<object>> values = (List<IList<object>>)response.Values;
+
             int rowC = 1;
             if (values != null && values.Count > 0)
             {
                 foreach (var row in values)
                 {
-                    BuffEntry ae = new BuffEntry(row);
-                    ae.row = rowC;
-                    buffEntries[ae.FileName] = ae;
+                    BufferAsset ae = new BufferAsset(VariableDefinitions);
+                    ae.PopulateBySheetRow(row);
+                    ae.Row = rowC;
+
+                    entries[(string)row[0]] = ae;
                     rowC++;
                 }
             }
 
-            //UpdatingRequests
             var updateRequests = new List<Request>();
-
             Console.WriteLine("Comparing with games version and calculating updates...");
-            //Parse every buff file
+            //Parse every battle schedule file
             string[] files = Directory.GetFiles(bufferFolderPath, "*.bytes");
-            foreach (string bufferFilePathTmp in files)
+            for (int i = 0; i < files.Length; i++)
             {
+                Console.Title = "[" + AssetName + "] Processing " + i + "/" + files.Length;
+
                 //Reading file
+                string bufferFilePathTmp = files[i];
                 System.IO.StreamReader reader = new System.IO.StreamReader(bufferFilePathTmp);
                 string line = reader.ReadLine();
 
                 //Construction relative .json path
                 int lastSplitterIndex = bufferFilePathTmp.LastIndexOf(Path.DirectorySeparatorChar);
-                string bufferFilePath = bufferFilePathTmp.Substring(lastSplitterIndex + 1, bufferFilePathTmp.Length - lastSplitterIndex - 1);
-                bufferFilePath = bufferFilePath.Replace(".bytes", ".json");
-                //Splitting
+                string scheduleFilePath = bufferFilePathTmp.Substring(lastSplitterIndex + 1, bufferFilePathTmp.Length - lastSplitterIndex - 1);
+                scheduleFilePath = scheduleFilePath.Replace(".bytes", ".json");
+
+                //Parsing
                 string[] data = line.Split('\t');
-                //Parsing data
-
-                string ID = data[0];
-                string OriginalBuffName = data[1];
-                string OriginalDescription = data[2];
-                string OriginalTooltip = data[3];
-                string BuffCategory = data[4];
-                string PosNeg = data[5];
-                string N = data[6];
-                string O = data[7];
-                string Script = data[8];
-
-                string StandardizedTermLocator_BuffName = StandardizedTermManager.GetInstance().GetTermLocatorText(OriginalBuffName);
-                string StandardizedTermLocator_Description = StandardizedTermManager.GetInstance().GetTermLocatorText(OriginalDescription);
-                string StandardizedTermLocator_Tooltip = StandardizedTermManager.GetInstance().GetTermLocatorText(OriginalTooltip);
-
-                if (buffEntries.ContainsKey(bufferFilePath))
+                BufferAsset entry;
+                if (entries.ContainsKey(scheduleFilePath))
                 {
                     //Compare and update
-                    BuffEntry existingEntry = buffEntries[bufferFilePath];
-                    bool needsUpdate = false;
-
-                    if (existingEntry.ID != ID)
-                    {
-                        existingEntry.ID = ID;
-                        needsUpdate = true;
-                    }
-
-                    if (!string.IsNullOrEmpty(OriginalBuffName) && existingEntry.OriginalBuffName != OriginalBuffName)
-                    {
-                        existingEntry.OriginalBuffName = OriginalBuffName;
-                        existingEntry.SomeOriginalChanged = true;
-                        needsUpdate = true;
-                    }
-
-                    if (!string.IsNullOrEmpty(OriginalDescription) && existingEntry.OriginalDescription != OriginalDescription)
-                    {
-                        existingEntry.OriginalDescription = OriginalDescription;
-                        existingEntry.SomeOriginalChanged = true;
-                        needsUpdate = true;
-                    }
-
-                    if (!string.IsNullOrEmpty(OriginalTooltip) && existingEntry.OriginalTooltip != OriginalTooltip)
-                    {
-                        existingEntry.OriginalTooltip = OriginalTooltip;
-                        existingEntry.SomeOriginalChanged = true;
-                        needsUpdate = true;
-                    }
-
-                    if (existingEntry.BuffCategory != BuffCategory)
-                    {
-                        existingEntry.BuffCategory = BuffCategory;
-                        needsUpdate = true;
-                    }
-                    if (existingEntry.PosNeg != PosNeg)
-                    {
-                        existingEntry.PosNeg = PosNeg;
-                        needsUpdate = true;
-                    }
-                    if (existingEntry.N != N)
-                    {
-                        existingEntry.N = N;
-                        needsUpdate = true;
-                    }
-                    if (existingEntry.O != O)
-                    {
-                        existingEntry.O = O;
-                        needsUpdate = true;
-                    }
-                    if (existingEntry.Script != Script)
-                    {
-                        existingEntry.Script = Script;
-                        needsUpdate = true;
-                    }
-
-                    if (existingEntry.StandardizedTermLocator_BuffName != StandardizedTermLocator_BuffName)
-                    {
-                        existingEntry.StandardizedTermLocator_BuffName = StandardizedTermLocator_BuffName;
-                        needsUpdate = true;
-                    }
-
-                    if (existingEntry.StandardizedTermLocator_Description != StandardizedTermLocator_Description)
-                    {
-                        existingEntry.StandardizedTermLocator_Description = StandardizedTermLocator_Description;
-                        needsUpdate = true;
-                    }
-
-                    if (existingEntry.StandardizedTermLocator_Tooltip != StandardizedTermLocator_Tooltip)
-                    {
-                        existingEntry.StandardizedTermLocator_Tooltip = StandardizedTermLocator_Tooltip;
-                        needsUpdate = true;
-                    }
-
-                    if (needsUpdate)
-                    {
-                        updateRequests.Add(existingEntry.ToGoogleSheetUpdateRequest());
-                    }
+                    entry = entries[scheduleFilePath];
                 }
                 else
                 {
-                    //New one
-                    BuffEntry newEntry = new BuffEntry();
-                    newEntry.FileName = bufferFilePath;
-                    newEntry.ID = ID;
-                    newEntry.BuffName = TranslationManager.GetInstance().Translate(StandardizedTermLocator_BuffName);
-                    newEntry.OriginalBuffName = OriginalBuffName;
-                    newEntry.StandardizedTermLocator_BuffName = StandardizedTermLocator_BuffName;
-                    newEntry.Description = TranslationManager.GetInstance().Translate(StandardizedTermLocator_Description);
-                    newEntry.OriginalDescription = OriginalDescription;
-                    newEntry.StandardizedTermLocator_Description = StandardizedTermLocator_Description;
-                    newEntry.Tooltip = TranslationManager.GetInstance().Translate(StandardizedTermLocator_Tooltip);
-                    newEntry.OriginalTooltip = OriginalTooltip;
-                    newEntry.StandardizedTermLocator_Tooltip = StandardizedTermLocator_Tooltip;
-                    newEntry.BuffCategory = BuffCategory;
-                    newEntry.PosNeg = PosNeg;
-                    newEntry.N = N;
-                    newEntry.O = O;
-                    newEntry.Script = Script;
-
-                    newEntry.SomeOriginalChanged = true;
-                    newEntry.MLTranslated = true;
-
-                    updateRequests.Add(newEntry.ToGoogleSheetUpdateRequest());
+                    //New entry
+                    entry = new BufferAsset(VariableDefinitions);
                 }
-            }
 
-            Console.WriteLine("Updating spreadsheet...");
-            BatchUpdateSpreadsheetRequest batchUpdate = new BatchUpdateSpreadsheetRequest();
-            batchUpdate.Requests = new List<Request>();
-            int reqHandled = 0;
-            //updateRequests.RemoveRange(2, updateRequests.Count - 2);
-            foreach (var req in updateRequests)
-            {
-                batchUpdate.Requests.Add(req);
-                reqHandled++;
-                if (batchUpdate.Requests.Count >= 500 || reqHandled >= updateRequests.Count)
+                entry.PopulateByGameAssetRow(scheduleFilePath, data);
+                List<Request> updateReqs = entry.GetUpdateRequests();
+                foreach (Request req in updateReqs)
                 {
-                    var updateRequest = gsc.Service.Spreadsheets.BatchUpdate(batchUpdate, talkSpreadsheetId);
-                    updateRequest.Execute();
-                    //Resetting batch update
-                    batchUpdate = new BatchUpdateSpreadsheetRequest();
-                    batchUpdate.Requests = new List<Request>();
+                    updateRequests.Add(req);
+                }
+
+                if (updateRequests.Count >= 2500)
+                {
+                    HandleUpdateRequests(ref updateRequests);
                 }
             }
 
-            Console.WriteLine("Done! Updated " + reqHandled + " Entries!");
+            HandleUpdateRequests(ref updateRequests);
         }
     }
 }

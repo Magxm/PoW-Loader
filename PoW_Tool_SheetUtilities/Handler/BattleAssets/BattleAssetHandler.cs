@@ -47,8 +47,6 @@ namespace PoW_Tool_SheetUtilities.Handler.BattleAssets
 
     public class BattleAssetHandler : AssetHandler
     {
-        public BattleAsset[] Variables;
-
         public BattleAssetHandler()
         {
             SheetId = "1Rva4xUTKRovzb8rXKEwC7gzSFjCJVuUwVaP1rymGNi0";
