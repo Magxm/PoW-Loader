@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Google.Apis.Sheets.v4;
+using Google.Apis.Sheets.v4.Data;
+
+using System;
 using System.Collections.Generic;
 using System.IO;
 
@@ -74,6 +77,36 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                     IsScriptField_FilterNoText = true,
                 },
             };
+        }
+
+        //Custom Handling of this one because of it's size
+        public new void GetTranslationStats(ref int proofReadCount, ref int translatedCount, ref int needsCheckCount, ref int MLTranslatedCount, ref int otherCount)
+        {
+            Console.WriteLine("Calculating Translation Statistic for " + AssetName);
+            for (int k = 0; k < 4; k++)
+            {
+                SpreadsheetsResource.GetRequest request = GoogleSheetConnector.GetInstance().Service.Spreadsheets.Get(SheetId);
+                request.Ranges = "A" + (k * 10000 + 2) + ":O" + ((k + 1) * 10000 + 2);
+                request.IncludeGridData = true;
+                Spreadsheet sheet = request.Execute();
+                IList<GridData> grid = sheet.Sheets[0].Data;
+                //Getting each range (should only be one)
+                AssetEntry tmpEntry = new AssetEntry(VariableDefinitions);
+                foreach (GridData gridData in grid)
+                {
+                    //For each row
+                    foreach (var row in gridData.RowData)
+                    {
+                        SheetCellWithColor[] rowRaw = new SheetCellWithColor[row.Values.Count];
+                        for (int i = 0; i < row.Values.Count; i++)
+                        {
+                            rowRaw[i] = new SheetCellWithColor(row.Values[i]);
+                        }
+
+                        tmpEntry.CalculateTranslationStats(rowRaw, ref proofReadCount, ref translatedCount, ref needsCheckCount, ref MLTranslatedCount, ref otherCount);
+                    }
+                }
+            }
         }
     }
 }

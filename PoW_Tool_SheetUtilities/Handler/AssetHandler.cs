@@ -55,6 +55,13 @@ namespace PoW_Tool_SheetUtilities.Handler
             {
                 return a == null && b == null;
             }
+            if (a.Red == null) a.Red = 0;
+            if (a.Green == null) a.Green = 0;
+            if (a.Blue == null) a.Blue = 0;
+            if (b.Red == null) b.Red = 0;
+            if (b.Green == null) b.Green = 0;
+            if (b.Blue == null) b.Blue = 0;
+
             return a.Blue == b.Blue && a.Red == b.Red && a.Green == b.Green;
         }
 
@@ -63,14 +70,14 @@ namespace PoW_Tool_SheetUtilities.Handler
             Alpha = 1.0f,
             Red = 0.8f,
             Green = 0.8f,
-            Blue = 0.02f
+            Blue = 0.0196078438f
         };
 
         public static Color MTLColor = new Color()
         {
             Alpha = 1.0f,
             Red = 1.0f,
-            Green = 0.66f,
+            Green = 0.65882355f,
             Blue = 0.0f
         };
 
@@ -524,9 +531,14 @@ namespace PoW_Tool_SheetUtilities.Handler
             }
             else
             {
-                Color colorOfEntry = rowRaw[columnIndex++].Color; //Translation
+                Color colorOfEntry = rowRaw[columnIndex].Color;
+                string value = rowRaw[columnIndex++].Value; //Translation
                 columnIndex++;//Original
                 columnIndex++;//Standardized Term Locator
+                if (string.IsNullOrWhiteSpace(value) || Translation == "0")
+                {
+                    return;
+                }
 
                 if (IsSameColor(colorOfEntry, ProofReadColor))
                 {
@@ -657,6 +669,7 @@ namespace PoW_Tool_SheetUtilities.Handler
             {
                 Variables[i].CalculateTranslationStats(rowRaw, ref columnIndex, ref proofReadCount, ref translatedCount, ref needsCheckCount, ref MLTranslatedCount, ref otherCount);
             }
+            Console.Title = "Proof Read: " + proofReadCount + " Translated Count: " + translatedCount + " Needs Check Count: " + needsCheckCount + " ML Translated: " + MLTranslatedCount + " Others: " + otherCount;
         }
     }
 
