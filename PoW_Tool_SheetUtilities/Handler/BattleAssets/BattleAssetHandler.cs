@@ -99,7 +99,7 @@ namespace PoW_Tool_SheetUtilities.Handler.BattleAssets
 
         public new void BuildGameDataFromSheet(string outRootPath)
         {
-            string mergeFilePath = outRootPath + FilePathWithoutExtension + OutputExtension;
+            string mergeFilePath = outRootPath + Path.DirectorySeparatorChar + FilePathWithoutExtension + OutputExtension;
             Console.WriteLine("Getting " + AssetName + " Spreadsheet content");
 
             SpreadsheetsResource.ValuesResource.GetRequest request = GoogleSheetConnector.GetInstance().Service.Spreadsheets.Values.Get(SheetId, SheetRange);
@@ -115,7 +115,7 @@ namespace PoW_Tool_SheetUtilities.Handler.BattleAssets
             //Resetting file
             File.WriteAllText(mergeFilePath, "");
 
-            string scheduleRelativeFolderPath = "chs" + Path.DirectorySeparatorChar + "battle" + Path.DirectorySeparatorChar + "schedule";
+            string scheduleRelativeFolderPath = Path.DirectorySeparatorChar + "chs" + Path.DirectorySeparatorChar + "battle" + Path.DirectorySeparatorChar + "schedule";
             string scheduleFolderPath = outRootPath + Path.DirectorySeparatorChar + scheduleRelativeFolderPath;
 
             //Getting all Sheet entries and dumping them into Talk.txt in right format
@@ -135,6 +135,12 @@ namespace PoW_Tool_SheetUtilities.Handler.BattleAssets
                     //Writting to .json file
                     string fileName = thisEntry.Variables[0].OriginalValue;
                     string filePath = scheduleFolderPath + Path.DirectorySeparatorChar + fileName;
+                    outDirectory = Path.GetDirectoryName(filePath);
+                    if (!Directory.Exists(outDirectory))
+                    {
+                        Directory.CreateDirectory(outDirectory);
+                    }
+
                     File.WriteAllText(filePath, "");
                     StreamWriter scheduleFileWriter = File.AppendText(filePath);
                     thisEntry.AppendToFile(scheduleFileWriter, thisEntry);

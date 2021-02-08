@@ -534,7 +534,7 @@ namespace PoW_Tool_SheetUtilities.Handler
 
         public void BuildGameDataFromSheet(string outRootPath)
         {
-            string outFilePath = outRootPath + FilePathWithoutExtension + OutputExtension;
+            string outFilePath = outRootPath + Path.DirectorySeparatorChar + FilePathWithoutExtension + OutputExtension;
             Console.WriteLine("Getting " + AssetName + " Spreadsheet content");
 
             SpreadsheetsResource.ValuesResource.GetRequest request = GoogleSheetConnector.GetInstance().Service.Spreadsheets.Values.Get(SheetId, SheetRange);
