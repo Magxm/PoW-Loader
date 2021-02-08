@@ -4,14 +4,14 @@ using System.Collections.Generic;
 
 namespace PoW_Tool_SheetUtilities.Handler.TextAssets
 {
-    internal class ElectiveAssetHandler : AssetHandler
+    internal class MapAssetHandler : AssetHandler
     {
-        public ElectiveAssetHandler()
+        public MapAssetHandler()
         {
-            SheetId = "1iNcPMWAyjSCKpNZcZ9iAG1cfSw84RYbZYk58m1bbRZw";
-            AssetName = "Elective";
-            SheetRange = "A2:Q";
-            FilePathWithoutExtension = "chs" + Path.DirectorySeparatorChar + "textfiles" + Path.DirectorySeparatorChar + "Elective";
+            SheetId = "1uFiTaZgFBgtl489iNaGGzBFrg6W9UlTol6vW0B8yOh0";
+            AssetName = "Map";
+            SheetRange = "A2:I";
+            FilePathWithoutExtension = "chs" + Path.DirectorySeparatorChar + "textfiles" + Path.DirectorySeparatorChar + "Map";
             OutputExtension = ".txt";
 
             VariableDefinitions = new List<AssetVariableDefinition>()
@@ -24,46 +24,36 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                 new AssetVariableDefinition()
                 {
                     Name = "Name",
-                    VariableType = AssetVariableType.Translate
-                },
-                new AssetVariableDefinition()
-                {
-                    Name = "Remark",
                     VariableType = AssetVariableType.MachineTL
                 },
                 new AssetVariableDefinition()
                 {
-                    Name = "ExteriorId",
+                    Name = "Scenes",
                     VariableType = AssetVariableType.NoTranslate
                 },
                 new AssetVariableDefinition()
                 {
-                    Name = "Description",
-                    VariableType = AssetVariableType.Translate
-                },
-                new AssetVariableDefinition()
-                {
-                    Name = "Grade",
+                    Name = "Place",
                     VariableType = AssetVariableType.NoTranslate
                 },
                 new AssetVariableDefinition()
                 {
-                    Name = "LearnableSkillsId",
-                    VariableType = AssetVariableType.NoTranslate,
-                },
-                new AssetVariableDefinition()
-                {
-                    Name = "ConditionDescription",
-                    VariableType = AssetVariableType.Translate
-                },
-                new AssetVariableDefinition()
-                {
-                    Name = "Condition",
+                    Name = "DefaultPosition",
                     VariableType = AssetVariableType.NoTranslate
                 },
                 new AssetVariableDefinition()
                 {
-                    Name = "IsRepeat",
+                    Name = "DefaultRotation",
+                    VariableType = AssetVariableType.NoTranslate
+                },
+                new AssetVariableDefinition()
+                {
+                    Name = "Music",
+                    VariableType = AssetVariableType.NoTranslate
+                },
+                new AssetVariableDefinition()
+                {
+                    Name = "BattleDis",
                     VariableType = AssetVariableType.NoTranslate
                 },
             };

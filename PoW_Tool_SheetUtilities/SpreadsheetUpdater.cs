@@ -15,6 +15,10 @@ namespace PoW_Tool_SheetUtilities
             string workingDirectory = Environment.CurrentDirectory;
             string inputFolder = workingDirectory + Path.DirectorySeparatorChar + "Input";
 
+            new MapAssetHandler().UpdateSheetFromGameFile(inputFolder);
+            new ForgeAssetHandler().UpdateSheetFromGameFile(inputFolder);
+            new FavorabilityAssetHandler().UpdateSheetFromGameFile(inputFolder);
+            new EvaluationAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new ElectiveAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new CharacterExteriorAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new CharacterBehaviourAssetHandler().UpdateSheetFromGameFile(inputFolder);
@@ -50,9 +54,14 @@ namespace PoW_Tool_SheetUtilities
 
         public static void ExportToMod(string outputFolder)
         {
-            //Get input folder path
-            string textAssetFolder = outputFolder + Path.DirectorySeparatorChar + "chs" + Path.DirectorySeparatorChar + "textfiles";
-
+            new MapAssetHandler().BuildGameDataFromSheet(outputFolder);
+            Thread.Sleep(3000);
+            new ForgeAssetHandler().BuildGameDataFromSheet(outputFolder);
+            Thread.Sleep(3000);
+            new FavorabilityAssetHandler().BuildGameDataFromSheet(outputFolder);
+            Thread.Sleep(3000);
+            new EvaluationAssetHandler().BuildGameDataFromSheet(outputFolder);
+            Thread.Sleep(3000);
             new ElectiveAssetHandler().BuildGameDataFromSheet(outputFolder);
             Thread.Sleep(3000);
             new CharacterExteriorAssetHandler().BuildGameDataFromSheet(outputFolder);
@@ -87,7 +96,7 @@ namespace PoW_Tool_SheetUtilities
 
             //OLD HANDLERS
             //Exporting TextAssets
-
+            string textAssetFolder = outputFolder + Path.DirectorySeparatorChar + "chs" + Path.DirectorySeparatorChar + "textfiles";
             Thread.Sleep(3000);
             new AchievementAssetHandler().BuildGameDataFromSheet(textAssetFolder);
             Thread.Sleep(3000);
