@@ -4,14 +4,14 @@ using System.Collections.Generic;
 
 namespace PoW_Tool_SheetUtilities.Handler.TextAssets
 {
-    internal class RegistrationBonusAssetHandler : AssetHandler
+    internal class GameFormulaAssetHandler : AssetHandler
     {
-        public RegistrationBonusAssetHandler()
+        public GameFormulaAssetHandler()
         {
-            SheetId = "1PZQd4Pvq4v47NvGjM7jjaeH-RIVQPgmoMPZK5yuh_Vg";
-            AssetName = "RegistrationBonus";
+            SheetId = "1OfXl478TjtD8KOBBnyWx79BAa2dn-ySlAavDquqTPRA";
+            AssetName = "GameFormula";
             SheetRange = "A2:F";
-            FilePathWithoutExtension = "chs" + Path.DirectorySeparatorChar + "textfiles" + Path.DirectorySeparatorChar + "RegistrationBonus";
+            FilePathWithoutExtension = "chs" + Path.DirectorySeparatorChar + "textfiles" + Path.DirectorySeparatorChar + "GameFormula";
             OutputExtension = ".txt";
 
             VariableDefinitions = new List<AssetVariableDefinition>()
@@ -23,22 +23,17 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                 },
                 new AssetVariableDefinition()
                 {
-                    Name = "Desc",
+                    Name = "Remark",
                     VariableType = AssetVariableType.MachineTL
                 },
                 new AssetVariableDefinition()
                 {
-                    Name = "FourAttributesPoint",
-                    VariableType = AssetVariableType.NoTranslate
+                    Name = "Alias",
+                    VariableType = AssetVariableType.MachineTL
                 },
                 new AssetVariableDefinition()
                 {
-                    Name = "TraitPoint",
-                    VariableType = AssetVariableType.NoTranslate
-                },
-                new AssetVariableDefinition()
-                {
-                    Name = "UnLockTraits",
+                    Name = "Formular",
                     VariableType = AssetVariableType.NoTranslate
                 },
             };

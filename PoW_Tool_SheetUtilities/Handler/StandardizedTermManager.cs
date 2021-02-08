@@ -9,9 +9,10 @@ using System.Threading.Tasks;
 
 namespace PoW_Tool_SheetUtilities.Handler
 {
-    class StandardizedTermManager
+    internal class StandardizedTermManager
     {
         private static StandardizedTermManager __Instance;
+
         public static StandardizedTermManager GetInstance()
         {
             if (__Instance == null)
@@ -23,23 +24,28 @@ namespace PoW_Tool_SheetUtilities.Handler
         }
 
         private Dictionary<string, string> StandardizedTerms;
+
         private static List<string> SheetRanges = new List<string>()
         {
             "Glossary!A6:B",
             "Character Names!A5:B",
             "Gears!A4:B",
-            //"Quest Items!A6:B",
+            //"Quest Items!A4:B",
             "Skills!A6:B",
+            "Buff_Debuff!A2:B",
+            "Mantras!A6:B",
+            "SkillReference!A4:B",
         };
+
         private StandardizedTermManager()
         {
             Console.WriteLine("Getting standardized terms from google sheets..");
             StandardizedTerms = new Dictionary<string, string>();
 
             GoogleSheetConnector gsc = GoogleSheetConnector.GetInstance();
-            string termSpreadsheetId = gsc.SpreadsheetIDs["StandardizedTerms"];
+            string termSpreadsheetId = "1GVyGWijCuuSlgkyOzTLwutRiS-mlCf5Lc35Y-mY7TR4";
 
-            foreach(var range in SheetRanges)
+            foreach (var range in SheetRanges)
             {
                 SpreadsheetsResource.ValuesResource.GetRequest request = gsc.Service.Spreadsheets.Values.Get(termSpreadsheetId, range);
                 ValueRange response = request.Execute();

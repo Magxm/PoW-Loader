@@ -16,9 +16,12 @@ namespace PoW_Tool_SheetUtilities
             string workingDirectory = Environment.CurrentDirectory;
             string inputFolder = workingDirectory + Path.DirectorySeparatorChar + "Input";
 
+            new NoteDescriptionAssetHandler().UpdateSheetFromGameFile(inputFolder);
+            new GameFormulaAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new HelpAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new HelpDescriptionAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new BattleAssetHandler().UpdateSheetFromGameFile(inputFolder);
+            Thread.Sleep(10000);
             new TalkAssetHandler().UpdateSheetFromGameFile(inputFolder);
             Thread.Sleep(30000);
             new TalentAssetHandler().UpdateSheetFromGameFile(inputFolder);
@@ -53,12 +56,17 @@ namespace PoW_Tool_SheetUtilities
             new AlchemyAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new SkillAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new BufferAssetHandler().UpdateSheetFromGameFile(inputFolder);
+            Thread.Sleep(10000);
+            new RoundAssetHandler().UpdateSheetFromGameFile(inputFolder);
+            new RegistrationBonusAssetHandler().UpdateSheetFromGameFile(inputFolder);
+            new NurturanceIdleAssetHandler().UpdateSheetFromGameFile(inputFolder);
         }
 
         public static void ExportToMod(string outputFolder)
         {
             new TalkAssetHandler().BuildGameDataFromSheet(outputFolder);
             Thread.Sleep(60000);
+            new GameFormulaAssetHandler().BuildGameDataFromSheet(outputFolder);
             new TalentAssetHandler().BuildGameDataFromSheet(outputFolder);
             new ShopAssetHandler().BuildGameDataFromSheet(outputFolder);
             new RewardAssetHandler().BuildGameDataFromSheet(outputFolder);
@@ -93,12 +101,18 @@ namespace PoW_Tool_SheetUtilities
             new BufferAssetHandler().BuildGameDataFromSheet(outputFolder);
             new HelpAssetHandler().BuildGameDataFromSheet(outputFolder);
             new HelpDescriptionAssetHandler().BuildGameDataFromSheet(outputFolder);
+            Thread.Sleep(10000);
+            new NoteDescriptionAssetHandler().BuildGameDataFromSheet(outputFolder);
+            new RoundAssetHandler().BuildGameDataFromSheet(outputFolder);
+            new RegistrationBonusAssetHandler().BuildGameDataFromSheet(outputFolder);
+            new NurturanceIdleAssetHandler().BuildGameDataFromSheet(outputFolder);
         }
 
         internal static void GetTranslationStats(ref int proofReadCount, ref int translatedCount, ref int needsCheckCount, ref int mTLCount, ref int otherCount)
         {
             new TalkAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
             Thread.Sleep(30000);
+            new GameFormulaAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
             new BattleAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
             new TalentAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
             new ShopAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
@@ -131,6 +145,11 @@ namespace PoW_Tool_SheetUtilities
             new BufferAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
             new HelpAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
             new HelpDescriptionAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
+            new NoteDescriptionAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
+            Thread.Sleep(10000);
+            new RoundAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
+            new RegistrationBonusAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
+            new NurturanceIdleAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
         }
     }
 }
