@@ -18,6 +18,7 @@ namespace PoW_Tool_SheetUtilities.Handler
     {
         public string Name;
         public AssetVariableType VariableType;
+        public bool AutoML = true;
     }
 
     public class AssetVariable
@@ -207,7 +208,14 @@ namespace PoW_Tool_SheetUtilities.Handler
                 if (!string.IsNullOrEmpty(NewOriginalValue) && string.IsNullOrEmpty(Translation))
                 {
                     MLTranslationAdded = true;
-                    Translation = MachineTranslator.TranslationManager.GetInstance().Translate(NewStandardizedTermLocator);
+                    if (Definition.AutoML)
+                    {
+                        Translation = MachineTranslator.TranslationManager.GetInstance().Translate(NewStandardizedTermLocator);
+                    }
+                    else
+                    {
+                        Translation = OriginalValue;
+                    }
                 }
 
                 if (OriginalValue != NewOriginalValue || MLTranslationAdded)
