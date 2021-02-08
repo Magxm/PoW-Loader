@@ -24,7 +24,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                 new AssetVariableDefinition()
                 {
                     Name = "Name",
-                    VariableType = AssetVariableType.Translate
+                    VariableType = AssetVariableType.MachineTL
                 },
                 new AssetVariableDefinition()
                 {
