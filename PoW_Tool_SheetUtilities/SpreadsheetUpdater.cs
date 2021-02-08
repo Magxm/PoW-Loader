@@ -16,6 +16,8 @@ namespace PoW_Tool_SheetUtilities
             string workingDirectory = Environment.CurrentDirectory;
             string inputFolder = workingDirectory + Path.DirectorySeparatorChar + "Input";
 
+            new HelpAssetHandler().UpdateSheetFromGameFile(inputFolder);
+            new HelpDescriptionAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new BattleAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new TalkAssetHandler().UpdateSheetFromGameFile(inputFolder);
             Thread.Sleep(30000);
@@ -89,6 +91,8 @@ namespace PoW_Tool_SheetUtilities
             new AlchemyAssetHandler().BuildGameDataFromSheet(outputFolder);
             new SkillAssetHandler().BuildGameDataFromSheet(outputFolder);
             new BufferAssetHandler().BuildGameDataFromSheet(outputFolder);
+            new HelpAssetHandler().BuildGameDataFromSheet(outputFolder);
+            new HelpDescriptionAssetHandler().BuildGameDataFromSheet(outputFolder);
         }
 
         internal static void GetTranslationStats(ref int proofReadCount, ref int translatedCount, ref int needsCheckCount, ref int mTLCount, ref int otherCount)
@@ -125,6 +129,8 @@ namespace PoW_Tool_SheetUtilities
             new AlchemyAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
             new SkillAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
             new BufferAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
+            new HelpAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
+            new HelpDescriptionAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
         }
     }
 }
