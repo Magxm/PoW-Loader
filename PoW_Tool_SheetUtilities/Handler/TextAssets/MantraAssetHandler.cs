@@ -34,7 +34,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                 new AssetVariableDefinition()
                 {
                     Name = "Acquire Info",
-                    VariableType = AssetVariableType.Translate
+                    VariableType = AssetVariableType.MachineTL
                 },
                 new AssetVariableDefinition()
                 {
