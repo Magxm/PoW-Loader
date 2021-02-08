@@ -7,20 +7,20 @@ using System.IO;
 
 namespace PoW_Tool_SheetUtilities.Handler
 {
-    internal enum AssetVariableType
+    public enum AssetVariableType
     {
         Translate,
         MachineTL,
         NoTranslate,
     }
 
-    internal class AssetVariableDefinition
+    public class AssetVariableDefinition
     {
         public string Name;
         public AssetVariableType VariableType;
     }
 
-    internal class AssetVariable
+    public class AssetVariable
     {
         public static Color NeedsCheckColor = new Color()
         {
@@ -411,15 +411,19 @@ namespace PoW_Tool_SheetUtilities.Handler
         }
     }
 
-    internal class AssetEntry
+    public class AssetEntry
     {
-        private List<AssetVariableDefinition> VariableDefinitions;
-        private AssetVariable[] Variables;
+        public List<AssetVariableDefinition> VariableDefinitions;
+        public AssetVariable[] Variables;
         public int Row = -1;
 
-        public AssetEntry(List<AssetVariableDefinition> variableDefinitons)
+        public AssetEntry()
         {
-            VariableDefinitions = variableDefinitons;
+        }
+
+        public AssetEntry(List<AssetVariableDefinition> variableDefinitions)
+        {
+            VariableDefinitions = variableDefinitions;
             Variables = new AssetVariable[VariableDefinitions.Count];
             for (int i = 0; i < VariableDefinitions.Count; i++)
             {
@@ -489,7 +493,7 @@ namespace PoW_Tool_SheetUtilities.Handler
         }
     }
 
-    internal class AssetHandler : IFileHandler
+    public class AssetHandler : IFileHandler
     {
         public List<AssetVariableDefinition> VariableDefinitions = new List<AssetVariableDefinition>();
         public string SheetId;
@@ -503,10 +507,11 @@ namespace PoW_Tool_SheetUtilities.Handler
             throw new NotImplementedException();
         }
 
-        private void HandleUpdateRequests(ref List<Request> updateRequests)
+        public void HandleUpdateRequests(ref List<Request> updateRequests)
         {
             if (updateRequests.Count > 0)
             {
+                Console.WriteLine("Sending " + updateRequests.Count + " Requests to Google API...");
                 BatchUpdateSpreadsheetRequest batchUpdate = new BatchUpdateSpreadsheetRequest();
                 batchUpdate.Requests = updateRequests;
                 var updateRequest = GoogleSheetConnector.GetInstance().Service.Spreadsheets.BatchUpdate(batchUpdate, SheetId);

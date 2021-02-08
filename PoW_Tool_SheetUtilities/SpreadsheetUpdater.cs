@@ -14,6 +14,7 @@ namespace PoW_Tool_SheetUtilities
             string workingDirectory = Environment.CurrentDirectory;
             string inputFolder = workingDirectory + Path.DirectorySeparatorChar + "Input";
 
+            new BattleAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new TraitAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new StringTableAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new QuestAssetHandler().UpdateSheetFromGameFile(inputFolder);
