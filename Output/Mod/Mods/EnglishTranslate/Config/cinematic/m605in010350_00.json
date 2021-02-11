@@ -1,0 +1,101 @@
+{
+  "EntryIndex": 0,
+  "Nodes": [
+    {
+      "Node": "{ \"TimerAction\" : 0.20000} ",
+      "Next": 2,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.20000} ",
+      "Next": 7,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckCurrentRound\" : 1, 1, 124, \"\"}  ], 0} , 8, 5} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010300_029\"} ",
+      "Next": 16,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.20000} ",
+      "Next": 6,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckPlayerUpgradableProperty\" : 0, 299, 2040}  ], 0} , 4, 1} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010300_032\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010300_032\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"LoadScenesAction\" : \"S0108\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0} ",
+      "Next": 9,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.20000} ",
+      "Next": 12,
+      "Prallel": 10
+    },
+    {
+      "Node": "{ \"PlayerTransformAction\" : True, { -1382.32000, 8.58778, 689.47000} , True, { 0.00000, 120.07380, 0.00000} } ",
+      "Next": -1,
+      "Prallel": 11
+    },
+    {
+      "Node": "{ \"GroupTransformAction\" : [ { \"in0103\", { -1380.67000, 8.61278, 687.95000} , { 0.00000, 115.64820, 0.00000} } , { \"in91001\", { -1390.47900, 8.58778, 693.39600} , { 0.00000, 203.34360, 0.00000} } , { \"in91002\", { -1390.19600, 8.58778, 692.25700} , { 0.00000, 306.37980, 0.00000} }  ]} ",
+      "Next": -1,
+      "Prallel": 18
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.20000} ",
+      "Next": 15,
+      "Prallel": 13
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 0, \"skill_MA0202_c01\", 1.00000} , { 0, \"skill_MA0903_a01\", 1.00000} , { 0, \"skill_MA0202_b02\", 1.00000} , { 2, \"in0103_empty_idle00\", 1.00000}  ], \"in0103\"} ",
+      "Next": -1,
+      "Prallel": 14
+    },
+    {
+      "Node": "{ \"PlayPlayerAnimationAction\" : [ { 2, \"m_stand02_await00\", 1.00000}  ]} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : True, 0.50000} ",
+      "Next": 3,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : False, 0.50000} ",
+      "Next": 17,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"CameraTransformAction\" : True, { -1378.11500, 9.09599, 688.93770} , 0.00000, True, { 339.33650, 247.39310, -0.00002} , 0.00000, 45} ",
+      "Next": -1,
+      "Prallel": -1
+    }
+  ],
+  "Name": "m605in010340_00鍾若昕事件5_起始條件判定/下旗標"
+}

@@ -1,0 +1,106 @@
+{
+  "EntryIndex": 0,
+  "Nodes": [
+    {
+      "Node": "{ \"TimerAction\" : 0.20000} ",
+      "Next": 1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckCurrentRound\" : 1, 1, 124, \"\"}  ], 0} , 2, -1} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"LoadScenesAction\" : \"S0105\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0} ",
+      "Next": 3,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.20000} ",
+      "Next": 6,
+      "Prallel": 4
+    },
+    {
+      "Node": "{ \"PlayerTransformAction\" : True, { 107.73000, 1.81954, -792.81000} , True, { 0.00000, 32.79359, 0.00000} } ",
+      "Next": -1,
+      "Prallel": 5
+    },
+    {
+      "Node": "{ \"GroupTransformAction\" : [ { \"in0104\", { 109.25000, 1.81946, -789.45000} , { 0.00000, 6.13129, 0.00000} }  ]} ",
+      "Next": -1,
+      "Prallel": 7
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.20000} ",
+      "Next": 11,
+      "Prallel": 8
+    },
+    {
+      "Node": "{ \"CameraTransformAction\" : True, { 106.78000, 2.88000, -792.55000} , 0.00000, True, { 359.97500, 39.84699, 0.00000} , 0.00000, 45} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayerSimpleTransformAction\" : True, { 108.75000, 1.81954, -791.22000} , 1.50000, True, { 0.00000, 32.79360, 0.00000} } ",
+      "Next": -1,
+      "Prallel": 9
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"m_stand00_talk05\", 1.00000}  ], \"in0104\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010400_003\"} ",
+      "Next": 12,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : True, 0.50000} ",
+      "Next": 10,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcFaceToPlayer\" : \"in0104\", 0} ",
+      "Next": 13,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010400_004\"} ",
+      "Next": 14,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayPlayerAnimationAction\" : [ { 0, \"m_stand00_talk41\", 1.00000} , { 0, \"m_stand00_talk31\", 1.00000}  ]} ",
+      "Next": 16,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayerSimpleTransformAction\" : True, { 108.15600, 1.81954, -793.49200} , 1.50000, True, { 0.00000, 187.51780, 0.00000} } ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : False, 1.00000} ",
+      "Next": 17,
+      "Prallel": 15
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010400_005\"} ",
+      "Next": 18,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010400_006\"} ",
+      "Next": 19,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0} ",
+      "Next": -1,
+      "Prallel": -1
+    }
+  ],
+  "Name": "蕭芊菱三階段以前把玩家丟回去MOV"
+}

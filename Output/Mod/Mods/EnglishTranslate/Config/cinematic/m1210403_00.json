@@ -1,0 +1,81 @@
+{
+  "EntryIndex": 0,
+  "Nodes": [
+    {
+      "Node": "{ \"LoadScenesAction\" : \"S1004\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0} ",
+      "Next": 1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayerTransformAction\" : True, { 608.02000, 141.18290, 10.49000} , True, { 0.00000, 295.50570, 0.00000} } ",
+      "Next": 2,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"GroupTransformAction\" : [ { \"party01\", { 609.79000, 141.43380, 10.94000} , { 0.00000, 306.86800, 0.00000} } , { \"party02\", { 608.69180, 141.18290, 9.46779} , { 0.00000, 310.61430, 0.00000} } , { \"party03\", { 610.52720, 141.51250, 9.87252} , { 0.00000, 304.29340, 0.00000} }  ]} ",
+      "Next": 3,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcWeaponActiveAction\" : True, \"party01,party02,party03\"} ",
+      "Next": 4,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcChangeWeaponPointAction\" : False, \"party01,party02,party03\"} ",
+      "Next": 5,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayerWeaponActiveAction\" : True} ",
+      "Next": 6,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayerChangeWeaponPointAction\" : False} ",
+      "Next": 7,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"CameraTransformAction\" : True, { 618.91000, 145.71000, 8.47000} , 0.00000, True, { 15.55939, 307.33690, 0.00000} , 0.00000, 45} ",
+      "Next": 8,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : True, 2.00000} ",
+      "Next": -1,
+      "Prallel": 9
+    },
+    {
+      "Node": "{ \"CameraTransformAction\" : True, { 617.72000, 145.29000, 9.38000} , 6.00000, True, { 15.55939, 307.33690, 0.00000} , 6.00000, 45} ",
+      "Next": -1,
+      "Prallel": 10
+    },
+    {
+      "Node": "{ \"TimerAction\" : 4.00000} ",
+      "Next": 11,
+      "Prallel": 14
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : False, 2.00000} ",
+      "Next": 12,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 13,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SaveAction\" } ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"MusicAction\" : \"In_mood_10.wav\", 1.00000, False, 1.00000, False, 0.00000} ",
+      "Next": -1,
+      "Prallel": -1
+    }
+  ],
+  "Name": "恆山礦洞入洞鏡頭M1004"
+}

@@ -1,0 +1,121 @@
+{
+  "EntryIndex": 0,
+  "Nodes": [
+    {
+      "Node": "{ \"CameraTransformAction\" : True, { 291.87240, 29.04790, 702.00960} , 0.00000, True, { 16.82723, 186.65000, -0.00013} , 0.00000, 45} ",
+      "Next": 1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"GroupTransformAction\" : [ { \"in05326\", { 294.35000, 27.13789, 692.25000} , { 0.00000, 319.16570, 0.00000} } , { \"in05328\", { 292.49800, 27.13789, 697.49300} , { 0.00000, 319.35960, 0.00000} } , { \"in05329\", { 291.19800, 27.13789, 696.61500} , { 0.00000, 348.60810, 0.00000} } , { \"in05330\", { 298.95600, 33.73200, 691.55900} , { 0.00000, 312.79530, 0.00000} } , { \"in05331\", { 300.36220, 35.54500, 689.53190} , { 0.03841, 325.56500, 359.98550} }  ]} ",
+      "Next": 2,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayerTransformAction\" : True, { 290.38500, 27.13789, 698.56800} , True, { 0.00000, 150.81580, 0.00000} } ",
+      "Next": 18,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 4,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : True, 1.00000} ",
+      "Next": 6,
+      "Prallel": 5
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 0, \"ev0601_both_die00\", 1.00000} , { 2, \"ev0601_both_die00_loop00\", 1.00000}  ], \"in05328\"} ",
+      "Next": -1,
+      "Prallel": 20
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 0, \"ev0601_both_die00\", 1.00000} , { 2, \"ev0601_both_die00_loop00\", 1.00000}  ], \"in05329\"} ",
+      "Next": 8,
+      "Prallel": 7
+    },
+    {
+      "Node": "{ \"PlayPlayerAnimationAction\" : [ { 2, \"m_stand01_await00\", 1.00000}  ]} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t5201104_010\"} ",
+      "Next": 9,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcArcMoveAction\" : { 293.73930, 27.13789, 696.31230} , { 295.53600, 31.07700, 694.65600} , 0.50000, \"in05330\"} ",
+      "Next": 11,
+      "Prallel": 10
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 0, \"m_stand00_jump00_goingdown00\", 1.00000}  ], \"in05330\"} ",
+      "Next": -1,
+      "Prallel": 21
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"m_stand00_jump00_stop00\", 1.00000}  ], \"in05330\"} ",
+      "Next": 15,
+      "Prallel": 12
+    },
+    {
+      "Node": "{ \"NpcArcMoveAction\" : { 291.80500, 27.13700, 695.11800} , { 294.93000, 32.43000, 691.50000} , 0.50000, \"in05331\"} ",
+      "Next": -1,
+      "Prallel": 13
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 0, \"m_stand00_jump00_goingdown00\", 1.00000} , { 2, \"m_stand00_jump00_stop00\", 1.00000}  ], \"in05331\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t5201104_017\"} ",
+      "Next": 17,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"m_single_idle00\", 1.00000}  ], \"in05330\"} ",
+      "Next": 14,
+      "Prallel": 22
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"m_single_idle00\", 1.00000}  ], \"in05331\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BattleAction\" : \"bt5201104_02\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcWeaponActiveAction\" : True, \"in05330,in05331,in05328,in05329\"} ",
+      "Next": 19,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcChangeWeaponPointAction\" : True, \"in05328,in05329,in05330,in05331\"} ",
+      "Next": 3,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"k_stand05_await00\", 1.00000}  ], \"in05326\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 0, \"k_stand00_talk41\", 1.00000}  ], \"in05326\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 16,
+      "Prallel": -1
+    }
+  ],
+  "Name": "m5201104_03"
+}
