@@ -700,7 +700,7 @@ namespace PoW_Tool_SheetUtilities.Handler
             //Resetting file
             File.WriteAllText(outFilePath, "");
 
-            //Getting all Sheet entries and dumping them into Talk.txt in right format
+            //Getting all Sheet entries and dumping them into output text asset in right format
             Console.WriteLine("Extracting to " + FilePathWithoutExtension + OutputExtension);
             StreamWriter sw = File.AppendText(outFilePath);
 
@@ -751,8 +751,14 @@ namespace PoW_Tool_SheetUtilities.Handler
                     AssetEntry ae = new AssetEntry(VariableDefinitions);
                     ae.PopulateBySheetRow(row);
                     ae.Row = rowC;
-
-                    entries[(string)row[0]] = ae;
+                    string index = (string)row[0];
+                    if (entries.ContainsKey(index))
+                    {
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Detected multiple entries with key " + index + "! Using last one...");
+                        Console.ForegroundColor = ConsoleColor.White;
+                    }
+                    entries[index] = ae;
                     rowC++;
                 }
             }
@@ -778,6 +784,7 @@ namespace PoW_Tool_SheetUtilities.Handler
                 {
                     //New entry
                     entry = new AssetEntry(VariableDefinitions);
+                    entries[data[0]] = entry;
                 }
 
                 entry.PopulateByGameAssetRow(data);
