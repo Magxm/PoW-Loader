@@ -44,7 +44,31 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
                     if (result != null)
                     {
                         //Sanitizing result
-                        result = result.Replace("&#39;", "'");
+                        result = result.Replace(@"&#39;", @"'");
+                        result = result.Replace(@"&quot;", @"""");
+                        //Friend
+                        result = result.Replace(@"{name_1}{friend_2}", @"{friend_2} {name_1}");
+                        result = result.Replace(@"{name_1}{friend_1}", @"{friend_1} {name_1}");
+                        result = result.Replace(@"{name_2}{friend_2}", @"{friend_2} {name_2}");
+                        result = result.Replace(@"{name_2}{friend_1}", @"{friend_1} {name_2}");
+                        //Address
+                        result = result.Replace(@"{name_1}{address_1}", @"{address_1} {name_1}");
+                        result = result.Replace(@"{name_1}{address_2}", @"{address_2} {name_1}");
+                        result = result.Replace(@"{name_1}{address_3}", @"{address_3} {name_1}");
+                        result = result.Replace(@"{name_1}{address_4}", @"{address_4} {name_1}");
+                        result = result.Replace(@"{name_1}{address_5}", @"{address_5} {name_1}");
+
+                        result = result.Replace(@"{name_2}{address_1}", @"{address_1} {name_2}");
+                        result = result.Replace(@"{name_2}{address_2}", @"{address_2} {name_2}");
+                        result = result.Replace(@"{name_2}{address_3}", @"{address_3} {name_2}");
+                        result = result.Replace(@"{name_2}{address_4}", @"{address_4} {name_2}");
+                        result = result.Replace(@"{name_2}{address_5}", @"{address_5} {name_2}");
+                        //Junior
+                        result = result.Replace(@"{name_1}{junior}", @"{junior} {name_1}");
+                        result = result.Replace(@"{name_2}{junior}", @"{junior} {name_2}");
+                        //Senior
+                        result = result.Replace(@"{name_1}{senior}", @"{senior} {name_1}");
+                        result = result.Replace(@"{name_2}{senior}", @"{senior} {name_2}");
 
                         //We got a valid translation, returning it...
                         return result;
