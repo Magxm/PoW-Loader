@@ -2,6 +2,7 @@
 using System.IO;
 using System.Threading;
 
+using PoW_Tool_SheetUtilities.Handler;
 using PoW_Tool_SheetUtilities.Handler.BattleAssets;
 using PoW_Tool_SheetUtilities.Handler.BufferAssets;
 using PoW_Tool_SheetUtilities.Handler.TextAssets;
@@ -16,6 +17,7 @@ namespace PoW_Tool_SheetUtilities
             string workingDirectory = Environment.CurrentDirectory;
             string inputFolder = workingDirectory + Path.DirectorySeparatorChar + "Input";
 
+            new CinameticAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new NoteDescriptionAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new GameFormulaAssetHandler().UpdateSheetFromGameFile(inputFolder);
             new HelpAssetHandler().UpdateSheetFromGameFile(inputFolder);
@@ -64,6 +66,7 @@ namespace PoW_Tool_SheetUtilities
 
         public static void ExportToMod(string outputFolder)
         {
+            new CinameticAssetHandler().BuildGameDataFromSheet(outputFolder);
             new TalkAssetHandler().BuildGameDataFromSheet(outputFolder);
             Thread.Sleep(60000);
             new GameFormulaAssetHandler().BuildGameDataFromSheet(outputFolder);
@@ -110,6 +113,7 @@ namespace PoW_Tool_SheetUtilities
 
         internal static void GetTranslationStats(ref int proofReadCount, ref int translatedCount, ref int needsCheckCount, ref int mTLCount, ref int otherCount)
         {
+            new CinameticAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
             new TalkAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
             Thread.Sleep(30000);
             new GameFormulaAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
