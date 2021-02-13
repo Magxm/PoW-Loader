@@ -67,6 +67,7 @@ namespace PoW_Tool_SheetUtilities
         public static void ExportToMod(string outputFolder)
         {
             new CinameticAssetHandler().BuildGameDataFromSheet(outputFolder);
+            Thread.Sleep(10000);
             new TalkAssetHandler().BuildGameDataFromSheet(outputFolder);
             Thread.Sleep(60000);
             new GameFormulaAssetHandler().BuildGameDataFromSheet(outputFolder);
@@ -83,6 +84,7 @@ namespace PoW_Tool_SheetUtilities
             new ElectiveAssetHandler().BuildGameDataFromSheet(outputFolder);
             new CharacterExteriorAssetHandler().BuildGameDataFromSheet(outputFolder);
             new CharacterBehaviourAssetHandler().BuildGameDataFromSheet(outputFolder);
+            Thread.Sleep(10000);
             new BookAssetHandler().BuildGameDataFromSheet(outputFolder);
             new BattleAssetHandler().BuildGameDataFromSheet(outputFolder);
             new TraitAssetHandler().BuildGameDataFromSheet(outputFolder);
@@ -100,6 +102,7 @@ namespace PoW_Tool_SheetUtilities
             new AchievementAssetHandler().BuildGameDataFromSheet(outputFolder);
             new AdjustmentAssetHandler().BuildGameDataFromSheet(outputFolder);
             new AlchemyAssetHandler().BuildGameDataFromSheet(outputFolder);
+            Thread.Sleep(10000);
             new SkillAssetHandler().BuildGameDataFromSheet(outputFolder);
             new BufferAssetHandler().BuildGameDataFromSheet(outputFolder);
             new HelpAssetHandler().BuildGameDataFromSheet(outputFolder);
@@ -124,6 +127,7 @@ namespace PoW_Tool_SheetUtilities
             new RefiningAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
             new MapAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
             new ForgeAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
+            Thread.Sleep(30000);
             new FavorabilityAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
             new EvaluationAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
             new ElectiveAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
