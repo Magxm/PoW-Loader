@@ -1,5 +1,5 @@
 {
-  "EntryIndex": 67,
+  "EntryIndex": 65,
   "Nodes": [
     {
       "Node": "{ \"PlayerTransformAction\" : True, { -0.12700, 0.02500, -3.94500} , True, { 0.00000, 115.11910, 0.00000} } ",
@@ -238,7 +238,7 @@
     },
     {
       "Node": "{ \"TimerAction\" : 1.00000} ",
-      "Next": 66,
+      "Next": 64,
       "Prallel": -1
     },
     {
@@ -257,7 +257,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 3, \"fe5109501_2_00\"}  ], 0} , 64, 53} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 3, \"fe5109501_2_00\"}  ], 0} , 62, 53} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -303,21 +303,11 @@
     },
     {
       "Node": "{ \"SortOutDesignatedEventCubeAction\" : \"eb5109501_00\"} ",
-      "Next": 62,
+      "Next": 66,
       "Prallel": -1
     },
     {
-      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, True, 0} ",
-      "Next": -1,
-      "Prallel": -1
-    },
-    {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckCurrentTime\" : 1}  ], 0} , 61, 63} ",
-      "Next": -1,
-      "Prallel": -1
-    },
-    {
-      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 1} ",
+      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -333,12 +323,17 @@
     },
     {
       "Node": "{ \"TalkAction\" : \"t5109501_028\"} ",
-      "Next": 65,
+      "Next": 63,
       "Prallel": -1
     },
     {
       "Node": "{ \"LoadScenesAction\" : \"S0104\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0} ",
       "Next": 0,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 61,
       "Prallel": -1
     }
   ],

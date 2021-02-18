@@ -83,17 +83,17 @@
     },
     {
       "Node": "{ \"TalkAction\" : \"t1207201_417\"} ",
-      "Next": 17,
+      "Next": 48,
       "Prallel": -1
     },
     {
       "Node": "{ \"PlayPlayerAnimationAction\" : [ { 0, \"m_stand00_talk03\", 1.00000}  ]} ",
-      "Next": 22,
+      "Next": -1,
       "Prallel": -1
     },
     {
       "Node": "{ \"TalkAction\" : \"t1207201_425\"} ",
-      "Next": 17,
+      "Next": 48,
       "Prallel": -1
     },
     {
@@ -107,7 +107,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe1107201_2_102\"}  ], 0} , 9, 17} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe1107201_2_102\"}  ], 0} , 9, 48} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -240,6 +240,11 @@
       "Node": "{ \"SetNpcAnimationAction\" : \"in12003_d10\", \"m_stand00_await08\", False} ",
       "Next": -1,
       "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.50000} ",
+      "Next": 22,
+      "Prallel": 17
     }
   ],
   "Name": "第二年七夕_張啟洛戰前演出"

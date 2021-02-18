@@ -678,11 +678,11 @@
     },
     {
       "Node": "{ \"SortOutDesignatedNpcAction\" : \"in0103,in91002,in94001\"} ",
-      "Next": 136,
+      "Next": 139,
       "Prallel": -1
     },
     {
-      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 1} ",
+      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -694,6 +694,11 @@
     {
       "Node": "{ \"PlayNpcAnimationAction\" : [ { 0, \"be0105_stand00_await05\", 1.00000} , { 2, \"be0105_stand00_await00\", 1.00000}  ], \"in94001\"} ",
       "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 136,
       "Prallel": -1
     }
   ],

@@ -258,12 +258,12 @@
     },
     {
       "Node": "{ \"ScreenFadeAction\" : False, 0.50000} ",
-      "Next": 71,
+      "Next": 69,
       "Prallel": -1
     },
     {
       "Node": "{ \"TalkAction\" : \"t5109202_028\"} ",
-      "Next": 72,
+      "Next": 70,
       "Prallel": -1
     },
     {
@@ -278,7 +278,7 @@
     },
     {
       "Node": "{ \"SortOutDesignatedEventCubeAction\" : \"eb5109202_01,eb5109202_02,eb5109202_03,eb5109202_04,eb5109202_05,eb5109202_06\"} ",
-      "Next": 69,
+      "Next": 71,
       "Prallel": -1
     },
     {
@@ -342,17 +342,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, True, 0} ",
-      "Next": -1,
-      "Prallel": -1
-    },
-    {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckCurrentTime\" : 1}  ], 0} , 68, 70} ",
-      "Next": -1,
-      "Prallel": -1
-    },
-    {
-      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 1} ",
+      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -364,6 +354,11 @@
     {
       "Node": "{ \"TimerAction\" : 0.50000} ",
       "Next": 53,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 68,
       "Prallel": -1
     }
   ],
