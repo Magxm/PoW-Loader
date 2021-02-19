@@ -83,12 +83,12 @@
     },
     {
       "Node": "{ \"PlayNpcAnimationAction\" : [ { 0, \"m_stand00_talk01\", 1.00000}  ], \"in05368\"} ",
-      "Next": -1,
+      "Next": 45,
       "Prallel": 17
     },
     {
       "Node": "{ \"PlayNpcAnimationAction\" : [ { 0, \"m_stand00_talk32\", 1.00000}  ], \"in05367\"} ",
-      "Next": 18,
+      "Next": -1,
       "Prallel": -1
     },
     {
@@ -224,6 +224,11 @@
     {
       "Node": "{ \"LoadScenesAction\" : \"S0202\", { 1500.00000, -0.00600, 758.87900} , { 0.00000, 0.00000, 0.00000} , 0, False, 1} ",
       "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 2.00000} ",
+      "Next": 18,
       "Prallel": -1
     }
   ],
