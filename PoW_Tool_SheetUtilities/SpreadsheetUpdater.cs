@@ -1,11 +1,11 @@
-﻿using System;
-using System.IO;
-using System.Threading;
-
-using PoW_Tool_SheetUtilities.Handler;
+﻿using PoW_Tool_SheetUtilities.Handler;
 using PoW_Tool_SheetUtilities.Handler.BattleAssets;
 using PoW_Tool_SheetUtilities.Handler.BufferAssets;
 using PoW_Tool_SheetUtilities.Handler.TextAssets;
+
+using System;
+using System.IO;
+using System.Threading;
 
 namespace PoW_Tool_SheetUtilities
 {
@@ -116,9 +116,9 @@ namespace PoW_Tool_SheetUtilities
 
         internal static void GetTranslationStats(ref int proofReadCount, ref int translatedCount, ref int needsCheckCount, ref int mTLCount, ref int otherCount)
         {
-            new CinameticAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
             new TalkAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
             Thread.Sleep(30000);
+            new CinameticAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
             new GameFormulaAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
             new BattleAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
             new TalentAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
