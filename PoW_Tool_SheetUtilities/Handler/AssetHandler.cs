@@ -1,9 +1,5 @@
-﻿using Google.Apis.Auth.OAuth2;
-using Google.Apis.Services;
-using Google.Apis.Sheets.v4;
+﻿using Google.Apis.Sheets.v4;
 using Google.Apis.Sheets.v4.Data;
-
-using Newtonsoft.Json;
 
 using System;
 using System.Collections.Generic;
@@ -516,7 +512,31 @@ namespace PoW_Tool_SheetUtilities.Handler
             }
         }
 
-        public void CalculateTranslationStats(SheetCellWithColor[] rowRaw, ref int columnIndex, ref int proofReadCount, ref int translatedCount, ref int needsCheckCount, ref int MLTranslatedCount, ref int otherCount)
+        private int _GetWordCount(string text)
+        {
+            int wordCount = 0, index = 0;
+
+            // skip whitespace until first word
+            while (index < text.Length && char.IsWhiteSpace(text[index]))
+                index++;
+
+            while (index < text.Length)
+            {
+                // check if current char is part of a word
+                while (index < text.Length && !char.IsWhiteSpace(text[index]))
+                    index++;
+
+                wordCount++;
+
+                // skip whitespace until next word
+                while (index < text.Length && char.IsWhiteSpace(text[index]))
+                    index++;
+            }
+
+            return wordCount;
+        }
+
+        public void CalculateTranslationStats(SheetCellWithColor[] rowRaw, ref int columnIndex, ref List<TranslationStatEntry> stats)
         {
             if (Definition.VariableType == AssetVariableType.NoTranslate)
             {
@@ -540,25 +560,21 @@ namespace PoW_Tool_SheetUtilities.Handler
                     return;
                 }
 
-                if (IsSameColor(colorOfEntry, ProofReadColor))
+                for (int i = 0; i < stats.Count; i++)
                 {
-                    proofReadCount++;
-                }
-                else if (IsSameColor(colorOfEntry, TranslatedColor))
-                {
-                    translatedCount++;
-                }
-                else if (IsSameColor(colorOfEntry, MTLColor))
-                {
-                    MLTranslatedCount++;
-                }
-                else if (IsSameColor(colorOfEntry, NeedsCheckColor))
-                {
-                    needsCheckCount++;
-                }
-                else
-                {
-                    otherCount++;
+                    bool foundMatch = false;
+                    for (int cI = 0; cI < stats[i].AcceptableColors.Count; cI++)
+                    {
+                        Color acceptableColor = stats[i].AcceptableColors[cI];
+                        if (stats[i].MatchAll || IsSameColor(colorOfEntry, acceptableColor))
+                        {
+                            stats[i].LineCount += 1;
+                            stats[i].WordCount += _GetWordCount(value);
+                            foundMatch = true;
+                            break;
+                        }
+                    }
+                    if (foundMatch) break;
                 }
             }
         }
@@ -662,14 +678,13 @@ namespace PoW_Tool_SheetUtilities.Handler
             sw.Write('\r');
         }
 
-        public void CalculateTranslationStats(SheetCellWithColor[] rowRaw, ref int proofReadCount, ref int translatedCount, ref int needsCheckCount, ref int MLTranslatedCount, ref int otherCount)
+        public void CalculateTranslationStats(SheetCellWithColor[] rowRaw, ref List<TranslationStatEntry> stats)
         {
             int columnIndex = 0;
             for (int i = 0; i < Variables.Length; i++)
             {
-                Variables[i].CalculateTranslationStats(rowRaw, ref columnIndex, ref proofReadCount, ref translatedCount, ref needsCheckCount, ref MLTranslatedCount, ref otherCount);
+                Variables[i].CalculateTranslationStats(rowRaw, ref columnIndex, ref stats);
             }
-            Console.Title = "Proof Read: " + proofReadCount + " Translated Count: " + translatedCount + " Needs Check Count: " + needsCheckCount + " ML Translated: " + MLTranslatedCount + " Others: " + otherCount;
         }
     }
 
@@ -682,7 +697,7 @@ namespace PoW_Tool_SheetUtilities.Handler
         public string FilePathWithoutExtension;
         public string OutputExtension;
 
-        public void BuildGameDataFromSheet(string outRootPath)
+        public virtual void BuildGameDataFromSheet(string outRootPath)
         {
             string outFilePath = outRootPath + Path.DirectorySeparatorChar + FilePathWithoutExtension + OutputExtension;
             Console.WriteLine("Getting " + AssetName + " Spreadsheet content");
@@ -731,7 +746,7 @@ namespace PoW_Tool_SheetUtilities.Handler
             }
         }
 
-        public void UpdateSheetFromGameFile(string inputFolder)
+        public virtual void UpdateSheetFromGameFile(string inputFolder)
         {
             string gameFilePath = inputFolder + Path.DirectorySeparatorChar + FilePathWithoutExtension + ".bytes";
             //Getting all current entries
@@ -817,7 +832,7 @@ namespace PoW_Tool_SheetUtilities.Handler
             Console.WriteLine("");
         }
 
-        public void GetTranslationStats(ref int proofReadCount, ref int translatedCount, ref int needsCheckCount, ref int MLTranslatedCount, ref int otherCount)
+        public virtual void GetTranslationStats(ref List<TranslationStatEntry> stats)
         {
             Console.WriteLine("Calculating Translation Statistic for " + AssetName);
             SpreadsheetsResource.GetRequest request = GoogleSheetConnector.GetInstance().Service.Spreadsheets.Get(SheetId);
@@ -838,7 +853,7 @@ namespace PoW_Tool_SheetUtilities.Handler
                         rowRaw[i] = new SheetCellWithColor(row.Values[i]);
                     }
 
-                    tmpEntry.CalculateTranslationStats(rowRaw, ref proofReadCount, ref translatedCount, ref needsCheckCount, ref MLTranslatedCount, ref otherCount);
+                    tmpEntry.CalculateTranslationStats(rowRaw, ref stats);
                 }
             }
         }

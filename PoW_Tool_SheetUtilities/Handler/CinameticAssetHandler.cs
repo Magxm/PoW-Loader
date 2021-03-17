@@ -1,12 +1,10 @@
-﻿using System;
+﻿using Google.Apis.Sheets.v4;
+using Google.Apis.Sheets.v4.Data;
+
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text.RegularExpressions;
-
-using Google.Apis.Sheets.v4;
-using Google.Apis.Sheets.v4.Data;
-
-using Newtonsoft.Json.Linq;
 
 namespace PoW_Tool_SheetUtilities.Handler
 {
@@ -80,7 +78,7 @@ namespace PoW_Tool_SheetUtilities.Handler
             return patchableNodes;
         }
 
-        public new void UpdateSheetFromGameFile(string outRootPath)
+        public override void UpdateSheetFromGameFile(string outRootPath)
         {
             string cinameticFolder = Environment.CurrentDirectory + Path.DirectorySeparatorChar + "Input" + Path.DirectorySeparatorChar + "cinematic";
             Console.WriteLine("Getting Cinametic Patching Spreadsheet content");
@@ -178,7 +176,7 @@ namespace PoW_Tool_SheetUtilities.Handler
             Console.WriteLine("");
         }
 
-        public new void BuildGameDataFromSheet(string outRootPath)
+        public override void BuildGameDataFromSheet(string outRootPath)
         {
             Console.WriteLine("Getting " + AssetName + " Spreadsheet content");
 

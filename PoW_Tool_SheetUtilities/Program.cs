@@ -1,9 +1,8 @@
-﻿using System;
-using System.IO;
-using System.Threading.Tasks;
+﻿using PoW_Tool_SheetUtilities.Handler;
 
-using PoW_Tool_SheetUtilities.Handler;
-using PoW_Tool_SheetUtilities.MachineTranslator;
+using System;
+using System.Collections.Generic;
+using System.IO;
 
 namespace PoW_Tool_SheetUtilities
 {
@@ -86,15 +85,97 @@ namespace PoW_Tool_SheetUtilities
 
         private static void GetTranslationStats()
         {
-            int proofReadCount = 0, translatedCount = 0, needsCheckCount = 0, MTLCount = 0, otherCount = 0;
-            SpreadsheetUpdater.GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref MTLCount, ref otherCount);
+            List<TranslationStatEntry> stats = new List<TranslationStatEntry>();
+            //Proofread Stats
+            TranslationStatEntry proofReadStats = new TranslationStatEntry("Proofread");
+            proofReadStats.AcceptableColors.Add(AssetVariable.ProofReadColor);
+            proofReadStats.AcceptableColors.Add(new Google.Apis.Sheets.v4.Data.Color() //Cyan
+            {
+                Alpha = 1.0f,
+                Red = 0.0f / 255,
+                Green = 0xFF / 255,
+                Blue = 0xFF / 255,
+            });
+            proofReadStats.AcceptableColors.Add(new Google.Apis.Sheets.v4.Data.Color()
+            {
+                Alpha = 1.0f,
+                Red = 0xC9 / 255,
+                Green = 0xDA / 255,
+                Blue = 0xF8 / 255,
+            });
+            proofReadStats.AcceptableColors.Add(new Google.Apis.Sheets.v4.Data.Color()
+            {
+                Alpha = 1.0f,
+                Red = 0xA4 / 255,
+                Green = 0xC2 / 255,
+                Blue = 0xF4 / 255,
+            });
+            proofReadStats.AcceptableColors.Add(new Google.Apis.Sheets.v4.Data.Color()
+            {
+                Alpha = 1.0f,
+                Red = 0x6D / 255,
+                Green = 0x9E / 255,
+                Blue = 0xEB / 255,
+            });
+            proofReadStats.AcceptableColors.Add(new Google.Apis.Sheets.v4.Data.Color()
+            {
+                Alpha = 1.0f,
+                Red = 0x3C / 255,
+                Green = 0x78 / 255,
+                Blue = 0xD8 / 255,
+            });
 
-            Console.WriteLine("Stats:");
-            Console.WriteLine("\tProofread Lines:\t\t" + proofReadCount);
-            Console.WriteLine("\tTranslated Lines:\t\t" + translatedCount);
-            Console.WriteLine("\tMarked as needing check(Usually due to game update) Lines:\t\t" + needsCheckCount);
-            Console.WriteLine("\tMachine Translated Lines:\t\t" + MTLCount);
-            Console.WriteLine("\tLines marked in unknown cell color (Manually marked):\t\t" + otherCount);
+            stats.Add(proofReadStats);
+
+            //Translated Stats
+            TranslationStatEntry translatedStats = new TranslationStatEntry("Translated");
+            translatedStats.AcceptableColors.Add(AssetVariable.TranslatedColor);
+            translatedStats.AcceptableColors.Add(new Google.Apis.Sheets.v4.Data.Color()
+            {
+                Alpha = 1.0f,
+                Red = 0x93 / 255,
+                Green = 0xC4 / 255,
+                Blue = 0x7D / 255,
+            });
+            translatedStats.AcceptableColors.Add(new Google.Apis.Sheets.v4.Data.Color()
+            {
+                Alpha = 1.0f,
+                Red = 0xD9 / 255,
+                Green = 0xEA / 255,
+                Blue = 0xD3 / 255,
+            });
+            translatedStats.AcceptableColors.Add(new Google.Apis.Sheets.v4.Data.Color()
+            {
+                Alpha = 1.0f,
+                Red = 0x34 / 255,
+                Green = 0xA8 / 255,
+                Blue = 0x53 / 255,
+            });
+
+            stats.Add(translatedStats);
+
+            //Needs manual check Stats
+            TranslationStatEntry manualCheckingReqStats = new TranslationStatEntry("Needs manual Checking (usually due to game update)");
+            manualCheckingReqStats.AcceptableColors.Add(AssetVariable.NeedsCheckColor);
+            stats.Add(manualCheckingReqStats);
+
+            //MTL
+            TranslationStatEntry mtlStats = new TranslationStatEntry("Machine Translated");
+            mtlStats.AcceptableColors.Add(AssetVariable.MTLColor);
+            stats.Add(mtlStats);
+
+            //Others (Unknown)
+            TranslationStatEntry unknownStats = new TranslationStatEntry("Marked in unknown cell color (Manually marked)");
+            unknownStats.MatchAll = true;
+            stats.Add(unknownStats);
+
+
+            SpreadsheetUpdater.GetTranslationStats(ref stats);
+
+            foreach (TranslationStatEntry statEntry in stats)
+            {
+                Console.WriteLine(statEntry.Name + " => Lines: " + statEntry.LineCount.ToString() + " (Words: " + statEntry.WordCount.ToString() + " )");
+            }
         }
 
         private static void Main(string[] args)
@@ -112,22 +193,22 @@ namespace PoW_Tool_SheetUtilities
             switch (input)
             {
                 case '1':
-                    Console.WriteLine("Selected updating spreadsheets after game update!");
+                    Console.WriteLine("Updating spreadsheets after game update...");
                     UpdateSpreadsheets();
                     break;
 
                 case '2':
-                    Console.WriteLine("Selected building English Mod data from spreadsheets");
+                    Console.WriteLine("Nuilding English Mod data from spreadsheets...");
                     Export();
                     break;
 
                 case '3':
-                    Console.WriteLine("Checking Asset Formats");
+                    Console.WriteLine("Checking Asset Formats...");
                     CheckAssetFormat();
                     break;
 
                 case '4':
-                    Console.WriteLine("Get Translation Stats");
+                    Console.WriteLine("Getting Translation Stats...");
                     GetTranslationStats();
                     break;
 

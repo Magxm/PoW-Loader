@@ -80,7 +80,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
         }
 
         //Custom Handling of this one because of it's size
-        public new void GetTranslationStats(ref int proofReadCount, ref int translatedCount, ref int needsCheckCount, ref int MLTranslatedCount, ref int otherCount)
+        public override void GetTranslationStats(ref List<TranslationStatEntry> stats)
         {
             Console.WriteLine("Calculating Translation Statistic for " + AssetName);
             for (int k = 0; k < 4; k++)
@@ -103,7 +103,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                             rowRaw[i] = new SheetCellWithColor(row.Values[i]);
                         }
 
-                        tmpEntry.CalculateTranslationStats(rowRaw, ref proofReadCount, ref translatedCount, ref needsCheckCount, ref MLTranslatedCount, ref otherCount);
+                        tmpEntry.CalculateTranslationStats(rowRaw, ref stats);
                     }
                 }
             }

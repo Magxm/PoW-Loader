@@ -4,6 +4,7 @@ using PoW_Tool_SheetUtilities.Handler.BufferAssets;
 using PoW_Tool_SheetUtilities.Handler.TextAssets;
 
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Threading;
 
@@ -11,153 +12,77 @@ namespace PoW_Tool_SheetUtilities
 {
     internal class SpreadsheetUpdater
     {
+        private static List<IFileHandler> _Handlers = new List<IFileHandler>()
+        {
+
+        new CinameticAssetHandler(),
+        new NoteDescriptionAssetHandler(),
+        new GameFormulaAssetHandler(),
+        new HelpAssetHandler(),
+        new HelpDescriptionAssetHandler(),
+        new BattleAssetHandler(),
+        new TalkAssetHandler(),
+        new TalentAssetHandler(),
+        new ShopAssetHandler(),
+        new RewardAssetHandler(),
+        new RefiningAssetHandler(),
+        new MapAssetHandler(),
+        new ForgeAssetHandler(),
+        new FavorabilityAssetHandler(),
+        new EvaluationAssetHandler(),
+        new ElectiveAssetHandler(),
+        new CharacterExteriorAssetHandler(),
+        new CharacterBehaviourAssetHandler(),
+        new BookAssetHandler(),
+        new TraitAssetHandler(),
+        new StringTableAssetHandler(),
+        new QuestAssetHandler(),
+        new PropsAssetHandler(),
+        new NurturanceAssetHandler(),
+        new EventCubeAssetHandler(),
+        new NpcAssetHandler(),
+        new CharacterInfoAssetHandler(),
+        new BattleAreaAssetHandler(),
+        new MantraAssetHandler(),
+        new AchievementAssetHandler(),
+        new AdjustmentAssetHandler(),
+        new AlchemyAssetHandler(),
+        new SkillAssetHandler(),
+        new BufferAssetHandler(),
+        new RoundAssetHandler(),
+        new RegistrationBonusAssetHandler(),
+        new NurturanceIdleAssetHandler(),
+        };
+
         public static void UpdateSpreadsheetsFromGameFiles()
         {
             //Get input folder path
             string workingDirectory = Environment.CurrentDirectory;
             string inputFolder = workingDirectory + Path.DirectorySeparatorChar + "Input";
+            foreach (IFileHandler handler in _Handlers)
+            {
+                handler.UpdateSheetFromGameFile(inputFolder);
+                Thread.Sleep(5000);
+            }
 
-            new CinameticAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            new NoteDescriptionAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            new GameFormulaAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            new HelpAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            new HelpDescriptionAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            new BattleAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            Thread.Sleep(10000);
-            new TalkAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            Thread.Sleep(30000);
-            new TalentAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            new ShopAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            new RewardAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            Thread.Sleep(10000);
-            new RefiningAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            new MapAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            new ForgeAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            new FavorabilityAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            Thread.Sleep(10000);
-            new EvaluationAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            new ElectiveAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            new CharacterExteriorAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            new CharacterBehaviourAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            new BookAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            Thread.Sleep(10000);
-            new TraitAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            new StringTableAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            new QuestAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            new PropsAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            new NurturanceAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            Thread.Sleep(10000);
-            new EventCubeAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            new NpcAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            new CharacterInfoAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            new BattleAreaAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            new MantraAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            Thread.Sleep(10000);
-            new AchievementAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            new AdjustmentAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            new AlchemyAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            new SkillAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            new BufferAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            Thread.Sleep(10000);
-            new RoundAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            new RegistrationBonusAssetHandler().UpdateSheetFromGameFile(inputFolder);
-            new NurturanceIdleAssetHandler().UpdateSheetFromGameFile(inputFolder);
         }
 
-        public static void ExportToMod(string outputFolder)
+        public static void ExportToMod(string BuildGameDataFromSheet)
         {
-            new CinameticAssetHandler().BuildGameDataFromSheet(outputFolder);
-            Thread.Sleep(10000);
-            new TalkAssetHandler().BuildGameDataFromSheet(outputFolder);
-            Thread.Sleep(60000);
-            new GameFormulaAssetHandler().BuildGameDataFromSheet(outputFolder);
-            new TalentAssetHandler().BuildGameDataFromSheet(outputFolder);
-            new ShopAssetHandler().BuildGameDataFromSheet(outputFolder);
-            new RewardAssetHandler().BuildGameDataFromSheet(outputFolder);
-            new RefiningAssetHandler().BuildGameDataFromSheet(outputFolder);
-            Thread.Sleep(10000);
-            new MapAssetHandler().BuildGameDataFromSheet(outputFolder);
-            new ForgeAssetHandler().BuildGameDataFromSheet(outputFolder);
-            new FavorabilityAssetHandler().BuildGameDataFromSheet(outputFolder);
-            new EvaluationAssetHandler().BuildGameDataFromSheet(outputFolder);
-            Thread.Sleep(10000);
-            new ElectiveAssetHandler().BuildGameDataFromSheet(outputFolder);
-            new CharacterExteriorAssetHandler().BuildGameDataFromSheet(outputFolder);
-            new CharacterBehaviourAssetHandler().BuildGameDataFromSheet(outputFolder);
-            Thread.Sleep(10000);
-            new BookAssetHandler().BuildGameDataFromSheet(outputFolder);
-            new BattleAssetHandler().BuildGameDataFromSheet(outputFolder);
-            new TraitAssetHandler().BuildGameDataFromSheet(outputFolder);
-            Thread.Sleep(10000);
-            new StringTableAssetHandler().BuildGameDataFromSheet(outputFolder);
-            new QuestAssetHandler().BuildGameDataFromSheet(outputFolder);
-            new PropsAssetHandler().BuildGameDataFromSheet(outputFolder);
-            new NurturanceAssetHandler().BuildGameDataFromSheet(outputFolder);
-            new EventCubeAssetHandler().BuildGameDataFromSheet(outputFolder);
-            new NpcAssetHandler().BuildGameDataFromSheet(outputFolder);
-            new CharacterInfoAssetHandler().BuildGameDataFromSheet(outputFolder);
-            Thread.Sleep(10000);
-            new BattleAreaAssetHandler().BuildGameDataFromSheet(outputFolder);
-            new MantraAssetHandler().BuildGameDataFromSheet(outputFolder);
-            new AchievementAssetHandler().BuildGameDataFromSheet(outputFolder);
-            new AdjustmentAssetHandler().BuildGameDataFromSheet(outputFolder);
-            new AlchemyAssetHandler().BuildGameDataFromSheet(outputFolder);
-            Thread.Sleep(10000);
-            new SkillAssetHandler().BuildGameDataFromSheet(outputFolder);
-            new BufferAssetHandler().BuildGameDataFromSheet(outputFolder);
-            new HelpAssetHandler().BuildGameDataFromSheet(outputFolder);
-            new HelpDescriptionAssetHandler().BuildGameDataFromSheet(outputFolder);
-            Thread.Sleep(10000);
-            new NoteDescriptionAssetHandler().BuildGameDataFromSheet(outputFolder);
-            new RoundAssetHandler().BuildGameDataFromSheet(outputFolder);
-            new RegistrationBonusAssetHandler().BuildGameDataFromSheet(outputFolder);
-            new NurturanceIdleAssetHandler().BuildGameDataFromSheet(outputFolder);
+            foreach (IFileHandler handler in _Handlers)
+            {
+                handler.BuildGameDataFromSheet(BuildGameDataFromSheet);
+                Thread.Sleep(5000);
+            }
         }
 
-        internal static void GetTranslationStats(ref int proofReadCount, ref int translatedCount, ref int needsCheckCount, ref int mTLCount, ref int otherCount)
+        internal static void GetTranslationStats(ref List<TranslationStatEntry> stats)
         {
-            new TalkAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            Thread.Sleep(30000);
-            new CinameticAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            new GameFormulaAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            new BattleAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            new TalentAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            new ShopAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            new RewardAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            new RefiningAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            new MapAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            new ForgeAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            Thread.Sleep(30000);
-            new FavorabilityAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            new EvaluationAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            new ElectiveAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            new CharacterExteriorAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            new CharacterBehaviourAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            new BookAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            new TraitAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            new StringTableAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            new QuestAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            new PropsAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            Thread.Sleep(30000);
-            new NurturanceAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            new EventCubeAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            new NpcAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            new CharacterInfoAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            new BattleAreaAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            new MantraAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            Thread.Sleep(30000);
-            new AchievementAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            new AdjustmentAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            new AlchemyAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            new SkillAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            new BufferAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            new HelpAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            new HelpDescriptionAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            new NoteDescriptionAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            Thread.Sleep(10000);
-            new RoundAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            new RegistrationBonusAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
-            new NurturanceIdleAssetHandler().GetTranslationStats(ref proofReadCount, ref translatedCount, ref needsCheckCount, ref mTLCount, ref otherCount);
+            foreach (IFileHandler handler in _Handlers)
+            {
+                handler.GetTranslationStats(ref stats);
+                Thread.Sleep(10000);
+            }
         }
     }
 }

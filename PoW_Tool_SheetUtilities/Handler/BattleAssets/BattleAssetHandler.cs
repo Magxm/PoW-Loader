@@ -1,9 +1,9 @@
-﻿using System;
-using System.IO;
-using System.Collections.Generic;
-
-using Google.Apis.Sheets.v4;
+﻿using Google.Apis.Sheets.v4;
 using Google.Apis.Sheets.v4.Data;
+
+using System;
+using System.Collections.Generic;
+using System.IO;
 
 namespace PoW_Tool_SheetUtilities.Handler.BattleAssets
 {
@@ -97,7 +97,7 @@ namespace PoW_Tool_SheetUtilities.Handler.BattleAssets
             };
         }
 
-        public new void BuildGameDataFromSheet(string outRootPath)
+        public override void BuildGameDataFromSheet(string outRootPath)
         {
             string mergeFilePath = outRootPath + Path.DirectorySeparatorChar + FilePathWithoutExtension + OutputExtension;
             Console.WriteLine("Getting " + AssetName + " Spreadsheet content");
@@ -151,7 +151,7 @@ namespace PoW_Tool_SheetUtilities.Handler.BattleAssets
             mergeFileWriter.Close();
         }
 
-        public new void UpdateSheetFromGameFile(string inputFolder)
+        public override void UpdateSheetFromGameFile(string inputFolder)
         {
             string scheduleFolderPath = inputFolder + Path.DirectorySeparatorChar + "chs" + Path.DirectorySeparatorChar + "battle" + Path.DirectorySeparatorChar + "schedule";
 
