@@ -138,7 +138,7 @@
     },
     {
       "Node": "{ \"SetFlagAction\" : 0, 0, \"fe5202091_2_00\"} ",
-      "Next": 33,
+      "Next": 32,
       "Prallel": -1
     },
     {
@@ -163,18 +163,18 @@
     },
     {
       "Node": "{ \"ScreenFadeAction\" : False, 0.50000} ",
-      "Next": 40,
+      "Next": 47,
       "Prallel": -1
     },
     {
       "Node": "{ \"NextOrEndQuestAction\" } ",
-      "Next": 32,
+      "Next": 40,
       "Prallel": -1
     },
     {
       "Node": "{ \"SetEvaluationAction\" : \"ev5202091\", 0} ",
       "Next": -1,
-      "Prallel": -1
+      "Prallel": 38
     },
     {
       "Node": "{ \"SetEvaluationAction\" : \"ev5202091\", 2} ",
@@ -182,9 +182,9 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe5202091_2_10\"}  ], 0} , 35, -1} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe5202091_2_10\"}  ], 0} , 35, 41} ",
       "Next": -1,
-      "Prallel": 41
+      "Prallel": -1
     },
     {
       "Node": "{ \"SetEvaluationAction\" : \"ev5202091\", 1} ",
@@ -192,7 +192,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe5202091_2_09\"}  ], 0} , 37, -1} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe5202091_2_16\"}  ], 0} , 37, -1} ",
       "Next": -1,
       "Prallel": 36
     },
@@ -204,16 +204,41 @@
     {
       "Node": "{ \"TimerAction\" : 1.00000} ",
       "Next": 39,
-      "Prallel": 38
+      "Prallel": 34
     },
     {
       "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe5202091_2_14\"}  ], 0} , 42, -1} ",
       "Next": -1,
-      "Prallel": 34
+      "Prallel": -1
     },
     {
       "Node": "{ \"SetEvaluationAction\" : \"ev5202091\", 1} ",
       "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe5202091_2_04\"}  ], 0} , 45, 44} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 3, 1, \"fe5202091_2_04\"}  ], 0} , 33, -1} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t5202091_1280\"} ",
+      "Next": 46,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"RewardAction\" : \"re5202091_05\"} ",
+      "Next": 33,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 43,
       "Prallel": -1
     }
   ],

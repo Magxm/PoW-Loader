@@ -7,7 +7,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckCurrentRound\" : 1, 1, 124, \"\"}  ], 0} , 2, -1} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckCurrentRound\" : 1, 1, 124, \"\"}  ], 0} , 22, -1} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -93,11 +93,31 @@
     },
     {
       "Node": "{ \"TalkAction\" : \"t1010400_006\"} ",
-      "Next": 19,
+      "Next": 20,
       "Prallel": -1
     },
     {
       "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 19,
+      "Prallel": 21
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 1, \"fe1010403_2_01\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 0, \"fe1010403_2_01\"}  ], 0} , 2, 23} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010400_012\"} ",
       "Next": -1,
       "Prallel": -1
     }

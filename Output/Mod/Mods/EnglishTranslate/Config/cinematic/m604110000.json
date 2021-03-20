@@ -67,7 +67,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"Probability\" : 80.00000}  ], 0} , 9, 18} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"Probability\" : 80.00000}  ], 0} , 9, 51} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -254,6 +254,11 @@
     {
       "Node": "{ \"NurturanceFadeAction\" : False, 0.50000} ",
       "Next": 49,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"LogicalNode\" : [ { \"CheckCurrentRound\" : 1, 1, 82, \"\"} , { \"CheckCurrentRound\" : 86, 1, 2147483647, \"\"}  ], 1}  ], 0} , 18, 9} ",
+      "Next": -1,
       "Prallel": -1
     }
   ],

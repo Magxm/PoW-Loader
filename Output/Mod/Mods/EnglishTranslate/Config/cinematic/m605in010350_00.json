@@ -12,7 +12,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckCurrentRound\" : 1, 1, 124, \"\"}  ], 0} , 8, 5} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckCurrentRound\" : 1, 1, 124, \"\"}  ], 0} , 20, 5} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -83,7 +83,7 @@
     },
     {
       "Node": "{ \"ScreenFadeAction\" : False, 0.50000} ",
-      "Next": 17,
+      "Next": 19,
       "Prallel": -1
     },
     {
@@ -93,6 +93,26 @@
     },
     {
       "Node": "{ \"CameraTransformAction\" : True, { -1378.11500, 9.09599, 688.93770} , 0.00000, True, { 339.33650, 247.39310, -0.00002} , 0.00000, 45} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 17,
+      "Prallel": 21
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 0, \"fe1010305_2_09\"}  ], 0} , 8, 22} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 1, \"fe1010305_2_09\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010300_037\"} ",
       "Next": -1,
       "Prallel": -1
     }
