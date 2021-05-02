@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace PoW_Tool_SheetUtilities.MachineTranslator
 {
@@ -25,8 +22,9 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
         private TranslationManager()
         {
             Translators = new List<ITranslator>();
-            Translators.Add(new GoogleTranslator());
-            Translators.Add(new BingTranslator());
+            Translators.Add(new YandexTranslator());
+            //Translators.Add(new GoogleTranslator());
+            //Translators.Add(new BingTranslator());
         }
 
         public string Translate(string original)
