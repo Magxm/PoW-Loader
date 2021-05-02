@@ -221,7 +221,7 @@ namespace PoW_Tool_SheetUtilities.Handler
                 if (OriginalValue != NewOriginalValue)
                 {
                     //We get a new ML Translation
-                    Translation = MachineTranslator.TranslationManager.GetInstance().Translate(NewStandardizedTermLocator);
+                    Translation = MachineTranslator.TranslationManager.GetInstance().Translate(NewOriginalValue, new string[0], new string[0], NewStandardizedTermLocator);
 
                     //We update the translation and the original
                     Request updateReq = new Request();
@@ -268,7 +268,7 @@ namespace PoW_Tool_SheetUtilities.Handler
                     MLTranslationAdded = true;
                     if (Definition.AutoML)
                     {
-                        Translation = MachineTranslator.TranslationManager.GetInstance().Translate(NewStandardizedTermLocator);
+                        Translation = MachineTranslator.TranslationManager.GetInstance().Translate(NewOriginalValue, new string[0], new string[0], NewStandardizedTermLocator);
                     }
                     else
                     {
@@ -432,7 +432,7 @@ namespace PoW_Tool_SheetUtilities.Handler
             }
             else if (Definition.VariableType == AssetVariableType.MachineTL)
             {
-                Translation = MachineTranslator.TranslationManager.GetInstance().Translate(NewStandardizedTermLocator);
+                Translation = MachineTranslator.TranslationManager.GetInstance().Translate(NewOriginalValue, new string[0], new string[0], NewStandardizedTermLocator);
                 return new List<CellData>()
                 {
                     new CellData()
@@ -457,7 +457,7 @@ namespace PoW_Tool_SheetUtilities.Handler
             {
                 if (Definition.AutoML)
                 {
-                    Translation = MachineTranslator.TranslationManager.GetInstance().Translate(NewStandardizedTermLocator);
+                    Translation = MachineTranslator.TranslationManager.GetInstance().Translate(NewOriginalValue, new string[0], new string[0], NewStandardizedTermLocator);
                 }
                 else
                 {
