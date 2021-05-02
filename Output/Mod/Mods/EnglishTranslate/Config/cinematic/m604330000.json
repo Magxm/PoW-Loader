@@ -63,7 +63,7 @@
     },
     {
       "Node": "{ \"PlayerWeaponActiveAction\" : False} ",
-      "Next": 9,
+      "Next": 17,
       "Prallel": -1
     },
     {
@@ -84,6 +84,16 @@
     {
       "Node": "{ \"SetFlagAction\" : 2, 1, \"fe6091100_1_01\"} ",
       "Next": 5,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"Probability\" : 20.00000}  ], 0} , 18, 9} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"RunNurturanceAction\" : \"m604330000_01\"} ",
+      "Next": -1,
       "Prallel": -1
     }
   ],

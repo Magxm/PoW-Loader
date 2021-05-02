@@ -2,8 +2,8 @@
   "EntryIndex": 0,
   "Nodes": [
     {
-      "Node": "{ \"TimerAction\" : 0.50000} ",
-      "Next": 1,
+      "Node": "{ \"TimerAction\" : 0.25000} ",
+      "Next": 18,
       "Prallel": -1
     },
     {
@@ -42,7 +42,7 @@
       "Prallel": 8
     },
     {
-      "Node": "{ \"PlayerSimpleTransformAction\" : True, { -1373.18600, 8.58778, 692.93000} , 3.00000, True, { 0.00000, 299.16160, 0.00000} } ",
+      "Node": "{ \"PlayerSimpleTransformAction\" : True, { -1373.18600, 8.58778, 692.93000} , 2.50000, True, { 0.00000, 299.16160, 0.00000} } ",
       "Next": -1,
       "Prallel": 9
     },
@@ -62,7 +62,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"TalkAction\" : \"t1010500_002\"} ",
+      "Node": "{ \"TalkAction\" : \"t1010500_003\"} ",
       "Next": 13,
       "Prallel": -1
     },
@@ -80,7 +80,27 @@
       "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0} ",
       "Next": -1,
       "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.20000} ",
+      "Next": 1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.25000} ",
+      "Next": 19,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckPlayerUpgradableProperty\" : 0, 249, 2030}  ], 0} , 17, 16} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"RunCinematicAction\" : \"m605in010520_01\"} ",
+      "Next": -1,
+      "Prallel": -1
     }
   ],
-  "Name": "m605in010520_00：石崑三階（目前先將玩家丟回宿舍）"
+  "Name": "m605in010520_00：石崑三階"
 }

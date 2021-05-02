@@ -3,7 +3,7 @@
   "Nodes": [
     {
       "Node": "{ \"TimerAction\" : 0.50000} ",
-      "Next": 1,
+      "Next": 15,
       "Prallel": -1
     },
     {
@@ -75,7 +75,27 @@
       "Node": "{ \"TalkAction\" : \"t1010700_038\"} ",
       "Next": 10,
       "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckCurrentRound\" : 1, 1, 90, \"\"}  ], 0} , 1, 17} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"LoadScenesAction\" : \"S0302\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0} ",
+      "Next": 18,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 16,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"RunCinematicAction\" : \"m605in010740_01\"} ",
+      "Next": -1,
+      "Prallel": -1
     }
   ],
-  "Name": "m605in010740_00：程墉五階（目前先將玩家丟回宿舍）"
+  "Name": "m605in010740_00：程墉五階是否進入事件分岐"
 }

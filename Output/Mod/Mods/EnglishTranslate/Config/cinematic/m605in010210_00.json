@@ -168,7 +168,7 @@
     },
     {
       "Node": "{ \"TalkAction\" : \"t1010202_069\"} ",
-      "Next": 34,
+      "Next": 67,
       "Prallel": -1
     },
     {
@@ -334,6 +334,21 @@
     {
       "Node": "{ \"TimerAction\" : 1.00000} ",
       "Next": 59,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 0, \"fe1010202_2_04\"}  ], 0} , 34, 68} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcSimpleTransformAction\" : False, { 0.00000, 0.00000, 0.00000} , 0.00000, True, { 0.00000, 40.04000, 0.00000} , \"in0102\"} ",
+      "Next": 69,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010202_095\"} ",
+      "Next": 52,
       "Prallel": -1
     }
   ],
