@@ -1,8 +1,10 @@
 ﻿using PoW_Tool_SheetUtilities.Handler;
+using PoW_Tool_SheetUtilities.MachineTranslator;
 
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Threading.Tasks;
 
 namespace PoW_Tool_SheetUtilities
 {
@@ -23,7 +25,6 @@ namespace PoW_Tool_SheetUtilities
             int variableAmount = 0;
 
             string[] exampleEntry = null;
-            int exampleEntryUnemptyEntries = 0;
             System.IO.StreamReader reader = new System.IO.StreamReader(filePath);
             while ((line = reader.ReadLine()) != null)
             {
@@ -180,51 +181,69 @@ namespace PoW_Tool_SheetUtilities
 
         private static void Main(string[] args)
         {
-            Console.OutputEncoding = System.Text.Encoding.Unicode;
+            string PreContext = "凭你那点Cheap Tricks，也敢做我们的对手？哈哈哈！一边凉快去吧！";
+            string Text = "Earth Dragon Sect没教过你们礼数？";
+            string PostContext = "你⋯⋯什麽意思?";
 
-            Console.WriteLine("Do you want to update the spreadsheets after a game update or do you want to build the English Mod data from the spreadsheets?");
-            Console.WriteLine("     1: Update after game update");
-            Console.WriteLine("     2: Build English Mod data");
-            Console.WriteLine("     3: Get Asset Formats");
-            Console.WriteLine("     4: Get Translation Stats");
+            DeepL_Website translator = new DeepL_Website();
 
-            var input = Console.ReadKey().KeyChar;
-            Console.WriteLine("\r          \n");
-            switch (input)
+            while (true)
             {
-                case '1':
-                    Console.WriteLine("Updating spreadsheets after game update...");
-                    UpdateSpreadsheets();
-                    break;
-
-                case '2':
-                    Console.WriteLine("Nuilding English Mod data from spreadsheets...");
-                    Export();
-                    break;
-
-                case '3':
-                    Console.WriteLine("Checking Asset Formats...");
-                    CheckAssetFormat();
-                    break;
-
-                case '4':
-                    Console.WriteLine("Getting Translation Stats...");
-                    GetTranslationStats();
-                    break;
-
-                default:
-                    Console.WriteLine("ERROR: Invalid option!");
-                    break;
+                for (int i = 0; i < 150; ++i)
+                {
+                    var req = new TranslationRequest(Text, new string[] { PreContext }, new string[] { PostContext });
+                    translator.AddTranslationRequest(req);
+                }
+                Task t = translator.ForceTranslate();
+                t.Wait();
             }
-            /*
-            string test = "段红儿三阶-时间达标通告(触发於第一年四月中旬-望庐诀课后)(Movie中判定好感阶级大于一才触发对话)";
-            Console.WriteLine("Original: " + test);
-            BingTranslator bt = BingTranslator.GetInstance();
-            Task<string> t = bt.Translate(test);
-            t.Wait();
 
-            Console.WriteLine("Translated: " + t.Result);
-            */
+            /*
+    Console.OutputEncoding = System.Text.Encoding.Unicode;
+
+    Console.WriteLine("Do you want to update the spreadsheets after a game update or do you want to build the English Mod data from the spreadsheets?");
+    Console.WriteLine("     1: Update after game update");
+    Console.WriteLine("     2: Build English Mod data");
+    Console.WriteLine("     3: Get Asset Formats");
+    Console.WriteLine("     4: Get Translation Stats");
+
+    var input = Console.ReadKey().KeyChar;
+    Console.WriteLine("\r          \n");
+    switch (input)
+    {
+    case '1':
+        Console.WriteLine("Updating spreadsheets after game update...");
+        UpdateSpreadsheets();
+        break;
+
+    case '2':
+        Console.WriteLine("Nuilding English Mod data from spreadsheets...");
+        Export();
+        break;
+
+    case '3':
+        Console.WriteLine("Checking Asset Formats...");
+        CheckAssetFormat();
+        break;
+
+    case '4':
+        Console.WriteLine("Getting Translation Stats...");
+        GetTranslationStats();
+        break;
+
+    default:
+        Console.WriteLine("ERROR: Invalid option!");
+        break;
+    }
+    /*
+    string test = "段红儿三阶-时间达标通告(触发於第一年四月中旬-望庐诀课后)(Movie中判定好感阶级大于一才触发对话)";
+    Console.WriteLine("Original: " + test);
+    BingTranslator bt = BingTranslator.GetInstance();
+    Task<string> t = bt.Translate(test);
+    t.Wait();
+
+    Console.WriteLine("Translated: " + t.Result);
+    */
             Console.WriteLine("Finished! Press any button to exit...");
             Console.ReadKey();
         }

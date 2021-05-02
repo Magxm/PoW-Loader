@@ -1,14 +1,26 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
 namespace PoW_Tool_SheetUtilities.MachineTranslator
 {
+    class TranslationRequest
+    {
+        public string[] PreContext;
+        public string[] PostContext;
+        public string Text;
+
+        public string TranslatedText;
+
+        public TranslationRequest(string text, string[] pre, string[] post)
+        {
+            Text = text;
+            PreContext = pre;
+            PostContext = post;
+        }
+    }
     interface ITranslator
     {
         bool IsUseable();
-        string Translate(string original);
+        void AddTranslationRequest(TranslationRequest request);
+        Task ForceTranslate();
     }
 }
