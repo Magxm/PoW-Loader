@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 
 namespace PoW_Tool_SheetUtilities.MachineTranslator
@@ -29,6 +29,7 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
 
         public string Translate(string original)
         {
+            /*
             if (string.IsNullOrEmpty(original) || original == "0")
             {
                 return original;
@@ -75,6 +76,8 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
             }
 
             Console.WriteLine("[ERROR] No translator successfully translated the input " + original);
+            return original;
+            */
             return original;
         }
     }
