@@ -49,6 +49,14 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
                         //Sanitizing req.TranslatedText
                         req.TranslatedText = req.TranslatedText.Replace(@"&#39;", @"'");
                         req.TranslatedText = req.TranslatedText.Replace(@"&quot;", @"""");
+
+                        //Case sensitive fix
+                        req.TranslatedText = req.TranslatedText.Replace(@"{Name", @"{name");
+                        req.TranslatedText = req.TranslatedText.Replace(@"{Friend", @"{friend");
+                        req.TranslatedText = req.TranslatedText.Replace(@"{address", @"{address");
+                        req.TranslatedText = req.TranslatedText.Replace(@"{Junior", @"{junior");
+                        req.TranslatedText = req.TranslatedText.Replace(@"{Senior", @"{senior");
+
                         //Friend
                         req.TranslatedText = req.TranslatedText.Replace(@"{name_1}{friend_2}", @"{friend_2} {name_1}");
                         req.TranslatedText = req.TranslatedText.Replace(@"{name_1}{friend_1}", @"{friend_1} {name_1}");
@@ -72,6 +80,9 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
                         //Senior
                         req.TranslatedText = req.TranslatedText.Replace(@"{name_1}{senior}", @"{senior} {name_1}");
                         req.TranslatedText = req.TranslatedText.Replace(@"{name_2}{senior}", @"{senior} {name_2}");
+
+                        //Escape sequences
+                        req.TranslatedText = req.TranslatedText.Replace("\\ \"", "\\\"");
 
                         //We got a valid translation, returning it...
                         return req.TranslatedText;
