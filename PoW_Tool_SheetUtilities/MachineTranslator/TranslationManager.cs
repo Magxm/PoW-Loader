@@ -82,6 +82,7 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
                         req.TranslatedText = req.TranslatedText.Replace(@"{name_2}{senior}", @"{senior} {name_2}");
 
                         //Escape sequences
+                        req.TranslatedText = req.TranslatedText.Replace("\\ \" ", "\\\"");
                         req.TranslatedText = req.TranslatedText.Replace("\\ \"", "\\\"");
 
                         //We got a valid translation, returning it...
