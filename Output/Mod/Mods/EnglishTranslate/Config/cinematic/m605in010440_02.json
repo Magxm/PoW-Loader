@@ -3,7 +3,7 @@
   "Nodes": [
     {
       "Node": "{ \"RewardAction\" : \"re7001004_04\"} ",
-      "Next": 3,
+      "Next": -1,
       "Prallel": 2
     },
     {
@@ -23,7 +23,7 @@
     },
     {
       "Node": "{ \"TimerAction\" : 1.00000} ",
-      "Next": 0,
+      "Next": 7,
       "Prallel": -1
     },
     {
@@ -35,6 +35,11 @@
       "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 1} ",
       "Next": -1,
       "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 4.00000} ",
+      "Next": 3,
+      "Prallel": 0
     }
   ],
   "Name": ""

@@ -27,7 +27,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckPlayerUpgradableProperty\" : 0, 299, 2010}  ], 0} , 4, 1} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckPlayerUpgradableProperty\" : 0, 299, 2010}  ], 0} , 8, 1} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -38,6 +38,21 @@
     },
     {
       "Node": "{ \"RunCinematicAction\" : \"m605in010640_01\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckCurrentRound\" : 83, 1, 85, \"\"}  ], 0} , 9, 4} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.20000} ",
+      "Next": 10,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010600_043\"} ",
       "Next": -1,
       "Prallel": -1
     }
