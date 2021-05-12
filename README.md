@@ -25,7 +25,7 @@ If you want to build the mod yourself you can just clone this repository and bui
 You will find a working release ready build in Output/Mod.  
 To get the newest Translation as well as updating the translation sheet to the newest game version, the PoW_Tool_SheetUtils Tool automates everything.  
 To use it you need access to the translation sheets as well as a configured google cloud account.  
-Access is given over our discord, so if you want to contribute contactus in the discord server.  
+Access is given over our discord, so if you want to contribute contact us in the discord server and we will be happy to help setting it up.  
 
 BepInEx is used as the actual underlying ModLoader.  
 This repository contains a ModAPI plugin containing base functionalities for other Mods and Plugins.  
