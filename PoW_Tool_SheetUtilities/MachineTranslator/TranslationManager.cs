@@ -62,6 +62,7 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
                         req.TranslatedText = req.TranslatedText.Replace(@"{name_1}{friend_1}", @"{friend_1} {name_1}");
                         req.TranslatedText = req.TranslatedText.Replace(@"{name_2}{friend_2}", @"{friend_2} {name_2}");
                         req.TranslatedText = req.TranslatedText.Replace(@"{name_2}{friend_1}", @"{friend_1} {name_2}");
+
                         //Address
                         req.TranslatedText = req.TranslatedText.Replace(@"{name_1}{address_1}", @"{address_1} {name_1}");
                         req.TranslatedText = req.TranslatedText.Replace(@"{name_1}{address_2}", @"{address_2} {name_1}");
@@ -74,9 +75,11 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
                         req.TranslatedText = req.TranslatedText.Replace(@"{name_2}{address_3}", @"{address_3} {name_2}");
                         req.TranslatedText = req.TranslatedText.Replace(@"{name_2}{address_4}", @"{address_4} {name_2}");
                         req.TranslatedText = req.TranslatedText.Replace(@"{name_2}{address_5}", @"{address_5} {name_2}");
+
                         //Junior
                         req.TranslatedText = req.TranslatedText.Replace(@"{name_1}{junior}", @"{junior} {name_1}");
                         req.TranslatedText = req.TranslatedText.Replace(@"{name_2}{junior}", @"{junior} {name_2}");
+
                         //Senior
                         req.TranslatedText = req.TranslatedText.Replace(@"{name_1}{senior}", @"{senior} {name_1}");
                         req.TranslatedText = req.TranslatedText.Replace(@"{name_2}{senior}", @"{senior} {name_2}");
