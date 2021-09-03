@@ -16,13 +16,15 @@ namespace ModAPI
         public BaseUnityPlugin ModAsPlugin;
 
         private ConfigEntry<int> config_LoadOrderIndex;
+        private ConfigEntry<bool> config_Enabled;
 
         public PoWMod_Wrapper(IPoWMod mod)
         {
             Mod = mod;
             ModAsPlugin = Mod as BaseUnityPlugin;
 
-            config_LoadOrderIndex = ModAsPlugin.Config.Bind<int>("LoadOrder", "Index", -1, "Load order index");
+            config_LoadOrderIndex = ModAsPlugin.Config.Bind<int>("Generic", "LoadOrderIndex", -1, "Load order index");
+            config_Enabled = ModAsPlugin.Config.Bind<bool>("Generic", "Enabled", true, "Should mod be loaded");
             ModAsPlugin.Config.Save();
         }
 
@@ -35,6 +37,11 @@ namespace ModAPI
         {
             config_LoadOrderIndex.Value = newValue;
             ModAsPlugin.Config.Save();
+        }
+
+        public bool IsEnabled()
+        {
+            return config_Enabled.Value;
         }
     }
 
@@ -118,8 +125,11 @@ namespace ModAPI
             //Loading all mods
             for (int i = 0; i < _Mods.Count; ++i)
             {
-                Debug.Log("Loading Mod " + _Mods[i].Mod.GetName());
-                _Mods[i].Mod.Load();
+                if (_Mods[i].IsEnabled())
+                {
+                    Debug.Log("Loading Mod " + _Mods[i].Mod.GetName());
+                    _Mods[i].Mod.Load();
+                }
             }
 
             _ModsLoaded = true;
