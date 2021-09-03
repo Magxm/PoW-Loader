@@ -8,11 +8,10 @@ using System.IO;
 
 namespace EnglishPatch
 {
-    //Dependency for ModAPI since ModAPI handles resource loading redirection
-    [BepInDependency("plugins.modapi", BepInDependency.DependencyFlags.HardDependency)]
     [BepInPlugin("plugins.englishpatch", "English Patch", "0.9.0")]
+    [BepInDependency("plugins.modapi", BepInDependency.DependencyFlags.HardDependency)]
     [BepInProcess("PathOfWuxia.exe")]
-    public class EnglishPatch : BaseUnityPlugin, PoWMod
+    public class EnglishPatch : BaseUnityPlugin, IPoWMod
     {
         private static string _VERSION = "0.9.0";
 
@@ -21,9 +20,14 @@ namespace EnglishPatch
             return _VERSION;
         }
 
+        public string GetName()
+        {
+            return "English Patch";
+        }
+
         private Harmony _HM;
 
-        private void Awake()
+        public void Load()
         {
             ModAPI.ModAPI.GetInstance().ResourceRedirector.AddRessourceFolder("Mods" + Path.DirectorySeparatorChar + "EnglishTranslate");
 
@@ -31,9 +35,16 @@ namespace EnglishPatch
             _HM.PatchAll();
         }
 
-        private void OnDestroy()
+        public void Unload()
         {
             _HM.UnpatchAll("EnglishPatch");
+        }
+
+        private void Awake()
+        {
+            this.name = "English Patch Mod";
+            //Adding it to ModAPI list
+            ModAPI.ModAPI.GetInstance().AddMod(this);
         }
     }
 }

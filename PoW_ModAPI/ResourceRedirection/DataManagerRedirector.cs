@@ -132,7 +132,7 @@ namespace PoW_ModAPI.ResourceRedirection
                     }));
                 }
             }
-            //No need to call original :)
+            //No need to call original
             return false;
         }
     }

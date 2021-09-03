@@ -1,18 +1,47 @@
 ﻿using BepInEx;
 using BepInEx.Bootstrap;
+using BepInEx.Configuration;
 
 using HarmonyLib;
 
-using System.IO;
+using System.Collections.Generic;
 
 using UnityEngine;
 
 namespace ModAPI
 {
+    public class PoWMod_Wrapper
+    {
+        public IPoWMod Mod;
+        public BaseUnityPlugin ModAsPlugin;
+
+        private ConfigEntry<int> config_LoadOrderIndex;
+
+        public PoWMod_Wrapper(IPoWMod mod)
+        {
+            Mod = mod;
+            ModAsPlugin = Mod as BaseUnityPlugin;
+
+            config_LoadOrderIndex = ModAsPlugin.Config.Bind<int>("LoadOrder", "Index", -1, "Load order index");
+            ModAsPlugin.Config.Save();
+        }
+
+        public int GetLoadOrderIndex()
+        {
+            return config_LoadOrderIndex.Value;
+        }
+
+        public void SetLoadOrderIndex(int newValue)
+        {
+            config_LoadOrderIndex.Value = newValue;
+            ModAsPlugin.Config.Save();
+        }
+    }
+
     [BepInDependency("gravydevsupreme.xunity.resourceredirector", BepInDependency.DependencyFlags.HardDependency)]
     [BepInPlugin("plugins.modapi", "Mod API", "0.4.0")]
     [BepInProcess("PathOfWuxia.exe")]
-    public class ModAPI : BaseUnityPlugin, PoWMod
+    public class ModAPI : BaseUnityPlugin
     {
         private static string _VERSION = "0.4.0";
 
@@ -35,6 +64,67 @@ namespace ModAPI
         private Harmony _HM;
         public ResourceRedirectManager ResourceRedirector = ResourceRedirectManager.GetInstance();
 
+        private bool _ModsLoaded = false;
+        private SortedList<int, PoWMod_Wrapper> _Mods = new SortedList<int, PoWMod_Wrapper>();
+        private int _ModsHighestLoadOrderIndex = -1;
+        private List<PoWMod_Wrapper> _NewMods = new List<PoWMod_Wrapper>();
+
+        public void AddMod(IPoWMod mod)
+        {
+            if (_ModsLoaded)
+            {
+                Debug.LogError("The mod " + mod.GetName() + " was added after the mods have already been processed!");
+            }
+            else
+            {
+                Debug.Log("Mod found: " + mod.GetName());
+            }
+
+            var modWrapper = new PoWMod_Wrapper(mod);
+
+            int loadOrderIndex = modWrapper.GetLoadOrderIndex();
+            if (loadOrderIndex == -1)
+            {
+                _NewMods.Add(modWrapper);
+            }
+            else
+            {
+                if (loadOrderIndex > _ModsHighestLoadOrderIndex)
+                    _ModsHighestLoadOrderIndex = loadOrderIndex;
+
+                _Mods.Add(loadOrderIndex, modWrapper);
+            }
+        }
+
+        public void LoadMods()
+        {
+            Debug.Log("Loading mods!");
+            if (_ModsLoaded)
+            {
+                Debug.Log("Mods already loaded...");
+                return;
+            }
+
+            //Processing new mods and giving them a l
+            for (int i = 0; i < _NewMods.Count; ++i)
+            {
+                Debug.Log("Found new mod " + _NewMods[i].Mod.GetName());
+                _ModsHighestLoadOrderIndex++;
+                _NewMods[i].SetLoadOrderIndex(_ModsHighestLoadOrderIndex);
+                _Mods.Add(_ModsHighestLoadOrderIndex, _NewMods[i]);
+            }
+            _NewMods.Clear();
+
+            //Loading all mods
+            for (int i = 0; i < _Mods.Count; ++i)
+            {
+                Debug.Log("Loading Mod " + _Mods[i].Mod.GetName());
+                _Mods[i].Mod.Load();
+            }
+
+            _ModsLoaded = true;
+        }
+
         private void Awake()
         {
             this.name = "ModAPI";
@@ -42,8 +132,6 @@ namespace ModAPI
             //Hooking
             _HM = new Harmony("ModAPI");
             _HM.PatchAll();
-
-            ResourceRedirector.AddRessourceFolder("Mods" + Path.DirectorySeparatorChar + "ImageTest");
 
             //Initing in game console (basically just a log viewer right now)
             UI.Console.Init();
@@ -55,6 +143,19 @@ namespace ModAPI
             UI.Console.Unload();
 
             _HM.UnpatchAll("ModAPI");
+        }
+    }
+
+    [HarmonyPatch(typeof(Heluo.Game), "OnBeforeSceneLoad")]
+    public class Game_OnBeforeSceneLoad_Hook
+    {
+        public static bool Prefix()
+        {
+            Debug.Log("Game.OnBeforeSceneLoad called");
+            ModAPI.GetInstance().LoadMods();
+
+            //Call original
+            return true;
         }
     }
 }
