@@ -1,10 +1,10 @@
-﻿using BepInEx;
+﻿using System.Collections.Generic;
+
+using BepInEx;
 using BepInEx.Bootstrap;
 using BepInEx.Configuration;
 
 using HarmonyLib;
-
-using System.Collections.Generic;
 
 using UnityEngine;
 
@@ -61,7 +61,7 @@ namespace ModAPI
         {
             if (!Chainloader.PluginInfos.ContainsKey("plugins.modapi"))
             {
-                Debug.LogError("Tried to obtain ModApi Instance but it was not loaded!");
+                Debug.LogError("[ModAPI] Tried to obtain ModAPI Instance but it was not loaded!");
                 return null;
             }
 
@@ -80,11 +80,11 @@ namespace ModAPI
         {
             if (_ModsLoaded)
             {
-                Debug.LogError("The mod " + mod.GetName() + " was added after the mods have already been processed!");
+                Debug.LogError("[ModAPI] The mod " + mod.GetName() + " was added after the mods have already been processed!");
             }
             else
             {
-                Debug.Log("Mod found: " + mod.GetName());
+                Debug.Log("[ModAPI] Mod found: " + mod.GetName());
             }
 
             var modWrapper = new PoWMod_Wrapper(mod);
@@ -105,17 +105,17 @@ namespace ModAPI
 
         public void LoadMods()
         {
-            Debug.Log("Loading mods!");
+            Debug.Log("[ModAPI] Loading mods!");
             if (_ModsLoaded)
             {
-                Debug.Log("Mods already loaded...");
+                Debug.Log("[ModAPI] Mods already loaded...");
                 return;
             }
 
             //Processing new mods and giving them a l
             for (int i = 0; i < _NewMods.Count; ++i)
             {
-                Debug.Log("Found new mod " + _NewMods[i].Mod.GetName());
+                Debug.Log("[ModAPI] Found new mod " + _NewMods[i].Mod.GetName());
                 _ModsHighestLoadOrderIndex++;
                 _NewMods[i].SetLoadOrderIndex(_ModsHighestLoadOrderIndex);
                 _Mods.Add(_ModsHighestLoadOrderIndex, _NewMods[i]);
@@ -123,12 +123,13 @@ namespace ModAPI
             _NewMods.Clear();
 
             //Loading all mods
-            for (int i = 0; i < _Mods.Count; ++i)
+            foreach (var modEntry in _Mods)
             {
-                if (_Mods[i].IsEnabled())
+                var modWrapper = modEntry.Value;
+                if (modWrapper.IsEnabled())
                 {
-                    Debug.Log("Loading Mod " + _Mods[i].Mod.GetName());
-                    _Mods[i].Mod.Load();
+                    Debug.Log("[ModAPI] Loading Mod " + modWrapper.Mod.GetName());
+                    modWrapper.Mod.Load();
                 }
             }
 

@@ -1,0 +1,30 @@
+﻿<Window x:Class="PoW_ModLoader_Config.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PoW_ModLoader_Config"
+        mc:Ignorable="d"
+        Title="PoW ModLoader Configurator" Height="450" Width="800">
+    <Grid>
+        <ListView Margin="10,50,10,10" Name="modListView" BorderBrush="WhiteSmoke"
+AllowDrop="True" PreviewMouseLeftButtonDown="modListView_PreviewMouseLeftButtonDown"
+MouseMove="modListView_MouseMove" DragEnter="modListView_DragEnter" Drop="modListView_Drop" DragOver="modListView_DragOver">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Enabled" Width="60">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <CheckBox IsChecked="{Binding Enabled}" />
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Load Order Index" Width="120" DisplayMemberBinding="{Binding LoadOrderIndex}" />
+                    <GridViewColumn Header="Mod Name" Width="120" DisplayMemberBinding="{Binding ModName}" />
+                    <GridViewColumn Header="Version" Width="120" DisplayMemberBinding="{Binding Version}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Reload Mods" HorizontalAlignment="Left" Margin="687,10,0,0" VerticalAlignment="Top" Width="95" Click="Button_Click" />
+    </Grid>
+</Window>
