@@ -1,9 +1,9 @@
-﻿using System;
+﻿using BepInEx;
+
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
-
-using BepInEx;
 
 using UnityEngine;
 
@@ -13,15 +13,24 @@ namespace ModAPI
 {
     /*
      * Actual ResourceRedirectManager that handles managing the different redirect paths.
-     * We have hooked the ExternalResourceProvider, however if something still goes throuhg, we use XUnity.ResourceRedirector to catch them directly in the asset loading pipeline.
+     * We have hooked the different asset loading routines (in different files), however if something still goes through, we use XUnity.ResourceRedirector to catch them directly in the asset loading pipeline.
     */
+
     public class ResourceRedirectManager
     {
-
         //Redirect Dictionary
-        private StringComparer IgnoreCaseStringComparer = StringComparer.OrdinalIgnoreCase;
-        public Dictionary<string, string> PathRedirections;
+        private StringComparer _IgnoreCaseStringComparer = StringComparer.OrdinalIgnoreCase;
+
+        //Path redirections are used by both the asset loading hook, but also the other AssetRedirectors
+        public Dictionary<string, List<string>> PathRedirections;
+
         public Encoding PathEncoding = Encoding.UTF8;
+        private bool _ForceOriginalNextLoad = false;
+
+        public void ForceOriginalLoadInNextLoad()
+        {
+            _ForceOriginalNextLoad = true;
+        }
 
         public bool ExistsRedirect(string path)
         {
@@ -43,22 +52,42 @@ namespace ModAPI
 
             path = path.Replace("\\", "/");
 
-            string result;
+            List<string> result = null;
             PathRedirections.TryGetValue(path, out result);
-            if (!string.IsNullOrEmpty(result))
+            if (result != null)
             {
                 //UnityEngine.Debug.Log(path + " redirects to RootPath " + result);
-                return result;
+                if (result.Count > 0)
+                {
+                    return result[result.Count - 1];
+                }
+                else
+                {
+                    return string.Empty;
+                }
             }
             else
             {
                 return string.Empty;
             }
+        }
 
+        public List<string> GetAllRedirects(string path)
+        {
+            if (path.StartsWith("Assets/") || path.StartsWith("assets/"))
+            {
+                path = path.Substring(7);
+            }
+
+            path = path.Replace("\\", "/");
+
+            List<string> result = null;
+            PathRedirections.TryGetValue(path, out result);
+            return result;
         }
 
         //Asset Managment/Loading/Caching
-        private Dictionary<string, object> assetCache;
+        private Dictionary<string, object> _AssetCache;
 
         private Texture2D LoadTexture2D(string path)
         {
@@ -67,9 +96,9 @@ namespace ModAPI
                 path = path.Substring(7);
             }
 
-            if (assetCache.ContainsKey(path))
+            if (_AssetCache.ContainsKey(path))
             {
-                return assetCache[path] as Texture2D;
+                return _AssetCache[path] as Texture2D;
             }
 
             if (!ExistsRedirect(path))
@@ -84,7 +113,7 @@ namespace ModAPI
             Texture2D texture2D = new Texture2D(2, 2);
             texture2D.LoadImage(data);
 
-            assetCache[path] = texture2D;
+            _AssetCache[path] = texture2D;
 
             return texture2D;
         }
@@ -96,16 +125,15 @@ namespace ModAPI
                 path = path.Substring(7);
             }
 
-            if (assetCache.ContainsKey(path))
+            if (_AssetCache.ContainsKey(path))
             {
-                return assetCache[path] as Sprite;
+                return _AssetCache[path] as Sprite;
             }
 
             if (!ExistsRedirect(path))
             {
                 return default;
             }
-
 
             string rootRedirect = GetRedirect(path);
             string absolutePath = Paths.GameRootPath + Path.DirectorySeparatorChar + rootRedirect + Path.DirectorySeparatorChar + path;
@@ -116,7 +144,7 @@ namespace ModAPI
 
             Sprite sprite = Sprite.Create(texture2D, new Rect(0f, 0f, (float)texture2D.width, (float)texture2D.height), new Vector2((float)(texture2D.width / 2), (float)(texture2D.height / 2)));
 
-            assetCache[path] = sprite;
+            _AssetCache[path] = sprite;
             return sprite;
         }
 
@@ -127,9 +155,9 @@ namespace ModAPI
                 path = path.Substring(7);
             }
 
-            if (assetCache.ContainsKey(path))
+            if (_AssetCache.ContainsKey(path))
             {
-                return assetCache[path] as TextAsset;
+                return _AssetCache[path] as TextAsset;
             }
 
             if (!ExistsRedirect(path))
@@ -137,14 +165,13 @@ namespace ModAPI
                 return default;
             }
 
-
             string rootRedirect = GetRedirect(path);
             string absolutePath = Paths.GameRootPath + Path.DirectorySeparatorChar + rootRedirect + Path.DirectorySeparatorChar + path;
 
             byte[] data = File.ReadAllBytes(absolutePath);
             TextAsset ta = new TextAsset(Encoding.UTF8.GetString(data, 0, data.Length));
 
-            assetCache[path] = ta;
+            _AssetCache[path] = ta;
             return ta;
         }
 
@@ -159,7 +186,7 @@ namespace ModAPI
 
             //Debug.LogError("AssetLoading: " + context.Parameters.Name);
             string rootRedirect = GetRedirect(path);
-            if (string.IsNullOrEmpty(rootRedirect))
+            if (string.IsNullOrEmpty(rootRedirect) || _ForceOriginalNextLoad) //_ForceOriginalNextLoad is resetted in AssetLoaded hook
             {
                 //Debug.Log("[ResourceRedirectManager] Found no redirect for " + path);
                 context.Complete(false, false, false);
@@ -187,10 +214,11 @@ namespace ModAPI
         }
 
         public Dictionary<string, string> assetNameToPath;
+
         public void AssetLoaded(AssetLoadedContext context)
         {
             //Debug.LogError("AssetLoaded: " + context.Parameters.Name);
-            if (Path.GetExtension(context.Parameters.Name) == ".prefab")
+            if (!_ForceOriginalNextLoad && Path.GetExtension(context.Parameters.Name) == ".prefab")
             {
                 //It is a prefab, we want to check for child GameObjects and replace them if needed
                 GameObject prefab = context.Asset as GameObject;
@@ -236,6 +264,7 @@ namespace ModAPI
                 }
             }
 
+            _ForceOriginalNextLoad = false;
             context.Complete(false);
         }
 
@@ -258,7 +287,7 @@ namespace ModAPI
             {
                 if (assetNameToPath.ContainsKey(assetName))
                 {
-                    Debug.LogError("[Resource Redirector] An Asset with name " + assetName + ". This is a big issue since we need unique asset names!");
+                    Debug.LogError("[Resource Redirector] An Asset with name " + assetName + " already exists in teh assetNameToPath list. This is a big issue since we need unique asset names!");
                 }
                 else
                 {
@@ -289,13 +318,12 @@ namespace ModAPI
             context.Complete(false);
         }
 
-
         //Constructor
         private ResourceRedirectManager()
         {
-            PathRedirections = new Dictionary<string, string>(IgnoreCaseStringComparer);
-            assetCache = new Dictionary<string, object>(IgnoreCaseStringComparer);
-            assetNameToPath = new Dictionary<string, string>(IgnoreCaseStringComparer);
+            PathRedirections = new Dictionary<string, List<string>>(_IgnoreCaseStringComparer);
+            _AssetCache = new Dictionary<string, object>(_IgnoreCaseStringComparer);
+            assetNameToPath = new Dictionary<string, string>(_IgnoreCaseStringComparer);
 
             //ResourceRedirection.LogAllLoadedResources = true;
 
@@ -311,13 +339,12 @@ namespace ModAPI
             ResourceRedirection.RegisterAssetBundleLoadedHook(0, AssetBundleLoaded);
             ResourceRedirection.RegisterAsyncAssetBundleLoadingHook(0, AsyncAssetBundleLoading);
 
-
             ResourceRedirection.RegisterResourceLoadedHook(HookBehaviour.OneCallbackPerResourceLoaded, 0, ResourceLoaded);
         }
 
-
         //Singleton stuff
         private static ResourceRedirectManager instance = null;
+
         public static ResourceRedirectManager GetInstance()
         {
             if (instance == null)
@@ -328,16 +355,14 @@ namespace ModAPI
             return instance;
         }
 
-
-
         /// <summary>
-        /// Adds all files including files in subfolders in a directory to the redirect list.
-        /// Paths from the given directory must be equivilant to the paths inside the game files.
-        /// If the same file exists more than once the LAST registered one will be remembered.
-        /// If the game tries to read a file that has a redirection setup, we will redirect the load to our own file.
-        /// Example: If we registered "Mods\Translate" and "Config\chs\Battle\Buffer\a.json" is a valid path inside the Translate folder
-        /// then if the game tries to load "Config\chs\Battle\Buffer\a.json" from the game files it will be redirected
-        /// to "GamePath\Mods\Translate\Config\chs\Battle\Buffer\a.json".
+        /// Adds all files including files in subfolders in a directory to the redirect list. Paths
+        /// from the given directory must be equivilant to the paths inside the game files. If the
+        /// same file exists more than once the LAST registered one will be remembered. If the game
+        /// tries to read a file that has a redirection setup, we will redirect the load to our own file.
+        /// Example: If we registered "Mods\Translate" and "Config\chs\Battle\Buffer\a.json" is a
+        /// valid path inside the Translate folder then if the game tries to load
+        /// "Config\chs\Battle\Buffer\a.json" from the game files it will be redirected to "GamePath\Mods\Translate\Config\chs\Battle\Buffer\a.json".
         /// </summary>
         /// <param name="path">Relative path to game root folder</param>
         public void AddRessourceFolder(string path)
@@ -396,8 +421,11 @@ namespace ModAPI
             {
                 UnityEngine.Debug.LogWarning("[ResourceRedirectManager] Mod Collision: Overwritting Resource Redirect " + path + " from " + GetRedirect(path) + " to " + rootPath);
             }
-            PathRedirections[path] = rootPath;
+            if (!PathRedirections.ContainsKey(path))
+            {
+                PathRedirections[path] = new List<string>();
+            }
+            PathRedirections[path].Add(rootPath);
         }
     }
-
 }
