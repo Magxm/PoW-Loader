@@ -10,11 +10,11 @@ using UnityEngine;
 namespace ModAPI
 {
     [BepInDependency("gravydevsupreme.xunity.resourceredirector", BepInDependency.DependencyFlags.HardDependency)]
-    [BepInPlugin("plugins.modapi", "Mod API", "1.0.0.0")]
+    [BepInPlugin("plugins.modapi", "Mod API", "0.4.0")]
     [BepInProcess("PathOfWuxia.exe")]
     public class ModAPI : BaseUnityPlugin, PoWMod
     {
-        private static string _VERSION = "0.3.2";
+        private static string _VERSION = "0.4.0";
 
         public string GetVersion()
         {
@@ -25,7 +25,7 @@ namespace ModAPI
         {
             if (!Chainloader.PluginInfos.ContainsKey("plugins.modapi"))
             {
-                Debug.LogError("Tried to optain ModApi Instance but it was not loaded!");
+                Debug.LogError("Tried to obtain ModApi Instance but it was not loaded!");
                 return null;
             }
 
