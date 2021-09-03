@@ -29,7 +29,7 @@ namespace EnglishPatch
 
         public void Load()
         {
-            ModAPI.ModAPI.GetInstance().ResourceRedirector.AddRessourceFolder("Mods" + Path.DirectorySeparatorChar + "EnglishTranslate");
+            ModAPI.ModAPI.GetInstance().ResourceRedirector.AddRessourceFolder("ModResources" + Path.DirectorySeparatorChar + "EnglishTranslate");
 
             _HM = new Harmony("EnglishPatch");
             _HM.PatchAll();

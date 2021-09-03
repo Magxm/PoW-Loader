@@ -360,9 +360,9 @@ namespace ModAPI
         /// from the given directory must be equivilant to the paths inside the game files. If the
         /// same file exists more than once the LAST registered one will be remembered. If the game
         /// tries to read a file that has a redirection setup, we will redirect the load to our own file.
-        /// Example: If we registered "Mods\Translate" and "Config\chs\Battle\Buffer\a.json" is a
-        /// valid path inside the Translate folder then if the game tries to load
-        /// "Config\chs\Battle\Buffer\a.json" from the game files it will be redirected to "GamePath\Mods\Translate\Config\chs\Battle\Buffer\a.json".
+        /// Example: If we registered "ModResources\Translate" and "Config\chs\Battle\Buffer\a.json"
+        ///          is a valid path inside the Translate folder then if the game tries to load
+        /// "Config\chs\Battle\Buffer\a.json" from the game files it will be redirected to "GamePath\ModResources\Translate\Config\chs\Battle\Buffer\a.json".
         /// </summary>
         /// <param name="path">Relative path to game root folder</param>
         public void AddRessourceFolder(string path)

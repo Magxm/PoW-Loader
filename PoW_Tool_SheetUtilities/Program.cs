@@ -61,7 +61,7 @@ namespace PoW_Tool_SheetUtilities
             string workingDirectory = Environment.CurrentDirectory;
             Console.WriteLine("Where to export to?");
             Console.WriteLine("     1: /Output");
-            Console.WriteLine("     2: ../../Mod/Mods/EnglishTranslate/Config");
+            Console.WriteLine("     2: ../../Mod/ModResources/EnglishTranslate/Config");
 
             string outputFolder;
             var input = Console.ReadKey().KeyChar;
@@ -73,7 +73,7 @@ namespace PoW_Tool_SheetUtilities
                     break;
 
                 case '2':
-                    outputFolder = workingDirectory + Path.DirectorySeparatorChar + ".." + Path.DirectorySeparatorChar + ".." + Path.DirectorySeparatorChar + "Mod/Mods/EnglishTranslate/Config/";
+                    outputFolder = workingDirectory + Path.DirectorySeparatorChar + ".." + Path.DirectorySeparatorChar + ".." + Path.DirectorySeparatorChar + "Mod/ModResources/EnglishTranslate/Config/";
                     break;
 
                 default:
@@ -169,7 +169,6 @@ namespace PoW_Tool_SheetUtilities
             TranslationStatEntry unknownStats = new TranslationStatEntry("Marked in unknown cell color (Manually marked)");
             unknownStats.MatchAll = true;
             stats.Add(unknownStats);
-
 
             SpreadsheetUpdater.GetTranslationStats(ref stats);
 
