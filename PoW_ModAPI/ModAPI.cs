@@ -24,7 +24,7 @@ namespace ModAPI
             ModAsPlugin = Mod as BaseUnityPlugin;
 
             config_LoadOrderIndex = ModAsPlugin.Config.Bind<int>("Generic", "LoadOrderIndex", -1, "Load order index");
-            config_Enabled = ModAsPlugin.Config.Bind<bool>("Generic", "Enabled", true, "Should mod be loaded");
+            config_Enabled = ModAsPlugin.Config.Bind<bool>("Generic", "Enabled", true, "Mod Enabled");
             ModAsPlugin.Config.Save();
         }
 
@@ -51,6 +51,12 @@ namespace ModAPI
     public class ModAPI : BaseUnityPlugin
     {
         private static string _VERSION = "0.4.0";
+        public ConfigEntry<bool> Config_ForceSimplifiedChinese;
+
+        public ModAPI()
+        {
+            Config_ForceSimplifiedChinese = Config.Bind<bool>("Generic", "Force Simplified Chinese", true, "");
+        }
 
         public string GetVersion()
         {

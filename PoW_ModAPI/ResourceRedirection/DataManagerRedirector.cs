@@ -1,4 +1,11 @@
-﻿using BepInEx;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+
+using BepInEx;
 
 using FileHelpers;
 
@@ -12,13 +19,6 @@ using Heluo.Utility;
 using ModAPI;
 
 using Newtonsoft.Json;
-
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
 
 using UnityEngine;
 
@@ -37,8 +37,13 @@ namespace PoW_ModAPI.ResourceRedirection
         //This allows to check for changes easier than if we make the code more readable here.
         public static bool Prefix(ref DataManager __instance, string path, ref IDictionary<Type, IDictionary> ___dict, ref IResourceProvider ___resource)
         {
-            //Debug.Log("DataManager ReadData called");
             path = __instance.CheckPath(path);
+
+            bool forceSimplified = ModAPI.ModAPI.GetInstance().Config_ForceSimplifiedChinese.Value;
+            if (forceSimplified)
+            {
+                path = path.Replace("/cht/", "/chs/");
+            }
             ___dict = new Dictionary<Type, IDictionary>();
             Type type = typeof(Item);
             foreach (Type dataType in from t in type.Assembly.GetTypes() where t.IsSubclassOf(type) && !t.HasAttribute<Hidden>(false) select t)
