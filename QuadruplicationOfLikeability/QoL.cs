@@ -6,12 +6,12 @@ using HarmonyLib;
 
 using ModAPI;
 
-namespace EnglishPatch
+namespace QoL
 {
-    [BepInPlugin("plugins.englishpatch", "English Patch", "0.9.0")]
+    [BepInPlugin("plugins.quadruplicationoflikeability", "Quadruplication Of Likeability", "0.1.0")]
     [BepInDependency("plugins.modapi", BepInDependency.DependencyFlags.HardDependency)]
     [BepInProcess("PathOfWuxia.exe")]
-    public class EnglishPatch : BaseUnityPlugin, IPoWMod
+    public class QoLMod : BaseUnityPlugin, IPoWMod
     {
         private static string _VERSION = "0.9.0";
 
@@ -22,22 +22,20 @@ namespace EnglishPatch
 
         public string GetName()
         {
-            return "English Patch";
+            return "Quadruplication Of Likeability";
         }
 
         private Harmony _HM;
 
         public void Load()
         {
-            ModAPI.ModAPI.GetInstance().ResourceRedirector.AddRessourceFolder("ModResources" + Path.DirectorySeparatorChar + "EnglishTranslate");
-
-            _HM = new Harmony("EnglishPatch");
+            _HM = new Harmony("QoL");
             _HM.PatchAll();
         }
 
         public void Unload()
         {
-            _HM.UnpatchAll("EnglishPatch");
+            _HM.UnpatchAll("QoL");
         }
 
         private void Awake()
