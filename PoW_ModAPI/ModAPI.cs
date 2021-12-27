@@ -15,33 +15,33 @@ namespace ModAPI
         public IPoWMod Mod;
         public BaseUnityPlugin ModAsPlugin;
 
-        private ConfigEntry<int> config_LoadOrderIndex;
-        private ConfigEntry<bool> config_Enabled;
+        private readonly ConfigEntry<int> _Config_LoadOrderIndex;
+        private readonly ConfigEntry<bool> _Config_Enabled;
 
         public PoWMod_Wrapper(IPoWMod mod)
         {
             Mod = mod;
             ModAsPlugin = Mod as BaseUnityPlugin;
 
-            config_LoadOrderIndex = ModAsPlugin.Config.Bind<int>("Generic", "LoadOrderIndex", -1, "Load order index");
-            config_Enabled = ModAsPlugin.Config.Bind<bool>("Generic", "Enabled", true, "Mod Enabled");
+            _Config_LoadOrderIndex = ModAsPlugin.Config.Bind<int>("Generic", "LoadOrderIndex", -1, "Load order index");
+            _Config_Enabled = ModAsPlugin.Config.Bind<bool>("Generic", "Enabled", true, "Mod Enabled");
             ModAsPlugin.Config.Save();
         }
 
         public int GetLoadOrderIndex()
         {
-            return config_LoadOrderIndex.Value;
+            return _Config_LoadOrderIndex.Value;
         }
 
         public void SetLoadOrderIndex(int newValue)
         {
-            config_LoadOrderIndex.Value = newValue;
+            _Config_LoadOrderIndex.Value = newValue;
             ModAsPlugin.Config.Save();
         }
 
         public bool IsEnabled()
         {
-            return config_Enabled.Value;
+            return _Config_Enabled.Value;
         }
     }
 
@@ -50,12 +50,17 @@ namespace ModAPI
     [BepInProcess("PathOfWuxia.exe")]
     public class ModAPI : BaseUnityPlugin
     {
-        private static string _VERSION = "0.4.0";
-        public ConfigEntry<bool> Config_ForceSimplifiedChinese;
+        private static readonly string _VERSION = "0.4.0";
+        private ConfigEntry<bool> _Config_ForceSimplifiedChinese;
 
         public ModAPI()
         {
-            Config_ForceSimplifiedChinese = Config.Bind<bool>("Generic", "Force Simplified Chinese", true, "");
+            _Config_ForceSimplifiedChinese = Config.Bind<bool>("Generic", "Force Simplified Chinese", true, "");
+        }
+
+        public bool GetIsForcedSimplifiedChinese()
+        {
+            return _Config_ForceSimplifiedChinese.Value;
         }
 
         public string GetVersion()
@@ -78,9 +83,9 @@ namespace ModAPI
         public ResourceRedirectManager ResourceRedirector = ResourceRedirectManager.GetInstance();
 
         private bool _ModsLoaded = false;
-        private SortedList<int, PoWMod_Wrapper> _Mods = new SortedList<int, PoWMod_Wrapper>();
+        private readonly SortedList<int, PoWMod_Wrapper> _Mods = new SortedList<int, PoWMod_Wrapper>();
         private int _ModsHighestLoadOrderIndex = -1;
-        private List<PoWMod_Wrapper> _NewMods = new List<PoWMod_Wrapper>();
+        private readonly List<PoWMod_Wrapper> _NewMods = new List<PoWMod_Wrapper>();
 
         public void AddMod(IPoWMod mod)
         {

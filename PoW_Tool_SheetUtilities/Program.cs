@@ -1,10 +1,9 @@
-﻿using PoW_Tool_SheetUtilities.Handler;
-using PoW_Tool_SheetUtilities.MachineTranslator;
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
+using PoW_Tool_SheetUtilities.Handler;
+using PoW_Tool_SheetUtilities.MachineTranslator;
 
 namespace PoW_Tool_SheetUtilities
 {
@@ -166,8 +165,10 @@ namespace PoW_Tool_SheetUtilities
             stats.Add(mtlStats);
 
             //Others (Unknown)
-            TranslationStatEntry unknownStats = new TranslationStatEntry("Marked in unknown cell color (Manually marked)");
-            unknownStats.MatchAll = true;
+            TranslationStatEntry unknownStats = new TranslationStatEntry("Marked in unknown cell color (Manually marked)")
+            {
+                MatchAll = true
+            };
             stats.Add(unknownStats);
 
             SpreadsheetUpdater.GetTranslationStats(ref stats);
@@ -218,7 +219,7 @@ namespace PoW_Tool_SheetUtilities
                     break;
 
                 case '2':
-                    Console.WriteLine("Nuilding English Mod data from spreadsheets...");
+                    Console.WriteLine("Building English Mod data from spreadsheets...");
                     Export();
                     break;
 

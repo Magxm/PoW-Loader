@@ -39,7 +39,7 @@ namespace PoW_ModAPI.ResourceRedirection
         {
             path = __instance.CheckPath(path);
 
-            bool forceSimplified = ModAPI.ModAPI.GetInstance().Config_ForceSimplifiedChinese.Value;
+            bool forceSimplified = ModAPI.ModAPI.GetInstance().GetIsForcedSimplifiedChinese();
             if (forceSimplified)
             {
                 path = path.Replace("/cht/", "/chs/");

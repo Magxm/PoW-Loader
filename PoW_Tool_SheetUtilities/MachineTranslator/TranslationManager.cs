@@ -6,7 +6,7 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
 {
     internal class TranslationManager
     {
-        private List<ITranslator> Translators;
+        private readonly List<ITranslator> Translators;
 
         private static TranslationManager __Instance;
 
@@ -22,10 +22,12 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
 
         private TranslationManager()
         {
-            Translators = new List<ITranslator>();
-            Translators.Add(new YandexTranslator());
-            //Translators.Add(new GoogleTranslator());
-            //Translators.Add(new BingTranslator());
+            Translators = new List<ITranslator>
+            {
+                new YandexTranslator()
+                //new GoogleTranslator()
+                //new BingTranslator()
+            };
         }
 
         public string Translate(string original, string[] beforeContext, string[] afterContext, string standardizedTerm)

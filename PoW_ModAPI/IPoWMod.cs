@@ -2,12 +2,12 @@
 {
     public interface IPoWMod
     {
-        public string GetVersion();
+        string GetVersion();
 
-        public string GetName();
+        string GetName();
 
-        public void Load();
+        void Load();
 
-        public void Unload();
+        void Unload();
     }
 }

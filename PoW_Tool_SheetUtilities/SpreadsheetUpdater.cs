@@ -1,20 +1,18 @@
-﻿using PoW_Tool_SheetUtilities.Handler;
-using PoW_Tool_SheetUtilities.Handler.BattleAssets;
-using PoW_Tool_SheetUtilities.Handler.BufferAssets;
-using PoW_Tool_SheetUtilities.Handler.TextAssets;
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Threading;
+using PoW_Tool_SheetUtilities.Handler;
+using PoW_Tool_SheetUtilities.Handler.BattleAssets;
+using PoW_Tool_SheetUtilities.Handler.BufferAssets;
+using PoW_Tool_SheetUtilities.Handler.TextAssets;
 
 namespace PoW_Tool_SheetUtilities
 {
     internal class SpreadsheetUpdater
     {
-        private static List<IFileHandler> _Handlers = new List<IFileHandler>()
+        private static readonly List<IFileHandler> _Handlers = new List<IFileHandler>()
         {
-
         new CinameticAssetHandler(),
         new NoteDescriptionAssetHandler(),
         new GameFormulaAssetHandler(),

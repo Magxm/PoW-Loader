@@ -1,9 +1,9 @@
-﻿using HarmonyLib;
+﻿using System.Reflection;
+
+using HarmonyLib;
 
 using Heluo.Platform;
 using Heluo.UI;
-
-using System.Reflection;
 
 using UnityEngine;
 using UnityEngine.UI;
@@ -191,7 +191,7 @@ namespace EnglishPatch.Hooks
     {
         public static void Prefix(ref string yearStr)
         {
-            yearStr = yearStr + ".";
+            yearStr += ".";
         }
     }
 
@@ -200,7 +200,7 @@ namespace EnglishPatch.Hooks
     {
         public static void Prefix(ref UIDate __instance, ref string monthStr)
         {
-            monthStr = monthStr + ".";
+            monthStr += ".";
 
             //Getting child 0, which is the RectTransform
             RectTransform UI_Date_rectTransform = __instance.gameObject.transform.GetChild(0) as RectTransform;
@@ -264,7 +264,7 @@ namespace EnglishPatch.Hooks
             menu.Find("BtnQuitGame").Find("Btn").Find("Text").GetComponent<Text>().fontSize = 23;
             */
 
-            //Focing the UI to update itself after all the changes we made. We just force every RectTransform to update itself
+            //Forcing the UI to update itself after all the changes we made. We just force every RectTransform to update itself
             for (int i = 0; i < __instance.transform.childCount; ++i)
             {
                 Transform t = __instance.transform.GetChild(i);

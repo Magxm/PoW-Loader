@@ -13,7 +13,7 @@ namespace EnglishPatch
     [BepInProcess("PathOfWuxia.exe")]
     public class EnglishPatch : BaseUnityPlugin, IPoWMod
     {
-        private static string _VERSION = "0.9.0";
+        private static readonly string _VERSION = "0.9.0";
 
         public string GetVersion()
         {
