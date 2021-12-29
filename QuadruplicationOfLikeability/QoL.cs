@@ -18,12 +18,14 @@ namespace QoL
         private readonly ConfigEntry<float> Config_BattleAnimationSpeed;
         private readonly ConfigEntry<float> Config_BattleMovementSpeed;
         private readonly ConfigEntry<bool> Config_SmoothBattles;
+        private readonly ConfigEntry<bool> Config_ShowExactRelationshipChange;
 
         public QoLMod()
         {
             Config_BattleAnimationSpeed = Config.Bind<float>("QoL", "Battle Animation Speed", 1.5f, "The speed at which game animations are played in battle. (Game Default is 1.0, Mod Default is 1.5)");
             Config_BattleMovementSpeed = Config.Bind<float>("QoL", "Battle Movement Speed", 1.5f, "The speed at which characters move in battle. (Game Default is 1.0, Mod Default is 1.5)");
             Config_SmoothBattles = Config.Bind<bool>("QoL", "Smooth Battles", false, "If enabled, Game animations, Transitions and movement is aggressively smoothed out. (Default is false)");
+            Config_ShowExactRelationshipChange = Config.Bind<bool>("Cheaty", "Show Exact Relationship Change", false, "If enabled, Relationship changes will be shown as exact values on the slider. (Default is false)");
         }
 
         public static QoLMod GetInstance()
@@ -50,6 +52,11 @@ namespace QoL
         public bool GetSmoothBattlesEnabled()
         {
             return Config_SmoothBattles.Value;
+        }
+
+        public bool GetShowExactRelationshipChangeEnabled()
+        {
+            return Config_ShowExactRelationshipChange.Value;
         }
 
         public string GetVersion()
