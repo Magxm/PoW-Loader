@@ -175,7 +175,7 @@ namespace PoW_Tool_SheetUtilities
 
             foreach (TranslationStatEntry statEntry in stats)
             {
-                Console.WriteLine(statEntry.Name + " => Lines: " + statEntry.LineCount.ToString() + " (Words: " + statEntry.WordCount.ToString() + " )");
+                Console.WriteLine(statEntry.Name + " Lines:                                                        " + statEntry.LineCount.ToString() + " (Words: " + statEntry.WordCount.ToString() + " )");
             }
         }
 
