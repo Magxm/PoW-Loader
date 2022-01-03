@@ -1,5 +1,5 @@
 ![](Resources/Mods/EnglishTranslate/Image/ui/uimain/Main_title.png?raw=true)
-# Path Of Wuxia ModLoader + English Patch
+# Path Of Wuxia ModLoader + English Patch + Mods
 
 Join our discord!  
 https://discord.com/invite/PH4Z4Dn  
@@ -7,7 +7,8 @@ https://discord.com/invite/PH4Z4Dn
 Update notifications, direct contact to report issues and a great community to chat about the game with.  
 
 # How to Install
-Grab the latest release and just extract the content of the PoW_English.zip file into the games folder.  
+Grab the latest release and just extract the content of the PoW_English.zip file into the games folder.
+Same installation method for mods.  
 If you installed steam and the game in their default locations the path should be:  
 ```C:\Program Files (x86)\Steam\steamapps\common\PathOfWuxia```.
 
