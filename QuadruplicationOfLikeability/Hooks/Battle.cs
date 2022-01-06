@@ -92,71 +92,71 @@ namespace QoL.Hooks
         }
     }
 
-    //We hook ActorController's "PlayCustom" to make sure the callback
-    //is called at the right time rather than the original one if Smooth battle and/or animation speed is enabled
-    [HarmonyPatch(typeof(ActorController), "PlayCustom", new Type[] { typeof(AnimationClip), typeof(float), typeof(Action) })]
-    public class ActorController_PlayCustom_Hook
-    {
-        public static void Prefix(ref ActorController __instance, ref AnimationClip clip, ref float time, ref Action callback)
-        {
-            if (QoLMod.GetInstance().GetSmoothBattlesEnabled())
-            {
-                time /= 1.5f;
-            }
+    // //We hook ActorController's "PlayCustom" to make sure the callback
+    // //is called at the right time rather than the original one if Smooth battle and/or animation speed is enabled
+    // [HarmonyPatch(typeof(ActorController), "PlayCustom", new Type[] { typeof(AnimationClip), typeof(float), typeof(Action) })]
+    // public class ActorController_PlayCustom_Hook
+    // {
+    //     public static void Prefix(ref ActorController __instance, ref AnimationClip clip, ref float time, ref Action callback)
+    //     {
+    //         if (QoLMod.GetInstance().GetSmoothBattlesEnabled())
+    //         {
+    //             time /= 1.5f;
+    //         }
 
-            if (QoLMod.GetInstance().GetBattleAnimationSpeed() != 1f)
-            {
-                time /= QoLMod.GetInstance().GetBattleAnimationSpeed();
-            }
-        }
-    }
+    //         if (QoLMod.GetInstance().GetBattleAnimationSpeed() != 1f)
+    //         {
+    //             length /= QoLMod.GetInstance().GetBattleAnimationSpeed();
+    //         }
+    //     }
+    // }
 
-    [HarmonyPatch(typeof(ActorController), "PlayCustom", new Type[] { typeof(AnimationClip), typeof(bool), typeof(Action) })]
-    public class ActorController_PlayCustom_Hook2
-    {
-        public static bool Prefix(ref ActorController __instance, ref AnimationClip clip, ref bool callStop, ref Action callback, ref AnimatorOverrideController ___controller, ref Action ___call_back, ref Timer ___timer, ref ActorLinkPoint ___actorlinkpoint)
-        {
-            //We override the whole function
-            ActorLinkPoint actorLinkPoint = ___actorlinkpoint;
-            if (actorLinkPoint != null)
-            {
-                actorLinkPoint.ResetPoint();
-            }
-            __instance.Animator.ResetTrigger(ActorController.Params.LeaveCustom);
-            __instance.Animator.ResetTrigger(ActorController.Params.Custom);
-            ___controller[ActorController.State.Custom.ToString().ToLower()] = clip;
-            __instance.Animator.SetTrigger(ActorController.Params.Custom);
-            ___call_back = callback;
-            if (callback != null)
-            {
-                if (___timer != null)
-                {
-                    ___timer.Stop();
-                }
-                var length = clip.length;
-                if (QoLMod.GetInstance().GetSmoothBattlesEnabled())
-                {
-                    length /= 1.5f;
-                }
+    // [HarmonyPatch(typeof(ActorController), "PlayCustom", new Type[] { typeof(AnimationClip), typeof(bool), typeof(Action) })]
+    // public class ActorController_PlayCustom_Hook2
+    // {
+    //     public static bool Prefix(ref ActorController __instance, ref AnimationClip clip, ref bool callStop, ref Action callback, ref AnimatorOverrideController ___controller, ref Action ___call_back, ref Timer ___timer, ref ActorLinkPoint ___actorlinkpoint)
+    //     {
+    //         //We override the whole function
+    //         ActorLinkPoint actorLinkPoint = ___actorlinkpoint;
+    //         if (actorLinkPoint != null)
+    //         {
+    //             actorLinkPoint.ResetPoint();
+    //         }
+    //         __instance.Animator.ResetTrigger(ActorController.Params.LeaveCustom);
+    //         __instance.Animator.ResetTrigger(ActorController.Params.Custom);
+    //         ___controller[ActorController.State.Custom.ToString().ToLower()] = clip;
+    //         __instance.Animator.SetTrigger(ActorController.Params.Custom);
+    //         ___call_back = callback;
+    //         if (callback != null)
+    //         {
+    //             if (___timer != null)
+    //             {
+    //                 ___timer.Stop();
+    //             }
+    //             var length = clip.length;
+    //             if (QoLMod.GetInstance().GetSmoothBattlesEnabled())
+    //             {
+    //                 length /= 1.5f;
+    //             }
 
-                if (QoLMod.GetInstance().GetBattleAnimationSpeed() != 1f)
-                {
-                    length /= QoLMod.GetInstance().GetBattleAnimationSpeed();
-                }
+    //             if (QoLMod.GetInstance().GetBattleAnimationSpeed() != 1f)
+    //             {
+    //                 length /= QoLMod.GetInstance().GetBattleAnimationSpeed();
+    //             }
 
-                if (callStop)
-                {
-                    ___timer = new Timer(length, new Action(__instance.StopCustomCallBack));
-                }
-                else
-                {
-                    ___timer = new Timer(length, callback);
-                }
-                ___timer.Start();
-            }
+    //             if (callStop)
+    //             {
+    //                 ___timer = new Timer(length, new Action(__instance.StopCustomCallBack));
+    //             }
+    //             else
+    //             {
+    //                 ___timer = new Timer(length, callback);
+    //             }
+    //             ___timer.Start();
+    //         }
 
-            //Do not call original
-            return false;
-        }
-    }
+    //         //Do not call original
+    //         return false;
+    //     }
+    // }
 }
