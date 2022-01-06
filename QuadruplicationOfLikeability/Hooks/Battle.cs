@@ -103,6 +103,11 @@ namespace QoL.Hooks
             {
                 time /= 1.5f;
             }
+
+            if (QoLMod.GetInstance().GetBattleAnimationSpeed() != 1f)
+            {
+                time /= QoLMod.GetInstance().GetBattleAnimationSpeed();
+            }
         }
     }
 
@@ -132,6 +137,11 @@ namespace QoL.Hooks
                 if (QoLMod.GetInstance().GetSmoothBattlesEnabled())
                 {
                     length /= 1.5f;
+                }
+
+                if (QoLMod.GetInstance().GetBattleAnimationSpeed() != 1f)
+                {
+                    length /= QoLMod.GetInstance().GetBattleAnimationSpeed();
                 }
 
                 if (callStop)
