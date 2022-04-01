@@ -233,7 +233,7 @@ namespace PoW_Tool_SheetUtilities.Handler.BufferAssets
                     updateRequests.Add(req);
                 }
 
-                if (updateRequests.Count >= 2500)
+                if (updateRequests.Count >= 250)
                 {
                     HandleUpdateRequests(ref updateRequests);
                 }

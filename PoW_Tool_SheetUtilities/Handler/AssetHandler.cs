@@ -809,7 +809,7 @@ namespace PoW_Tool_SheetUtilities.Handler
                     updateRequests.Add(req);
                 }
 
-                if (updateRequests.Count >= 2500)
+                if (updateRequests.Count >= 100)
                 {
                     HandleUpdateRequests(ref updateRequests);
                 }

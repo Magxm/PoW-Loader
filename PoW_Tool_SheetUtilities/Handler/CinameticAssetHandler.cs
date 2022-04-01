@@ -56,8 +56,8 @@ namespace PoW_Tool_SheetUtilities.Handler
             };
         }
 
-        static private string ChangeCharacterNameRegexPattern = @"(""{ \\""ChangCharactereName\\"" : \\"".*\\"", \\""(.*)\\"", \\""(.*)\\""})";
-        static private Regex r = new Regex(ChangeCharacterNameRegexPattern);
+        private static string ChangeCharacterNameRegexPattern = @"(""{ \\""ChangCharactereName\\"" : \\"".*\\"", \\""(.*)\\"", \\""(.*)\\""})";
+        private static Regex r = new Regex(ChangeCharacterNameRegexPattern);
 
         public List<IPatchableNode> GetPatchableNodes(string data)
         {
@@ -154,7 +154,7 @@ namespace PoW_Tool_SheetUtilities.Handler
                     updateRequests.Add(req);
                 }
 
-                if (updateRequests.Count >= 2500)
+                if (updateRequests.Count >= 250)
                 {
                     HandleUpdateRequests(ref updateRequests);
                 }

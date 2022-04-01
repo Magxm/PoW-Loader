@@ -57,17 +57,24 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
     [Serializable]
     public class BlockedException : Exception
     {
-        public BlockedException() { }
-        public BlockedException(string message) : base(message) { }
-        public BlockedException(string message, Exception inner) : base(message, inner) { }
+        public BlockedException()
+        { }
+
+        public BlockedException(string message) : base(message)
+        {
+        }
+
+        public BlockedException(string message, Exception inner) : base(message, inner)
+        {
+        }
+
         protected BlockedException(
           System.Runtime.Serialization.SerializationInfo info,
           System.Runtime.Serialization.StreamingContext context) : base(info, context) { }
     }
 
-    class DeepL_Website : ITranslator
+    internal class DeepL_Website : ITranslator
     {
-
         private class UntranslatedTextInfo
         {
             public string UntranslatedText { get; set; }
@@ -156,7 +163,7 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
             await GetClientState();
         }
 
-        enum RequestType
+        private enum RequestType
         {
             Website,
             ClientState,
@@ -247,7 +254,6 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
             response.EnsureSuccessStatusCode();
 
             await response.Content.ReadAsStringAsync();
-
         }
 
         public bool IsUseable()
@@ -255,9 +261,10 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
             return true;
         }
 
-        Mutex RequestListManipMutex = new Mutex();
-        List<TranslationRequest> _Requests = new List<TranslationRequest>();
+        private Mutex RequestListManipMutex = new Mutex();
+        private List<TranslationRequest> _Requests = new List<TranslationRequest>();
         public const int _MaxTranslationsPerPacket = 10;
+
         public void AddTranslationRequest(TranslationRequest request)
         {
             RequestListManipMutex.WaitOne();
@@ -270,7 +277,8 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
         }
 
         private DateTime _LastTimeTranslated = DateTime.FromFileTimeUtc(0);
-        List<TranslationRequest> _CurrentlyTranslating;
+        private List<TranslationRequest> _CurrentlyTranslating;
+
         public async Task ForceTranslate()
         {
             double spanDiff = MaxDelaySeconds - MinDelaySeconds;
@@ -297,7 +305,6 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
                 // construct json content
                 long r = (long)(DateTime.UtcNow - Epoch).TotalMilliseconds;
                 long n = 1;
-
 
                 var builder = new StringBuilder();
                 builder.Append("{\"jsonrpc\":\"2.0\",\"method\": \"LMT_handle_jobs\",\"params\":{\"jobs\":[");

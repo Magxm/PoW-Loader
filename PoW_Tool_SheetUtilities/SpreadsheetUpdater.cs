@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Threading;
+
 using PoW_Tool_SheetUtilities.Handler;
 using PoW_Tool_SheetUtilities.Handler.BattleAssets;
 using PoW_Tool_SheetUtilities.Handler.BufferAssets;
@@ -13,13 +14,12 @@ namespace PoW_Tool_SheetUtilities
     {
         private static readonly List<IFileHandler> _Handlers = new List<IFileHandler>()
         {
+        new BattleAssetHandler(),
         new CinameticAssetHandler(),
         new NoteDescriptionAssetHandler(),
         new GameFormulaAssetHandler(),
         new HelpAssetHandler(),
         new HelpDescriptionAssetHandler(),
-        new BattleAssetHandler(),
-        new TalkAssetHandler(),
         new TalentAssetHandler(),
         new ShopAssetHandler(),
         new RewardAssetHandler(),
@@ -50,6 +50,7 @@ namespace PoW_Tool_SheetUtilities
         new RoundAssetHandler(),
         new RegistrationBonusAssetHandler(),
         new NurturanceIdleAssetHandler(),
+        new TalkAssetHandler(),
         };
 
         public static void UpdateSpreadsheetsFromGameFiles()
@@ -62,7 +63,6 @@ namespace PoW_Tool_SheetUtilities
                 handler.UpdateSheetFromGameFile(inputFolder);
                 Thread.Sleep(5000);
             }
-
         }
 
         public static void ExportToMod(string BuildGameDataFromSheet)
