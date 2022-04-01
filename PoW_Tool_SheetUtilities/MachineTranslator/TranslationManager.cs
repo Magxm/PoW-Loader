@@ -24,7 +24,8 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
         {
             Translators = new List<ITranslator>
             {
-                new YandexTranslator()
+                new DeepL()
+               // new YandexTranslator()
                 //new GoogleTranslator()
                 //new BingTranslator()
             };
