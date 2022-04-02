@@ -6,11 +6,12 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
     using System.Threading.Tasks;
 
     using Yandex.Translator;
-    class YandexTranslator : ITranslator
+
+    internal class YandexTranslator : ITranslator
     {
-        string _APIKey;
-        bool _Useable = false;
-        IYandexTranslator _Translator;
+        private string _APIKey;
+        private bool _Useable = false;
+        private IYandexTranslator _Translator;
 
         public YandexTranslator()
         {
@@ -24,8 +25,9 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
             _Translator = Yandex.Translator(api => api.ApiKey(_APIKey).Format(ApiDataFormat.Json));
         }
 
-        List<TranslationRequest> _Requests = new List<TranslationRequest>();
-        public void AddTranslationRequest(TranslationRequest request)
+        private List<TranslationRequest> _Requests = new List<TranslationRequest>();
+
+        public void AddTranslationRequest(ref TranslationRequest request)
         {
             _Requests.Add(request);
             Task t = ForceTranslate();

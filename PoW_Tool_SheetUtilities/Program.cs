@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Threading.Tasks;
+
 using PoW_Tool_SheetUtilities.Handler;
 using PoW_Tool_SheetUtilities.MachineTranslator;
 
@@ -192,7 +193,7 @@ namespace PoW_Tool_SheetUtilities
                 for (int i = 0; i < 150; ++i)
                 {
                     var req = new TranslationRequest(Text, new string[] { PreContext }, new string[] { PostContext }, Text);
-                    translator.AddTranslationRequest(req);
+                    translator.AddTranslationRequest(ref req);
                 }
                 Task t = translator.ForceTranslate();
                 t.Wait();

@@ -2,7 +2,7 @@
 
 namespace PoW_Tool_SheetUtilities.MachineTranslator
 {
-    class TranslationRequest
+    internal class TranslationRequest
     {
         public string[] PreContext;
         public string[] PostContext;
@@ -19,10 +19,13 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
             Standardized = standardized;
         }
     }
-    interface ITranslator
+
+    internal interface ITranslator
     {
         bool IsUseable();
-        void AddTranslationRequest(TranslationRequest request);
+
+        void AddTranslationRequest(ref TranslationRequest request);
+
         Task ForceTranslate();
     }
 }

@@ -43,7 +43,7 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
                 if (translator.IsUseable())
                 {
                     TranslationRequest req = new TranslationRequest(original, beforeContext, afterContext, standardizedTerm);
-                    translator.AddTranslationRequest(req);
+                    translator.AddTranslationRequest(ref req);
                     Task t = translator.ForceTranslate();
                     t.Wait();
 

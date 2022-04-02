@@ -265,7 +265,7 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
         private List<TranslationRequest> _Requests = new List<TranslationRequest>();
         public const int _MaxTranslationsPerPacket = 10;
 
-        public void AddTranslationRequest(TranslationRequest request)
+        public void AddTranslationRequest(ref TranslationRequest request)
         {
             RequestListManipMutex.WaitOne();
             _Requests.Add(request);
