@@ -2,12 +2,12 @@
   "EntryIndex": 0,
   "Nodes": [
     {
-      "Node": "{ \"TimerAction\" : 0.20000} ",
-      "Next": 12,
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 23,
       "Prallel": -1
     },
     {
-      "Node": "{ \"LoadScenesAction\" : \"S0302\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0} ",
+      "Node": "{ \"LoadScenesAction\" : \"S0302\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0, \"\"} ",
       "Next": 2,
       "Prallel": -1
     },
@@ -47,7 +47,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0} ",
+      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0, \"\"} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -113,6 +113,31 @@
     },
     {
       "Node": "{ \"SetFlagAction\" : 0, 2, \"fe1010405_2_03\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckCurrentRound\" : 125, 1, 2147483647, \"\"}  ], 0} , 24, 12} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckCurrentTime\" : 2}  ], 0} , 25, 26} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"RunCinematicAction\" : \"m605in010440_01\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckCurrentTime\" : 1}  ], 0} , 27, -1} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010405_501\"} ",
       "Next": -1,
       "Prallel": -1
     }

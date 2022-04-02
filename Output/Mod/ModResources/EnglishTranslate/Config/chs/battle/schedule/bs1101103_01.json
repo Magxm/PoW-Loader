@@ -1,1 +1,1042 @@
-bs1101103_01	bt1101103_01	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "party00", 0, 103200203} , { "BattleResultAddUnit" : "in15005", 0, 104202202} , { "BattleResultAddUnit" : "in15006", 0, 102201201} , { "BattleResultAddBuff" : True, "in15005", "in15005_buff_RunningFasterKid", True} , { "BattleResultAddBuff" : True, "in15006", "in15006_debuff_RunningSlowerKid", False} , { "BattleResultAddUnit" : "in0102", 2, 103105208} , { "SetIsShowSpecial" : False} , { "SetIsShowItem" : False}  ]} , { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "io271414", 1, 101106207} , { "BattleResultAddUnit" : "io271315", 1, 102103205} , { "BattleResultAddUnit" : "io271314", 1, 104102206}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "BattleFactorLocalFlag" : 1, 0, "bt1101103_01_01", ""} , { "BattleResultTalk" : "t1101103_312"} , { "BattleResultExitPoint" : "200204104,201203104"} , { "BattleResultCameraMoveCell" : "201203104", -25.00000, 10.00000} , { "BattleResultTalk" : "t1101103_326"} , { "SetLocalFlagBattleAction" : "bt1101103_01_01", 0, 1, ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 2, 100, "in15005"} , { "BattleFactorLocalFlag" : 1, 0, "bt1101103_01_04", ""} , { "BattleFactorLocalFlag" : 1, 0, "bt1101103_01_02", ""} , { "SetLocalFlagBattleAction" : "bt1101103_01_02", 0, 1, ""} , { "BattleResultTalk" : "t1101103_328"} , { "BattleResultMoveUnit" : "in15005", "200204104"} , { "BattleResultTalk" : "t1101103_331"} , { "BattleResultMoveUnit" : "in15006", "201203104"} , { "BattleResultRemoveUnit" : "in15005", False} , { "BattleResultRemoveUnit" : "in15006", False} , { "BattleResultTalk" : "t1101103_314"} , { "BattleResultTalk" : "t1101103_302"} , { "BattleResultChangeWinTip" : "Convert own element to Fire，or defeat all enemies。"} , { "BattleResultChangeLoseTip" : "{name_1}{name_2} is defeated。"} , { "SetIsShowSpecial" : True}  ]}  ]} , { "BattleEventNode" : 500, 0, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 1, "bt1101103_01_02", ""} , { "BattleFactorPlayerElement" : 5, True} , { "BattleFactorLocalFlag" : 1, 0, "bt1101103_01_03", ""} , { "BattleResultAddUnit" : "in0209", 2, 106102208} , { "BattleResultTalk" : "t1101103_316"} , { "BattleResultTalk" : "t1101103_323"} , { "BattleResultChangeWinTip" : "All enemies are defeated"} , { "SetLocalFlagBattleAction" : "bt1101103_01_03", 0, 1, ""} , { "SetIsShowItem" : True} , { "SetGlobalFlagBattleAction" : "fe1101103_2_06", 0, 1, ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 1} , { "BattleResultUnitHP" : 1, 100, "Player"} , { "BattleResultUnitMP" : 1, 100, "Player"} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 2, 100, "in15006"} , { "BattleFactorLocalFlag" : 1, 0, "bt1101103_01_04", ""} , { "BattleFactorLocalFlag" : 1, 0, "bt1101103_01_02", ""} , { "SetLocalFlagBattleAction" : "bt1101103_01_02", 0, 1, ""} , { "BattleResultTalk" : "t1101103_332"} , { "BattleResultMoveUnit" : "in15005", "200204104"} , { "BattleResultTalk" : "t1101103_331"} , { "BattleResultMoveUnit" : "in15006", "201203104"} , { "BattleResultRemoveUnit" : "in15005", False} , { "BattleResultRemoveUnit" : "in15006", False} , { "BattleResultTalk" : "t1101103_314"} , { "BattleResultTalk" : "t1101103_302"} , { "BattleResultChangeWinTip" : "Convert own element to Fire，or defeat all enemies。"} , { "BattleResultChangeLoseTip" : "{name_1}{name_2}阵亡。"} , { "SetIsShowSpecial" : True}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "Player"} , { "BattleFactorLocalFlag" : 1, 0, "bt1101103_01_03", ""} , { "BattleResultTalk" : "t1101103_333"} , { "EndBattleAction" : "m1101103_02"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "Player"} , { "BattleFactorLocalFlag" : 1, 1, "bt1101103_01_03", ""} , { "BattleResultTalk" : "t1101103_335"} , { "EndBattleAction" : "m1101103_02"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorCharacterTile" : "200204104", "in15005"} , { "BattleFactorLocalFlag" : 1, 0, "bt1101103_01_04", ""} , { "SetLocalFlagBattleAction" : "bt1101103_01_04", 0, 1, ""} , { "BattleResultTalk" : "t1101103_334"} , { "BattleResultMoveUnit" : "in15006", "201203104"} , { "BattleResultRemoveUnit" : "in15005", False} , { "BattleResultRemoveUnit" : "in15006", False} , { "BattleResultTalk" : "t1101103_314"} , { "BattleResultTalk" : "t1101103_302"} , { "BattleResultChangeWinTip" : "Convert own element to Fire，or defeat all enemies。。"} , { "BattleResultChangeLoseTip" : "{name_1}{name_2} is defeated。"} , { "SetIsShowSpecial" : True} , { "SetLocalFlagBattleAction" : "bt1101103_01_02", 0, 1, ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorCharacterTile" : "201203104", "in15005"} , { "BattleFactorLocalFlag" : 1, 0, "bt1101103_01_04", ""} , { "SetLocalFlagBattleAction" : "bt1101103_01_04", 0, 1, ""} , { "BattleResultTalk" : "t1101103_334"} , { "BattleResultMoveUnit" : "in15006", "200204104"} , { "BattleResultRemoveUnit" : "in15005", False} , { "BattleResultRemoveUnit" : "in15006", False} , { "BattleResultTalk" : "t1101103_314"} , { "BattleResultTalk" : "t1101103_302"} , { "BattleResultChangeWinTip" : "Convert own element to Fire，or defeat all enemies。"} , { "BattleResultChangeLoseTip" : "{name_1}{name_2} is defeated。"} , { "SetIsShowSpecial" : True} , { "SetLocalFlagBattleAction" : "bt1101103_01_02", 0, 1, ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorCharacterTile" : "200204104", "in15006"} , { "BattleFactorLocalFlag" : 1, 0, "bt1101103_01_04", ""} , { "SetLocalFlagBattleAction" : "bt1101103_01_04", 0, 1, ""} , { "BattleResultTalk" : "t1101103_342"} , { "BattleResultMoveUnit" : "in15005", "201203104"} , { "BattleResultRemoveUnit" : "in15005", False} , { "BattleResultRemoveUnit" : "in15006", False} , { "BattleResultTalk" : "t1101103_314"} , { "BattleResultTalk" : "t1101103_302"} , { "BattleResultChangeWinTip" : "Convert own element to Fire，or defeat all enemies。"} , { "BattleResultChangeLoseTip" : "{name_1}{name_2} is defeated。"} , { "SetIsShowSpecial" : True} , { "SetLocalFlagBattleAction" : "bt1101103_01_02", 0, 1, ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorCharacterTile" : "201203104", "in15006"} , { "BattleFactorLocalFlag" : 1, 0, "bt1101103_01_04", ""} , { "SetLocalFlagBattleAction" : "bt1101103_01_04", 0, 1, ""} , { "BattleResultTalk" : "t1101103_342"} , { "BattleResultMoveUnit" : "in15005", "200204104"} , { "BattleResultRemoveUnit" : "in15005", False} , { "BattleResultRemoveUnit" : "in15006", False} , { "BattleResultTalk" : "t1101103_314"} , { "BattleResultTalk" : "t1101103_302"} , { "BattleResultChangeWinTip" : "Convert own element to Fire，or defeat all enemies。"} , { "BattleResultChangeLoseTip" : "{name_1}{name_2} is defeated。"} , { "SetIsShowSpecial" : True} , { "SetLocalFlagBattleAction" : "bt1101103_01_02", 0, 1, ""}  ]}  ]}  ]} 	机关厂房保护小弟	Wang Acai or Wang Abao enters escape zone, or defeat all enemies。	{name_1}{name_2}is defeated。
+{
+  "Id": "bs1101103_01",
+  "Name": "bt1101103_01",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"party00\", 0, 103200203, 1.00000, 0.00000} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"in15005\", 0, 104202202, 1.00000, 0.00000} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnit\" : \"in15006\", 0, 102201201, 1.00000, 0.00000} ",
+      "Next": 4,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in15005\", \"in15005_buff_RunningFasterKid\", True} ",
+      "Next": 5,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in15006\", \"in15006_debuff_RunningSlowerKid\", False} ",
+      "Next": 6,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0102\", 2, 103105208, 1.00000, 0.00000} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"SetIsShowSpecial\" : False} ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"SetIsShowItem\" : False} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 10,
+      "Child": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultAddUnit\" : \"io271414\", 1, 101106207, 1.00000, 0.00000} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultAddUnit\" : \"io271315\", 1, 102103205, 1.00000, 0.00000} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultAddUnit\" : \"io271314\", 1, 104102206, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 14,
+      "Child": [
+        14
+      ]
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 15,
+      "Child": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 16,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bt1101103_01_01\", \"\"} ",
+      "Next": 17,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleResultTalk\" : \"t1101103_312\"} ",
+      "Next": 18,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleResultExitPoint\" : \"200204104,201203104\"} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleResultCameraMoveCell\" : \"201203104\", -25.00000, 10.00000} ",
+      "Next": 20,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultTalk\" : \"t1101103_326\"} ",
+      "Next": 21,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bt1101103_01_01\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 23,
+      "Child": [
+        23
+      ]
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 24,
+      "Child": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38
+      ]
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 100, \"in15005\"} ",
+      "Next": 25,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bt1101103_01_04\", \"\"} ",
+      "Next": 26,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bt1101103_01_02\", \"\"} ",
+      "Next": 27,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bt1101103_01_02\", 0, 1, \"\"} ",
+      "Next": 28,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleResultTalk\" : \"t1101103_328\"} ",
+      "Next": 29,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in15005\", \"200204104\"} ",
+      "Next": 30,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleResultTalk\" : \"t1101103_331\"} ",
+      "Next": 31,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in15006\", \"201203104\"} ",
+      "Next": 32,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in15005\", False} ",
+      "Next": 33,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in15006\", False} ",
+      "Next": 34,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleResultTalk\" : \"t1101103_314\"} ",
+      "Next": 35,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleResultTalk\" : \"t1101103_302\"} ",
+      "Next": 36,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"转换自身功体为“火”，或All enemies are defeated\"} ",
+      "Next": 37,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1}{name_2} is defeated.。\"} ",
+      "Next": 38,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"SetIsShowSpecial\" : True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"BattleEventNode\" : 500, 0, [ ]} ",
+      "Next": 40,
+      "Child": [
+        40
+      ]
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 41,
+      "Child": [
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ]
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"bt1101103_01_02\", \"\"} ",
+      "Next": 42,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"BattleFactorPlayerElement\" : 5, True} ",
+      "Next": 43,
+      "Child": []
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bt1101103_01_03\", \"\"} ",
+      "Next": 44,
+      "Child": []
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0209\", 2, 106102208, 1.00000, 0.00000} ",
+      "Next": 45,
+      "Child": []
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"BattleResultTalk\" : \"t1101103_316\"} ",
+      "Next": 46,
+      "Child": []
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"BattleResultTalk\" : \"t1101103_323\"} ",
+      "Next": 47,
+      "Child": []
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"All enemies are defeated\"} ",
+      "Next": 48,
+      "Child": []
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bt1101103_01_03\", 0, 1, \"\"} ",
+      "Next": 49,
+      "Child": []
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"SetIsShowItem\" : True} ",
+      "Next": 50,
+      "Child": []
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1101103_2_06\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 51,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 52,
+      "Child": [
+        52
+      ]
+    },
+    {
+      "Index": 52,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 53,
+      "Child": [
+        53,
+        54,
+        55,
+        56
+      ]
+    },
+    {
+      "Index": 53,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 54,
+      "Child": []
+    },
+    {
+      "Index": 54,
+      "Node": "{ \"BattleResultUnitHP\" : 1, 100, \"Player\"} ",
+      "Next": 55,
+      "Child": []
+    },
+    {
+      "Index": 55,
+      "Node": "{ \"BattleResultUnitMP\" : 1, 100, \"Player\"} ",
+      "Next": 56,
+      "Child": []
+    },
+    {
+      "Index": 56,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 57,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 58,
+      "Child": [
+        58
+      ]
+    },
+    {
+      "Index": 58,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 59,
+      "Child": [
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73
+      ]
+    },
+    {
+      "Index": 59,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 100, \"in15006\"} ",
+      "Next": 60,
+      "Child": []
+    },
+    {
+      "Index": 60,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bt1101103_01_04\", \"\"} ",
+      "Next": 61,
+      "Child": []
+    },
+    {
+      "Index": 61,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bt1101103_01_02\", \"\"} ",
+      "Next": 62,
+      "Child": []
+    },
+    {
+      "Index": 62,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bt1101103_01_02\", 0, 1, \"\"} ",
+      "Next": 63,
+      "Child": []
+    },
+    {
+      "Index": 63,
+      "Node": "{ \"BattleResultTalk\" : \"t1101103_332\"} ",
+      "Next": 64,
+      "Child": []
+    },
+    {
+      "Index": 64,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in15005\", \"200204104\"} ",
+      "Next": 65,
+      "Child": []
+    },
+    {
+      "Index": 65,
+      "Node": "{ \"BattleResultTalk\" : \"t1101103_331\"} ",
+      "Next": 66,
+      "Child": []
+    },
+    {
+      "Index": 66,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in15006\", \"201203104\"} ",
+      "Next": 67,
+      "Child": []
+    },
+    {
+      "Index": 67,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in15005\", False} ",
+      "Next": 68,
+      "Child": []
+    },
+    {
+      "Index": 68,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in15006\", False} ",
+      "Next": 69,
+      "Child": []
+    },
+    {
+      "Index": 69,
+      "Node": "{ \"BattleResultTalk\" : \"t1101103_314\"} ",
+      "Next": 70,
+      "Child": []
+    },
+    {
+      "Index": 70,
+      "Node": "{ \"BattleResultTalk\" : \"t1101103_302\"} ",
+      "Next": 71,
+      "Child": []
+    },
+    {
+      "Index": 71,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"转换自身功体为“火”，或All enemies are defeated\"} ",
+      "Next": 72,
+      "Child": []
+    },
+    {
+      "Index": 72,
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1}{name_2} is defeated.。\"} ",
+      "Next": 73,
+      "Child": []
+    },
+    {
+      "Index": 73,
+      "Node": "{ \"SetIsShowSpecial\" : True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 74,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 75,
+      "Child": [
+        75
+      ]
+    },
+    {
+      "Index": 75,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 76,
+      "Child": [
+        76,
+        77,
+        78,
+        79
+      ]
+    },
+    {
+      "Index": 76,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player\"} ",
+      "Next": 77,
+      "Child": []
+    },
+    {
+      "Index": 77,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bt1101103_01_03\", \"\"} ",
+      "Next": 78,
+      "Child": []
+    },
+    {
+      "Index": 78,
+      "Node": "{ \"BattleResultTalk\" : \"t1101103_333\"} ",
+      "Next": 79,
+      "Child": []
+    },
+    {
+      "Index": 79,
+      "Node": "{ \"EndBattleAction\" : \"m1101103_02\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 80,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 81,
+      "Child": [
+        81
+      ]
+    },
+    {
+      "Index": 81,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 82,
+      "Child": [
+        82,
+        83,
+        84,
+        85
+      ]
+    },
+    {
+      "Index": 82,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player\"} ",
+      "Next": 83,
+      "Child": []
+    },
+    {
+      "Index": 83,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"bt1101103_01_03\", \"\"} ",
+      "Next": 84,
+      "Child": []
+    },
+    {
+      "Index": 84,
+      "Node": "{ \"BattleResultTalk\" : \"t1101103_335\"} ",
+      "Next": 85,
+      "Child": []
+    },
+    {
+      "Index": 85,
+      "Node": "{ \"EndBattleAction\" : \"m1101103_02\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 86,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 87,
+      "Child": [
+        87
+      ]
+    },
+    {
+      "Index": 87,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 88,
+      "Child": [
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100
+      ]
+    },
+    {
+      "Index": 88,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"200204104\", \"in15005\"} ",
+      "Next": 89,
+      "Child": []
+    },
+    {
+      "Index": 89,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bt1101103_01_04\", \"\"} ",
+      "Next": 90,
+      "Child": []
+    },
+    {
+      "Index": 90,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bt1101103_01_04\", 0, 1, \"\"} ",
+      "Next": 91,
+      "Child": []
+    },
+    {
+      "Index": 91,
+      "Node": "{ \"BattleResultTalk\" : \"t1101103_334\"} ",
+      "Next": 92,
+      "Child": []
+    },
+    {
+      "Index": 92,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in15006\", \"201203104\"} ",
+      "Next": 93,
+      "Child": []
+    },
+    {
+      "Index": 93,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in15005\", False} ",
+      "Next": 94,
+      "Child": []
+    },
+    {
+      "Index": 94,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in15006\", False} ",
+      "Next": 95,
+      "Child": []
+    },
+    {
+      "Index": 95,
+      "Node": "{ \"BattleResultTalk\" : \"t1101103_314\"} ",
+      "Next": 96,
+      "Child": []
+    },
+    {
+      "Index": 96,
+      "Node": "{ \"BattleResultTalk\" : \"t1101103_302\"} ",
+      "Next": 97,
+      "Child": []
+    },
+    {
+      "Index": 97,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"转换自身功体为“火”，或All enemies are defeated\"} ",
+      "Next": 98,
+      "Child": []
+    },
+    {
+      "Index": 98,
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1}{name_2} is defeated.。\"} ",
+      "Next": 99,
+      "Child": []
+    },
+    {
+      "Index": 99,
+      "Node": "{ \"SetIsShowSpecial\" : True} ",
+      "Next": 100,
+      "Child": []
+    },
+    {
+      "Index": 100,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bt1101103_01_02\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 101,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 102,
+      "Child": [
+        102
+      ]
+    },
+    {
+      "Index": 102,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 103,
+      "Child": [
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115
+      ]
+    },
+    {
+      "Index": 103,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"201203104\", \"in15005\"} ",
+      "Next": 104,
+      "Child": []
+    },
+    {
+      "Index": 104,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bt1101103_01_04\", \"\"} ",
+      "Next": 105,
+      "Child": []
+    },
+    {
+      "Index": 105,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bt1101103_01_04\", 0, 1, \"\"} ",
+      "Next": 106,
+      "Child": []
+    },
+    {
+      "Index": 106,
+      "Node": "{ \"BattleResultTalk\" : \"t1101103_334\"} ",
+      "Next": 107,
+      "Child": []
+    },
+    {
+      "Index": 107,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in15006\", \"200204104\"} ",
+      "Next": 108,
+      "Child": []
+    },
+    {
+      "Index": 108,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in15005\", False} ",
+      "Next": 109,
+      "Child": []
+    },
+    {
+      "Index": 109,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in15006\", False} ",
+      "Next": 110,
+      "Child": []
+    },
+    {
+      "Index": 110,
+      "Node": "{ \"BattleResultTalk\" : \"t1101103_314\"} ",
+      "Next": 111,
+      "Child": []
+    },
+    {
+      "Index": 111,
+      "Node": "{ \"BattleResultTalk\" : \"t1101103_302\"} ",
+      "Next": 112,
+      "Child": []
+    },
+    {
+      "Index": 112,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"转换自身功体为“火”，或All enemies are defeated\"} ",
+      "Next": 113,
+      "Child": []
+    },
+    {
+      "Index": 113,
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1}{name_2} is defeated.。\"} ",
+      "Next": 114,
+      "Child": []
+    },
+    {
+      "Index": 114,
+      "Node": "{ \"SetIsShowSpecial\" : True} ",
+      "Next": 115,
+      "Child": []
+    },
+    {
+      "Index": 115,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bt1101103_01_02\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 116,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 117,
+      "Child": [
+        117
+      ]
+    },
+    {
+      "Index": 117,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 118,
+      "Child": [
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130
+      ]
+    },
+    {
+      "Index": 118,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"200204104\", \"in15006\"} ",
+      "Next": 119,
+      "Child": []
+    },
+    {
+      "Index": 119,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bt1101103_01_04\", \"\"} ",
+      "Next": 120,
+      "Child": []
+    },
+    {
+      "Index": 120,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bt1101103_01_04\", 0, 1, \"\"} ",
+      "Next": 121,
+      "Child": []
+    },
+    {
+      "Index": 121,
+      "Node": "{ \"BattleResultTalk\" : \"t1101103_342\"} ",
+      "Next": 122,
+      "Child": []
+    },
+    {
+      "Index": 122,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in15005\", \"201203104\"} ",
+      "Next": 123,
+      "Child": []
+    },
+    {
+      "Index": 123,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in15005\", False} ",
+      "Next": 124,
+      "Child": []
+    },
+    {
+      "Index": 124,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in15006\", False} ",
+      "Next": 125,
+      "Child": []
+    },
+    {
+      "Index": 125,
+      "Node": "{ \"BattleResultTalk\" : \"t1101103_314\"} ",
+      "Next": 126,
+      "Child": []
+    },
+    {
+      "Index": 126,
+      "Node": "{ \"BattleResultTalk\" : \"t1101103_302\"} ",
+      "Next": 127,
+      "Child": []
+    },
+    {
+      "Index": 127,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"转换自身功体为“火”，或All enemies are defeated\"} ",
+      "Next": 128,
+      "Child": []
+    },
+    {
+      "Index": 128,
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1}{name_2} is defeated.。\"} ",
+      "Next": 129,
+      "Child": []
+    },
+    {
+      "Index": 129,
+      "Node": "{ \"SetIsShowSpecial\" : True} ",
+      "Next": 130,
+      "Child": []
+    },
+    {
+      "Index": 130,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bt1101103_01_02\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 131,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 132,
+      "Child": [
+        132
+      ]
+    },
+    {
+      "Index": 132,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 133,
+      "Child": [
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145
+      ]
+    },
+    {
+      "Index": 133,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"201203104\", \"in15006\"} ",
+      "Next": 134,
+      "Child": []
+    },
+    {
+      "Index": 134,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bt1101103_01_04\", \"\"} ",
+      "Next": 135,
+      "Child": []
+    },
+    {
+      "Index": 135,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bt1101103_01_04\", 0, 1, \"\"} ",
+      "Next": 136,
+      "Child": []
+    },
+    {
+      "Index": 136,
+      "Node": "{ \"BattleResultTalk\" : \"t1101103_342\"} ",
+      "Next": 137,
+      "Child": []
+    },
+    {
+      "Index": 137,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in15005\", \"200204104\"} ",
+      "Next": 138,
+      "Child": []
+    },
+    {
+      "Index": 138,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in15005\", False} ",
+      "Next": 139,
+      "Child": []
+    },
+    {
+      "Index": 139,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in15006\", False} ",
+      "Next": 140,
+      "Child": []
+    },
+    {
+      "Index": 140,
+      "Node": "{ \"BattleResultTalk\" : \"t1101103_314\"} ",
+      "Next": 141,
+      "Child": []
+    },
+    {
+      "Index": 141,
+      "Node": "{ \"BattleResultTalk\" : \"t1101103_302\"} ",
+      "Next": 142,
+      "Child": []
+    },
+    {
+      "Index": 142,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"转换自身功体为“火”，或All enemies are defeated\"} ",
+      "Next": 143,
+      "Child": []
+    },
+    {
+      "Index": 143,
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1}{name_2} is defeated.。\"} ",
+      "Next": 144,
+      "Child": []
+    },
+    {
+      "Index": 144,
+      "Node": "{ \"SetIsShowSpecial\" : True} ",
+      "Next": 145,
+      "Child": []
+    },
+    {
+      "Index": 145,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bt1101103_01_02\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "机关厂房保护小弟",
+  "WinTip": "让王阿财或王阿宝前往逃脱点，或All enemies are defeated",
+  "LoseTip": "{name_1}{name_2} is defeated.。"
+}

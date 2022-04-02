@@ -1,1 +1,1105 @@
-bs5201111_00		{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "ExecuteOnceNode" } , { "BattleResultAddUnits" : "in0111,Player", 0, "104103207,103104207"} , { "BattleResultMoveUnit" : "in0111,Player", "104102206,102104206"} , { "BattleResultAddUnits" : "in05362,in05363", 1, "200203103,203200103"} , { "BattleResultMoveUnit" : "in05362,in05363", "200202102,202200102"}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "ExecuteOnceNode" } , { "SetGlobalFlagBattleAction" : "fe5201111_2_04", 0, 1, "2回合内战胜师弟"} , { "BattleResultTalk" : "t5201111_009"} , { "BattleResultUnitToUnit" : "in05363", "in05362"} , { "BattleResultTalk" : "t5201111_010"} , { "BattleResultMoveUnit" : "in0111", "104104208"} , { "BattleResultRemoveUnit" : "in0111", False} , { "BattleResultChangeWinTip" : "Reduce either Juniors HP to <color=##FF0000>30%</color>。"} , { "BattleResultChangeLoseTip" : "{name_1}{name_2} is defeated。"} , { "BattleResultAddBuff" : False, "in05362", "bt5201111_buff_UndeadStudents", True} , { "BattleResultAddBuff" : False, "in05363", "bt5201111_buff_UndeadStudents", True}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 0, "btf5201111_99", "是否完成第一场战斗：否"} , { "BattleFactorTargetHp" : 0, 30, "in05362"} , { "BattleFactorTargetHp" : 0, 30, "in05363"} , { "BattleFactorTargetDestroy" : "Player"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5201111_024"} , { "EndBattleAction" : "m5201111_03"} , { "SetGlobalFlagBattleAction" : "fe5201111_2_00", 0, 1, "已完成第一场战斗"} , { "SetLocalFlagBattleAction" : "btf5201111_99", 0, 1, "已完成第一场战斗"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 0, "btf5201111_99", "是否完成第一场战斗：否"} , { "BattleFactorTargetHp" : 1, 30, "in05362"} , { "BattleFactorTargetHp" : 0, 0, "Player"} , { "ExecuteOnceNode" } , { "SetGlobalFlagBattleAction" : "fe5201111_2_00", 0, 1, "已完成第一场战斗"} , { "SetLocalFlagBattleAction" : "btf5201111_99", 0, 1, "已完成第一场战斗"} , { "BattleResultRmoveBuff" : "in05362", "bt5201111_buff_UndeadStudents"} , { "BattleResultRmoveBuff" : "in05363", "bt5201111_buff_UndeadStudents"} , { "BattleResultTalk" : "t5201111_054"} , { "BattleResultAddUnit" : "in0111", 1, 104103207, 1.00000, 0.00000} , { "BattleResultUnitToUnit" : "in0111", "in05362"} , { "BattleResultTalk" : "t5201111_020"} , { "BattleResultUnitHP" : 0, 100, "in05362,in05363,Player"} , { "BattleResultTalk" : "t5201111_032"} , { "BattleResultAddBuff" : True, "in05362", "bt5201111_buff_BetterStudentDefense", True} , { "BattleResultAddBuff" : True, "in05363", "bt5201111_buff_BetterStudentDefense", True} , { "BattleResultTalk" : "t5201111_034"} , { "BattleResultAddBuff" : True, "in05362", "bt5201111_buff_BetterStudentAttack", True} , { "BattleResultAddBuff" : True, "in05363", "bt5201111_buff_BetterStudentAttack", True} , { "BattleResultChangeWinTip" : "Defeat your Junior"} , { "BattleResultChangeLoseTip" : "{name_1}{name_2} is defeated。"} , { "SetGlobalFlagBattleAction" : "fe5201111_2_00", 0, 1, "已完成第一场战斗"} , { "SetGlobalFlagBattleAction" : "fe5201111_2_03", 0, 1, "第一场战斗成功"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 0, "btf5201111_99", "是否完成第一场战斗：否"} , { "BattleFactorTargetHp" : 1, 30, "in05363"} , { "BattleFactorTargetHp" : 0, 0, "Player"} , { "ExecuteOnceNode" } , { "SetGlobalFlagBattleAction" : "fe5201111_2_00", 0, 1, "已完成第一场战斗"} , { "SetLocalFlagBattleAction" : "btf5201111_99", 0, 1, "已完成第一场战斗"} , { "BattleResultRmoveBuff" : "in05362", "bt5201111_buff_UndeadStudents"} , { "BattleResultRmoveBuff" : "in05363", "bt5201111_buff_UndeadStudents"} , { "BattleResultTalk" : "t5201111_055"} , { "BattleResultAddUnit" : "in0111", 1, 104103207, 1.00000, 0.00000} , { "BattleResultUnitToUnit" : "in0111", "in05362"} , { "BattleResultTalk" : "t5201111_020"} , { "BattleResultUnitHP" : 0, 100, "in05362,in05363,Player"} , { "BattleResultTalk" : "t5201111_032"} , { "BattleResultAddBuff" : True, "in05362", "bt5201111_buff_BetterStudentDefense", True} , { "BattleResultAddBuff" : True, "in05363", "bt5201111_buff_BetterStudentDefense", True} , { "BattleResultTalk" : "t5201111_034"} , { "BattleResultAddBuff" : True, "in05362", "bt5201111_buff_BetterStudentAttack", True} , { "BattleResultAddBuff" : True, "in05363", "bt5201111_buff_BetterStudentAttack", True} , { "BattleResultChangeWinTip" : "Defeat your Junior"} , { "BattleResultChangeLoseTip" : "{name_1}{name_2} is defeated。"} , { "SetGlobalFlagBattleAction" : "fe5201111_2_00", 0, 1, "已完成第一场战斗"} , { "SetGlobalFlagBattleAction" : "fe5201111_2_03", 0, 1, "第一场战斗成功"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 0, "btf5201111_99", "是否完成第一场战斗：否"} , { "BattleFactorTargetHp" : 1, 30, "in05363"} , { "BattleFactorTargetHp" : 1, 30, "in05362"} , { "BattleFactorTargetHp" : 0, 0, "Player"} , { "ExecuteOnceNode" } , { "SetGlobalFlagBattleAction" : "fe5201111_2_00", 0, 1, "已完成第一场战斗"} , { "SetLocalFlagBattleAction" : "btf5201111_99", 0, 1, "已完成第一场战斗"} , { "BattleResultRmoveBuff" : "in05362", "bt5201111_buff_UndeadStudents"} , { "BattleResultRmoveBuff" : "in05363", "bt5201111_buff_UndeadStudents"} , { "BattleResultTalk" : "t5201111_055"} , { "BattleResultAddUnit" : "in0111", 1, 104103207, 1.00000, 0.00000} , { "BattleResultUnitToUnit" : "in0111", "in05362"} , { "BattleResultTalk" : "t5201111_020"} , { "BattleResultUnitHP" : 0, 100, "in05362,in05363,Player"} , { "BattleResultTalk" : "t5201111_032"} , { "BattleResultAddBuff" : True, "in05362", "bt5201111_buff_BetterStudentDefense", True} , { "BattleResultAddBuff" : True, "in05363", "bt5201111_buff_BetterStudentDefense", True} , { "BattleResultTalk" : "t5201111_034"} , { "BattleResultAddBuff" : True, "in05362", "bt5201111_buff_BetterStudentAttack", True} , { "BattleResultAddBuff" : True, "in05363", "bt5201111_buff_BetterStudentAttack", True} , { "BattleResultChangeWinTip" : "Defeat Junior Brother"} , { "BattleResultChangeLoseTip" : "{name_1}{name_2} is defeated。"} , { "SetGlobalFlagBattleAction" : "fe5201111_2_00", 0, 1, "已完成第一场战斗"} , { "SetGlobalFlagBattleAction" : "fe5201111_2_03", 0, 1, "第一场战斗成功"}  ]}  ]} , { "BattleEventNode" : 400, 1, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 1, "btf5201111_99", "是否完成第一场战斗：是"} , { "BattleFactorTargetDestroy" : "in05362"} , { "BattleFactorTargetDestroy" : "in05363"} , { "BattleFactorTargetHp" : 0, 0, "Player"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5201111_037"} , { "SetGlobalFlagBattleAction" : "fe5201111_2_02", 0, 1, "玩家在第二场战斗中存活"} , { "EndBattleAction" : "m5201111_01"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 1, "btf5201111_99", "是否完成第一场战斗：是"} , { "BattleFactorTargetDestroy" : "Player"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5201111_045"} , { "EndBattleAction" : "m5201111_02"}  ]}  ]} , { "BattleEventNode" : 400, 1, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 1, "btf5201111_99", "是否完成第一场战斗：是"} , { "BattleFactorTargetHp" : 0, 0, "Player"} , { "BattleFactorTargetDestroy" : "in05363"} , { "BattleFactorTargetHp" : 0, 0, "in05362"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5201111_053"}  ]}  ]} , { "BattleEventNode" : 400, 1, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 1, "btf5201111_99", "是否完成第一场战斗：是"} , { "BattleFactorTargetHp" : 0, 0, "Player"} , { "BattleFactorTargetDestroy" : "in05362"} , { "BattleFactorTargetHp" : 0, 0, "in05363"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5201111_058"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 0, "btf5201111_99", "是否完成第一场战斗：否"} , { "BattleFactorTurn" : 0, 2} , { "BattleFactorTargetHp" : 0, 30, "in05363"} , { "BattleFactorTargetHp" : 0, 30, "in05362"} , { "ExecuteOnceNode" } , { "SetGlobalFlagBattleAction" : "fe5201111_2_04", 0, 2, "2回合内战胜师弟：失败"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 0, "btf5201111_99", "是否完成第一场战斗：否"} , { "BattleFactorTurn" : 2, 3} , { "BattleFactorTargetDestroy" : "Player"} , { "ExecuteOnceNode" } , { "SetGlobalFlagBattleAction" : "fe5201111_2_04", 0, 2, "2回合内战胜师弟：失败"}  ]}  ]}  ]} 			
+{
+  "Id": "bs5201111_00",
+  "Name": "",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnits\" : \"in0111,Player\", 0, \"104103207,103104207\"} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in0111,Player\", \"104102206,102104206\"} ",
+      "Next": 4,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultAddUnits\" : \"in05362,in05363\", 1, \"200203103,203200103\"} ",
+      "Next": 5,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in05362,in05363\", \"200202102,202200102\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 7,
+      "Child": [
+        7
+      ]
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 8,
+      "Child": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 10,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201111_2_04\", 0, 1, \"2回合内战胜师弟\"} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultTalk\" : \"t5201111_009\"} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultUnitToUnit\" : \"in05363\", \"in05362\"} ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleResultTalk\" : \"t5201111_010\"} ",
+      "Next": 14,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in0111\", \"104104208\"} ",
+      "Next": 15,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in0111\", False} ",
+      "Next": 16,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Cut either Junior Brother's blood to <color=##FF0000>thirty percent</color>.\"} ",
+      "Next": 17,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1}{name_2} is defeated.。\"} ",
+      "Next": 18,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in05362\", \"bt5201111_buff_UndeadStudents\", True} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in05363\", \"bt5201111_buff_UndeadStudents\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 21,
+      "Child": [
+        21
+      ]
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 22,
+      "Child": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5201111_99\", \"是否完成第一场战斗：否\"} ",
+      "Next": 23,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 30, \"in05362\"} ",
+      "Next": 24,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 30, \"in05363\"} ",
+      "Next": 25,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player\"} ",
+      "Next": 26,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 27,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleResultTalk\" : \"t5201111_024\"} ",
+      "Next": 28,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"EndBattleAction\" : \"m5201111_03\"} ",
+      "Next": 29,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201111_2_00\", 0, 1, \"已完成第一场战斗\"} ",
+      "Next": 30,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5201111_99\", 0, 1, \"已完成第一场战斗\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 32,
+      "Child": [
+        32
+      ]
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 33,
+      "Child": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55
+      ]
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5201111_99\", \"是否完成第一场战斗：否\"} ",
+      "Next": 34,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 30, \"in05362\"} ",
+      "Next": 35,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"Player\"} ",
+      "Next": 36,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 37,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201111_2_00\", 0, 1, \"已完成第一场战斗\"} ",
+      "Next": 38,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5201111_99\", 0, 1, \"已完成第一场战斗\"} ",
+      "Next": 39,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05362\", \"bt5201111_buff_UndeadStudents\"} ",
+      "Next": 40,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05363\", \"bt5201111_buff_UndeadStudents\"} ",
+      "Next": 41,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleResultTalk\" : \"t5201111_054\"} ",
+      "Next": 42,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0111\", 1, 104103207, 1.00000, 0.00000} ",
+      "Next": 43,
+      "Child": []
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"BattleResultUnitToUnit\" : \"in0111\", \"in05362\"} ",
+      "Next": 44,
+      "Child": []
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"BattleResultTalk\" : \"t5201111_020\"} ",
+      "Next": 45,
+      "Child": []
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"BattleResultUnitHP\" : 0, 100, \"in05362,in05363,Player\"} ",
+      "Next": 46,
+      "Child": []
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"BattleResultTalk\" : \"t5201111_032\"} ",
+      "Next": 47,
+      "Child": []
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05362\", \"bt5201111_buff_BetterStudentDefense\", True} ",
+      "Next": 48,
+      "Child": []
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05363\", \"bt5201111_buff_BetterStudentDefense\", True} ",
+      "Next": 49,
+      "Child": []
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"BattleResultTalk\" : \"t5201111_034\"} ",
+      "Next": 50,
+      "Child": []
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05362\", \"bt5201111_buff_BetterStudentAttack\", True} ",
+      "Next": 51,
+      "Child": []
+    },
+    {
+      "Index": 51,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05363\", \"bt5201111_buff_BetterStudentAttack\", True} ",
+      "Next": 52,
+      "Child": []
+    },
+    {
+      "Index": 52,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeating Junior Brother\"} ",
+      "Next": 53,
+      "Child": []
+    },
+    {
+      "Index": 53,
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1}{name_2} is defeated.。\"} ",
+      "Next": 54,
+      "Child": []
+    },
+    {
+      "Index": 54,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201111_2_00\", 0, 1, \"已完成第一场战斗\"} ",
+      "Next": 55,
+      "Child": []
+    },
+    {
+      "Index": 55,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201111_2_03\", 0, 1, \"第一场战斗成功\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 56,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 57,
+      "Child": [
+        57
+      ]
+    },
+    {
+      "Index": 57,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 58,
+      "Child": [
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80
+      ]
+    },
+    {
+      "Index": 58,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5201111_99\", \"是否完成第一场战斗：否\"} ",
+      "Next": 59,
+      "Child": []
+    },
+    {
+      "Index": 59,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 30, \"in05363\"} ",
+      "Next": 60,
+      "Child": []
+    },
+    {
+      "Index": 60,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"Player\"} ",
+      "Next": 61,
+      "Child": []
+    },
+    {
+      "Index": 61,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 62,
+      "Child": []
+    },
+    {
+      "Index": 62,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201111_2_00\", 0, 1, \"已完成第一场战斗\"} ",
+      "Next": 63,
+      "Child": []
+    },
+    {
+      "Index": 63,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5201111_99\", 0, 1, \"已完成第一场战斗\"} ",
+      "Next": 64,
+      "Child": []
+    },
+    {
+      "Index": 64,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05362\", \"bt5201111_buff_UndeadStudents\"} ",
+      "Next": 65,
+      "Child": []
+    },
+    {
+      "Index": 65,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05363\", \"bt5201111_buff_UndeadStudents\"} ",
+      "Next": 66,
+      "Child": []
+    },
+    {
+      "Index": 66,
+      "Node": "{ \"BattleResultTalk\" : \"t5201111_055\"} ",
+      "Next": 67,
+      "Child": []
+    },
+    {
+      "Index": 67,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0111\", 1, 104103207, 1.00000, 0.00000} ",
+      "Next": 68,
+      "Child": []
+    },
+    {
+      "Index": 68,
+      "Node": "{ \"BattleResultUnitToUnit\" : \"in0111\", \"in05362\"} ",
+      "Next": 69,
+      "Child": []
+    },
+    {
+      "Index": 69,
+      "Node": "{ \"BattleResultTalk\" : \"t5201111_020\"} ",
+      "Next": 70,
+      "Child": []
+    },
+    {
+      "Index": 70,
+      "Node": "{ \"BattleResultUnitHP\" : 0, 100, \"in05362,in05363,Player\"} ",
+      "Next": 71,
+      "Child": []
+    },
+    {
+      "Index": 71,
+      "Node": "{ \"BattleResultTalk\" : \"t5201111_032\"} ",
+      "Next": 72,
+      "Child": []
+    },
+    {
+      "Index": 72,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05362\", \"bt5201111_buff_BetterStudentDefense\", True} ",
+      "Next": 73,
+      "Child": []
+    },
+    {
+      "Index": 73,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05363\", \"bt5201111_buff_BetterStudentDefense\", True} ",
+      "Next": 74,
+      "Child": []
+    },
+    {
+      "Index": 74,
+      "Node": "{ \"BattleResultTalk\" : \"t5201111_034\"} ",
+      "Next": 75,
+      "Child": []
+    },
+    {
+      "Index": 75,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05362\", \"bt5201111_buff_BetterStudentAttack\", True} ",
+      "Next": 76,
+      "Child": []
+    },
+    {
+      "Index": 76,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05363\", \"bt5201111_buff_BetterStudentAttack\", True} ",
+      "Next": 77,
+      "Child": []
+    },
+    {
+      "Index": 77,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeating Junior Brother\"} ",
+      "Next": 78,
+      "Child": []
+    },
+    {
+      "Index": 78,
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1}{name_2} is defeated.。\"} ",
+      "Next": 79,
+      "Child": []
+    },
+    {
+      "Index": 79,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201111_2_00\", 0, 1, \"已完成第一场战斗\"} ",
+      "Next": 80,
+      "Child": []
+    },
+    {
+      "Index": 80,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201111_2_03\", 0, 1, \"第一场战斗成功\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 81,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 82,
+      "Child": [
+        82
+      ]
+    },
+    {
+      "Index": 82,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 83,
+      "Child": [
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106
+      ]
+    },
+    {
+      "Index": 83,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5201111_99\", \"是否完成第一场战斗：否\"} ",
+      "Next": 84,
+      "Child": []
+    },
+    {
+      "Index": 84,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 30, \"in05363\"} ",
+      "Next": 85,
+      "Child": []
+    },
+    {
+      "Index": 85,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 30, \"in05362\"} ",
+      "Next": 86,
+      "Child": []
+    },
+    {
+      "Index": 86,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"Player\"} ",
+      "Next": 87,
+      "Child": []
+    },
+    {
+      "Index": 87,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 88,
+      "Child": []
+    },
+    {
+      "Index": 88,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201111_2_00\", 0, 1, \"已完成第一场战斗\"} ",
+      "Next": 89,
+      "Child": []
+    },
+    {
+      "Index": 89,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5201111_99\", 0, 1, \"已完成第一场战斗\"} ",
+      "Next": 90,
+      "Child": []
+    },
+    {
+      "Index": 90,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05362\", \"bt5201111_buff_UndeadStudents\"} ",
+      "Next": 91,
+      "Child": []
+    },
+    {
+      "Index": 91,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05363\", \"bt5201111_buff_UndeadStudents\"} ",
+      "Next": 92,
+      "Child": []
+    },
+    {
+      "Index": 92,
+      "Node": "{ \"BattleResultTalk\" : \"t5201111_055\"} ",
+      "Next": 93,
+      "Child": []
+    },
+    {
+      "Index": 93,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0111\", 1, 104103207, 1.00000, 0.00000} ",
+      "Next": 94,
+      "Child": []
+    },
+    {
+      "Index": 94,
+      "Node": "{ \"BattleResultUnitToUnit\" : \"in0111\", \"in05362\"} ",
+      "Next": 95,
+      "Child": []
+    },
+    {
+      "Index": 95,
+      "Node": "{ \"BattleResultTalk\" : \"t5201111_020\"} ",
+      "Next": 96,
+      "Child": []
+    },
+    {
+      "Index": 96,
+      "Node": "{ \"BattleResultUnitHP\" : 0, 100, \"in05362,in05363,Player\"} ",
+      "Next": 97,
+      "Child": []
+    },
+    {
+      "Index": 97,
+      "Node": "{ \"BattleResultTalk\" : \"t5201111_032\"} ",
+      "Next": 98,
+      "Child": []
+    },
+    {
+      "Index": 98,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05362\", \"bt5201111_buff_BetterStudentDefense\", True} ",
+      "Next": 99,
+      "Child": []
+    },
+    {
+      "Index": 99,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05363\", \"bt5201111_buff_BetterStudentDefense\", True} ",
+      "Next": 100,
+      "Child": []
+    },
+    {
+      "Index": 100,
+      "Node": "{ \"BattleResultTalk\" : \"t5201111_034\"} ",
+      "Next": 101,
+      "Child": []
+    },
+    {
+      "Index": 101,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05362\", \"bt5201111_buff_BetterStudentAttack\", True} ",
+      "Next": 102,
+      "Child": []
+    },
+    {
+      "Index": 102,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05363\", \"bt5201111_buff_BetterStudentAttack\", True} ",
+      "Next": 103,
+      "Child": []
+    },
+    {
+      "Index": 103,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeating Junior Brother\"} ",
+      "Next": 104,
+      "Child": []
+    },
+    {
+      "Index": 104,
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1}{name_2} is defeated.。\"} ",
+      "Next": 105,
+      "Child": []
+    },
+    {
+      "Index": 105,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201111_2_00\", 0, 1, \"已完成第一场战斗\"} ",
+      "Next": 106,
+      "Child": []
+    },
+    {
+      "Index": 106,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201111_2_03\", 0, 1, \"第一场战斗成功\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 107,
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
+      "Next": 108,
+      "Child": [
+        108
+      ]
+    },
+    {
+      "Index": 108,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 109,
+      "Child": [
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116
+      ]
+    },
+    {
+      "Index": 109,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf5201111_99\", \"是否完成第一场战斗：是\"} ",
+      "Next": 110,
+      "Child": []
+    },
+    {
+      "Index": 110,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05362\"} ",
+      "Next": 111,
+      "Child": []
+    },
+    {
+      "Index": 111,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05363\"} ",
+      "Next": 112,
+      "Child": []
+    },
+    {
+      "Index": 112,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"Player\"} ",
+      "Next": 113,
+      "Child": []
+    },
+    {
+      "Index": 113,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 114,
+      "Child": []
+    },
+    {
+      "Index": 114,
+      "Node": "{ \"BattleResultTalk\" : \"t5201111_037\"} ",
+      "Next": 115,
+      "Child": []
+    },
+    {
+      "Index": 115,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201111_2_02\", 0, 1, \"玩家在第二场战斗中存活\"} ",
+      "Next": 116,
+      "Child": []
+    },
+    {
+      "Index": 116,
+      "Node": "{ \"EndBattleAction\" : \"m5201111_01\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 117,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 118,
+      "Child": [
+        118
+      ]
+    },
+    {
+      "Index": 118,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 119,
+      "Child": [
+        119,
+        120,
+        121,
+        122,
+        123
+      ]
+    },
+    {
+      "Index": 119,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf5201111_99\", \"是否完成第一场战斗：是\"} ",
+      "Next": 120,
+      "Child": []
+    },
+    {
+      "Index": 120,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player\"} ",
+      "Next": 121,
+      "Child": []
+    },
+    {
+      "Index": 121,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 122,
+      "Child": []
+    },
+    {
+      "Index": 122,
+      "Node": "{ \"BattleResultTalk\" : \"t5201111_045\"} ",
+      "Next": 123,
+      "Child": []
+    },
+    {
+      "Index": 123,
+      "Node": "{ \"EndBattleAction\" : \"m5201111_02\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 124,
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
+      "Next": 125,
+      "Child": [
+        125
+      ]
+    },
+    {
+      "Index": 125,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 126,
+      "Child": [
+        126,
+        127,
+        128,
+        129,
+        130,
+        131
+      ]
+    },
+    {
+      "Index": 126,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf5201111_99\", \"是否完成第一场战斗：是\"} ",
+      "Next": 127,
+      "Child": []
+    },
+    {
+      "Index": 127,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"Player\"} ",
+      "Next": 128,
+      "Child": []
+    },
+    {
+      "Index": 128,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05363\"} ",
+      "Next": 129,
+      "Child": []
+    },
+    {
+      "Index": 129,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in05362\"} ",
+      "Next": 130,
+      "Child": []
+    },
+    {
+      "Index": 130,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 131,
+      "Child": []
+    },
+    {
+      "Index": 131,
+      "Node": "{ \"BattleResultTalk\" : \"t5201111_053\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 132,
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
+      "Next": 133,
+      "Child": [
+        133
+      ]
+    },
+    {
+      "Index": 133,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 134,
+      "Child": [
+        134,
+        135,
+        136,
+        137,
+        138,
+        139
+      ]
+    },
+    {
+      "Index": 134,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf5201111_99\", \"是否完成第一场战斗：是\"} ",
+      "Next": 135,
+      "Child": []
+    },
+    {
+      "Index": 135,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"Player\"} ",
+      "Next": 136,
+      "Child": []
+    },
+    {
+      "Index": 136,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05362\"} ",
+      "Next": 137,
+      "Child": []
+    },
+    {
+      "Index": 137,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in05363\"} ",
+      "Next": 138,
+      "Child": []
+    },
+    {
+      "Index": 138,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 139,
+      "Child": []
+    },
+    {
+      "Index": 139,
+      "Node": "{ \"BattleResultTalk\" : \"t5201111_058\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 140,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 141,
+      "Child": [
+        141
+      ]
+    },
+    {
+      "Index": 141,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 142,
+      "Child": [
+        142,
+        143,
+        144,
+        145,
+        146,
+        147
+      ]
+    },
+    {
+      "Index": 142,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5201111_99\", \"是否完成第一场战斗：否\"} ",
+      "Next": 143,
+      "Child": []
+    },
+    {
+      "Index": 143,
+      "Node": "{ \"BattleFactorTurn\" : 0, 2} ",
+      "Next": 144,
+      "Child": []
+    },
+    {
+      "Index": 144,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 30, \"in05363\"} ",
+      "Next": 145,
+      "Child": []
+    },
+    {
+      "Index": 145,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 30, \"in05362\"} ",
+      "Next": 146,
+      "Child": []
+    },
+    {
+      "Index": 146,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 147,
+      "Child": []
+    },
+    {
+      "Index": 147,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201111_2_04\", 0, 2, \"2回合内战胜师弟：失败\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 148,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 149,
+      "Child": [
+        149
+      ]
+    },
+    {
+      "Index": 149,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 150,
+      "Child": [
+        150,
+        151,
+        152,
+        153,
+        154
+      ]
+    },
+    {
+      "Index": 150,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5201111_99\", \"是否完成第一场战斗：否\"} ",
+      "Next": 151,
+      "Child": []
+    },
+    {
+      "Index": 151,
+      "Node": "{ \"BattleFactorTurn\" : 2, 3} ",
+      "Next": 152,
+      "Child": []
+    },
+    {
+      "Index": 152,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player\"} ",
+      "Next": 153,
+      "Child": []
+    },
+    {
+      "Index": 153,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 154,
+      "Child": []
+    },
+    {
+      "Index": 154,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201111_2_04\", 0, 2, \"2回合内战胜师弟：失败\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "",
+  "WinTip": "",
+  "LoseTip": ""
+}

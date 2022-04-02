@@ -1,0 +1,66 @@
+{
+  "Id": "BranchNodeGlobalTest",
+  "Name": "",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Prallel": -1,
+      "Child": [
+        1
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 2,
+      "Prallel": -1,
+      "Child": [
+        2
+      ]
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleBranchNode\" : 0, 0, False, \"\", \"\", 3, 4} ",
+      "Next": 3,
+      "Prallel": 4,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 5,
+      "Prallel": -1,
+      "Child": [
+        5
+      ]
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 6,
+      "Prallel": -1,
+      "Child": [
+        6
+      ]
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleResultPalySound\" : \"\", 0.00000} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleResultPalySound\" : \"\", 0.00000} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "",
+  "WinTip": "One party member reaches escape point、 or defeats all the enemies!",
+  "LoseTip": "All friendly units are defeated.、 or the battle exceeds five Rounds"
+}

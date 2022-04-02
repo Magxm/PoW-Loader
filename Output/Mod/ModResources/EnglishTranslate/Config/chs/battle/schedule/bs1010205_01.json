@@ -1,1 +1,293 @@
-bs1010205_01	段红儿五阶五老山战屍人	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnits" : "Player,in0102", 0, "101204103,200204104"}  ]} , { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnits" : "in05847,in05848,in05849,in05850,in05851", 1, "205104101,204104200,203101102,205102103,204101103"} , { "BattleResultAddBuff" : False, "in05847,in05848,in05849,in05850,in05851", "bt1212402_01_debuff_ZombieAttack80", False} , { "BattleResultAddBuff" : True, "in05847,in05848,in05849,in05850,in05851", "bt1212402_01_buff_ZombiePower", True} , { "BattleResultAddBuff" : True, "in05847,in05848,in05849,in05850,in05851", "bt1210402_02_Buff_DeathPower", True}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "Player,in0102"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010205_bs0124"} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in05845"} , { "BattleFactorTargetHp" : 0, 0, "in05846"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010205_bs0100"} , { "BattleResultAddBuff" : True, "in05846", "bt1205502_01_Buff_MachinePower", True}  ]}  ]} , { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnits" : "in05845,in05846,in05805,in05806,in05807", 2, "203108205,205109204,204110206,205111206,203110207"}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 1} , { "BattleFactorTargetHp" : 0, 0, "in05806"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010205_bs0101"} , { "BattleResultAddBuff" : True, "in05806", "", False} , { "BattleResultUnitHP" : 0, 0, "in05806"} , { "BattleResultTalk" : "t1010205_bs0106"} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 1} , { "BattleFactorTargetDestroy" : "in05806"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010205_bs0101"} , { "BattleResultTalk" : "t1010205_bs0106"} , { "BattleResultWin" : ""}  ]}  ]}  ]} 		Defeat the corpses man!	{name_1}{name_2}、Duan Honger is defeated。
+{
+  "Id": "bs1010205_01",
+  "Name": "段红儿五阶五老山战屍人",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnits\" : \"Player,in0102\", 0, \"101204103,200204104\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 3,
+      "Child": [
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnits\" : \"in05847,in05848,in05849,in05850,in05851\", 1, \"205104101,204104200,203101102,205102103,204101103\"} ",
+      "Next": 4,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in05847,in05848,in05849,in05850,in05851\", \"bt1212402_01_debuff_ZombieAttack80\", False} ",
+      "Next": 5,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05847,in05848,in05849,in05850,in05851\", \"bt1212402_01_buff_ZombiePower\", True} ",
+      "Next": 6,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05847,in05848,in05849,in05850,in05851\", \"bt1210402_02_Buff_DeathPower\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 8,
+      "Child": [
+        8
+      ]
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 9,
+      "Child": [
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player,in0102\"} ",
+      "Next": 10,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultTalk\" : \"t1010205_bs0124\"} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 14,
+      "Child": [
+        14
+      ]
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 15,
+      "Child": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05845\"} ",
+      "Next": 16,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in05846\"} ",
+      "Next": 17,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 18,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleResultTalk\" : \"t1010205_bs0100\"} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05846\", \"bt1205502_01_Buff_MachinePower\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 21,
+      "Child": [
+        21
+      ]
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleResultAddUnits\" : \"in05845,in05846,in05805,in05806,in05807\", 2, \"203108205,205109204,204110206,205111206,203110207\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 23,
+      "Child": [
+        23
+      ]
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 24,
+      "Child": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ]
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 25,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in05806\"} ",
+      "Next": 26,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 27,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleResultTalk\" : \"t1010205_bs0101\"} ",
+      "Next": 28,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05806\", \"\", False} ",
+      "Next": 29,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleResultUnitHP\" : 0, 0, \"in05806\"} ",
+      "Next": 30,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleResultTalk\" : \"t1010205_bs0106\"} ",
+      "Next": 31,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 33,
+      "Child": [
+        33
+      ]
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 34,
+      "Child": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ]
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 35,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05806\"} ",
+      "Next": 36,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 37,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleResultTalk\" : \"t1010205_bs0101\"} ",
+      "Next": 38,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleResultTalk\" : \"t1010205_bs0106\"} ",
+      "Next": 39,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "",
+  "WinTip": "Defeat Corpse Zombie!",
+  "LoseTip": "{name_1}{name_2} and Duan Hong'Er are defeted"
+}

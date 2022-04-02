@@ -1,0 +1,61 @@
+{
+  "EntryIndex": 0,
+  "Nodes": [
+    {
+      "Node": "{ \"TimerAction\" : 1.50000} ",
+      "Next": 1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 2, \"fe1010307_2_01\"} ",
+      "Next": 2,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SortOutNpcAndEventCubeAction\" } ",
+      "Next": 4,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 4.00000} ",
+      "Next": 5,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"RewardAction\" : \"re7001003_07\"} ",
+      "Next": 8,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckCurrentTime\" : 1}  ], 0} , 6, 7} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, True, 0, \"\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 1, \"\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe1010307_2_07\"}  ], 0} , 10, 3} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"RewardAction\" : \"re7001003_08\"} ",
+      "Next": 3,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 1, \"fg0404_FriendshipLover\"} ",
+      "Next": 9,
+      "Prallel": -1
+    }
+  ],
+  "Name": "鍾若昕七_獎勵環節"
+}

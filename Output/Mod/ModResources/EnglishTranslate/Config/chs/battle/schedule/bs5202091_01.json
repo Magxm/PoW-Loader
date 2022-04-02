@@ -1,1 +1,1480 @@
-bs5202091_01	bs5202091_01	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultWalkable" : "119217202,119218201,118218200,118219101,117219102", False} , { "BattleResultAddUnits" : "party00,party01,party02,party03", 0, "133233200,131229202,129231102,133231202"} , { "BattleResultAddUnit" : "in32001", 0, 131231200, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in21008", 1, 139239200, 1.00000, 0.00000} , { "BattleResultAddUnits" : "in05422,in05422,in05422,in05422,in05422,in05422,in05422", 1, "128226202,129229200,126228102,126226200,125223202,123225102,123223200"} , { "BattleResultAddUnits" : "io471056,io471056,io471056", 1, "137239102,137237200,139237202"} , { "BattleResultExitPoint" : "120218202,120219201,119219200,119220101,118220102"} , { "SetGlobalFlagBattleAction" : "fe5202091_2_05", 0, 1, "武昊遇刺事件＿战斗阶段一"} , { "BattleResultAddBuff" : False, "io471056", "bf5202091_01_assassin_debuff", False} , { "BattleResultAddSecondaryGoal" : "btc5202091_01", "reach escape zone within six turns。"} , { "BattleResultChangeSecondaryGoal" : "btc5202091_01", 0}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5202091_500"} , { "BattleResultTalk" : "t5202091_501"} , { "BattleResultAddBuff" : True, "in32001", "bf5202091_in32001", False} , { "BattleResultAddBuff" : True, "in0111", "bf5202091_party00", False} , { "BattleResultAddBuff" : False, "in21008", "bf5202091_in21008_nomove", False} , { "BattleResultAddBuff" : False, "in21008", "bf5202091_02_in21005HPlock", False} , { "BattleResultAddBuff" : False, "in32001", "bf5202091_in32001_move", True}  ]}  ]} , { "BattleEventNode" : 300, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe5202091_2_04", "武昊遇刺事件＿主人公是否中毒"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5202091_505"} , { "BattleResultAddBuff" : True, "Player", "bf5202091_party00", False}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 2, 100, "in21008"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5202091_633"} , { "BattleResultRmoveBuff" : "in21008", "bf5202091_in21008_nomove"} , { "BattleResultAddBuff" : True, "in21008", "", True}  ]}  ]} , { "BattleEventNode" : 300, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 2, 41, "in32001"} , { "BattleFactorGlobalFlag" : 1, 0, "fe5202091_2_07", "武昊遇刺事件＿石崑出现了吗"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5202091_512"} , { "BattleResultAddUnits" : "io471156,io471156,io471156", 1, "121221200,120222102,122223101"} , { "BattleResultAddUnits" : "io471016,io471016,io471016", 1, "139237202,137237200,137239102"} , { "BattleResultAddBuff" : True, "io471156,io471156,io471016", "", True} , { "BattleResultTalk" : "t5202091_513"} , { "BattleResultTalk" : "t5202091_514"} , { "BattleResultPlayAction" : "in21008", "f_empty_dodge00", 90.00000} , { "BattleResultAddUnit" : "in0105", 0, 143243200, 1.00000, 189.72000} , { "BattleResultAddBuff" : True, "in0105", "", True} , { "BattleResultTalk" : "t5202091_583"} , { "BattleResultTalk" : "t5202091_1255"} , { "BattleResultWaitAction" : 0.20000} , { "BattleResultAddBuff" : True, "in0105", "", True} , { "BattleResultRemoveUnit" : "in0105", False} , { "BattleResultWaitAction" : 0.20000} , { "BattleResultTalk" : "t5202091_1272"} , { "BattleResultPalySound" : "skill_MA0705_b01.wav", 1.00000} , { "BattleResultTalk" : "t5202091_1274"} , { "BattleResultPlayAction" : "io471016", "m_empty_die00", 0.00000} , { "BattleResultRemoveUnit" : "io471016", True} , { "BattleResultPlayAction" : "io471016", "m_empty_die00", 0.00000} , { "BattleResultRemoveUnit" : "io471016", True} , { "BattleResultPlayAction" : "io471016", "m_empty_die00", 0.00000} , { "BattleResultRemoveUnit" : "io471016", True} , { "BattleResultWaitAction" : 0.20000} , { "BattleResultAddUnit" : "in0105", 0, 130230200, 1.00000, 90.00000} , { "BattleResultAddBuff" : True, "in0105", "", True} , { "BattleResultWaitAction" : 0.20000} , { "BattleResultTalk" : "t5202091_1275"} , { "BattleResultTalk" : "t5202091_516"} , { "BattleResultTalk" : "t5202091_529"} , { "SetGlobalFlagBattleAction" : "fe5202091_2_07", 0, 1, "武昊遇刺事件＿石崑出现了吗"} , { "BattleResultAddBuff" : True, "in0105", "bf5202091_in0105_01", True}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 2, 7} , { "BattleFactorCharacterTile" : "120218202,120219201,119219200,119220101,118220102", "in32001"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5202091_681"} , { "BattleResultCameraMoveCell" : "205105200", 0.00000, 6.00000} , { "BattleResultAddUnit" : "in21005", 1, 205105200, 1.00000, 0.00000} , { "BattleResultAddBuff" : True, "in21005", "", True} , { "BattleResultTalk" : "t5202091_682"} , { "BattleResultTalk" : "t5202091_683"} , { "SetGlobalFlagBattleAction" : "fe5202091_2_16", 0, 1, "武昊遇刺事件＿是否在六回合内抵达逃脱点"} , { "BattleResultChangeSecondaryGoal" : "btc5202091_01", 1} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 2} , { "BattleFactorGlobalFlag" : 1, 0, "fe5202091_2_07", "武昊遇刺事件＿石崑出现了吗"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5202091_512"} , { "BattleResultAddUnits" : "io471156,io471156,io471156", 1, "121221200,120222102,122223101"} , { "BattleResultAddUnits" : "io471016,io471016,io471016", 1, "139237202,137237200,137239102"} , { "BattleResultAddBuff" : True, "io471156,io471156,io471016", "", True} , { "BattleResultTalk" : "t5202091_513"} , { "BattleResultTalk" : "t5202091_514"} , { "BattleResultPlayAction" : "in21008", "f_empty_dodge00", 90.00000} , { "BattleResultAddUnit" : "in0105", 0, 143243200, 1.00000, 189.72000} , { "BattleResultAddBuff" : True, "in0105", "", True} , { "BattleResultTalk" : "t5202091_583"} , { "BattleResultTalk" : "t5202091_1255"} , { "BattleResultWaitAction" : 0.20000} , { "BattleResultAddBuff" : True, "in0105", "", True} , { "BattleResultRemoveUnit" : "in0105", False} , { "BattleResultWaitAction" : 0.20000} , { "BattleResultTalk" : "t5202091_1272"} , { "BattleResultPalySound" : "skill_MA0705_b01.wav", 1.00000} , { "BattleResultTalk" : "t5202091_1296"} , { "BattleResultPlayAction" : "io471016", "m_empty_die00", 0.00000} , { "BattleResultRemoveUnit" : "io471016", True} , { "BattleResultPlayAction" : "io471016", "m_empty_die00", 0.00000} , { "BattleResultRemoveUnit" : "io471016", True} , { "BattleResultPlayAction" : "io471016", "m_empty_die00", 0.00000} , { "BattleResultRemoveUnit" : "io471016", True} , { "BattleResultWaitAction" : 0.20000} , { "BattleResultAddUnit" : "in0105", 0, 130230200, 1.00000, 90.00000} , { "BattleResultAddBuff" : True, "in0105", "", True} , { "BattleResultWaitAction" : 0.20000} , { "BattleResultTalk" : "t5202091_1275"} , { "BattleResultTalk" : "t5202091_516"} , { "BattleResultTalk" : "t5202091_529"} , { "SetGlobalFlagBattleAction" : "fe5202091_2_07", 0, 1, "武昊遇刺事件＿石崑出现了吗"} , { "BattleResultAddBuff" : True, "in0105", "bf5202091_in0105_01", True}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in32001"} , { "ExecuteOnceNode" } , { "SetGlobalFlagBattleAction" : "fe5202091_2_11", 0, 1, "武昊遇刺事件＿是否触发侠道泥尘结局"} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 1, 20, "in21008"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5202091_678"} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultAddBuff" : True, "in21008", "", True} , { "BattleResultRemoveUnit" : "in21008", False} , { "BattleResultWaitAction" : 0.50000} , { "SetGlobalFlagBattleAction" : "fe5202091_2_12", 0, 1, "武昊遇刺事件＿金丝薰初战血量削弱至2成"}  ]}  ]} , { "BattleEventNode" : 300, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "party00"} , { "ExecuteOnceNode" } , { "SetGlobalFlagBattleAction" : "fe5202091_2_11", 0, 1, "武昊遇刺事件＿是否触发侠道泥尘结局"} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 2, 100, "io471056"} , { "BattleFactorGlobalFlag" : 1, 0, "fe5202091_2_13", "武昊遇刺事件＿后方刺客是否可以移动了"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5202091_695"} , { "BattleResultWaitAction" : 0.30000} , { "BattleResultRmoveBuff" : "io471056,io471056,io471056", "bf5202091_01_assassin_nomove"} , { "BattleResultAddBuff" : True, "io471056,io471056,io471056", "", True} , { "BattleResultWaitAction" : 0.30000} , { "SetGlobalFlagBattleAction" : "fe5202091_2_13", 0, 1, "武昊遇刺事件＿后方刺客是否可以移动了"}  ]}  ]} , { "BattleEventNode" : 500, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 2} , { "BattleFactorGlobalFlag" : 1, 1, "fe5202091_2_04", "武昊遇刺事件＿主人公是否中毒"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5202091_684"} , { "BattleResultWaitAction" : 0.20000} , { "BattleResultAddBuff" : True, "party00", "", True} , { "BattleResultPlayAction" : "party00", "m_empty_five00", 0.00000} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t5202091_688"} , { "BattleResultRmoveBuff" : "Player", "bf5202091_party00"}  ]}  ]} , { "BattleEventNode" : 300, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe5202091_2_07", "武昊遇刺事件＿石崑出现了吗"} , { "BattleFactorGlobalFlag" : 1, 0, "fe5202091_2_13", "武昊遇刺事件＿后方刺客是否可以移动了"} , { "ExecuteOnceNode" } , { "BattleResultWaitAction" : 0.30000} , { "BattleResultRmoveBuff" : "in21008", "bf5202091_in21008_nomove"} , { "BattleResultWaitAction" : 0.30000} , { "SetGlobalFlagBattleAction" : "fe5202091_2_13", 0, 1, "武昊遇刺事件＿后方刺客是否可以移动了"}  ]}  ]} , { "BattleEventNode" : 300, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "io471046,io471256"} , { "BattleFactorGlobalFlag" : 1, 0, "fe5202091_2_13", "武昊遇刺事件＿后方刺客是否可以移动了"} , { "ExecuteOnceNode" } , { "BattleResultWaitAction" : 0.30000} , { "BattleResultRmoveBuff" : "in21008", "bf5202091_in21008_nomove"} , { "BattleResultWaitAction" : 0.30000} , { "SetGlobalFlagBattleAction" : "fe5202091_2_13", 0, 1, "武昊遇刺事件＿后方刺客是否可以移动了"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 2} , { "ExecuteOnceNode" } , { "BattleResultWaitAction" : 0.30000} , { "BattleResultRmoveBuff" : "in21008", "bf5202091_in21008_nomove"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 0, 6} , { "BattleFactorCharacterTile" : "120218202,120219201,119219200,119220101,118220102", "in32001"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5202091_681"} , { "BattleResultCameraMoveCell" : "205105200", 0.00000, 6.00000} , { "BattleResultAddUnit" : "in21005", 1, 205105200, 1.00000, 0.00000} , { "BattleResultAddBuff" : True, "in21005", "", True} , { "BattleResultTalk" : "t5202091_682"} , { "BattleResultTalk" : "t5202091_683"} , { "BattleResultChangeSecondaryGoal" : "btc5202091_01", 2} , { "BattleResultWin" : ""}  ]}  ]}  ]} 	官道大桥遇袭战	Wu Hao reach the escape zone.	{name_1}{name_2} or Wu Hao is defeated.
+{
+  "Id": "bs5202091_01",
+  "Name": "bs5202091_01",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultWalkable\" : \"119217202,119218201,118218200,118219101,117219102\", False} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnits\" : \"party00,party01,party02,party03\", 0, \"133233200,131229202,129231102,133231202\"} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnit\" : \"in32001\", 0, 131231200, 1.00000, 0.00000} ",
+      "Next": 4,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultAddUnit\" : \"in21008\", 1, 139239200, 1.00000, 0.00000} ",
+      "Next": 5,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleResultAddUnits\" : \"in05422,in05422,in05422,in05422,in05422,in05422,in05422\", 1, \"128226202,129229200,126228102,126226200,125223202,123225102,123223200\"} ",
+      "Next": 6,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleResultAddUnits\" : \"io471056,io471056,io471056\", 1, \"137239102,137237200,139237202\"} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleResultExitPoint\" : \"120218202,120219201,119219200,119220101,118220102\"} ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5202091_2_05\", 0, 1, \"武昊遇刺事件＿战斗阶段一\"} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"io471056\", \"bf5202091_01_assassin_debuff\", False} ",
+      "Next": 10,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultAddSecondaryGoal\" : \"btc5202091_01\", \"六回合内抵达逃脱点。\"} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"btc5202091_01\", 0} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 13,
+      "Child": [
+        13
+      ]
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 14,
+      "Child": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 15,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 16,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_500\"} ",
+      "Next": 17,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_501\"} ",
+      "Next": 18,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in32001\", \"bf5202091_in32001\", False} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0111\", \"bf5202091_party00\", False} ",
+      "Next": 20,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in21008\", \"bf5202091_in21008_nomove\", False} ",
+      "Next": 21,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in21008\", \"bf5202091_02_in21005HPlock\", False} ",
+      "Next": 22,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in32001\", \"bf5202091_in32001_move\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleEventNode\" : 300, 0, [ ]} ",
+      "Next": 24,
+      "Child": [
+        24
+      ]
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 25,
+      "Child": [
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5202091_2_04\", \"武昊遇刺事件＿主人公是否中毒\"} ",
+      "Next": 26,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 27,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_505\"} ",
+      "Next": 28,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"bf5202091_party00\", False} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 30,
+      "Child": [
+        30
+      ]
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 31,
+      "Child": [
+        31,
+        32,
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 100, \"in21008\"} ",
+      "Next": 32,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 33,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_633\"} ",
+      "Next": 34,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in21008\", \"bf5202091_in21008_nomove\"} ",
+      "Next": 35,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in21008\", \"\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"BattleEventNode\" : 300, 0, [ ]} ",
+      "Next": 37,
+      "Child": [
+        37
+      ]
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 38,
+      "Child": [
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73
+      ]
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 41, \"in32001\"} ",
+      "Next": 39,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe5202091_2_07\", \"武昊遇刺事件＿石崑出现了吗\"} ",
+      "Next": 40,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 41,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_512\"} ",
+      "Next": 42,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"BattleResultAddUnits\" : \"io471156,io471156,io471156\", 1, \"121221200,120222102,122223101\"} ",
+      "Next": 43,
+      "Child": []
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"BattleResultAddUnits\" : \"io471016,io471016,io471016\", 1, \"139237202,137237200,137239102\"} ",
+      "Next": 44,
+      "Child": []
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io471156,io471156,io471016\", \"\", True} ",
+      "Next": 45,
+      "Child": []
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_513\"} ",
+      "Next": 46,
+      "Child": []
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_514\"} ",
+      "Next": 47,
+      "Child": []
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"BattleResultPlayAction\" : \"in21008\", \"f_empty_dodge00\", 90.00000} ",
+      "Next": 48,
+      "Child": []
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0105\", 0, 143243200, 1.00000, 189.72000} ",
+      "Next": 49,
+      "Child": []
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0105\", \"\", True} ",
+      "Next": 50,
+      "Child": []
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_583\"} ",
+      "Next": 51,
+      "Child": []
+    },
+    {
+      "Index": 51,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_1255\"} ",
+      "Next": 52,
+      "Child": []
+    },
+    {
+      "Index": 52,
+      "Node": "{ \"BattleResultWaitAction\" : 0.20000} ",
+      "Next": 53,
+      "Child": []
+    },
+    {
+      "Index": 53,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0105\", \"\", True} ",
+      "Next": 54,
+      "Child": []
+    },
+    {
+      "Index": 54,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in0105\", False} ",
+      "Next": 55,
+      "Child": []
+    },
+    {
+      "Index": 55,
+      "Node": "{ \"BattleResultWaitAction\" : 0.20000} ",
+      "Next": 56,
+      "Child": []
+    },
+    {
+      "Index": 56,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_1272\"} ",
+      "Next": 57,
+      "Child": []
+    },
+    {
+      "Index": 57,
+      "Node": "{ \"BattleResultPalySound\" : \"skill_MA0705_b01.wav\", 1.00000} ",
+      "Next": 58,
+      "Child": []
+    },
+    {
+      "Index": 58,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_1274\"} ",
+      "Next": 59,
+      "Child": []
+    },
+    {
+      "Index": 59,
+      "Node": "{ \"BattleResultPlayAction\" : \"io471016\", \"m_empty_die00\", 0.00000} ",
+      "Next": 60,
+      "Child": []
+    },
+    {
+      "Index": 60,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"io471016\", True} ",
+      "Next": 61,
+      "Child": []
+    },
+    {
+      "Index": 61,
+      "Node": "{ \"BattleResultPlayAction\" : \"io471016\", \"m_empty_die00\", 0.00000} ",
+      "Next": 62,
+      "Child": []
+    },
+    {
+      "Index": 62,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"io471016\", True} ",
+      "Next": 63,
+      "Child": []
+    },
+    {
+      "Index": 63,
+      "Node": "{ \"BattleResultPlayAction\" : \"io471016\", \"m_empty_die00\", 0.00000} ",
+      "Next": 64,
+      "Child": []
+    },
+    {
+      "Index": 64,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"io471016\", True} ",
+      "Next": 65,
+      "Child": []
+    },
+    {
+      "Index": 65,
+      "Node": "{ \"BattleResultWaitAction\" : 0.20000} ",
+      "Next": 66,
+      "Child": []
+    },
+    {
+      "Index": 66,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0105\", 0, 130230200, 1.00000, 90.00000} ",
+      "Next": 67,
+      "Child": []
+    },
+    {
+      "Index": 67,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0105\", \"\", True} ",
+      "Next": 68,
+      "Child": []
+    },
+    {
+      "Index": 68,
+      "Node": "{ \"BattleResultWaitAction\" : 0.20000} ",
+      "Next": 69,
+      "Child": []
+    },
+    {
+      "Index": 69,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_1275\"} ",
+      "Next": 70,
+      "Child": []
+    },
+    {
+      "Index": 70,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_516\"} ",
+      "Next": 71,
+      "Child": []
+    },
+    {
+      "Index": 71,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_529\"} ",
+      "Next": 72,
+      "Child": []
+    },
+    {
+      "Index": 72,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5202091_2_07\", 0, 1, \"武昊遇刺事件＿石崑出现了吗\"} ",
+      "Next": 73,
+      "Child": []
+    },
+    {
+      "Index": 73,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0105\", \"bf5202091_in0105_01\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 74,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 75,
+      "Child": [
+        75
+      ]
+    },
+    {
+      "Index": 75,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 76,
+      "Child": [
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87
+      ]
+    },
+    {
+      "Index": 76,
+      "Node": "{ \"BattleFactorTurn\" : 2, 7} ",
+      "Next": 77,
+      "Child": []
+    },
+    {
+      "Index": 77,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"120218202,120219201,119219200,119220101,118220102\", \"in32001\"} ",
+      "Next": 78,
+      "Child": []
+    },
+    {
+      "Index": 78,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 79,
+      "Child": []
+    },
+    {
+      "Index": 79,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_681\"} ",
+      "Next": 80,
+      "Child": []
+    },
+    {
+      "Index": 80,
+      "Node": "{ \"BattleResultCameraMoveCell\" : \"205105200\", 0.00000, 6.00000} ",
+      "Next": 81,
+      "Child": []
+    },
+    {
+      "Index": 81,
+      "Node": "{ \"BattleResultAddUnit\" : \"in21005\", 1, 205105200, 1.00000, 0.00000} ",
+      "Next": 82,
+      "Child": []
+    },
+    {
+      "Index": 82,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in21005\", \"\", True} ",
+      "Next": 83,
+      "Child": []
+    },
+    {
+      "Index": 83,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_682\"} ",
+      "Next": 84,
+      "Child": []
+    },
+    {
+      "Index": 84,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_683\"} ",
+      "Next": 85,
+      "Child": []
+    },
+    {
+      "Index": 85,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5202091_2_16\", 0, 1, \"武昊遇刺事件＿是否在六回合内抵达逃脱点\"} ",
+      "Next": 86,
+      "Child": []
+    },
+    {
+      "Index": 86,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"btc5202091_01\", 1} ",
+      "Next": 87,
+      "Child": []
+    },
+    {
+      "Index": 87,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 88,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 89,
+      "Child": [
+        89
+      ]
+    },
+    {
+      "Index": 89,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 90,
+      "Child": [
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125
+      ]
+    },
+    {
+      "Index": 90,
+      "Node": "{ \"BattleFactorTurn\" : 1, 2} ",
+      "Next": 91,
+      "Child": []
+    },
+    {
+      "Index": 91,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe5202091_2_07\", \"武昊遇刺事件＿石崑出现了吗\"} ",
+      "Next": 92,
+      "Child": []
+    },
+    {
+      "Index": 92,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 93,
+      "Child": []
+    },
+    {
+      "Index": 93,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_512\"} ",
+      "Next": 94,
+      "Child": []
+    },
+    {
+      "Index": 94,
+      "Node": "{ \"BattleResultAddUnits\" : \"io471156,io471156,io471156\", 1, \"121221200,120222102,122223101\"} ",
+      "Next": 95,
+      "Child": []
+    },
+    {
+      "Index": 95,
+      "Node": "{ \"BattleResultAddUnits\" : \"io471016,io471016,io471016\", 1, \"139237202,137237200,137239102\"} ",
+      "Next": 96,
+      "Child": []
+    },
+    {
+      "Index": 96,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io471156,io471156,io471016\", \"\", True} ",
+      "Next": 97,
+      "Child": []
+    },
+    {
+      "Index": 97,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_513\"} ",
+      "Next": 98,
+      "Child": []
+    },
+    {
+      "Index": 98,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_514\"} ",
+      "Next": 99,
+      "Child": []
+    },
+    {
+      "Index": 99,
+      "Node": "{ \"BattleResultPlayAction\" : \"in21008\", \"f_empty_dodge00\", 90.00000} ",
+      "Next": 100,
+      "Child": []
+    },
+    {
+      "Index": 100,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0105\", 0, 143243200, 1.00000, 189.72000} ",
+      "Next": 101,
+      "Child": []
+    },
+    {
+      "Index": 101,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0105\", \"\", True} ",
+      "Next": 102,
+      "Child": []
+    },
+    {
+      "Index": 102,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_583\"} ",
+      "Next": 103,
+      "Child": []
+    },
+    {
+      "Index": 103,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_1255\"} ",
+      "Next": 104,
+      "Child": []
+    },
+    {
+      "Index": 104,
+      "Node": "{ \"BattleResultWaitAction\" : 0.20000} ",
+      "Next": 105,
+      "Child": []
+    },
+    {
+      "Index": 105,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0105\", \"\", True} ",
+      "Next": 106,
+      "Child": []
+    },
+    {
+      "Index": 106,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in0105\", False} ",
+      "Next": 107,
+      "Child": []
+    },
+    {
+      "Index": 107,
+      "Node": "{ \"BattleResultWaitAction\" : 0.20000} ",
+      "Next": 108,
+      "Child": []
+    },
+    {
+      "Index": 108,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_1272\"} ",
+      "Next": 109,
+      "Child": []
+    },
+    {
+      "Index": 109,
+      "Node": "{ \"BattleResultPalySound\" : \"skill_MA0705_b01.wav\", 1.00000} ",
+      "Next": 110,
+      "Child": []
+    },
+    {
+      "Index": 110,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_1296\"} ",
+      "Next": 111,
+      "Child": []
+    },
+    {
+      "Index": 111,
+      "Node": "{ \"BattleResultPlayAction\" : \"io471016\", \"m_empty_die00\", 0.00000} ",
+      "Next": 112,
+      "Child": []
+    },
+    {
+      "Index": 112,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"io471016\", True} ",
+      "Next": 113,
+      "Child": []
+    },
+    {
+      "Index": 113,
+      "Node": "{ \"BattleResultPlayAction\" : \"io471016\", \"m_empty_die00\", 0.00000} ",
+      "Next": 114,
+      "Child": []
+    },
+    {
+      "Index": 114,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"io471016\", True} ",
+      "Next": 115,
+      "Child": []
+    },
+    {
+      "Index": 115,
+      "Node": "{ \"BattleResultPlayAction\" : \"io471016\", \"m_empty_die00\", 0.00000} ",
+      "Next": 116,
+      "Child": []
+    },
+    {
+      "Index": 116,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"io471016\", True} ",
+      "Next": 117,
+      "Child": []
+    },
+    {
+      "Index": 117,
+      "Node": "{ \"BattleResultWaitAction\" : 0.20000} ",
+      "Next": 118,
+      "Child": []
+    },
+    {
+      "Index": 118,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0105\", 0, 130230200, 1.00000, 90.00000} ",
+      "Next": 119,
+      "Child": []
+    },
+    {
+      "Index": 119,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0105\", \"\", True} ",
+      "Next": 120,
+      "Child": []
+    },
+    {
+      "Index": 120,
+      "Node": "{ \"BattleResultWaitAction\" : 0.20000} ",
+      "Next": 121,
+      "Child": []
+    },
+    {
+      "Index": 121,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_1275\"} ",
+      "Next": 122,
+      "Child": []
+    },
+    {
+      "Index": 122,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_516\"} ",
+      "Next": 123,
+      "Child": []
+    },
+    {
+      "Index": 123,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_529\"} ",
+      "Next": 124,
+      "Child": []
+    },
+    {
+      "Index": 124,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5202091_2_07\", 0, 1, \"武昊遇刺事件＿石崑出现了吗\"} ",
+      "Next": 125,
+      "Child": []
+    },
+    {
+      "Index": 125,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0105\", \"bf5202091_in0105_01\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 126,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 127,
+      "Child": [
+        127
+      ]
+    },
+    {
+      "Index": 127,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 128,
+      "Child": [
+        128,
+        129,
+        130,
+        131
+      ]
+    },
+    {
+      "Index": 128,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in32001\"} ",
+      "Next": 129,
+      "Child": []
+    },
+    {
+      "Index": 129,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 130,
+      "Child": []
+    },
+    {
+      "Index": 130,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5202091_2_11\", 0, 1, \"武昊遇刺事件＿是否触发侠道泥尘结局\"} ",
+      "Next": 131,
+      "Child": []
+    },
+    {
+      "Index": 131,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 132,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 133,
+      "Child": [
+        133
+      ]
+    },
+    {
+      "Index": 133,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 134,
+      "Child": [
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141
+      ]
+    },
+    {
+      "Index": 134,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 20, \"in21008\"} ",
+      "Next": 135,
+      "Child": []
+    },
+    {
+      "Index": 135,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 136,
+      "Child": []
+    },
+    {
+      "Index": 136,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_678\"} ",
+      "Next": 137,
+      "Child": []
+    },
+    {
+      "Index": 137,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 138,
+      "Child": []
+    },
+    {
+      "Index": 138,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in21008\", \"\", True} ",
+      "Next": 139,
+      "Child": []
+    },
+    {
+      "Index": 139,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in21008\", False} ",
+      "Next": 140,
+      "Child": []
+    },
+    {
+      "Index": 140,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 141,
+      "Child": []
+    },
+    {
+      "Index": 141,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5202091_2_12\", 0, 1, \"武昊遇刺事件＿金丝薰初战血量削弱至2成\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 142,
+      "Node": "{ \"BattleEventNode\" : 300, 0, [ ]} ",
+      "Next": 143,
+      "Child": [
+        143
+      ]
+    },
+    {
+      "Index": 143,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 144,
+      "Child": [
+        144,
+        145,
+        146,
+        147
+      ]
+    },
+    {
+      "Index": 144,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"party00\"} ",
+      "Next": 145,
+      "Child": []
+    },
+    {
+      "Index": 145,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 146,
+      "Child": []
+    },
+    {
+      "Index": 146,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5202091_2_11\", 0, 1, \"武昊遇刺事件＿是否触发侠道泥尘结局\"} ",
+      "Next": 147,
+      "Child": []
+    },
+    {
+      "Index": 147,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 148,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 149,
+      "Child": [
+        149
+      ]
+    },
+    {
+      "Index": 149,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 150,
+      "Child": [
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158
+      ]
+    },
+    {
+      "Index": 150,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 100, \"io471056\"} ",
+      "Next": 151,
+      "Child": []
+    },
+    {
+      "Index": 151,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe5202091_2_13\", \"武昊遇刺事件＿后方刺客是否可以移动了\"} ",
+      "Next": 152,
+      "Child": []
+    },
+    {
+      "Index": 152,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 153,
+      "Child": []
+    },
+    {
+      "Index": 153,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_695\"} ",
+      "Next": 154,
+      "Child": []
+    },
+    {
+      "Index": 154,
+      "Node": "{ \"BattleResultWaitAction\" : 0.30000} ",
+      "Next": 155,
+      "Child": []
+    },
+    {
+      "Index": 155,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"io471056,io471056,io471056\", \"bf5202091_01_assassin_nomove\"} ",
+      "Next": 156,
+      "Child": []
+    },
+    {
+      "Index": 156,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io471056,io471056,io471056\", \"\", True} ",
+      "Next": 157,
+      "Child": []
+    },
+    {
+      "Index": 157,
+      "Node": "{ \"BattleResultWaitAction\" : 0.30000} ",
+      "Next": 158,
+      "Child": []
+    },
+    {
+      "Index": 158,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5202091_2_13\", 0, 1, \"武昊遇刺事件＿后方刺客是否可以移动了\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 159,
+      "Node": "{ \"BattleEventNode\" : 500, 0, [ ]} ",
+      "Next": 160,
+      "Child": [
+        160
+      ]
+    },
+    {
+      "Index": 160,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 161,
+      "Child": [
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170
+      ]
+    },
+    {
+      "Index": 161,
+      "Node": "{ \"BattleFactorTurn\" : 1, 2} ",
+      "Next": 162,
+      "Child": []
+    },
+    {
+      "Index": 162,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5202091_2_04\", \"武昊遇刺事件＿主人公是否中毒\"} ",
+      "Next": 163,
+      "Child": []
+    },
+    {
+      "Index": 163,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 164,
+      "Child": []
+    },
+    {
+      "Index": 164,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_684\"} ",
+      "Next": 165,
+      "Child": []
+    },
+    {
+      "Index": 165,
+      "Node": "{ \"BattleResultWaitAction\" : 0.20000} ",
+      "Next": 166,
+      "Child": []
+    },
+    {
+      "Index": 166,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"party00\", \"\", True} ",
+      "Next": 167,
+      "Child": []
+    },
+    {
+      "Index": 167,
+      "Node": "{ \"BattleResultPlayAction\" : \"party00\", \"m_empty_five00\", 0.00000} ",
+      "Next": 168,
+      "Child": []
+    },
+    {
+      "Index": 168,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 169,
+      "Child": []
+    },
+    {
+      "Index": 169,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_688\"} ",
+      "Next": 170,
+      "Child": []
+    },
+    {
+      "Index": 170,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"Player\", \"bf5202091_party00\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 171,
+      "Node": "{ \"BattleEventNode\" : 300, 0, [ ]} ",
+      "Next": 172,
+      "Child": [
+        172
+      ]
+    },
+    {
+      "Index": 172,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 173,
+      "Child": [
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179
+      ]
+    },
+    {
+      "Index": 173,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5202091_2_07\", \"武昊遇刺事件＿石崑出现了吗\"} ",
+      "Next": 174,
+      "Child": []
+    },
+    {
+      "Index": 174,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe5202091_2_13\", \"武昊遇刺事件＿后方刺客是否可以移动了\"} ",
+      "Next": 175,
+      "Child": []
+    },
+    {
+      "Index": 175,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 176,
+      "Child": []
+    },
+    {
+      "Index": 176,
+      "Node": "{ \"BattleResultWaitAction\" : 0.30000} ",
+      "Next": 177,
+      "Child": []
+    },
+    {
+      "Index": 177,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in21008\", \"bf5202091_in21008_nomove\"} ",
+      "Next": 178,
+      "Child": []
+    },
+    {
+      "Index": 178,
+      "Node": "{ \"BattleResultWaitAction\" : 0.30000} ",
+      "Next": 179,
+      "Child": []
+    },
+    {
+      "Index": 179,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5202091_2_13\", 0, 1, \"武昊遇刺事件＿后方刺客是否可以移动了\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 180,
+      "Node": "{ \"BattleEventNode\" : 300, 0, [ ]} ",
+      "Next": 181,
+      "Child": [
+        181
+      ]
+    },
+    {
+      "Index": 181,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 182,
+      "Child": [
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188
+      ]
+    },
+    {
+      "Index": 182,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"io471046,io471256\"} ",
+      "Next": 183,
+      "Child": []
+    },
+    {
+      "Index": 183,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe5202091_2_13\", \"武昊遇刺事件＿后方刺客是否可以移动了\"} ",
+      "Next": 184,
+      "Child": []
+    },
+    {
+      "Index": 184,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 185,
+      "Child": []
+    },
+    {
+      "Index": 185,
+      "Node": "{ \"BattleResultWaitAction\" : 0.30000} ",
+      "Next": 186,
+      "Child": []
+    },
+    {
+      "Index": 186,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in21008\", \"bf5202091_in21008_nomove\"} ",
+      "Next": 187,
+      "Child": []
+    },
+    {
+      "Index": 187,
+      "Node": "{ \"BattleResultWaitAction\" : 0.30000} ",
+      "Next": 188,
+      "Child": []
+    },
+    {
+      "Index": 188,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5202091_2_13\", 0, 1, \"武昊遇刺事件＿后方刺客是否可以移动了\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 189,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 190,
+      "Child": [
+        190
+      ]
+    },
+    {
+      "Index": 190,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 191,
+      "Child": [
+        191,
+        192,
+        193,
+        194
+      ]
+    },
+    {
+      "Index": 191,
+      "Node": "{ \"BattleFactorTurn\" : 1, 2} ",
+      "Next": 192,
+      "Child": []
+    },
+    {
+      "Index": 192,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 193,
+      "Child": []
+    },
+    {
+      "Index": 193,
+      "Node": "{ \"BattleResultWaitAction\" : 0.30000} ",
+      "Next": 194,
+      "Child": []
+    },
+    {
+      "Index": 194,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in21008\", \"bf5202091_in21008_nomove\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 195,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 196,
+      "Child": [
+        196
+      ]
+    },
+    {
+      "Index": 196,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 197,
+      "Child": [
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207
+      ]
+    },
+    {
+      "Index": 197,
+      "Node": "{ \"BattleFactorTurn\" : 0, 6} ",
+      "Next": 198,
+      "Child": []
+    },
+    {
+      "Index": 198,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"120218202,120219201,119219200,119220101,118220102\", \"in32001\"} ",
+      "Next": 199,
+      "Child": []
+    },
+    {
+      "Index": 199,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 200,
+      "Child": []
+    },
+    {
+      "Index": 200,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_681\"} ",
+      "Next": 201,
+      "Child": []
+    },
+    {
+      "Index": 201,
+      "Node": "{ \"BattleResultCameraMoveCell\" : \"205105200\", 0.00000, 6.00000} ",
+      "Next": 202,
+      "Child": []
+    },
+    {
+      "Index": 202,
+      "Node": "{ \"BattleResultAddUnit\" : \"in21005\", 1, 205105200, 1.00000, 0.00000} ",
+      "Next": 203,
+      "Child": []
+    },
+    {
+      "Index": 203,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in21005\", \"\", True} ",
+      "Next": 204,
+      "Child": []
+    },
+    {
+      "Index": 204,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_682\"} ",
+      "Next": 205,
+      "Child": []
+    },
+    {
+      "Index": 205,
+      "Node": "{ \"BattleResultTalk\" : \"t5202091_683\"} ",
+      "Next": 206,
+      "Child": []
+    },
+    {
+      "Index": 206,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"btc5202091_01\", 2} ",
+      "Next": 207,
+      "Child": []
+    },
+    {
+      "Index": 207,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "官道大桥遇袭战",
+  "WinTip": "Wu Hao arrives at escape point",
+  "LoseTip": "{name_1}{name_2}、 Wu Hao either defeated"
+}

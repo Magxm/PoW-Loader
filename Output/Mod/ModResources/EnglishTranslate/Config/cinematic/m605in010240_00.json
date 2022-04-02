@@ -3,7 +3,7 @@
   "Nodes": [
     {
       "Node": "{ \"TimerAction\" : 0.20000} ",
-      "Next": 3,
+      "Next": 11,
       "Prallel": -1
     },
     {
@@ -32,7 +32,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"LoadScenesAction\" : \"S0302\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0} ",
+      "Node": "{ \"LoadScenesAction\" : \"S0302\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0, \"\"} ",
       "Next": 7,
       "Prallel": -1
     },
@@ -54,6 +54,16 @@
     {
       "Node": "{ \"TalkAction\" : \"t1010205_087\"} ",
       "Next": 9,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckCurrentRound\" : 1, 1, 168, \"\"}  ], 0} , 3, 12} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010200_042\"} ",
+      "Next": -1,
       "Prallel": -1
     }
   ],

@@ -1,1 +1,30 @@
-07test		{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "Player", 0, 101203102, 1.00000, 0.00000} , { "BattleResultAddBuff" : True, "Player", "07test", True}  ]}  ]} 			
+{
+  "Id": "07test",
+  "Name": "",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"Player\", 0, 101203102, 1.00000, 0.00000} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"07test\", True} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "",
+  "WinTip": "",
+  "LoseTip": ""
+}

@@ -1,0 +1,618 @@
+{
+  "Id": "bs1010307_02A",
+  "Name": "",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Prallel": -1,
+      "Child": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        35,
+        36,
+        70,
+        71,
+        73
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"Player\", 0, 203201104, 1.00000, 0.00000} ",
+      "Next": 2,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0103\", 0, 206102104, 1.00000, 0.00000} ",
+      "Next": 3,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnits\" : \"in33011,in33012\", 3, \"203203106,204200104\"} ",
+      "Next": 4,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultAddUnit\" : \"in33001\", 3, 104101205, 1.00000, 0.00000} ",
+      "Next": 5,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in33001\", \"\", True} ",
+      "Next": 35,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 74,
+      "Prallel": -1,
+      "Child": [
+        74
+      ]
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 72,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultTalk\" : \"t1010307_457\"} ",
+      "Next": 9,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 10,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultTalk\" : \"t1010307_460\"} ",
+      "Next": 11,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in33011,in33012\", \"103201202,101103204\"} ",
+      "Next": 12,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultTalk\" : \"t1010307_467\"} ",
+      "Next": 13,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleResultTalk\" : \"t1010307_476\"} ",
+      "Next": 14,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1010307_2_03\", 0, 1, \"锺若昕事件战斗阶段_触发第二阶段_是\"} ",
+      "Next": 15,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Chung Tin Yiu\"} ",
+      "Next": 16,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"All friendly unit defeated\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 18,
+      "Prallel": -1,
+      "Child": [
+        18
+      ]
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 19,
+      "Prallel": -1,
+      "Child": [
+        19,
+        21,
+        20,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1010307_2_03\", \"锺若昕事件战斗阶段_触发第二阶段\"} ",
+      "Next": 21,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleAttackUnitCondition\" : \"in33001\", \"in0103\"} ",
+      "Next": 27,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1010307_2_04\", \"锺若昕事件战斗特殊对话（二\"} ",
+      "Next": 20,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 23,
+      "Prallel": -1,
+      "Child": [
+        23
+      ]
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 24,
+      "Prallel": -1,
+      "Child": [
+        24,
+        26,
+        25,
+        30,
+        31,
+        32
+      ]
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1010307_2_03\", \"锺若昕事件战斗阶段_触发第二阶段\"} ",
+      "Next": 26,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleAttackUnitCondition\" : \"in33001\", \"party00\"} ",
+      "Next": 30,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1010307_2_04\", \"锺若昕事件战斗特殊对话（二\"} ",
+      "Next": 25,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 28,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleResultTalk\" : \"t1010307_485\"} ",
+      "Next": 29,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1010307_2_04\", 0, 1, \"锺若昕事件战斗特殊对话_是\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 31,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleResultTalk\" : \"t1010307_485\"} ",
+      "Next": 32,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1010307_2_04\", 0, 1, \"锺若昕事件战斗特殊对话_是\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 34,
+      "Prallel": -1,
+      "Child": [
+        34
+      ]
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 37,
+      "Prallel": -1,
+      "Child": [
+        37,
+        41,
+        38,
+        40,
+        39,
+        42
+      ]
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0103\", \"bt1010307_in0103hplock2\", True} ",
+      "Next": 36,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"BattlChanageFaction\" : 1, \"in33001\"} ",
+      "Next": 70,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 1, \"in0103\"} ",
+      "Next": 41,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 40,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0103\", \"bt1010307_in0103Immortal\", True} ",
+      "Next": 42,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"BattleResultTalk\" : \"t1010307_908\"} ",
+      "Next": 39,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1010307_2_06\", \"锺若昕事件回光返照对话\"} ",
+      "Next": 38,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1010307_2_06\", 0, 1, \"锺若昕事件回光返照对话_是\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 44,
+      "Prallel": -1,
+      "Child": [
+        44
+      ]
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 45,
+      "Prallel": -1,
+      "Child": [
+        45,
+        48,
+        47,
+        46
+      ]
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 1, \"in0103\"} ",
+      "Next": 48,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0103\", \"bt1010307_in0103Immortal\", True} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"BattleResultTalk\" : \"t1010307_913\"} ",
+      "Next": 46,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1010307_2_06\", \"锺若昕事件回光返照对话\"} ",
+      "Next": 47,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 50,
+      "Prallel": -1,
+      "Child": [
+        50
+      ]
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 51,
+      "Prallel": -1,
+      "Child": [
+        51,
+        56,
+        52
+      ]
+    },
+    {
+      "Index": 51,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"party00\"} ",
+      "Next": 56,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 52,
+      "Node": "{ \"BattleResultTalk\" : \"t1010307_916\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 53,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 54,
+      "Prallel": -1,
+      "Child": [
+        54
+      ]
+    },
+    {
+      "Index": 54,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 55,
+      "Prallel": -1,
+      "Child": [
+        55,
+        57,
+        58
+      ]
+    },
+    {
+      "Index": 55,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in33011\"} ",
+      "Next": 57,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 56,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 52,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 57,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 58,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 58,
+      "Node": "{ \"BattleResultTalk\" : \"t1010307_900\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 59,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 63,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 60,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 61,
+      "Prallel": -1,
+      "Child": [
+        61
+      ]
+    },
+    {
+      "Index": 61,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 62,
+      "Prallel": -1,
+      "Child": [
+        62,
+        59,
+        63
+      ]
+    },
+    {
+      "Index": 62,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in33012\"} ",
+      "Next": 59,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 63,
+      "Node": "{ \"BattleResultTalk\" : \"t1010307_904\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 64,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 68,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 65,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 66,
+      "Prallel": -1,
+      "Child": [
+        66
+      ]
+    },
+    {
+      "Index": 66,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 67,
+      "Prallel": -1,
+      "Child": [
+        67,
+        64,
+        68,
+        69
+      ]
+    },
+    {
+      "Index": 67,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in33001\"} ",
+      "Next": 64,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 68,
+      "Node": "{ \"BattleResultTalk\" : \"t1010307_922\"} ",
+      "Next": 69,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 69,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 70,
+      "Node": "{ \"BattlChanageFaction\" : 1, \"in33011\"} ",
+      "Next": 71,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 71,
+      "Node": "{ \"BattlChanageFaction\" : 1, \"in33012\"} ",
+      "Next": 73,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 72,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 8,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 73,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in33001\", \"bt1010307_in33001\", False} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 74,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 7,
+      "Prallel": -1,
+      "Child": [
+        7,
+        72,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    }
+  ],
+  "Remark": "锺若昕七＿第二战斗胜利VER",
+  "WinTip": "",
+  "LoseTip": ""
+}

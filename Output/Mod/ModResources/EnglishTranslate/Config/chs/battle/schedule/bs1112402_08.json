@@ -1,1 +1,251 @@
-bs1112402_08	bs1112402_08	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "Player", 0, 102204102, 1.00000} , { "BattleResultAddUnit" : "in0103", 1, 105201204, 1.00000} , { "SetIsShowSpecial" : False}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 1} , { "BattleFactorLocalFlag" : 1, 0, "btf1112402_08_00", ""} , { "BattleResultAddUnit" : "in91002", 2, 101205104, 1.50000} , { "BattleResultAddUnit" : "in91001", 1, 106200206, 1.50000} , { "BattleResultTalk" : "t1112402_bs0131"} , { "SetLocalFlagBattleAction" : "btf1112402_08_00", 0, 1, ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in0103"} , { "BattleFactorLocalFlag" : 1, 1, "btf1112402_08_01", ""} , { "SetIsShowSpecial" : True} , { "SetLocalFlagBattleAction" : "btf1112402_08_01", 0, 1, ""} , { "BattleResultTalk" : "t1112402_bs0143"} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "Player"} , { "BattleFactorLocalFlag" : 1, 0, "btf1112402_08_02", ""} , { "SetIsShowSpecial" : True} , { "SetLocalFlagBattleAction" : "btf1112402_08_02", 0, 1, ""} , { "BattleResultTalk" : "t1112402_bs0144"} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "BattleFactorLocalFlag" : 1, 0, "btf1112402_08_01", ""} , { "BattleResultTalk" : "t1112402_bs0136"} , { "SetLocalFlagBattleAction" : "btf1112402_08_01", 0, 1, ""}  ]}  ]}  ]} 	锺若昕留守战	Defeat Zhong Ruoxin。	{name_1}{name_2}is defeated。
+{
+  "Id": "bs1112402_08",
+  "Name": "bs1112402_08",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"Player\", 0, 102204102, 1.00000, 0.00000} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0103\", 1, 105201204, 1.00000, 0.00000} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"SetIsShowSpecial\" : False} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 5,
+      "Child": [
+        5
+      ]
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 6,
+      "Child": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleFactorTurn\" : 1, 1} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1112402_08_00\", \"\"} ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultAddUnit\" : \"in91002\", 2, 101205104, 1.50000, 0.00000} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultAddUnit\" : \"in91001\", 1, 106200206, 1.50000, 0.00000} ",
+      "Next": 10,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultTalk\" : \"t1112402_bs0131\"} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1112402_08_00\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 13,
+      "Child": [
+        13
+      ]
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 14,
+      "Child": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0103\"} ",
+      "Next": 15,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1112402_08_01\", \"\"} ",
+      "Next": 16,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"SetIsShowSpecial\" : True} ",
+      "Next": 17,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1112402_08_01\", 0, 1, \"\"} ",
+      "Next": 18,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleResultTalk\" : \"t1112402_bs0143\"} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 21,
+      "Child": [
+        21
+      ]
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 22,
+      "Child": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player\"} ",
+      "Next": 23,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1112402_08_02\", \"\"} ",
+      "Next": 24,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"SetIsShowSpecial\" : True} ",
+      "Next": 25,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1112402_08_02\", 0, 1, \"\"} ",
+      "Next": 26,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleResultTalk\" : \"t1112402_bs0144\"} ",
+      "Next": 27,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 29,
+      "Child": [
+        29
+      ]
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 30,
+      "Child": [
+        30,
+        31,
+        32,
+        33
+      ]
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 31,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1112402_08_01\", \"\"} ",
+      "Next": 32,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleResultTalk\" : \"t1112402_bs0136\"} ",
+      "Next": 33,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1112402_08_01\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "锺若昕留守战",
+  "WinTip": "Zhong Ruoxin is defeated",
+  "LoseTip": "{name_1}{name_2} is defeated.。"
+}

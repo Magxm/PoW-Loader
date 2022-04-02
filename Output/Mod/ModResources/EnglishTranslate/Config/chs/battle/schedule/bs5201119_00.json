@@ -1,1 +1,159 @@
-bs5201119_00		{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnits" : "in05371,in05372,in05373,in05374,in05375", 1, "201102201,200201101,200104204,205104101,204101103"} , { "BattleResultAddUnit" : "in0106", 0, 202204106, 1.00000, 0.00000} , { "BattleResultAddUnit" : "Player", 0, 204203107, 1.00000, 0.00000}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "ExecuteOnceNode" } , { "BattleResultAddBuff" : True, "in05371,in05372,in05373,in05374,in05375", "bt5201119_debuff_DizzyOldman", False} , { "BattleResultTalk" : "t5201119_045"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 0} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5201119_050"} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 1} , { "ExecuteOnceNode" } , { "BattleResultWin" : ""}  ]}  ]}  ]} 	五老山人	Defeat the Five Elder Mountain Hermits	All friendly characters defeated。
+{
+  "Id": "bs5201119_00",
+  "Name": "",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnits\" : \"in05371,in05372,in05373,in05374,in05375\", 1, \"201102201,200201101,200104204,205104101,204101103\"} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0106\", 0, 202204106, 1.00000, 0.00000} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnit\" : \"Player\", 0, 204203107, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 5,
+      "Child": [
+        5
+      ]
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 6,
+      "Child": [
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05371,in05372,in05373,in05374,in05375\", \"bt5201119_debuff_DizzyOldman\", False} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultTalk\" : \"t5201119_045\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 11,
+      "Child": [
+        11
+      ]
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 12,
+      "Child": [
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 0} ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 14,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultTalk\" : \"t5201119_050\"} ",
+      "Next": 15,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 17,
+      "Child": [
+        17
+      ]
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 18,
+      "Child": [
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 20,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "五老山人",
+  "WinTip": "Defeat Five Elder Mountain Man",
+  "LoseTip": "All of our troops are dead"
+}

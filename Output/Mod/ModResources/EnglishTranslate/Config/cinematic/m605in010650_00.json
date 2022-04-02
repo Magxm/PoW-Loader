@@ -3,11 +3,11 @@
   "Nodes": [
     {
       "Node": "{ \"TimerAction\" : 0.50000} ",
-      "Next": 1,
+      "Next": 22,
       "Prallel": -1
     },
     {
-      "Node": "{ \"LoadScenesAction\" : \"S0107\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0} ",
+      "Node": "{ \"LoadScenesAction\" : \"S0107\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0, \"\"} ",
       "Next": 6,
       "Prallel": -1
     },
@@ -77,7 +77,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0} ",
+      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0, \"\"} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -104,6 +104,16 @@
     {
       "Node": "{ \"TalkAction\" : \"t1010600_025\"} ",
       "Next": 13,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"RunCinematicAction\" : \"m605in010650_01\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckCurrentRound\" : 121, 1, 180, \"\"} , { \"CheckPlayerUpgradableProperty\" : 0, 399, 2030}  ], 0} , 21, 1} ",
+      "Next": -1,
       "Prallel": -1
     }
   ],

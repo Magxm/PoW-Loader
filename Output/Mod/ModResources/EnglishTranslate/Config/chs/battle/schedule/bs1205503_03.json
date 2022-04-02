@@ -1,1 +1,109 @@
-bs1205503_03	夏校穴獾寨内牢房战	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnits" : "Player,in0107,party01,party02,party03", 0, "202101101,201102201,203103200,205103102,203105202"}  ]} , { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnits" : "in05835,in05836,in05837", 1, "101201200,201202103,102102204"}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 0} , { "ExecuteOnceNode" } , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 1} , { "ExecuteOnceNode" } , { "BattleResultWin" : ""}  ]}  ]}  ]} 		Defeat Corpse Zombie!	All friendly units defeated。
+{
+  "Id": "bs1205503_03",
+  "Name": "夏校穴獾寨内牢房战",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnits\" : \"Player,in0107,party01,party02,party03\", 0, \"202101101,201102201,203103200,205103102,203105202\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 3,
+      "Child": [
+        3
+      ]
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnits\" : \"in05835,in05836,in05837\", 1, \"101201200,201202103,102102204\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 5,
+      "Child": [
+        5
+      ]
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 6,
+      "Child": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 0} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 10,
+      "Child": [
+        10
+      ]
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 11,
+      "Child": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "",
+  "WinTip": "Defeat Corpse Zombie!",
+  "LoseTip": "All friendly units are defeated"
+}

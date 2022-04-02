@@ -1,1 +1,970 @@
-bs5201110_00	t5201109	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnits" : "io041251,Player,io041255", 0, "103218115,101218117,201217118"} , { "BattleResultMoveUnit" : "", "103217114,101217116,201216117"}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "ExecuteOnceNode" } , { "BattleResultCameraMoveUnit" : "Player", 0.00000, 15.00000} , { "BattleResultTalk" : "t5201110_019"} , { "BattleResultAddUnit" : "in05358", 1, 203218121, 1.00000, 0.00000} , { "BattleResultAddBuff" : True, "in05358", "bt5201110_buff_SuperRobot", True} , { "BattleResultMoveUnit" : "in05358", "201218119"} , { "BattleResultTalk" : "t5201110_021"} , { "BattleResultEventPoint" : "104102206,203102101"} , { "BattleResultCameraMoveCell" : "203102101", 0.00000, 15.00000} , { "BattleResultTalk" : "t5201110_023"} , { "BattleResultChangeWinTip" : "step on pressure plate and defeat the plated automanton。"} , { "BattleResultEventPoint" : "101216115,101217116,200216116,104212108,104213109,103212109,105208103,105209104,104208104,101205104,101206105,200205105,200201101,101202101,200202102"} , { "BattleResultCameraMoveCell" : "105209104", 0.00000, 20.00000} , { "BattleResultTalk" : "t5201110_031"} , { "BattleResultRemoveEventPoint" : "101216115,101217116,200216116,104212108,104213109,103212109,105208103,105209104,104208104,101205104,101206105,200205105,200201101,101202101,200202102"}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 2} , { "ExecuteOnceNode" } , { "BattleResultAddUnit" : "in05359", 1, 106214108, 1.00000, 0.00000} , { "BattleResultMoveUnit" : "in05359", "105213108"} , { "BattleResultTalk" : "t5201110_040"}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 4} , { "ExecuteOnceNode" } , { "BattleResultAddUnit" : "in05360", 1, 201205106, 1.00000, 0.00000} , { "BattleResultMoveUnit" : "in05360", "101205104"} , { "BattleResultTalk" : "t5201110_041"}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 6} , { "ExecuteOnceNode" } , { "BattleResultAddUnit" : "in05361", 1, 104202202, 1.00000, 0.00000} , { "BattleResultMoveUnit" : "in05361", "102200202"} , { "BattleResultTalk" : "t5201110_042"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "io041251,io041255"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5201110_037"} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in05358"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5201110_032"} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 400, 1, [ { "StepByStepNode" : [ { "BattleFactorCharacterTile" : "101216115,101217116,200216116", "io041251,io041255,Player"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5201110_044"} , { "BattleResultEventPoint" : "101216115,101217116,200216116"} , { "BattleResultAddBuff" : True, "io041251", "bt5201110_debuff_LossBlood1", False} , { "BattleResultAddBuff" : True, "io041255", "bt5201110_debuff_LossBlood1", False} , { "BattleResultAddBuff" : True, "Player", "bt5201110_debuff_LossBlood1", False} , { "SetGlobalFlagBattleAction" : "fe5201110_2_00", 1, 1, "锻炼新生灵巧：触发机关的数量"}  ]}  ]} , { "BattleEventNode" : 400, 1, [ { "StepByStepNode" : [ { "BattleFactorCharacterTile" : "104212108,104213109,103212109", "io041251,io041255,Player"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5201110_047"} , { "BattleResultEventPoint" : "104212108,104213109,103212109"} , { "BattleResultAddBuff" : True, "io041251", "bt5201110_debuff_MoveSlow", False} , { "BattleResultAddBuff" : True, "io041255", "bt5201110_debuff_MoveSlow", False} , { "BattleResultAddBuff" : True, "Player", "bt5201110_debuff_MoveSlow", False} , { "SetGlobalFlagBattleAction" : "fe5201110_2_00", 1, 1, "锻炼新生灵巧：触发机关的数量"}  ]}  ]} , { "BattleEventNode" : 400, 1, [ { "StepByStepNode" : [ { "BattleFactorCharacterTile" : "105208103,105209104,104208104", "io041251,io041255,Player"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5201110_050"} , { "BattleResultEventPoint" : "105208103,105209104,104208104"} , { "BattleResultAddBuff" : True, "io041251", "bt5201110_debuff_Blind", False} , { "BattleResultAddBuff" : True, "io041255", "bt5201110_debuff_Blind", False} , { "BattleResultAddBuff" : True, "Player", "bt5201110_debuff_Blind", False} , { "SetGlobalFlagBattleAction" : "fe5201110_2_00", 1, 1, "锻炼新生灵巧：触发机关的数量"}  ]}  ]} , { "BattleEventNode" : 400, 1, [ { "StepByStepNode" : [ { "BattleFactorCharacterTile" : "101205104,101206105,200205105", "io041251,io041255,Player"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5201110_046"} , { "BattleResultEventPoint" : "101205104,101206105,200205105"} , { "BattleResultAddBuff" : True, "io041251", "bt5201110_debuff_LossBlood2", False} , { "BattleResultAddBuff" : True, "io041255", "bt5201110_debuff_LossBlood2", False} , { "BattleResultAddBuff" : True, "Player", "bt5201110_debuff_LossBlood2", False} , { "SetGlobalFlagBattleAction" : "fe5201110_2_00", 1, 1, "锻炼新生灵巧：触发机关的数量"}  ]}  ]} , { "BattleEventNode" : 400, 1, [ { "StepByStepNode" : [ { "BattleFactorCharacterTile" : "200201101,101202101,200202102", "io041251,io041255,Player"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5201110_052"} , { "BattleResultEventPoint" : "200201101,101202101,200202102"} , { "BattleResultAddBuff" : True, "io041251", "bt5201110_debuff_DefenseLoss", False} , { "BattleResultAddBuff" : True, "io041255", "bt5201110_debuff_DefenseLoss", False} , { "BattleResultAddBuff" : True, "Player", "bt5201110_debuff_DefenseLoss", False} , { "SetGlobalFlagBattleAction" : "fe5201110_2_00", 1, 1, "锻炼新生灵巧：触发机关的数量"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "io041251"} , { "ExecuteOnceNode" } , { "SetGlobalFlagBattleAction" : "fe5201110_2_02", 0, 1, "锻炼新生灵巧：师弟是否全数存活"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "io041255"} , { "ExecuteOnceNode" } , { "SetGlobalFlagBattleAction" : "fe5201110_2_02", 0, 1, "锻炼新生灵巧：师弟是否全数存活"}  ]}  ]} , { "BattleEventNode" : 500, 0, [ { "StepByStepNode" : [ { "BattleFactorCharacterTile" : "104102206", "io041251,io041255,Player"} , { "BattleFactorCharacterTile" : "203102101", "io041251,io041255,Player"} , { "BattleFactorLocalFlag" : 1, 0, "btf5201110_097", "机关人未降下板甲"} , { "ExecuteOnceNode" } , { "BattleResultRmoveBuff" : "in05358", "bt5201110_buff_SuperRobot"} , { "BattleResultTalk" : "t5201110_055"} , { "SetLocalFlagBattleAction" : "btf5201110_097", 0, 1, "机关人已降下板甲"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorCharacterTile" : "104102206", "io041251,io041255,Player"} , { "ExecuteOnceNode" } , { "SetGlobalFlagBattleAction" : "fe5201110_2_03", 0, 1, "压力板A踩中"} , { "BattleResultTalk" : "t5201110_058"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorCharacterTile" : "203102101", "io041251,io041255,Player"} , { "ExecuteOnceNode" } , { "SetGlobalFlagBattleAction" : "fe5201110_2_04", 0, 1, "压力板B踩中"} , { "BattleResultTalk" : "t5201110_059"}  ]}  ]}  ]} 		Defeat the armored automanton	Junior Brothers are defeated.
+{
+  "Id": "bs5201110_00",
+  "Name": "t5201109",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnits\" : \"io041251,Player,io041255\", 0, \"103218115,101218117,201217118\"} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultMoveUnit\" : \"\", \"103217114,101217116,201216117\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 4,
+      "Child": [
+        4
+      ]
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 5,
+      "Child": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 6,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleResultCameraMoveUnit\" : \"Player\", 0.00000, 15.00000} ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultTalk\" : \"t5201110_019\"} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05358\", 1, 203218121, 1.00000, 0.00000} ",
+      "Next": 10,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05358\", \"bt5201110_buff_SuperRobot\", True} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in05358\", \"201218119\"} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultTalk\" : \"t5201110_021\"} ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleResultEventPoint\" : \"104102206,203102101\"} ",
+      "Next": 14,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultCameraMoveCell\" : \"203102101\", 0.00000, 15.00000} ",
+      "Next": 15,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleResultTalk\" : \"t5201110_023\"} ",
+      "Next": 16,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"踩踏压力板，并Defeat the plate armor Gimmick man\"} ",
+      "Next": 17,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleResultEventPoint\" : \"101216115,101217116,200216116,104212108,104213109,103212109,105208103,105209104,104208104,101205104,101206105,200205105,200201101,101202101,200202102\"} ",
+      "Next": 18,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleResultCameraMoveCell\" : \"105209104\", 0.00000, 20.00000} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleResultTalk\" : \"t5201110_031\"} ",
+      "Next": 20,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultRemoveEventPoint\" : \"101216115,101217116,200216116,104212108,104213109,103212109,105208103,105209104,104208104,101205104,101206105,200205105,200201101,101202101,200202102\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 22,
+      "Child": [
+        22
+      ]
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 23,
+      "Child": [
+        23,
+        24,
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleFactorTurn\" : 1, 2} ",
+      "Next": 24,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 25,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05359\", 1, 106214108, 1.00000, 0.00000} ",
+      "Next": 26,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in05359\", \"105213108\"} ",
+      "Next": 27,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleResultTalk\" : \"t5201110_040\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 29,
+      "Child": [
+        29
+      ]
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 30,
+      "Child": [
+        30,
+        31,
+        32,
+        33,
+        34
+      ]
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleFactorTurn\" : 1, 4} ",
+      "Next": 31,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 32,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05360\", 1, 201205106, 1.00000, 0.00000} ",
+      "Next": 33,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in05360\", \"101205104\"} ",
+      "Next": 34,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleResultTalk\" : \"t5201110_041\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 36,
+      "Child": [
+        36
+      ]
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 37,
+      "Child": [
+        37,
+        38,
+        39,
+        40,
+        41
+      ]
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleFactorTurn\" : 1, 6} ",
+      "Next": 38,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 39,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05361\", 1, 104202202, 1.00000, 0.00000} ",
+      "Next": 40,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in05361\", \"102200202\"} ",
+      "Next": 41,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleResultTalk\" : \"t5201110_042\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 43,
+      "Child": [
+        43
+      ]
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 44,
+      "Child": [
+        44,
+        45,
+        46,
+        47
+      ]
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"io041251,io041255\"} ",
+      "Next": 45,
+      "Child": []
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 46,
+      "Child": []
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"BattleResultTalk\" : \"t5201110_037\"} ",
+      "Next": 47,
+      "Child": []
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 49,
+      "Child": [
+        49
+      ]
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 50,
+      "Child": [
+        50,
+        51,
+        52,
+        53
+      ]
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05358\"} ",
+      "Next": 51,
+      "Child": []
+    },
+    {
+      "Index": 51,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 52,
+      "Child": []
+    },
+    {
+      "Index": 52,
+      "Node": "{ \"BattleResultTalk\" : \"t5201110_032\"} ",
+      "Next": 53,
+      "Child": []
+    },
+    {
+      "Index": 53,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 54,
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
+      "Next": 55,
+      "Child": [
+        55
+      ]
+    },
+    {
+      "Index": 55,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 56,
+      "Child": [
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63
+      ]
+    },
+    {
+      "Index": 56,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"101216115,101217116,200216116\", \"io041251,io041255,Player\"} ",
+      "Next": 57,
+      "Child": []
+    },
+    {
+      "Index": 57,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 58,
+      "Child": []
+    },
+    {
+      "Index": 58,
+      "Node": "{ \"BattleResultTalk\" : \"t5201110_044\"} ",
+      "Next": 59,
+      "Child": []
+    },
+    {
+      "Index": 59,
+      "Node": "{ \"BattleResultEventPoint\" : \"101216115,101217116,200216116\"} ",
+      "Next": 60,
+      "Child": []
+    },
+    {
+      "Index": 60,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io041251\", \"bt5201110_debuff_LossBlood1\", False} ",
+      "Next": 61,
+      "Child": []
+    },
+    {
+      "Index": 61,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io041255\", \"bt5201110_debuff_LossBlood1\", False} ",
+      "Next": 62,
+      "Child": []
+    },
+    {
+      "Index": 62,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"bt5201110_debuff_LossBlood1\", False} ",
+      "Next": 63,
+      "Child": []
+    },
+    {
+      "Index": 63,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201110_2_00\", 1, 1, \"锻炼新生灵巧：触发机关的数量\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 64,
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
+      "Next": 65,
+      "Child": [
+        65
+      ]
+    },
+    {
+      "Index": 65,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 66,
+      "Child": [
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73
+      ]
+    },
+    {
+      "Index": 66,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"104212108,104213109,103212109\", \"io041251,io041255,Player\"} ",
+      "Next": 67,
+      "Child": []
+    },
+    {
+      "Index": 67,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 68,
+      "Child": []
+    },
+    {
+      "Index": 68,
+      "Node": "{ \"BattleResultTalk\" : \"t5201110_047\"} ",
+      "Next": 69,
+      "Child": []
+    },
+    {
+      "Index": 69,
+      "Node": "{ \"BattleResultEventPoint\" : \"104212108,104213109,103212109\"} ",
+      "Next": 70,
+      "Child": []
+    },
+    {
+      "Index": 70,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io041251\", \"bt5201110_debuff_MoveSlow\", False} ",
+      "Next": 71,
+      "Child": []
+    },
+    {
+      "Index": 71,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io041255\", \"bt5201110_debuff_MoveSlow\", False} ",
+      "Next": 72,
+      "Child": []
+    },
+    {
+      "Index": 72,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"bt5201110_debuff_MoveSlow\", False} ",
+      "Next": 73,
+      "Child": []
+    },
+    {
+      "Index": 73,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201110_2_00\", 1, 1, \"锻炼新生灵巧：触发机关的数量\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 74,
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
+      "Next": 75,
+      "Child": [
+        75
+      ]
+    },
+    {
+      "Index": 75,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 76,
+      "Child": [
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83
+      ]
+    },
+    {
+      "Index": 76,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"105208103,105209104,104208104\", \"io041251,io041255,Player\"} ",
+      "Next": 77,
+      "Child": []
+    },
+    {
+      "Index": 77,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 78,
+      "Child": []
+    },
+    {
+      "Index": 78,
+      "Node": "{ \"BattleResultTalk\" : \"t5201110_050\"} ",
+      "Next": 79,
+      "Child": []
+    },
+    {
+      "Index": 79,
+      "Node": "{ \"BattleResultEventPoint\" : \"105208103,105209104,104208104\"} ",
+      "Next": 80,
+      "Child": []
+    },
+    {
+      "Index": 80,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io041251\", \"bt5201110_debuff_Blind\", False} ",
+      "Next": 81,
+      "Child": []
+    },
+    {
+      "Index": 81,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io041255\", \"bt5201110_debuff_Blind\", False} ",
+      "Next": 82,
+      "Child": []
+    },
+    {
+      "Index": 82,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"bt5201110_debuff_Blind\", False} ",
+      "Next": 83,
+      "Child": []
+    },
+    {
+      "Index": 83,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201110_2_00\", 1, 1, \"锻炼新生灵巧：触发机关的数量\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 84,
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
+      "Next": 85,
+      "Child": [
+        85
+      ]
+    },
+    {
+      "Index": 85,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 86,
+      "Child": [
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93
+      ]
+    },
+    {
+      "Index": 86,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"101205104,101206105,200205105\", \"io041251,io041255,Player\"} ",
+      "Next": 87,
+      "Child": []
+    },
+    {
+      "Index": 87,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 88,
+      "Child": []
+    },
+    {
+      "Index": 88,
+      "Node": "{ \"BattleResultTalk\" : \"t5201110_046\"} ",
+      "Next": 89,
+      "Child": []
+    },
+    {
+      "Index": 89,
+      "Node": "{ \"BattleResultEventPoint\" : \"101205104,101206105,200205105\"} ",
+      "Next": 90,
+      "Child": []
+    },
+    {
+      "Index": 90,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io041251\", \"bt5201110_debuff_LossBlood2\", False} ",
+      "Next": 91,
+      "Child": []
+    },
+    {
+      "Index": 91,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io041255\", \"bt5201110_debuff_LossBlood2\", False} ",
+      "Next": 92,
+      "Child": []
+    },
+    {
+      "Index": 92,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"bt5201110_debuff_LossBlood2\", False} ",
+      "Next": 93,
+      "Child": []
+    },
+    {
+      "Index": 93,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201110_2_00\", 1, 1, \"锻炼新生灵巧：触发机关的数量\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 94,
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
+      "Next": 95,
+      "Child": [
+        95
+      ]
+    },
+    {
+      "Index": 95,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 96,
+      "Child": [
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103
+      ]
+    },
+    {
+      "Index": 96,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"200201101,101202101,200202102\", \"io041251,io041255,Player\"} ",
+      "Next": 97,
+      "Child": []
+    },
+    {
+      "Index": 97,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 98,
+      "Child": []
+    },
+    {
+      "Index": 98,
+      "Node": "{ \"BattleResultTalk\" : \"t5201110_052\"} ",
+      "Next": 99,
+      "Child": []
+    },
+    {
+      "Index": 99,
+      "Node": "{ \"BattleResultEventPoint\" : \"200201101,101202101,200202102\"} ",
+      "Next": 100,
+      "Child": []
+    },
+    {
+      "Index": 100,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io041251\", \"bt5201110_debuff_DefenseLoss\", False} ",
+      "Next": 101,
+      "Child": []
+    },
+    {
+      "Index": 101,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io041255\", \"bt5201110_debuff_DefenseLoss\", False} ",
+      "Next": 102,
+      "Child": []
+    },
+    {
+      "Index": 102,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"bt5201110_debuff_DefenseLoss\", False} ",
+      "Next": 103,
+      "Child": []
+    },
+    {
+      "Index": 103,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201110_2_00\", 1, 1, \"锻炼新生灵巧：触发机关的数量\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 104,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 105,
+      "Child": [
+        105
+      ]
+    },
+    {
+      "Index": 105,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 106,
+      "Child": [
+        106,
+        107,
+        108
+      ]
+    },
+    {
+      "Index": 106,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"io041251\"} ",
+      "Next": 107,
+      "Child": []
+    },
+    {
+      "Index": 107,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 108,
+      "Child": []
+    },
+    {
+      "Index": 108,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201110_2_02\", 0, 1, \"锻炼新生灵巧：师弟是否全数存活\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 109,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 110,
+      "Child": [
+        110
+      ]
+    },
+    {
+      "Index": 110,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 111,
+      "Child": [
+        111,
+        112,
+        113
+      ]
+    },
+    {
+      "Index": 111,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"io041255\"} ",
+      "Next": 112,
+      "Child": []
+    },
+    {
+      "Index": 112,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 113,
+      "Child": []
+    },
+    {
+      "Index": 113,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201110_2_02\", 0, 1, \"锻炼新生灵巧：师弟是否全数存活\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 114,
+      "Node": "{ \"BattleEventNode\" : 500, 0, [ ]} ",
+      "Next": 115,
+      "Child": [
+        115
+      ]
+    },
+    {
+      "Index": 115,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 116,
+      "Child": [
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122
+      ]
+    },
+    {
+      "Index": 116,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"104102206\", \"io041251,io041255,Player\"} ",
+      "Next": 117,
+      "Child": []
+    },
+    {
+      "Index": 117,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"203102101\", \"io041251,io041255,Player\"} ",
+      "Next": 118,
+      "Child": []
+    },
+    {
+      "Index": 118,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5201110_097\", \"机关人未降下板甲\"} ",
+      "Next": 119,
+      "Child": []
+    },
+    {
+      "Index": 119,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 120,
+      "Child": []
+    },
+    {
+      "Index": 120,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05358\", \"bt5201110_buff_SuperRobot\"} ",
+      "Next": 121,
+      "Child": []
+    },
+    {
+      "Index": 121,
+      "Node": "{ \"BattleResultTalk\" : \"t5201110_055\"} ",
+      "Next": 122,
+      "Child": []
+    },
+    {
+      "Index": 122,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5201110_097\", 0, 1, \"机关人已降下板甲\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 123,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 124,
+      "Child": [
+        124
+      ]
+    },
+    {
+      "Index": 124,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 125,
+      "Child": [
+        125,
+        126,
+        127,
+        128
+      ]
+    },
+    {
+      "Index": 125,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"104102206\", \"io041251,io041255,Player\"} ",
+      "Next": 126,
+      "Child": []
+    },
+    {
+      "Index": 126,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 127,
+      "Child": []
+    },
+    {
+      "Index": 127,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201110_2_03\", 0, 1, \"压力板A踩中\"} ",
+      "Next": 128,
+      "Child": []
+    },
+    {
+      "Index": 128,
+      "Node": "{ \"BattleResultTalk\" : \"t5201110_058\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 129,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 130,
+      "Child": [
+        130
+      ]
+    },
+    {
+      "Index": 130,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 131,
+      "Child": [
+        131,
+        132,
+        133,
+        134
+      ]
+    },
+    {
+      "Index": 131,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"203102101\", \"io041251,io041255,Player\"} ",
+      "Next": 132,
+      "Child": []
+    },
+    {
+      "Index": 132,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 133,
+      "Child": []
+    },
+    {
+      "Index": 133,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201110_2_04\", 0, 1, \"压力板B踩中\"} ",
+      "Next": 134,
+      "Child": []
+    },
+    {
+      "Index": 134,
+      "Node": "{ \"BattleResultTalk\" : \"t5201110_059\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "",
+  "WinTip": "Defeat the plate armor Gimmick man",
+  "LoseTip": "Junior Brothers defeated"
+}

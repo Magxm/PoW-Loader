@@ -3,11 +3,11 @@
   "Nodes": [
     {
       "Node": "{ \"TimerAction\" : 0.20000} ",
-      "Next": 3,
+      "Next": 8,
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckPlayerUpgradableProperty\" : 0, 799, 2030}  ], 0} , 5, 2} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckPlayerUpgradableProperty\" : 0, 649, 2030}  ], 0} , 7, 2} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -27,7 +27,27 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"TalkAction\" : \"t1010200_033\"} ",
+      "Node": "{ \"RunCinematicAction\" : \"m605in010250_01\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"LoadScenesAction\" : \"S0107\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0, \"\"} ",
+      "Next": 5,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 1, \"fe1010206_2_01\"} ",
+      "Next": 6,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckCurrentRound\" : 1, 1, 168, \"\"}  ], 0} , 3, 9} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010200_042\"} ",
       "Next": -1,
       "Prallel": -1
     }

@@ -49,7 +49,7 @@
     {
       "Node": "{ \"TimerAction\" : 0.20000} ",
       "Next": 10,
-      "Prallel": -1
+      "Prallel": 65
     },
     {
       "Node": "{ \"ScreenFadeAction\" : True, 0.50000} ",
@@ -312,18 +312,28 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, True, 0} ",
+      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, True, 0, \"\", 1.00000} ",
       "Next": -1,
       "Prallel": -1
     },
     {
-      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 1} ",
+      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 1, \"\", 1.00000} ",
       "Next": -1,
       "Prallel": -1
     },
     {
-      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Node": "{ \"TimerAction\" : 1.50000} ",
       "Next": 60,
+      "Prallel": 66
+    },
+    {
+      "Node": "{ \"MusicAction\" : \"In_mood_03.wav\", 1.00000, False, 0.70000, False, 0.00000} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"MusicAction\" : \"\", 0.00000, False, 0.00000, True, 1.00000} ",
+      "Next": -1,
       "Prallel": -1
     }
   ],

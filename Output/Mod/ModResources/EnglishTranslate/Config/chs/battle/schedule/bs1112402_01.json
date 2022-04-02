@@ -1,1 +1,243 @@
-bs1112402_01	bs1112402_01	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "Player", 0, 204101103} , { "BattleResultAddUnit" : "party01", 0, 204103101}  ]} , { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "io451214", 2, 200204104} , { "BattleResultAddUnit" : "io451014", 2, 102205103} , { "BattleResultAddUnit" : "io451414", 2, 104204200} , { "BattleResultAddUnit" : "io451314", 2, 105203202}  ]} , { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "io222314", 1, 202201103} , { "BattleResultAddUnit" : "io222014", 1, 200201101} , { "BattleResultAddUnit" : "io222415", 1, 202103201} , { "BattleResultAddUnit" : "io222115", 1, 200101201}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "BattleFactorLocalFlag" : 1, 0, "btf1112402_01_00", ""} , { "SetLocalFlagBattleAction" : "btf1112402_01_00", 0, 1, ""} , { "BattleResultTalk" : "t1112402_bs0100"} , { "BattleResultAddBuff" : True, "io222014", "bt1112402_01_debuff_Bleeding", False}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 0} , { "BattleFactorLocalFlag" : 1, 0, "btf1112402_01_01", ""} , { "SetLocalFlagBattleAction" : "btf1112402_01_01", 0, 1, ""} , { "BattleResultTalk" : "t1112402_bs0103"} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 1} , { "BattleFactorLocalFlag" : 1, 0, "btf1112402_01_02", ""} , { "SetLocalFlagBattleAction" : "btf1112402_01_02", 0, 1, ""} , { "BattleResultWin" : ""}  ]}  ]}  ]} 	段红儿巡逻战协助窃天坞众	Defeat all enemies。	All friendly characters defeated。
+{
+  "Id": "bs1112402_01",
+  "Name": "bs1112402_01",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"Player\", 0, 204101103, 1.00000, 0.00000} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"party01\", 0, 204103101, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 4,
+      "Child": [
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultAddUnit\" : \"io451214\", 2, 200204104, 1.00000, 0.00000} ",
+      "Next": 5,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleResultAddUnit\" : \"io451014\", 2, 102205103, 1.00000, 0.00000} ",
+      "Next": 6,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleResultAddUnit\" : \"io451414\", 2, 104204200, 1.00000, 0.00000} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleResultAddUnit\" : \"io451314\", 2, 105203202, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 9,
+      "Child": [
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultAddUnit\" : \"io222314\", 1, 202201103, 1.00000, 0.00000} ",
+      "Next": 10,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultAddUnit\" : \"io222014\", 1, 200201101, 1.00000, 0.00000} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultAddUnit\" : \"io222415\", 1, 202103201, 1.00000, 0.00000} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultAddUnit\" : \"io222115\", 1, 200101201, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 14,
+      "Child": [
+        14
+      ]
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 15,
+      "Child": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 16,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1112402_01_00\", \"\"} ",
+      "Next": 17,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1112402_01_00\", 0, 1, \"\"} ",
+      "Next": 18,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleResultTalk\" : \"t1112402_bs0100\"} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io222014\", \"bt1112402_01_debuff_Bleeding\", False} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 21,
+      "Child": [
+        21
+      ]
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 22,
+      "Child": [
+        22,
+        23,
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 0} ",
+      "Next": 23,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1112402_01_01\", \"\"} ",
+      "Next": 24,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1112402_01_01\", 0, 1, \"\"} ",
+      "Next": 25,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleResultTalk\" : \"t1112402_bs0103\"} ",
+      "Next": 26,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 28,
+      "Child": [
+        28
+      ]
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 29,
+      "Child": [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 30,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1112402_01_02\", \"\"} ",
+      "Next": 31,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1112402_01_02\", 0, 1, \"\"} ",
+      "Next": 32,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "段红儿巡逻战协助窃天坞众",
+  "WinTip": "Defeat all Enemies",
+  "LoseTip": "All friendly unit defeated"
+}

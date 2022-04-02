@@ -1,1 +1,285 @@
-bs5104208_00	bs5104208_00	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "party00", 0, 200200200, 1.00000} , { "BattleResultAddUnit" : "party01", 0, 202200102, 1.00000} , { "BattleResultAddUnit" : "party02", 0, 200102202, 1.00000} , { "BattleResultAddUnit" : "party03", 0, 202102200, 1.00000} , { "BattleResultAddUnit" : "io93122901", 1, 111211200, 1.00000}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "BattleFactorLocalFlag" : 1, 0, "btf5104208_00_00", ""} , { "SetLocalFlagBattleAction" : "btf5104208_00_00", 0, 1, ""} , { "BattleResultTalk" : "t5104208_001"} , { "BattleResultMoveUnit" : "io93122901", "106206200"} , { "BattleResultTalk" : "t5104208_007"} , { "BattleResultAddUnit" : "io93121901", 1, 206101105, 1.00000} , { "BattleResultAddUnit" : "io93121902", 1, 206106200, 1.00000} , { "BattleResultAddUnit" : "io93121903", 1, 201106205, 1.00000} , { "BattleResultTalk" : "t5104208_017"} , { "BattleResultAddBuff" : True, "io93122901", "bt5104208_00_debuff_HungryWolfKing", False} , { "BattleResultAddBuff" : True, "io93121901", "bt5104208_00_debuff_HungryWolf", False} , { "BattleResultAddBuff" : True, "io93121902", "bt5104208_00_debuff_HungryWolf", False} , { "BattleResultAddBuff" : True, "io93121903", "bt5104208_00_debuff_HungryWolf", False}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "io93122901"} , { "BattleResultTalk" : "t5104208_007"} , { "BattleResultRemoveUnit" : "io93122901", False} , { "BattleResultRemoveUnit" : "io93121901", False} , { "BattleResultRemoveUnit" : "io93121902", False} , { "BattleResultRemoveUnit" : "io93121903", False} , { "BattleResultTalk" : "t5104208_008"} , { "SetGlobalFlagBattleAction" : "fe5104208_2_00", 0, 1, ""} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 500, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 0} , { "BattleResultTalk" : "t5104208_012"} , { "SetGlobalFlagBattleAction" : "fe5104208_2_00", 0, 2, ""} , { "BattleResultLose" : ""}  ]}  ]}  ]} 	［传书］山兽肆虐．一	Defeat Wolf King!	All friendly characters defeated。
+{
+  "Id": "bs5104208_00",
+  "Name": "bs5104208_00",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"party00\", 0, 200200200, 1.00000, 0.00000} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"party01\", 0, 202200102, 1.00000, 0.00000} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnit\" : \"party02\", 0, 200102202, 1.00000, 0.00000} ",
+      "Next": 4,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultAddUnit\" : \"party03\", 0, 202102200, 1.00000, 0.00000} ",
+      "Next": 5,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleResultAddUnit\" : \"io93122901\", 1, 111211200, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 7,
+      "Child": [
+        7
+      ]
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 8,
+      "Child": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5104208_00_00\", \"\"} ",
+      "Next": 10,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5104208_00_00\", 0, 1, \"\"} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultTalk\" : \"t5104208_001\"} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultMoveUnit\" : \"io93122901\", \"106206200\"} ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleResultTalk\" : \"t5104208_007\"} ",
+      "Next": 14,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultAddUnit\" : \"io93121901\", 1, 206101105, 1.00000, 0.00000} ",
+      "Next": 15,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleResultAddUnit\" : \"io93121902\", 1, 206106200, 1.00000, 0.00000} ",
+      "Next": 16,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleResultAddUnit\" : \"io93121903\", 1, 201106205, 1.00000, 0.00000} ",
+      "Next": 17,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleResultTalk\" : \"t5104208_017\"} ",
+      "Next": 18,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io93122901\", \"bt5104208_00_debuff_HungryWolfKing\", False} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io93121901\", \"bt5104208_00_debuff_HungryWolf\", False} ",
+      "Next": 20,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io93121902\", \"bt5104208_00_debuff_HungryWolf\", False} ",
+      "Next": 21,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io93121903\", \"bt5104208_00_debuff_HungryWolf\", False} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 23,
+      "Child": [
+        23
+      ]
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 24,
+      "Child": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"io93122901\"} ",
+      "Next": 25,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleResultTalk\" : \"t5104208_007\"} ",
+      "Next": 26,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"io93122901\", False} ",
+      "Next": 27,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"io93121901\", False} ",
+      "Next": 28,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"io93121902\", False} ",
+      "Next": 29,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"io93121903\", False} ",
+      "Next": 30,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleResultTalk\" : \"t5104208_008\"} ",
+      "Next": 31,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5104208_2_00\", 0, 1, \"\"} ",
+      "Next": 32,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleEventNode\" : 500, 0, [ ]} ",
+      "Next": 34,
+      "Child": [
+        34
+      ]
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 35,
+      "Child": [
+        35,
+        36,
+        37,
+        38
+      ]
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 0} ",
+      "Next": 36,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"BattleResultTalk\" : \"t5104208_012\"} ",
+      "Next": 37,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5104208_2_00\", 0, 2, \"\"} ",
+      "Next": 38,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "［传书］山兽肆虐．一",
+  "WinTip": "Defeat Wolf King!",
+  "LoseTip": "All friendly units are defeated"
+}

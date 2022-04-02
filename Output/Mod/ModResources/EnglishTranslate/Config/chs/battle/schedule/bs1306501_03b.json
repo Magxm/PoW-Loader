@@ -1,0 +1,339 @@
+{
+  "Id": "bs1306501_03b",
+  "Name": "bs1306501_03b",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 6,
+      "Prallel": -1,
+      "Child": [
+        6,
+        7,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 2,
+      "Prallel": -1,
+      "Child": [
+        2
+      ]
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 5,
+      "Prallel": -1,
+      "Child": [
+        5,
+        27,
+        3,
+        39,
+        4,
+        8,
+        9,
+        11,
+        10,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 39,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_400\"} ",
+      "Next": 8,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 33, \"in21011\"} ",
+      "Next": 27,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleResultAddUnits\" : \"in0202,Player,in0105,in0201\", 0, \"103204101,103202201,101204103,101202101\"} ",
+      "Next": 7,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleResultAddUnits\" : \"io261041,io26104101,io261141,io26114101,in05566b,in05566,in05567,in21011\", 1, \"105208103,107206201,105210105,109206203,106207101,110209201,108211103,109210101\"} ",
+      "Next": 17,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 9,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultFadeOutMusic\" : 3.00000} ",
+      "Next": 11,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultWaitAction\" : 1.00000} ",
+      "Next": 12,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultPalySound\" : \"Wind01.ogg\", 0.80000} ",
+      "Next": 10,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_436\"} ",
+      "Next": 13,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_battle_34.wav\", 2.00000, False} ",
+      "Next": 14,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 15,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_443\"} ",
+      "Next": 16,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"EndBattleAction\" : \"m1306501_06\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in21011\", \"bt1306501_03a_Buff_HpLock01\", True} ",
+      "Next": 18,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleResultUnitHP\" : 0, 50, \"in0201\"} ",
+      "Next": 19,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in0201\", \"bt1306501_03b_Debuff_Poison\", False} ",
+      "Next": 20,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in05566b,in05566,in05567\", \"bt1212501_02_buff_ZombieGaurd04\", True} ",
+      "Next": 21,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleResultAddSecondaryGoal\" : \"bs1306501_03b_01\", \"四回合内Defeat the Death Scheme!\"} ",
+      "Next": 22,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bs1306501_03b_01\", 0} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 24,
+      "Prallel": -1,
+      "Child": [
+        24
+      ]
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 25,
+      "Prallel": -1,
+      "Child": [
+        25,
+        26,
+        28,
+        40,
+        29,
+        30,
+        31,
+        33,
+        32,
+        34,
+        35,
+        36,
+        37,
+        38
+      ]
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 33, \"in21011\"} ",
+      "Next": 26,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleFactorTurn\" : 0, 3} ",
+      "Next": 28,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleFactorTurn\" : 2, 4} ",
+      "Next": 3,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 40,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_459\"} ",
+      "Next": 30,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 31,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleResultFadeOutMusic\" : 3.00000} ",
+      "Next": 33,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleResultWaitAction\" : 1.00000} ",
+      "Next": 34,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleResultPalySound\" : \"Wind01.ogg\", 0.80000} ",
+      "Next": 32,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_436\"} ",
+      "Next": 35,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_battle_34.wav\", 2.00000, False} ",
+      "Next": 36,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 37,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_443\"} ",
+      "Next": 38,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"EndBattleAction\" : \"m1306501_06\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bs1306501_03b_01\", 1} ",
+      "Next": 4,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bs1306501_03b_01\", 2} ",
+      "Next": 29,
+      "Prallel": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "夏校：后山战之一（宫紫痕）",
+  "WinTip": "Defeat the Death Scheme!",
+  "LoseTip": "All friendly units are defeated"
+}

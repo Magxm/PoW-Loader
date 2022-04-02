@@ -1,5 +1,5 @@
 {
-  "EntryIndex": 264,
+  "EntryIndex": 501,
   "Nodes": [
     {
       "Node": "{ \"MusicAction\" : \"In_mood_07.wav\", 1.00000, False, 1.00000, False, 0.00000} ",
@@ -248,7 +248,7 @@
     },
     {
       "Node": "{ \"ScreenFadeAction\" : False, 2.00000} ",
-      "Next": 50,
+      "Next": 502,
       "Prallel": -1
     },
     {
@@ -2504,6 +2504,16 @@
     {
       "Node": "{ \"SetNpcSchedulerIdAction\" : \"in05808_90\", \"sc1112403_00\"} ",
       "Next": 286,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 264,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 50,
       "Prallel": -1
     }
   ],

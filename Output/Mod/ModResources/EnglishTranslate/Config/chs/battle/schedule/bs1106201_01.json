@@ -1,1 +1,208 @@
-bs1106201_01	bs1106201_01：夏校［刺客来袭］	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "party00", 0, 104201203, 1.00000, 0.00000} , { "BattleResultAddUnit" : "party01", 0, 101204103, 1.00000, 0.00000} , { "BattleResultAddUnit" : "party02", 0, 104101205, 1.00000, 0.00000} , { "BattleResultAddUnit" : "party03", 0, 201204105, 1.00000, 0.00000} , { "SetUnitCanEquip" : "in0105", False}  ]} , { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "in05528", 1, 200104204, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in05529", 1, 204200104, 1.00000, 0.00000}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 2} , { "BattleFactorLocalFlag" : 1, 0, "btf1106201_01_01", ""} , { "SetLocalFlagBattleAction" : "btf1106201_01_01", 0, 1, ""} , { "BattleResultTalk" : "t1106201_345"} , { "BattleResultAddBuff" : True, "in05528", "bt1106201_01_buff_AssassinPower", True} , { "BattleResultAddBuff" : True, "in05529", "bt1106201_01_buff_AssassinPower", True} , { "BattleResultChangeMusic" : "In_battle_02.wav", 1.00000, True}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 1} , { "SetUnitCanEquip" : "in0105", True} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 0} , { "SetUnitCanEquip" : "in0105", True} , { "BattleResultLose" : ""}  ]}  ]}  ]} 		Defeat all enemies。	All friendly characters defeated。
+{
+  "Id": "bs1106201_01",
+  "Name": "bs1106201_01：夏校［刺客来袭］",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"party00\", 0, 104201203, 1.00000, 0.00000} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"party01\", 0, 101204103, 1.00000, 0.00000} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnit\" : \"party02\", 0, 104101205, 1.00000, 0.00000} ",
+      "Next": 4,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultAddUnit\" : \"party03\", 0, 201204105, 1.00000, 0.00000} ",
+      "Next": 5,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"SetUnitCanEquip\" : \"in0105\", False} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 7,
+      "Child": [
+        7,
+        8
+      ]
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05528\", 1, 200104204, 1.00000, 0.00000} ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05529\", 1, 204200104, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 10,
+      "Child": [
+        10
+      ]
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 11,
+      "Child": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleFactorTurn\" : 1, 2} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1106201_01_01\", \"\"} ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1106201_01_01\", 0, 1, \"\"} ",
+      "Next": 14,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultTalk\" : \"t1106201_345\"} ",
+      "Next": 15,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05528\", \"bt1106201_01_buff_AssassinPower\", True} ",
+      "Next": 16,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05529\", \"bt1106201_01_buff_AssassinPower\", True} ",
+      "Next": 17,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_battle_02.wav\", 1.00000, True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 19,
+      "Child": [
+        19
+      ]
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 20,
+      "Child": [
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 21,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"SetUnitCanEquip\" : \"in0105\", True} ",
+      "Next": 22,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 24,
+      "Child": [
+        24
+      ]
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 25,
+      "Child": [
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 0} ",
+      "Next": 26,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"SetUnitCanEquip\" : \"in0105\", True} ",
+      "Next": 27,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "",
+  "WinTip": "All enemies are defeated",
+  "LoseTip": "All friendly units are defeated"
+}

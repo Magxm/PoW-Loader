@@ -1,1 +1,414 @@
-bs1107201_01	bs1107201_01：荷包争夺战	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "party00", 0, 207202109, 1.00000}  ]} , { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "in05534", 1, 208101107, 1.00000} , { "BattleResultAddUnit" : "in05535", 1, 208104104, 1.00000} , { "BattleResultAddUnit" : "in05536", 1, 205201106, 1.00000} , { "BattleResultAddBuff" : True, "in05534", "bt1107201_01_buff_FastRogue", True} , { "BattleResultAddBuff" : True, "in05535", "bt1107201_01_buff_FastRogue", True} , { "BattleResultAddBuff" : True, "in05536", "bt1107201_01_buff_FastRogue", True}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 1} , { "BattleFactorLocalFlag" : 1, 0, "btf1107201_01_01", ""} , { "SetLocalFlagBattleAction" : "btf1107201_01_01", 0, 1, ""} , { "BattleResultAddUnit" : "in0106", 2, 203101102, 1.00000} , { "BattleResultAddUnit" : "in03005", 2, 202202104, 1.00000} , { "BattleResultTalk" : "t1107203_257"}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 2} , { "BattleFactorLocalFlag" : 1, 0, "btf1107201_01_02", ""} , { "SetLocalFlagBattleAction" : "btf1107201_01_02", 0, 1, ""} , { "BattleResultAddUnit" : "in03001", 3, 103201202, 1.00000} , { "BattleResultTalk" : "t1107203_260"} , { "BattleResultAddBuff" : True, "in03001", "bt1107201_01_buff_AngryJian", True}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 3} , { "BattleFactorLocalFlag" : 1, 0, "btf1107201_01_03", ""} , { "SetLocalFlagBattleAction" : "btf1107201_01_03", 0, 1, ""} , { "BattleResultAddUnit" : "in0206", 3, 101201200, 1.00000} , { "BattleResultAddUnit" : "in0205", 3, 102204102, 1.00000} , { "BattleResultTalk" : "t1107203_271"}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 7} , { "BattleFactorLocalFlag" : 1, 0, "btf1107201_01_04", ""} , { "SetLocalFlagBattleAction" : "btf1107201_01_04", 0, 1, ""} , { "BattleResultRemoveUnit" : "in05534", False} , { "BattleResultRemoveUnit" : "in05535", False} , { "BattleResultRemoveUnit" : "in05536", False} , { "BattleResultTalk" : "t1107203_283"} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 0} , { "BattleFactorLocalFlag" : 1, 0, "btf1107201_01_05", ""} , { "SetLocalFlagBattleAction" : "btf1107201_01_05", 0, 1, ""} , { "BattleResultTalk" : "t1107203_281"} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 1} , { "BattleFactorLocalFlag" : 1, 0, "btf1107201_01_05", ""} , { "SetLocalFlagBattleAction" : "btf1107201_01_05", 0, 1, ""} , { "BattleResultTalk" : "t1107203_279"} , { "BattleResultWin" : ""}  ]}  ]}  ]} 		Defeat all enemies。	Battle exceed 6 turns.，or {name_1}{name_2} is defeated.
+{
+  "Id": "bs1107201_01",
+  "Name": "bs1107201_01：荷包争夺战",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"party00\", 0, 207202109, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 3,
+      "Child": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05534\", 1, 208101107, 1.00000, 0.00000} ",
+      "Next": 4,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05535\", 1, 208104104, 1.00000, 0.00000} ",
+      "Next": 5,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05536\", 1, 205201106, 1.00000, 0.00000} ",
+      "Next": 6,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05534\", \"bt1107201_01_buff_FastRogue\", True} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05535\", \"bt1107201_01_buff_FastRogue\", True} ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05536\", \"bt1107201_01_buff_FastRogue\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 10,
+      "Child": [
+        10
+      ]
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 11,
+      "Child": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleFactorTurn\" : 1, 1} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1107201_01_01\", \"\"} ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1107201_01_01\", 0, 1, \"\"} ",
+      "Next": 14,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0106\", 2, 203101102, 1.00000, 0.00000} ",
+      "Next": 15,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleResultAddUnit\" : \"in03005\", 2, 202202104, 1.00000, 0.00000} ",
+      "Next": 16,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleResultTalk\" : \"t1107203_257\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 18,
+      "Child": [
+        18
+      ]
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 19,
+      "Child": [
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleFactorTurn\" : 1, 2} ",
+      "Next": 20,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1107201_01_02\", \"\"} ",
+      "Next": 21,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1107201_01_02\", 0, 1, \"\"} ",
+      "Next": 22,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleResultAddUnit\" : \"in03001\", 3, 103201202, 1.00000, 0.00000} ",
+      "Next": 23,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleResultTalk\" : \"t1107203_260\"} ",
+      "Next": 24,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in03001\", \"bt1107201_01_buff_AngryJian\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 26,
+      "Child": [
+        26
+      ]
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 27,
+      "Child": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleFactorTurn\" : 1, 3} ",
+      "Next": 28,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1107201_01_03\", \"\"} ",
+      "Next": 29,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1107201_01_03\", 0, 1, \"\"} ",
+      "Next": 30,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0206\", 3, 101201200, 1.00000, 0.00000} ",
+      "Next": 31,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0205\", 3, 102204102, 1.00000, 0.00000} ",
+      "Next": 32,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleResultTalk\" : \"t1107203_271\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 34,
+      "Child": [
+        34
+      ]
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 35,
+      "Child": [
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+      ]
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleFactorTurn\" : 1, 7} ",
+      "Next": 36,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1107201_01_04\", \"\"} ",
+      "Next": 37,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1107201_01_04\", 0, 1, \"\"} ",
+      "Next": 38,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in05534\", False} ",
+      "Next": 39,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in05535\", False} ",
+      "Next": 40,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in05536\", False} ",
+      "Next": 41,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleResultTalk\" : \"t1107203_283\"} ",
+      "Next": 42,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 44,
+      "Child": [
+        44
+      ]
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 45,
+      "Child": [
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 0} ",
+      "Next": 46,
+      "Child": []
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1107201_01_05\", \"\"} ",
+      "Next": 47,
+      "Child": []
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1107201_01_05\", 0, 1, \"\"} ",
+      "Next": 48,
+      "Child": []
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"BattleResultTalk\" : \"t1107203_281\"} ",
+      "Next": 49,
+      "Child": []
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 51,
+      "Child": [
+        51
+      ]
+    },
+    {
+      "Index": 51,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 52,
+      "Child": [
+        52,
+        53,
+        54,
+        55,
+        56
+      ]
+    },
+    {
+      "Index": 52,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 53,
+      "Child": []
+    },
+    {
+      "Index": 53,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1107201_01_05\", \"\"} ",
+      "Next": 54,
+      "Child": []
+    },
+    {
+      "Index": 54,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1107201_01_05\", 0, 1, \"\"} ",
+      "Next": 55,
+      "Child": []
+    },
+    {
+      "Index": 55,
+      "Node": "{ \"BattleResultTalk\" : \"t1107203_279\"} ",
+      "Next": 56,
+      "Child": []
+    },
+    {
+      "Index": 56,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "",
+  "WinTip": "All enemies are defeated",
+  "LoseTip": "战斗超过六回合，或{name_1}{name_2} is defeated.。"
+}

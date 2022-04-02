@@ -1,1 +1,345 @@
-bs1010601_01	南飞鍠一阶：打打唐三长	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "party00", 0, 102203101, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in0106", 0, 202101101, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in0206", 1, 101200201, 1.00000, 0.00000}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 2, 91, "in0206"} , { "BattleResultTalk" : "t1010601_053"} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 500, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 5} , { "BattleFactorLocalFlag" : 1, 0, "btf1010601_01_01", ""} , { "SetLocalFlagBattleAction" : "btf1010601_01_01", 0, 1, ""} , { "BattleResultTalk" : "t1010601_070"} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "BattleFactorLocalFlag" : 1, 0, "btf1010601_01_02", ""} , { "SetLocalFlagBattleAction" : "btf1010601_01_02", 0, 1, ""} , { "BattleResultTalk" : "t1010601_060"} , { "BattleResultAddBuff" : True, "in0206", "bt1010601_01_debuff_Power03", False}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 1} , { "BattleFactorLocalFlag" : 1, 0, "btf1010601_01_03", ""} , { "SetLocalFlagBattleAction" : "btf1010601_01_03", 0, 1, ""} , { "BattleResultTalk" : "t1010601_065"}  ]}  ]} , { "BattleEventNode" : 500, 0, [ { "StepByStepNode" : [ { "BattleFactorCharacterTile" : "106201205,106200206,105200205,105201204,106202204", "in0106"} , { "BattleFactorLocalFlag" : 1, 0, "btf1010601_01_05", ""} , { "SetLocalFlagBattleAction" : "btf1010601_01_05", 0, 1, ""} , { "BattleResultTalk" : "t1010601_093"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 0} , { "BattleFactorLocalFlag" : 1, 0, "btf1010601_01_06", ""} , { "SetLocalFlagBattleAction" : "btf1010601_01_06", 0, 1, ""} , { "BattleResultTalk" : "t1010601_007"} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 1600, 0, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 0, "btf1010601_01_07", ""} , { "SetLocalFlagBattleAction" : "btf1010601_01_07", 0, 1, ""} , { "BattleResultTalk" : "t1010601_112"}  ]}  ]}  ]} 		Reduce Tang Sanchang's HP to 80%	All friendly characters defeated, or the battle exceeds 5 turns。
+{
+  "Id": "bs1010601_01",
+  "Name": "南飞鍠一阶：打打唐三长",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"party00\", 0, 102203101, 1.00000, 0.00000} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0106\", 0, 202101101, 1.00000, 0.00000} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0206\", 1, 101200201, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 5,
+      "Child": [
+        5
+      ]
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 6,
+      "Child": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 91, \"in0206\"} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleResultTalk\" : \"t1010601_053\"} ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleEventNode\" : 500, 0, [ ]} ",
+      "Next": 10,
+      "Child": [
+        10
+      ]
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 11,
+      "Child": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleFactorTurn\" : 1, 5} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1010601_01_01\", \"\"} ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1010601_01_01\", 0, 1, \"\"} ",
+      "Next": 14,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultTalk\" : \"t1010601_070\"} ",
+      "Next": 15,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 17,
+      "Child": [
+        17
+      ]
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 18,
+      "Child": [
+        18,
+        19,
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1010601_01_02\", \"\"} ",
+      "Next": 20,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1010601_01_02\", 0, 1, \"\"} ",
+      "Next": 21,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleResultTalk\" : \"t1010601_060\"} ",
+      "Next": 22,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0206\", \"bt1010601_01_debuff_Power03\", False} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 24,
+      "Child": [
+        24
+      ]
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 25,
+      "Child": [
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleFactorTurn\" : 1, 1} ",
+      "Next": 26,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1010601_01_03\", \"\"} ",
+      "Next": 27,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1010601_01_03\", 0, 1, \"\"} ",
+      "Next": 28,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleResultTalk\" : \"t1010601_065\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleEventNode\" : 500, 0, [ ]} ",
+      "Next": 30,
+      "Child": [
+        30
+      ]
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 31,
+      "Child": [
+        31,
+        32,
+        33,
+        34
+      ]
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"106201205,106200206,105200205,105201204,106202204\", \"in0106\"} ",
+      "Next": 32,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1010601_01_05\", \"\"} ",
+      "Next": 33,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1010601_01_05\", 0, 1, \"\"} ",
+      "Next": 34,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleResultTalk\" : \"t1010601_093\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 36,
+      "Child": [
+        36
+      ]
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 37,
+      "Child": [
+        37,
+        38,
+        39,
+        40,
+        41
+      ]
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 0} ",
+      "Next": 38,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1010601_01_06\", \"\"} ",
+      "Next": 39,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1010601_01_06\", 0, 1, \"\"} ",
+      "Next": 40,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"BattleResultTalk\" : \"t1010601_007\"} ",
+      "Next": 41,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"BattleEventNode\" : 1600, 0, [ ]} ",
+      "Next": 43,
+      "Child": [
+        43
+      ]
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 44,
+      "Child": [
+        44,
+        45,
+        46
+      ]
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1010601_01_07\", \"\"} ",
+      "Next": 45,
+      "Child": []
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1010601_01_07\", 0, 1, \"\"} ",
+      "Next": 46,
+      "Child": []
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"BattleResultTalk\" : \"t1010601_112\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "",
+  "WinTip": "Reduce Tang Sanchang's HP to 90%",
+  "LoseTip": "All friendly units are defeated、 or the battle exceeds five Rounds."
+}

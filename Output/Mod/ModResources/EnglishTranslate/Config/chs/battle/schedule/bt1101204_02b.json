@@ -1,1 +1,37 @@
-bt1101204_02b	bt1101204_02b夜访楚天碧：打霍坦	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "in0106", 0, 103200203, 1.00000} , { "BattleResultAddUnit" : "in0205", 1, 201201102, 1.00000} , { "BattleResultAddUnit" : "party00", 0, 200103203, 1.00000}  ]}  ]} 	测试被反击反到死后会不会卡死		
+{
+  "Id": "bt1101204_02b",
+  "Name": "bt1101204_02b夜访楚天碧：打霍坦",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0106\", 0, 103200203, 1.00000, 0.00000} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0205\", 1, 201201102, 1.00000, 0.00000} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnit\" : \"party00\", 0, 200103203, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "测试被反击反到死后会不会卡死",
+  "WinTip": "",
+  "LoseTip": ""
+}

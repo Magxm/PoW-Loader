@@ -1,1 +1,457 @@
-bs5104202_00	bs5104202_00	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "party00", 0, 201201102, 1.00000} , { "BattleResultAddUnit" : "in03011", 0, 102203101, 1.00000} , { "BattleResultAddUnit" : "in03012", 0, 203102101, 1.00000}  ]} , { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "in0207", 1, 101101202, 1.00000} , { "BattleResultAddUnit" : "io271414", 1, 200103203, 1.00000} , { "BattleResultAddUnit" : "io271214", 1, 103200203, 1.00000}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "BattleFactorLocalFlag" : 1, 0, "btf5104202_00_00", ""} , { "BattleResultTalk" : "t5104202_026"} , { "BattleResultAddBuff" : True, "Player", "bt5104202_00_debuff_Poison", False} , { "BattleResultAddBuff" : True, "in03011", "bt5104202_00_debuff_Poison", False} , { "BattleResultAddBuff" : True, "in03012", "bt5104202_00_debuff_Poison", False} , { "BattleResultTalk" : "t5104202_048"} , { "BattleResultChangeMusic" : "In_battle_01.wav", 1.00000, False} , { "BattleResultTalk" : "t5104202_050"} , { "BattleResultAddBuff" : True, "in0207", "bt5104202_00_debuff_Power010", False} , { "BattleResultAddBuff" : True, "io271414", "bt5104202_00_debuff_RobotPower050", False} , { "BattleResultAddBuff" : True, "io271214", "bt5104202_00_debuff_RobotPower050", False} , { "SetLocalFlagBattleAction" : "btf5104202_00_00", 0, 1, ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in03011"} , { "BattleFactorLocalFlag" : 1, 0, "btf5104202_00_01", ""} , { "BattleResultTalk" : "t5104202_031"} , { "SetLocalFlagBattleAction" : "btf5104202_00_01", 0, 1, ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in03012"} , { "BattleFactorLocalFlag" : 1, 0, "btf5104202_00_02", ""} , { "BattleResultTalk" : "t5104202_032"} , { "SetLocalFlagBattleAction" : "btf5104202_00_02", 0, 1, ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "Player"} , { "BattleFactorLocalFlag" : 1, 0, "btf5104202_00_03", ""} , { "BattleResultTalk" : "t5104202_033"} , { "SetLocalFlagBattleAction" : "btf5104202_00_03", 0, 1, ""} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "io271214"} , { "BattleFactorLocalFlag" : 1, 0, "btf5104202_00_05", ""} , { "SetGlobalFlagBattleAction" : "fe5104202_2_03", 1, 1, ""} , { "BattleResultTalk" : "t5104202_027"} , { "SetLocalFlagBattleAction" : "btf5104202_00_05", 0, 1, ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "io271414"} , { "BattleFactorLocalFlag" : 1, 0, "btf5104202_00_04", ""} , { "SetGlobalFlagBattleAction" : "fe5104202_2_03", 1, 1, ""} , { "BattleResultTalk" : "t5104202_027"} , { "SetLocalFlagBattleAction" : "btf5104202_00_04", 0, 1, ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 2, 51, "in0207"} , { "BattleFactorLocalFlag" : 1, 0, "btf5104202_00_06", ""} , { "BattleResultTalk" : "t5104202_037"} , { "SetLocalFlagBattleAction" : "btf5104202_00_06", 0, 1, ""} , { "BattleResultWin" : ""}  ]}  ]}  ]} 	［传书］飞雪皊狐特别修业	Reduce HP of White Fox to 50% (additional goal: defeat all Automantons)	{name_1}{name_2}is defeated。
+{
+  "Id": "bs5104202_00",
+  "Name": "bs5104202_00",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"party00\", 0, 201201102, 1.00000, 0.00000} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"in03011\", 0, 102203101, 1.00000, 0.00000} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnit\" : \"in03012\", 0, 203102101, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 5,
+      "Child": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0207\", 1, 101101202, 1.00000, 0.00000} ",
+      "Next": 6,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleResultAddUnit\" : \"io271414\", 1, 200103203, 1.00000, 0.00000} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleResultAddUnit\" : \"io271214\", 1, 103200203, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 9,
+      "Child": [
+        9
+      ]
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 10,
+      "Child": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5104202_00_00\", \"\"} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultTalk\" : \"t5104202_026\"} ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"bt5104202_00_debuff_Poison\", False} ",
+      "Next": 14,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in03011\", \"bt5104202_00_debuff_Poison\", False} ",
+      "Next": 15,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in03012\", \"bt5104202_00_debuff_Poison\", False} ",
+      "Next": 16,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleResultTalk\" : \"t5104202_048\"} ",
+      "Next": 17,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_battle_01.wav\", 1.00000, False} ",
+      "Next": 18,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleResultTalk\" : \"t5104202_050\"} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0207\", \"bt5104202_00_debuff_Power010\", False} ",
+      "Next": 20,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io271414\", \"bt5104202_00_debuff_RobotPower050\", False} ",
+      "Next": 21,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io271214\", \"bt5104202_00_debuff_RobotPower050\", False} ",
+      "Next": 22,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5104202_00_00\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 24,
+      "Child": [
+        24
+      ]
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 25,
+      "Child": [
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in03011\"} ",
+      "Next": 26,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5104202_00_01\", \"\"} ",
+      "Next": 27,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleResultTalk\" : \"t5104202_031\"} ",
+      "Next": 28,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5104202_00_01\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 30,
+      "Child": [
+        30
+      ]
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 31,
+      "Child": [
+        31,
+        32,
+        33,
+        34
+      ]
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in03012\"} ",
+      "Next": 32,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5104202_00_02\", \"\"} ",
+      "Next": 33,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleResultTalk\" : \"t5104202_032\"} ",
+      "Next": 34,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5104202_00_02\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 36,
+      "Child": [
+        36
+      ]
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 37,
+      "Child": [
+        37,
+        38,
+        39,
+        40,
+        41
+      ]
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player\"} ",
+      "Next": 38,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5104202_00_03\", \"\"} ",
+      "Next": 39,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"BattleResultTalk\" : \"t5104202_033\"} ",
+      "Next": 40,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5104202_00_03\", 0, 1, \"\"} ",
+      "Next": 41,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 43,
+      "Child": [
+        43
+      ]
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 44,
+      "Child": [
+        44,
+        45,
+        46,
+        47,
+        48
+      ]
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"io271214\"} ",
+      "Next": 45,
+      "Child": []
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5104202_00_05\", \"\"} ",
+      "Next": 46,
+      "Child": []
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5104202_2_03\", 1, 1, \"\"} ",
+      "Next": 47,
+      "Child": []
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"BattleResultTalk\" : \"t5104202_027\"} ",
+      "Next": 48,
+      "Child": []
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5104202_00_05\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 50,
+      "Child": [
+        50
+      ]
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 51,
+      "Child": [
+        51,
+        52,
+        53,
+        54,
+        55
+      ]
+    },
+    {
+      "Index": 51,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"io271414\"} ",
+      "Next": 52,
+      "Child": []
+    },
+    {
+      "Index": 52,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5104202_00_04\", \"\"} ",
+      "Next": 53,
+      "Child": []
+    },
+    {
+      "Index": 53,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5104202_2_03\", 1, 1, \"\"} ",
+      "Next": 54,
+      "Child": []
+    },
+    {
+      "Index": 54,
+      "Node": "{ \"BattleResultTalk\" : \"t5104202_027\"} ",
+      "Next": 55,
+      "Child": []
+    },
+    {
+      "Index": 55,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5104202_00_04\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 56,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 57,
+      "Child": [
+        57
+      ]
+    },
+    {
+      "Index": 57,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 58,
+      "Child": [
+        58,
+        59,
+        60,
+        61,
+        62
+      ]
+    },
+    {
+      "Index": 58,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 51, \"in0207\"} ",
+      "Next": 59,
+      "Child": []
+    },
+    {
+      "Index": 59,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5104202_00_06\", \"\"} ",
+      "Next": 60,
+      "Child": []
+    },
+    {
+      "Index": 60,
+      "Node": "{ \"BattleResultTalk\" : \"t5104202_037\"} ",
+      "Next": 61,
+      "Child": []
+    },
+    {
+      "Index": 61,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5104202_00_06\", 0, 1, \"\"} ",
+      "Next": 62,
+      "Child": []
+    },
+    {
+      "Index": 62,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "［传书］飞雪皊狐特别修业",
+  "WinTip": "Weaken Flying Snowy Fox's HP to fifty percent (additional objective: defeat all Automanton)",
+  "LoseTip": "{name_1}{name_2} is defeated.。"
+}

@@ -1,1 +1,640 @@
-bs5201112_00		{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleFactorGlobalFlag" : 1, 0, "fe5201112_2_01", "未完成第一场战斗"} , { "ExecuteOnceNode" } , { "BattleResultAddUnit" : "in05364", 0, 201201102, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in05365", 1, 101101202, 1.00000, 0.00000} , { "SetGlobalFlagBattleAction" : "fe5201112_2_01", 0, 0, ""}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 0, "fe5201112_2_01", "未完成第一场战斗"} , { "BattleFactorTurn" : 1, 0} , { "ExecuteOnceNode" } , { "BattleResultAddBuff" : False, "in05364", "bt5201112_buff_UndeadStudents", True} , { "BattleResultAddBuff" : True, "in05364", "bt5201112_buff_FuriosStudent2", True} , { "BattleResultAddBuff" : True, "in05365", "bt5201112_debuff_Underestimate", False} , { "BattleResultAddBuff" : False, "in05365", "bt5201112_buff_UndeadStudents", True} , { "SetUnitCanUseItem" : "in05364", False} , { "SetUnitCanUseItem" : "in05365", False} , { "SetGlobalFlagBattleAction" : "fe5201112_2_04", 0, 1, "於第一场战斗存活至少三回合：缺省成功"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 0, "fe5201112_2_01", "未完成第一场战斗"} , { "BattleFactorTargetHp" : 1, 30, "in05364"} , { "ExecuteOnceNode" } , { "SetGlobalFlagBattleAction" : "fe5201112_2_01", 0, 1, ""} , { "BattleResultRmoveBuff" : "in05364", "bt5201112_buff_UndeadStudents"} , { "BattleResultRmoveBuff" : "in05364", "bt5201112_buff_FuriosStudent2"} , { "BattleResultRmoveBuff" : "in05365", "bt5201112_buff_UndeadStudents"} , { "BattleResultRmoveBuff" : "in05365", "bt5201112_buff_FuriosStudent"} , { "BattleResultRmoveBuff" : "in05365", "bt5201112_debuff_Underestimate"} , { "BattleResultTalk" : "t5201112_016"} , { "BattleResultAddUnit" : "in0103", 1, 104104208, 1.00000, 0.00000} , { "BattleResultUnitToUnit" : "in0103", "in05365"} , { "BattleResultTalk" : "t5201112_019"} , { "BattleResultAddUnit" : "Player", 0, 102106208, 1.00000, 0.00000} , { "BattleResultUnitToUnit" : "Player", "in0103"} , { "BattleResultTalk" : "t5201112_023"} , { "BattleResultUnitHP" : 0, 100, "in05364,in05365"} , { "BattleResultTalk" : "t5201112_029"} , { "BattleResultAddBuff" : True, "in05364", "bt5201112_buff_BetterStudentAttack", True} , { "BattleResultTalk" : "t5201112_031"} , { "SetGlobalFlagBattleAction" : "fe5201112_2_06", 0, 2, "第二场战斗：王青阳缺省存活（成绩单）"} , { "BattleResultChangeWinTip" : "Defeat Zhong Ruoxin and Wei Lengfan。"} , { "BattleResultChangeLoseTip" : "{name_1}{name_2} or Junior Wang Qingyang is defeated。"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe5201112_2_01", "完成第一场战斗"} , { "BattleFactorTargetDestroy" : "in0103,in05365"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5201112_036"} , { "EndBattleAction" : "m5201112_02"} , { "SetLocalFlagBattleAction" : "btf5201112_00", 0, 1, ""} , { "SetGlobalFlagBattleAction" : "fe5201112_2_03", 0, 1, "第二场战斗胜利"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe5201112_2_01", "完成第一场战斗"} , { "BattleFactorLocalFlag" : 1, 1, "btf5201112_98", "第二场战斗玩家死亡"} , { "BattleFactorLocalFlag" : 1, 1, "btf5201112_99", "第二场战斗王青阳死亡"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5201112_046"} , { "EndBattleAction" : "m5201112_02"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 0, "fe5201112_2_01", "未完成第一场战斗"} , { "BattleFactorTargetHp" : 1, 30, "in05365"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5201112_057"} , { "BattleResultRmoveBuff" : "in05365", "bt5201112_debuff_Underestimate"} , { "BattleResultAddBuff" : True, "in05365", "bt5201112_buff_FuriosStudent", True} , { "SetGlobalFlagBattleAction" : "fe5201112_2_05", 0, 1, "成功在第一场战斗将魏冷凡血气削至三成"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 0, "fe5201112_2_01", "未完成第一场战斗"} , { "BattleFactorTargetHp" : 1, 30, "in05364"} , { "BattleFactorTurn" : 2, 4} , { "ExecuteOnceNode" } , { "SetGlobalFlagBattleAction" : "fe5201112_2_04", 0, 2, "於第一场战斗存活至少三回合：失败"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe5201112_2_01", "完成第一场战斗"} , { "BattleFactorTargetDestroy" : "Player"} , { "ExecuteOnceNode" } , { "SetLocalFlagBattleAction" : "btf5201112_98", 0, 1, "第二场战斗玩家死亡"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe5201112_2_01", "完成第一场战斗"} , { "BattleFactorTargetDestroy" : "in05364"} , { "ExecuteOnceNode" } , { "SetLocalFlagBattleAction" : "btf5201112_99", 0, 1, "第二场战斗王青阳死亡"} , { "SetGlobalFlagBattleAction" : "fe5201112_2_06", 0, 1, "第二场战斗：王青阳死亡（成绩单）"}  ]}  ]}  ]} 		Reduced Wei Lengfan's HP to 30%.	Wang Qingyang's HP fall below 30%.
+{
+  "Id": "bs5201112_00",
+  "Name": "",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe5201112_2_01\", \"未完成第一场战斗\"} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05364\", 0, 201201102, 1.00000, 0.00000} ",
+      "Next": 4,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05365\", 1, 101101202, 1.00000, 0.00000} ",
+      "Next": 5,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201112_2_01\", 0, 0, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 7,
+      "Child": [
+        7
+      ]
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 8,
+      "Child": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe5201112_2_01\", \"未完成第一场战斗\"} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 10,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in05364\", \"bt5201112_buff_UndeadStudents\", True} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05364\", \"bt5201112_buff_FuriosStudent2\", True} ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05365\", \"bt5201112_debuff_Underestimate\", False} ",
+      "Next": 14,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in05365\", \"bt5201112_buff_UndeadStudents\", True} ",
+      "Next": 15,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"SetUnitCanUseItem\" : \"in05364\", False} ",
+      "Next": 16,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"SetUnitCanUseItem\" : \"in05365\", False} ",
+      "Next": 17,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201112_2_04\", 0, 1, \"於第一场战斗存活至少三回合：缺省成功\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 19,
+      "Child": [
+        19
+      ]
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 20,
+      "Child": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+      ]
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe5201112_2_01\", \"未完成第一场战斗\"} ",
+      "Next": 21,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 30, \"in05364\"} ",
+      "Next": 22,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 23,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201112_2_01\", 0, 1, \"\"} ",
+      "Next": 24,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05364\", \"bt5201112_buff_UndeadStudents\"} ",
+      "Next": 25,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05364\", \"bt5201112_buff_FuriosStudent2\"} ",
+      "Next": 26,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05365\", \"bt5201112_buff_UndeadStudents\"} ",
+      "Next": 27,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05365\", \"bt5201112_buff_FuriosStudent\"} ",
+      "Next": 28,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05365\", \"bt5201112_debuff_Underestimate\"} ",
+      "Next": 29,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleResultTalk\" : \"t5201112_016\"} ",
+      "Next": 30,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0103\", 1, 104104208, 1.00000, 0.00000} ",
+      "Next": 31,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleResultUnitToUnit\" : \"in0103\", \"in05365\"} ",
+      "Next": 32,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleResultTalk\" : \"t5201112_019\"} ",
+      "Next": 33,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleResultAddUnit\" : \"Player\", 0, 102106208, 1.00000, 0.00000} ",
+      "Next": 34,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleResultUnitToUnit\" : \"Player\", \"in0103\"} ",
+      "Next": 35,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleResultTalk\" : \"t5201112_023\"} ",
+      "Next": 36,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"BattleResultUnitHP\" : 0, 100, \"in05364,in05365\"} ",
+      "Next": 37,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleResultTalk\" : \"t5201112_029\"} ",
+      "Next": 38,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05364\", \"bt5201112_buff_BetterStudentAttack\", True} ",
+      "Next": 39,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"BattleResultTalk\" : \"t5201112_031\"} ",
+      "Next": 40,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201112_2_06\", 0, 2, \"第二场战斗：王青阳缺省存活（成绩单）\"} ",
+      "Next": 41,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeated Zhong Ruoxin and Wei Lengfan.\"} ",
+      "Next": 42,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1}{name_2} and Junior Brother Wang Qingyang were killed in action.\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 44,
+      "Child": [
+        44
+      ]
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 45,
+      "Child": [
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51
+      ]
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5201112_2_01\", \"完成第一场战斗\"} ",
+      "Next": 46,
+      "Child": []
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0103,in05365\"} ",
+      "Next": 47,
+      "Child": []
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 48,
+      "Child": []
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"BattleResultTalk\" : \"t5201112_036\"} ",
+      "Next": 49,
+      "Child": []
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"EndBattleAction\" : \"m5201112_02\"} ",
+      "Next": 50,
+      "Child": []
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5201112_00\", 0, 1, \"\"} ",
+      "Next": 51,
+      "Child": []
+    },
+    {
+      "Index": 51,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201112_2_03\", 0, 1, \"第二场战斗胜利\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 52,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 53,
+      "Child": [
+        53
+      ]
+    },
+    {
+      "Index": 53,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 54,
+      "Child": [
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ]
+    },
+    {
+      "Index": 54,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5201112_2_01\", \"完成第一场战斗\"} ",
+      "Next": 55,
+      "Child": []
+    },
+    {
+      "Index": 55,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf5201112_98\", \"第二场战斗Player Death\"} ",
+      "Next": 56,
+      "Child": []
+    },
+    {
+      "Index": 56,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf5201112_99\", \"第二场战斗王青阳死亡\"} ",
+      "Next": 57,
+      "Child": []
+    },
+    {
+      "Index": 57,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 58,
+      "Child": []
+    },
+    {
+      "Index": 58,
+      "Node": "{ \"BattleResultTalk\" : \"t5201112_046\"} ",
+      "Next": 59,
+      "Child": []
+    },
+    {
+      "Index": 59,
+      "Node": "{ \"EndBattleAction\" : \"m5201112_02\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 60,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 61,
+      "Child": [
+        61
+      ]
+    },
+    {
+      "Index": 61,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 62,
+      "Child": [
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68
+      ]
+    },
+    {
+      "Index": 62,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe5201112_2_01\", \"未完成第一场战斗\"} ",
+      "Next": 63,
+      "Child": []
+    },
+    {
+      "Index": 63,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 30, \"in05365\"} ",
+      "Next": 64,
+      "Child": []
+    },
+    {
+      "Index": 64,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 65,
+      "Child": []
+    },
+    {
+      "Index": 65,
+      "Node": "{ \"BattleResultTalk\" : \"t5201112_057\"} ",
+      "Next": 66,
+      "Child": []
+    },
+    {
+      "Index": 66,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05365\", \"bt5201112_debuff_Underestimate\"} ",
+      "Next": 67,
+      "Child": []
+    },
+    {
+      "Index": 67,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05365\", \"bt5201112_buff_FuriosStudent\", True} ",
+      "Next": 68,
+      "Child": []
+    },
+    {
+      "Index": 68,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201112_2_05\", 0, 1, \"成功在第一场战斗将魏冷凡血气削至三成\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 69,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 70,
+      "Child": [
+        70
+      ]
+    },
+    {
+      "Index": 70,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 71,
+      "Child": [
+        71,
+        72,
+        73,
+        74,
+        75
+      ]
+    },
+    {
+      "Index": 71,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe5201112_2_01\", \"未完成第一场战斗\"} ",
+      "Next": 72,
+      "Child": []
+    },
+    {
+      "Index": 72,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 30, \"in05364\"} ",
+      "Next": 73,
+      "Child": []
+    },
+    {
+      "Index": 73,
+      "Node": "{ \"BattleFactorTurn\" : 2, 4} ",
+      "Next": 74,
+      "Child": []
+    },
+    {
+      "Index": 74,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 75,
+      "Child": []
+    },
+    {
+      "Index": 75,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201112_2_04\", 0, 2, \"於第一场战斗存活至少三回合：失败\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 76,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 77,
+      "Child": [
+        77
+      ]
+    },
+    {
+      "Index": 77,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 78,
+      "Child": [
+        78,
+        79,
+        80,
+        81
+      ]
+    },
+    {
+      "Index": 78,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5201112_2_01\", \"完成第一场战斗\"} ",
+      "Next": 79,
+      "Child": []
+    },
+    {
+      "Index": 79,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player\"} ",
+      "Next": 80,
+      "Child": []
+    },
+    {
+      "Index": 80,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 81,
+      "Child": []
+    },
+    {
+      "Index": 81,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5201112_98\", 0, 1, \"第二场战斗Player Death\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 82,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 83,
+      "Child": [
+        83
+      ]
+    },
+    {
+      "Index": 83,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 84,
+      "Child": [
+        84,
+        85,
+        86,
+        87,
+        88
+      ]
+    },
+    {
+      "Index": 84,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5201112_2_01\", \"完成第一场战斗\"} ",
+      "Next": 85,
+      "Child": []
+    },
+    {
+      "Index": 85,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05364\"} ",
+      "Next": 86,
+      "Child": []
+    },
+    {
+      "Index": 86,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 87,
+      "Child": []
+    },
+    {
+      "Index": 87,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5201112_99\", 0, 1, \"第二场战斗王青阳死亡\"} ",
+      "Next": 88,
+      "Child": []
+    },
+    {
+      "Index": 88,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201112_2_06\", 0, 1, \"第二场战斗：王青阳死亡（成绩单）\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "",
+  "WinTip": "Reduce Wei Lengfan's blood to 30%.",
+  "LoseTip": "Wang Qingyang's blood level is as low as 30%."
+}

@@ -1,1 +1,695 @@
-bs1201102_12	bs1201102_12	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "Player", 0, 101105206, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in05570", 0, 102104206, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in15171", 1, 201202103, 1.00000, 0.00000}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "ExecuteOnceNode" } , { "BattleResultMoveUnit" : "in05570,Player", "101202101,200200200"} , { "BattleResultTalk" : "t1201102_747"} , { "BattleResultPlayAction" : "in15171", "skill_MA0701_a01", 0.00000} , { "BattleResultAddBuff" : True, "Player,in05570", "bt1201102_12_debuff_Poison", False} , { "BattleResultTalk" : "t1201102_751"} , { "BattleResultAddBuff" : False, "in15171", "bt1201102_12_buff_HpLock50", True} , { "BattleResultChangeWinTip" : "Defeat the Begger！"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 1, 50, "in15171"} , { "BattleFactorLocalFlag" : 1, 0, "btf1201102_12_00", ""} , { "ExecuteOnceNode" } , { "BattleResultAddUnit" : "in15172", 1, 204105201, 1.00000, 0.00000} , { "BattleResultMoveUnit" : "in15172", "202102200"} , { "BattleResultTalk" : "t1201102_802"} , { "BattleResultAddUnit" : "in15173", 1, 203106203, 1.00000, 0.00000} , { "BattleResultMoveUnit" : "in15173", "201103202"} , { "BattleResultTalk" : "t1201102_803"} , { "BattleResultRmoveBuff" : "in15171", "bt1201102_12_buff_HpLock50"} , { "BattleResultAddBuff" : False, "in15171,in15172,in15173", "bt1201102_12_buff_HpLock01", True} , { "SetLocalFlagBattleAction" : "btf1201102_12_00", 0, 1, ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 1, 1, "in15171"} , { "BattleFactorLocalFlag" : 1, 1, "btf1201102_12_00", ""} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1201102_813"} , { "BattleResultUnitToUnit" : "in15172", "in05570"} , { "BattleResultPlayAction" : "in15172", "skill_MA0701_a01", 0.00000} , { "BattleResultWaitAction" : 0.75000} , { "BattleResultAddBuff" : True, "Player,in05570", "", False} , { "BattleResultWaitAction" : 0.75000} , { "BattleResultAddBuff" : True, "in15171,in15172,in15173", "", True} , { "BattleResultRemoveUnits" : "in15171,in15172,in15173", False} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1201102_817"} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 400, 1, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 1, 1, "in15172"} , { "BattleFactorLocalFlag" : 1, 1, "btf1201102_12_00", ""} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1201102_813"} , { "BattleResultUnitToUnit" : "in15172", "in05570"} , { "BattleResultPlayAction" : "in15172", "skill_MA0701_a01", 0.00000} , { "BattleResultWaitAction" : 0.75000} , { "BattleResultAddBuff" : True, "Player,in05570", "", False} , { "BattleResultWaitAction" : 0.75000} , { "BattleResultAddBuff" : True, "in15171,in15172,in15173", "", True} , { "BattleResultRemoveUnits" : "in15171,in15172,in15173", False} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1201102_817"} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 400, 2, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 1, 1, "in15173"} , { "BattleFactorLocalFlag" : 1, 1, "btf1201102_12_00", ""} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1201102_813"} , { "BattleResultUnitToUnit" : "in15172", "in05570"} , { "BattleResultPlayAction" : "in15172", "skill_MA0701_a01", 0.00000} , { "BattleResultWaitAction" : 0.75000} , { "BattleResultAddBuff" : True, "Player,in05570", "", False} , { "BattleResultWaitAction" : 0.75000} , { "BattleResultAddBuff" : True, "in15171,in15172,in15173", "", True} , { "BattleResultRemoveUnits" : "in15171,in15172,in15173", False} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1201102_817"} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "Player"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1201102_892"} , { "BattleResultAddBuff" : True, "in15171,in15172,in15173", "", True} , { "BattleResultRemoveUnits" : "in15171,in15172,in15173", False} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultTalk" : "t1201102_816"} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in05570"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1201102_892"} , { "BattleResultAddBuff" : True, "in15171,in15172,in15173", "", True} , { "BattleResultRemoveUnits" : "in15171,in15172,in15173", False} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultTalk" : "t1201102_816"} , { "BattleResultLose" : ""}  ]}  ]}  ]} 	医治石崑：湖畔前遭遇乞丐		{name_1}{name_2}or Yin Renping is defeated。
+{
+  "Id": "bs1201102_12",
+  "Name": "bs1201102_12",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"Player\", 0, 101105206, 1.00000, 0.00000} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05570\", 0, 102104206, 1.00000, 0.00000} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnit\" : \"in15171\", 1, 201202103, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 5,
+      "Child": [
+        5
+      ]
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 6,
+      "Child": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in05570,Player\", \"101202101,200200200\"} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultTalk\" : \"t1201102_747\"} ",
+      "Next": 10,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultPlayAction\" : \"in15171\", \"skill_MA0701_a01\", 0.00000} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"Player,in05570\", \"bt1201102_12_debuff_Poison\", False} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultTalk\" : \"t1201102_751\"} ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in15171\", \"bt1201102_12_buff_HpLock50\", True} ",
+      "Next": 14,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Beggar!\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 16,
+      "Child": [
+        16
+      ]
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 17,
+      "Child": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 50, \"in15171\"} ",
+      "Next": 18,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1201102_12_00\", \"\"} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 20,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultAddUnit\" : \"in15172\", 1, 204105201, 1.00000, 0.00000} ",
+      "Next": 21,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in15172\", \"202102200\"} ",
+      "Next": 22,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleResultTalk\" : \"t1201102_802\"} ",
+      "Next": 23,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleResultAddUnit\" : \"in15173\", 1, 203106203, 1.00000, 0.00000} ",
+      "Next": 24,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in15173\", \"201103202\"} ",
+      "Next": 25,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleResultTalk\" : \"t1201102_803\"} ",
+      "Next": 26,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in15171\", \"bt1201102_12_buff_HpLock50\"} ",
+      "Next": 27,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in15171,in15172,in15173\", \"bt1201102_12_buff_HpLock01\", True} ",
+      "Next": 28,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1201102_12_00\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 30,
+      "Child": [
+        30
+      ]
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 31,
+      "Child": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 1, \"in15171\"} ",
+      "Next": 32,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1201102_12_00\", \"\"} ",
+      "Next": 33,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 34,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleResultTalk\" : \"t1201102_813\"} ",
+      "Next": 35,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleResultUnitToUnit\" : \"in15172\", \"in05570\"} ",
+      "Next": 36,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"BattleResultPlayAction\" : \"in15172\", \"skill_MA0701_a01\", 0.00000} ",
+      "Next": 37,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleResultWaitAction\" : 0.75000} ",
+      "Next": 38,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"Player,in05570\", \"\", False} ",
+      "Next": 39,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"BattleResultWaitAction\" : 0.75000} ",
+      "Next": 40,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in15171,in15172,in15173\", \"\", True} ",
+      "Next": 41,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleResultRemoveUnits\" : \"in15171,in15172,in15173\", False} ",
+      "Next": 42,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 43,
+      "Child": []
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"BattleResultTalk\" : \"t1201102_817\"} ",
+      "Next": 44,
+      "Child": []
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
+      "Next": 46,
+      "Child": [
+        46
+      ]
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 47,
+      "Child": [
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60
+      ]
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 1, \"in15172\"} ",
+      "Next": 48,
+      "Child": []
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1201102_12_00\", \"\"} ",
+      "Next": 49,
+      "Child": []
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 50,
+      "Child": []
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"BattleResultTalk\" : \"t1201102_813\"} ",
+      "Next": 51,
+      "Child": []
+    },
+    {
+      "Index": 51,
+      "Node": "{ \"BattleResultUnitToUnit\" : \"in15172\", \"in05570\"} ",
+      "Next": 52,
+      "Child": []
+    },
+    {
+      "Index": 52,
+      "Node": "{ \"BattleResultPlayAction\" : \"in15172\", \"skill_MA0701_a01\", 0.00000} ",
+      "Next": 53,
+      "Child": []
+    },
+    {
+      "Index": 53,
+      "Node": "{ \"BattleResultWaitAction\" : 0.75000} ",
+      "Next": 54,
+      "Child": []
+    },
+    {
+      "Index": 54,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"Player,in05570\", \"\", False} ",
+      "Next": 55,
+      "Child": []
+    },
+    {
+      "Index": 55,
+      "Node": "{ \"BattleResultWaitAction\" : 0.75000} ",
+      "Next": 56,
+      "Child": []
+    },
+    {
+      "Index": 56,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in15171,in15172,in15173\", \"\", True} ",
+      "Next": 57,
+      "Child": []
+    },
+    {
+      "Index": 57,
+      "Node": "{ \"BattleResultRemoveUnits\" : \"in15171,in15172,in15173\", False} ",
+      "Next": 58,
+      "Child": []
+    },
+    {
+      "Index": 58,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 59,
+      "Child": []
+    },
+    {
+      "Index": 59,
+      "Node": "{ \"BattleResultTalk\" : \"t1201102_817\"} ",
+      "Next": 60,
+      "Child": []
+    },
+    {
+      "Index": 60,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 61,
+      "Node": "{ \"BattleEventNode\" : 400, 2, [ ]} ",
+      "Next": 62,
+      "Child": [
+        62
+      ]
+    },
+    {
+      "Index": 62,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 63,
+      "Child": [
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76
+      ]
+    },
+    {
+      "Index": 63,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 1, \"in15173\"} ",
+      "Next": 64,
+      "Child": []
+    },
+    {
+      "Index": 64,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1201102_12_00\", \"\"} ",
+      "Next": 65,
+      "Child": []
+    },
+    {
+      "Index": 65,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 66,
+      "Child": []
+    },
+    {
+      "Index": 66,
+      "Node": "{ \"BattleResultTalk\" : \"t1201102_813\"} ",
+      "Next": 67,
+      "Child": []
+    },
+    {
+      "Index": 67,
+      "Node": "{ \"BattleResultUnitToUnit\" : \"in15172\", \"in05570\"} ",
+      "Next": 68,
+      "Child": []
+    },
+    {
+      "Index": 68,
+      "Node": "{ \"BattleResultPlayAction\" : \"in15172\", \"skill_MA0701_a01\", 0.00000} ",
+      "Next": 69,
+      "Child": []
+    },
+    {
+      "Index": 69,
+      "Node": "{ \"BattleResultWaitAction\" : 0.75000} ",
+      "Next": 70,
+      "Child": []
+    },
+    {
+      "Index": 70,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"Player,in05570\", \"\", False} ",
+      "Next": 71,
+      "Child": []
+    },
+    {
+      "Index": 71,
+      "Node": "{ \"BattleResultWaitAction\" : 0.75000} ",
+      "Next": 72,
+      "Child": []
+    },
+    {
+      "Index": 72,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in15171,in15172,in15173\", \"\", True} ",
+      "Next": 73,
+      "Child": []
+    },
+    {
+      "Index": 73,
+      "Node": "{ \"BattleResultRemoveUnits\" : \"in15171,in15172,in15173\", False} ",
+      "Next": 74,
+      "Child": []
+    },
+    {
+      "Index": 74,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 75,
+      "Child": []
+    },
+    {
+      "Index": 75,
+      "Node": "{ \"BattleResultTalk\" : \"t1201102_817\"} ",
+      "Next": 76,
+      "Child": []
+    },
+    {
+      "Index": 76,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 77,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 78,
+      "Child": [
+        78
+      ]
+    },
+    {
+      "Index": 78,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 79,
+      "Child": [
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86
+      ]
+    },
+    {
+      "Index": 79,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player\"} ",
+      "Next": 80,
+      "Child": []
+    },
+    {
+      "Index": 80,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 81,
+      "Child": []
+    },
+    {
+      "Index": 81,
+      "Node": "{ \"BattleResultTalk\" : \"t1201102_892\"} ",
+      "Next": 82,
+      "Child": []
+    },
+    {
+      "Index": 82,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in15171,in15172,in15173\", \"\", True} ",
+      "Next": 83,
+      "Child": []
+    },
+    {
+      "Index": 83,
+      "Node": "{ \"BattleResultRemoveUnits\" : \"in15171,in15172,in15173\", False} ",
+      "Next": 84,
+      "Child": []
+    },
+    {
+      "Index": 84,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 85,
+      "Child": []
+    },
+    {
+      "Index": 85,
+      "Node": "{ \"BattleResultTalk\" : \"t1201102_816\"} ",
+      "Next": 86,
+      "Child": []
+    },
+    {
+      "Index": 86,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 87,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 88,
+      "Child": [
+        88
+      ]
+    },
+    {
+      "Index": 88,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 89,
+      "Child": [
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96
+      ]
+    },
+    {
+      "Index": 89,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05570\"} ",
+      "Next": 90,
+      "Child": []
+    },
+    {
+      "Index": 90,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 91,
+      "Child": []
+    },
+    {
+      "Index": 91,
+      "Node": "{ \"BattleResultTalk\" : \"t1201102_892\"} ",
+      "Next": 92,
+      "Child": []
+    },
+    {
+      "Index": 92,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in15171,in15172,in15173\", \"\", True} ",
+      "Next": 93,
+      "Child": []
+    },
+    {
+      "Index": 93,
+      "Node": "{ \"BattleResultRemoveUnits\" : \"in15171,in15172,in15173\", False} ",
+      "Next": 94,
+      "Child": []
+    },
+    {
+      "Index": 94,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 95,
+      "Child": []
+    },
+    {
+      "Index": 95,
+      "Node": "{ \"BattleResultTalk\" : \"t1201102_816\"} ",
+      "Next": 96,
+      "Child": []
+    },
+    {
+      "Index": 96,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "医治石崑：湖畔前遭遇乞丐",
+  "WinTip": "",
+  "LoseTip": "{name_1}{name_2} or Yin Renping is defeated"
+}

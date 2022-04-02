@@ -1,1 +1,80 @@
-bs5108101_01	bs5108101_01	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "party00", 0, 202201103, 1.00000} , { "BattleResultAddUnit" : "in0106", 3, 102201201, 1.00000} , { "BattleResultAddUnit" : "in03001", 1, 202103201, 1.00000} , { "BattleResultLoseFaction" : "", 0}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in0106,in03001"} , { "BattleResultTalk" : "t5108101_021"} , { "BattleResultWin" : ""}  ]}  ]}  ]} 	书传书/鄱阳湖挥毫	Defeat Nan Feihuang and Jiang Hongbo!	{name_1}{name_2}is defeated。
+{
+  "Id": "bs5108101_01",
+  "Name": "bs5108101_01",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"party00\", 0, 202201103, 1.00000, 0.00000} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0106\", 3, 102201201, 1.00000, 0.00000} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnit\" : \"in03001\", 1, 202103201, 1.00000, 0.00000} ",
+      "Next": 4,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultLoseFaction\" : \"\", 0} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 6,
+      "Child": [
+        6
+      ]
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 7,
+      "Child": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0106,in03001\"} ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultTalk\" : \"t5108101_021\"} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "书传书/鄱阳湖挥毫",
+  "WinTip": "Defeat Nan Feihuang and Jiang Hongbo!",
+  "LoseTip": "{name_1}{name_2} is defeated.。"
+}

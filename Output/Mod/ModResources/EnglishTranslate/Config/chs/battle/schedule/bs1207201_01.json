@@ -1,1 +1,1305 @@
-bs1207201_01	南昌七夕宴＿多方混战	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "party00", 0, 103101204, 1.00000, 0.00000} , { "BattleResultAddUnit" : "party01", 0, 101202101, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in21007", 2, 101101202, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in05532", 0, 201101200, 1.00000, 0.00000} , { "BattleResultAddUnits" : "io222445,io222345,io222145,io222045,io222044", 1, "107200207,105102207,103104207,101106207,201108207"} , { "BattleResultAddUnits" : "io222355,io222154,io222254,io222255", 1, "110201209,108101209,200109209,202110208"} , { "BattleResultAddUnit" : "in14001", 1, 106106212, 1.00000, 0.00000} , { "BattleResultAddBuff" : True, "in14001", "bt1207201_02_in14001", True} , { "BattleResultAddBuff" : False, "in14001", "bt1207201_02_in14001_nomove", False} , { "BattleResultAddBuff" : False, "io222355,io222154,io222254,io222255", "bt1207201_02_in14001_nomove", False} , { "BattleResultAddBuff" : True, "in05532", "bt1207201_02_in05532", True} , { "BattleResultAddBuff" : True, "in14001", "bt1207201_02_in14001_blockHP", True} , { "BattleResultAddBuff" : True, "in21007", "bt1207201_02_in21007_hungry2", False} , { "BattleResultAddBuff" : False, "io222355,io222154,io222254,io222255", "bt1207201_02_io221145", False} , { "BattleResultAddBuff" : False, "io222445,io222345,io222145,io222045,io222044", "bt1207201_02_io221145_2", False}  ]} , { "BattleEventNode" : 200, 1, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1207203_300"}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "BattleFactorGlobalFlag" : 1, 1, "fe1207201_1_15", "【酒宴大会】选择独自一人"} , { "BattleFactorGlobalFlag" : 1, 1, "fe1207201_1_10", "凌无绝性别为女"} , { "ExecuteOnceNode" } , { "BattleResultAddUnit" : "in21009", 2, 200103203, 1.00000, 0.00000} , { "BattleResultAddBuff" : True, "in21009", "", True} , { "BattleResultTalk" : "t1207203_304"} , { "BattleResultAddBuff" : False, "in21009", "bt1207201_in21009_debuff", False}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "BattleFactorGlobalFlag" : 1, 1, "fe1207201_1_15", "【酒宴大会】选择独自一人"} , { "BattleFactorGlobalFlag" : 1, 2, "fe1207201_1_10", "凌无绝性别为男"} , { "ExecuteOnceNode" } , { "BattleResultAddUnit" : "in21010", 2, 200103203, 1.00000, 0.00000} , { "BattleResultAddBuff" : True, "in21010", "", True} , { "BattleResultTalk" : "t1207203_304"} , { "BattleResultAddBuff" : False, "in21010", "bt1207201_in21009_debuff", False}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 2} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1207203_313"} , { "BattleResultAddUnit" : "in12012", 0, 200200200, 1.00000, 0.00000} , { "BattleResultAddBuff" : True, "in12012", "", True} , { "BattleResultTalk" : "t1207203_314"} , { "BattleResultAddSecondaryGoal" : "btc1207201_01", "Young Master of Great Sky Hostel， Chen Jixuan， survives"} , { "BattleResultChangeSecondaryGoal" : "btc1207201_01", 1}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 0, "fe1207201_2_18", "【酒宴大会】张启洛变身开关"} , { "BattleFactorTurn" : 1, 3} , { "BattleFactorTargetHp" : 0, 0, "in05532"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1207203_343"} , { "BattleResultAddUnits" : "io222065,io222464,io222465,io222065", 1, "201203104,201204105,203201104,204201105"} , { "BattleResultWaitAction" : 0.20000} , { "BattleResultAddBuff" : True, "io222065,io222464,io222465,io222065", "bt1207201_02_io221145", True} , { "BattleResultWaitAction" : 0.20000} , { "BattleResultTalk" : "t1207203_389"} , { "BattleResultTalk" : "t1207203_345"} , { "BattleResultrReplaceUnit" : "in05532", "in0553201", 1.00000, 0.00000} , { "BattleResultAddBuff" : True, "in05532", "", True} , { "BattleResultTalk" : "t1207203_358"} , { "SetGlobalFlagBattleAction" : "fe1207201_2_18", 0, 1, "【酒宴大会】张启洛变身开关"} , { "BattleResultAddBuff" : False, "in0553201", "bt1207201_02_in0553201", False}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 1, 100, "in14001"} , { "BattleFactorTurn" : 1, 1} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1207203_388"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 2, 100, "in14001"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1207203_392"} , { "BattleResultAddUnits" : "io222355,io222355", 1, "109106215,106109215"} , { "BattleResultAddBuff" : True, "io222355,io222355", "bt1207201_02_io221145", True} , { "BattleResultTalk" : "t1207203_391"} , { "BattleResultRmoveBuff" : "in14001", "bt1207201_02_in14001_nomove"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in12012"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1207203_375"} , { "BattleResultChangeSecondaryGoal" : "btc1207201_01", 2}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in0553201"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1207203_378"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in21007"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1207203_379"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe1207201_1_15", "【酒宴大会】选择独自一人"} , { "BattleFactorGlobalFlag" : 1, 1, "fe1207201_1_10", "凌无绝性别为女"} , { "BattleFactorTargetDestroy" : "in21009"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1207203_380"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe1207201_1_15", "【酒宴大会】选择独自一人"} , { "BattleFactorGlobalFlag" : 1, 2, "fe1207201_1_10", "凌无绝性别为男"} , { "BattleFactorTargetDestroy" : "in21010"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1207203_380"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 1, 50, "in14001"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1207203_382"} , { "BattleResultUnitHP" : 4, 100, "part00"} , { "SetGlobalFlagBattleAction" : "fe1207201_1_16", 0, 1, "第二年七夕_七夕酒宴混战胜利"} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 0} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1207203_386"} , { "BattleResultUnitHP" : 4, 100, "part00"} , { "SetGlobalFlagBattleAction" : "fe1207201_1_16", 0, 2, "第二年七夕_七夕酒宴混战失败"} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 2, 95, "io222355"} , { "BattleResultRmoveBuff" : "io222355", "bt1207201_02_in14001_nomove"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 2, 95, "io222154"} , { "BattleResultRmoveBuff" : "io222154", "bt1207201_02_in14001_nomove"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 2, 95, "io222254"} , { "BattleResultRmoveBuff" : "io222254", "bt1207201_02_in14001_nomove"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 2, 95, "io222255"} , { "BattleResultRmoveBuff" : "io222255", "bt1207201_02_in14001_nomove"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 0, "fe1207201_2_18", "【酒宴大会】张启洛变身开关"} , { "BattleFactorTargetHp" : 1, 10, "in05532"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1207203_343"} , { "BattleResultAddUnits" : "io222055,io222454,io222455,io222055", 1, "201203104,201204105,203201104,204201105"} , { "BattleResultWaitAction" : 0.20000} , { "BattleResultAddBuff" : True, "io222055,io222454,io222455,io222055", "bt1207201_02_io221145", True} , { "BattleResultWaitAction" : 0.20000} , { "BattleResultTalk" : "t1207203_389"} , { "BattleResultTalk" : "t1207203_345"} , { "BattleResultrReplaceUnit" : "in05532", "in0553201", 1.00000, 0.00000} , { "BattleResultAddBuff" : True, "in0553201", "bt1207201_02_in0553201", True} , { "BattleResultTalk" : "t1207203_358"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 0, "fe1207201_2_48", "是否触发金刚首次对话"} , { "BattleUseSkillCondition" : "in21007", "ma090801"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1207203_489"} , { "SetGlobalFlagBattleAction" : "fe1207201_2_48", 0, 1, "是否触发金刚首次对话"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 0, "fe1207201_2_48", "是否触发金刚首次对话"} , { "BattleUseSkillCondition" : "in21007", "ma090901"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1207203_489"} , { "SetGlobalFlagBattleAction" : "fe1207201_2_48", 0, 1, "是否触发金刚首次对话"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 0, "fe1207201_2_48", "是否触发金刚首次对话"} , { "BattleUseSkillCondition" : "in21007", "ma091001"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1207203_489"} , { "SetGlobalFlagBattleAction" : "fe1207201_2_48", 0, 1, "是否触发金刚首次对话"}  ]}  ]}  ]} 	第二年七夕_七夕酒宴混战	Reduce Liu Yue's HP to 50%	All controllable friendly units defeated。
+{
+  "Id": "bs1207201_01",
+  "Name": "南昌七夕宴＿多方混战",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"party00\", 0, 103101204, 1.00000, 0.00000} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"party01\", 0, 101202101, 1.00000, 0.00000} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnit\" : \"in21007\", 2, 101101202, 1.00000, 0.00000} ",
+      "Next": 4,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05532\", 0, 201101200, 1.00000, 0.00000} ",
+      "Next": 5,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleResultAddUnits\" : \"io222445,io222345,io222145,io222045,io222044\", 1, \"107200207,105102207,103104207,101106207,201108207\"} ",
+      "Next": 6,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleResultAddUnits\" : \"io222355,io222154,io222254,io222255\", 1, \"110201209,108101209,200109209,202110208\"} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleResultAddUnit\" : \"in14001\", 1, 106106212, 1.00000, 0.00000} ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in14001\", \"bt1207201_02_in14001\", True} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in14001\", \"bt1207201_02_in14001_nomove\", False} ",
+      "Next": 10,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"io222355,io222154,io222254,io222255\", \"bt1207201_02_in14001_nomove\", False} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05532\", \"bt1207201_02_in05532\", True} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in14001\", \"bt1207201_02_in14001_blockHP\", True} ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in21007\", \"bt1207201_02_in21007_hungry2\", False} ",
+      "Next": 14,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"io222355,io222154,io222254,io222255\", \"bt1207201_02_io221145\", False} ",
+      "Next": 15,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"io222445,io222345,io222145,io222045,io222044\", \"bt1207201_02_io221145_2\", False} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleEventNode\" : 200, 1, [ ]} ",
+      "Next": 17,
+      "Child": [
+        17
+      ]
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 18,
+      "Child": [
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 20,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultTalk\" : \"t1207203_300\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 22,
+      "Child": [
+        22
+      ]
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 23,
+      "Child": [
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 24,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1207201_1_15\", \"【酒宴大会】选择独自一人\"} ",
+      "Next": 25,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1207201_1_10\", \"凌None绝性别为女\"} ",
+      "Next": 26,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 27,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleResultAddUnit\" : \"in21009\", 2, 200103203, 1.00000, 0.00000} ",
+      "Next": 28,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in21009\", \"\", True} ",
+      "Next": 29,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleResultTalk\" : \"t1207203_304\"} ",
+      "Next": 30,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in21009\", \"bt1207201_in21009_debuff\", False} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 32,
+      "Child": [
+        32
+      ]
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 33,
+      "Child": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ]
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 34,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1207201_1_15\", \"【酒宴大会】选择独自一人\"} ",
+      "Next": 35,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 2, \"fe1207201_1_10\", \"凌None绝性别为男\"} ",
+      "Next": 36,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 37,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleResultAddUnit\" : \"in21010\", 2, 200103203, 1.00000, 0.00000} ",
+      "Next": 38,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in21010\", \"\", True} ",
+      "Next": 39,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"BattleResultTalk\" : \"t1207203_304\"} ",
+      "Next": 40,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in21010\", \"bt1207201_in21009_debuff\", False} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 42,
+      "Child": [
+        42
+      ]
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 43,
+      "Child": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ]
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"BattleFactorTurn\" : 1, 2} ",
+      "Next": 44,
+      "Child": []
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 45,
+      "Child": []
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"BattleResultTalk\" : \"t1207203_313\"} ",
+      "Next": 46,
+      "Child": []
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"BattleResultAddUnit\" : \"in12012\", 0, 200200200, 1.00000, 0.00000} ",
+      "Next": 47,
+      "Child": []
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in12012\", \"\", True} ",
+      "Next": 48,
+      "Child": []
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"BattleResultTalk\" : \"t1207203_314\"} ",
+      "Next": 49,
+      "Child": []
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"BattleResultAddSecondaryGoal\" : \"btc1207201_01\", \"长天客栈公子陈季轩存活\"} ",
+      "Next": 50,
+      "Child": []
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"btc1207201_01\", 1} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 51,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 52,
+      "Child": [
+        52
+      ]
+    },
+    {
+      "Index": 52,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 53,
+      "Child": [
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68
+      ]
+    },
+    {
+      "Index": 53,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1207201_2_18\", \"【酒宴大会】张启洛变身开关\"} ",
+      "Next": 54,
+      "Child": []
+    },
+    {
+      "Index": 54,
+      "Node": "{ \"BattleFactorTurn\" : 1, 3} ",
+      "Next": 55,
+      "Child": []
+    },
+    {
+      "Index": 55,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in05532\"} ",
+      "Next": 56,
+      "Child": []
+    },
+    {
+      "Index": 56,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 57,
+      "Child": []
+    },
+    {
+      "Index": 57,
+      "Node": "{ \"BattleResultTalk\" : \"t1207203_343\"} ",
+      "Next": 58,
+      "Child": []
+    },
+    {
+      "Index": 58,
+      "Node": "{ \"BattleResultAddUnits\" : \"io222065,io222464,io222465,io222065\", 1, \"201203104,201204105,203201104,204201105\"} ",
+      "Next": 59,
+      "Child": []
+    },
+    {
+      "Index": 59,
+      "Node": "{ \"BattleResultWaitAction\" : 0.20000} ",
+      "Next": 60,
+      "Child": []
+    },
+    {
+      "Index": 60,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io222065,io222464,io222465,io222065\", \"bt1207201_02_io221145\", True} ",
+      "Next": 61,
+      "Child": []
+    },
+    {
+      "Index": 61,
+      "Node": "{ \"BattleResultWaitAction\" : 0.20000} ",
+      "Next": 62,
+      "Child": []
+    },
+    {
+      "Index": 62,
+      "Node": "{ \"BattleResultTalk\" : \"t1207203_389\"} ",
+      "Next": 63,
+      "Child": []
+    },
+    {
+      "Index": 63,
+      "Node": "{ \"BattleResultTalk\" : \"t1207203_345\"} ",
+      "Next": 64,
+      "Child": []
+    },
+    {
+      "Index": 64,
+      "Node": "{ \"BattleResultrReplaceUnit\" : \"in05532\", \"in0553201\", 1.00000, 0.00000} ",
+      "Next": 65,
+      "Child": []
+    },
+    {
+      "Index": 65,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05532\", \"\", True} ",
+      "Next": 66,
+      "Child": []
+    },
+    {
+      "Index": 66,
+      "Node": "{ \"BattleResultTalk\" : \"t1207203_358\"} ",
+      "Next": 67,
+      "Child": []
+    },
+    {
+      "Index": 67,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1207201_2_18\", 0, 1, \"【酒宴大会】张启洛变身开关\"} ",
+      "Next": 68,
+      "Child": []
+    },
+    {
+      "Index": 68,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in0553201\", \"bt1207201_02_in0553201\", False} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 69,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 70,
+      "Child": [
+        70
+      ]
+    },
+    {
+      "Index": 70,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 71,
+      "Child": [
+        71,
+        72,
+        73,
+        74
+      ]
+    },
+    {
+      "Index": 71,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 100, \"in14001\"} ",
+      "Next": 72,
+      "Child": []
+    },
+    {
+      "Index": 72,
+      "Node": "{ \"BattleFactorTurn\" : 1, 1} ",
+      "Next": 73,
+      "Child": []
+    },
+    {
+      "Index": 73,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 74,
+      "Child": []
+    },
+    {
+      "Index": 74,
+      "Node": "{ \"BattleResultTalk\" : \"t1207203_388\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 75,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 76,
+      "Child": [
+        76
+      ]
+    },
+    {
+      "Index": 76,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 77,
+      "Child": [
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83
+      ]
+    },
+    {
+      "Index": 77,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 100, \"in14001\"} ",
+      "Next": 78,
+      "Child": []
+    },
+    {
+      "Index": 78,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 79,
+      "Child": []
+    },
+    {
+      "Index": 79,
+      "Node": "{ \"BattleResultTalk\" : \"t1207203_392\"} ",
+      "Next": 80,
+      "Child": []
+    },
+    {
+      "Index": 80,
+      "Node": "{ \"BattleResultAddUnits\" : \"io222355,io222355\", 1, \"109106215,106109215\"} ",
+      "Next": 81,
+      "Child": []
+    },
+    {
+      "Index": 81,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io222355,io222355\", \"bt1207201_02_io221145\", True} ",
+      "Next": 82,
+      "Child": []
+    },
+    {
+      "Index": 82,
+      "Node": "{ \"BattleResultTalk\" : \"t1207203_391\"} ",
+      "Next": 83,
+      "Child": []
+    },
+    {
+      "Index": 83,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in14001\", \"bt1207201_02_in14001_nomove\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 84,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 85,
+      "Child": [
+        85
+      ]
+    },
+    {
+      "Index": 85,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 86,
+      "Child": [
+        86,
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "Index": 86,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in12012\"} ",
+      "Next": 87,
+      "Child": []
+    },
+    {
+      "Index": 87,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 88,
+      "Child": []
+    },
+    {
+      "Index": 88,
+      "Node": "{ \"BattleResultTalk\" : \"t1207203_375\"} ",
+      "Next": 89,
+      "Child": []
+    },
+    {
+      "Index": 89,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"btc1207201_01\", 2} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 90,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 91,
+      "Child": [
+        91
+      ]
+    },
+    {
+      "Index": 91,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 92,
+      "Child": [
+        92,
+        93,
+        94
+      ]
+    },
+    {
+      "Index": 92,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0553201\"} ",
+      "Next": 93,
+      "Child": []
+    },
+    {
+      "Index": 93,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 94,
+      "Child": []
+    },
+    {
+      "Index": 94,
+      "Node": "{ \"BattleResultTalk\" : \"t1207203_378\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 95,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 96,
+      "Child": [
+        96
+      ]
+    },
+    {
+      "Index": 96,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 97,
+      "Child": [
+        97,
+        98,
+        99
+      ]
+    },
+    {
+      "Index": 97,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in21007\"} ",
+      "Next": 98,
+      "Child": []
+    },
+    {
+      "Index": 98,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 99,
+      "Child": []
+    },
+    {
+      "Index": 99,
+      "Node": "{ \"BattleResultTalk\" : \"t1207203_379\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 100,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 101,
+      "Child": [
+        101
+      ]
+    },
+    {
+      "Index": 101,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 102,
+      "Child": [
+        102,
+        103,
+        104,
+        105,
+        106
+      ]
+    },
+    {
+      "Index": 102,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1207201_1_15\", \"【酒宴大会】选择独自一人\"} ",
+      "Next": 103,
+      "Child": []
+    },
+    {
+      "Index": 103,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1207201_1_10\", \"凌None绝性别为女\"} ",
+      "Next": 104,
+      "Child": []
+    },
+    {
+      "Index": 104,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in21009\"} ",
+      "Next": 105,
+      "Child": []
+    },
+    {
+      "Index": 105,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 106,
+      "Child": []
+    },
+    {
+      "Index": 106,
+      "Node": "{ \"BattleResultTalk\" : \"t1207203_380\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 107,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 108,
+      "Child": [
+        108
+      ]
+    },
+    {
+      "Index": 108,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 109,
+      "Child": [
+        109,
+        110,
+        111,
+        112,
+        113
+      ]
+    },
+    {
+      "Index": 109,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1207201_1_15\", \"【酒宴大会】选择独自一人\"} ",
+      "Next": 110,
+      "Child": []
+    },
+    {
+      "Index": 110,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 2, \"fe1207201_1_10\", \"凌None绝性别为男\"} ",
+      "Next": 111,
+      "Child": []
+    },
+    {
+      "Index": 111,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in21010\"} ",
+      "Next": 112,
+      "Child": []
+    },
+    {
+      "Index": 112,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 113,
+      "Child": []
+    },
+    {
+      "Index": 113,
+      "Node": "{ \"BattleResultTalk\" : \"t1207203_380\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 114,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 115,
+      "Child": [
+        115
+      ]
+    },
+    {
+      "Index": 115,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 116,
+      "Child": [
+        116,
+        117,
+        118,
+        119,
+        120,
+        121
+      ]
+    },
+    {
+      "Index": 116,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 50, \"in14001\"} ",
+      "Next": 117,
+      "Child": []
+    },
+    {
+      "Index": 117,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 118,
+      "Child": []
+    },
+    {
+      "Index": 118,
+      "Node": "{ \"BattleResultTalk\" : \"t1207203_382\"} ",
+      "Next": 119,
+      "Child": []
+    },
+    {
+      "Index": 119,
+      "Node": "{ \"BattleResultUnitHP\" : 4, 100, \"part00\"} ",
+      "Next": 120,
+      "Child": []
+    },
+    {
+      "Index": 120,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1207201_1_16\", 0, 1, \"第二年七夕_七夕酒宴混战胜利\"} ",
+      "Next": 121,
+      "Child": []
+    },
+    {
+      "Index": 121,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 122,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 123,
+      "Child": [
+        123
+      ]
+    },
+    {
+      "Index": 123,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 124,
+      "Child": [
+        124,
+        125,
+        126,
+        127,
+        128,
+        129
+      ]
+    },
+    {
+      "Index": 124,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 0} ",
+      "Next": 125,
+      "Child": []
+    },
+    {
+      "Index": 125,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 126,
+      "Child": []
+    },
+    {
+      "Index": 126,
+      "Node": "{ \"BattleResultTalk\" : \"t1207203_386\"} ",
+      "Next": 127,
+      "Child": []
+    },
+    {
+      "Index": 127,
+      "Node": "{ \"BattleResultUnitHP\" : 4, 100, \"part00\"} ",
+      "Next": 128,
+      "Child": []
+    },
+    {
+      "Index": 128,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1207201_1_16\", 0, 2, \"第二年七夕_七夕酒宴混战失败\"} ",
+      "Next": 129,
+      "Child": []
+    },
+    {
+      "Index": 129,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 130,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 131,
+      "Child": [
+        131
+      ]
+    },
+    {
+      "Index": 131,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 132,
+      "Child": [
+        132,
+        133
+      ]
+    },
+    {
+      "Index": 132,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 95, \"io222355\"} ",
+      "Next": 133,
+      "Child": []
+    },
+    {
+      "Index": 133,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"io222355\", \"bt1207201_02_in14001_nomove\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 134,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 135,
+      "Child": [
+        135
+      ]
+    },
+    {
+      "Index": 135,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 136,
+      "Child": [
+        136,
+        137
+      ]
+    },
+    {
+      "Index": 136,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 95, \"io222154\"} ",
+      "Next": 137,
+      "Child": []
+    },
+    {
+      "Index": 137,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"io222154\", \"bt1207201_02_in14001_nomove\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 138,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 139,
+      "Child": [
+        139
+      ]
+    },
+    {
+      "Index": 139,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 140,
+      "Child": [
+        140,
+        141
+      ]
+    },
+    {
+      "Index": 140,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 95, \"io222254\"} ",
+      "Next": 141,
+      "Child": []
+    },
+    {
+      "Index": 141,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"io222254\", \"bt1207201_02_in14001_nomove\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 142,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 143,
+      "Child": [
+        143
+      ]
+    },
+    {
+      "Index": 143,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 144,
+      "Child": [
+        144,
+        145
+      ]
+    },
+    {
+      "Index": 144,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 95, \"io222255\"} ",
+      "Next": 145,
+      "Child": []
+    },
+    {
+      "Index": 145,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"io222255\", \"bt1207201_02_in14001_nomove\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 146,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 147,
+      "Child": [
+        147
+      ]
+    },
+    {
+      "Index": 147,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 148,
+      "Child": [
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160
+      ]
+    },
+    {
+      "Index": 148,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1207201_2_18\", \"【酒宴大会】张启洛变身开关\"} ",
+      "Next": 149,
+      "Child": []
+    },
+    {
+      "Index": 149,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 10, \"in05532\"} ",
+      "Next": 150,
+      "Child": []
+    },
+    {
+      "Index": 150,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 151,
+      "Child": []
+    },
+    {
+      "Index": 151,
+      "Node": "{ \"BattleResultTalk\" : \"t1207203_343\"} ",
+      "Next": 152,
+      "Child": []
+    },
+    {
+      "Index": 152,
+      "Node": "{ \"BattleResultAddUnits\" : \"io222055,io222454,io222455,io222055\", 1, \"201203104,201204105,203201104,204201105\"} ",
+      "Next": 153,
+      "Child": []
+    },
+    {
+      "Index": 153,
+      "Node": "{ \"BattleResultWaitAction\" : 0.20000} ",
+      "Next": 154,
+      "Child": []
+    },
+    {
+      "Index": 154,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io222055,io222454,io222455,io222055\", \"bt1207201_02_io221145\", True} ",
+      "Next": 155,
+      "Child": []
+    },
+    {
+      "Index": 155,
+      "Node": "{ \"BattleResultWaitAction\" : 0.20000} ",
+      "Next": 156,
+      "Child": []
+    },
+    {
+      "Index": 156,
+      "Node": "{ \"BattleResultTalk\" : \"t1207203_389\"} ",
+      "Next": 157,
+      "Child": []
+    },
+    {
+      "Index": 157,
+      "Node": "{ \"BattleResultTalk\" : \"t1207203_345\"} ",
+      "Next": 158,
+      "Child": []
+    },
+    {
+      "Index": 158,
+      "Node": "{ \"BattleResultrReplaceUnit\" : \"in05532\", \"in0553201\", 1.00000, 0.00000} ",
+      "Next": 159,
+      "Child": []
+    },
+    {
+      "Index": 159,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0553201\", \"bt1207201_02_in0553201\", True} ",
+      "Next": 160,
+      "Child": []
+    },
+    {
+      "Index": 160,
+      "Node": "{ \"BattleResultTalk\" : \"t1207203_358\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 161,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 162,
+      "Child": [
+        162
+      ]
+    },
+    {
+      "Index": 162,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 163,
+      "Child": [
+        163,
+        164,
+        165,
+        166,
+        167
+      ]
+    },
+    {
+      "Index": 163,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1207201_2_48\", \"是否触发金刚首次对话\"} ",
+      "Next": 164,
+      "Child": []
+    },
+    {
+      "Index": 164,
+      "Node": "{ \"BattleUseSkillCondition\" : \"in21007\", \"ma090801\"} ",
+      "Next": 165,
+      "Child": []
+    },
+    {
+      "Index": 165,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 166,
+      "Child": []
+    },
+    {
+      "Index": 166,
+      "Node": "{ \"BattleResultTalk\" : \"t1207203_489\"} ",
+      "Next": 167,
+      "Child": []
+    },
+    {
+      "Index": 167,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1207201_2_48\", 0, 1, \"是否触发金刚首次对话\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 168,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 169,
+      "Child": [
+        169
+      ]
+    },
+    {
+      "Index": 169,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 170,
+      "Child": [
+        170,
+        171,
+        172,
+        173,
+        174
+      ]
+    },
+    {
+      "Index": 170,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1207201_2_48\", \"是否触发金刚首次对话\"} ",
+      "Next": 171,
+      "Child": []
+    },
+    {
+      "Index": 171,
+      "Node": "{ \"BattleUseSkillCondition\" : \"in21007\", \"ma090901\"} ",
+      "Next": 172,
+      "Child": []
+    },
+    {
+      "Index": 172,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 173,
+      "Child": []
+    },
+    {
+      "Index": 173,
+      "Node": "{ \"BattleResultTalk\" : \"t1207203_489\"} ",
+      "Next": 174,
+      "Child": []
+    },
+    {
+      "Index": 174,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1207201_2_48\", 0, 1, \"是否触发金刚首次对话\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 175,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 176,
+      "Child": [
+        176
+      ]
+    },
+    {
+      "Index": 176,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 177,
+      "Child": [
+        177,
+        178,
+        179,
+        180,
+        181
+      ]
+    },
+    {
+      "Index": 177,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1207201_2_48\", \"是否触发金刚首次对话\"} ",
+      "Next": 178,
+      "Child": []
+    },
+    {
+      "Index": 178,
+      "Node": "{ \"BattleUseSkillCondition\" : \"in21007\", \"ma091001\"} ",
+      "Next": 179,
+      "Child": []
+    },
+    {
+      "Index": 179,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 180,
+      "Child": []
+    },
+    {
+      "Index": 180,
+      "Node": "{ \"BattleResultTalk\" : \"t1207203_489\"} ",
+      "Next": 181,
+      "Child": []
+    },
+    {
+      "Index": 181,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1207201_2_48\", 0, 1, \"是否触发金刚首次对话\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "第二年七夕_七夕酒宴混战",
+  "WinTip": "Reduce Liu's HP to 50%",
+  "LoseTip": "All controllable friendly units are defeated"
+}

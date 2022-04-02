@@ -1,1 +1,166 @@
-bs1011101_01		{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "in0111", 0, 101201200, 1.00000, 0.00000} , { "BattleResultAddUnit" : "Player", 0, 200200200, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in05707", 1, 103203200, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in05708", 1, 203200103, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in05709", 1, 200103203, 1.00000, 0.00000}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1011101_056"} , { "BattleResultAddBuff" : True, "in0111", "bt1011101_01_buff_in0111", True} , { "BattleResultAddBuff" : False, "in05707,in05708,in05709", "bt1011101_01_buff_robot", False} , { "BattleResultAddBuff" : False, "in05707,in05708,in05709", "bt1011101_01_buff_switch", False}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 0} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 1} , { "BattleResultWin" : ""}  ]}  ]}  ]} 	武辙事件一战斗	Use Gimmick to subdue all duels.	Our team was defeated in its entirety。
+{
+  "Id": "bs1011101_01",
+  "Name": "",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0111\", 0, 101201200, 1.00000, 0.00000} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"Player\", 0, 200200200, 1.00000, 0.00000} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05707\", 1, 103203200, 1.00000, 0.00000} ",
+      "Next": 4,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05708\", 1, 203200103, 1.00000, 0.00000} ",
+      "Next": 5,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05709\", 1, 200103203, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 7,
+      "Child": [
+        7
+      ]
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 8,
+      "Child": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 10,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultTalk\" : \"t1011101_056\"} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0111\", \"bt1011101_01_buff_in0111\", True} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in05707,in05708,in05709\", \"bt1011101_01_buff_robot\", False} ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in05707,in05708,in05709\", \"bt1011101_01_buff_switch\", False} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 15,
+      "Child": [
+        15
+      ]
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 16,
+      "Child": [
+        16,
+        17
+      ]
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 0} ",
+      "Next": 17,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 19,
+      "Child": [
+        19
+      ]
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 20,
+      "Child": [
+        20,
+        21
+      ]
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 21,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "武辙事件一战斗",
+  "WinTip": "Subdue all training automantons",
+  "LoseTip": "All friendly units are defeated"
+}

@@ -1,1 +1,244 @@
-bs1101101_01b	1101101：楚段决战(段霄烈线)	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "in0201", 1, 200102202, 1.00000} , { "BattleResultAddUnit" : "in0202", 0, 200203103, 1.00000} , { "BattleResultWinFaction" : "", 1} , { "BattleResultLoseFaction" : "", 0} , { "SetIsShowSpecial" : False} , { "SetIsShowItem" : False}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "BattleFactorLocalFlag" : 1, 0, "bt1101101_01a_01", ""} , { "SetLocalFlagBattleAction" : "bt1101101_01a_01", 0, 1, ""} , { "BattleResultTalk" : "t1101101_013"}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 1} , { "BattleFactorLocalFlag" : 1, 0, "bt1101101_01a_02", ""} , { "SetLocalFlagBattleAction" : "bt1101101_01a_02", 0, 1, ""} , { "BattleResultTalk" : "t1101101_018"}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 2} , { "BattleFactorLocalFlag" : 1, 0, "bt1101101_01a_04", ""} , { "SetLocalFlagBattleAction" : "bt1101101_01a_04", 0, 1, ""} , { "BattleResultTalk" : "t1101101_032"} , { "BattleResultAddBuff" : True, "in0201", "bt1101101_01_buff_MasterFight", True} , { "BattleResultAddBuff" : True, "in0202", "bt1101101_01_buff_MasterFight", True}  ]}  ]} , { "BattleEventNode" : 510, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 3} , { "BattleFactorLocalFlag" : 1, 0, "bt1101101_01a_06", ""} , { "SetLocalFlagBattleAction" : "bt1101101_01a_06", 0, 1, ""} , { "EndBattleAction" : "m1101101_02"}  ]}  ]}  ]} 		Defeat the White Robed Swordsman!	
+{
+  "Id": "bs1101101_01b",
+  "Name": "1101101：楚段决战(段霄烈线)",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0201\", 1, 200102202, 1.00000, 0.00000} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0202\", 0, 200203103, 1.00000, 0.00000} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultWinFaction\" : \"\", 1} ",
+      "Next": 4,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultLoseFaction\" : \"\", 0} ",
+      "Next": 5,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"SetIsShowSpecial\" : False} ",
+      "Next": 6,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"SetIsShowItem\" : False} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 8,
+      "Child": [
+        8
+      ]
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 9,
+      "Child": [
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 10,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bt1101101_01a_01\", \"\"} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bt1101101_01a_01\", 0, 1, \"\"} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultTalk\" : \"t1101101_013\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 14,
+      "Child": [
+        14
+      ]
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 15,
+      "Child": [
+        15,
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleFactorTurn\" : 1, 1} ",
+      "Next": 16,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bt1101101_01a_02\", \"\"} ",
+      "Next": 17,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bt1101101_01a_02\", 0, 1, \"\"} ",
+      "Next": 18,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleResultTalk\" : \"t1101101_018\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 20,
+      "Child": [
+        20
+      ]
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 21,
+      "Child": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleFactorTurn\" : 1, 2} ",
+      "Next": 22,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bt1101101_01a_04\", \"\"} ",
+      "Next": 23,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bt1101101_01a_04\", 0, 1, \"\"} ",
+      "Next": 24,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleResultTalk\" : \"t1101101_032\"} ",
+      "Next": 25,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0201\", \"bt1101101_01_buff_MasterFight\", True} ",
+      "Next": 26,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0202\", \"bt1101101_01_buff_MasterFight\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleEventNode\" : 510, 0, [ ]} ",
+      "Next": 28,
+      "Child": [
+        28
+      ]
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 29,
+      "Child": [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleFactorTurn\" : 1, 3} ",
+      "Next": 30,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bt1101101_01a_06\", \"\"} ",
+      "Next": 31,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bt1101101_01a_06\", 0, 1, \"\"} ",
+      "Next": 32,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"EndBattleAction\" : \"m1101101_02\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "",
+  "WinTip": "Defeat White-clothed Swordsman!",
+  "LoseTip": ""
+}

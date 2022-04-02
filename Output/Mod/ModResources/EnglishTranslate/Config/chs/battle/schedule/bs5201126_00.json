@@ -1,0 +1,960 @@
+{
+  "Id": "bs5201126_00",
+  "Name": "",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Prallel": -1,
+      "Child": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05228\", 1, 102200202, 1.00000, 0.00000} ",
+      "Next": 2,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05229\", 1, 200103203, 1.00000, 0.00000} ",
+      "Next": 3,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnits\" : \"Player,in03001,in03015\", 0, \"203103200,203101102,205104101\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 5,
+      "Prallel": -1,
+      "Child": [
+        5
+      ]
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 6,
+      "Prallel": -1,
+      "Child": [
+        6,
+        7,
+        8,
+        75,
+        66,
+        67
+      ]
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 7,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 8,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultTalk\" : \"t5201126_033\"} ",
+      "Next": 75,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleEventNode\" : 400, 2, [ ]} ",
+      "Next": 10,
+      "Prallel": -1,
+      "Child": [
+        10
+      ]
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 11,
+      "Prallel": -1,
+      "Child": [
+        11,
+        12,
+        88,
+        13,
+        14
+      ]
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 12,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 88,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleResultTalk\" : \"t5201126_045\"} ",
+      "Next": 14,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 16,
+      "Prallel": -1,
+      "Child": [
+        16
+      ]
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 17,
+      "Prallel": -1,
+      "Child": [
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 0} ",
+      "Next": 18,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 2} ",
+      "Next": 19,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 20,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 22,
+      "Prallel": -1,
+      "Child": [
+        22
+      ]
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 23,
+      "Prallel": -1,
+      "Child": [
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5201126_00\", \"未触发屍人半血事件\"} ",
+      "Next": 24,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 51, \"in05228\"} ",
+      "Next": 25,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 26,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleResultTalk\" : \"t5201126_034\"} ",
+      "Next": 27,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleResultAddUnits\" : \"in05226,in05227\", 1, \"102202200,202105203\"} ",
+      "Next": 28,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleResultTalk\" : \"t5201126_036\"} ",
+      "Next": 29,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleResultAddFactionBuff\" : True, 0, \"bt5201126_debuff_ConfusingStudents\", False} ",
+      "Next": 30,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5201126_00\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
+      "Next": 32,
+      "Prallel": -1,
+      "Child": [
+        32
+      ]
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 33,
+      "Prallel": -1,
+      "Child": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40
+      ]
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5201126_00\", \"未触发屍人半血事件\"} ",
+      "Next": 34,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 51, \"in05229\"} ",
+      "Next": 35,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 36,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"BattleResultTalk\" : \"t5201126_034\"} ",
+      "Next": 37,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleResultAddUnits\" : \"in05226,in05227\", 1, \"102202200,202105203\"} ",
+      "Next": 38,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleResultTalk\" : \"t5201126_036\"} ",
+      "Next": 39,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"BattleResultAddFactionBuff\" : True, 0, \"bt5201126_debuff_ConfusingStudents\", False} ",
+      "Next": 40,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5201126_00\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleEventNode\" : 200, 2, [ ]} ",
+      "Next": 42,
+      "Prallel": -1,
+      "Child": [
+        42
+      ]
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 43,
+      "Prallel": -1,
+      "Child": [
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ]
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5201126_00\", \"未触发屍人半血事件\"} ",
+      "Next": 44,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"BattleFactorTurn\" : 1, 2} ",
+      "Next": 45,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 46,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"BattleResultTalk\" : \"t5201126_034\"} ",
+      "Next": 47,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"BattleResultAddUnits\" : \"in05226,in05227\", 1, \"102202200,202105203\"} ",
+      "Next": 48,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"BattleResultTalk\" : \"t5201126_036\"} ",
+      "Next": 49,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"BattleResultAddFactionBuff\" : True, 0, \"bt5201126_debuff_ConfusingStudents\", False} ",
+      "Next": 50,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5201126_00\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 51,
+      "Node": "{ \"BattleEventNode\" : 200, 2, [ ]} ",
+      "Next": 52,
+      "Prallel": -1,
+      "Child": [
+        52
+      ]
+    },
+    {
+      "Index": 52,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 53,
+      "Prallel": -1,
+      "Child": [
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59
+      ]
+    },
+    {
+      "Index": 53,
+      "Node": "{ \"BattleFactorTurn\" : 1, 3} ",
+      "Next": 54,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 54,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 55,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 55,
+      "Node": "{ \"BattleResultTalk\" : \"t5201126_040\"} ",
+      "Next": 56,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 56,
+      "Node": "{ \"BattleResultRmoveFactionBuff\" : 0, \"bt5201126_debuff_ConfusingStudents\"} ",
+      "Next": 57,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 57,
+      "Node": "{ \"BattleResultAddFactionBuff\" : True, 0, \"bt5201126_buff_NoLongerConfuse\", True} ",
+      "Next": 58,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 58,
+      "Node": "{ \"BattleResultAddUnits\" : \"in05224,in05225\", 2, \"200204104,201202103\"} ",
+      "Next": 59,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 59,
+      "Node": "{ \"BattleResultTalk\" : \"t5201126_042\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 60,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 61,
+      "Prallel": -1,
+      "Child": [
+        61
+      ]
+    },
+    {
+      "Index": 61,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 62,
+      "Prallel": -1,
+      "Child": [
+        62,
+        64,
+        63,
+        65,
+        68
+      ]
+    },
+    {
+      "Index": 62,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 64,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 63,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 65,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 64,
+      "Node": "{ \"BattleFactorTurn\" : 2, 7} ",
+      "Next": 63,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 65,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201126_2_03\", 0, 1, \"成功于六回合内（包含）战胜屍人\"} ",
+      "Next": 68,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 66,
+      "Node": "{ \"BattleResultAddSecondaryGoal\" : \"ctf5201126_0\", \"于六回合内（包含）战胜屍人\"} ",
+      "Next": 67,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 67,
+      "Node": "{ \"BattleResultAddSecondaryGoal\" : \"ctf5201126_1\", \"侠隐阁全员存活\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 68,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"ctf5201126_0\", 1} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 69,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 70,
+      "Prallel": -1,
+      "Child": [
+        70
+      ]
+    },
+    {
+      "Index": 70,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 71,
+      "Prallel": -1,
+      "Child": [
+        71,
+        72,
+        74,
+        73
+      ]
+    },
+    {
+      "Index": 71,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player\"} ",
+      "Next": 72,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 72,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 74,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 73,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"ctf5201126_1\", 2} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 74,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201126_2_02\", 0, 2, \"侠隐阁全员存活：失败\"} ",
+      "Next": 73,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 75,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201126_2_02\", 0, 1, \"侠隐阁全员存活：缺省成功\"} ",
+      "Next": 66,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 76,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 77,
+      "Prallel": -1,
+      "Child": [
+        77,
+        78,
+        80,
+        79
+      ]
+    },
+    {
+      "Index": 77,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in03001\"} ",
+      "Next": 78,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 78,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 80,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 79,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"ctf5201126_1\", 2} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 80,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201126_2_02\", 0, 2, \"侠隐阁全员存活：失败\"} ",
+      "Next": 79,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 81,
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
+      "Next": 76,
+      "Prallel": -1,
+      "Child": [
+        76
+      ]
+    },
+    {
+      "Index": 82,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 83,
+      "Prallel": -1,
+      "Child": [
+        83,
+        84,
+        86,
+        85
+      ]
+    },
+    {
+      "Index": 83,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in03015\"} ",
+      "Next": 84,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 84,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 86,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 85,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"ctf5201126_1\", 2} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 86,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201126_2_02\", 0, 2, \"侠隐阁全员存活：失败\"} ",
+      "Next": 85,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 87,
+      "Node": "{ \"BattleEventNode\" : 400, 2, [ ]} ",
+      "Next": 82,
+      "Prallel": -1,
+      "Child": [
+        82
+      ]
+    },
+    {
+      "Index": 88,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201126_2_01\", 0, 1, \"成功战胜屍人\"} ",
+      "Next": 13,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 89,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 95,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 90,
+      "Node": "{ \"BattleFactorTurn\" : 0, 6} ",
+      "Next": 89,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 91,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"ctf5201126_0\", 2} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 92,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 93,
+      "Prallel": -1,
+      "Child": [
+        93
+      ]
+    },
+    {
+      "Index": 93,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 94,
+      "Prallel": -1,
+      "Child": [
+        94,
+        90,
+        89,
+        95,
+        91
+      ]
+    },
+    {
+      "Index": 94,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in05228\"} ",
+      "Next": 90,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 95,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201126_2_03\", 0, 0, \"标记用：任一屍人於第七回合以上仍存活\"} ",
+      "Next": 91,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 96,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"ctf5201126_0\", 2} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 97,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in05229\"} ",
+      "Next": 99,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 98,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 102,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 99,
+      "Node": "{ \"BattleFactorTurn\" : 0, 6} ",
+      "Next": 98,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 100,
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
+      "Next": 101,
+      "Prallel": -1,
+      "Child": [
+        101
+      ]
+    },
+    {
+      "Index": 101,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 97,
+      "Prallel": -1,
+      "Child": [
+        97,
+        99,
+        98,
+        102,
+        96
+      ]
+    },
+    {
+      "Index": 102,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201126_2_03\", 0, 0, \"标记用：任一屍人於第七回合以上仍存活\"} ",
+      "Next": 96,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 103,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"ctf5201126_0\", 2} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 104,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in05226\"} ",
+      "Next": 106,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 105,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 109,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 106,
+      "Node": "{ \"BattleFactorTurn\" : 0, 6} ",
+      "Next": 105,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 107,
+      "Node": "{ \"BattleEventNode\" : 400, 2, [ ]} ",
+      "Next": 108,
+      "Prallel": -1,
+      "Child": [
+        108
+      ]
+    },
+    {
+      "Index": 108,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 104,
+      "Prallel": -1,
+      "Child": [
+        104,
+        106,
+        105,
+        109,
+        103
+      ]
+    },
+    {
+      "Index": 109,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201126_2_03\", 0, 0, \"标记用：任一屍人於第七回合以上仍存活\"} ",
+      "Next": 103,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 110,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"ctf5201126_0\", 2} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 111,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in05227\"} ",
+      "Next": 113,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 112,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 116,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 113,
+      "Node": "{ \"BattleFactorTurn\" : 0, 6} ",
+      "Next": 112,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 114,
+      "Node": "{ \"BattleEventNode\" : 400, 3, [ ]} ",
+      "Next": 115,
+      "Prallel": -1,
+      "Child": [
+        115
+      ]
+    },
+    {
+      "Index": 115,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 111,
+      "Prallel": -1,
+      "Child": [
+        111,
+        113,
+        112,
+        116,
+        110
+      ]
+    },
+    {
+      "Index": 116,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201126_2_03\", 0, 0, \"标记用：任一屍人於第七回合以上仍存活\"} ",
+      "Next": 110,
+      "Prallel": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "",
+  "WinTip": "Stop all Corpse Zombies.",
+  "LoseTip": "Our camp is completely destroyed。"
+}

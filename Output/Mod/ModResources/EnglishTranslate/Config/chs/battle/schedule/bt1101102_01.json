@@ -1,1 +1,172 @@
-bt1101102_01	重岩村	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "party00", 0, 103201202, 1.0} , { "BattleResultAddUnit" : "in27416", 1, 103102205, 1.0} , { "BattleResultAddUnit" : "in27417", 1, 200102202, 1.0} , { "BattleResultAddUnit" : "in27418", 1, 200201101, 1.0}  ]} , { "BattleEventNode" : 100, 0, [ { "BattleResultWinFaction" : "", 1} , { "BattleResultLoseFaction" : "", 0}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "BattleFactorLocalFlag" : 1, 0, "bt1101102_01_01", ""} , { "SetLocalFlagBattleAction" : "bt1101102_01_01", 0, 1, ""} , { "BattleResultUnitHP" : 0, 1, "in27418"} , { "BattleResultUnitMP" : 0, 1, "party00"}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 1} , { "BattleFactorLocalFlag" : 1, 0, "bt1101102_01_03", ""} , { "SetLocalFlagBattleAction" : "bt1101102_01_03", 0, 1, ""} , { "BattleResultTalk" : "t1101102_bs0105"} , { "BattleResultAddUnit" : "in0102", 2, 106202204, 1.0} , { "BattleResultAddUnit" : "in0209", 2, 105202203, 1.0}  ]}  ]}  ]}	转换功体，克制敌人属性	Convert Elemental Affinity to counter the enemy element.	Convert Elemental Affinity to counter the enemy element.
+{
+  "Id": "bt1101102_01",
+  "Name": "重岩村",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"party00\", 0, 103201202, 1.00000, 0.00000} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"in27416\", 1, 103102205, 1.00000, 0.00000} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnit\" : \"in27417\", 1, 200102202, 1.00000, 0.00000} ",
+      "Next": 4,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultAddUnit\" : \"in27418\", 1, 200201101, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 6,
+      "Child": [
+        6,
+        7
+      ]
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleResultWinFaction\" : \"\", 1} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleResultLoseFaction\" : \"\", 0} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 9,
+      "Child": [
+        9
+      ]
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 10,
+      "Child": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bt1101102_01_01\", \"\"} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bt1101102_01_01\", 0, 1, \"\"} ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleResultUnitHP\" : 0, 1, \"in27418\"} ",
+      "Next": 14,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultUnitMP\" : 0, 1, \"party00\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 16,
+      "Child": [
+        16
+      ]
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 17,
+      "Child": [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleFactorTurn\" : 1, 1} ",
+      "Next": 18,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bt1101102_01_03\", \"\"} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bt1101102_01_03\", 0, 1, \"\"} ",
+      "Next": 20,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultTalk\" : \"t1101102_bs0105\"} ",
+      "Next": 21,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0102\", 2, 106202204, 1.00000, 0.00000} ",
+      "Next": 22,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0209\", 2, 105202203, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "Convert Elemental Affinity to counter enemy attributes",
+  "WinTip": "Convert Elemental Affinity to counter enemy attributes",
+  "LoseTip": "Convert Elemental Affinity to counter enemy attributes"
+}

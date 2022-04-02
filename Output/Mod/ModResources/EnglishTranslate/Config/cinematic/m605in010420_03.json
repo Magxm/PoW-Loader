@@ -1,0 +1,151 @@
+{
+  "EntryIndex": 0,
+  "Nodes": [
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 1, \"fe1010401_2_25\"} ",
+      "Next": 2,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"LoadScenesAction\" : \"S1301\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0} ",
+      "Next": 4,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 9,
+      "Prallel": 5
+    },
+    {
+      "Node": "{ \"SortOutNpcAndEventCubeAction\" } ",
+      "Next": 3,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcTransformAction\" : True, { 397.96000, 29.68321, 382.90000} , True, { 0.00000, 84.41747, 0.00000} , \"in0104\"} ",
+      "Next": -1,
+      "Prallel": 6
+    },
+    {
+      "Node": "{ \"PlayerTransformAction\" : True, { 398.08000, 29.68321, 381.62000} , True, { 0.00000, 84.41747, 0.00000} } ",
+      "Next": -1,
+      "Prallel": 11
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : True, 1.00000} ",
+      "Next": 27,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcSimpleTransformAction\" : True, { 401.19600, 29.68321, 385.30800} , 2.00000, True, { 0.00000, 84.41747, 0.00000} , \"in0104\"} ",
+      "Next": -1,
+      "Prallel": 10
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010403_079\"} ",
+      "Next": 13,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayerSimpleTransformAction\" : True, { 402.00000, 29.68321, 383.74000} , 2.50000, True, { 0.00000, 84.41747, 0.00000} } ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"CameraTransformAction\" : True, { 397.58110, 32.03160, 386.32330} , 0.00000, True, { 15.40115, 98.66354, -0.00005} , 0.00000, 45} ",
+      "Next": -1,
+      "Prallel": 14
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010403_080\"} ",
+      "Next": 15,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 7,
+      "Prallel": 8
+    },
+    {
+      "Node": "{ \"EventCubeTransformAction\" : True, { 0.00000, 0.00000, 0.00000} , 0.00000, True, { 0.00000, 0.00000, 0.00000} , 0.00000, \"eb1010403_53\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010403_100\"} ",
+      "Next": 17,
+      "Prallel": 23
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 0, \"m_stand00_talk41\", 1.00000}  ], \"in0104\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010403_101\"} ",
+      "Next": 19,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcSimpleTransformAction\" : True, { 406.63000, 29.70821, 384.06000} , 2.00000, True, { 0.00000, 107.26800, 0.00000} , \"in0104\"} ",
+      "Next": -1,
+      "Prallel": 20
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 22,
+      "Prallel": 18
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.30000} ",
+      "Next": 21,
+      "Prallel": 25
+    },
+    {
+      "Node": "{ \"PlayerSimpleTransformAction\" : True, { 407.18000, 29.70821, 381.91000} , 1.50000, True, { 0.00000, 109.32230, 0.00000} } ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : False, 0.50000} ",
+      "Next": 26,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayerFaceToNPC\" : \"in05435\", 0} ",
+      "Next": -1,
+      "Prallel": 24
+    },
+    {
+      "Node": "{ \"NpcFaceToNPC\" : \"in0104\", \"in05435\", 0} ",
+      "Next": 16,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"CameraTransformAction\" : True, { 401.60430, 32.18589, 385.63040} , 2.00000, True, { 17.63561, 105.71060, -0.00005} , 2.00000, 45} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 28,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 12,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"RunCinematicAction\" : \"m605in010420_04\"} ",
+      "Next": -1,
+      "Prallel": -1
+    }
+  ],
+  "Name": ""
+}

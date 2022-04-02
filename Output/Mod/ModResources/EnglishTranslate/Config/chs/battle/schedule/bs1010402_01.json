@@ -1,1 +1,437 @@
-bs1010402_01	与师兄们进行切蹉	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "Player", 0, 109101210, 1.00000} , { "BattleResultAddUnit" : "in05401", 1, 200106206, 1.00000} , { "BattleResultAddUnit" : "in05402", 1, 106207101, 1.00000} , { "BattleResultAddUnit" : "in05403", 1, 200200200, 1.00000}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 3} , { "BattleFactorTargetHp" : 0, 0, "in05403"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010402_112"} , { "BattleResultRmoveBuff" : "in05403", "bt1010402_01_defuff70%"} , { "BattleResultAddBuff" : True, "in05403", "bt1010402_02_defuff30%", True}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010402_100"} , { "BattleResultAddBuff" : True, "in05401", "bt1010402_01_defuff70%", False} , { "BattleResultAddBuff" : True, "in05402", "bt1010402_01_defuff70%", False} , { "BattleResultAddBuff" : True, "in05403", "bt1010402_01_defuff70%", False} , { "BattleResultAddBuff" : True, "Player", "bt1010401_debuff_poisonous2", False}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 1} , { "ExecuteOnceNode" } , { "SetGlobalFlagBattleAction" : "fe1010402_2_02", 0, 1, "战斗胜利"} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 400, 4, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 0} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010402_106"} , { "SetGlobalFlagBattleAction" : "fe1010402_2_02", 0, 2, "战斗失败"} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 1, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in05401"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010402_103"}  ]}  ]} , { "BattleEventNode" : 400, 2, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in05402"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010402_104"}  ]}  ]} , { "BattleEventNode" : 400, 3, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in05403"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010402_105"} , { "BattleResultRmoveBuff" : "Player", "bt1010401_debuff_poisonous2"} , { "BattleResultRmoveBuff" : "Player", "bt1010401_debuff_poisonous"} , { "BattleResultAddBuff" : True, "Player", "bt1010401_debuff_poisonous3", False}  ]}  ]} , { "BattleEventNode" : 510, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 3} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010401_031"} , { "BattleResultRmoveBuff" : "Player", "bt1010401_debuff_poisonous2"} , { "BattleResultAddBuff" : True, "Player", "bt1010401_debuff_poisonous", False}  ]}  ]}  ]} 	萧芊菱第二阶战斗	Defeat the senior brothers!	{name_1}{name_2}is defeated。
+{
+  "Id": "bs1010402_01",
+  "Name": "与师兄们进行切蹉",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"Player\", 0, 109101210, 1.00000, 0.00000} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05401\", 1, 200106206, 1.00000, 0.00000} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05402\", 1, 106207101, 1.00000, 0.00000} ",
+      "Next": 4,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05403\", 1, 200200200, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 6,
+      "Child": [
+        6
+      ]
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 7,
+      "Child": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleFactorTurn\" : 1, 3} ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in05403\"} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 10,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultTalk\" : \"t1010402_112\"} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05403\", \"bt1010402_01_defuff70%\"} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05403\", \"bt1010402_02_defuff30%\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 14,
+      "Child": [
+        14
+      ]
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 15,
+      "Child": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 16,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 17,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleResultTalk\" : \"t1010402_100\"} ",
+      "Next": 18,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05401\", \"bt1010402_01_defuff70%\", False} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05402\", \"bt1010402_01_defuff70%\", False} ",
+      "Next": 20,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05403\", \"bt1010402_01_defuff70%\", False} ",
+      "Next": 21,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"bt1010401_debuff_poisonous2\", False} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 23,
+      "Child": [
+        23
+      ]
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 24,
+      "Child": [
+        24,
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 25,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 26,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1010402_2_02\", 0, 1, \"战斗胜利\"} ",
+      "Next": 27,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleEventNode\" : 400, 4, [ ]} ",
+      "Next": 29,
+      "Child": [
+        29
+      ]
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 30,
+      "Child": [
+        30,
+        31,
+        32,
+        33,
+        34
+      ]
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 0} ",
+      "Next": 31,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 32,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleResultTalk\" : \"t1010402_106\"} ",
+      "Next": 33,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1010402_2_02\", 0, 2, \"战斗失败\"} ",
+      "Next": 34,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
+      "Next": 36,
+      "Child": [
+        36
+      ]
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 37,
+      "Child": [
+        37,
+        38,
+        39
+      ]
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05401\"} ",
+      "Next": 38,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 39,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"BattleResultTalk\" : \"t1010402_103\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"BattleEventNode\" : 400, 2, [ ]} ",
+      "Next": 41,
+      "Child": [
+        41
+      ]
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 42,
+      "Child": [
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05402\"} ",
+      "Next": 43,
+      "Child": []
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 44,
+      "Child": []
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"BattleResultTalk\" : \"t1010402_104\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"BattleEventNode\" : 400, 3, [ ]} ",
+      "Next": 46,
+      "Child": [
+        46
+      ]
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 47,
+      "Child": [
+        47,
+        48,
+        49,
+        50,
+        51,
+        52
+      ]
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05403\"} ",
+      "Next": 48,
+      "Child": []
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 49,
+      "Child": []
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"BattleResultTalk\" : \"t1010402_105\"} ",
+      "Next": 50,
+      "Child": []
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"Player\", \"bt1010401_debuff_poisonous2\"} ",
+      "Next": 51,
+      "Child": []
+    },
+    {
+      "Index": 51,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"Player\", \"bt1010401_debuff_poisonous\"} ",
+      "Next": 52,
+      "Child": []
+    },
+    {
+      "Index": 52,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"bt1010401_debuff_poisonous3\", False} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 53,
+      "Node": "{ \"BattleEventNode\" : 510, 0, [ ]} ",
+      "Next": 54,
+      "Child": [
+        54
+      ]
+    },
+    {
+      "Index": 54,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 55,
+      "Child": [
+        55,
+        56,
+        57,
+        58,
+        59
+      ]
+    },
+    {
+      "Index": 55,
+      "Node": "{ \"BattleFactorTurn\" : 1, 3} ",
+      "Next": 56,
+      "Child": []
+    },
+    {
+      "Index": 56,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 57,
+      "Child": []
+    },
+    {
+      "Index": 57,
+      "Node": "{ \"BattleResultTalk\" : \"t1010401_031\"} ",
+      "Next": 58,
+      "Child": []
+    },
+    {
+      "Index": 58,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"Player\", \"bt1010401_debuff_poisonous2\"} ",
+      "Next": 59,
+      "Child": []
+    },
+    {
+      "Index": 59,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"bt1010401_debuff_poisonous\", False} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "萧芊菱第二阶战斗",
+  "WinTip": "Defeat the Senior Brothers!",
+  "LoseTip": "{name_1}{name_2} is defeated."
+}

@@ -1,1 +1,999 @@
-bs5101502_00	bs5101502_00	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "Player", 0, 205106201, 1.00000, 0.00000} , { "BattleResultEventPoint" : "109209200,108209101,109208201,105203202,101203102,104205101"}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 2} , { "BattleFactorLocalFlag" : 1, 0, "btf5101502_00_09", ""} , { "BattleResultChangeMusic" : "In_battle_01.wav", 1.00000, False} , { "BattleResultAddUnit" : "io93121901", 1, 207203110, 1.00000, 0.00000} , { "BattleResultUnitHP" : 0, 50, "io93121901"} , { "BattleResultAddBuff" : True, "io93121901", "bt5101502_00_debuff_HungryWolf", False} , { "BattleResultTalk" : "t5101502_001"} , { "BattleResultMoveUnit" : "io93121901", "204202106"} , { "BattleResultAddUnit" : "io93121902", 1, 200109209, 1.00000, 0.00000} , { "BattleResultUnitHP" : 0, 50, "io93121902"} , { "BattleResultAddBuff" : True, "io93121902", "bt5101502_00_debuff_HungryWolf", False} , { "BattleResultTalk" : "t5101502_037"} , { "BattleResultMoveUnit" : "io93121902", "200106206"} , { "BattleResultTalk" : "t5101502_002"} , { "BattleResultExitPoint" : "204105201,205105200,204106202,205106201,206106200,205107202,206105101,204107203"} , { "BattleResultCameraMoveCell" : "204105201", 60.00000, 10.00000} , { "BattleResultTalk" : "t5101502_003"} , { "BattleResultChangeWinTip" : "{name_1}{name_2} reaches the escape point！"} , { "BattleResultChangeLoseTip" : "{name_1}{name_2}阵亡"} , { "SetLocalFlagBattleAction" : "btf5101502_00_09", 0, 1, ""}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "BattleFactorLocalFlag" : 1, 0, "btf5101502_00_00", ""} , { "SetLocalFlagBattleAction" : "btf5101502_00_00", 0, 1, ""} , { "BattleResultMoveUnit" : "Player", "101200201"} , { "BattleResultTalk" : "t5101502_000"}  ]}  ]} , { "BattleEventNode" : 500, 0, [ { "StepByStepNode" : [ { "BattleFactorCharacterTile" : "109209200", "Player"} , { "BattleFactorLocalFlag" : 1, 0, "btf5101502_00_01", ""} , { "SetLocalFlagBattleAction" : "btf5101502_00_01", 0, 1, ""} , { "BattleResultRemoveEventPoint" : "109209200"} , { "BattleResultTalk" : "t5101502_005"}  ]}  ]} , { "BattleEventNode" : 500, 0, [ { "StepByStepNode" : [ { "BattleFactorCharacterTile" : "204105201,205105200,204106202,205106201,206106200,205107202,206105101,204107203", "Player"} , { "BattleFactorLocalFlag" : 1, 0, "btf5101502_00_02", ""} , { "SetLocalFlagBattleAction" : "btf5101502_00_02", 0, 1, ""} , { "BattleResultTalk" : "t5101502_007"} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 0} , { "BattleFactorLocalFlag" : 1, 0, "btf5101502_00_04", ""} , { "SetLocalFlagBattleAction" : "btf5101502_00_04", 0, 1, ""} , { "BattleResultTalk" : "t5101502_010"} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 500, 0, [ { "StepByStepNode" : [ { "BattleFactorCharacterTile" : "105203202", "Player"} , { "BattleFactorLocalFlag" : 1, 0, "btf5101502_00_05", ""} , { "SetLocalFlagBattleAction" : "btf5101502_00_05", 0, 1, ""} , { "BattleResultTalk" : "t5101502_006"} , { "BattleResultRemoveEventPoint" : "105203202"}  ]}  ]} , { "BattleEventNode" : 500, 0, [ { "StepByStepNode" : [ { "BattleFactorCharacterTile" : "104205101", "Player"} , { "BattleFactorLocalFlag" : 1, 0, "btf5101502_00_06", ""} , { "SetLocalFlagBattleAction" : "btf5101502_00_06", 0, 1, ""} , { "BattleResultTalk" : "t5101502_018"} , { "BattleResultRemoveEventPoint" : "104205101"}  ]}  ]} , { "BattleEventNode" : 500, 0, [ { "StepByStepNode" : [ { "BattleFactorCharacterTile" : "101203102", "Player"} , { "BattleFactorLocalFlag" : 1, 0, "btf5101502_00_07", ""} , { "SetLocalFlagBattleAction" : "btf5101502_00_07", 0, 1, ""} , { "BattleResultTalk" : "t5101502_019"} , { "BattleResultRemoveEventPoint" : "101203102"}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 0, 9} , { "BattleFactorLocalFlag" : 1, 0, "btf5101502_00_08", ""} , { "SetLocalFlagBattleAction" : "btf5101502_00_08", 0, 1, ""} , { "BattleResultAddUnit" : "io93121903", 1, 207203110, 1.00000, 0.00000} , { "BattleResultAddUnit" : "io93121904", 1, 200109209, 1.00000, 0.00000} , { "BattleResultUnitHP" : 0, 50, "io93121903,io93121904"} , { "BattleResultAddBuff" : True, "io93121903,io93121904", "bt5101502_00_debuff_HungryWolf", False} , { "BattleResultAddBuff" : True, "io93121904", "bt5101502_00_debuff_HungryWolf", False} , { "BattleResultTalk" : "t5101502_035"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "io93121901"} , { "BattleFactorLocalFlag" : 1, 0, "btf5101502_00_13", ""} , { "SetLocalFlagBattleAction" : "btf5101502_00_13", 0, 1, ""} , { "BattleResultTalk" : "t5101502_011"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "io93121902"} , { "BattleFactorLocalFlag" : 1, 0, "btf5101502_00_10", ""} , { "SetLocalFlagBattleAction" : "btf5101502_00_10", 0, 1, ""} , { "BattleResultTalk" : "t5101502_040"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "io93121903"} , { "BattleFactorLocalFlag" : 1, 0, "btf5101502_00_11", ""} , { "SetLocalFlagBattleAction" : "btf5101502_00_11", 0, 1, ""} , { "BattleResultTalk" : "t5101502_045"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "io93121904"} , { "BattleFactorLocalFlag" : 1, 0, "btf5101502_00_12", ""} , { "SetLocalFlagBattleAction" : "btf5101502_00_12", 0, 1, ""} , { "BattleResultTalk" : "t5101502_049"}  ]}  ]} , { "BattleEventNode" : 500, 0, [ { "StepByStepNode" : [ { "BattleFactorCharacterTile" : "109208201", "Player"} , { "BattleFactorLocalFlag" : 1, 0, "btf5101502_00_14", ""} , { "SetLocalFlagBattleAction" : "btf5101502_00_14", 0, 1, ""} , { "BattleResultTalk" : "t5101502_041"} , { "BattleResultRemoveEventPoint" : "109208201"}  ]}  ]} , { "BattleEventNode" : 500, 0, [ { "StepByStepNode" : [ { "BattleFactorCharacterTile" : "108209101", "Player"} , { "BattleFactorLocalFlag" : 1, 0, "btf5101502_00_15", ""} , { "SetLocalFlagBattleAction" : "btf5101502_00_15", 0, 1, ""} , { "BattleResultTalk" : "t5101502_046"} , { "BattleResultAddUnit" : "io93121905", 1, 105209104, 1.00000, 0.00000} , { "BattleResultUnitHP" : 0, 50, "io93121905"} , { "BattleResultAddBuff" : True, "io93121905", "bt5101502_00_debuff_HungryWolf", False} , { "BattleResultTalk" : "t5101502_043"} , { "BattleResultRemoveEventPoint" : "108209101"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "io93121905"} , { "BattleFactorLocalFlag" : 1, 1, "btf5101502_00_15", ""} , { "SetLocalFlagBattleAction" : "btf5101502_00_15", 0, 2, ""} , { "BattleResultTalk" : "t5101502_050"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe5101502_2_04", ""} , { "BattleFactorLocalFlag" : 1, 0, "btf5101502_00_20", ""} , { "SetLocalFlagBattleAction" : "btf5101502_00_20", 0, 1, ""} , { "BattleResultChangeMusic" : "In_explore_01.wav", 1.00000, True}  ]}  ]}  ]} 	传书：采集药草（第一年；道恒）	no	none
+{
+  "Id": "bs5101502_00",
+  "Name": "bs5101502_00",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"Player\", 0, 205106201, 1.00000, 0.00000} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultEventPoint\" : \"109209200,108209101,109208201,105203202,101203102,104205101\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 4,
+      "Child": [
+        4
+      ]
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 5,
+      "Child": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleFactorTurn\" : 1, 2} ",
+      "Next": 6,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5101502_00_09\", \"\"} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_battle_01.wav\", 1.00000, False} ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultAddUnit\" : \"io93121901\", 1, 207203110, 1.00000, 0.00000} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultUnitHP\" : 0, 50, \"io93121901\"} ",
+      "Next": 10,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io93121901\", \"bt5101502_00_debuff_HungryWolf\", False} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultTalk\" : \"t5101502_001\"} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultMoveUnit\" : \"io93121901\", \"204202106\"} ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleResultAddUnit\" : \"io93121902\", 1, 200109209, 1.00000, 0.00000} ",
+      "Next": 14,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultUnitHP\" : 0, 50, \"io93121902\"} ",
+      "Next": 15,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io93121902\", \"bt5101502_00_debuff_HungryWolf\", False} ",
+      "Next": 16,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleResultTalk\" : \"t5101502_037\"} ",
+      "Next": 17,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleResultMoveUnit\" : \"io93121902\", \"200106206\"} ",
+      "Next": 18,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleResultTalk\" : \"t5101502_002\"} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleResultExitPoint\" : \"204105201,205105200,204106202,205106201,206106200,205107202,206105101,204107203\"} ",
+      "Next": 20,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultCameraMoveCell\" : \"204105201\", 60.00000, 10.00000} ",
+      "Next": 21,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleResultTalk\" : \"t5101502_003\"} ",
+      "Next": 22,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"{name_1}{name_2}Arrive at the escape point!\"} ",
+      "Next": 23,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1}{name_2} is defeated.\"} ",
+      "Next": 24,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5101502_00_09\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 26,
+      "Child": [
+        26
+      ]
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 27,
+      "Child": [
+        27,
+        28,
+        29,
+        30,
+        31
+      ]
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 28,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5101502_00_00\", \"\"} ",
+      "Next": 29,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5101502_00_00\", 0, 1, \"\"} ",
+      "Next": 30,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleResultMoveUnit\" : \"Player\", \"101200201\"} ",
+      "Next": 31,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleResultTalk\" : \"t5101502_000\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleEventNode\" : 500, 0, [ ]} ",
+      "Next": 33,
+      "Child": [
+        33
+      ]
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 34,
+      "Child": [
+        34,
+        35,
+        36,
+        37,
+        38
+      ]
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"109209200\", \"Player\"} ",
+      "Next": 35,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5101502_00_01\", \"\"} ",
+      "Next": 36,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5101502_00_01\", 0, 1, \"\"} ",
+      "Next": 37,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleResultRemoveEventPoint\" : \"109209200\"} ",
+      "Next": 38,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleResultTalk\" : \"t5101502_005\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"BattleEventNode\" : 500, 0, [ ]} ",
+      "Next": 40,
+      "Child": [
+        40
+      ]
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 41,
+      "Child": [
+        41,
+        42,
+        43,
+        44,
+        45
+      ]
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"204105201,205105200,204106202,205106201,206106200,205107202,206105101,204107203\", \"Player\"} ",
+      "Next": 42,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5101502_00_02\", \"\"} ",
+      "Next": 43,
+      "Child": []
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5101502_00_02\", 0, 1, \"\"} ",
+      "Next": 44,
+      "Child": []
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"BattleResultTalk\" : \"t5101502_007\"} ",
+      "Next": 45,
+      "Child": []
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 47,
+      "Child": [
+        47
+      ]
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 48,
+      "Child": [
+        48,
+        49,
+        50,
+        51,
+        52
+      ]
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 0} ",
+      "Next": 49,
+      "Child": []
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5101502_00_04\", \"\"} ",
+      "Next": 50,
+      "Child": []
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5101502_00_04\", 0, 1, \"\"} ",
+      "Next": 51,
+      "Child": []
+    },
+    {
+      "Index": 51,
+      "Node": "{ \"BattleResultTalk\" : \"t5101502_010\"} ",
+      "Next": 52,
+      "Child": []
+    },
+    {
+      "Index": 52,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 53,
+      "Node": "{ \"BattleEventNode\" : 500, 0, [ ]} ",
+      "Next": 54,
+      "Child": [
+        54
+      ]
+    },
+    {
+      "Index": 54,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 55,
+      "Child": [
+        55,
+        56,
+        57,
+        58,
+        59
+      ]
+    },
+    {
+      "Index": 55,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"105203202\", \"Player\"} ",
+      "Next": 56,
+      "Child": []
+    },
+    {
+      "Index": 56,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5101502_00_05\", \"\"} ",
+      "Next": 57,
+      "Child": []
+    },
+    {
+      "Index": 57,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5101502_00_05\", 0, 1, \"\"} ",
+      "Next": 58,
+      "Child": []
+    },
+    {
+      "Index": 58,
+      "Node": "{ \"BattleResultTalk\" : \"t5101502_006\"} ",
+      "Next": 59,
+      "Child": []
+    },
+    {
+      "Index": 59,
+      "Node": "{ \"BattleResultRemoveEventPoint\" : \"105203202\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 60,
+      "Node": "{ \"BattleEventNode\" : 500, 0, [ ]} ",
+      "Next": 61,
+      "Child": [
+        61
+      ]
+    },
+    {
+      "Index": 61,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 62,
+      "Child": [
+        62,
+        63,
+        64,
+        65,
+        66
+      ]
+    },
+    {
+      "Index": 62,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"104205101\", \"Player\"} ",
+      "Next": 63,
+      "Child": []
+    },
+    {
+      "Index": 63,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5101502_00_06\", \"\"} ",
+      "Next": 64,
+      "Child": []
+    },
+    {
+      "Index": 64,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5101502_00_06\", 0, 1, \"\"} ",
+      "Next": 65,
+      "Child": []
+    },
+    {
+      "Index": 65,
+      "Node": "{ \"BattleResultTalk\" : \"t5101502_018\"} ",
+      "Next": 66,
+      "Child": []
+    },
+    {
+      "Index": 66,
+      "Node": "{ \"BattleResultRemoveEventPoint\" : \"104205101\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 67,
+      "Node": "{ \"BattleEventNode\" : 500, 0, [ ]} ",
+      "Next": 68,
+      "Child": [
+        68
+      ]
+    },
+    {
+      "Index": 68,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 69,
+      "Child": [
+        69,
+        70,
+        71,
+        72,
+        73
+      ]
+    },
+    {
+      "Index": 69,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"101203102\", \"Player\"} ",
+      "Next": 70,
+      "Child": []
+    },
+    {
+      "Index": 70,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5101502_00_07\", \"\"} ",
+      "Next": 71,
+      "Child": []
+    },
+    {
+      "Index": 71,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5101502_00_07\", 0, 1, \"\"} ",
+      "Next": 72,
+      "Child": []
+    },
+    {
+      "Index": 72,
+      "Node": "{ \"BattleResultTalk\" : \"t5101502_019\"} ",
+      "Next": 73,
+      "Child": []
+    },
+    {
+      "Index": 73,
+      "Node": "{ \"BattleResultRemoveEventPoint\" : \"101203102\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 74,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 75,
+      "Child": [
+        75
+      ]
+    },
+    {
+      "Index": 75,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 76,
+      "Child": [
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84
+      ]
+    },
+    {
+      "Index": 76,
+      "Node": "{ \"BattleFactorTurn\" : 0, 9} ",
+      "Next": 77,
+      "Child": []
+    },
+    {
+      "Index": 77,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5101502_00_08\", \"\"} ",
+      "Next": 78,
+      "Child": []
+    },
+    {
+      "Index": 78,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5101502_00_08\", 0, 1, \"\"} ",
+      "Next": 79,
+      "Child": []
+    },
+    {
+      "Index": 79,
+      "Node": "{ \"BattleResultAddUnit\" : \"io93121903\", 1, 207203110, 1.00000, 0.00000} ",
+      "Next": 80,
+      "Child": []
+    },
+    {
+      "Index": 80,
+      "Node": "{ \"BattleResultAddUnit\" : \"io93121904\", 1, 200109209, 1.00000, 0.00000} ",
+      "Next": 81,
+      "Child": []
+    },
+    {
+      "Index": 81,
+      "Node": "{ \"BattleResultUnitHP\" : 0, 50, \"io93121903,io93121904\"} ",
+      "Next": 82,
+      "Child": []
+    },
+    {
+      "Index": 82,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io93121903,io93121904\", \"bt5101502_00_debuff_HungryWolf\", False} ",
+      "Next": 83,
+      "Child": []
+    },
+    {
+      "Index": 83,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io93121904\", \"bt5101502_00_debuff_HungryWolf\", False} ",
+      "Next": 84,
+      "Child": []
+    },
+    {
+      "Index": 84,
+      "Node": "{ \"BattleResultTalk\" : \"t5101502_035\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 85,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 86,
+      "Child": [
+        86
+      ]
+    },
+    {
+      "Index": 86,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 87,
+      "Child": [
+        87,
+        88,
+        89,
+        90
+      ]
+    },
+    {
+      "Index": 87,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"io93121901\"} ",
+      "Next": 88,
+      "Child": []
+    },
+    {
+      "Index": 88,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5101502_00_13\", \"\"} ",
+      "Next": 89,
+      "Child": []
+    },
+    {
+      "Index": 89,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5101502_00_13\", 0, 1, \"\"} ",
+      "Next": 90,
+      "Child": []
+    },
+    {
+      "Index": 90,
+      "Node": "{ \"BattleResultTalk\" : \"t5101502_011\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 91,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 92,
+      "Child": [
+        92
+      ]
+    },
+    {
+      "Index": 92,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 93,
+      "Child": [
+        93,
+        94,
+        95,
+        96
+      ]
+    },
+    {
+      "Index": 93,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"io93121902\"} ",
+      "Next": 94,
+      "Child": []
+    },
+    {
+      "Index": 94,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5101502_00_10\", \"\"} ",
+      "Next": 95,
+      "Child": []
+    },
+    {
+      "Index": 95,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5101502_00_10\", 0, 1, \"\"} ",
+      "Next": 96,
+      "Child": []
+    },
+    {
+      "Index": 96,
+      "Node": "{ \"BattleResultTalk\" : \"t5101502_040\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 97,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 98,
+      "Child": [
+        98
+      ]
+    },
+    {
+      "Index": 98,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 99,
+      "Child": [
+        99,
+        100,
+        101,
+        102
+      ]
+    },
+    {
+      "Index": 99,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"io93121903\"} ",
+      "Next": 100,
+      "Child": []
+    },
+    {
+      "Index": 100,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5101502_00_11\", \"\"} ",
+      "Next": 101,
+      "Child": []
+    },
+    {
+      "Index": 101,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5101502_00_11\", 0, 1, \"\"} ",
+      "Next": 102,
+      "Child": []
+    },
+    {
+      "Index": 102,
+      "Node": "{ \"BattleResultTalk\" : \"t5101502_045\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 103,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 104,
+      "Child": [
+        104
+      ]
+    },
+    {
+      "Index": 104,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 105,
+      "Child": [
+        105,
+        106,
+        107,
+        108
+      ]
+    },
+    {
+      "Index": 105,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"io93121904\"} ",
+      "Next": 106,
+      "Child": []
+    },
+    {
+      "Index": 106,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5101502_00_12\", \"\"} ",
+      "Next": 107,
+      "Child": []
+    },
+    {
+      "Index": 107,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5101502_00_12\", 0, 1, \"\"} ",
+      "Next": 108,
+      "Child": []
+    },
+    {
+      "Index": 108,
+      "Node": "{ \"BattleResultTalk\" : \"t5101502_049\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 109,
+      "Node": "{ \"BattleEventNode\" : 500, 0, [ ]} ",
+      "Next": 110,
+      "Child": [
+        110
+      ]
+    },
+    {
+      "Index": 110,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 111,
+      "Child": [
+        111,
+        112,
+        113,
+        114,
+        115
+      ]
+    },
+    {
+      "Index": 111,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"109208201\", \"Player\"} ",
+      "Next": 112,
+      "Child": []
+    },
+    {
+      "Index": 112,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5101502_00_14\", \"\"} ",
+      "Next": 113,
+      "Child": []
+    },
+    {
+      "Index": 113,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5101502_00_14\", 0, 1, \"\"} ",
+      "Next": 114,
+      "Child": []
+    },
+    {
+      "Index": 114,
+      "Node": "{ \"BattleResultTalk\" : \"t5101502_041\"} ",
+      "Next": 115,
+      "Child": []
+    },
+    {
+      "Index": 115,
+      "Node": "{ \"BattleResultRemoveEventPoint\" : \"109208201\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 116,
+      "Node": "{ \"BattleEventNode\" : 500, 0, [ ]} ",
+      "Next": 117,
+      "Child": [
+        117
+      ]
+    },
+    {
+      "Index": 117,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 118,
+      "Child": [
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126
+      ]
+    },
+    {
+      "Index": 118,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"108209101\", \"Player\"} ",
+      "Next": 119,
+      "Child": []
+    },
+    {
+      "Index": 119,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5101502_00_15\", \"\"} ",
+      "Next": 120,
+      "Child": []
+    },
+    {
+      "Index": 120,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5101502_00_15\", 0, 1, \"\"} ",
+      "Next": 121,
+      "Child": []
+    },
+    {
+      "Index": 121,
+      "Node": "{ \"BattleResultTalk\" : \"t5101502_046\"} ",
+      "Next": 122,
+      "Child": []
+    },
+    {
+      "Index": 122,
+      "Node": "{ \"BattleResultAddUnit\" : \"io93121905\", 1, 105209104, 1.00000, 0.00000} ",
+      "Next": 123,
+      "Child": []
+    },
+    {
+      "Index": 123,
+      "Node": "{ \"BattleResultUnitHP\" : 0, 50, \"io93121905\"} ",
+      "Next": 124,
+      "Child": []
+    },
+    {
+      "Index": 124,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io93121905\", \"bt5101502_00_debuff_HungryWolf\", False} ",
+      "Next": 125,
+      "Child": []
+    },
+    {
+      "Index": 125,
+      "Node": "{ \"BattleResultTalk\" : \"t5101502_043\"} ",
+      "Next": 126,
+      "Child": []
+    },
+    {
+      "Index": 126,
+      "Node": "{ \"BattleResultRemoveEventPoint\" : \"108209101\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 127,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 128,
+      "Child": [
+        128
+      ]
+    },
+    {
+      "Index": 128,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 129,
+      "Child": [
+        129,
+        130,
+        131,
+        132
+      ]
+    },
+    {
+      "Index": 129,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"io93121905\"} ",
+      "Next": 130,
+      "Child": []
+    },
+    {
+      "Index": 130,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf5101502_00_15\", \"\"} ",
+      "Next": 131,
+      "Child": []
+    },
+    {
+      "Index": 131,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5101502_00_15\", 0, 2, \"\"} ",
+      "Next": 132,
+      "Child": []
+    },
+    {
+      "Index": 132,
+      "Node": "{ \"BattleResultTalk\" : \"t5101502_050\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 133,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 134,
+      "Child": [
+        134
+      ]
+    },
+    {
+      "Index": 134,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 135,
+      "Child": [
+        135,
+        136,
+        137,
+        138
+      ]
+    },
+    {
+      "Index": 135,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5101502_2_04\", \"\"} ",
+      "Next": 136,
+      "Child": []
+    },
+    {
+      "Index": 136,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5101502_00_20\", \"\"} ",
+      "Next": 137,
+      "Child": []
+    },
+    {
+      "Index": 137,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5101502_00_20\", 0, 1, \"\"} ",
+      "Next": 138,
+      "Child": []
+    },
+    {
+      "Index": 138,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_explore_01.wav\", 1.00000, True} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "传书：采集药草（第一年；道恒）",
+  "WinTip": "None",
+  "LoseTip": "None"
+}

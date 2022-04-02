@@ -1,1 +1,1260 @@
-bs5201114_00b		{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "SetGlobalFlagBattleAction" : "fe5201114_2_04", 0, 1, "村民尚未受伤"} , { "SetGlobalFlagBattleAction" : "fe5201114_2_05", 0, 1, "队伍尚未有人死亡"} , { "SetGlobalFlagBattleAction" : "fe5201114_2_08", 0, 1, "老虎身上有buff"} , { "SetGlobalFlagBattleAction" : "fe5201114_2_09", 0, 0, "部队入场"} , { "SetGlobalFlagBattleAction" : "fe5201114_2_02", 0, 0, "部队入场"}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 0, "fe5201114_2_02", "提示"} , { "BattleFactorTurn" : 1, 1} , { "BattleResultTalk" : "t5201114_004"} , { "SetGlobalFlagBattleAction" : "fe5201114_2_02", 0, 1, ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 0, "fe5201114_2_01", "第一阶段，正常流程击倒老虎"} , { "BattleFactorTargetHp" : 2, 50, "in05370"} , { "BattleFactorTargetHp" : 0, 0, "in05370"} , { "BattleFactorTargetHp" : 0, 0, "in05368"} , { "BattleResultrReplaceUnit" : "in05368", "in05369", 1.00000, 0.00000} , { "BattlChanageFaction" : 1, "in05369"} , { "BattleResultTalk" : "t520114_008"} , { "SetGlobalFlagBattleAction" : "fe5201114_2_01", 0, 1, "进第二阶段"} , { "BattleResultChangeWinTip" : "Subdue the Mad Peasent"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 0, "fe5201114_2_01", "村民死亡，击退老虎"} , { "BattleFactorTargetHp" : 1, 0, "in05370"} , { "BattleFactorTargetHp" : 1, 0, "in05368"} , { "SetGlobalFlagBattleAction" : "fe5201114_2_03", 0, 1, "击退老虎"} , { "EndBattleAction" : "m5201114_01"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 0, "fe5201114_2_01", "第一阶段，秒杀老虎"} , { "BattleFactorTargetHp" : 1, 0, "in05370"} , { "BattleFactorTargetHp" : 0, 0, "in05368"} , { "BattleResultTalk" : "t520114_011"} , { "BattleResultrReplaceUnit" : "in05368", "in05369", 1.00000, 0.00000} , { "BattlChanageFaction" : 1, "in05369"} , { "BattleResultTalk" : "t520114_008"} , { "SetGlobalFlagBattleAction" : "fe5201114_2_01", 0, 1, "进第二阶段"} , { "BattleResultChangeWinTip" : "制服发狂村民"} , { "SetGlobalFlagBattleAction" : "fe5201114_2_03", 0, 1, "击退老虎"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe5201114_2_01", "第二阶段，击倒老虎"} , { "BattleFactorTargetHp" : 1, 0, "in05370"} , { "BattleResultTalk" : "t520114_011"} , { "SetGlobalFlagBattleAction" : "fe5201114_2_03", 0, 1, "击退老虎"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "Player"} , { "SetGlobalFlagBattleAction" : "fe5201114_2_05", 0, 0, "队伍有人死亡"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in03007"} , { "SetGlobalFlagBattleAction" : "fe5201114_2_05", 0, 0, "队伍有人死亡"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in05366"} , { "SetGlobalFlagBattleAction" : "fe5201114_2_05", 0, 0, "队伍有人死亡"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in05367"} , { "SetGlobalFlagBattleAction" : "fe5201114_2_05", 0, 0, "队伍有人死亡"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 2, 99, "in05368"} , { "SetGlobalFlagBattleAction" : "fe5201114_2_04", 0, 0, "村民受伤"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 0, "fe5201114_2_01", "第一阶段全员死亡"} , { "BattleFactorTargetDestroy" : "Player,in03007,in05366,in05367"} , { "EndBattleAction" : "m5201114_01"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe5201114_2_01", "第二阶段全员死亡"} , { "BattleFactorTargetDestroy" : "Player,in03007,in05366,in05367"} , { "EndBattleAction" : "m5201114_02"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe5201114_2_01", "第二阶正常流程"} , { "BattleFactorTargetDestroy" : "in05369"} , { "EndBattleAction" : "m5201114_01"}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "BattleFactorGlobalFlag" : 1, 0, "fe5201114_2_09", "部队入场"} , { "BattleResultAddUnits" : "in05368", 0, "108208200"} , { "BattleResultAddUnits" : "in05370", 1, "108208200"} , { "BattleResultMoveUnit" : "in05368,in05370", "200200200,104204200"} , { "BattleResultTalk" : "t5201114_000"} , { "BattleResultAddUnits" : "Player,in03007,in05366,in05367", 0, "206105101,205106201,207105102,205107202"} , { "BattleResultMoveUnit" : "Player,in03007,in05366,in05367", "101202101,102201201,200202102,102200202"} , { "BattleResultAddBuff" : True, "in05370", "bt5201114_buff_SuperTiger", True} , { "SetGlobalFlagBattleAction" : "fe5201114_2_09", 0, 1, ""} , { "SetGlobalFlagBattleAction" : "bt5201114_buff_SuperTiger", 0, 1, ""}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 2} , { "BattleFactorGlobalFlag" : 1, 1, "fe5201114_2_08", "老虎进疲惫"} , { "BattleResultRmoveBuff" : "in05370", "bt5201114_buff_SuperTiger"} , { "BattleResultAddBuff" : True, "in05307", "", False} , { "SetGlobalFlagBattleAction" : "fe5201114_2_08", 0, 0, ""}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 5} , { "BattleFactorGlobalFlag" : 1, 1, "fe5201114_2_08", "老虎进疲惫"} , { "BattleResultRmoveBuff" : "in05370", "bt5201114_buff_SuperTiger"} , { "SetGlobalFlagBattleAction" : "fe5201114_2_08", 0, 0, ""} , { "BattleResultAddBuff" : True, "in05370", "", False}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 8} , { "BattleFactorGlobalFlag" : 1, 1, "fe5201114_2_08", "老虎进疲惫"} , { "BattleResultRmoveBuff" : "in05370", "bt5201114_buff_SuperTiger"} , { "SetGlobalFlagBattleAction" : "fe5201114_2_08", 0, 0, ""} , { "BattleResultAddBuff" : True, "in05370", "", False}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 11} , { "BattleFactorGlobalFlag" : 1, 1, "fe5201114_2_08", "老虎进疲惫"} , { "BattleResultRmoveBuff" : "in05370", "bt5201114_buff_SuperTiger"} , { "SetGlobalFlagBattleAction" : "fe5201114_2_08", 0, 0, ""} , { "BattleResultAddBuff" : True, "in05370", "", False}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 14} , { "BattleFactorGlobalFlag" : 1, 1, "fe5201114_2_08", "老虎进疲惫"} , { "BattleResultRmoveBuff" : "in05370", "bt5201114_buff_SuperTiger"} , { "SetGlobalFlagBattleAction" : "fe5201114_2_08", 0, 0, ""} , { "BattleResultAddBuff" : True, "in05370", "", False}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 17} , { "BattleFactorGlobalFlag" : 1, 1, "fe5201114_2_08", "老虎进疲惫"} , { "BattleResultRmoveBuff" : "in05370", "bt5201114_buff_SuperTiger"} , { "SetGlobalFlagBattleAction" : "fe5201114_2_08", 0, 0, ""} , { "BattleResultAddBuff" : True, "in05370", "", False}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 3} , { "BattleFactorGlobalFlag" : 1, 0, "fe5201114_2_08", "老虎回复"} , { "BattleResultAddBuff" : True, "in05370", "bt5201114_buff_SuperTiger", True} , { "SetGlobalFlagBattleAction" : "fe5201114_2_08", 0, 1, ""}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 6} , { "BattleFactorGlobalFlag" : 1, 0, "fe5201114_2_08", "老虎回复"} , { "BattleResultAddBuff" : True, "in05370", "bt5201114_buff_SuperTiger", True} , { "SetGlobalFlagBattleAction" : "fe5201114_2_08", 0, 1, ""}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 9} , { "BattleFactorGlobalFlag" : 1, 0, "fe5201114_2_08", "老虎回复"} , { "BattleResultAddBuff" : True, "in05370", "bt5201114_buff_SuperTiger", True} , { "SetGlobalFlagBattleAction" : "fe5201114_2_08", 0, 1, ""}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 12} , { "BattleFactorGlobalFlag" : 1, 0, "fe5201114_2_08", "老虎回复"} , { "BattleResultAddBuff" : True, "in05370", "bt5201114_buff_SuperTiger", True} , { "SetGlobalFlagBattleAction" : "fe5201114_2_08", 0, 1, ""}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 15} , { "BattleFactorGlobalFlag" : 1, 0, "fe5201114_2_08", "老虎回复"} , { "BattleResultAddBuff" : True, "in05370", "bt5201114_buff_SuperTiger", True} , { "SetGlobalFlagBattleAction" : "fe5201114_2_08", 0, 1, ""}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 20} , { "BattleFactorGlobalFlag" : 1, 1, "fe5201114_2_08", "老虎永久进疲惫"} , { "BattleResultRmoveBuff" : "in05370", "bt5201114_buff_SuperTiger"} , { "SetGlobalFlagBattleAction" : "fe5201114_2_08", 0, 0, ""} , { "BattleResultAddBuff" : True, "in05370", "bt5201114_debuff_UnderTiger", False}  ]}  ]}  ]} 	击退发狂猛兽	Repel the mad tiger	All friendly characters defeated。
+{
+  "Id": "bs5201114_00b",
+  "Name": "",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201114_2_04\", 0, 1, \"村民尚未受伤\"} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201114_2_05\", 0, 1, \"队伍尚未有人死亡\"} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201114_2_08\", 0, 1, \"老虎身上有buff\"} ",
+      "Next": 4,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201114_2_09\", 0, 0, \"部队入场\"} ",
+      "Next": 5,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201114_2_02\", 0, 0, \"部队入场\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 7,
+      "Child": [
+        7
+      ]
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 8,
+      "Child": [
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe5201114_2_02\", \"提示\"} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleFactorTurn\" : 1, 1} ",
+      "Next": 10,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultTalk\" : \"t5201114_004\"} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201114_2_02\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 13,
+      "Child": [
+        13
+      ]
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 14,
+      "Child": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe5201114_2_01\", \"第一阶段，正常流程击倒老虎\"} ",
+      "Next": 15,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 50, \"in05370\"} ",
+      "Next": 16,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in05370\"} ",
+      "Next": 17,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in05368\"} ",
+      "Next": 18,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleResultrReplaceUnit\" : \"in05368\", \"in05369\", 1.00000, 0.00000} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattlChanageFaction\" : 1, \"in05369\"} ",
+      "Next": 20,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultTalk\" : \"t520114_008\"} ",
+      "Next": 21,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201114_2_01\", 0, 1, \"进第二阶段\"} ",
+      "Next": 22,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Uniformed frenzied villagers\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 24,
+      "Child": [
+        24
+      ]
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 25,
+      "Child": [
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe5201114_2_01\", \"村民死亡，击退老虎\"} ",
+      "Next": 26,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 0, \"in05370\"} ",
+      "Next": 27,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 0, \"in05368\"} ",
+      "Next": 28,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201114_2_03\", 0, 1, \"击退老虎\"} ",
+      "Next": 29,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"EndBattleAction\" : \"m5201114_01\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 31,
+      "Child": [
+        31
+      ]
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 32,
+      "Child": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ]
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe5201114_2_01\", \"第一阶段，秒杀老虎\"} ",
+      "Next": 33,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 0, \"in05370\"} ",
+      "Next": 34,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in05368\"} ",
+      "Next": 35,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleResultTalk\" : \"t520114_011\"} ",
+      "Next": 36,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"BattleResultrReplaceUnit\" : \"in05368\", \"in05369\", 1.00000, 0.00000} ",
+      "Next": 37,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattlChanageFaction\" : 1, \"in05369\"} ",
+      "Next": 38,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleResultTalk\" : \"t520114_008\"} ",
+      "Next": 39,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201114_2_01\", 0, 1, \"进第二阶段\"} ",
+      "Next": 40,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Uniformed frenzied villagers\"} ",
+      "Next": 41,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201114_2_03\", 0, 1, \"击退老虎\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 43,
+      "Child": [
+        43
+      ]
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 44,
+      "Child": [
+        44,
+        45,
+        46,
+        47
+      ]
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5201114_2_01\", \"第二阶段，击倒老虎\"} ",
+      "Next": 45,
+      "Child": []
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 0, \"in05370\"} ",
+      "Next": 46,
+      "Child": []
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"BattleResultTalk\" : \"t520114_011\"} ",
+      "Next": 47,
+      "Child": []
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201114_2_03\", 0, 1, \"击退老虎\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 49,
+      "Child": [
+        49
+      ]
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 50,
+      "Child": [
+        50,
+        51
+      ]
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player\"} ",
+      "Next": 51,
+      "Child": []
+    },
+    {
+      "Index": 51,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201114_2_05\", 0, 0, \"队伍有人死亡\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 52,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 53,
+      "Child": [
+        53
+      ]
+    },
+    {
+      "Index": 53,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 54,
+      "Child": [
+        54,
+        55
+      ]
+    },
+    {
+      "Index": 54,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in03007\"} ",
+      "Next": 55,
+      "Child": []
+    },
+    {
+      "Index": 55,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201114_2_05\", 0, 0, \"队伍有人死亡\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 56,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 57,
+      "Child": [
+        57
+      ]
+    },
+    {
+      "Index": 57,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 58,
+      "Child": [
+        58,
+        59
+      ]
+    },
+    {
+      "Index": 58,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05366\"} ",
+      "Next": 59,
+      "Child": []
+    },
+    {
+      "Index": 59,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201114_2_05\", 0, 0, \"队伍有人死亡\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 60,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 61,
+      "Child": [
+        61
+      ]
+    },
+    {
+      "Index": 61,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 62,
+      "Child": [
+        62,
+        63
+      ]
+    },
+    {
+      "Index": 62,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05367\"} ",
+      "Next": 63,
+      "Child": []
+    },
+    {
+      "Index": 63,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201114_2_05\", 0, 0, \"队伍有人死亡\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 64,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 65,
+      "Child": [
+        65
+      ]
+    },
+    {
+      "Index": 65,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 66,
+      "Child": [
+        66,
+        67
+      ]
+    },
+    {
+      "Index": 66,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 99, \"in05368\"} ",
+      "Next": 67,
+      "Child": []
+    },
+    {
+      "Index": 67,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201114_2_04\", 0, 0, \"村民受伤\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 68,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 69,
+      "Child": [
+        69
+      ]
+    },
+    {
+      "Index": 69,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 70,
+      "Child": [
+        70,
+        71,
+        72
+      ]
+    },
+    {
+      "Index": 70,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe5201114_2_01\", \"第一阶段全员死亡\"} ",
+      "Next": 71,
+      "Child": []
+    },
+    {
+      "Index": 71,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player,in03007,in05366,in05367\"} ",
+      "Next": 72,
+      "Child": []
+    },
+    {
+      "Index": 72,
+      "Node": "{ \"EndBattleAction\" : \"m5201114_01\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 73,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 74,
+      "Child": [
+        74
+      ]
+    },
+    {
+      "Index": 74,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 75,
+      "Child": [
+        75,
+        76,
+        77
+      ]
+    },
+    {
+      "Index": 75,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5201114_2_01\", \"第二阶段全员死亡\"} ",
+      "Next": 76,
+      "Child": []
+    },
+    {
+      "Index": 76,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player,in03007,in05366,in05367\"} ",
+      "Next": 77,
+      "Child": []
+    },
+    {
+      "Index": 77,
+      "Node": "{ \"EndBattleAction\" : \"m5201114_02\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 78,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 79,
+      "Child": [
+        79
+      ]
+    },
+    {
+      "Index": 79,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 80,
+      "Child": [
+        80,
+        81,
+        82
+      ]
+    },
+    {
+      "Index": 80,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5201114_2_01\", \"第二阶正常流程\"} ",
+      "Next": 81,
+      "Child": []
+    },
+    {
+      "Index": 81,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05369\"} ",
+      "Next": 82,
+      "Child": []
+    },
+    {
+      "Index": 82,
+      "Node": "{ \"EndBattleAction\" : \"m5201114_01\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 83,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 84,
+      "Child": [
+        84
+      ]
+    },
+    {
+      "Index": 84,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 85,
+      "Child": [
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95
+      ]
+    },
+    {
+      "Index": 85,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 86,
+      "Child": []
+    },
+    {
+      "Index": 86,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe5201114_2_09\", \"部队入场\"} ",
+      "Next": 87,
+      "Child": []
+    },
+    {
+      "Index": 87,
+      "Node": "{ \"BattleResultAddUnits\" : \"in05368\", 0, \"108208200\"} ",
+      "Next": 88,
+      "Child": []
+    },
+    {
+      "Index": 88,
+      "Node": "{ \"BattleResultAddUnits\" : \"in05370\", 1, \"108208200\"} ",
+      "Next": 89,
+      "Child": []
+    },
+    {
+      "Index": 89,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in05368,in05370\", \"200200200,104204200\"} ",
+      "Next": 90,
+      "Child": []
+    },
+    {
+      "Index": 90,
+      "Node": "{ \"BattleResultTalk\" : \"t5201114_000\"} ",
+      "Next": 91,
+      "Child": []
+    },
+    {
+      "Index": 91,
+      "Node": "{ \"BattleResultAddUnits\" : \"Player,in03007,in05366,in05367\", 0, \"206105101,205106201,207105102,205107202\"} ",
+      "Next": 92,
+      "Child": []
+    },
+    {
+      "Index": 92,
+      "Node": "{ \"BattleResultMoveUnit\" : \"Player,in03007,in05366,in05367\", \"101202101,102201201,200202102,102200202\"} ",
+      "Next": 93,
+      "Child": []
+    },
+    {
+      "Index": 93,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05370\", \"bt5201114_buff_SuperTiger\", True} ",
+      "Next": 94,
+      "Child": []
+    },
+    {
+      "Index": 94,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201114_2_09\", 0, 1, \"\"} ",
+      "Next": 95,
+      "Child": []
+    },
+    {
+      "Index": 95,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"bt5201114_buff_SuperTiger\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 96,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 97,
+      "Child": [
+        97
+      ]
+    },
+    {
+      "Index": 97,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 98,
+      "Child": [
+        98,
+        99,
+        100,
+        101,
+        102
+      ]
+    },
+    {
+      "Index": 98,
+      "Node": "{ \"BattleFactorTurn\" : 1, 2} ",
+      "Next": 99,
+      "Child": []
+    },
+    {
+      "Index": 99,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5201114_2_08\", \"老虎进疲惫\"} ",
+      "Next": 100,
+      "Child": []
+    },
+    {
+      "Index": 100,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05370\", \"bt5201114_buff_SuperTiger\"} ",
+      "Next": 101,
+      "Child": []
+    },
+    {
+      "Index": 101,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05307\", \"\", False} ",
+      "Next": 102,
+      "Child": []
+    },
+    {
+      "Index": 102,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201114_2_08\", 0, 0, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 103,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 104,
+      "Child": [
+        104
+      ]
+    },
+    {
+      "Index": 104,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 105,
+      "Child": [
+        105,
+        106,
+        107,
+        108,
+        109
+      ]
+    },
+    {
+      "Index": 105,
+      "Node": "{ \"BattleFactorTurn\" : 1, 5} ",
+      "Next": 106,
+      "Child": []
+    },
+    {
+      "Index": 106,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5201114_2_08\", \"老虎进疲惫\"} ",
+      "Next": 107,
+      "Child": []
+    },
+    {
+      "Index": 107,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05370\", \"bt5201114_buff_SuperTiger\"} ",
+      "Next": 108,
+      "Child": []
+    },
+    {
+      "Index": 108,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201114_2_08\", 0, 0, \"\"} ",
+      "Next": 109,
+      "Child": []
+    },
+    {
+      "Index": 109,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05370\", \"\", False} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 110,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 111,
+      "Child": [
+        111
+      ]
+    },
+    {
+      "Index": 111,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 112,
+      "Child": [
+        112,
+        113,
+        114,
+        115,
+        116
+      ]
+    },
+    {
+      "Index": 112,
+      "Node": "{ \"BattleFactorTurn\" : 1, 8} ",
+      "Next": 113,
+      "Child": []
+    },
+    {
+      "Index": 113,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5201114_2_08\", \"老虎进疲惫\"} ",
+      "Next": 114,
+      "Child": []
+    },
+    {
+      "Index": 114,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05370\", \"bt5201114_buff_SuperTiger\"} ",
+      "Next": 115,
+      "Child": []
+    },
+    {
+      "Index": 115,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201114_2_08\", 0, 0, \"\"} ",
+      "Next": 116,
+      "Child": []
+    },
+    {
+      "Index": 116,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05370\", \"\", False} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 117,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 118,
+      "Child": [
+        118
+      ]
+    },
+    {
+      "Index": 118,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 119,
+      "Child": [
+        119,
+        120,
+        121,
+        122,
+        123
+      ]
+    },
+    {
+      "Index": 119,
+      "Node": "{ \"BattleFactorTurn\" : 1, 11} ",
+      "Next": 120,
+      "Child": []
+    },
+    {
+      "Index": 120,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5201114_2_08\", \"老虎进疲惫\"} ",
+      "Next": 121,
+      "Child": []
+    },
+    {
+      "Index": 121,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05370\", \"bt5201114_buff_SuperTiger\"} ",
+      "Next": 122,
+      "Child": []
+    },
+    {
+      "Index": 122,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201114_2_08\", 0, 0, \"\"} ",
+      "Next": 123,
+      "Child": []
+    },
+    {
+      "Index": 123,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05370\", \"\", False} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 124,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 125,
+      "Child": [
+        125
+      ]
+    },
+    {
+      "Index": 125,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 126,
+      "Child": [
+        126,
+        127,
+        128,
+        129,
+        130
+      ]
+    },
+    {
+      "Index": 126,
+      "Node": "{ \"BattleFactorTurn\" : 1, 14} ",
+      "Next": 127,
+      "Child": []
+    },
+    {
+      "Index": 127,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5201114_2_08\", \"老虎进疲惫\"} ",
+      "Next": 128,
+      "Child": []
+    },
+    {
+      "Index": 128,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05370\", \"bt5201114_buff_SuperTiger\"} ",
+      "Next": 129,
+      "Child": []
+    },
+    {
+      "Index": 129,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201114_2_08\", 0, 0, \"\"} ",
+      "Next": 130,
+      "Child": []
+    },
+    {
+      "Index": 130,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05370\", \"\", False} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 131,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 132,
+      "Child": [
+        132
+      ]
+    },
+    {
+      "Index": 132,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 133,
+      "Child": [
+        133,
+        134,
+        135,
+        136,
+        137
+      ]
+    },
+    {
+      "Index": 133,
+      "Node": "{ \"BattleFactorTurn\" : 1, 17} ",
+      "Next": 134,
+      "Child": []
+    },
+    {
+      "Index": 134,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5201114_2_08\", \"老虎进疲惫\"} ",
+      "Next": 135,
+      "Child": []
+    },
+    {
+      "Index": 135,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05370\", \"bt5201114_buff_SuperTiger\"} ",
+      "Next": 136,
+      "Child": []
+    },
+    {
+      "Index": 136,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201114_2_08\", 0, 0, \"\"} ",
+      "Next": 137,
+      "Child": []
+    },
+    {
+      "Index": 137,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05370\", \"\", False} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 138,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 139,
+      "Child": [
+        139
+      ]
+    },
+    {
+      "Index": 139,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 140,
+      "Child": [
+        140,
+        141,
+        142,
+        143
+      ]
+    },
+    {
+      "Index": 140,
+      "Node": "{ \"BattleFactorTurn\" : 1, 3} ",
+      "Next": 141,
+      "Child": []
+    },
+    {
+      "Index": 141,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe5201114_2_08\", \"老虎回复\"} ",
+      "Next": 142,
+      "Child": []
+    },
+    {
+      "Index": 142,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05370\", \"bt5201114_buff_SuperTiger\", True} ",
+      "Next": 143,
+      "Child": []
+    },
+    {
+      "Index": 143,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201114_2_08\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 144,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 145,
+      "Child": [
+        145
+      ]
+    },
+    {
+      "Index": 145,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 146,
+      "Child": [
+        146,
+        147,
+        148,
+        149
+      ]
+    },
+    {
+      "Index": 146,
+      "Node": "{ \"BattleFactorTurn\" : 1, 6} ",
+      "Next": 147,
+      "Child": []
+    },
+    {
+      "Index": 147,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe5201114_2_08\", \"老虎回复\"} ",
+      "Next": 148,
+      "Child": []
+    },
+    {
+      "Index": 148,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05370\", \"bt5201114_buff_SuperTiger\", True} ",
+      "Next": 149,
+      "Child": []
+    },
+    {
+      "Index": 149,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201114_2_08\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 150,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 151,
+      "Child": [
+        151
+      ]
+    },
+    {
+      "Index": 151,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 152,
+      "Child": [
+        152,
+        153,
+        154,
+        155
+      ]
+    },
+    {
+      "Index": 152,
+      "Node": "{ \"BattleFactorTurn\" : 1, 9} ",
+      "Next": 153,
+      "Child": []
+    },
+    {
+      "Index": 153,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe5201114_2_08\", \"老虎回复\"} ",
+      "Next": 154,
+      "Child": []
+    },
+    {
+      "Index": 154,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05370\", \"bt5201114_buff_SuperTiger\", True} ",
+      "Next": 155,
+      "Child": []
+    },
+    {
+      "Index": 155,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201114_2_08\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 156,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 157,
+      "Child": [
+        157
+      ]
+    },
+    {
+      "Index": 157,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 158,
+      "Child": [
+        158,
+        159,
+        160,
+        161
+      ]
+    },
+    {
+      "Index": 158,
+      "Node": "{ \"BattleFactorTurn\" : 1, 12} ",
+      "Next": 159,
+      "Child": []
+    },
+    {
+      "Index": 159,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe5201114_2_08\", \"老虎回复\"} ",
+      "Next": 160,
+      "Child": []
+    },
+    {
+      "Index": 160,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05370\", \"bt5201114_buff_SuperTiger\", True} ",
+      "Next": 161,
+      "Child": []
+    },
+    {
+      "Index": 161,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201114_2_08\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 162,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 163,
+      "Child": [
+        163
+      ]
+    },
+    {
+      "Index": 163,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 164,
+      "Child": [
+        164,
+        165,
+        166,
+        167
+      ]
+    },
+    {
+      "Index": 164,
+      "Node": "{ \"BattleFactorTurn\" : 1, 15} ",
+      "Next": 165,
+      "Child": []
+    },
+    {
+      "Index": 165,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe5201114_2_08\", \"老虎回复\"} ",
+      "Next": 166,
+      "Child": []
+    },
+    {
+      "Index": 166,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05370\", \"bt5201114_buff_SuperTiger\", True} ",
+      "Next": 167,
+      "Child": []
+    },
+    {
+      "Index": 167,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201114_2_08\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 168,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 169,
+      "Child": [
+        169
+      ]
+    },
+    {
+      "Index": 169,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 170,
+      "Child": [
+        170,
+        171,
+        172,
+        173,
+        174
+      ]
+    },
+    {
+      "Index": 170,
+      "Node": "{ \"BattleFactorTurn\" : 1, 20} ",
+      "Next": 171,
+      "Child": []
+    },
+    {
+      "Index": 171,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5201114_2_08\", \"老虎永久进疲惫\"} ",
+      "Next": 172,
+      "Child": []
+    },
+    {
+      "Index": 172,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05370\", \"bt5201114_buff_SuperTiger\"} ",
+      "Next": 173,
+      "Child": []
+    },
+    {
+      "Index": 173,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201114_2_08\", 0, 0, \"\"} ",
+      "Next": 174,
+      "Child": []
+    },
+    {
+      "Index": 174,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05370\", \"bt5201114_debuff_UnderTiger\", False} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "击退发狂猛兽",
+  "WinTip": "Fighting off a frenzied tiger",
+  "LoseTip": "All defeated"
+}

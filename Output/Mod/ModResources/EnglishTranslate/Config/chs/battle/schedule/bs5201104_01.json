@@ -1,1 +1,294 @@
-bs5201104_01	bs5201104_01	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "party00", 0, 101202101, 1.00000} , { "BattleResultAddUnit" : "in05329", 1, 201101200, 1.00000} , { "BattleResultAddUnit" : "in05328", 1, 202104202, 1.00000}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "BattleFactorLocalFlag" : 1, 0, "btf5201104_01" ,""} , { "BattleResultMoveUnit" : "in05329,in05328", "101201200,200102202"} , { "SetLocalFlagBattleAction" : "btf5201104_01", 0, 1 ,""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 0, "btf5201104_04" ,""} , { "BattleFactorTargetDestroy" : "in05328,in05329"} , { "SetLocalFlagBattleAction" : "btf5201104_04", 0, 1 ,""} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 0, "btf5201104_05" ,""} , { "BattleFactorTargetDestroy" : "party00"} , { "SetLocalFlagBattleAction" : "btf5201104_05", 0, 1 ,""} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 0, "btf5201104_06" ,""} , { "BattleFactorTargetDestroy" : "in05328"} , { "BattleFactorTargetHp" : 0, 0, "in05329"} , { "BattleResultTalk" : "t5201104_040"} , { "BattleResultUnitHP" : 0, 100, "in05329"} , { "BattleResultAddBuff" : True, "in05329", "bt5201104_01_buff_Power125", True} , { "SetLocalFlagBattleAction" : "btf5201104_06", 0, 1 ,""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 0, "btf5201104_07" ,""} , { "BattleFactorTargetDestroy" : "in05329"} , { "BattleFactorTargetHp" : 0, 0, "in05328"} , { "BattleResultTalk" : "t5201104_042"} , { "BattleResultUnitHP" : 0, 100, "in05328"} , { "BattleResultAddBuff" : True, "in05328", "bt5201104_01_buff_Power125", True} , { "SetLocalFlagBattleAction" : "btf5201104_07", 0, 1 ,""}  ]}  ]}  ]} 	［传书］失控的机关人	The enemy is wiped out	Player is defeated.
+{
+  "Id": "bs5201104_01",
+  "Name": "bs5201104_01",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"party00\", 0, 101202101, 1.00000, 0.00000} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05329\", 1, 201101200, 1.00000, 0.00000} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05328\", 1, 202104202, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 5,
+      "Child": [
+        5
+      ]
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 6,
+      "Child": [
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5201104_01\", \"\"} ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in05329,in05328\", \"101201200,200102202\"} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5201104_01\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 11,
+      "Child": [
+        11
+      ]
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 12,
+      "Child": [
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5201104_04\", \"\"} ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05328,in05329\"} ",
+      "Next": 14,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5201104_04\", 0, 1, \"\"} ",
+      "Next": 15,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 17,
+      "Child": [
+        17
+      ]
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 18,
+      "Child": [
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5201104_05\", \"\"} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"party00\"} ",
+      "Next": 20,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5201104_05\", 0, 1, \"\"} ",
+      "Next": 21,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 23,
+      "Child": [
+        23
+      ]
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 24,
+      "Child": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5201104_06\", \"\"} ",
+      "Next": 25,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05328\"} ",
+      "Next": 26,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in05329\"} ",
+      "Next": 27,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleResultTalk\" : \"t5201104_040\"} ",
+      "Next": 28,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleResultUnitHP\" : 0, 100, \"in05329\"} ",
+      "Next": 29,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05329\", \"bt5201104_01_buff_Power125\", True} ",
+      "Next": 30,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5201104_06\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 32,
+      "Child": [
+        32
+      ]
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 33,
+      "Child": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ]
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5201104_07\", \"\"} ",
+      "Next": 34,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05329\"} ",
+      "Next": 35,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in05328\"} ",
+      "Next": 36,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"BattleResultTalk\" : \"t5201104_042\"} ",
+      "Next": 37,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleResultUnitHP\" : 0, 100, \"in05328\"} ",
+      "Next": 38,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05328\", \"bt5201104_01_buff_Power125\", True} ",
+      "Next": 39,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5201104_07\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "［传书］失控的机关人",
+  "WinTip": "Defeat all enemies",
+  "LoseTip": "Player Death"
+}

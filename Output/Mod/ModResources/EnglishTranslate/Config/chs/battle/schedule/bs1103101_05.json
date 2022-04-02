@@ -1,1 +1,371 @@
-bs1103101_05	春校石崑主线战	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "party00", 0, 101202101, 1.00000} , { "BattleResultAddUnit" : "party01", 0, 103203200, 1.00000} , { "BattleResultAddUnit" : "party02", 0, 200203103, 1.00000}  ]} , { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "in05511", 1, 202104202, 1.00000} , { "BattleResultAddUnit" : "in05513", 1, 200105205, 1.00000} , { "BattleResultAddUnit" : "in05514", 1, 205105200, 1.00000}  ]} , { "BattleEventNode" : 500, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 2} , { "BattleFactorLocalFlag" : 1, 0, "bt1103101_05_01", ""} , { "BattleResultAddUnit" : "in0105", 2, 102204102, 1.00000} , { "BattleResultAddBuff" : True, "in0105", "in0105_buff_FullPower3", True} , { "BattleResultTalk" : "t1103101_736"} , { "BattleResultAddBuff" : True, "Player", "bt1103101_05_debuff_Poison", False} , { "BattleResultAddBuff" : True, "in0105", "bt1103101_05_debuff_Poison", False} , { "BattleResultAddBuff" : True, "in0102", "bt1103101_05_debuff_Poison", False} , { "BattleResultAddBuff" : True, "in0103", "bt1103101_05_debuff_Poison", False} , { "BattleResultAddBuff" : True, "in0106", "bt1103101_05_debuff_Poison", False} , { "BattleResultAddBuff" : True, "in0107", "bt1103101_05_debuff_Poison", False} , { "BattleResultTalk" : "t1103101_741"} , { "SetLocalFlagBattleAction" : "bt1103101_05_01", 0, 1, ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 0} , { "BattleFactorTargetDestroy" : "in0105"} , { "BattleFactorLocalFlag" : 1, 1, "bt1103101_05_01", ""} , { "BattleResultTalk" : "t1103101_788"} , { "SetLocalFlagBattleAction" : "bt1103101_05_01", 0, 2, ""} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "Player"} , { "BattleFactorLocalFlag" : 1, 0, "bt1103101_05_02", ""} , { "SetLocalFlagBattleAction" : "bt1103101_05_02", 0, 1, ""} , { "BattleResultTalk" : "t1103101_748"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in05511"} , { "BattleFactorLocalFlag" : 1, 0, "bt1103101_05_03", ""} , { "BattleResultTalk" : "t1103101_751"} , { "SetLocalFlagBattleAction" : "bt1103101_05_03", 0, 1, ""} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 0} , { "BattleFactorLocalFlag" : 1, 0, "bt1103101_05_01", ""} , { "BattleResultTalk" : "t1103101_747"} , { "SetLocalFlagBattleAction" : "bt1103101_05_01", 0, 1, ""} , { "BattleResultLose" : ""}  ]}  ]}  ]} 		Defeat Wang Qi！（Additional objectives：{name_1}{name_2} survives）	All friendly characters defeated。
+{
+  "Id": "bs1103101_05",
+  "Name": "春校石崑主线战",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"party00\", 0, 101202101, 1.00000, 0.00000} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"party01\", 0, 103203200, 1.00000, 0.00000} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnit\" : \"party02\", 0, 200203103, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 5,
+      "Child": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05511\", 1, 202104202, 1.00000, 0.00000} ",
+      "Next": 6,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05513\", 1, 200105205, 1.00000, 0.00000} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05514\", 1, 205105200, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleEventNode\" : 500, 0, [ ]} ",
+      "Next": 9,
+      "Child": [
+        9
+      ]
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 10,
+      "Child": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ]
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleFactorTurn\" : 1, 2} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bt1103101_05_01\", \"\"} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0105\", 2, 102204102, 1.00000, 0.00000} ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0105\", \"in0105_buff_FullPower3\", True} ",
+      "Next": 14,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultTalk\" : \"t1103101_736\"} ",
+      "Next": 15,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"bt1103101_05_debuff_Poison\", False} ",
+      "Next": 16,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0105\", \"bt1103101_05_debuff_Poison\", False} ",
+      "Next": 17,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0102\", \"bt1103101_05_debuff_Poison\", False} ",
+      "Next": 18,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0103\", \"bt1103101_05_debuff_Poison\", False} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0106\", \"bt1103101_05_debuff_Poison\", False} ",
+      "Next": 20,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0107\", \"bt1103101_05_debuff_Poison\", False} ",
+      "Next": 21,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleResultTalk\" : \"t1103101_741\"} ",
+      "Next": 22,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bt1103101_05_01\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 24,
+      "Child": [
+        24
+      ]
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 25,
+      "Child": [
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 0} ",
+      "Next": 26,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0105\"} ",
+      "Next": 27,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"bt1103101_05_01\", \"\"} ",
+      "Next": 28,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleResultTalk\" : \"t1103101_788\"} ",
+      "Next": 29,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bt1103101_05_01\", 0, 2, \"\"} ",
+      "Next": 30,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 32,
+      "Child": [
+        32
+      ]
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 33,
+      "Child": [
+        33,
+        34,
+        35,
+        36
+      ]
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player\"} ",
+      "Next": 34,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bt1103101_05_02\", \"\"} ",
+      "Next": 35,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bt1103101_05_02\", 0, 1, \"\"} ",
+      "Next": 36,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"BattleResultTalk\" : \"t1103101_748\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 38,
+      "Child": [
+        38
+      ]
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 39,
+      "Child": [
+        39,
+        40,
+        41,
+        42,
+        43
+      ]
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05511\"} ",
+      "Next": 40,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bt1103101_05_03\", \"\"} ",
+      "Next": 41,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleResultTalk\" : \"t1103101_751\"} ",
+      "Next": 42,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bt1103101_05_03\", 0, 1, \"\"} ",
+      "Next": 43,
+      "Child": []
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 45,
+      "Child": [
+        45
+      ]
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 46,
+      "Child": [
+        46,
+        47,
+        48,
+        49,
+        50
+      ]
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 0} ",
+      "Next": 47,
+      "Child": []
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bt1103101_05_01\", \"\"} ",
+      "Next": 48,
+      "Child": []
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"BattleResultTalk\" : \"t1103101_747\"} ",
+      "Next": 49,
+      "Child": []
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bt1103101_05_01\", 0, 1, \"\"} ",
+      "Next": 50,
+      "Child": []
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "",
+  "WinTip": "Defeat Wang Qi!（额外目标：{name_1}{name_2}存活）",
+  "LoseTip": "All friendly units are defeated"
+}

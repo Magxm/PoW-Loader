@@ -1,0 +1,310 @@
+{
+  "Id": "bs1010306_01",
+  "Name": "锺若昕六:锺若昕童天易单挑战",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Prallel": -1,
+      "Child": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05404\", 1, 102105207, 1.00000, 0.00000} ",
+      "Next": 2,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0103\", 0, 104201203, 1.00000, 0.00000} ",
+      "Next": 3,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultWaitAction\" : 2.00000} ",
+      "Next": 4,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in0103\", \"bf1010306_01_in0103\", False} ",
+      "Next": 5,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in05404\", \"bf1010306_01_in05404\", False} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 7,
+      "Prallel": -1,
+      "Child": [
+        7
+      ]
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 8,
+      "Prallel": -1,
+      "Child": [
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleAttackUnitCondition\" : \"in0103\", \"in05404\"} ",
+      "Next": 9,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 10,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultTalk\" : \"t1010306_209\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 12,
+      "Prallel": -1,
+      "Child": [
+        12
+      ]
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 13,
+      "Prallel": -1,
+      "Child": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleAttackUnitCondition\" : \"in91001\", \"in05404\"} ",
+      "Next": 14,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 15,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleResultTalk\" : \"t1010306_213\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
+      "Next": 17,
+      "Prallel": -1,
+      "Child": [
+        17
+      ]
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 18,
+      "Prallel": -1,
+      "Child": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ]
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleAttackUnitCondition\" : \"in05404\", \"in91001\"} ",
+      "Next": 19,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1010306_2_03\", \"童天易首次攻击\"} ",
+      "Next": 20,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 21,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleResultTalk\" : \"t1010306_222\"} ",
+      "Next": 22,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1010306_2_03\", 0, 1, \"童天易已攻击\"} ",
+      "Next": 23,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 25,
+      "Prallel": -1,
+      "Child": [
+        25
+      ]
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 26,
+      "Prallel": -1,
+      "Child": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ]
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleAttackUnitCondition\" : \"in05404\", \"in0103\"} ",
+      "Next": 27,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1010306_2_03\", \"童天易首次攻击\"} ",
+      "Next": 28,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 29,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleResultTalk\" : \"t1010306_222\"} ",
+      "Next": 30,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1010306_2_03\", 0, 1, \"童天易已攻击\"} ",
+      "Next": 31,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 33,
+      "Prallel": -1,
+      "Child": [
+        33
+      ]
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 36,
+      "Prallel": -1,
+      "Child": [
+        36,
+        34,
+        35
+      ]
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 35,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleResultTalk\" : \"t1010306_200\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 34,
+      "Prallel": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "锺若昕六：首战童天易",
+  "WinTip": "Defeat Tong Tian Yi",
+  "LoseTip": "Zhong Ruoxin is defeated"
+}

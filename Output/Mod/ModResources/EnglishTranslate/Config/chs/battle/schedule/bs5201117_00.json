@@ -1,1 +1,407 @@
-bs5201117_00		{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnits" : "in0601,Player", 0, "202103201,202105203"} , { "BattleResultAddUnits" : "in33011,in33013", 0, "203102101,205102103"} , { "BattleResultAddBuff" : True, "in33013", "bt5201117_03_buff_TrueBrother", True} , { "BattleResultAddBuff" : True, "in33011", "bt5201117_02_buff_BigBrother", True} , { "BattleResultAddUnits" : "in36012,in35012,in32014,in32013", 1, "105202203,103202201,102203101,102205103"} , { "BattleResultAddSecondaryGoal" : "btc5201117_01", "Defeat the enemy team within 7 turns。"}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "BattleFactorGlobalFlag" : 1, 1, "fe1205101_2_04", "吴匛、云狐暧昧"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5201117_052"} , { "BattleResultAddBuff" : True, "in32013,in36012", "bt5201117_01_buff_Lover", True}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 0} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5201117_062"} , { "EndBattleAction" : "m5201117_01"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 1} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5201117_053"} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 1} , { "BattleFactorTargetHp" : 0, 0, "in0601"} , { "BattleFactorTargetHp" : 0, 0, "Player"} , { "BattleFactorTargetHp" : 0, 0, "in33011"} , { "BattleFactorTargetHp" : 0, 0, "in33013"} , { "ExecuteOnceNode" } , { "SetGlobalFlagBattleAction" : "fe5201117_2_03", 0, 1, "成绩单：战斗结束後我方队伍全员存活"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 1} , { "BattleFactorTargetHp" : 0, 0, "in0601"} , { "BattleFactorTargetHp" : 0, 0, "Player"} , { "ExecuteOnceNode" } , { "SetGlobalFlagBattleAction" : "fe5201117_2_02", 0, 1, "成绩单：侠隐阁队伍全员存活"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 1} , { "BattleFactorTurn" : 2, 8} , { "ExecuteOnceNode" } , { "SetGlobalFlagBattleAction" : "fe5201117_2_04", 0, 1, "成绩单：成功于七回合内赢得战斗"} , { "BattleResultChangeSecondaryGoal" : "btc5201117_01", 1}  ]}  ]}  ]} 		Defeat all enemies!	All friendly characters defeated。
+{
+  "Id": "bs5201117_00",
+  "Name": "",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Prallel": -1,
+      "Child": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnits\" : \"in0601,Player\", 0, \"202103201,202105203\"} ",
+      "Next": 2,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnits\" : \"in33011,in33013\", 0, \"203102101,205102103\"} ",
+      "Next": 3,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in33013\", \"bt5201117_03_buff_TrueBrother\", True} ",
+      "Next": 4,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in33011\", \"bt5201117_02_buff_BigBrother\", True} ",
+      "Next": 5,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleResultAddUnits\" : \"in36012,in35012,in32014,in32013\", 1, \"105202203,103202201,102203101,102205103\"} ",
+      "Next": 6,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleResultAddSecondaryGoal\" : \"btc5201117_01\", \"于七回合内战胜敌方队伍。\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 8,
+      "Prallel": -1,
+      "Child": [
+        8
+      ]
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 9,
+      "Prallel": -1,
+      "Child": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 10,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205101_2_04\", \"吴匛、云狐暧昧\"} ",
+      "Next": 11,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 12,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultTalk\" : \"t5201117_052\"} ",
+      "Next": 13,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in32013,in36012\", \"bt5201117_01_buff_Lover\", True} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 15,
+      "Prallel": -1,
+      "Child": [
+        15
+      ]
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 16,
+      "Prallel": -1,
+      "Child": [
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 0} ",
+      "Next": 17,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 18,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleResultTalk\" : \"t5201117_062\"} ",
+      "Next": 19,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"EndBattleAction\" : \"m5201117_01\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleEventNode\" : 400, 4, [ ]} ",
+      "Next": 21,
+      "Prallel": -1,
+      "Child": [
+        21
+      ]
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 22,
+      "Prallel": -1,
+      "Child": [
+        22,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 23,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 24,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleResultTalk\" : \"t5201117_053\"} ",
+      "Next": 25,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 27,
+      "Prallel": -1,
+      "Child": [
+        27
+      ]
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 28,
+      "Prallel": -1,
+      "Child": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ]
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 29,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in0601\"} ",
+      "Next": 30,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"Player\"} ",
+      "Next": 31,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in33011\"} ",
+      "Next": 32,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in33013\"} ",
+      "Next": 33,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 34,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201117_2_03\", 0, 1, \"成绩单：战斗结束後我方队伍全员存活\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
+      "Next": 36,
+      "Prallel": -1,
+      "Child": [
+        36
+      ]
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 37,
+      "Prallel": -1,
+      "Child": [
+        37,
+        38,
+        39,
+        40,
+        41
+      ]
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 38,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in0601\"} ",
+      "Next": 39,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"Player\"} ",
+      "Next": 40,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 41,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201117_2_02\", 0, 1, \"成绩单：侠隐阁队伍全员存活\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"BattleEventNode\" : 400, 2, [ ]} ",
+      "Next": 43,
+      "Prallel": -1,
+      "Child": [
+        43
+      ]
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 44,
+      "Prallel": -1,
+      "Child": [
+        44,
+        45,
+        46,
+        47,
+        48
+      ]
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 45,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"BattleFactorTurn\" : 2, 8} ",
+      "Next": 46,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 47,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201117_2_04\", 0, 1, \"成绩单：成功于七回合内赢得战斗\"} ",
+      "Next": 48,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"btc5201117_01\", 1} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "",
+  "WinTip": "Enemy camp is completely destroyed",
+  "LoseTip": "Our camp is completely destroyed"
+}

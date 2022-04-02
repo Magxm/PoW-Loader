@@ -1,0 +1,439 @@
+{
+  "Id": "bs5307302_00",
+  "Name": "bs5307302_00",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Prallel": -1,
+      "Child": [
+        1,
+        2
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"Player\", 0, 102101203, 1.00000, 0.00000} ",
+      "Next": 2,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0202\", 1, 104103207, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 4,
+      "Prallel": -1,
+      "Child": [
+        4
+      ]
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 5,
+      "Prallel": -1,
+      "Child": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 6,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 7,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleResultTalk\" : \"t5307302_006\"} ",
+      "Next": 8,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in0202\", \"bt5307302_00_debuff_Power50\", False} ",
+      "Next": 9,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in0202\", \"bt5307302_00_buff_HpLock90\", False} ",
+      "Next": 10,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Cut Duan Xiaolie HP to 90%!\"} ",
+      "Next": 11,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1}{name_2} is defeated.。\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 13,
+      "Prallel": -1,
+      "Child": [
+        13
+      ]
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 14,
+      "Prallel": -1,
+      "Child": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 93, \"in0202\"} ",
+      "Next": 15,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 16,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleResultTalk\" : \"t5307302_014\"} ",
+      "Next": 17,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in0202\", \"bt5307302_00_buff_HpLock90\"} ",
+      "Next": 18,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in0202\", \"bt5307302_00_buff_HpLock70\", False} ",
+      "Next": 19,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Cut Duan Xiaolie HP to 70%!\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 21,
+      "Prallel": -1,
+      "Child": [
+        21
+      ]
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 22,
+      "Prallel": -1,
+      "Child": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 73, \"in0202\"} ",
+      "Next": 23,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 24,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleResultTalk\" : \"t5307302_016\"} ",
+      "Next": 25,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in0202\", \"bt5307302_00_buff_HpLock70\"} ",
+      "Next": 26,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in0202\", \"bt5307302_00_buff_HpLock40\", False} ",
+      "Next": 27,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Cut Duan Xiaolie HP to 40%!\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 29,
+      "Prallel": -1,
+      "Child": [
+        29
+      ]
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 30,
+      "Prallel": -1,
+      "Child": [
+        30,
+        31,
+        32,
+        33,
+        36,
+        34,
+        44,
+        45,
+        37,
+        35
+      ]
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 43, \"in0202\"} ",
+      "Next": 31,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 32,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleResultTalk\" : \"t5307302_022\"} ",
+      "Next": 33,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in0202\", \"bt5307302_00_buff_HpLock40\"} ",
+      "Next": 36,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0202\", \"bt5307302_00_buff_HpLock70\", True} ",
+      "Next": 44,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defend against Duan Xiaolie's full attack and cut his HP to 70%!\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in0202\", \"bt5307302_00_debuff_Power50\"} ",
+      "Next": 34,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5307302_00_00\", 0, 1, \"\"} ",
+      "Next": 35,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 39,
+      "Prallel": -1,
+      "Child": [
+        39
+      ]
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 43,
+      "Prallel": -1,
+      "Child": [
+        43,
+        40,
+        41,
+        42,
+        46
+      ]
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 73, \"in0202\"} ",
+      "Next": 41,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 42,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"BattleResultTalk\" : \"t5307302_035\"} ",
+      "Next": 46,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf5307302_00_00\", \"\"} ",
+      "Next": 40,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"BattleResultUnitHP\" : 0, 100, \"in0202\"} ",
+      "Next": 45,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"BattleResultTalk\" : \"t5307302_027\"} ",
+      "Next": 37,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 48,
+      "Prallel": -1,
+      "Child": [
+        48
+      ]
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 49,
+      "Prallel": -1,
+      "Child": [
+        49,
+        50,
+        51,
+        52
+      ]
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player\"} ",
+      "Next": 50,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 51,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 51,
+      "Node": "{ \"BattleResultTalk\" : \"t5307302_041\"} ",
+      "Next": 52,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 52,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "拳掌：天道业火掌传授（段霄烈）",
+  "WinTip": "",
+  "LoseTip": ""
+}

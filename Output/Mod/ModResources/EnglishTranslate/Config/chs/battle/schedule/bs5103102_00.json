@@ -1,1 +1,665 @@
-bs5103102_00	bs5103101_00	{ "BattleRootNode" : [ { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "BattleFactorLocalFlag" : 1, 0, "btf5103101_00_00", ""} , { "SetLocalFlagBattleAction" : "btf5103101_00_00", 0, 1, ""} , { "BattleResultTalk" : "t5103101_001"} , { "BattleResultAddUnit" : "Player", 0, 207107200, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in0106", 0, 206107201, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in0107", 0, 207106101, 1.00000, 0.00000} , { "BattleResultMoveUnit" : "in0106", "202104202"} , { "BattleResultMoveUnit" : "in0107", "204102102"} , { "BattleResultMoveUnit" : "Player", "202102200"} , { "BattleResultTalk" : "t5103101_033"} , { "BattleResultAddUnit" : "in05501", 1, 107207200, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in05502", 1, 107206201, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in05503", 1, 106207101, 1.00000, 0.00000} , { "BattleResultMoveUnit" : "in05502", "104202202"} , { "BattleResultMoveUnit" : "in05503", "102204102"} , { "BattleResultMoveUnit" : "in05501", "102202200"} , { "BattleResultTalk" : "t5103101_002"} , { "BattleResultAddBuff" : True, "in05501", "bt5103101_00_buff_Power125", True} , { "BattleResultAddBuff" : True, "in05502", "bt5103101_00_buff_Power125", True} , { "BattleResultAddBuff" : True, "in05503", "bt5103101_00_buff_Power125", True} , { "BattleResultChangeMusic" : "In_battle_04.wav", 1.00000, False} , { "BattleResultAddFactionBuff" : False, 1, "bs_add_atk25", True}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in05501,in05502,in05503"} , { "BattleFactorLocalFlag" : 1, 0, "btf5103101_00_01", ""} , { "SetLocalFlagBattleAction" : "btf5103101_00_01", 0, 1, ""} , { "BattleResultTalk" : "t5103101_003"} , { "BattleResultMoveUnit" : "Player", "202102200"} , { "BattleResultMoveUnit" : "in0106", "202104202"} , { "BattleResultMoveUnit" : "in0107", "204102102"} , { "BattleResultUnitHP" : 0, 100, "Player,in0106,in0107"} , { "BattleResultUnitMP" : 1, 500, "Player,in0106,in0107"} , { "BattleResultTalk" : "t5103101_087"} , { "BattleResultTalk" : "t5103101_004"} , { "BattleResultAddUnit" : "in03010", 1, 107207200, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in03007", 1, 107206201, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in03008", 1, 106207101, 1.00000, 0.00000} , { "BattleResultMoveUnit" : "in03007", "104202202"} , { "BattleResultMoveUnit" : "in03008", "102204102"} , { "BattleResultMoveUnit" : "in03010", "102202200"} , { "BattleResultTalk" : "t5103101_005"} , { "BattleResultChangeWinTip" : "Defeat Tang Yun、Lou Yan Yu、Gongsun Ming！"} , { "BattleResultAddBuff" : True, "in03007", "bt5103101_00_buff_Power125", True} , { "BattleResultAddBuff" : True, "in03008", "bt5103101_00_buff_Power125", True} , { "BattleResultAddBuff" : True, "in03010", "bt5103101_00_buff_Power125", True} , { "SetLocalFlagBattleAction" : "btf5103101_00_02", 0, 1, ""} , { "BattleResultAddFactionBuff" : False, 1, "bs_add_atk25", True}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in03010,in03007,in03008"} , { "BattleFactorLocalFlag" : 1, 1, "btf5103101_00_02", ""} , { "SetLocalFlagBattleAction" : "btf5103101_00_02", 0, 2, ""} , { "BattleResultTalk" : "t5103101_006"} , { "BattleResultMoveUnit" : "Player", "202102200"} , { "BattleResultMoveUnit" : "in0106", "202104202"} , { "BattleResultMoveUnit" : "in0107", "204102102"} , { "BattleResultUnitHP" : 0, 100, "Player,in0106,in0107"} , { "BattleResultUnitMP" : 1, 500, "Player,in0106,in0107"} , { "BattleResultTalk" : "t5103101_087"} , { "BattleResultTalk" : "t5103101_007"} , { "BattleResultAddUnit" : "in03001", 1, 107207200, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in03005", 1, 107206201, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in03011", 1, 106207101, 1.00000, 0.00000} , { "BattleResultMoveUnit" : "in03005", "104202202"} , { "BattleResultMoveUnit" : "in03011", "102204102"} , { "BattleResultMoveUnit" : "in03001", "102202200"} , { "BattleResultTalk" : "t5103101_008"} , { "BattleResultChangeWinTip" : "Defeat Jiang Hongbo、Xiang Tianlei、Tian Tao！"} , { "BattleResultAddBuff" : True, "in03001", "bt5103101_00_buff_Power125", True} , { "BattleResultAddBuff" : True, "in03005", "bt5103101_00_buff_Power125", True} , { "BattleResultAddBuff" : True, "in03011", "bt5103101_00_buff_Power125", True} , { "SetLocalFlagBattleAction" : "btf5103101_00_03", 0, 1, ""} , { "BattleResultAddFactionBuff" : False, 1, "bs_add_atk25", True}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in03001,in03005,in03011"} , { "BattleFactorLocalFlag" : 1, 1, "btf5103101_00_03", ""} , { "SetLocalFlagBattleAction" : "btf5103101_00_03", 0, 2, ""} , { "BattleResultTalk" : "t5103101_009"} , { "BattleResultChangeMusic" : "In_mood_11.wav", 0.50000, False} , { "BattleResultTalk" : "t5103101_076"} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "Player,in0106,in0107"} , { "BattleFactorLocalFlag" : 1, 0, "btf5103101_00_04", ""} , { "SetLocalFlagBattleAction" : "btf5103101_00_04", 0, 1, ""} , { "BattleResultTalk" : "t5103101_010"} , { "BattleResultLose" : ""}  ]}  ]}  ]} 	侠隐擂台赛	Defeat all sectmates!	All friendly characters defeated。
+{
+  "Id": "bs5103102_00",
+  "Name": "bs5103101_00",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 2,
+      "Child": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5103101_00_00\", \"\"} ",
+      "Next": 4,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5103101_00_00\", 0, 1, \"\"} ",
+      "Next": 5,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleResultTalk\" : \"t5103101_001\"} ",
+      "Next": 6,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleResultAddUnit\" : \"Player\", 0, 207107200, 1.00000, 0.00000} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0106\", 0, 206107201, 1.00000, 0.00000} ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0107\", 0, 207106101, 1.00000, 0.00000} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in0106\", \"202104202\"} ",
+      "Next": 10,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in0107\", \"204102102\"} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultMoveUnit\" : \"Player\", \"202102200\"} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultTalk\" : \"t5103101_033\"} ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05501\", 1, 107207200, 1.00000, 0.00000} ",
+      "Next": 14,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05502\", 1, 107206201, 1.00000, 0.00000} ",
+      "Next": 15,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05503\", 1, 106207101, 1.00000, 0.00000} ",
+      "Next": 16,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in05502\", \"104202202\"} ",
+      "Next": 17,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in05503\", \"102204102\"} ",
+      "Next": 18,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in05501\", \"102202200\"} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleResultTalk\" : \"t5103101_002\"} ",
+      "Next": 20,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05501\", \"bt5103101_00_buff_Power125\", True} ",
+      "Next": 21,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05502\", \"bt5103101_00_buff_Power125\", True} ",
+      "Next": 22,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05503\", \"bt5103101_00_buff_Power125\", True} ",
+      "Next": 23,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_battle_04.wav\", 1.00000, False} ",
+      "Next": 24,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleResultAddFactionBuff\" : False, 1, \"bs_add_atk25\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 26,
+      "Child": [
+        26
+      ]
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 27,
+      "Child": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ]
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05501,in05502,in05503\"} ",
+      "Next": 28,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5103101_00_01\", \"\"} ",
+      "Next": 29,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5103101_00_01\", 0, 1, \"\"} ",
+      "Next": 30,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleResultTalk\" : \"t5103101_003\"} ",
+      "Next": 31,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleResultMoveUnit\" : \"Player\", \"202102200\"} ",
+      "Next": 32,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in0106\", \"202104202\"} ",
+      "Next": 33,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in0107\", \"204102102\"} ",
+      "Next": 34,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleResultUnitHP\" : 0, 100, \"Player,in0106,in0107\"} ",
+      "Next": 35,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleResultUnitMP\" : 1, 500, \"Player,in0106,in0107\"} ",
+      "Next": 36,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"BattleResultTalk\" : \"t5103101_087\"} ",
+      "Next": 37,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleResultTalk\" : \"t5103101_004\"} ",
+      "Next": 38,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleResultAddUnit\" : \"in03010\", 1, 107207200, 1.00000, 0.00000} ",
+      "Next": 39,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"BattleResultAddUnit\" : \"in03007\", 1, 107206201, 1.00000, 0.00000} ",
+      "Next": 40,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"BattleResultAddUnit\" : \"in03008\", 1, 106207101, 1.00000, 0.00000} ",
+      "Next": 41,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in03007\", \"104202202\"} ",
+      "Next": 42,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in03008\", \"102204102\"} ",
+      "Next": 43,
+      "Child": []
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in03010\", \"102202200\"} ",
+      "Next": 44,
+      "Child": []
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"BattleResultTalk\" : \"t5103101_005\"} ",
+      "Next": 45,
+      "Child": []
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Beat Tang Yun, Lou Yanyu, Gongsun Ming!\"} ",
+      "Next": 46,
+      "Child": []
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in03007\", \"bt5103101_00_buff_Power125\", True} ",
+      "Next": 47,
+      "Child": []
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in03008\", \"bt5103101_00_buff_Power125\", True} ",
+      "Next": 48,
+      "Child": []
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in03010\", \"bt5103101_00_buff_Power125\", True} ",
+      "Next": 49,
+      "Child": []
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5103101_00_02\", 0, 1, \"\"} ",
+      "Next": 50,
+      "Child": []
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"BattleResultAddFactionBuff\" : False, 1, \"bs_add_atk25\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 51,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 52,
+      "Child": [
+        52
+      ]
+    },
+    {
+      "Index": 52,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 53,
+      "Child": [
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76
+      ]
+    },
+    {
+      "Index": 53,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in03010,in03007,in03008\"} ",
+      "Next": 54,
+      "Child": []
+    },
+    {
+      "Index": 54,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf5103101_00_02\", \"\"} ",
+      "Next": 55,
+      "Child": []
+    },
+    {
+      "Index": 55,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5103101_00_02\", 0, 2, \"\"} ",
+      "Next": 56,
+      "Child": []
+    },
+    {
+      "Index": 56,
+      "Node": "{ \"BattleResultTalk\" : \"t5103101_006\"} ",
+      "Next": 57,
+      "Child": []
+    },
+    {
+      "Index": 57,
+      "Node": "{ \"BattleResultMoveUnit\" : \"Player\", \"202102200\"} ",
+      "Next": 58,
+      "Child": []
+    },
+    {
+      "Index": 58,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in0106\", \"202104202\"} ",
+      "Next": 59,
+      "Child": []
+    },
+    {
+      "Index": 59,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in0107\", \"204102102\"} ",
+      "Next": 60,
+      "Child": []
+    },
+    {
+      "Index": 60,
+      "Node": "{ \"BattleResultUnitHP\" : 0, 100, \"Player,in0106,in0107\"} ",
+      "Next": 61,
+      "Child": []
+    },
+    {
+      "Index": 61,
+      "Node": "{ \"BattleResultUnitMP\" : 1, 500, \"Player,in0106,in0107\"} ",
+      "Next": 62,
+      "Child": []
+    },
+    {
+      "Index": 62,
+      "Node": "{ \"BattleResultTalk\" : \"t5103101_087\"} ",
+      "Next": 63,
+      "Child": []
+    },
+    {
+      "Index": 63,
+      "Node": "{ \"BattleResultTalk\" : \"t5103101_007\"} ",
+      "Next": 64,
+      "Child": []
+    },
+    {
+      "Index": 64,
+      "Node": "{ \"BattleResultAddUnit\" : \"in03001\", 1, 107207200, 1.00000, 0.00000} ",
+      "Next": 65,
+      "Child": []
+    },
+    {
+      "Index": 65,
+      "Node": "{ \"BattleResultAddUnit\" : \"in03005\", 1, 107206201, 1.00000, 0.00000} ",
+      "Next": 66,
+      "Child": []
+    },
+    {
+      "Index": 66,
+      "Node": "{ \"BattleResultAddUnit\" : \"in03011\", 1, 106207101, 1.00000, 0.00000} ",
+      "Next": 67,
+      "Child": []
+    },
+    {
+      "Index": 67,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in03005\", \"104202202\"} ",
+      "Next": 68,
+      "Child": []
+    },
+    {
+      "Index": 68,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in03011\", \"102204102\"} ",
+      "Next": 69,
+      "Child": []
+    },
+    {
+      "Index": 69,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in03001\", \"102202200\"} ",
+      "Next": 70,
+      "Child": []
+    },
+    {
+      "Index": 70,
+      "Node": "{ \"BattleResultTalk\" : \"t5103101_008\"} ",
+      "Next": 71,
+      "Child": []
+    },
+    {
+      "Index": 71,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Jiang Hongbo, Xiang Tianlei, Tian Tao!\"} ",
+      "Next": 72,
+      "Child": []
+    },
+    {
+      "Index": 72,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in03001\", \"bt5103101_00_buff_Power125\", True} ",
+      "Next": 73,
+      "Child": []
+    },
+    {
+      "Index": 73,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in03005\", \"bt5103101_00_buff_Power125\", True} ",
+      "Next": 74,
+      "Child": []
+    },
+    {
+      "Index": 74,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in03011\", \"bt5103101_00_buff_Power125\", True} ",
+      "Next": 75,
+      "Child": []
+    },
+    {
+      "Index": 75,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5103101_00_03\", 0, 1, \"\"} ",
+      "Next": 76,
+      "Child": []
+    },
+    {
+      "Index": 76,
+      "Node": "{ \"BattleResultAddFactionBuff\" : False, 1, \"bs_add_atk25\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 77,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 78,
+      "Child": [
+        78
+      ]
+    },
+    {
+      "Index": 78,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 79,
+      "Child": [
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85
+      ]
+    },
+    {
+      "Index": 79,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in03001,in03005,in03011\"} ",
+      "Next": 80,
+      "Child": []
+    },
+    {
+      "Index": 80,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf5103101_00_03\", \"\"} ",
+      "Next": 81,
+      "Child": []
+    },
+    {
+      "Index": 81,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5103101_00_03\", 0, 2, \"\"} ",
+      "Next": 82,
+      "Child": []
+    },
+    {
+      "Index": 82,
+      "Node": "{ \"BattleResultTalk\" : \"t5103101_009\"} ",
+      "Next": 83,
+      "Child": []
+    },
+    {
+      "Index": 83,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_mood_11.wav\", 0.50000, False} ",
+      "Next": 84,
+      "Child": []
+    },
+    {
+      "Index": 84,
+      "Node": "{ \"BattleResultTalk\" : \"t5103101_076\"} ",
+      "Next": 85,
+      "Child": []
+    },
+    {
+      "Index": 85,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 86,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 87,
+      "Child": [
+        87
+      ]
+    },
+    {
+      "Index": 87,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 88,
+      "Child": [
+        88,
+        89,
+        90,
+        91,
+        92
+      ]
+    },
+    {
+      "Index": 88,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player,in0106,in0107\"} ",
+      "Next": 89,
+      "Child": []
+    },
+    {
+      "Index": 89,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5103101_00_04\", \"\"} ",
+      "Next": 90,
+      "Child": []
+    },
+    {
+      "Index": 90,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5103101_00_04\", 0, 1, \"\"} ",
+      "Next": 91,
+      "Child": []
+    },
+    {
+      "Index": 91,
+      "Node": "{ \"BattleResultTalk\" : \"t5103101_010\"} ",
+      "Next": 92,
+      "Child": []
+    },
+    {
+      "Index": 92,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "侠隐擂台赛",
+  "WinTip": "Defeat all fellow disciples!",
+  "LoseTip": "All friendly unit defeated"
+}

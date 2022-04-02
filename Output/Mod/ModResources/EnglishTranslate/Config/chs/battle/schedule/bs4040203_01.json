@@ -1,1 +1,137 @@
-bs4040203_01	bs4040203_01	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "party00", 0, 201101200, 1.00000}  ]} , { "BattleEventNode" : 400, 0, [ { "BattleResultLoseFaction" : "", 0} , { "BattleResultWinFaction" : "", 1}  ]} , { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "in0204", 1, 101201200, 1.00000} , { "BattleResultAddBuff" : True, "in0204", "bt4060203_01_debuff_PowerDown", False}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 10} , { "BattleResultTalk" : "t4040203_bs0100"} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 2, 50, "in0204"} , { "BattleResultTalk" : "t4040203_bs0100"} , { "BattleResultWin" : ""}  ]}  ]}  ]} 	朔风刀法进阶第三堂	The battle last more than 10 rounds, or reduce Liu Xinping's HP to 50%.	All friendly characters defeated。
+{
+  "Id": "bs4040203_01",
+  "Name": "bs4040203_01",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"party00\", 0, 201101200, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 3,
+      "Child": [
+        3,
+        4
+      ]
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultLoseFaction\" : \"\", 0} ",
+      "Next": 4,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultWinFaction\" : \"\", 1} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 6,
+      "Child": [
+        6,
+        7
+      ]
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0204\", 1, 101201200, 1.00000, 0.00000} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"bt4060203_01_debuff_PowerDown\", False} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 9,
+      "Child": [
+        9
+      ]
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 10,
+      "Child": [
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleFactorTurn\" : 1, 10} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultTalk\" : \"t4040203_bs0100\"} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 14,
+      "Child": [
+        14
+      ]
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 15,
+      "Child": [
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 50, \"in0204\"} ",
+      "Next": 16,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleResultTalk\" : \"t4040203_bs0100\"} ",
+      "Next": 17,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "朔风刀法进阶第三堂",
+  "WinTip": "Battle lasts 10 rounds、 or weaken Liu Xinping's HP to fifty percent.",
+  "LoseTip": "All friendly units are defeated"
+}

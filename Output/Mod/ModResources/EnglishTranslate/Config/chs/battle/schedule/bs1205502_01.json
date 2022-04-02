@@ -1,1 +1,330 @@
-bs1205502_01	终南山脚侠隐阁VS三派	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnits" : "in05823,in05824,io44115401,io44125401,io44145401,in05825,in05826,in05827,in05828,io48145301,io48135301,io48115301", 1, "105105210,101104205,103106209,200106206,202107205,102102204,107203204,203108205,105101206,104200204,106200206,108202206"}  ]} , { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnits" : "Player,party01,party02,party03,in0201,in0204,in0205,in03009,in03010", 0, "201200101,202101101,101202101,102203101,200101201,202102200,101201200,204103101,205104101"}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in05823"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205502_bs0121"} , { "SetLocalFlagBattleAction" : "bs1205502_01_01", 0, 1, ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "Player"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205502_bs0141"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 1} , { "ExecuteOnceNode" } , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205502_bs0100"} , { "BattleResultAddBuff" : True, "in05828", "bt1205502_01_Buff_TaoPower", True} , { "BattleResultAddBuff" : True, "io48145301", "bt1205502_01_Buff_TaoPower", True} , { "BattleResultAddBuff" : True, "io48135301", "bt1205502_01_Buff_TaoPower", True} , { "BattleResultAddBuff" : True, "io48115301", "bt1205502_01_Buff_TaoPower", True} , { "BattleResultTalk" : "t1205502_bs0105"} , { "BattleResultAddBuff" : True, "in05824,io44115401,io44125401,io44145401", "bt1205502_01_Buff_FirePower", True} , { "BattleResultTalk" : "t1205502_bs0118"} , { "BattleResultAddBuff" : True, "in05825,in05826,in05827", "bt1205502_01_Buff_MachinePower", True} , { "BattleResultTalk" : "t1205502_bs0119"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in05823"} , { "BattleFactorLocalFlag" : 1, 1, "bs1205502_01_01", ""} , { "ExecuteOnceNode" } , { "BattleResultUnitHP" : 0, 0, "in05825,in05826,in05827"}  ]}  ]} , { "BattleEventNode" : 400, 1, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "Player"} , { "ExecuteOnceNode" } , { "BattleResultLose" : ""}  ]}  ]}  ]} 		Subdue the Secret Guards, Northern Flame Guards and Zhenwu Temple Disciples!	{name_1}{name_2} is defeated.
+{
+  "Id": "bs1205502_01",
+  "Name": "终南山脚侠隐阁VS三派",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnits\" : \"in05823,in05824,io44115401,io44125401,io44145401,in05825,in05826,in05827,in05828,io48145301,io48135301,io48115301\", 1, \"105105210,101104205,103106209,200106206,202107205,102102204,107203204,203108205,105101206,104200204,106200206,108202206\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 3,
+      "Child": [
+        3
+      ]
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnits\" : \"Player,party01,party02,party03,in0201,in0204,in0205,in03009,in03010\", 0, \"201200101,202101101,101202101,102203101,200101201,202102200,101201200,204103101,205104101\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 5,
+      "Child": [
+        5
+      ]
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 6,
+      "Child": [
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05823\"} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultTalk\" : \"t1205502_bs0121\"} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bs1205502_01_01\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 11,
+      "Child": [
+        11
+      ]
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 12,
+      "Child": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player\"} ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 14,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultTalk\" : \"t1205502_bs0141\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 16,
+      "Child": [
+        16
+      ]
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 17,
+      "Child": [
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 18,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 21,
+      "Child": [
+        21
+      ]
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 22,
+      "Child": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ]
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 23,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 24,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleResultTalk\" : \"t1205502_bs0100\"} ",
+      "Next": 25,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05828\", \"bt1205502_01_Buff_TaoPower\", True} ",
+      "Next": 26,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io48145301\", \"bt1205502_01_Buff_TaoPower\", True} ",
+      "Next": 27,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io48135301\", \"bt1205502_01_Buff_TaoPower\", True} ",
+      "Next": 28,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io48115301\", \"bt1205502_01_Buff_TaoPower\", True} ",
+      "Next": 29,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleResultTalk\" : \"t1205502_bs0105\"} ",
+      "Next": 30,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05824,io44115401,io44125401,io44145401\", \"bt1205502_01_Buff_FirePower\", True} ",
+      "Next": 31,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleResultTalk\" : \"t1205502_bs0118\"} ",
+      "Next": 32,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05825,in05826,in05827\", \"bt1205502_01_Buff_MachinePower\", True} ",
+      "Next": 33,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleResultTalk\" : \"t1205502_bs0119\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 35,
+      "Child": [
+        35
+      ]
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 36,
+      "Child": [
+        36,
+        37,
+        38,
+        39
+      ]
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05823\"} ",
+      "Next": 37,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"bs1205502_01_01\", \"\"} ",
+      "Next": 38,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 39,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"BattleResultUnitHP\" : 0, 0, \"in05825,in05826,in05827\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
+      "Next": 41,
+      "Child": [
+        41
+      ]
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 42,
+      "Child": [
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player\"} ",
+      "Next": 43,
+      "Child": []
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 44,
+      "Child": []
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "",
+  "WinTip": "Subdue Secret Guard、 North Flame Guard and Zhenwu Temple!",
+  "LoseTip": "{name_1}{name_2} defeated"
+}

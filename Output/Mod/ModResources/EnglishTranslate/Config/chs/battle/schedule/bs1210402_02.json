@@ -1,1 +1,331 @@
-bs1210402_02	二年恒山屍化一战何长瑞	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnits" : "Player,in0208,party01,party02,party03", 0, "107102209,106103209,105104209,108101209,104105209"}  ]} , { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnits" : "in030141,io26102101,io26122101,io26142101,io26122102,io26102102,io26142102", 1, "200201101,104204200,102204102,101203102,202200102,204103101,203101102"}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "Player"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1210402_bs0100"} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 1} , { "ExecuteOnceNode" } , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in0208"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1210402_bs0100"} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "party01"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1210402_bs0100"} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "party02"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1210402_bs0100"} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "party03"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1210402_bs0100"} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "ExecuteOnceNode" } , { "BattleResultAddBuff" : True, "in030141,io26102101,io26122101,io26142101,io26122102,io26102102,io26142102", "bt1210402_02_Buff_DeathPower", True} , { "BattleResultAddBuff" : True, "in030141,io26102101,io26122101,io26142101,io26122102,io26102102,io26142102", "bt1210402_02_Buff_ZombiePower", True}  ]}  ]}  ]} 		Defeat He Changrui and Corpse Zombie!	Any friendly character defeated.
+{
+  "Id": "bs1210402_02",
+  "Name": "二年恒山屍化一战何长瑞",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnits\" : \"Player,in0208,party01,party02,party03\", 0, \"107102209,106103209,105104209,108101209,104105209\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 3,
+      "Child": [
+        3
+      ]
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnits\" : \"in030141,io26102101,io26122101,io26142101,io26122102,io26102102,io26142102\", 1, \"200201101,104204200,102204102,101203102,202200102,204103101,203101102\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 5,
+      "Child": [
+        5
+      ]
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 6,
+      "Child": [
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player\"} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultTalk\" : \"t1210402_bs0100\"} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 11,
+      "Child": [
+        11
+      ]
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 12,
+      "Child": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 14,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 16,
+      "Child": [
+        16
+      ]
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 17,
+      "Child": [
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0208\"} ",
+      "Next": 18,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleResultTalk\" : \"t1210402_bs0100\"} ",
+      "Next": 20,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 22,
+      "Child": [
+        22
+      ]
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 23,
+      "Child": [
+        23,
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"party01\"} ",
+      "Next": 24,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 25,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleResultTalk\" : \"t1210402_bs0100\"} ",
+      "Next": 26,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 28,
+      "Child": [
+        28
+      ]
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 29,
+      "Child": [
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"party02\"} ",
+      "Next": 30,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 31,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleResultTalk\" : \"t1210402_bs0100\"} ",
+      "Next": 32,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 34,
+      "Child": [
+        34
+      ]
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 35,
+      "Child": [
+        35,
+        36,
+        37,
+        38
+      ]
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"party03\"} ",
+      "Next": 36,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 37,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleResultTalk\" : \"t1210402_bs0100\"} ",
+      "Next": 38,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 40,
+      "Child": [
+        40
+      ]
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 41,
+      "Child": [
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 42,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 43,
+      "Child": []
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in030141,io26102101,io26122101,io26142101,io26122102,io26102102,io26142102\", \"bt1210402_02_Buff_DeathPower\", True} ",
+      "Next": 44,
+      "Child": []
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in030141,io26102101,io26122101,io26142101,io26122102,io26102102,io26142102\", \"bt1210402_02_Buff_ZombiePower\", True} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "",
+  "WinTip": "Defeat He Changrui and Corpse Zombies!",
+  "LoseTip": "Any friendly units is defeated"
+}

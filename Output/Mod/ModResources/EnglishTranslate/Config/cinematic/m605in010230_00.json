@@ -3,7 +3,7 @@
   "Nodes": [
     {
       "Node": "{ \"TimerAction\" : 0.20000} ",
-      "Next": 1,
+      "Next": 27,
       "Prallel": -1
     },
     {
@@ -27,7 +27,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"LoadScenesAction\" : \"S0108\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0} ",
+      "Node": "{ \"LoadScenesAction\" : \"S0108\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0, \"\"} ",
       "Next": 6,
       "Prallel": -1
     },
@@ -47,7 +47,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"LoadScenesAction\" : \"S0108\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0} ",
+      "Node": "{ \"LoadScenesAction\" : \"S0108\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0, \"\"} ",
       "Next": 11,
       "Prallel": -1
     },
@@ -117,7 +117,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0} ",
+      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0, \"\"} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -134,6 +134,16 @@
     {
       "Node": "{ \"PlayPlayerAnimationAction\" : [ { 2, \"m_stand00_await00\", 1.00000}  ]} ",
       "Next": 16,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckCurrentRound\" : 1, 1, 168, \"\"}  ], 0} , 1, 28} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010200_042\"} ",
+      "Next": -1,
       "Prallel": -1
     }
   ],

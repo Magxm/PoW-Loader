@@ -1,13 +1,13 @@
 {
-  "EntryIndex": 0,
+  "EntryIndex": 18,
   "Nodes": [
     {
-      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Node": "{ \"TimerAction\" : 0.25000} ",
       "Next": 15,
       "Prallel": -1
     },
     {
-      "Node": "{ \"LoadScenesAction\" : \"S0104\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0} ",
+      "Node": "{ \"LoadScenesAction\" : \"S0104\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0, \"\"} ",
       "Next": 5,
       "Prallel": -1
     },
@@ -62,7 +62,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0} ",
+      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0, \"\"} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -77,22 +77,32 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckCurrentRound\" : 1, 1, 90, \"\"}  ], 0} , 1, 17} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckCurrentRound\" : 1, 1, 90, \"\"}  ], 0} , 1, 16} ",
       "Next": -1,
       "Prallel": -1
     },
     {
-      "Node": "{ \"LoadScenesAction\" : \"S0302\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0} ",
-      "Next": 18,
-      "Prallel": -1
-    },
-    {
-      "Node": "{ \"TimerAction\" : 0.50000} ",
-      "Next": 16,
+      "Node": "{ \"TimerAction\" : 0.25000} ",
+      "Next": 17,
       "Prallel": -1
     },
     {
       "Node": "{ \"RunCinematicAction\" : \"m605in010740_01\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 19,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckCurrentRound\" : 1, 1, 168, \"\"}  ], 0} , 0, 20} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010700_047\"} ",
       "Next": -1,
       "Prallel": -1
     }

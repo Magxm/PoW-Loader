@@ -1,1 +1,681 @@
-bs1201102_21	bs1201102_21	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "Player", 0, 200203103, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in0105", 0, 203200103, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in05571", 0, 201201102, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in22003", 1, 207207114, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in05572", 1, 205205110, 1.00000, 0.00000} , { "BattleResultAddUnit" : "io272124", 1, 204207111, 1.00000, 0.00000} , { "BattleResultAddUnit" : "io27212401", 1, 207204111, 1.00000, 0.00000} , { "BattleResultAddUnit" : "io272024", 1, 115203212, 1.00000, 0.00000} , { "BattleResultAddUnit" : "io272325", 1, 116206210, 1.00000, 0.00000} , { "BattleResultAddUnit" : "io27232501", 1, 112202210, 1.00000, 0.00000} , { "BattleResultAddUnit" : "io272425", 1, 105111216, 1.00000, 0.00000} , { "BattleResultAddUnit" : "io272227", 1, 201111210, 1.00000, 0.00000} , { "BattleResultAddUnit" : "io27222701", 1, 205114209, 1.00000, 0.00000}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1201103_430"} , { "BattleResultCameraMoveUnit" : "in22003", -40.00000, 10.00000} , { "BattleResultTalk" : "t1201103_434"} , { "BattleResultAddBuff" : True, "in0105", "bt1201102_21_buff_Grief", True} , { "BattleResultAddBuff" : True, "in22003", "bt1201102_21_buff_HpLock50", True} , { "BattleResultAddBuff" : True, "in05572", "bt1201102_21_buff_ZombiePower", True} , { "BattleResultAddBuff" : False, "io272024,io272325,io27232501,io272425,io272227,io27222701", "bt1201102_21_buff_AttackUp", True}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 1} , { "ExecuteOnceNode" } , { "BattleResultCameraMoveUnit" : "in22003", -40.00000, 10.00000} , { "BattleResultTalk" : "t1201103_444"} , { "BattleResultAddUnit" : "in15005", 2, 108111219, 1.00000, 0.00000} , { "BattleResultMoveUnit" : "in15005", "106109215"} , { "BattleResultAddUnit" : "in15006", 2, 110109219, 1.00000, 0.00000} , { "BattleResultMoveUnit" : "in15006", "108107215"} , { "BattleResultTalk" : "t1201103_447"} , { "BattleResultAddUnit" : "in15121", 2, 109110219, 1.00000, 0.00000} , { "BattleResultMoveUnit" : "in15121", "106107213"} , { "BattleResultTalk" : "t1201103_460"} , { "BattleResultAddUnit" : "in15151", 2, 208104104, 1.00000, 0.00000} , { "BattleResultMoveUnit" : "in15151", "207107200"} , { "BattleResultTalk" : "t1201103_463"} , { "BattleResultAddUnit" : "in15172", 2, 209103106, 1.00000, 0.00000} , { "BattleResultMoveUnit" : "in15172", "209107102"} , { "BattleResultAddUnit" : "in15173", 2, 209102107, 1.00000, 0.00000} , { "BattleResultMoveUnit" : "in15173", "205105200"} , { "BattleResultTalk" : "t1201103_465"} , { "BattleResultAddUnit" : "in15101", 2, 209102107, 1.00000, 0.00000} , { "BattleResultMoveUnit" : "in15101", "207105102"} , { "BattleResultTalk" : "t1201103_467"} , { "BattleResultChangeMusic" : "In_battle_21.wav", 1.00000, False} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1201103_484"}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 2} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1201103_488"} , { "BattleResultAddBuff" : True, "in05572", "", True} , { "BattlChanageFaction" : 3, "in05572"} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1201103_492"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 1, 50, "in22003"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1201103_500"} , { "BattleResultMoveUnit" : "in22003", "209208117"} , { "BattleResultRemoveUnit" : "in22003", False} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultTalk" : "t1201103_501"} , { "BattleResultRmoveBuff" : "in05572", "bt1201102_21_buff_ZombiePower"} , { "BattlChanageFaction" : 1, "in05572"} , { "BattleResultAddBuff" : True, "in05572", "", False} , { "BattleResultChangeWinTip" : "Defeat Yi Renping！"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in05572"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1201103_507"} , { "BattleResultMoveUnit" : "in0105", "209208117"} , { "BattleResultRemoveUnit" : "in0105", False} , { "BattleResultMoveUnit" : "Player", "208209117"} , { "BattleResultRemoveUnit" : "Player", False} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in0105"} , { "ExecuteOnceNode" } , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "Player"} , { "ExecuteOnceNode" } , { "BattleResultLose" : ""}  ]}  ]}  ]} 	调查失踪案：张师爷侵袭重岩村大战	Reduce Counselor Zhang's HP to 50%！	{name_1}{name_2}or Shi Kun is defeated。
+{
+  "Id": "bs1201102_21",
+  "Name": "bs1201102_21",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"Player\", 0, 200203103, 1.00000, 0.00000} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0105\", 0, 203200103, 1.00000, 0.00000} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05571\", 0, 201201102, 1.00000, 0.00000} ",
+      "Next": 4,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultAddUnit\" : \"in22003\", 1, 207207114, 1.00000, 0.00000} ",
+      "Next": 5,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05572\", 1, 205205110, 1.00000, 0.00000} ",
+      "Next": 6,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleResultAddUnit\" : \"io272124\", 1, 204207111, 1.00000, 0.00000} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleResultAddUnit\" : \"io27212401\", 1, 207204111, 1.00000, 0.00000} ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultAddUnit\" : \"io272024\", 1, 115203212, 1.00000, 0.00000} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultAddUnit\" : \"io272325\", 1, 116206210, 1.00000, 0.00000} ",
+      "Next": 10,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultAddUnit\" : \"io27232501\", 1, 112202210, 1.00000, 0.00000} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultAddUnit\" : \"io272425\", 1, 105111216, 1.00000, 0.00000} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultAddUnit\" : \"io272227\", 1, 201111210, 1.00000, 0.00000} ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleResultAddUnit\" : \"io27222701\", 1, 205114209, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 15,
+      "Child": [
+        15
+      ]
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 16,
+      "Child": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 17,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 18,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleResultTalk\" : \"t1201103_430\"} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleResultCameraMoveUnit\" : \"in22003\", -40.00000, 10.00000} ",
+      "Next": 20,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultTalk\" : \"t1201103_434\"} ",
+      "Next": 21,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0105\", \"bt1201102_21_buff_Grief\", True} ",
+      "Next": 22,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in22003\", \"bt1201102_21_buff_HpLock50\", True} ",
+      "Next": 23,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05572\", \"bt1201102_21_buff_ZombiePower\", True} ",
+      "Next": 24,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"io272024,io272325,io27232501,io272425,io272227,io27222701\", \"bt1201102_21_buff_AttackUp\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 26,
+      "Child": [
+        26
+      ]
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 27,
+      "Child": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52
+      ]
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleFactorTurn\" : 1, 1} ",
+      "Next": 28,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 29,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleResultCameraMoveUnit\" : \"in22003\", -40.00000, 10.00000} ",
+      "Next": 30,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleResultTalk\" : \"t1201103_444\"} ",
+      "Next": 31,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleResultAddUnit\" : \"in15005\", 2, 108111219, 1.00000, 0.00000} ",
+      "Next": 32,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in15005\", \"106109215\"} ",
+      "Next": 33,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleResultAddUnit\" : \"in15006\", 2, 110109219, 1.00000, 0.00000} ",
+      "Next": 34,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in15006\", \"108107215\"} ",
+      "Next": 35,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleResultTalk\" : \"t1201103_447\"} ",
+      "Next": 36,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"BattleResultAddUnit\" : \"in15121\", 2, 109110219, 1.00000, 0.00000} ",
+      "Next": 37,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in15121\", \"106107213\"} ",
+      "Next": 38,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleResultTalk\" : \"t1201103_460\"} ",
+      "Next": 39,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"BattleResultAddUnit\" : \"in15151\", 2, 208104104, 1.00000, 0.00000} ",
+      "Next": 40,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in15151\", \"207107200\"} ",
+      "Next": 41,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleResultTalk\" : \"t1201103_463\"} ",
+      "Next": 42,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"BattleResultAddUnit\" : \"in15172\", 2, 209103106, 1.00000, 0.00000} ",
+      "Next": 43,
+      "Child": []
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in15172\", \"209107102\"} ",
+      "Next": 44,
+      "Child": []
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"BattleResultAddUnit\" : \"in15173\", 2, 209102107, 1.00000, 0.00000} ",
+      "Next": 45,
+      "Child": []
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in15173\", \"205105200\"} ",
+      "Next": 46,
+      "Child": []
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"BattleResultTalk\" : \"t1201103_465\"} ",
+      "Next": 47,
+      "Child": []
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"BattleResultAddUnit\" : \"in15101\", 2, 209102107, 1.00000, 0.00000} ",
+      "Next": 48,
+      "Child": []
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in15101\", \"207105102\"} ",
+      "Next": 49,
+      "Child": []
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"BattleResultTalk\" : \"t1201103_467\"} ",
+      "Next": 50,
+      "Child": []
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_battle_21.wav\", 1.00000, False} ",
+      "Next": 51,
+      "Child": []
+    },
+    {
+      "Index": 51,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 52,
+      "Child": []
+    },
+    {
+      "Index": 52,
+      "Node": "{ \"BattleResultTalk\" : \"t1201103_484\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 53,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 54,
+      "Child": [
+        54
+      ]
+    },
+    {
+      "Index": 54,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 55,
+      "Child": [
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61
+      ]
+    },
+    {
+      "Index": 55,
+      "Node": "{ \"BattleFactorTurn\" : 1, 2} ",
+      "Next": 56,
+      "Child": []
+    },
+    {
+      "Index": 56,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 57,
+      "Child": []
+    },
+    {
+      "Index": 57,
+      "Node": "{ \"BattleResultTalk\" : \"t1201103_488\"} ",
+      "Next": 58,
+      "Child": []
+    },
+    {
+      "Index": 58,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05572\", \"\", True} ",
+      "Next": 59,
+      "Child": []
+    },
+    {
+      "Index": 59,
+      "Node": "{ \"BattlChanageFaction\" : 3, \"in05572\"} ",
+      "Next": 60,
+      "Child": []
+    },
+    {
+      "Index": 60,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 61,
+      "Child": []
+    },
+    {
+      "Index": 61,
+      "Node": "{ \"BattleResultTalk\" : \"t1201103_492\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 62,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 63,
+      "Child": [
+        63
+      ]
+    },
+    {
+      "Index": 63,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 64,
+      "Child": [
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74
+      ]
+    },
+    {
+      "Index": 64,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 50, \"in22003\"} ",
+      "Next": 65,
+      "Child": []
+    },
+    {
+      "Index": 65,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 66,
+      "Child": []
+    },
+    {
+      "Index": 66,
+      "Node": "{ \"BattleResultTalk\" : \"t1201103_500\"} ",
+      "Next": 67,
+      "Child": []
+    },
+    {
+      "Index": 67,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in22003\", \"209208117\"} ",
+      "Next": 68,
+      "Child": []
+    },
+    {
+      "Index": 68,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in22003\", False} ",
+      "Next": 69,
+      "Child": []
+    },
+    {
+      "Index": 69,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 70,
+      "Child": []
+    },
+    {
+      "Index": 70,
+      "Node": "{ \"BattleResultTalk\" : \"t1201103_501\"} ",
+      "Next": 71,
+      "Child": []
+    },
+    {
+      "Index": 71,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05572\", \"bt1201102_21_buff_ZombiePower\"} ",
+      "Next": 72,
+      "Child": []
+    },
+    {
+      "Index": 72,
+      "Node": "{ \"BattlChanageFaction\" : 1, \"in05572\"} ",
+      "Next": 73,
+      "Child": []
+    },
+    {
+      "Index": 73,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05572\", \"\", False} ",
+      "Next": 74,
+      "Child": []
+    },
+    {
+      "Index": 74,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Yin Renping!\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 75,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 76,
+      "Child": [
+        76
+      ]
+    },
+    {
+      "Index": 76,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 77,
+      "Child": [
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84
+      ]
+    },
+    {
+      "Index": 77,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05572\"} ",
+      "Next": 78,
+      "Child": []
+    },
+    {
+      "Index": 78,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 79,
+      "Child": []
+    },
+    {
+      "Index": 79,
+      "Node": "{ \"BattleResultTalk\" : \"t1201103_507\"} ",
+      "Next": 80,
+      "Child": []
+    },
+    {
+      "Index": 80,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in0105\", \"209208117\"} ",
+      "Next": 81,
+      "Child": []
+    },
+    {
+      "Index": 81,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in0105\", False} ",
+      "Next": 82,
+      "Child": []
+    },
+    {
+      "Index": 82,
+      "Node": "{ \"BattleResultMoveUnit\" : \"Player\", \"208209117\"} ",
+      "Next": 83,
+      "Child": []
+    },
+    {
+      "Index": 83,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"Player\", False} ",
+      "Next": 84,
+      "Child": []
+    },
+    {
+      "Index": 84,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 85,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 86,
+      "Child": [
+        86
+      ]
+    },
+    {
+      "Index": 86,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 87,
+      "Child": [
+        87,
+        88,
+        89
+      ]
+    },
+    {
+      "Index": 87,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0105\"} ",
+      "Next": 88,
+      "Child": []
+    },
+    {
+      "Index": 88,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 89,
+      "Child": []
+    },
+    {
+      "Index": 89,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 90,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 91,
+      "Child": [
+        91
+      ]
+    },
+    {
+      "Index": 91,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 92,
+      "Child": [
+        92,
+        93,
+        94
+      ]
+    },
+    {
+      "Index": 92,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player\"} ",
+      "Next": 93,
+      "Child": []
+    },
+    {
+      "Index": 93,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 94,
+      "Child": []
+    },
+    {
+      "Index": 94,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "调查失踪案：张师爷侵袭重岩村大战",
+  "WinTip": "Reduce Counselor Chang's HP to 50%!",
+  "LoseTip": "{name_1}{name_2}或Shi Kun is defeated"
+}

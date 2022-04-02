@@ -1,1 +1,345 @@
-bs1011103_01	bs1011103_01	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "in0111", 0, 201201102, 1.00000, 0.00000} , { "BattleResultAddUnit" : "Player", 0, 200203103, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in0105", 0, 203200103, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in04001", 1, 102200202, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in04002", 1, 200102202, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in04012", 1, 104201203, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in04101", 1, 201104203, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in04107", 1, 102102204, 1.00000, 0.00000} , { "BattleResultAddBuff" : False, "in0105", "bt1011103_01_buff_kuankuan", True}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in0105"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1011103_083"} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 0, 0, "in0105"} , { "BattleFactorFactionDefeat" : 1} , { "ExecuteOnceNode" } , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 400, 1, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in04001"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1011103_081"}  ]}  ]} , { "BattleEventNode" : 400, 2, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in04012"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1011103_082"}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1011103_075"}  ]}  ]} , { "BattleEventNode" : 400, 2, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in0111"} , { "ExecuteOnceNode" } , { "SetGlobalFlagBattleAction" : "fe1011103_2_03", 0, 1, "武辙或主角被打倒"}  ]}  ]} , { "BattleEventNode" : 400, 2, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "Player"} , { "ExecuteOnceNode" } , { "SetGlobalFlagBattleAction" : "fe1011103_2_03", 0, 1, "武辙或主角被打倒"}  ]}  ]}  ]} 	武辙三_三打五	Beat all Xia Pavilion disciples.	Shi Kun is defeated.
+{
+  "Id": "bs1011103_01",
+  "Name": "bs1011103_01",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0111\", 0, 201201102, 1.00000, 0.00000} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"Player\", 0, 200203103, 1.00000, 0.00000} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0105\", 0, 203200103, 1.00000, 0.00000} ",
+      "Next": 4,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultAddUnit\" : \"in04001\", 1, 102200202, 1.00000, 0.00000} ",
+      "Next": 5,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleResultAddUnit\" : \"in04002\", 1, 200102202, 1.00000, 0.00000} ",
+      "Next": 6,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleResultAddUnit\" : \"in04012\", 1, 104201203, 1.00000, 0.00000} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleResultAddUnit\" : \"in04101\", 1, 201104203, 1.00000, 0.00000} ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultAddUnit\" : \"in04107\", 1, 102102204, 1.00000, 0.00000} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in0105\", \"bt1011103_01_buff_kuankuan\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 11,
+      "Child": [
+        11
+      ]
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 12,
+      "Child": [
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0105\"} ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 14,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultTalk\" : \"t1011103_083\"} ",
+      "Next": 15,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 17,
+      "Child": [
+        17
+      ]
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 18,
+      "Child": [
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in0105\"} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 20,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 21,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
+      "Next": 23,
+      "Child": [
+        23
+      ]
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 24,
+      "Child": [
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in04001\"} ",
+      "Next": 25,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 26,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleResultTalk\" : \"t1011103_081\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleEventNode\" : 400, 2, [ ]} ",
+      "Next": 28,
+      "Child": [
+        28
+      ]
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 29,
+      "Child": [
+        29,
+        30,
+        31
+      ]
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in04012\"} ",
+      "Next": 30,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 31,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleResultTalk\" : \"t1011103_082\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 33,
+      "Child": [
+        33
+      ]
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 34,
+      "Child": [
+        34,
+        35,
+        36
+      ]
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 35,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 36,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"BattleResultTalk\" : \"t1011103_075\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleEventNode\" : 400, 2, [ ]} ",
+      "Next": 38,
+      "Child": [
+        38
+      ]
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 39,
+      "Child": [
+        39,
+        40,
+        41
+      ]
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0111\"} ",
+      "Next": 40,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 41,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1011103_2_03\", 0, 1, \"武辙或主角被打倒\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"BattleEventNode\" : 400, 2, [ ]} ",
+      "Next": 43,
+      "Child": [
+        43
+      ]
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 44,
+      "Child": [
+        44,
+        45,
+        46
+      ]
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player\"} ",
+      "Next": 45,
+      "Child": []
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 46,
+      "Child": []
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1011103_2_03\", 0, 1, \"武辙或主角被打倒\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "武辙三_三打五",
+  "WinTip": "Defeat all Xia Pavillion disciples",
+  "LoseTip": "Shi Kun is defeated"
+}

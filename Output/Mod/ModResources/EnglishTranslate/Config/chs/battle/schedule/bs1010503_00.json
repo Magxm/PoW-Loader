@@ -1,1 +1,454 @@
-bs1010503_00	bs1010503_00	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnits" : "in05580,in05579,in05581", 2, "205102103,204103101,204200104"} , { "BattleResultAddUnits" : "in05582,in05583,in05584", 1, "103202201,104201203,104204200"}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010503_100"} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1010503_109"} , { "BattleResultUnitToUnit" : "in05580", "in05582"} , { "BattleResultTalk" : "t1010503_111"} , { "BattleResultPlayAction" : "in05582", "skill_MA0501_a01", 0.00000} , { "BattleResultPlayAction" : "in05580", "m_single_hurt00", 0.00000} , { "BattleResultTalk" : "t1010503_112"} , { "BattleResultAddBuff" : True, "in05583,in05584", "", False} , { "BattleResultTalk" : "t1010503_122"} , { "BattleResultAddUnit" : "Player", 0, 202112210, 1.00000, 0.00000} , { "BattleResultMoveUnit" : "Player", "202105203"} , { "BattleResultAddUnit" : "in0105", 0, 200112212, 1.00000, 0.00000} , { "BattleResultMoveUnit" : "in0105", "200104204"} , { "BattleResultTalk" : "t1010503_125"} , { "BattleResultChangeMusic" : "In_battle_21.wav", 1.00000, False} , { "BattleResultTalk" : "t1010503_126"} , { "BattleResultRemoveUnits" : "in05579,in05580,in05581", False} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1010503_138"} , { "BattleResultAddBuff" : True, "in05582", "bt1010503_00_buff_HpLock50", True} , { "BattleResultAddBuff" : False, "in0105", "bt1010503_00_buff_HpLock01", True} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1010503_140"}  ]}  ]} , { "BattleEventNode" : 500, 0, [ { "StepByStepNode" : [ { "BattleAttackUnitCondition" : "in0105", "in05582"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010503_141"} , { "BattleResultRmoveBuff" : "in05582", "bt1010503_00_buff_HpLock50"} , { "BattleResultAddBuff" : True, "in05582", "bt1010503_00_debuff_BlackPoison", False} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1010503_142"} , { "BattleResultAddBuff" : True, "in0105", "", True} , { "BattleResultTalk" : "t1010503_153"} , { "SetLocalFlagBattleAction" : "btf1010503_00_00", 0, 1, "石崑是否展现毒功？"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 1, "btf1010503_00_00", "石崑若已展现毒功"} , { "BattleFactorTargetHp" : 2, 3, "in05582"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010503_157"} , { "BattleResultAddBuff" : True, "in05582,in05583,in05584", "", False} , { "BattleResultRemoveUnits" : "in05582,in05583,in05584", False} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 400, 1, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 1, "btf1010503_00_00", "石崑若已展现毒功"} , { "BattleFactorTargetHp" : 2, 3, "in0105"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010503_163"} , { "BattleResultAddBuff" : True, "in05582,in05583,in05584", "", True} , { "BattleResultRemoveUnits" : "in05582,in05583,in05584", False} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultLose" : ""}  ]}  ]}  ]} 	石崑三阶：主角与石崑再战王齐	Defeat Wang Qi!	Shek Kun is defeated.
+{
+  "Id": "bs1010503_00",
+  "Name": "bs1010503_00",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnits\" : \"in05580,in05579,in05581\", 2, \"205102103,204103101,204200104\"} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnits\" : \"in05582,in05583,in05584\", 1, \"103202201,104201203,104204200\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 4,
+      "Child": [
+        4
+      ]
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 5,
+      "Child": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 6,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleResultTalk\" : \"t1010503_100\"} ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultTalk\" : \"t1010503_109\"} ",
+      "Next": 10,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultUnitToUnit\" : \"in05580\", \"in05582\"} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultTalk\" : \"t1010503_111\"} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultPlayAction\" : \"in05582\", \"skill_MA0501_a01\", 0.00000} ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleResultPlayAction\" : \"in05580\", \"m_single_hurt00\", 0.00000} ",
+      "Next": 14,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultTalk\" : \"t1010503_112\"} ",
+      "Next": 15,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05583,in05584\", \"\", False} ",
+      "Next": 16,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleResultTalk\" : \"t1010503_122\"} ",
+      "Next": 17,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleResultAddUnit\" : \"Player\", 0, 202112210, 1.00000, 0.00000} ",
+      "Next": 18,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleResultMoveUnit\" : \"Player\", \"202105203\"} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0105\", 0, 200112212, 1.00000, 0.00000} ",
+      "Next": 20,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in0105\", \"200104204\"} ",
+      "Next": 21,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleResultTalk\" : \"t1010503_125\"} ",
+      "Next": 22,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_battle_21.wav\", 1.00000, False} ",
+      "Next": 23,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleResultTalk\" : \"t1010503_126\"} ",
+      "Next": 24,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleResultRemoveUnits\" : \"in05579,in05580,in05581\", False} ",
+      "Next": 25,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 26,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleResultTalk\" : \"t1010503_138\"} ",
+      "Next": 27,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05582\", \"bt1010503_00_buff_HpLock50\", True} ",
+      "Next": 28,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in0105\", \"bt1010503_00_buff_HpLock01\", True} ",
+      "Next": 29,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 30,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleResultTalk\" : \"t1010503_140\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleEventNode\" : 500, 0, [ ]} ",
+      "Next": 32,
+      "Child": [
+        32
+      ]
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 33,
+      "Child": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+      ]
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleAttackUnitCondition\" : \"in0105\", \"in05582\"} ",
+      "Next": 34,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 35,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleResultTalk\" : \"t1010503_141\"} ",
+      "Next": 36,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05582\", \"bt1010503_00_buff_HpLock50\"} ",
+      "Next": 37,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05582\", \"bt1010503_00_debuff_BlackPoison\", False} ",
+      "Next": 38,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 39,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"BattleResultTalk\" : \"t1010503_142\"} ",
+      "Next": 40,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0105\", \"\", True} ",
+      "Next": 41,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleResultTalk\" : \"t1010503_153\"} ",
+      "Next": 42,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1010503_00_00\", 0, 1, \"石崑是否展现毒功？\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 44,
+      "Child": [
+        44
+      ]
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 45,
+      "Child": [
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52
+      ]
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1010503_00_00\", \"石崑若已展现毒功\"} ",
+      "Next": 46,
+      "Child": []
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 3, \"in05582\"} ",
+      "Next": 47,
+      "Child": []
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 48,
+      "Child": []
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"BattleResultTalk\" : \"t1010503_157\"} ",
+      "Next": 49,
+      "Child": []
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05582,in05583,in05584\", \"\", False} ",
+      "Next": 50,
+      "Child": []
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"BattleResultRemoveUnits\" : \"in05582,in05583,in05584\", False} ",
+      "Next": 51,
+      "Child": []
+    },
+    {
+      "Index": 51,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 52,
+      "Child": []
+    },
+    {
+      "Index": 52,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 53,
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
+      "Next": 54,
+      "Child": [
+        54
+      ]
+    },
+    {
+      "Index": 54,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 55,
+      "Child": [
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62
+      ]
+    },
+    {
+      "Index": 55,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1010503_00_00\", \"石崑若已展现毒功\"} ",
+      "Next": 56,
+      "Child": []
+    },
+    {
+      "Index": 56,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 3, \"in0105\"} ",
+      "Next": 57,
+      "Child": []
+    },
+    {
+      "Index": 57,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 58,
+      "Child": []
+    },
+    {
+      "Index": 58,
+      "Node": "{ \"BattleResultTalk\" : \"t1010503_163\"} ",
+      "Next": 59,
+      "Child": []
+    },
+    {
+      "Index": 59,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05582,in05583,in05584\", \"\", True} ",
+      "Next": 60,
+      "Child": []
+    },
+    {
+      "Index": 60,
+      "Node": "{ \"BattleResultRemoveUnits\" : \"in05582,in05583,in05584\", False} ",
+      "Next": 61,
+      "Child": []
+    },
+    {
+      "Index": 61,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 62,
+      "Child": []
+    },
+    {
+      "Index": 62,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "石崑三阶：主角与石崑再战王齐",
+  "WinTip": "Defeat Wang Qi!",
+  "LoseTip": "Shi Kun is defeated"
+}

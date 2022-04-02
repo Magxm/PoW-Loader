@@ -1,13 +1,13 @@
 {
-  "EntryIndex": 0,
+  "EntryIndex": 17,
   "Nodes": [
     {
       "Node": "{ \"TimerAction\" : 0.50000} ",
-      "Next": 1,
+      "Next": 15,
       "Prallel": -1
     },
     {
-      "Node": "{ \"LoadScenesAction\" : \"S0104\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0} ",
+      "Node": "{ \"LoadScenesAction\" : \"S0104\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0, \"\"} ",
       "Next": 5,
       "Prallel": -1
     },
@@ -62,7 +62,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0} ",
+      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0, \"\"} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -75,7 +75,32 @@
       "Node": "{ \"TalkAction\" : \"t1010700_045\"} ",
       "Next": 10,
       "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckCurrentRound\" : 135, 1, 180, \"\"} , { \"CheckPlayerUpgradableProperty\" : 0, 499, 2030}  ], 0} , 16, 1} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"RunCinematicAction\" : \"m605in010750_01\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 18,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckCurrentRound\" : 1, 1, 168, \"\"}  ], 0} , 0, 19} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010700_047\"} ",
+      "Next": -1,
+      "Prallel": -1
     }
   ],
-  "Name": "m605in010750_00：程墉六階（先把玩家丟回宿舍）"
+  "Name": "m605in010750_00：程墉六階（先直接可進劇情）"
 }

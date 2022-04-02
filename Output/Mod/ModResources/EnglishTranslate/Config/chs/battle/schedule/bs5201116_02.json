@@ -1,1 +1,676 @@
-bs5201116_02	bs5201116_00	{ "BattleRootNode" : [ { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "ExecuteOnceNode" } , { "BattleResultAddUnit" : "Player", 0, 207107200, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in0601", 0, 206107201, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in0110", 0, 207106101, 1.00000, 0.00000} , { "BattleResultMoveUnit" : "in0601", "202104202"} , { "BattleResultMoveUnit" : "in0110", "204102102"} , { "BattleResultMoveUnit" : "Player", "202102200"} , { "BattleResultTalk" : "t5201116_073"} , { "BattleResultTalk" : "t5201116_109"} , { "BattleResultAddUnit" : "in0605", 1, 107207200, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in0104", 1, 107206201, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in0111", 1, 106207101, 1.00000, 0.00000} , { "BattleResultAddBuff" : True, "in0605", "bt5201115_08_buff_SeriousMonk", True} , { "BattleResultMoveUnit" : "in0104", "104202202"} , { "BattleResultMoveUnit" : "in0111", "102204102"} , { "BattleResultMoveUnit" : "in0605", "102202200"} , { "BattleResultTalk" : "t5201116_113"} , { "BattleResultChangeWinTip" : "Defeat Di Ting， Qiao Qianling and Wu Zhe! "} , { "BattleResultAddBuff" : True, "in0601", "bt5201116_01_buff_AngryGirl1", True} , { "BattleResultAddBuff" : True, "in0601", "bt5201116_02_buff_AngryGirl2", True} , { "BattleResultTalk" : "t5201116_156"} , { "BattleResultChangeMusic" : "In_battle_21.wav", 0.00000, False}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in0605,in0104,in0111"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5201116_123"} , { "BattleResultChangeMusic" : "In_mood_11.wav", 0.50000, False} , { "BattleResultTalk" : "t5201116_125"} , { "BattleResultRemoveUnits" : "in0601,in0110", False} , { "BattleResultTalk" : "t5201116_130"} , { "SetGlobalFlagBattleAction" : "fe5201115_1_03", 0, 1, "第三场战斗已获胜"} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "Player,in0601,in0110"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5201116_132"} , { "BattleResultChangeMusic" : "In_mood_11.wav", 0.50000, False} , { "BattleResultTalk" : "t5201116_165"} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 0, 0, "in0601"} , { "BattleFactorTargetDestroy" : "in0110"} , { "ExecuteOnceNode" } , { "BattleResultRmoveBuff" : "in0601", "bt5201116_01_buff_AngryGirl1"} , { "BattleResultAddBuff" : True, "in0601", "", False} , { "BattleResultTalk" : "t5201115_136"} , { "SetGlobalFlagBattleAction" : "fe5201115_1_04", 0, 1, "上官煦阵亡"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 0, 0, "in0601"} , { "BattleFactorTargetDestroy" : "Player"} , { "ExecuteOnceNode" } , { "BattleResultRmoveBuff" : "in0601", "bt5201116_02_buff_AngryGirl2"} , { "BattleResultAddBuff" : True, "in0601", "", False} , { "BattleResultTalk" : "t5201115_132"} , { "SetGlobalFlagBattleAction" : "fe5201115_1_06", 0, 1, "玩家阵亡"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 0, 0, "in0110"} , { "BattleFactorTargetDestroy" : "in0601"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5201115_165"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe5201115_1_04", "上官煦阵亡"} , { "BattleFactorGlobalFlag" : 1, 1, "fe5201115_1_06", "玩家阵亡"} , { "BattleFactorTargetHp" : 0, 0, "in0601"} , { "BattleFactorTargetHp" : 0, 0, "in0605"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5201115_166"} , { "BattleResultAddBuff" : True, "in0601", "bt5201115_05_buff_LastStandLite", True}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe5201115_1_04", "上官煦阵亡"} , { "BattleFactorGlobalFlag" : 1, 1, "fe5201115_1_06", "玩家阵亡"} , { "BattleFactorTargetHp" : 0, 0, "in0601"} , { "BattleFactorTargetDestroy" : "in0605"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5201115_137"} , { "BattleResultAddBuff" : True, "in0601", "bt5201115_05_buff_LastStandLite", True}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 0, 0, "in0605"} , { "BattleFactorTargetDestroy" : "in0111"} , { "BattleFactorTargetDestroy" : "in0104"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5201116_115"} , { "BattleResultAddBuff" : True, "in0605", "bt5201115_05_buff_LastStand", True}  ]}  ]}  ]} 	第二届侠隐擂台赛上官璘组	Win the ring match!	All friendly characters defeated。
+{
+  "Id": "bs5201116_02",
+  "Name": "bs5201116_00",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 2,
+      "Child": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 4,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultAddUnit\" : \"Player\", 0, 207107200, 1.00000, 0.00000} ",
+      "Next": 5,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0601\", 0, 206107201, 1.00000, 0.00000} ",
+      "Next": 6,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0110\", 0, 207106101, 1.00000, 0.00000} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in0601\", \"202104202\"} ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in0110\", \"204102102\"} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultMoveUnit\" : \"Player\", \"202102200\"} ",
+      "Next": 10,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultTalk\" : \"t5201116_073\"} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultTalk\" : \"t5201116_109\"} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0605\", 1, 107207200, 1.00000, 0.00000} ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0104\", 1, 107206201, 1.00000, 0.00000} ",
+      "Next": 14,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0111\", 1, 106207101, 1.00000, 0.00000} ",
+      "Next": 15,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0605\", \"bt5201115_08_buff_SeriousMonk\", True} ",
+      "Next": 16,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in0104\", \"104202202\"} ",
+      "Next": 17,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in0111\", \"102204102\"} ",
+      "Next": 18,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in0605\", \"102202200\"} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleResultTalk\" : \"t5201116_113\"} ",
+      "Next": 20,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Shimeji, Xiao Qianling, Wu Zhe!\"} ",
+      "Next": 21,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0601\", \"bt5201116_01_buff_AngryGirl1\", True} ",
+      "Next": 22,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0601\", \"bt5201116_02_buff_AngryGirl2\", True} ",
+      "Next": 23,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleResultTalk\" : \"t5201116_156\"} ",
+      "Next": 24,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_battle_21.wav\", 0.00000, False} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 26,
+      "Child": [
+        26
+      ]
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 27,
+      "Child": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0605,in0104,in0111\"} ",
+      "Next": 28,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 29,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleResultTalk\" : \"t5201116_123\"} ",
+      "Next": 30,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_mood_11.wav\", 0.50000, False} ",
+      "Next": 31,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleResultTalk\" : \"t5201116_125\"} ",
+      "Next": 32,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleResultRemoveUnits\" : \"in0601,in0110\", False} ",
+      "Next": 33,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleResultTalk\" : \"t5201116_130\"} ",
+      "Next": 34,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201115_1_03\", 0, 1, \"第三场战斗已获胜\"} ",
+      "Next": 35,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 37,
+      "Child": [
+        37
+      ]
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 38,
+      "Child": [
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ]
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player,in0601,in0110\"} ",
+      "Next": 39,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 40,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"BattleResultTalk\" : \"t5201116_132\"} ",
+      "Next": 41,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_mood_11.wav\", 0.50000, False} ",
+      "Next": 42,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"BattleResultTalk\" : \"t5201116_165\"} ",
+      "Next": 43,
+      "Child": []
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 45,
+      "Child": [
+        45
+      ]
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 46,
+      "Child": [
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52
+      ]
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in0601\"} ",
+      "Next": 47,
+      "Child": []
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0110\"} ",
+      "Next": 48,
+      "Child": []
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 49,
+      "Child": []
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in0601\", \"bt5201116_01_buff_AngryGirl1\"} ",
+      "Next": 50,
+      "Child": []
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0601\", \"\", False} ",
+      "Next": 51,
+      "Child": []
+    },
+    {
+      "Index": 51,
+      "Node": "{ \"BattleResultTalk\" : \"t5201115_136\"} ",
+      "Next": 52,
+      "Child": []
+    },
+    {
+      "Index": 52,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201115_1_04\", 0, 1, \"上官煦阵亡\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 53,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 54,
+      "Child": [
+        54
+      ]
+    },
+    {
+      "Index": 54,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 55,
+      "Child": [
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61
+      ]
+    },
+    {
+      "Index": 55,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in0601\"} ",
+      "Next": 56,
+      "Child": []
+    },
+    {
+      "Index": 56,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player\"} ",
+      "Next": 57,
+      "Child": []
+    },
+    {
+      "Index": 57,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 58,
+      "Child": []
+    },
+    {
+      "Index": 58,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in0601\", \"bt5201116_02_buff_AngryGirl2\"} ",
+      "Next": 59,
+      "Child": []
+    },
+    {
+      "Index": 59,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0601\", \"\", False} ",
+      "Next": 60,
+      "Child": []
+    },
+    {
+      "Index": 60,
+      "Node": "{ \"BattleResultTalk\" : \"t5201115_132\"} ",
+      "Next": 61,
+      "Child": []
+    },
+    {
+      "Index": 61,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201115_1_06\", 0, 1, \"玩家阵亡\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 62,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 63,
+      "Child": [
+        63
+      ]
+    },
+    {
+      "Index": 63,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 64,
+      "Child": [
+        64,
+        65,
+        66,
+        67
+      ]
+    },
+    {
+      "Index": 64,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in0110\"} ",
+      "Next": 65,
+      "Child": []
+    },
+    {
+      "Index": 65,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0601\"} ",
+      "Next": 66,
+      "Child": []
+    },
+    {
+      "Index": 66,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 67,
+      "Child": []
+    },
+    {
+      "Index": 67,
+      "Node": "{ \"BattleResultTalk\" : \"t5201115_165\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 68,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 69,
+      "Child": [
+        69
+      ]
+    },
+    {
+      "Index": 69,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 70,
+      "Child": [
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76
+      ]
+    },
+    {
+      "Index": 70,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5201115_1_04\", \"上官煦阵亡\"} ",
+      "Next": 71,
+      "Child": []
+    },
+    {
+      "Index": 71,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5201115_1_06\", \"玩家阵亡\"} ",
+      "Next": 72,
+      "Child": []
+    },
+    {
+      "Index": 72,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in0601\"} ",
+      "Next": 73,
+      "Child": []
+    },
+    {
+      "Index": 73,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in0605\"} ",
+      "Next": 74,
+      "Child": []
+    },
+    {
+      "Index": 74,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 75,
+      "Child": []
+    },
+    {
+      "Index": 75,
+      "Node": "{ \"BattleResultTalk\" : \"t5201115_166\"} ",
+      "Next": 76,
+      "Child": []
+    },
+    {
+      "Index": 76,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0601\", \"bt5201115_05_buff_LastStandLite\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 77,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 78,
+      "Child": [
+        78
+      ]
+    },
+    {
+      "Index": 78,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 79,
+      "Child": [
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85
+      ]
+    },
+    {
+      "Index": 79,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5201115_1_04\", \"上官煦阵亡\"} ",
+      "Next": 80,
+      "Child": []
+    },
+    {
+      "Index": 80,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5201115_1_06\", \"玩家阵亡\"} ",
+      "Next": 81,
+      "Child": []
+    },
+    {
+      "Index": 81,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in0601\"} ",
+      "Next": 82,
+      "Child": []
+    },
+    {
+      "Index": 82,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0605\"} ",
+      "Next": 83,
+      "Child": []
+    },
+    {
+      "Index": 83,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 84,
+      "Child": []
+    },
+    {
+      "Index": 84,
+      "Node": "{ \"BattleResultTalk\" : \"t5201115_137\"} ",
+      "Next": 85,
+      "Child": []
+    },
+    {
+      "Index": 85,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0601\", \"bt5201115_05_buff_LastStandLite\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 86,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 87,
+      "Child": [
+        87
+      ]
+    },
+    {
+      "Index": 87,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 88,
+      "Child": [
+        88,
+        89,
+        90,
+        91,
+        92,
+        93
+      ]
+    },
+    {
+      "Index": 88,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in0605\"} ",
+      "Next": 89,
+      "Child": []
+    },
+    {
+      "Index": 89,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0111\"} ",
+      "Next": 90,
+      "Child": []
+    },
+    {
+      "Index": 90,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0104\"} ",
+      "Next": 91,
+      "Child": []
+    },
+    {
+      "Index": 91,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 92,
+      "Child": []
+    },
+    {
+      "Index": 92,
+      "Node": "{ \"BattleResultTalk\" : \"t5201116_115\"} ",
+      "Next": 93,
+      "Child": []
+    },
+    {
+      "Index": 93,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0605\", \"bt5201115_05_buff_LastStand\", True} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "第二届侠隐擂台赛上官璘组",
+  "WinTip": "Win the ring!",
+  "LoseTip": "All friendly units are defeated"
+}

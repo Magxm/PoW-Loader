@@ -1,1 +1,392 @@
-bs1107201_02	bs1107201_02：缘花台对抗朱倩(出手助阵)	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "party00", 0, 205103102, 1.00000} , { "BattleResultAddUnit" : "party01", 0, 207105102, 1.00000} , { "BattleResultAddUnit" : "in05532", 0, 209105104, 1.00000} , { "SetUnitCanEquip" : "in05532", False}  ]} , { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "in31001", 1, 206200106, 1.00000} , { "BattleResultAddUnit" : "in05533", 1, 208101107, 1.00000}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "BattleFactorLocalFlag" : 1, 0, "btf1107201_02_01", ""} , { "SetLocalFlagBattleAction" : "btf1107201_02_01", 0, 1, ""} , { "BattleResultAddBuff" : True, "in05532", "bt1107201_02_buff_MoraleUp", True} , { "BattleResultTalk" : "t1107202_294"} , { "BattleResultAddBuff" : True, "in31001", "bt1107201_02_debuff_Power050", False} , { "BattleResultAddBuff" : True, "in31001", "bt1107201_02_buff_DodgeUp", True} , { "BattleResultChangeMusic" : "In_battle_02.wav", 0.00000, False}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 2} , { "BattleFactorLocalFlag" : 1, 0, "btf1107201_02_02", ""} , { "SetLocalFlagBattleAction" : "btf1107201_02_02", 0, 1, ""} , { "SetGlobalFlagBattleAction" : "fe1107201_2_104", 0, 1, ""} , { "BattleResultAddUnit" : "in05531", 1, 207106101, 1.00000} , { "BattleResultAddBuff" : True, "in05531", "bt1107201_02_buff_DodgeUp02", True} , { "BattleResultTalk" : "t1107202_297"} , { "BattleResultRmoveBuff" : "in05532", "bt1107201_02_buff_MoraleUp"} , { "BattleResultAddBuff" : True, "in05532", "bt1107201_02_buff_MoraleUp02", False} , { "BattleResultAddBuff" : True, "in05531", "bt1107201_02_debuff_PowerDown", False}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 2, 31, "in31001"} , { "BattleFactorLocalFlag" : 1, 0, "btf1107201_02_03", ""} , { "BattleResultTalk" : "t1107202_276"} , { "SetGlobalFlagBattleAction" : "fe1107201_2_127", 0, 1, ""} , { "SetLocalFlagBattleAction" : "btf1107201_02_03", 0, 1, ""} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in05532"} , { "BattleFactorLocalFlag" : 1, 0, "btf1107201_02_04", ""} , { "BattleResultTalk" : "t1107202_286"} , { "SetGlobalFlagBattleAction" : "fe1107201_2_127", 0, 2, ""} , { "SetLocalFlagBattleAction" : "btf1107201_02_04", 0, 1, ""} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in05531"} , { "BattleFactorLocalFlag" : 1, 0, "btf1107201_02_05", ""} , { "SetLocalFlagBattleAction" : "btf1107201_02_05", 0, 1, ""} , { "BattleResultTalk" : "t1107202_291"} , { "BattleResultRmoveBuff" : "in05532", "bt1107201_02_buff_MoraleUp02"} , { "BattleResultAddBuff" : True, "in05532", "bt1107201_02_debuff_MoraleDown", False}  ]}  ]}  ]} 		Reduce Zhu Qian's HP to 30%！	Zhang Qiluo is defeated.
+{
+  "Id": "bs1107201_02",
+  "Name": "bs1107201_02：缘花台对抗朱倩(出手助阵)",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"party00\", 0, 205103102, 1.00000, 0.00000} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"party01\", 0, 207105102, 1.00000, 0.00000} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05532\", 0, 209105104, 1.00000, 0.00000} ",
+      "Next": 4,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"SetUnitCanEquip\" : \"in05532\", False} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 6,
+      "Child": [
+        6,
+        7
+      ]
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleResultAddUnit\" : \"in31001\", 1, 206200106, 1.00000, 0.00000} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05533\", 1, 208101107, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 9,
+      "Child": [
+        9
+      ]
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 10,
+      "Child": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1107201_02_01\", \"\"} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1107201_02_01\", 0, 1, \"\"} ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05532\", \"bt1107201_02_buff_MoraleUp\", True} ",
+      "Next": 14,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultTalk\" : \"t1107202_294\"} ",
+      "Next": 15,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in31001\", \"bt1107201_02_debuff_Power050\", False} ",
+      "Next": 16,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in31001\", \"bt1107201_02_buff_DodgeUp\", True} ",
+      "Next": 17,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_battle_02.wav\", 0.00000, False} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 19,
+      "Child": [
+        19
+      ]
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 20,
+      "Child": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleFactorTurn\" : 1, 2} ",
+      "Next": 21,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1107201_02_02\", \"\"} ",
+      "Next": 22,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1107201_02_02\", 0, 1, \"\"} ",
+      "Next": 23,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1107201_2_104\", 0, 1, \"\"} ",
+      "Next": 24,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05531\", 1, 207106101, 1.00000, 0.00000} ",
+      "Next": 25,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05531\", \"bt1107201_02_buff_DodgeUp02\", True} ",
+      "Next": 26,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleResultTalk\" : \"t1107202_297\"} ",
+      "Next": 27,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05532\", \"bt1107201_02_buff_MoraleUp\"} ",
+      "Next": 28,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05532\", \"bt1107201_02_buff_MoraleUp02\", False} ",
+      "Next": 29,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05531\", \"bt1107201_02_debuff_PowerDown\", False} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 31,
+      "Child": [
+        31
+      ]
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 32,
+      "Child": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 31, \"in31001\"} ",
+      "Next": 33,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1107201_02_03\", \"\"} ",
+      "Next": 34,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleResultTalk\" : \"t1107202_276\"} ",
+      "Next": 35,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1107201_2_127\", 0, 1, \"\"} ",
+      "Next": 36,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1107201_02_03\", 0, 1, \"\"} ",
+      "Next": 37,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 39,
+      "Child": [
+        39
+      ]
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 40,
+      "Child": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45
+      ]
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05532\"} ",
+      "Next": 41,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1107201_02_04\", \"\"} ",
+      "Next": 42,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"BattleResultTalk\" : \"t1107202_286\"} ",
+      "Next": 43,
+      "Child": []
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1107201_2_127\", 0, 2, \"\"} ",
+      "Next": 44,
+      "Child": []
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1107201_02_04\", 0, 1, \"\"} ",
+      "Next": 45,
+      "Child": []
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 47,
+      "Child": [
+        47
+      ]
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 48,
+      "Child": [
+        48,
+        49,
+        50,
+        51,
+        52,
+        53
+      ]
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05531\"} ",
+      "Next": 49,
+      "Child": []
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1107201_02_05\", \"\"} ",
+      "Next": 50,
+      "Child": []
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1107201_02_05\", 0, 1, \"\"} ",
+      "Next": 51,
+      "Child": []
+    },
+    {
+      "Index": 51,
+      "Node": "{ \"BattleResultTalk\" : \"t1107202_291\"} ",
+      "Next": 52,
+      "Child": []
+    },
+    {
+      "Index": 52,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05532\", \"bt1107201_02_buff_MoraleUp02\"} ",
+      "Next": 53,
+      "Child": []
+    },
+    {
+      "Index": 53,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05532\", \"bt1107201_02_debuff_MoraleDown\", False} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "",
+  "WinTip": "Weaken Zhu Qian's HP to 30%!",
+  "LoseTip": "Zhang Qiluo is defeated"
+}

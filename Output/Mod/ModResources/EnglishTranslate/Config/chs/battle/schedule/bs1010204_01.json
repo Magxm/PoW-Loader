@@ -1,1 +1,329 @@
-bs1010204_01	段红儿四阶后山战段霄烈	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnits" : "Player,in0102", 0, "204102102,203101102"}  ]} , { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnits" : "in0202", 1, "200103203"}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 0} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010204_bs0138"} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 2, 50, "in0202"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010204_bs0136"} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010204_bs0100"} , { "BattleResultAddBuff" : True, "in0202", "bt1010204_01_defuff70%", False}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 1} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010204_bs0101"} , { "BattleResultAddBuff" : True, "in0102", "debuff0200_burn00", False} , { "BattleResultTalk" : "t1010204_bs0110"} , { "BattleResultAddUnit" : "in05842", 2, 205106201, 1.00000, 0.00000} , { "BattleResultAddBuff" : True, "in05842", "", True} , { "BattleResultTalk" : "t1010204_bs0116"} , { "BattleResultAddUnit" : "in05843", 2, 207106101, 1.00000, 0.00000} , { "BattleResultAddBuff" : True, "in05843", "", True} , { "BattleResultTalk" : "t1010204_bs0117"} , { "BattleResultAddUnit" : "in05844", 2, 205108203, 1.00000, 0.00000} , { "BattleResultAddBuff" : True, "in05844", "", True} , { "BattleResultTalk" : "t1010204_bs0118"}  ]}  ]} , { "BattleEventNode" : 200, 1, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 1} , { "BattleFactorGlobalFlag" : 1, 2, "fe1210401_2_00", "段红儿已经历恒山事件"} , { "ExecuteOnceNode" } , { "BattleResultRmoveBuff" : "in0202", "bt1010204_01_defuff70%"} , { "BattleResultAddBuff" : True, "in0202", "bt1010204_01_defuff50%", True}  ]}  ]}  ]} 		Defeat Master Duan！	All of our controllable members were defeated。
+{
+  "Id": "bs1010204_01",
+  "Name": "段红儿四阶后山战段霄烈",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnits\" : \"Player,in0102\", 0, \"204102102,203101102\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 3,
+      "Child": [
+        3
+      ]
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnits\" : \"in0202\", 1, \"200103203\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 5,
+      "Child": [
+        5
+      ]
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 6,
+      "Child": [
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 0} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultTalk\" : \"t1010204_bs0138\"} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 11,
+      "Child": [
+        11
+      ]
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 12,
+      "Child": [
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 50, \"in0202\"} ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 14,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultTalk\" : \"t1010204_bs0136\"} ",
+      "Next": 15,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 17,
+      "Child": [
+        17
+      ]
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 18,
+      "Child": [
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 20,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultTalk\" : \"t1010204_bs0100\"} ",
+      "Next": 21,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0202\", \"bt1010204_01_defuff70%\", False} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 23,
+      "Child": [
+        23
+      ]
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 24,
+      "Child": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleFactorTurn\" : 1, 1} ",
+      "Next": 25,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 26,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleResultTalk\" : \"t1010204_bs0101\"} ",
+      "Next": 27,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0102\", \"debuff0200_burn00\", False} ",
+      "Next": 28,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleResultTalk\" : \"t1010204_bs0110\"} ",
+      "Next": 29,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05842\", 2, 205106201, 1.00000, 0.00000} ",
+      "Next": 30,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05842\", \"\", True} ",
+      "Next": 31,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleResultTalk\" : \"t1010204_bs0116\"} ",
+      "Next": 32,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05843\", 2, 207106101, 1.00000, 0.00000} ",
+      "Next": 33,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05843\", \"\", True} ",
+      "Next": 34,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleResultTalk\" : \"t1010204_bs0117\"} ",
+      "Next": 35,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05844\", 2, 205108203, 1.00000, 0.00000} ",
+      "Next": 36,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05844\", \"\", True} ",
+      "Next": 37,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleResultTalk\" : \"t1010204_bs0118\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleEventNode\" : 200, 1, [ ]} ",
+      "Next": 39,
+      "Child": [
+        39
+      ]
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 40,
+      "Child": [
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"BattleFactorTurn\" : 1, 1} ",
+      "Next": 41,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 2, \"fe1210401_2_00\", \"段红儿已经历恒山事件\"} ",
+      "Next": 42,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 43,
+      "Child": []
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in0202\", \"bt1010204_01_defuff70%\"} ",
+      "Next": 44,
+      "Child": []
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0202\", \"bt1010204_01_defuff50%\", True} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "",
+  "WinTip": "Defeat Master Duan!",
+  "LoseTip": "All controllable friendly units are defeated"
+}

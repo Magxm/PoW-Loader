@@ -1,1 +1,351 @@
-bs1011004_02	上官煦四_战斗二	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "in0110", 0, 107208101, 1.00000, 35.03000} , { "BattleResultAddUnit" : "Player", 0, 109211102, 1.00000, 248.45200} , { "BattleResultAddUnit" : "in34005", 0, 107211104, 1.00000, 217.19800} , { "BattleResultAddUnit" : "in34006", 0, 105208103, 1.00000, 55.22500} , { "BattleResultAddUnit" : "in0574502", 1, 105204201, 1.00000, 204.87300} , { "BattleResultAddUnit" : "in0574503", 1, 102204102, 1.00000, -128.16800} , { "BattleResultAddUnit" : "in0574505", 1, 102207105, 1.00000, -128.16800} , { "BattleResultAddUnit" : "in0574302", 1, 110215105, 1.00000, 21.57700} , { "BattleResultAddUnit" : "in0574301", 1, 112213101, 1.00000, 49.84700}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1011004_164"}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 1} , { "BattleFactorTargetHp" : 0, 0, "in34006"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1011004_167"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in0574301,in0574302"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1011004_168"} , { "BattleResultAddBuff" : True, "in0574502", "bt1011004_02_buff_takemoney", True} , { "BattleResultAddBuff" : True, "in0574503", "bt1011004_02_buff_takemoney", True} , { "BattleResultAddBuff" : True, "in0574505", "bt1011004_02_buff_takemoney", True}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in0574502,in0574503,in0574505"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1011004_170"} , { "BattleResultAddBuff" : True, "in0574301", "bt1011004_02_buff_ourselves", True} , { "BattleResultAddBuff" : True, "in0574302", "bt1011004_02_buff_ourselves", True}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 1} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1011004_171"} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in0110"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1011004_112"} , { "BattleResultLose" : ""}  ]}  ]}  ]} 	上官煦四_战斗二	Protect Shangguan Xu and defeat all enemies.	Shangguan Xu is defeated.
+{
+  "Id": "bs1011004_02",
+  "Name": "上官煦四_战斗二",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0110\", 0, 107208101, 1.00000, 35.03000} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"Player\", 0, 109211102, 1.00000, 248.45200} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnit\" : \"in34005\", 0, 107211104, 1.00000, 217.19800} ",
+      "Next": 4,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultAddUnit\" : \"in34006\", 0, 105208103, 1.00000, 55.22500} ",
+      "Next": 5,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0574502\", 1, 105204201, 1.00000, 204.87300} ",
+      "Next": 6,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0574503\", 1, 102204102, 1.00000, -128.16800} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0574505\", 1, 102207105, 1.00000, -128.16800} ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0574302\", 1, 110215105, 1.00000, 21.57700} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0574301\", 1, 112213101, 1.00000, 49.84700} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 11,
+      "Child": [
+        11
+      ]
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 12,
+      "Child": [
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 14,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultTalk\" : \"t1011004_164\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 16,
+      "Child": [
+        16
+      ]
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 17,
+      "Child": [
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleFactorTurn\" : 1, 1} ",
+      "Next": 18,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in34006\"} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 20,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultTalk\" : \"t1011004_167\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 22,
+      "Child": [
+        22
+      ]
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 23,
+      "Child": [
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0574301,in0574302\"} ",
+      "Next": 24,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 25,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleResultTalk\" : \"t1011004_168\"} ",
+      "Next": 26,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0574502\", \"bt1011004_02_buff_takemoney\", True} ",
+      "Next": 27,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0574503\", \"bt1011004_02_buff_takemoney\", True} ",
+      "Next": 28,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0574505\", \"bt1011004_02_buff_takemoney\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 30,
+      "Child": [
+        30
+      ]
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 31,
+      "Child": [
+        31,
+        32,
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0574502,in0574503,in0574505\"} ",
+      "Next": 32,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 33,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleResultTalk\" : \"t1011004_170\"} ",
+      "Next": 34,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0574301\", \"bt1011004_02_buff_ourselves\", True} ",
+      "Next": 35,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0574302\", \"bt1011004_02_buff_ourselves\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 37,
+      "Child": [
+        37
+      ]
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 38,
+      "Child": [
+        38,
+        39,
+        40,
+        41
+      ]
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 39,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 40,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"BattleResultTalk\" : \"t1011004_171\"} ",
+      "Next": 41,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 43,
+      "Child": [
+        43
+      ]
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 44,
+      "Child": [
+        44,
+        45,
+        46,
+        47
+      ]
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0110\"} ",
+      "Next": 45,
+      "Child": []
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 46,
+      "Child": []
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"BattleResultTalk\" : \"t1011004_112\"} ",
+      "Next": 47,
+      "Child": []
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "上官煦四_战斗二",
+  "WinTip": "Protect Shangguan Xu and defeat all enemies.",
+  "LoseTip": "Shangguan Xu is defeated"
+}

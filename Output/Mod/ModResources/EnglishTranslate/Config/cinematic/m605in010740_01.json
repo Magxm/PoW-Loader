@@ -2,8 +2,8 @@
   "EntryIndex": 0,
   "Nodes": [
     {
-      "Node": "{ \"TimerAction\" : 0.50000} ",
-      "Next": 1,
+      "Node": "{ \"TimerAction\" : 0.25000} ",
+      "Next": 26,
       "Prallel": -1
     },
     {
@@ -112,7 +112,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"LoadScenesAction\" : \"S0303\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0} ",
+      "Node": "{ \"LoadScenesAction\" : \"S0303\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0, \"\"} ",
       "Next": 23,
       "Prallel": -1
     },
@@ -129,6 +129,16 @@
     {
       "Node": "{ \"MusicAction\" : \"In_mood_10.wav\", 1.00000, False, 0.70000, False, 0.00000} ",
       "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"LoadScenesAction\" : \"S0302\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0, \"\"} ",
+      "Next": 27,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.25000} ",
+      "Next": 1,
       "Prallel": -1
     }
   ],

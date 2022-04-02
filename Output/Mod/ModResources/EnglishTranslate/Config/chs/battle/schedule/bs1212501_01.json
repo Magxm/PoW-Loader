@@ -1,1 +1,4156 @@
-bs1212501_01	bs1212501_01	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnits" : "Player,in0105,party01,party02,party03", 0, "206208114,208206114,206210116,208208116,210206116"} , { "BattleResultAddUnits" : "io221045,io221144,io221244", 1, "205205110,202206108,206202108"} , { "BattleResultAddUnits" : "io481213,io481413,io491015,io491115,io481223,io421111,io491315,io421012,io421211,io421112", 1, "114211203,116210206,111205206,109202207,203112209,208115207,210110200,210107103,218104114,218102116"} , { "BattleResultAddUnits" : "io521331,io521433,io521233,io521431,io521031", 2, "117213204,112203209,205115210,221105116,212111101"} , { "BattleResultAddUnit" : "in22001", 1, 105104209, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in39001", 1, 103106209, 1.00000, 0.00000} , { "BattleResultAddUnits" : "in15102,in15141,in15173,in19001", 4, "114203211,205117212,213111102,224109115"}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1212502_200"} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_205"} , { "BattleResultAddBuff" : True, "in39001", "", True} , { "BattleResultRemoveUnit" : "in39001", False} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_212"} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_214"} , { "BattleResultMoveUnit" : "in22001", "104104208"} , { "BattleResultTalk" : "t1212502_219"} , { "BattleResultChangeMusic" : "In_battle_21.wav", 2.00000, False} , { "BattleResultTalk" : "t1212502_235"} , { "BattleResultAddBuff" : False, "in22001", "bt1212501_01_debuff_NoMove", False} , { "BattleResultAddBuff" : False, "io261341", "bt1212501_01_buff_HpLock01", True} , { "BattleResultAddBuff" : False, "io521331,io521433,io521233,io521431,io521031", "bt1212501_01_debuff_Attack75", False} , { "BattleResultAddBuff" : False, "io221045,io221144,io221244", "bt1212501_01_debuff_Power75", False} , { "BattleResultAddBuff" : False, "in15102", "bt1212501_01_buff_HpLock01", True}  ]}  ]} , { "BattleEventNode" : 210, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 1} , { "ExecuteOnceNode" } , { "BattleResultAddUnits" : "io261041,io261141", 3, "110106216,110104214"} , { "BattleResultTalk" : "t1212502_238"} , { "BattleResultAddUnits" : "io261341,io261241", 3, "106110216,104110214"} , { "BattleResultTalk" : "t1212502_239"} , { "BattleResultAddUnit" : "in210091", 3, 108108216, 1.00000, 0.00000} , { "BattleResultAddBuff" : True, "in210091", "", True} , { "BattleResultTalk" : "t1212502_240"} , { "BattleResultMoveUnit" : "in22001", "105105210"} , { "BattleResultTalk" : "t1212502_247"} , { "BattleResultAddUnits" : "io221055,io221344,io221444", 1, "106106212,107104211,104107211"} , { "BattleResultTalk" : "t1212502_251"} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_252"} , { "BattleResultRmoveBuff" : "in22001", "bt1212501_01_debuff_NoMove"} , { "BattleResultAddBuff" : False, "in210091", "bt1212501_01_debuff_LingPower75", False} , { "BattleResultAddBuff" : False, "io261041,io261141,io261341,io261241", "bt1212501_01_buff_ZombiePower", True} , { "BattleResultAddBuff" : False, "io261041,io261141,io261341,io261241", "bt1212501_01_debuff_Power75", False} , { "BattleResultAddBuff" : False, "io221055,io221344,io221444", "bt1212501_01_debuff_Power75", False} , { "BattleResultAddBuff" : True, "io261341", "bt1212501_01_buff_HpLock01", True} , { "SetLocalFlagBattleAction" : "btf1212501_01_00", 0, 1, "主角下达指示"}  ]}  ]} , { "BattleEventNode" : 210, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 2} , { "ExecuteOnceNode" } , { "BattleResultAddUnits" : "in53001", 3, "215118203"} , { "BattleResultMoveUnit" : "in53001", "212115203"} , { "BattleResultAddUnits" : "io531453", 3, "215119204"} , { "BattleResultMoveUnit" : "io531453", "212116204"} , { "BattleResultTalk" : "t1212502_300"} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_307"} , { "SetLocalFlagBattleAction" : "btf1212501_01_01", 0, 1, "沐璎加入战场，开始判定夏校胜负"}  ]}  ]} , { "BattleEventNode" : 210, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 2} , { "BattleFactorLocalFlag" : 1, 1, "btf1212501_01_01", ""} , { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_71", "夏校比武战中主角等人战胜沐璎"} , { "ExecuteOnceNode" } , { "BattlChanageFaction" : 2, "in53001"} , { "BattlChanageFaction" : 2, "io531453"} , { "BattleResultAddBuff" : True, "in53001,io531453", "bt1212501_01_debuff_SwordManPower75", True}  ]}  ]} , { "BattleEventNode" : 210, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 2} , { "BattleFactorLocalFlag" : 1, 1, "btf1212501_01_01", ""} , { "BattleFactorGlobalFlag" : 1, 2, "fe1205501_2_71", "夏校比武战中主角等人败给沐璎"} , { "ExecuteOnceNode" } , { "BattlChanageFaction" : 1, "in53001"} , { "BattlChanageFaction" : 1, "io531453"} , { "BattleResultAddBuff" : True, "in53001,io531453", "bt1212501_01_debuff_SwordManPower75", True}  ]}  ]} , { "BattleEventNode" : 210, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 3} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1212502_400"} , { "BattleResultMoveUnit" : "in22001", "103103206"} , { "BattleResultMoveUnit" : "in22001", "103104207"} , { "BattleResultTalk" : "t1212502_402"} , { "BattleResultPlayAction" : "in210091", "skill_MA0305_b03a", 0.00000} , { "BattleResultAddBuff" : True, "in210091", "", True} , { "BattleResultRemoveUnit" : "in210091", False} , { "BattleResultAddUnit" : "in210091", 3, 103105208, 1.00000, 0.00000} , { "BattleResultAddBuff" : True, "in210091", "", True} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultTalk" : "t1212502_405"} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultTalk" : "t1212502_409"} , { "BattleResultPlayAction" : "in210091", "skill_MA0303_b01", 0.00000} , { "BattleResultUnitHP" : 2, 50, "in22001"} , { "BattleResultPlayAction" : "in22001", "m_both_bighurt00", 0.00000} , { "BattleResultTalk" : "t1212502_412"} , { "BattleResultAddBuff" : True, "in22001,io221045,io221144,io221244,io221055,io221344,io221444", "", False} , { "BattleResultRemoveUnits" : "in22001,io221045,io221144,io221244,io221055,io221344,io221444", False} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultTalk" : "t1212502_422"} , { "BattleResultUnitToUnit" : "io261341", "in15102"} , { "BattleResultTalk" : "t1212502_428"} , { "BattleResultAddBuff" : True, "io261341", "", True} , { "BattleResultRemoveUnits" : "io261341,in15102", False} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_431"} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_440"} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultTalk" : "t1212502_445"} , { "BattleResultAddBuff" : True, "in210091", "", True} , { "BattleResultrReplaceUnit" : "in210091", "in21009", 1.00000, 0.00000} , { "BattleResultChangeMusic" : "In_battle_22.wav", 1.00000, False} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_451"} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_464"} , { "BattleResultAddBuff" : True, "in21009", "bt1212501_01_debuff_LingPower75", True} , { "BattleResultAddBuff" : False, "in21009", "bt1212501_01_buff_HpLock50", True} , { "BattleResultChangeWinTip" : "Reduce Ah Lings HP to 50% and defeat all righteous sect member that is attacking the villagers！"} , { "SetLocalFlagBattleAction" : "btf1212501_01_02", 0, 1, "阿凌登场"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 1, "btf1212501_01_02", "阿凌已登场"} , { "BattleFactorTargetHp" : 1, 50, "in21009"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1212502_500"} , { "BattleResultAddUnits" : "in15005,in15111", 2, "214122208,214123209"} , { "BattleResultAddUnit" : "io481463", 1, 213120207, 1.00000, 0.00000} , { "BattleResultTalk" : "t1212502_506"} , { "BattleResultAddUnit" : "in15006_01", 2, 128104232, 1.00000, 0.00000} , { "BattleResultMoveUnit" : "in15006_01", "118105223"} , { "BattleResultTalk" : "t1212502_510"} , { "BattleResultAddUnit" : "in05576", 1, 120114234, 1.00000, 0.00000} , { "BattleResultMoveUnit" : "in05576", "118108226"} , { "BattleResultTalk" : "t1212502_513"} , { "BattleResultAddBuff" : True, "in21009", "", True} , { "BattleResultRemoveUnit" : "in21009", False} , { "BattleResultAddUnit" : "in21009", 3, 117109226, 1.00000, 0.00000} , { "BattleResultUnitHP" : 2, 50, "in21009"} , { "BattleResultAddBuff" : True, "in21009", "", True} , { "BattleResultTalk" : "t1212502_517"} , { "BattleResultPlayAction" : "in21009", "skill_MA0301_a03", 0.00000} , { "BattleResultUnitHP" : 2, 100, "in05576"} , { "BattleResultTalk" : "t1212502_519"} , { "BattleResultUnitToUnit" : "Player", "io481463"} , { "BattleResultPlayAction" : "Player", "skill_MA0001_a02", 0.00000} , { "BattleResultUnitHP" : 2, 50, "io481463"} , { "BattleResultPlayAction" : "io481463", "m_single_hurt00", 0.00000} , { "BattleResultTalk" : "t1212502_524"} , { "BattleResultAddUnit" : "in21006", 3, 107108215, 1.00000, 0.00000} , { "BattleResultAddUnits" : "io26104101,io26114101,io26134101,io26124101", 3, "109107216,106110216,111106217,105112217"} , { "BattleResultAddBuff" : True, "in21006", "", True} , { "BattleResultTalk" : "t1212502_527"} , { "BattleResultUnitToUnit" : "in21009", "in15006_01"} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_532"} , { "BattleResultAddBuff" : True, "in21009", "", True} , { "BattleResultRemoveUnits" : "in21009,in15006_01", False} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_544"} , { "BattleResultAddBuff" : True, "io481213,io481413,io491015,io491115,io481223,io421111,io491315,io421012,io421211,io421112,io481463", "", False} , { "BattleResultRemoveUnits" : "io481213,io481413,io491015,io491115,io481223,io421111,io491315,io421012,io421211,io421112,io481463", False} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_549"} , { "BattleResultAddUnits" : "in0206,in03010,in03009", 2, "104104208,105102207,102105207"} , { "BattleResultAddBuff" : True, "in0206,in03010,in03009", "", True} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_553"} , { "BattleResultExitPoint" : "209212121,210211121,211210121,212209121"} , { "BattlChanageAItype" : 3, "in15005"} , { "BattlChanageAItype" : 3, "in15111"} , { "BattlChanageAItype" : 3, "in15141"} , { "BattlChanageAItype" : 3, "in15173"} , { "BattlChanageAItype" : 3, "in19001"} , { "BattlChanageFaction" : 2, "in15005"} , { "BattlChanageFaction" : 2, "in15111"} , { "BattlChanageFaction" : 2, "in15141"} , { "BattlChanageFaction" : 2, "in15173"} , { "BattlChanageFaction" : 2, "in19001"} , { "BattleResultTalk" : "t1212502_563"} , { "BattlChanageFaction" : 1, "in21006"} , { "BattlChanageFaction" : 1, "io26104101"} , { "BattlChanageFaction" : 1, "io26114101"} , { "BattlChanageFaction" : 1, "io26134101"} , { "BattlChanageFaction" : 1, "io26124101"} , { "BattlChanageFaction" : 1, "io261041"} , { "BattlChanageFaction" : 1, "io261141"} , { "BattlChanageFaction" : 1, "io261341"} , { "BattlChanageFaction" : 1, "io261241"} , { "BattleResultAddBuff" : True, "in21006,io26104101,io26114101,io26134101,io26124101", "bt1212501_01_buff_ZombiePower02", True} , { "BattleResultAddBuff" : False, "in0206,in03010,in03009", "bt1212501_01_buff_TangTeamPowerUp", True} , { "BattleResultAddBuff" : False, "in21006", "bt1212501_01_buff_HpLock50", True} , { "BattleResultAddBuff" : False, "in0206,in03009,in03010", "bt1212501_01_buff_HpLock01", True} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_585"} , { "BattleResultAddUnits" : "io261431,io261131,in05566,in05567", 1, "202205107,205202107,201207108,207201108"} , { "BattleResultAddBuff" : True, "io261431,io261131,in05566,in05567", "bt1212501_01_buff_ZombiePower", True} , { "BattleResultAddBuff" : False, "io261431,io261131,in05566,in05567", "bt1212501_01_debuff_Attack75", False} , { "BattleResultTalk" : "t1212502_586"} , { "BattleResultChangeWinTip" : "Reduce Flying Squids HP to 70%！"} , { "BattleResultChangeLoseTip" : "{name_1}{name_2}、Shi Kun、Tang Yun、Shangguan Yan or Tang Sanchang is defeated。"} , { "SetLocalFlagBattleAction" : "btf1212501_01_03", 0, 1, "飞鱿登场"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 1, "btf1212501_01_03", "飞鱿已登场"} , { "BattleFactorTargetHp" : 2, 55, "in21006"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1212502_600"} , { "BattleResultAddBuff" : True, "in0206", "", False} , { "BattleResultTalk" : "t1212502_603"} , { "BattleResultAddUnits" : "io26124102,io26104102,io26143101,io26143102,io26143103,io26143104,io26143105,io26143106,io26143107,io26143108", 1, "107107214,105109214,104200204,101103204,200106206,108200208,110102212,102108210,106107213,202109207"} , { "BattleResultUnitToUnit" : "io26124102", "in0206"} , { "BattleResultUnitToUnit" : "io26104102", "in0206"} , { "BattleResultTalk" : "t1212502_614"} , { "BattleResultUnitToUnit" : "in03009", "in21006"} , { "BattleResultTalk" : "t1212502_621"} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_632"} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultTalk" : "t1212502_634"} , { "BattleResultPlayAction" : "in21006", "skill_MA1101_b01", 0.00000} , { "BattleResultUnitHP" : 2, 100, "in03009"} , { "BattleResultChangeMusic" : "In_mood_16.wav", 1.00000, False} , { "BattleResultTalk" : "t1212502_640"} , { "BattleResultUnitHP" : 1, 100, "in21006"} , { "BattleResultAddBuff" : True, "in21006", "", True} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultTalk" : "t1212502_646"} , { "BattleResultPlayAction" : "in0206", "skill_MA0502_c02", 0.00000} , { "BattleResultUnitHP" : 2, 100, "io26124102,io26104102"} , { "BattleResultTalk" : "t1212502_651"} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultTalk" : "t1212502_700"} , { "BattleResultAddBuff" : True, "in03010", "", True} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultTalk" : "t1212502_703"} , { "BattleResultUnitToUnit" : "in0105", "in03010"} , { "BattleResultPlayAction" : "in0105", "skill_MA0905_a01", 0.00000} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultUnitHP" : 2, 100, "in03010"} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultTalk" : "t1212502_707"} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_714"} , { "BattleResultChangeMusic" : "In_mood_18.wav", 1.00000, False} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_719"} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_725"} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_733"} , { "BattleResultRemoveUnits" : "Player,in0105,party01,party02,party03,in15005,in15111,in15102,in15141,in15173,in19001,in91001", False} , { "BattleResultWaitAction" : 1.00000} , { "BattleResultTalk" : "t1212502_746"} , { "BattleResultAddBuff" : True, "in53001", "", True} , { "BattleResultRemoveUnit" : "in53001", False} , { "BattleResultWaitAction" : 0.75000} , { "BattleResultTalk" : "t1212502_754"} , { "BattleResultAddBuff" : True, "io531453", "", True} , { "BattleResultRemoveUnit" : "io531453", False} , { "BattleResultWaitAction" : 1.00000} , { "BattleResultChangeMusic" : "In_scene_00.wav", 2.00000, False} , { "BattleResultWaitAction" : 1.00000} , { "BattleResultTalk" : "t1212502_738"} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 210, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 1} , { "BattleFactorLocalFlag" : 1, 1, "btf1212501_01_00", "主角下达指示後"} , { "BattleFactorGlobalFlag" : 1, 1, "fe1212502_2_01", "以强攻前进"} , { "ExecuteOnceNode" } , { "BattleResultAddBuff" : True, "Player,in0105,party01,party02,party03", "bt1212501_01_buff_TeamAttackUp", True}  ]}  ]} , { "BattleEventNode" : 210, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 1} , { "BattleFactorLocalFlag" : 1, 1, "btf1212501_01_00", "主角下达指示後"} , { "BattleFactorGlobalFlag" : 1, 2, "fe1212502_2_01", "以固守前进"} , { "ExecuteOnceNode" } , { "BattleResultAddBuff" : True, "Player,in0105,party01,party02,party03", "bt1212501_01_buff_TeamDefenceUp", True}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 1, "btf1212501_01_02", "阿凌已登场"} , { "BattleFactorTargetHp" : 1, 50, "in21009"} , { "BattleFactorLocalFlag" : 1, 1, "btf1212501_01_03", "飞鱿登场後，若沐璎为敌方AI，则转为中立AI"} , { "BattleFactorGlobalFlag" : 1, 2, "fe1205501_2_71", "夏校比武战中主角等人败给沐璎"} , { "ExecuteOnceNode" } , { "BattlChanageFaction" : 2, "in53001"} , { "BattlChanageFaction" : 2, "io531453"} , { "BattleResultAddBuff" : True, "in53001,io531453", "bt1212501_01_debuff_SwordManPower75", True}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 1, "btf1212501_01_03", "飞鱿已登场"} , { "BattleFactorTargetHp" : 2, 5, "in0206"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1212502_600"} , { "BattleResultAddBuff" : True, "in0206", "", False} , { "BattleResultTalk" : "t1212502_603"} , { "BattleResultAddUnits" : "io26124102,io26104102,io26143101,io26143102,io26143103,io26143104,io26143105,io26143106,io26143107,io26143108", 1, "107107214,105109214,104200204,101103204,200106206,108200208,110102212,102108210,106107213,202109207"} , { "BattleResultUnitToUnit" : "io26124102", "in0206"} , { "BattleResultUnitToUnit" : "io26104102", "in0206"} , { "BattleResultTalk" : "t1212502_614"} , { "BattleResultUnitToUnit" : "in03009", "in21006"} , { "BattleResultTalk" : "t1212502_621"} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_632"} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultTalk" : "t1212502_634"} , { "BattleResultPlayAction" : "in21006", "skill_MA1101_b01", 0.00000} , { "BattleResultUnitHP" : 2, 100, "in03009"} , { "BattleResultChangeMusic" : "In_mood_16.wav", 1.00000, False} , { "BattleResultTalk" : "t1212502_640"} , { "BattleResultUnitHP" : 1, 100, "in21006"} , { "BattleResultAddBuff" : True, "in21006", "", True} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultTalk" : "t1212502_646"} , { "BattleResultPlayAction" : "in0206", "skill_MA0502_c02", 0.00000} , { "BattleResultUnitHP" : 2, 100, "io26124102,io26104102"} , { "BattleResultTalk" : "t1212502_651"} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultTalk" : "t1212502_700"} , { "BattleResultAddBuff" : True, "in03010", "", True} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultTalk" : "t1212502_703"} , { "BattleResultUnitToUnit" : "in0105", "in03010"} , { "BattleResultPlayAction" : "in0105", "skill_MA0905_a01", 0.00000} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultUnitHP" : 2, 100, "in03010"} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultTalk" : "t1212502_707"} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_714"} , { "BattleResultChangeMusic" : "In_mood_18.wav", 1.00000, False} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_719"} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_725"} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_733"} , { "BattleResultRemoveUnits" : "Player,in0105,party01,party02,party03,in15005,in15111,in15102,in15141,in15173,in19001,in91001,in05371,in15131,in15132", False} , { "BattleResultWaitAction" : 1.00000} , { "BattleResultTalk" : "t1212502_746"} , { "BattleResultAddBuff" : True, "in53001", "", True} , { "BattleResultRemoveUnit" : "in53001", False} , { "BattleResultWaitAction" : 0.75000} , { "BattleResultTalk" : "t1212502_754"} , { "BattleResultAddBuff" : True, "io531453", "", True} , { "BattleResultRemoveUnit" : "io531453", False} , { "BattleResultWaitAction" : 1.00000} , { "BattleResultChangeMusic" : "In_scene_00.wav", 2.00000, False} , { "BattleResultWaitAction" : 1.00000} , { "BattleResultTalk" : "t1212502_738"} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 1, "btf1212501_01_03", "飞鱿已登场"} , { "BattleFactorTargetHp" : 2, 5, "in03009"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1212502_600"} , { "BattleResultAddBuff" : True, "in0206", "", False} , { "BattleResultTalk" : "t1212502_603"} , { "BattleResultAddUnits" : "io26124102,io26104102,io26143101,io26143102,io26143103,io26143104,io26143105,io26143106,io26143107,io26143108,io26143109,io26143110", 1, "107107214,105109214,104200204,101103204,200106206,108200208,110102212,102108210,106107213,202109207,109203206,109105214"} , { "BattleResultUnitToUnit" : "io26124102", "in0206"} , { "BattleResultUnitToUnit" : "io26104102", "in0206"} , { "BattleResultTalk" : "t1212502_614"} , { "BattleResultUnitToUnit" : "in03009", "in21006"} , { "BattleResultTalk" : "t1212502_621"} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_632"} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultTalk" : "t1212502_634"} , { "BattleResultPlayAction" : "in21006", "skill_MA1101_b01", 0.00000} , { "BattleResultUnitHP" : 2, 100, "in03009"} , { "BattleResultChangeMusic" : "In_mood_16.wav", 1.00000, False} , { "BattleResultTalk" : "t1212502_640"} , { "BattleResultUnitHP" : 1, 100, "in21006"} , { "BattleResultAddBuff" : True, "in21006", "", True} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultTalk" : "t1212502_646"} , { "BattleResultPlayAction" : "in0206", "skill_MA0502_c02", 0.00000} , { "BattleResultUnitHP" : 2, 100, "io26124102,io26104102"} , { "BattleResultTalk" : "t1212502_651"} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultTalk" : "t1212502_700"} , { "BattleResultAddBuff" : True, "in03010", "", True} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultTalk" : "t1212502_703"} , { "BattleResultUnitToUnit" : "in0105", "in03010"} , { "BattleResultPlayAction" : "in0105", "skill_MA0905_a01", 0.00000} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultUnitHP" : 2, 100, "in03010"} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultTalk" : "t1212502_707"} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_714"} , { "BattleResultChangeMusic" : "In_mood_18.wav", 1.00000, False} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_719"} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_725"} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_733"} , { "BattleResultRemoveUnits" : "Player,in0105,party01,party02,party03,in15005,in15111,in15102,in15141,in15173,in19001,in91001,in05371,in15131,in15132", False} , { "BattleResultWaitAction" : 1.00000} , { "BattleResultTalk" : "t1212502_746"} , { "BattleResultAddBuff" : True, "in53001", "", True} , { "BattleResultRemoveUnit" : "in53001", False} , { "BattleResultWaitAction" : 0.75000} , { "BattleResultTalk" : "t1212502_754"} , { "BattleResultAddBuff" : True, "io531453", "", True} , { "BattleResultRemoveUnit" : "io531453", False} , { "BattleResultWaitAction" : 1.00000} , { "BattleResultChangeMusic" : "In_scene_00.wav", 2.00000, False} , { "BattleResultWaitAction" : 1.00000} , { "BattleResultTalk" : "t1212502_738"} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 1, "btf1212501_01_03", "飞鱿已登场"} , { "BattleFactorTargetHp" : 2, 5, "in03010"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1212502_600"} , { "BattleResultAddBuff" : True, "in0206", "", False} , { "BattleResultTalk" : "t1212502_603"} , { "BattleResultAddUnits" : "io26124102,io26104102,io26143101,io26143102,io26143103,io26143104,io26143105,io26143106,io26143107,io26143108,io26143109,io26143110", 1, "107107214,105109214,104200204,101103204,200106206,108200208,110102212,102108210,106107213,202109207,109203206,109105214"} , { "BattleResultUnitToUnit" : "io26124102", "in0206"} , { "BattleResultUnitToUnit" : "io26104102", "in0206"} , { "BattleResultTalk" : "t1212502_614"} , { "BattleResultUnitToUnit" : "in03009", "in21006"} , { "BattleResultTalk" : "t1212502_621"} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_632"} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultTalk" : "t1212502_634"} , { "BattleResultPlayAction" : "in21006", "skill_MA1101_b01", 0.00000} , { "BattleResultUnitHP" : 2, 100, "in03009"} , { "BattleResultChangeMusic" : "In_mood_16.wav", 1.00000, False} , { "BattleResultTalk" : "t1212502_640"} , { "BattleResultUnitHP" : 1, 100, "in21006"} , { "BattleResultAddBuff" : True, "in21006", "", True} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultTalk" : "t1212502_646"} , { "BattleResultPlayAction" : "in0206", "skill_MA0502_c02", 0.00000} , { "BattleResultUnitHP" : 2, 100, "io26124102,io26104102"} , { "BattleResultTalk" : "t1212502_651"} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultTalk" : "t1212502_700"} , { "BattleResultAddBuff" : True, "in03010", "", True} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultTalk" : "t1212502_703"} , { "BattleResultUnitToUnit" : "in0105", "in03010"} , { "BattleResultPlayAction" : "in0105", "skill_MA0905_a01", 0.00000} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultUnitHP" : 2, 100, "in03010"} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultTalk" : "t1212502_707"} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_714"} , { "BattleResultChangeMusic" : "In_mood_18.wav", 1.00000, False} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_719"} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_725"} , { "BattleResultWaitAction" : 0.50000} , { "BattleResultTalk" : "t1212502_733"} , { "BattleResultRemoveUnits" : "Player,in0105,party01,party02,party03,in15005,in15111,in15102,in15141,in15173,in19001,in91001,in05371,in15131,in15132", False} , { "BattleResultWaitAction" : 1.00000} , { "BattleResultTalk" : "t1212502_746"} , { "BattleResultAddBuff" : True, "in53001", "", True} , { "BattleResultRemoveUnit" : "in53001", False} , { "BattleResultWaitAction" : 0.75000} , { "BattleResultTalk" : "t1212502_754"} , { "BattleResultAddBuff" : True, "io531453", "", True} , { "BattleResultRemoveUnit" : "io531453", False} , { "BattleResultWaitAction" : 1.00000} , { "BattleResultChangeMusic" : "In_scene_00.wav", 2.00000, False} , { "BattleResultWaitAction" : 1.00000} , { "BattleResultTalk" : "t1212502_738"} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "Player"} , { "ExecuteOnceNode" } , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in0105"} , { "ExecuteOnceNode" } , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "BattleFactorGlobalFlag" : 0, 0, "fe5201119_2_02", "五老山人是否登场"} , { "ExecuteOnceNode" } , { "BattleResultAddUnit" : "in05371", 2, 104208104, 1.00000, 0.00000}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "BattleFactorGlobalFlag" : 1, 6, "fe1201102_2_107", "只有阿七回来"} , { "ExecuteOnceNode" } , { "BattleResultAddUnit" : "in15131", 2, 220102118, 1.00000, 0.00000} , { "BattleResultAddBuff" : False, "in15131", "bt1212501_01_debuff_Power50", False}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "BattleFactorGlobalFlag" : 1, 5, "fe1201102_2_107", "阿七和老黑一起回来"} , { "ExecuteOnceNode" } , { "BattleResultAddUnit" : "in15131", 2, 220102118, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in15132", 2, 218101117, 1.00000, 0.00000} , { "BattleResultAddBuff" : False, "in15131,in15132", "bt1212501_01_debuff_Power50", False}  ]}  ]}  ]} 	火烧重岩村_救援村民战_女凌无绝	Defeat all Righteous Sect Members who are attacking the villagers.	{name_1}{name_2} or Shi Kun is defeated.
+{
+  "Id": "bs1212501_01",
+  "Name": "bs1212501_01",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Prallel": -1,
+      "Child": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnits\" : \"Player,in0105,party01,party02,party03\", 0, \"206208114,208206114,206210116,208208116,210206116\"} ",
+      "Next": 2,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnits\" : \"io221045,io221144,io221244\", 1, \"205205110,202206108,206202108\"} ",
+      "Next": 3,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnits\" : \"io481213,io481413,io491015,io491115,io481223,io421111,io491315,io421012,io421211,io421112\", 1, \"114211203,116210206,111205206,109202207,203112209,208115207,210110200,210107103,218104114,218102116\"} ",
+      "Next": 4,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultAddUnits\" : \"io521331,io521433,io521233,io521431,io521031\", 2, \"117213204,112203209,205115210,221105116,212111101\"} ",
+      "Next": 5,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleResultAddUnit\" : \"in22001\", 1, 105104209, 1.00000, 0.00000} ",
+      "Next": 6,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleResultAddUnit\" : \"in39001\", 1, 103106209, 1.00000, 0.00000} ",
+      "Next": 7,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleResultAddUnits\" : \"in15102,in15141,in15173,in19001\", 4, \"114203211,205117212,213111102,224109115\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 9,
+      "Prallel": -1,
+      "Child": [
+        9
+      ]
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 10,
+      "Prallel": -1,
+      "Child": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 11,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 12,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_200\"} ",
+      "Next": 13,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 14,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_205\"} ",
+      "Next": 15,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in39001\", \"\", True} ",
+      "Next": 16,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in39001\", False} ",
+      "Next": 17,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 18,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_212\"} ",
+      "Next": 19,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 20,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_214\"} ",
+      "Next": 21,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in22001\", \"104104208\"} ",
+      "Next": 22,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_219\"} ",
+      "Next": 23,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_battle_21.wav\", 2.00000, False} ",
+      "Next": 24,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_235\"} ",
+      "Next": 25,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in22001\", \"bt1212501_01_debuff_NoMove\", False} ",
+      "Next": 26,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"io261341\", \"bt1212501_01_buff_HpLock01\", True} ",
+      "Next": 27,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"io521331,io521433,io521233,io521431,io521031\", \"bt1212501_01_debuff_Attack75\", False} ",
+      "Next": 28,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"io221045,io221144,io221244\", \"bt1212501_01_debuff_Power75\", False} ",
+      "Next": 29,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in15102\", \"bt1212501_01_buff_HpLock01\", True} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleEventNode\" : 210, 0, [ ]} ",
+      "Next": 31,
+      "Prallel": -1,
+      "Child": [
+        31
+      ]
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 32,
+      "Prallel": -1,
+      "Child": [
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53
+      ]
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleFactorTurn\" : 1, 1} ",
+      "Next": 33,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 34,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleResultAddUnits\" : \"io261041,io261141\", 3, \"110106216,110104214\"} ",
+      "Next": 35,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_238\"} ",
+      "Next": 36,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"BattleResultAddUnits\" : \"io261341,io261241\", 3, \"106110216,104110214\"} ",
+      "Next": 37,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_239\"} ",
+      "Next": 38,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleResultAddUnit\" : \"in210091\", 3, 108108216, 1.00000, 0.00000} ",
+      "Next": 39,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in210091\", \"\", True} ",
+      "Next": 40,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_240\"} ",
+      "Next": 41,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in22001\", \"105105210\"} ",
+      "Next": 42,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_247\"} ",
+      "Next": 43,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"BattleResultAddUnits\" : \"io221055,io221344,io221444\", 1, \"106106212,107104211,104107211\"} ",
+      "Next": 44,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_251\"} ",
+      "Next": 45,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 46,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_252\"} ",
+      "Next": 47,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in22001\", \"bt1212501_01_debuff_NoMove\"} ",
+      "Next": 48,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in210091\", \"bt1212501_01_debuff_LingPower75\", False} ",
+      "Next": 49,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"io261041,io261141,io261341,io261241\", \"bt1212501_01_buff_ZombiePower\", True} ",
+      "Next": 50,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"io261041,io261141,io261341,io261241\", \"bt1212501_01_debuff_Power75\", False} ",
+      "Next": 51,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 51,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"io221055,io221344,io221444\", \"bt1212501_01_debuff_Power75\", False} ",
+      "Next": 52,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 52,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io261341\", \"bt1212501_01_buff_HpLock01\", True} ",
+      "Next": 53,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 53,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1212501_01_00\", 0, 1, \"主角下达指示\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 54,
+      "Node": "{ \"BattleEventNode\" : 210, 0, [ ]} ",
+      "Next": 55,
+      "Prallel": -1,
+      "Child": [
+        55
+      ]
+    },
+    {
+      "Index": 55,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 56,
+      "Prallel": -1,
+      "Child": [
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65
+      ]
+    },
+    {
+      "Index": 56,
+      "Node": "{ \"BattleFactorTurn\" : 1, 2} ",
+      "Next": 57,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 57,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 58,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 58,
+      "Node": "{ \"BattleResultAddUnits\" : \"in53001\", 3, \"215118203\"} ",
+      "Next": 59,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 59,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in53001\", \"212115203\"} ",
+      "Next": 60,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 60,
+      "Node": "{ \"BattleResultAddUnits\" : \"io531453\", 3, \"215119204\"} ",
+      "Next": 61,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 61,
+      "Node": "{ \"BattleResultMoveUnit\" : \"io531453\", \"212116204\"} ",
+      "Next": 62,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 62,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_300\"} ",
+      "Next": 63,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 63,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 64,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 64,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_307\"} ",
+      "Next": 65,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 65,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1212501_01_01\", 0, 1, \"沐璎加入战场，开始判定夏校胜负\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 66,
+      "Node": "{ \"BattleEventNode\" : 210, 0, [ ]} ",
+      "Next": 67,
+      "Prallel": -1,
+      "Child": [
+        67
+      ]
+    },
+    {
+      "Index": 67,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 68,
+      "Prallel": -1,
+      "Child": [
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74
+      ]
+    },
+    {
+      "Index": 68,
+      "Node": "{ \"BattleFactorTurn\" : 1, 2} ",
+      "Next": 69,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 69,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1212501_01_01\", \"\"} ",
+      "Next": 70,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 70,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_71\", \"夏校比武战中主角等人战胜沐璎\"} ",
+      "Next": 71,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 71,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 72,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 72,
+      "Node": "{ \"BattlChanageFaction\" : 2, \"in53001\"} ",
+      "Next": 73,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 73,
+      "Node": "{ \"BattlChanageFaction\" : 2, \"io531453\"} ",
+      "Next": 74,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 74,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in53001,io531453\", \"bt1212501_01_debuff_SwordManPower75\", True} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 75,
+      "Node": "{ \"BattleEventNode\" : 210, 0, [ ]} ",
+      "Next": 76,
+      "Prallel": -1,
+      "Child": [
+        76
+      ]
+    },
+    {
+      "Index": 76,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 77,
+      "Prallel": -1,
+      "Child": [
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83
+      ]
+    },
+    {
+      "Index": 77,
+      "Node": "{ \"BattleFactorTurn\" : 1, 2} ",
+      "Next": 78,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 78,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1212501_01_01\", \"\"} ",
+      "Next": 79,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 79,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 2, \"fe1205501_2_71\", \"夏校比武战中主角等人败给沐璎\"} ",
+      "Next": 80,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 80,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 81,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 81,
+      "Node": "{ \"BattlChanageFaction\" : 1, \"in53001\"} ",
+      "Next": 82,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 82,
+      "Node": "{ \"BattlChanageFaction\" : 1, \"io531453\"} ",
+      "Next": 83,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 83,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in53001,io531453\", \"bt1212501_01_debuff_SwordManPower75\", True} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 84,
+      "Node": "{ \"BattleEventNode\" : 210, 0, [ ]} ",
+      "Next": 85,
+      "Prallel": -1,
+      "Child": [
+        85
+      ]
+    },
+    {
+      "Index": 85,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 86,
+      "Prallel": -1,
+      "Child": [
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121,
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129
+      ]
+    },
+    {
+      "Index": 86,
+      "Node": "{ \"BattleFactorTurn\" : 1, 3} ",
+      "Next": 87,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 87,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 88,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 88,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_400\"} ",
+      "Next": 89,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 89,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in22001\", \"103103206\"} ",
+      "Next": 90,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 90,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in22001\", \"103104207\"} ",
+      "Next": 91,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 91,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_402\"} ",
+      "Next": 92,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 92,
+      "Node": "{ \"BattleResultPlayAction\" : \"in210091\", \"skill_MA0305_b03a\", 0.00000} ",
+      "Next": 93,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 93,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in210091\", \"\", True} ",
+      "Next": 94,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 94,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in210091\", False} ",
+      "Next": 95,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 95,
+      "Node": "{ \"BattleResultAddUnit\" : \"in210091\", 3, 103105208, 1.00000, 0.00000} ",
+      "Next": 96,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 96,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in210091\", \"\", True} ",
+      "Next": 97,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 97,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 98,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 98,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_405\"} ",
+      "Next": 99,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 99,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 100,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 100,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_409\"} ",
+      "Next": 101,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 101,
+      "Node": "{ \"BattleResultPlayAction\" : \"in210091\", \"skill_MA0303_b01\", 0.00000} ",
+      "Next": 102,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 102,
+      "Node": "{ \"BattleResultUnitHP\" : 2, 50, \"in22001\"} ",
+      "Next": 103,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 103,
+      "Node": "{ \"BattleResultPlayAction\" : \"in22001\", \"m_both_bighurt00\", 0.00000} ",
+      "Next": 104,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 104,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_412\"} ",
+      "Next": 105,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 105,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in22001,io221045,io221144,io221244,io221055,io221344,io221444\", \"\", False} ",
+      "Next": 106,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 106,
+      "Node": "{ \"BattleResultRemoveUnits\" : \"in22001,io221045,io221144,io221244,io221055,io221344,io221444\", False} ",
+      "Next": 107,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 107,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 108,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 108,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_422\"} ",
+      "Next": 109,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 109,
+      "Node": "{ \"BattleResultUnitToUnit\" : \"io261341\", \"in15102\"} ",
+      "Next": 110,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 110,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_428\"} ",
+      "Next": 111,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 111,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io261341\", \"\", True} ",
+      "Next": 112,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 112,
+      "Node": "{ \"BattleResultRemoveUnits\" : \"io261341,in15102\", False} ",
+      "Next": 113,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 113,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 114,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 114,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_431\"} ",
+      "Next": 115,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 115,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 116,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 116,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_440\"} ",
+      "Next": 117,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 117,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 118,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 118,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_445\"} ",
+      "Next": 119,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 119,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in210091\", \"\", True} ",
+      "Next": 120,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 120,
+      "Node": "{ \"BattleResultrReplaceUnit\" : \"in210091\", \"in21009\", 1.00000, 0.00000} ",
+      "Next": 121,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 121,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_battle_22.wav\", 1.00000, False} ",
+      "Next": 122,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 122,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 123,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 123,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_451\"} ",
+      "Next": 124,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 124,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 125,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 125,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_464\"} ",
+      "Next": 126,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 126,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in21009\", \"bt1212501_01_debuff_LingPower75\", True} ",
+      "Next": 127,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 127,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in21009\", \"bt1212501_01_buff_HpLock50\", True} ",
+      "Next": 128,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 128,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"将阿凌的气血削减至五成，并Defeat all righteous sect disciples attacking the villagers!\"} ",
+      "Next": 129,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 129,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1212501_01_02\", 0, 1, \"阿凌登场\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 130,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 131,
+      "Prallel": -1,
+      "Child": [
+        131
+      ]
+    },
+    {
+      "Index": 131,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 132,
+      "Prallel": -1,
+      "Child": [
+        132,
+        133,
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151,
+        152,
+        153,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161,
+        162,
+        163,
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        184,
+        185,
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194,
+        195,
+        196,
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        515,
+        211
+      ]
+    },
+    {
+      "Index": 132,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1212501_01_02\", \"阿凌已登场\"} ",
+      "Next": 133,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 133,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 50, \"in21009\"} ",
+      "Next": 134,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 134,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 135,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 135,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_500\"} ",
+      "Next": 136,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 136,
+      "Node": "{ \"BattleResultAddUnits\" : \"in15005,in15111\", 2, \"214122208,214123209\"} ",
+      "Next": 137,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 137,
+      "Node": "{ \"BattleResultAddUnit\" : \"io481463\", 1, 213120207, 1.00000, 0.00000} ",
+      "Next": 138,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 138,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_506\"} ",
+      "Next": 139,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 139,
+      "Node": "{ \"BattleResultAddUnit\" : \"in15006_01\", 2, 128104232, 1.00000, 0.00000} ",
+      "Next": 140,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 140,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in15006_01\", \"118105223\"} ",
+      "Next": 141,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 141,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_510\"} ",
+      "Next": 142,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 142,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05576\", 1, 120114234, 1.00000, 0.00000} ",
+      "Next": 143,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 143,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in05576\", \"118108226\"} ",
+      "Next": 144,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 144,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_513\"} ",
+      "Next": 145,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 145,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in21009\", \"\", True} ",
+      "Next": 146,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 146,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in21009\", False} ",
+      "Next": 147,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 147,
+      "Node": "{ \"BattleResultAddUnit\" : \"in21009\", 3, 117109226, 1.00000, 0.00000} ",
+      "Next": 148,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 148,
+      "Node": "{ \"BattleResultUnitHP\" : 2, 50, \"in21009\"} ",
+      "Next": 149,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 149,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in21009\", \"\", True} ",
+      "Next": 150,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 150,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_517\"} ",
+      "Next": 151,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 151,
+      "Node": "{ \"BattleResultPlayAction\" : \"in21009\", \"skill_MA0301_a03\", 0.00000} ",
+      "Next": 152,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 152,
+      "Node": "{ \"BattleResultUnitHP\" : 2, 100, \"in05576\"} ",
+      "Next": 153,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 153,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_519\"} ",
+      "Next": 154,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 154,
+      "Node": "{ \"BattleResultUnitToUnit\" : \"Player\", \"io481463\"} ",
+      "Next": 155,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 155,
+      "Node": "{ \"BattleResultPlayAction\" : \"Player\", \"skill_MA0001_a02\", 0.00000} ",
+      "Next": 156,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 156,
+      "Node": "{ \"BattleResultUnitHP\" : 2, 50, \"io481463\"} ",
+      "Next": 157,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 157,
+      "Node": "{ \"BattleResultPlayAction\" : \"io481463\", \"m_single_hurt00\", 0.00000} ",
+      "Next": 158,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 158,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_524\"} ",
+      "Next": 159,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 159,
+      "Node": "{ \"BattleResultAddUnit\" : \"in21006\", 3, 107108215, 1.00000, 0.00000} ",
+      "Next": 160,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 160,
+      "Node": "{ \"BattleResultAddUnits\" : \"io26104101,io26114101,io26134101,io26124101\", 3, \"109107216,106110216,111106217,105112217\"} ",
+      "Next": 161,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 161,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in21006\", \"\", True} ",
+      "Next": 162,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 162,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_527\"} ",
+      "Next": 163,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 163,
+      "Node": "{ \"BattleResultUnitToUnit\" : \"in21009\", \"in15006_01\"} ",
+      "Next": 164,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 164,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 165,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 165,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_532\"} ",
+      "Next": 166,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 166,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in21009\", \"\", True} ",
+      "Next": 167,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 167,
+      "Node": "{ \"BattleResultRemoveUnits\" : \"in21009,in15006_01\", False} ",
+      "Next": 168,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 168,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 169,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 169,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_544\"} ",
+      "Next": 170,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 170,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io481213,io481413,io491015,io491115,io481223,io421111,io491315,io421012,io421211,io421112,io481463\", \"\", False} ",
+      "Next": 171,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 171,
+      "Node": "{ \"BattleResultRemoveUnits\" : \"io481213,io481413,io491015,io491115,io481223,io421111,io491315,io421012,io421211,io421112,io481463\", False} ",
+      "Next": 172,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 172,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 173,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 173,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_549\"} ",
+      "Next": 174,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 174,
+      "Node": "{ \"BattleResultAddUnits\" : \"in0206,in03010,in03009\", 2, \"104104208,105102207,102105207\"} ",
+      "Next": 175,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 175,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0206,in03010,in03009\", \"\", True} ",
+      "Next": 176,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 176,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 177,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 177,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_553\"} ",
+      "Next": 178,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 178,
+      "Node": "{ \"BattleResultExitPoint\" : \"209212121,210211121,211210121,212209121\"} ",
+      "Next": 179,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 179,
+      "Node": "{ \"BattlChanageAItype\" : 3, \"in15005\"} ",
+      "Next": 180,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 180,
+      "Node": "{ \"BattlChanageAItype\" : 3, \"in15111\"} ",
+      "Next": 181,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 181,
+      "Node": "{ \"BattlChanageAItype\" : 3, \"in15141\"} ",
+      "Next": 182,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 182,
+      "Node": "{ \"BattlChanageAItype\" : 3, \"in15173\"} ",
+      "Next": 183,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 183,
+      "Node": "{ \"BattlChanageAItype\" : 3, \"in19001\"} ",
+      "Next": 184,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 184,
+      "Node": "{ \"BattlChanageFaction\" : 2, \"in15005\"} ",
+      "Next": 185,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 185,
+      "Node": "{ \"BattlChanageFaction\" : 2, \"in15111\"} ",
+      "Next": 186,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 186,
+      "Node": "{ \"BattlChanageFaction\" : 2, \"in15141\"} ",
+      "Next": 187,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 187,
+      "Node": "{ \"BattlChanageFaction\" : 2, \"in15173\"} ",
+      "Next": 188,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 188,
+      "Node": "{ \"BattlChanageFaction\" : 2, \"in19001\"} ",
+      "Next": 189,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 189,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_563\"} ",
+      "Next": 190,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 190,
+      "Node": "{ \"BattlChanageFaction\" : 1, \"in21006\"} ",
+      "Next": 191,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 191,
+      "Node": "{ \"BattlChanageFaction\" : 1, \"io26104101\"} ",
+      "Next": 192,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 192,
+      "Node": "{ \"BattlChanageFaction\" : 1, \"io26114101\"} ",
+      "Next": 193,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 193,
+      "Node": "{ \"BattlChanageFaction\" : 1, \"io26134101\"} ",
+      "Next": 194,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 194,
+      "Node": "{ \"BattlChanageFaction\" : 1, \"io26124101\"} ",
+      "Next": 195,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 195,
+      "Node": "{ \"BattlChanageFaction\" : 1, \"io261041\"} ",
+      "Next": 196,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 196,
+      "Node": "{ \"BattlChanageFaction\" : 1, \"io261141\"} ",
+      "Next": 197,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 197,
+      "Node": "{ \"BattlChanageFaction\" : 1, \"io261341\"} ",
+      "Next": 198,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 198,
+      "Node": "{ \"BattlChanageFaction\" : 1, \"io261241\"} ",
+      "Next": 199,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 199,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in21006,io26104101,io26114101,io26134101,io26124101\", \"bt1212501_01_buff_ZombiePower02\", True} ",
+      "Next": 200,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 200,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in0206,in03010,in03009\", \"bt1212501_01_buff_TangTeamPowerUp\", True} ",
+      "Next": 201,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 201,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in21006\", \"bt1212501_01_buff_HpLock50\", True} ",
+      "Next": 202,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 202,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in0206,in03009,in03010\", \"bt1212501_01_buff_HpLock01\", True} ",
+      "Next": 203,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 203,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 204,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 204,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_585\"} ",
+      "Next": 205,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 205,
+      "Node": "{ \"BattleResultAddUnits\" : \"io261431,io261131,in05566,in05567\", 1, \"202205107,205202107,201207108,207201108\"} ",
+      "Next": 206,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 206,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io261431,io261131,in05566,in05567\", \"bt1212501_01_buff_ZombiePower\", True} ",
+      "Next": 207,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 207,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"io261431,io261131,in05566,in05567\", \"bt1212501_01_debuff_Attack75\", False} ",
+      "Next": 208,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 208,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_586\"} ",
+      "Next": 209,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 209,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Flying Squid!\"} ",
+      "Next": 210,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 210,
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1}{name_2}、石崑、唐韵、上官彦或Tang Sanchang is defeated\"} ",
+      "Next": 515,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 211,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1212501_01_03\", 0, 1, \"飞鱿登场\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 212,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 213,
+      "Prallel": -1,
+      "Child": [
+        213
+      ]
+    },
+    {
+      "Index": 213,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 214,
+      "Prallel": -1,
+      "Child": [
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235,
+        236,
+        237,
+        238,
+        239,
+        240,
+        241,
+        242,
+        243,
+        244,
+        245,
+        246,
+        247,
+        248,
+        249,
+        250,
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        273
+      ]
+    },
+    {
+      "Index": 214,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1212501_01_03\", \"飞鱿已登场\"} ",
+      "Next": 215,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 215,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 75, \"in21006\"} ",
+      "Next": 216,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 216,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 217,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 217,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_600\"} ",
+      "Next": 218,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 218,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0206\", \"\", False} ",
+      "Next": 219,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 219,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_603\"} ",
+      "Next": 220,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 220,
+      "Node": "{ \"BattleResultAddUnits\" : \"io26124102,io26104102,io26143101,io26143102,io26143103,io26143104,io26143105,io26143106,io26143107,io26143108\", 1, \"107107214,105109214,104200204,101103204,200106206,108200208,110102212,102108210,106107213,202109207\"} ",
+      "Next": 221,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 221,
+      "Node": "{ \"BattleResultUnitToUnit\" : \"io26124102\", \"in0206\"} ",
+      "Next": 222,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 222,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_614\"} ",
+      "Next": 223,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 223,
+      "Node": "{ \"BattleResultUnitToUnit\" : \"in03009\", \"in21006\"} ",
+      "Next": 224,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 224,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_621\"} ",
+      "Next": 225,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 225,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 226,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 226,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_632\"} ",
+      "Next": 227,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 227,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 228,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 228,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_634\"} ",
+      "Next": 229,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 229,
+      "Node": "{ \"BattleResultPlayAction\" : \"in21006\", \"skill_MA1101_b01\", 0.00000} ",
+      "Next": 230,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 230,
+      "Node": "{ \"BattleResultUnitHP\" : 2, 100, \"in03009\"} ",
+      "Next": 231,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 231,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_mood_16.wav\", 1.00000, False} ",
+      "Next": 232,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 232,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_640\"} ",
+      "Next": 233,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 233,
+      "Node": "{ \"BattleResultUnitHP\" : 1, 100, \"in21006\"} ",
+      "Next": 234,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 234,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in21006\", \"\", True} ",
+      "Next": 235,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 235,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 236,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 236,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_646\"} ",
+      "Next": 237,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 237,
+      "Node": "{ \"BattleResultPlayAction\" : \"in0206\", \"skill_MA0502_c02\", 0.00000} ",
+      "Next": 238,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 238,
+      "Node": "{ \"BattleResultUnitHP\" : 2, 100, \"io26124102\"} ",
+      "Next": 239,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 239,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_651\"} ",
+      "Next": 240,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 240,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 241,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 241,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_700\"} ",
+      "Next": 242,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 242,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in03010\", \"\", True} ",
+      "Next": 243,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 243,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 244,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 244,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_703\"} ",
+      "Next": 245,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 245,
+      "Node": "{ \"BattleResultUnitToUnit\" : \"in0105\", \"in03010\"} ",
+      "Next": 246,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 246,
+      "Node": "{ \"BattleResultPlayAction\" : \"in0105\", \"skill_MA0905_a01\", 0.00000} ",
+      "Next": 247,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 247,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 248,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 248,
+      "Node": "{ \"BattleResultUnitHP\" : 2, 100, \"in03010\"} ",
+      "Next": 249,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 249,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 250,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 250,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_707\"} ",
+      "Next": 251,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 251,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 252,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 252,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_714\"} ",
+      "Next": 253,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 253,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_mood_18.wav\", 1.00000, False} ",
+      "Next": 254,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 254,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 255,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 255,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_719\"} ",
+      "Next": 256,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 256,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 257,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 257,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_725\"} ",
+      "Next": 258,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 258,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 259,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 259,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_733\"} ",
+      "Next": 260,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 260,
+      "Node": "{ \"BattleResultRemoveUnits\" : \"Player,in0105,party01,party02,party03,in15005,in15111,in15102,in15141,in15173,in19001,in91001\", False} ",
+      "Next": 261,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 261,
+      "Node": "{ \"BattleResultWaitAction\" : 1.00000} ",
+      "Next": 262,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 262,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_746\"} ",
+      "Next": 263,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 263,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in53001\", \"\", True} ",
+      "Next": 264,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 264,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in53001\", False} ",
+      "Next": 265,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 265,
+      "Node": "{ \"BattleResultWaitAction\" : 0.75000} ",
+      "Next": 266,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 266,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_754\"} ",
+      "Next": 267,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 267,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io531453\", \"\", True} ",
+      "Next": 268,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 268,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"io531453\", False} ",
+      "Next": 269,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 269,
+      "Node": "{ \"BattleResultWaitAction\" : 1.00000} ",
+      "Next": 270,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 270,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_scene_00.wav\", 2.00000, False} ",
+      "Next": 271,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 271,
+      "Node": "{ \"BattleResultWaitAction\" : 1.00000} ",
+      "Next": 272,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 272,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_738\"} ",
+      "Next": 273,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 273,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 274,
+      "Node": "{ \"BattleEventNode\" : 210, 0, [ ]} ",
+      "Next": 275,
+      "Prallel": -1,
+      "Child": [
+        275
+      ]
+    },
+    {
+      "Index": 275,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 276,
+      "Prallel": -1,
+      "Child": [
+        276,
+        277,
+        278,
+        279,
+        280
+      ]
+    },
+    {
+      "Index": 276,
+      "Node": "{ \"BattleFactorTurn\" : 1, 1} ",
+      "Next": 277,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 277,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1212501_01_00\", \"主角下达指示後\"} ",
+      "Next": 278,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 278,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1212502_2_01\", \"以强攻前进\"} ",
+      "Next": 279,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 279,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 280,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 280,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"Player,in0105,party01,party02,party03\", \"bt1212501_01_buff_TeamAttackUp\", True} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 281,
+      "Node": "{ \"BattleEventNode\" : 210, 0, [ ]} ",
+      "Next": 282,
+      "Prallel": -1,
+      "Child": [
+        282
+      ]
+    },
+    {
+      "Index": 282,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 283,
+      "Prallel": -1,
+      "Child": [
+        283,
+        284,
+        285,
+        286,
+        287
+      ]
+    },
+    {
+      "Index": 283,
+      "Node": "{ \"BattleFactorTurn\" : 1, 1} ",
+      "Next": 284,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 284,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1212501_01_00\", \"主角下达指示後\"} ",
+      "Next": 285,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 285,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 2, \"fe1212502_2_01\", \"以固守前进\"} ",
+      "Next": 286,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 286,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 287,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 287,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"Player,in0105,party01,party02,party03\", \"bt1212501_01_buff_TeamDefenceUp\", True} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 288,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 289,
+      "Prallel": -1,
+      "Child": [
+        289
+      ]
+    },
+    {
+      "Index": 289,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 290,
+      "Prallel": -1,
+      "Child": [
+        290,
+        291,
+        292,
+        293,
+        294,
+        295,
+        296,
+        297
+      ]
+    },
+    {
+      "Index": 290,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1212501_01_02\", \"阿凌已登场\"} ",
+      "Next": 291,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 291,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 50, \"in21009\"} ",
+      "Next": 292,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 292,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1212501_01_03\", \"飞鱿登场後，若沐璎为敌方AI，则转为中立AI\"} ",
+      "Next": 293,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 293,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 2, \"fe1205501_2_71\", \"夏校比武战中主角等人败给沐璎\"} ",
+      "Next": 294,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 294,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 295,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 295,
+      "Node": "{ \"BattlChanageFaction\" : 2, \"in53001\"} ",
+      "Next": 296,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 296,
+      "Node": "{ \"BattlChanageFaction\" : 2, \"io531453\"} ",
+      "Next": 297,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 297,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in53001,io531453\", \"bt1212501_01_debuff_SwordManPower75\", True} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 298,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 299,
+      "Prallel": -1,
+      "Child": [
+        299
+      ]
+    },
+    {
+      "Index": 299,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 300,
+      "Prallel": -1,
+      "Child": [
+        300,
+        301,
+        302,
+        303,
+        304,
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314,
+        315,
+        316,
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326,
+        327,
+        328,
+        329,
+        330,
+        331,
+        332,
+        333,
+        334,
+        335,
+        336,
+        337,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345,
+        346,
+        347,
+        348,
+        349,
+        350,
+        351,
+        352,
+        353,
+        354,
+        355,
+        356,
+        357,
+        358,
+        359
+      ]
+    },
+    {
+      "Index": 300,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1212501_01_03\", \"飞鱿已登场\"} ",
+      "Next": 301,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 301,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 55, \"in0206\"} ",
+      "Next": 302,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 302,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 303,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 303,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_600\"} ",
+      "Next": 304,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 304,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0206\", \"\", False} ",
+      "Next": 305,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 305,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_603\"} ",
+      "Next": 306,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 306,
+      "Node": "{ \"BattleResultAddUnits\" : \"io26124102,io26104102,io26143101,io26143102,io26143103,io26143104,io26143105,io26143106,io26143107,io26143108\", 1, \"107107214,105109214,104200204,101103204,200106206,108200208,110102212,102108210,106107213,202109207\"} ",
+      "Next": 307,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 307,
+      "Node": "{ \"BattleResultUnitToUnit\" : \"io26124102\", \"in0206\"} ",
+      "Next": 308,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 308,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_614\"} ",
+      "Next": 309,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 309,
+      "Node": "{ \"BattleResultUnitToUnit\" : \"in03009\", \"in21006\"} ",
+      "Next": 310,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 310,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_621\"} ",
+      "Next": 311,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 311,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 312,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 312,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_632\"} ",
+      "Next": 313,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 313,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 314,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 314,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_634\"} ",
+      "Next": 315,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 315,
+      "Node": "{ \"BattleResultPlayAction\" : \"in21006\", \"skill_MA1101_b01\", 0.00000} ",
+      "Next": 316,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 316,
+      "Node": "{ \"BattleResultUnitHP\" : 2, 100, \"in03009\"} ",
+      "Next": 317,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 317,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_mood_16.wav\", 1.00000, False} ",
+      "Next": 318,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 318,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_640\"} ",
+      "Next": 319,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 319,
+      "Node": "{ \"BattleResultUnitHP\" : 1, 100, \"in21006\"} ",
+      "Next": 320,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 320,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in21006\", \"\", True} ",
+      "Next": 321,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 321,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 322,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 322,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_646\"} ",
+      "Next": 323,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 323,
+      "Node": "{ \"BattleResultPlayAction\" : \"in0206\", \"skill_MA0502_c02\", 0.00000} ",
+      "Next": 324,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 324,
+      "Node": "{ \"BattleResultUnitHP\" : 2, 100, \"io26124102\"} ",
+      "Next": 325,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 325,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_651\"} ",
+      "Next": 326,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 326,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 327,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 327,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_700\"} ",
+      "Next": 328,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 328,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in03010\", \"\", True} ",
+      "Next": 329,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 329,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 330,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 330,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_703\"} ",
+      "Next": 331,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 331,
+      "Node": "{ \"BattleResultUnitToUnit\" : \"in0105\", \"in03010\"} ",
+      "Next": 332,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 332,
+      "Node": "{ \"BattleResultPlayAction\" : \"in0105\", \"skill_MA0905_a01\", 0.00000} ",
+      "Next": 333,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 333,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 334,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 334,
+      "Node": "{ \"BattleResultUnitHP\" : 2, 100, \"in03010\"} ",
+      "Next": 335,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 335,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 336,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 336,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_707\"} ",
+      "Next": 337,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 337,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 338,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 338,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_714\"} ",
+      "Next": 339,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 339,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_mood_18.wav\", 1.00000, False} ",
+      "Next": 340,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 340,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 341,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 341,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_719\"} ",
+      "Next": 342,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 342,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 343,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 343,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_725\"} ",
+      "Next": 344,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 344,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 345,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 345,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_733\"} ",
+      "Next": 346,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 346,
+      "Node": "{ \"BattleResultRemoveUnits\" : \"Player,in0105,party01,party02,party03,in15005,in15111,in15102,in15141,in15173,in19001,in91001,in05371,in15131,in15132\", False} ",
+      "Next": 347,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 347,
+      "Node": "{ \"BattleResultWaitAction\" : 1.00000} ",
+      "Next": 348,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 348,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_746\"} ",
+      "Next": 349,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 349,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in53001\", \"\", True} ",
+      "Next": 350,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 350,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in53001\", False} ",
+      "Next": 351,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 351,
+      "Node": "{ \"BattleResultWaitAction\" : 0.75000} ",
+      "Next": 352,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 352,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_754\"} ",
+      "Next": 353,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 353,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io531453\", \"\", True} ",
+      "Next": 354,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 354,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"io531453\", False} ",
+      "Next": 355,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 355,
+      "Node": "{ \"BattleResultWaitAction\" : 1.00000} ",
+      "Next": 356,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 356,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_scene_00.wav\", 2.00000, False} ",
+      "Next": 357,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 357,
+      "Node": "{ \"BattleResultWaitAction\" : 1.00000} ",
+      "Next": 358,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 358,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_738\"} ",
+      "Next": 359,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 359,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 360,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 361,
+      "Prallel": -1,
+      "Child": [
+        361
+      ]
+    },
+    {
+      "Index": 361,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 362,
+      "Prallel": -1,
+      "Child": [
+        362,
+        363,
+        364,
+        365,
+        366,
+        367,
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374,
+        375,
+        376,
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385,
+        386,
+        387,
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396,
+        397,
+        398,
+        399,
+        400,
+        401,
+        402,
+        403,
+        404,
+        405,
+        406,
+        407,
+        408,
+        409,
+        410,
+        411,
+        412,
+        413,
+        414,
+        415,
+        416,
+        417,
+        418,
+        419,
+        420,
+        421
+      ]
+    },
+    {
+      "Index": 362,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1212501_01_03\", \"飞鱿已登场\"} ",
+      "Next": 363,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 363,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 55, \"in03009\"} ",
+      "Next": 364,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 364,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 365,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 365,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_600\"} ",
+      "Next": 366,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 366,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0206\", \"\", False} ",
+      "Next": 367,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 367,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_603\"} ",
+      "Next": 368,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 368,
+      "Node": "{ \"BattleResultAddUnits\" : \"io26124102,io26104102,io26143101,io26143102,io26143103,io26143104,io26143105,io26143106,io26143107,io26143108,io26143109,io26143110\", 1, \"107107214,105109214,104200204,101103204,200106206,108200208,110102212,102108210,106107213,202109207,109203206,109105214\"} ",
+      "Next": 369,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 369,
+      "Node": "{ \"BattleResultUnitToUnit\" : \"io26124102\", \"in0206\"} ",
+      "Next": 370,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 370,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_614\"} ",
+      "Next": 371,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 371,
+      "Node": "{ \"BattleResultUnitToUnit\" : \"in03009\", \"in21006\"} ",
+      "Next": 372,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 372,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_621\"} ",
+      "Next": 373,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 373,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 374,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 374,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_632\"} ",
+      "Next": 375,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 375,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 376,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 376,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_634\"} ",
+      "Next": 377,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 377,
+      "Node": "{ \"BattleResultPlayAction\" : \"in21006\", \"skill_MA1101_b01\", 0.00000} ",
+      "Next": 378,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 378,
+      "Node": "{ \"BattleResultUnitHP\" : 2, 100, \"in03009\"} ",
+      "Next": 379,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 379,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_mood_16.wav\", 1.00000, False} ",
+      "Next": 380,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 380,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_640\"} ",
+      "Next": 381,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 381,
+      "Node": "{ \"BattleResultUnitHP\" : 1, 100, \"in21006\"} ",
+      "Next": 382,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 382,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in21006\", \"\", True} ",
+      "Next": 383,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 383,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 384,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 384,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_646\"} ",
+      "Next": 385,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 385,
+      "Node": "{ \"BattleResultPlayAction\" : \"in0206\", \"skill_MA0502_c02\", 0.00000} ",
+      "Next": 386,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 386,
+      "Node": "{ \"BattleResultUnitHP\" : 2, 100, \"io26124102\"} ",
+      "Next": 387,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 387,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_651\"} ",
+      "Next": 388,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 388,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 389,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 389,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_700\"} ",
+      "Next": 390,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 390,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in03010\", \"\", True} ",
+      "Next": 391,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 391,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 392,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 392,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_703\"} ",
+      "Next": 393,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 393,
+      "Node": "{ \"BattleResultUnitToUnit\" : \"in0105\", \"in03010\"} ",
+      "Next": 394,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 394,
+      "Node": "{ \"BattleResultPlayAction\" : \"in0105\", \"skill_MA0905_a01\", 0.00000} ",
+      "Next": 395,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 395,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 396,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 396,
+      "Node": "{ \"BattleResultUnitHP\" : 2, 100, \"in03010\"} ",
+      "Next": 397,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 397,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 398,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 398,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_707\"} ",
+      "Next": 399,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 399,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 400,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 400,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_714\"} ",
+      "Next": 401,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 401,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_mood_18.wav\", 1.00000, False} ",
+      "Next": 402,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 402,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 403,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 403,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_719\"} ",
+      "Next": 404,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 404,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 405,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 405,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_725\"} ",
+      "Next": 406,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 406,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 407,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 407,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_733\"} ",
+      "Next": 408,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 408,
+      "Node": "{ \"BattleResultRemoveUnits\" : \"Player,in0105,party01,party02,party03,in15005,in15111,in15102,in15141,in15173,in19001,in91001,in05371,in15131,in15132\", False} ",
+      "Next": 409,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 409,
+      "Node": "{ \"BattleResultWaitAction\" : 1.00000} ",
+      "Next": 410,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 410,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_746\"} ",
+      "Next": 411,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 411,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in53001\", \"\", True} ",
+      "Next": 412,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 412,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in53001\", False} ",
+      "Next": 413,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 413,
+      "Node": "{ \"BattleResultWaitAction\" : 0.75000} ",
+      "Next": 414,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 414,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_754\"} ",
+      "Next": 415,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 415,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io531453\", \"\", True} ",
+      "Next": 416,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 416,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"io531453\", False} ",
+      "Next": 417,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 417,
+      "Node": "{ \"BattleResultWaitAction\" : 1.00000} ",
+      "Next": 418,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 418,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_scene_00.wav\", 2.00000, False} ",
+      "Next": 419,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 419,
+      "Node": "{ \"BattleResultWaitAction\" : 1.00000} ",
+      "Next": 420,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 420,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_738\"} ",
+      "Next": 421,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 421,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 422,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 423,
+      "Prallel": -1,
+      "Child": [
+        423
+      ]
+    },
+    {
+      "Index": 423,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 424,
+      "Prallel": -1,
+      "Child": [
+        424,
+        425,
+        426,
+        427,
+        428,
+        429,
+        430,
+        431,
+        432,
+        433,
+        434,
+        435,
+        436,
+        437,
+        438,
+        439,
+        440,
+        441,
+        442,
+        443,
+        444,
+        445,
+        446,
+        447,
+        448,
+        449,
+        450,
+        451,
+        452,
+        453,
+        454,
+        455,
+        456,
+        457,
+        458,
+        459,
+        460,
+        461,
+        462,
+        463,
+        464,
+        465,
+        466,
+        467,
+        468,
+        469,
+        470,
+        471,
+        472,
+        473,
+        474,
+        475,
+        476,
+        477,
+        478,
+        479,
+        480,
+        481,
+        482,
+        483
+      ]
+    },
+    {
+      "Index": 424,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1212501_01_03\", \"飞鱿已登场\"} ",
+      "Next": 425,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 425,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 55, \"in03010\"} ",
+      "Next": 426,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 426,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 427,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 427,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_600\"} ",
+      "Next": 428,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 428,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0206\", \"\", False} ",
+      "Next": 429,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 429,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_603\"} ",
+      "Next": 430,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 430,
+      "Node": "{ \"BattleResultAddUnits\" : \"io26124102,io26104102,io26143101,io26143102,io26143103,io26143104,io26143105,io26143106,io26143107,io26143108,io26143109,io26143110\", 1, \"107107214,105109214,104200204,101103204,200106206,108200208,110102212,102108210,106107213,202109207,109203206,109105214\"} ",
+      "Next": 431,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 431,
+      "Node": "{ \"BattleResultUnitToUnit\" : \"io26124102\", \"in0206\"} ",
+      "Next": 432,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 432,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_614\"} ",
+      "Next": 433,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 433,
+      "Node": "{ \"BattleResultUnitToUnit\" : \"in03009\", \"in21006\"} ",
+      "Next": 434,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 434,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_621\"} ",
+      "Next": 435,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 435,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 436,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 436,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_632\"} ",
+      "Next": 437,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 437,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 438,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 438,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_634\"} ",
+      "Next": 439,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 439,
+      "Node": "{ \"BattleResultPlayAction\" : \"in21006\", \"skill_MA1101_b01\", 0.00000} ",
+      "Next": 440,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 440,
+      "Node": "{ \"BattleResultUnitHP\" : 2, 100, \"in03009\"} ",
+      "Next": 441,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 441,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_mood_16.wav\", 1.00000, False} ",
+      "Next": 442,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 442,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_640\"} ",
+      "Next": 443,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 443,
+      "Node": "{ \"BattleResultUnitHP\" : 1, 100, \"in21006\"} ",
+      "Next": 444,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 444,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in21006\", \"\", True} ",
+      "Next": 445,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 445,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 446,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 446,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_646\"} ",
+      "Next": 447,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 447,
+      "Node": "{ \"BattleResultPlayAction\" : \"in0206\", \"skill_MA0502_c02\", 0.00000} ",
+      "Next": 448,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 448,
+      "Node": "{ \"BattleResultUnitHP\" : 2, 100, \"io26124102\"} ",
+      "Next": 449,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 449,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_651\"} ",
+      "Next": 450,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 450,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 451,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 451,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_700\"} ",
+      "Next": 452,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 452,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in03010\", \"\", True} ",
+      "Next": 453,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 453,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 454,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 454,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_703\"} ",
+      "Next": 455,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 455,
+      "Node": "{ \"BattleResultUnitToUnit\" : \"in0105\", \"in03010\"} ",
+      "Next": 456,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 456,
+      "Node": "{ \"BattleResultPlayAction\" : \"in0105\", \"skill_MA0905_a01\", 0.00000} ",
+      "Next": 457,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 457,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 458,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 458,
+      "Node": "{ \"BattleResultUnitHP\" : 2, 100, \"in03010\"} ",
+      "Next": 459,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 459,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 460,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 460,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_707\"} ",
+      "Next": 461,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 461,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 462,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 462,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_714\"} ",
+      "Next": 463,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 463,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_mood_18.wav\", 1.00000, False} ",
+      "Next": 464,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 464,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 465,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 465,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_719\"} ",
+      "Next": 466,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 466,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 467,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 467,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_725\"} ",
+      "Next": 468,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 468,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 469,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 469,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_733\"} ",
+      "Next": 470,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 470,
+      "Node": "{ \"BattleResultRemoveUnits\" : \"Player,in0105,party01,party02,party03,in15005,in15111,in15102,in15141,in15173,in19001,in91001,in05371,in15131,in15132\", False} ",
+      "Next": 471,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 471,
+      "Node": "{ \"BattleResultWaitAction\" : 1.00000} ",
+      "Next": 472,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 472,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_746\"} ",
+      "Next": 473,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 473,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in53001\", \"\", True} ",
+      "Next": 474,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 474,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in53001\", False} ",
+      "Next": 475,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 475,
+      "Node": "{ \"BattleResultWaitAction\" : 0.75000} ",
+      "Next": 476,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 476,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_754\"} ",
+      "Next": 477,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 477,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io531453\", \"\", True} ",
+      "Next": 478,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 478,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"io531453\", False} ",
+      "Next": 479,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 479,
+      "Node": "{ \"BattleResultWaitAction\" : 1.00000} ",
+      "Next": 480,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 480,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_scene_00.wav\", 2.00000, False} ",
+      "Next": 481,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 481,
+      "Node": "{ \"BattleResultWaitAction\" : 1.00000} ",
+      "Next": 482,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 482,
+      "Node": "{ \"BattleResultTalk\" : \"t1212502_738\"} ",
+      "Next": 483,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 483,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 484,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 485,
+      "Prallel": -1,
+      "Child": [
+        485
+      ]
+    },
+    {
+      "Index": 485,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 486,
+      "Prallel": -1,
+      "Child": [
+        486,
+        487,
+        488
+      ]
+    },
+    {
+      "Index": 486,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player\"} ",
+      "Next": 487,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 487,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 488,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 488,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 489,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 490,
+      "Prallel": -1,
+      "Child": [
+        490
+      ]
+    },
+    {
+      "Index": 490,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 491,
+      "Prallel": -1,
+      "Child": [
+        491,
+        492,
+        493
+      ]
+    },
+    {
+      "Index": 491,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0105\"} ",
+      "Next": 492,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 492,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 493,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 493,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 494,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 495,
+      "Prallel": -1,
+      "Child": [
+        495
+      ]
+    },
+    {
+      "Index": 495,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 496,
+      "Prallel": -1,
+      "Child": [
+        496,
+        497,
+        498,
+        499
+      ]
+    },
+    {
+      "Index": 496,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 497,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 497,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 0, 0, \"fe5201119_2_02\", \"五老山人是否登场\"} ",
+      "Next": 498,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 498,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 499,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 499,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05371\", 2, 104208104, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 500,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 501,
+      "Prallel": -1,
+      "Child": [
+        501
+      ]
+    },
+    {
+      "Index": 501,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 502,
+      "Prallel": -1,
+      "Child": [
+        502,
+        503,
+        504,
+        505,
+        506
+      ]
+    },
+    {
+      "Index": 502,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 503,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 503,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 6, \"fe1201102_2_107\", \"只有阿七回来\"} ",
+      "Next": 504,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 504,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 505,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 505,
+      "Node": "{ \"BattleResultAddUnit\" : \"in15131\", 2, 220102118, 1.00000, 0.00000} ",
+      "Next": 506,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 506,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in15131\", \"bt1212501_01_debuff_Power50\", False} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 507,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 508,
+      "Prallel": -1,
+      "Child": [
+        508
+      ]
+    },
+    {
+      "Index": 508,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 509,
+      "Prallel": -1,
+      "Child": [
+        509,
+        510,
+        511,
+        512,
+        513,
+        514
+      ]
+    },
+    {
+      "Index": 509,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 510,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 510,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 5, \"fe1201102_2_107\", \"阿七和老黑一起回来\"} ",
+      "Next": 511,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 511,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 512,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 512,
+      "Node": "{ \"BattleResultAddUnit\" : \"in15131\", 2, 220102118, 1.00000, 0.00000} ",
+      "Next": 513,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 513,
+      "Node": "{ \"BattleResultAddUnit\" : \"in15132\", 2, 218101117, 1.00000, 0.00000} ",
+      "Next": 514,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 514,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in15131,in15132\", \"bt1212501_01_debuff_Power50\", False} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 515,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in21006\", \"bt1212501_01_buff_FeiYouMadPower\", True} ",
+      "Next": 211,
+      "Prallel": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "火烧重岩村_救援村民战_女凌None绝",
+  "WinTip": "Defeat all righteous sect disciples attacking the villagers!",
+  "LoseTip": "{name_1}{name_2}或Shi Kun is defeated"
+}

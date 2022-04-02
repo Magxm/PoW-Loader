@@ -1,1 +1,362 @@
-bs5201116_01	bs5201116_01	{ "BattleRootNode" : [ { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "ExecuteOnceNode" } , { "BattleResultAddUnit" : "Player", 0, 207107200, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in0601", 0, 206107201, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in0110", 0, 207106101, 1.00000, 0.00000} , { "BattleResultMoveUnit" : "in0601", "202104202"} , { "BattleResultMoveUnit" : "in0110", "204102102"} , { "BattleResultMoveUnit" : "Player", "202102200"} , { "BattleResultTalk" : "t5201116_057"} , { "BattleResultAddUnit" : "in0103", 1, 107207200, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in0107", 1, 107206201, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in03014", 1, 106207101, 1.00000, 0.00000} , { "BattleResultMoveUnit" : "in0107", "104202202"} , { "BattleResultMoveUnit" : "in03014", "102204102"} , { "BattleResultMoveUnit" : "in0103", "102202200"} , { "BattleResultTalk" : "t5201116_058"} , { "BattleResultAddUnit" : "in91002", 3, 102206104, 1.00000, 0.00000} , { "BattleResultMoveUnit" : "in91002", "102204102"} , { "BattleResultTalk" : "t5201116_061"} , { "BattleResultUnitToUnit" : "in0103", "in91002"} , { "BattleResultTalk" : "t5201116_062"} , { "BattleResultAddUnit" : "in91001", 3, 107202205, 1.00000, 0.00000} , { "BattleResultMoveUnit" : "in91001", "105202203"} , { "BattleResultTalk" : "t5201116_064"} , { "BattleResultRemoveUnit" : "in91001", False} , { "BattleResultAddBuff" : True, "in91001", "", True} , { "BattleResultTalk" : "t5201116_085"} , { "BattleResultRemoveUnit" : "in91002", False} , { "BattleResultAddBuff" : True, "in91002", "", True} , { "BattleResultAddBuff" : True, "in03014", "bt5201115_07_buff_ShuonShuon", True} , { "BattleResultAddBuff" : True, "in0107", "bt5201115_06_buff_GuaiGuai", True} , { "BattleResultMoveUnit" : "in0103", "102202200"} , { "BattleResultTalk" : "t5201116_088"} , { "BattleResultChangeWinTip" : "Defeat Zhong Ruoxin，Cheng Yong， He Changrui !"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in0103,in0107,in03014"} , { "ExecuteOnceNode" } , { "BattleResultChangeMusic" : "In_mood_11.wav", 0.50000, False} , { "BattleResultTalk" : "t5201116_067"} , { "SetGlobalFlagBattleAction" : "fe5201115_1_02", 0, 1, "第二场战斗已获胜"} , { "EndBattleAction" : "m5201116_02"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "Player,in0601,in0110"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5201116_074"} , { "BattleResultLose" : ""}  ]}  ]}  ]} 	第二届侠隐擂台赛上官璘组	Win the ring match!	All friendly characters defeated。
+{
+  "Id": "bs5201116_01",
+  "Name": "bs5201116_01",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 2,
+      "Child": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 4,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultAddUnit\" : \"Player\", 0, 207107200, 1.00000, 0.00000} ",
+      "Next": 5,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0601\", 0, 206107201, 1.00000, 0.00000} ",
+      "Next": 6,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0110\", 0, 207106101, 1.00000, 0.00000} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in0601\", \"202104202\"} ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in0110\", \"204102102\"} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultMoveUnit\" : \"Player\", \"202102200\"} ",
+      "Next": 10,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultTalk\" : \"t5201116_057\"} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0103\", 1, 107207200, 1.00000, 0.00000} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0107\", 1, 107206201, 1.00000, 0.00000} ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleResultAddUnit\" : \"in03014\", 1, 106207101, 1.00000, 0.00000} ",
+      "Next": 14,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in0107\", \"104202202\"} ",
+      "Next": 15,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in03014\", \"102204102\"} ",
+      "Next": 16,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in0103\", \"102202200\"} ",
+      "Next": 17,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleResultTalk\" : \"t5201116_058\"} ",
+      "Next": 18,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleResultAddUnit\" : \"in91002\", 3, 102206104, 1.00000, 0.00000} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in91002\", \"102204102\"} ",
+      "Next": 20,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultTalk\" : \"t5201116_061\"} ",
+      "Next": 21,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleResultUnitToUnit\" : \"in0103\", \"in91002\"} ",
+      "Next": 22,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleResultTalk\" : \"t5201116_062\"} ",
+      "Next": 23,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleResultAddUnit\" : \"in91001\", 3, 107202205, 1.00000, 0.00000} ",
+      "Next": 24,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in91001\", \"105202203\"} ",
+      "Next": 25,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleResultTalk\" : \"t5201116_064\"} ",
+      "Next": 26,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in91001\", False} ",
+      "Next": 27,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in91001\", \"\", True} ",
+      "Next": 28,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleResultTalk\" : \"t5201116_085\"} ",
+      "Next": 29,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in91002\", False} ",
+      "Next": 30,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in91002\", \"\", True} ",
+      "Next": 31,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in03014\", \"bt5201115_07_buff_ShuonShuon\", True} ",
+      "Next": 32,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0107\", \"bt5201115_06_buff_GuaiGuai\", True} ",
+      "Next": 33,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in0103\", \"102202200\"} ",
+      "Next": 34,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleResultTalk\" : \"t5201116_088\"} ",
+      "Next": 35,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Zhong Ruoxin, Cheng Yong and He Changrui!\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 37,
+      "Child": [
+        37
+      ]
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 38,
+      "Child": [
+        38,
+        39,
+        40,
+        41,
+        42,
+        43
+      ]
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0103,in0107,in03014\"} ",
+      "Next": 39,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 40,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_mood_11.wav\", 0.50000, False} ",
+      "Next": 41,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleResultTalk\" : \"t5201116_067\"} ",
+      "Next": 42,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201115_1_02\", 0, 1, \"第二场战斗已获胜\"} ",
+      "Next": 43,
+      "Child": []
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"EndBattleAction\" : \"m5201116_02\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 45,
+      "Child": [
+        45
+      ]
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 46,
+      "Child": [
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player,in0601,in0110\"} ",
+      "Next": 47,
+      "Child": []
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 48,
+      "Child": []
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"BattleResultTalk\" : \"t5201116_074\"} ",
+      "Next": 49,
+      "Child": []
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "第二届侠隐擂台赛上官璘组",
+  "WinTip": "Win the ring!",
+  "LoseTip": "All friendly units are defeated"
+}

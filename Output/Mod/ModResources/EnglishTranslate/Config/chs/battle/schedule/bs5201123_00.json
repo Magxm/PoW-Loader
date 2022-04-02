@@ -1,1 +1,514 @@
-bs5201123_00	盗匪肆虐之三	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnits" : "in05381,in05382,in05383,in05384,in05385,in05386", 1, "202103201,202104202,203101102,201101200,200102202,200104204"} , { "BattleResultAddUnits" : "in05389,in05390,in05391", 2, "104203201,101202101,103200203"} , { "BattleResultAddUnits" : "in0110,party02,party03,Player", 0, "107204203,107206201,104207103,105206101"}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "ExecuteOnceNode" } , { "BattleResultCameraMoveUnit" : "in05381", 90.30601, 10.00000} , { "BattleResultWaitAction" : 1.00000} , { "BattleResultAddBuff" : True, "in05381", "bt5201123_01_buff_UndeadWolfman1", True} , { "BattleResultAddBuff" : True, "in05382", "bt5201123_07_buff_WildWolf", True} , { "SetLocalFlagBattleAction" : "btf5201123_01", 0, 1, "狼王血量等于100%已触发事件"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 1, 90, "in05381"} , { "ExecuteOnceNode" } , { "BattleResultRmoveBuff" : "in05381", "bt5201123_01_buff_UndeadWolfman1"} , { "BattleResultAddBuff" : True, "in05381", "bt5201123_02_buff_UndeadWolfman2", True} , { "BattleResultTalk" : "t5201123_028"} , { "BattleResultAddUnits" : "in05387,in05388", 1, "105209104,107209102"} , { "BattleResultAddBuff" : True, "in05387,in05388", "", True} , { "BattleResultTalk" : "t5201123_035"} , { "SetLocalFlagBattleAction" : "btf5201123_02", 0, 1, "狼王血量等于90%已触发事件"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 1, 60, "in05381"} , { "ExecuteOnceNode" } , { "BattleResultRmoveBuff" : "in05381", "bt5201123_02_buff_UndeadWolfman2"} , { "BattleResultAddBuff" : True, "in05381", "bt5201123_03_buff_UndeadWolfman3", True} , { "BattleResultTalk" : "t5201123_041"} , { "SetLocalFlagBattleAction" : "btf5201123_03", 0, 1, "狼王血量等于60%已触发事件"} , { "BattleResultAddUnits" : "in05392,in05393", 2, "108210102,106210104"} , { "BattleResultTalk" : "t5201123_061"} , { "SetLocalFlagBattleAction" : "btf5201123_03", 0, 1, "狼王血量等于60%已触发事件"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 1, "btf5201123_03", "陆天罡血量低至60%"} , { "BattleFactorGlobalFlag" : 1, 0, "fe5201123_2_01", "哮天狼存活"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5201123_040"} , { "BattleResultUnitToUnit" : "in05382", "in05381"} , { "BattleResultAddBuff" : True, "in05382", "bt5201123_06_buff_FuryWolf", True}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in05382"} , { "BattleFactorTargetHp" : 0, 0, "in05381"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5201123_053"} , { "BattleResultAddBuff" : True, "in05381", "bt5201123_05_buff_SadWolfman", True} , { "SetGlobalFlagBattleAction" : "fe5201123_2_01", 0, 1, "哮天狼死亡"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 1, 30, "in05381"} , { "ExecuteOnceNode" } , { "BattleResultRmoveBuff" : "in05381", "bt5201123_03_buff_UndeadWolfman3"} , { "BattleResultAddBuff" : True, "in05381", "bt5201123_04_buff_UndeadWolfman4", True} , { "BattleResultTalk" : "t5201123_052"} , { "BattleResultAddUnits" : "in05394,in05400", 2, "109210101,105210105"} , { "BattleResultTalk" : "t5201123_062"} , { "SetLocalFlagBattleAction" : "btf5201123_04", 0, 1, "狼王血量等于30%已触发事件"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 0} , { "ExecuteOnceNode" } , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 1} , { "ExecuteOnceNode" } , { "BattleResultWin" : ""}  ]}  ]}  ]} 		Defeat Wolf King and his men.	All of the player's party is defeated.
+{
+  "Id": "bs5201123_00",
+  "Name": "盗匪肆虐之三",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnits\" : \"in05381,in05382,in05383,in05384,in05385,in05386\", 1, \"202103201,202104202,203101102,201101200,200102202,200104204\"} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnits\" : \"in05389,in05390,in05391\", 2, \"104203201,101202101,103200203\"} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnits\" : \"in0110,party02,party03,Player\", 0, \"107204203,107206201,104207103,105206101\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 5,
+      "Child": [
+        5
+      ]
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 6,
+      "Child": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultCameraMoveUnit\" : \"in05381\", 90.30601, 10.00000} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultWaitAction\" : 1.00000} ",
+      "Next": 10,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05381\", \"bt5201123_01_buff_UndeadWolfman1\", True} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05382\", \"bt5201123_07_buff_WildWolf\", True} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5201123_01\", 0, 1, \"狼王血量等于100%已触发事件\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 14,
+      "Child": [
+        14
+      ]
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 15,
+      "Child": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ]
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 90, \"in05381\"} ",
+      "Next": 16,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 17,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05381\", \"bt5201123_01_buff_UndeadWolfman1\"} ",
+      "Next": 18,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05381\", \"bt5201123_02_buff_UndeadWolfman2\", True} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleResultTalk\" : \"t5201123_028\"} ",
+      "Next": 20,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultAddUnits\" : \"in05387,in05388\", 1, \"105209104,107209102\"} ",
+      "Next": 21,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05387,in05388\", \"\", True} ",
+      "Next": 22,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleResultTalk\" : \"t5201123_035\"} ",
+      "Next": 23,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5201123_02\", 0, 1, \"狼王血量等于90%已触发事件\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 25,
+      "Child": [
+        25
+      ]
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 26,
+      "Child": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ]
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 60, \"in05381\"} ",
+      "Next": 27,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 28,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05381\", \"bt5201123_02_buff_UndeadWolfman2\"} ",
+      "Next": 29,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05381\", \"bt5201123_03_buff_UndeadWolfman3\", True} ",
+      "Next": 30,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleResultTalk\" : \"t5201123_041\"} ",
+      "Next": 31,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5201123_03\", 0, 1, \"狼王血量等于60%已触发事件\"} ",
+      "Next": 32,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleResultAddUnits\" : \"in05392,in05393\", 2, \"108210102,106210104\"} ",
+      "Next": 33,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleResultTalk\" : \"t5201123_061\"} ",
+      "Next": 34,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5201123_03\", 0, 1, \"狼王血量等于60%已触发事件\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 36,
+      "Child": [
+        36
+      ]
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 37,
+      "Child": [
+        37,
+        38,
+        39,
+        40,
+        41,
+        42
+      ]
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf5201123_03\", \"陆天罡血量低至60%\"} ",
+      "Next": 38,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe5201123_2_01\", \"哮天狼存活\"} ",
+      "Next": 39,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 40,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"BattleResultTalk\" : \"t5201123_040\"} ",
+      "Next": 41,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleResultUnitToUnit\" : \"in05382\", \"in05381\"} ",
+      "Next": 42,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05382\", \"bt5201123_06_buff_FuryWolf\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 44,
+      "Child": [
+        44
+      ]
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 45,
+      "Child": [
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ]
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05382\"} ",
+      "Next": 46,
+      "Child": []
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in05381\"} ",
+      "Next": 47,
+      "Child": []
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 48,
+      "Child": []
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"BattleResultTalk\" : \"t5201123_053\"} ",
+      "Next": 49,
+      "Child": []
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05381\", \"bt5201123_05_buff_SadWolfman\", True} ",
+      "Next": 50,
+      "Child": []
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201123_2_01\", 0, 1, \"哮天狼死亡\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 51,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 52,
+      "Child": [
+        52
+      ]
+    },
+    {
+      "Index": 52,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 53,
+      "Child": [
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60
+      ]
+    },
+    {
+      "Index": 53,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 30, \"in05381\"} ",
+      "Next": 54,
+      "Child": []
+    },
+    {
+      "Index": 54,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 55,
+      "Child": []
+    },
+    {
+      "Index": 55,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05381\", \"bt5201123_03_buff_UndeadWolfman3\"} ",
+      "Next": 56,
+      "Child": []
+    },
+    {
+      "Index": 56,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05381\", \"bt5201123_04_buff_UndeadWolfman4\", True} ",
+      "Next": 57,
+      "Child": []
+    },
+    {
+      "Index": 57,
+      "Node": "{ \"BattleResultTalk\" : \"t5201123_052\"} ",
+      "Next": 58,
+      "Child": []
+    },
+    {
+      "Index": 58,
+      "Node": "{ \"BattleResultAddUnits\" : \"in05394,in05400\", 2, \"109210101,105210105\"} ",
+      "Next": 59,
+      "Child": []
+    },
+    {
+      "Index": 59,
+      "Node": "{ \"BattleResultTalk\" : \"t5201123_062\"} ",
+      "Next": 60,
+      "Child": []
+    },
+    {
+      "Index": 60,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5201123_04\", 0, 1, \"狼王血量等于30%已触发事件\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 61,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 62,
+      "Child": [
+        62
+      ]
+    },
+    {
+      "Index": 62,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 63,
+      "Child": [
+        63,
+        64,
+        65
+      ]
+    },
+    {
+      "Index": 63,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 0} ",
+      "Next": 64,
+      "Child": []
+    },
+    {
+      "Index": 64,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 65,
+      "Child": []
+    },
+    {
+      "Index": 65,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 66,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 67,
+      "Child": [
+        67
+      ]
+    },
+    {
+      "Index": 67,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 68,
+      "Child": [
+        68,
+        69,
+        70
+      ]
+    },
+    {
+      "Index": 68,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 69,
+      "Child": []
+    },
+    {
+      "Index": 69,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 70,
+      "Child": []
+    },
+    {
+      "Index": 70,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "",
+  "WinTip": "Defeat Wolf King and his men.",
+  "LoseTip": "The player's team is completely destroyed."
+}

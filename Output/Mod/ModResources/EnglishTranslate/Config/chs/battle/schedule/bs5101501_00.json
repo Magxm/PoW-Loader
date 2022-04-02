@@ -1,1 +1,715 @@
-bs5101501_00	bs5101501_00	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "Player", 0, 201201102}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "BattleFactorLocalFlag" : 1, 0, "btf5101501_00_00", ""} , { "SetLocalFlagBattleAction" : "btf5101501_00_00", 0, 1, ""} , { "SetGlobalFlagBattleAction" : "fe5101501_2_00", 1, 1, ""} , { "BattleResultTalk" : "t5101501_011"} , { "BattleResultAddUnit" : "in27216", 1, 103103206} , { "BattleResultAddBuff" : True, "in27216", "in27200_debuff_BasicFightingMode", False} , { "BattleResultMoveUnit" : "in27216", "101101202"} , { "BattleResultTalk" : "t5101501_001"}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 1} , { "BattleFactorLocalFlag" : 1, 0, "btf5101501_00_01", ""} , { "SetLocalFlagBattleAction" : "btf5101501_00_01", 0, 1, ""} , { "SetGlobalFlagBattleAction" : "fe5101501_2_00", 1, 1, ""} , { "BattleResultAddUnit" : "in27231", 1, 102102204} , { "BattleResultAddBuff" : True, "in27231", "in27200_debuff_BasicFightingMode", False} , { "BattleResultTalk" : "t5101501_002"}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 2} , { "BattleFactorLocalFlag" : 1, 0, "btf5101501_00_02", ""} , { "SetLocalFlagBattleAction" : "btf5101501_00_02", 0, 1, ""} , { "SetGlobalFlagBattleAction" : "fe5101501_2_00", 1, 1, ""} , { "BattleResultAddUnit" : "in27276", 1, 104202202} , { "BattleResultAddBuff" : True, "in27276", "in27200_debuff_BasicFightingMode", False} , { "BattleResultTalk" : "t5101501_003"}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 3} , { "BattleFactorLocalFlag" : 1, 0, "btf5101501_00_03", ""} , { "SetLocalFlagBattleAction" : "btf5101501_00_03", 0, 1, ""} , { "SetGlobalFlagBattleAction" : "fe5101501_2_00", 1, 1, ""} , { "BattleResultAddUnit" : "in27251", 1, 102204102} , { "BattleResultAddBuff" : True, "in27251", "in27200_debuff_BasicFightingMode", False} , { "BattleResultTalk" : "t5101501_004"}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 4} , { "BattleFactorLocalFlag" : 1, 0, "btf5101501_00_04", ""} , { "SetLocalFlagBattleAction" : "btf5101501_00_04", 0, 1, ""} , { "SetGlobalFlagBattleAction" : "fe5101501_2_00", 1, 1, ""} , { "BattleResultAddUnit" : "in27266", 1, 204102102} , { "BattleResultAddBuff" : True, "in27266", "in27200_debuff_BasicFightingMode", False} , { "BattleResultTalk" : "t5101501_005"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in27216,in27231,in27276,in27251,in27266"} , { "BattleFactorLocalFlag" : 1, 0, "btf5101501_00_10", ""} , { "SetLocalFlagBattleAction" : "btf5101501_00_10", 0, 1, ""} , { "BattleResultTalk" : "t5101501_012"} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 0} , { "BattleFactorLocalFlag" : 1, 0, "btf5101501_00_21", ""} , { "SetLocalFlagBattleAction" : "btf5101501_00_21", 0, 1, ""} , { "BattleResultTalk" : "t5101501_013"} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "SequenceNode" : [ { "BattleFactorTargetDestroy" : "in27216"} , { "BattleFactorLocalFlag" : 1, 0, "btf5101501_00_11", ""} , { "SetLocalFlagBattleAction" : "btf5101501_00_11", 0, 1, ""} , { "SetGlobalFlagBattleAction" : "fe5101501_2_01", 1, 1, ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "SequenceNode" : [ { "BattleFactorTargetDestroy" : "in27231"} , { "BattleFactorLocalFlag" : 1, 0, "btf5101501_00_12", ""} , { "SetLocalFlagBattleAction" : "btf5101501_00_12", 0, 1, ""} , { "SetGlobalFlagBattleAction" : "fe5101501_2_01", 1, 1, ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "SequenceNode" : [ { "BattleFactorTargetDestroy" : "in27276"} , { "BattleFactorLocalFlag" : 1, 0, "btf5101501_00_13", ""} , { "SetLocalFlagBattleAction" : "btf5101501_00_13", 0, 1, ""} , { "SetGlobalFlagBattleAction" : "fe5101501_2_01", 1, 1, ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "SequenceNode" : [ { "BattleFactorTargetDestroy" : "in27251"} , { "BattleFactorLocalFlag" : 1, 0, "btf5101501_00_14", ""} , { "SetLocalFlagBattleAction" : "btf5101501_00_14", 0, 1, ""} , { "SetGlobalFlagBattleAction" : "fe5101501_2_01", 1, 1, ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "SequenceNode" : [ { "BattleFactorTargetDestroy" : "in27266"} , { "BattleFactorLocalFlag" : 1, 0, "btf5101501_00_15", ""} , { "SetLocalFlagBattleAction" : "btf5101501_00_15", 0, 1, ""} , { "SetGlobalFlagBattleAction" : "fe5101501_2_01", 1, 1, ""}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 5} , { "BattleFactorLocalFlag" : 1, 0, "btf5101501_00_05", ""} , { "SetLocalFlagBattleAction" : "btf5101501_00_05", 0, 1, ""} , { "BattleResultTalk" : "t5101501_022"}  ]}  ]}  ]} 		Defeat all the Sparring Automantons	{name_1}{name_2} is defeated.
+{
+  "Id": "bs5101501_00",
+  "Name": "bs5101501_00",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"Player\", 0, 201201102, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 3,
+      "Child": [
+        3
+      ]
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 4,
+      "Child": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 5,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5101501_00_00\", \"\"} ",
+      "Next": 6,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5101501_00_00\", 0, 1, \"\"} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5101501_2_00\", 1, 1, \"\"} ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultTalk\" : \"t5101501_011\"} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultAddUnit\" : \"in27216\", 1, 103103206, 1.00000, 0.00000} ",
+      "Next": 10,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in27216\", \"in27200_debuff_BasicFightingMode\", False} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in27216\", \"101101202\"} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultTalk\" : \"t5101501_001\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 14,
+      "Child": [
+        14
+      ]
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 15,
+      "Child": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleFactorTurn\" : 1, 1} ",
+      "Next": 16,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5101501_00_01\", \"\"} ",
+      "Next": 17,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5101501_00_01\", 0, 1, \"\"} ",
+      "Next": 18,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5101501_2_00\", 1, 1, \"\"} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleResultAddUnit\" : \"in27231\", 1, 102102204, 1.00000, 0.00000} ",
+      "Next": 20,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in27231\", \"in27200_debuff_BasicFightingMode\", False} ",
+      "Next": 21,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleResultTalk\" : \"t5101501_002\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 23,
+      "Child": [
+        23
+      ]
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 24,
+      "Child": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleFactorTurn\" : 1, 2} ",
+      "Next": 25,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5101501_00_02\", \"\"} ",
+      "Next": 26,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5101501_00_02\", 0, 1, \"\"} ",
+      "Next": 27,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5101501_2_00\", 1, 1, \"\"} ",
+      "Next": 28,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleResultAddUnit\" : \"in27276\", 1, 104202202, 1.00000, 0.00000} ",
+      "Next": 29,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in27276\", \"in27200_debuff_BasicFightingMode\", False} ",
+      "Next": 30,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleResultTalk\" : \"t5101501_003\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 32,
+      "Child": [
+        32
+      ]
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 33,
+      "Child": [
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ]
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleFactorTurn\" : 1, 3} ",
+      "Next": 34,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5101501_00_03\", \"\"} ",
+      "Next": 35,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5101501_00_03\", 0, 1, \"\"} ",
+      "Next": 36,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5101501_2_00\", 1, 1, \"\"} ",
+      "Next": 37,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleResultAddUnit\" : \"in27251\", 1, 102204102, 1.00000, 0.00000} ",
+      "Next": 38,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in27251\", \"in27200_debuff_BasicFightingMode\", False} ",
+      "Next": 39,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"BattleResultTalk\" : \"t5101501_004\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 41,
+      "Child": [
+        41
+      ]
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 42,
+      "Child": [
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ]
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"BattleFactorTurn\" : 1, 4} ",
+      "Next": 43,
+      "Child": []
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5101501_00_04\", \"\"} ",
+      "Next": 44,
+      "Child": []
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5101501_00_04\", 0, 1, \"\"} ",
+      "Next": 45,
+      "Child": []
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5101501_2_00\", 1, 1, \"\"} ",
+      "Next": 46,
+      "Child": []
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"BattleResultAddUnit\" : \"in27266\", 1, 204102102, 1.00000, 0.00000} ",
+      "Next": 47,
+      "Child": []
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in27266\", \"in27200_debuff_BasicFightingMode\", False} ",
+      "Next": 48,
+      "Child": []
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"BattleResultTalk\" : \"t5101501_005\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 50,
+      "Child": [
+        50
+      ]
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 51,
+      "Child": [
+        51,
+        52,
+        53,
+        54,
+        55
+      ]
+    },
+    {
+      "Index": 51,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in27216,in27231,in27276,in27251,in27266\"} ",
+      "Next": 52,
+      "Child": []
+    },
+    {
+      "Index": 52,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5101501_00_10\", \"\"} ",
+      "Next": 53,
+      "Child": []
+    },
+    {
+      "Index": 53,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5101501_00_10\", 0, 1, \"\"} ",
+      "Next": 54,
+      "Child": []
+    },
+    {
+      "Index": 54,
+      "Node": "{ \"BattleResultTalk\" : \"t5101501_012\"} ",
+      "Next": 55,
+      "Child": []
+    },
+    {
+      "Index": 55,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 56,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 57,
+      "Child": [
+        57
+      ]
+    },
+    {
+      "Index": 57,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 58,
+      "Child": [
+        58,
+        59,
+        60,
+        61,
+        62
+      ]
+    },
+    {
+      "Index": 58,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 0} ",
+      "Next": 59,
+      "Child": []
+    },
+    {
+      "Index": 59,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5101501_00_21\", \"\"} ",
+      "Next": 60,
+      "Child": []
+    },
+    {
+      "Index": 60,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5101501_00_21\", 0, 1, \"\"} ",
+      "Next": 61,
+      "Child": []
+    },
+    {
+      "Index": 61,
+      "Node": "{ \"BattleResultTalk\" : \"t5101501_013\"} ",
+      "Next": 62,
+      "Child": []
+    },
+    {
+      "Index": 62,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 63,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 64,
+      "Child": [
+        64
+      ]
+    },
+    {
+      "Index": 64,
+      "Node": "{ \"SequenceNode\" : [ ]} ",
+      "Next": 65,
+      "Child": [
+        65,
+        66,
+        67,
+        68
+      ]
+    },
+    {
+      "Index": 65,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in27216\"} ",
+      "Next": 66,
+      "Child": []
+    },
+    {
+      "Index": 66,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5101501_00_11\", \"\"} ",
+      "Next": 67,
+      "Child": []
+    },
+    {
+      "Index": 67,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5101501_00_11\", 0, 1, \"\"} ",
+      "Next": 68,
+      "Child": []
+    },
+    {
+      "Index": 68,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5101501_2_01\", 1, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 69,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 70,
+      "Child": [
+        70
+      ]
+    },
+    {
+      "Index": 70,
+      "Node": "{ \"SequenceNode\" : [ ]} ",
+      "Next": 71,
+      "Child": [
+        71,
+        72,
+        73,
+        74
+      ]
+    },
+    {
+      "Index": 71,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in27231\"} ",
+      "Next": 72,
+      "Child": []
+    },
+    {
+      "Index": 72,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5101501_00_12\", \"\"} ",
+      "Next": 73,
+      "Child": []
+    },
+    {
+      "Index": 73,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5101501_00_12\", 0, 1, \"\"} ",
+      "Next": 74,
+      "Child": []
+    },
+    {
+      "Index": 74,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5101501_2_01\", 1, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 75,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 76,
+      "Child": [
+        76
+      ]
+    },
+    {
+      "Index": 76,
+      "Node": "{ \"SequenceNode\" : [ ]} ",
+      "Next": 77,
+      "Child": [
+        77,
+        78,
+        79,
+        80
+      ]
+    },
+    {
+      "Index": 77,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in27276\"} ",
+      "Next": 78,
+      "Child": []
+    },
+    {
+      "Index": 78,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5101501_00_13\", \"\"} ",
+      "Next": 79,
+      "Child": []
+    },
+    {
+      "Index": 79,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5101501_00_13\", 0, 1, \"\"} ",
+      "Next": 80,
+      "Child": []
+    },
+    {
+      "Index": 80,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5101501_2_01\", 1, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 81,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 82,
+      "Child": [
+        82
+      ]
+    },
+    {
+      "Index": 82,
+      "Node": "{ \"SequenceNode\" : [ ]} ",
+      "Next": 83,
+      "Child": [
+        83,
+        84,
+        85,
+        86
+      ]
+    },
+    {
+      "Index": 83,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in27251\"} ",
+      "Next": 84,
+      "Child": []
+    },
+    {
+      "Index": 84,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5101501_00_14\", \"\"} ",
+      "Next": 85,
+      "Child": []
+    },
+    {
+      "Index": 85,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5101501_00_14\", 0, 1, \"\"} ",
+      "Next": 86,
+      "Child": []
+    },
+    {
+      "Index": 86,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5101501_2_01\", 1, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 87,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 88,
+      "Child": [
+        88
+      ]
+    },
+    {
+      "Index": 88,
+      "Node": "{ \"SequenceNode\" : [ ]} ",
+      "Next": 89,
+      "Child": [
+        89,
+        90,
+        91,
+        92
+      ]
+    },
+    {
+      "Index": 89,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in27266\"} ",
+      "Next": 90,
+      "Child": []
+    },
+    {
+      "Index": 90,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5101501_00_15\", \"\"} ",
+      "Next": 91,
+      "Child": []
+    },
+    {
+      "Index": 91,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5101501_00_15\", 0, 1, \"\"} ",
+      "Next": 92,
+      "Child": []
+    },
+    {
+      "Index": 92,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5101501_2_01\", 1, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 93,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 94,
+      "Child": [
+        94
+      ]
+    },
+    {
+      "Index": 94,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 95,
+      "Child": [
+        95,
+        96,
+        97,
+        98
+      ]
+    },
+    {
+      "Index": 95,
+      "Node": "{ \"BattleFactorTurn\" : 1, 5} ",
+      "Next": 96,
+      "Child": []
+    },
+    {
+      "Index": 96,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5101501_00_05\", \"\"} ",
+      "Next": 97,
+      "Child": []
+    },
+    {
+      "Index": 97,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5101501_00_05\", 0, 1, \"\"} ",
+      "Next": 98,
+      "Child": []
+    },
+    {
+      "Index": 98,
+      "Node": "{ \"BattleResultTalk\" : \"t5101501_022\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "",
+  "WinTip": "Defeat all training automantons",
+  "LoseTip": "{name_1}{name_2} is defeated."
+}

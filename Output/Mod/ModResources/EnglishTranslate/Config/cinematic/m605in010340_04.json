@@ -7,7 +7,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"LoadScenesAction\" : \"S0108\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0} ",
+      "Node": "{ \"LoadScenesAction\" : \"S0108\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0, \"\", 1.00000} ",
       "Next": 0,
       "Prallel": -1
     },
@@ -24,37 +24,32 @@
     {
       "Node": "{ \"TalkAction\" : \"t1010305_300\"} ",
       "Next": 5,
-      "Prallel": -1
+      "Prallel": 28
     },
     {
       "Node": "{ \"ScreenFadeAction\" : True, 1.00000} ",
-      "Next": -1,
-      "Prallel": 7
-    },
-    {
-      "Node": "{ \"TalkAction\" : \"t1010305_306\"} ",
-      "Next": 10,
-      "Prallel": -1
-    },
-    {
-      "Node": "{ \"PlayNpcAnimationAction\" : [ { 0, \"skill_MA0202_c01\", 1.00000}  ], \"in0103\"} ",
       "Next": 6,
       "Prallel": -1
     },
     {
-      "Node": "{ \"PlayNpcAnimationAction\" : [ { 0, \"skill_MA0202_c01\", 1.00000}  ], \"in0103\"} ",
+      "Node": "{ \"TalkAction\" : \"t1010305_306\"} ",
+      "Next": 7,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 0, \"skill_MA0202_c01\", 1.00000} , { 2, \"in0103_empty_idle00\", 1.00000}  ], \"in0103\"} ",
       "Next": 9,
       "Prallel": -1
     },
     {
       "Node": "{ \"TalkAction\" : \"t1010305_309\"} ",
-      "Next": 12,
-      "Prallel": 11
+      "Next": 11,
+      "Prallel": 10
     },
     {
       "Node": "{ \"TalkAction\" : \"t1010305_307\"} ",
-      "Next": -1,
-      "Prallel": 8
+      "Next": 29,
+      "Prallel": -1
     },
     {
       "Node": "{ \"PlayerSimpleTransformAction\" : True, { -1378.45100, 8.61278, 689.49800} , 1.50000, True, { 0.00000, 242.32450, 0.00000} } ",
@@ -63,18 +58,18 @@
     },
     {
       "Node": "{ \"ScreenFadeAction\" : False, 0.50000} ",
-      "Next": 27,
+      "Next": 26,
       "Prallel": -1
     },
     {
       "Node": "{ \"CameraTransformAction\" : True, { -1384.75400, 9.59135, 691.92380} , 0.00000, True, { 357.28530, 279.41640, -0.00340} , 0.00000, 45} ",
-      "Next": 16,
-      "Prallel": 14
+      "Next": 15,
+      "Prallel": 13
     },
     {
       "Node": "{ \"PlayerTransformAction\" : True, { -1387.29300, 8.58778, 693.33810} , True, { 0.00000, 238.20390, 0.00000} } ",
       "Next": -1,
-      "Prallel": 15
+      "Prallel": 14
     },
     {
       "Node": "{ \"NpcTransformAction\" : True, { -1388.45300, 8.58778, 691.07870} , True, { 0.00000, 31.24327, 0.00000} , \"in0103\"} ",
@@ -83,67 +78,77 @@
     },
     {
       "Node": "{ \"ScreenFadeAction\" : True, 0.50000} ",
-      "Next": 17,
+      "Next": 16,
       "Prallel": -1
     },
     {
       "Node": "{ \"TalkAction\" : \"t1010305_339\"} ",
-      "Next": 18,
+      "Next": 17,
       "Prallel": -1
     },
     {
       "Node": "{ \"TimerAction\" : 0.50000} ",
-      "Next": 19,
+      "Next": 18,
       "Prallel": -1
     },
     {
       "Node": "{ \"TalkAction\" : \"t1010305_340\"} ",
-      "Next": 20,
+      "Next": 19,
       "Prallel": -1
     },
     {
       "Node": "{ \"ScreenFadeAction\" : False, 1.00000} ",
-      "Next": 21,
+      "Next": 20,
       "Prallel": -1
     },
     {
       "Node": "{ \"TalkAction\" : \"t1010305_362\"} ",
-      "Next": 28,
+      "Next": 27,
       "Prallel": -1
     },
     {
       "Node": "{ \"NextOrEndQuestAction\" } ",
-      "Next": 26,
+      "Next": 25,
       "Prallel": -1
     },
     {
-      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, True, 0} ",
+      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, True, 0, \"\", 1.00000} ",
       "Next": -1,
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckCurrentTime\" : 1}  ], 0} , 23, 25} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckCurrentTime\" : 1}  ], 0} , 22, 24} ",
       "Next": -1,
       "Prallel": -1
     },
     {
-      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 1} ",
+      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 1, \"\", 1.00000} ",
       "Next": -1,
       "Prallel": -1
     },
     {
       "Node": "{ \"SetFlagAction\" : 0, 0, \"fe1010305_2_04\"} ",
-      "Next": 24,
+      "Next": 23,
       "Prallel": -1
     },
     {
       "Node": "{ \"TimerAction\" : 1.00000} ",
-      "Next": 13,
+      "Next": 12,
       "Prallel": -1
     },
     {
       "Node": "{ \"RewardAction\" : \"re7001003_05\"} ",
-      "Next": 22,
+      "Next": 21,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"in0103_empty_idle00\", 1.00000}  ], \"in0103\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 0, \"skill_MA0202_c01\", 1.00000} , { 2, \"in0103_empty_idle00\", 1.00000}  ], \"in0103\"} ",
+      "Next": 8,
       "Prallel": -1
     }
   ],

@@ -1,1 +1,109 @@
-bs1210402_01	二年恒山屍化冰瀑打狼	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnits" : "Player,in0208,party01,party02,party03", 0, "102205103,103205102,200204104,103207104,101206105"}  ]} , { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnits" : "io93126901,io93121901,io93121902,io93121903,io93121904,io93121905,io93121906,io93121907", 1, "101201200,103201202,201200101,202200102,105211106,104211107,103210107,102210108"}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 0} , { "ExecuteOnceNode" } , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 1} , { "ExecuteOnceNode" } , { "BattleResultWin" : ""}  ]}  ]}  ]} 		Drive away the wolves!	All friendly units defeated。
+{
+  "Id": "bs1210402_01",
+  "Name": "二年恒山屍化冰瀑打狼",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnits\" : \"Player,in0208,party01,party02,party03\", 0, \"102205103,103205102,200204104,103207104,101206105\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 3,
+      "Child": [
+        3
+      ]
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnits\" : \"io93126901,io93121901,io93121902,io93121903,io93121904,io93121905,io93121906,io93121907\", 1, \"101201200,103201202,201200101,202200102,105211106,104211107,103210107,102210108\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 5,
+      "Child": [
+        5
+      ]
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 6,
+      "Child": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 0} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 10,
+      "Child": [
+        10
+      ]
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 11,
+      "Child": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "",
+  "WinTip": "Repel the wolves!",
+  "LoseTip": "All friendly units are defeated"
+}

@@ -1,1 +1,266 @@
-bs1011004_01	上官煦四_战斗一	{ "BattleRootNode" : [ { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1011004_100"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 1} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1011004_105"} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "Player"} , { "ExecuteOnceNode" } , { "SetGlobalFlagBattleAction" : "fe1011004_2_02", 0, 1, "上官煦四_战斗一_主角死亡"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in34005"} , { "ExecuteOnceNode" } , { "SetGlobalFlagBattleAction" : "fe1011004_2_03", 0, 1, "上官煦四_战斗一_上官之死亡"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in0110"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1011004_106"} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "in0110", 0, 112211201, 1.00000, 130.35000} , { "BattleResultAddUnit" : "Player", 0, 113213200, 1.00000, 130.44800} , { "BattleResultAddUnit" : "in34005", 0, 111214103, 1.00000, 106.29200} , { "BattleResultAddUnit" : "in34006", 0, 110212102, 1.00000, 110.62000} , { "BattleResultAddUnit" : "in0574501", 1, 105205200, 1.00000, -98.90501} , { "BattleResultAddUnit" : "in0574503", 1, 105207102, 1.00000, -64.65501} , { "BattleResultAddUnit" : "in0574505", 1, 105209104, 1.00000, -51.51800} , { "BattleResultAddUnit" : "in0574502", 1, 107212105, 1.00000, -28.76900}  ]}  ]} 	上官煦四_战斗一	Protect Shangguan Xu and defeat all enemies.	Shangguan Xu is defeated.
+{
+  "Id": "bs1011004_01",
+  "Name": "上官煦四_战斗一",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 2,
+      "Child": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 4,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultTalk\" : \"t1011004_100\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 6,
+      "Child": [
+        6
+      ]
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 7,
+      "Child": [
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultTalk\" : \"t1011004_105\"} ",
+      "Next": 10,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 12,
+      "Child": [
+        12
+      ]
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 13,
+      "Child": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player\"} ",
+      "Next": 14,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 15,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1011004_2_02\", 0, 1, \"上官煦四_战斗一_主角死亡\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 17,
+      "Child": [
+        17
+      ]
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 18,
+      "Child": [
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in34005\"} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 20,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1011004_2_03\", 0, 1, \"上官煦四_战斗一_上官之死亡\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 22,
+      "Child": [
+        22
+      ]
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 23,
+      "Child": [
+        23,
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0110\"} ",
+      "Next": 24,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 25,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleResultTalk\" : \"t1011004_106\"} ",
+      "Next": 26,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 28,
+      "Child": [
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0110\", 0, 112211201, 1.00000, 130.35000} ",
+      "Next": 29,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleResultAddUnit\" : \"Player\", 0, 113213200, 1.00000, 130.44800} ",
+      "Next": 30,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleResultAddUnit\" : \"in34005\", 0, 111214103, 1.00000, 106.29200} ",
+      "Next": 31,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleResultAddUnit\" : \"in34006\", 0, 110212102, 1.00000, 110.62000} ",
+      "Next": 32,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0574501\", 1, 105205200, 1.00000, -98.90501} ",
+      "Next": 33,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0574503\", 1, 105207102, 1.00000, -64.65501} ",
+      "Next": 34,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0574505\", 1, 105209104, 1.00000, -51.51800} ",
+      "Next": 35,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0574502\", 1, 107212105, 1.00000, -28.76900} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "上官煦四_战斗一",
+  "WinTip": "Protect Shangguan Xu and defeat all enemies.",
+  "LoseTip": "Shangguan Xu is defeated"
+}

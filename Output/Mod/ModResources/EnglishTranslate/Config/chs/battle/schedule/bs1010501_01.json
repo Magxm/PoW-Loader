@@ -1,1 +1,114 @@
-bs1010501_01	石崑一阶：打打王齐众	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "party00", 0, 203103200, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in0105", 2, 101201200, 1.00000, 0.00000} , { "BattleResultAddBuff" : True, "in0105", "in0105_buff_FullPower", True} , { "BattleResultUnitHP" : 0, 100, "Player"} , { "BattleResultUnitMP" : 1, 300, "Player"}  ]} , { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "in05511", 1, 201201102, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in05512", 1, 101101202, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in05516", 1, 103203200, 1.00000, 0.00000} , { "BattleResultAddFactionBuff" : False, 1, "bs_add_atk50", True} , { "BattleResultAddFactionBuff" : False, 1, "bs_sub_def25", True}  ]} , { "BattleEventNode" : 100, 0, [ { "BattleResultWinFaction" : "", 1} , { "BattleResultLoseFaction" : "", 0}  ]}  ]} 		Defeat all enemies。	{name_1}{name_2}is defeated。
+{
+  "Id": "bs1010501_01",
+  "Name": "石崑一阶：打打王齐众",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"party00\", 0, 203103200, 1.00000, 0.00000} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0105\", 2, 101201200, 1.00000, 0.00000} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0105\", \"in0105_buff_FullPower\", True} ",
+      "Next": 4,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultUnitHP\" : 0, 100, \"Player\"} ",
+      "Next": 5,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleResultUnitMP\" : 1, 300, \"Player\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 7,
+      "Child": [
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05511\", 1, 201201102, 1.00000, 0.00000} ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05512\", 1, 101101202, 1.00000, 0.00000} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05516\", 1, 103203200, 1.00000, 0.00000} ",
+      "Next": 10,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultAddFactionBuff\" : False, 1, \"bs_add_atk50\", True} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultAddFactionBuff\" : False, 1, \"bs_sub_def25\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 13,
+      "Child": [
+        13,
+        14
+      ]
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleResultWinFaction\" : \"\", 1} ",
+      "Next": 14,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultLoseFaction\" : \"\", 0} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "",
+  "WinTip": "All enemies are defeated",
+  "LoseTip": "{name_1}{name_2} is defeated.。"
+}

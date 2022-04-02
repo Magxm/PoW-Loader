@@ -1,1 +1,58 @@
-test_average_average5	test_average_average5	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "test_average", 0, 204103101}  ]} , { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "test_average_5", 1, 201200101}  ]} , { "BattleEventNode" : 100, 0, [ { "BattleResultWinFaction" : "", 1} , { "BattleResultLoseFaction" : "", 0}  ]}  ]} 	数值测试专用		
+{
+  "Id": "test_average_average5",
+  "Name": "test_average_average5",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"test_average\", 0, 204103101, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 3,
+      "Child": [
+        3
+      ]
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnit\" : \"test_average_5\", 1, 201200101, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 5,
+      "Child": [
+        5,
+        6
+      ]
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleResultWinFaction\" : \"\", 1} ",
+      "Next": 6,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleResultLoseFaction\" : \"\", 0} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "数值测试专用",
+  "WinTip": "",
+  "LoseTip": ""
+}

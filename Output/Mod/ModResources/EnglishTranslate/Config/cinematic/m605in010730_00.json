@@ -1,8 +1,8 @@
 {
-  "EntryIndex": 0,
+  "EntryIndex": 8,
   "Nodes": [
     {
-      "Node": "{ \"TimerAction\" : 0.20000} ",
+      "Node": "{ \"TimerAction\" : 0.50000} ",
       "Next": 2,
       "Prallel": -1
     },
@@ -38,6 +38,21 @@
     },
     {
       "Node": "{ \"RunCinematicAction\" : \"m605in010730_01\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 9,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckCurrentRound\" : 1, 1, 168, \"\"}  ], 0} , 0, 10} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010700_047\"} ",
       "Next": -1,
       "Prallel": -1
     }

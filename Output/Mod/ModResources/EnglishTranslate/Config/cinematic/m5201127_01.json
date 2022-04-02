@@ -1,0 +1,96 @@
+{
+  "EntryIndex": 0,
+  "Nodes": [
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 0, \"fe5201127_2_02\"}  ], 0} , 2, 3} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 5,
+      "Prallel": 6
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe5201127_2_02\"}  ], 0} , 4, -1} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 17,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 1, \"fe5201127_2_02\"} ",
+      "Next": 9,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe5201127_2_03\"}  ], 0} , 7, -1} ",
+      "Next": -1,
+      "Prallel": 14
+    },
+    {
+      "Node": "{ \"SetEvaluationAction\" : \"ev5201127\", 0} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NextOrEndQuestAction\" } ",
+      "Next": 15,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"OpenUIEvaluationAction\" : \"ev5201127\", \"m5201127_01\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 1499.94800, -0.00600, 758.87900} , { 0.00000, 0.00000, 0.00000} , 0, True, 0, \"\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetEvaluationAction\" : \"ev5201127\", 1} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 3, \"fe5201127_2_01\"}  ], 0} , 13, -1} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetEvaluationAction\" : \"ev5201127\", 2} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 0, 0, \"fe5201127_2_01\"}  ], 0} , 11, -1} ",
+      "Next": -1,
+      "Prallel": 12
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 2, \"fe5201127_2_00\"} ",
+      "Next": 10,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetNpcChatacterInfoAction\" : \"in0109\", \"in0109\"} ",
+      "Next": 8,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"RewardAction\" : \"re7000001_01\"} ",
+      "Next": 16,
+      "Prallel": -1
+    }
+  ],
+  "Name": ""
+}

@@ -1,1 +1,3999 @@
-bs1205504_02	夏校穴獾寨正殿三阵比武战	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnits" : "Player,party01,party02,party03,in0107", 0, "101201200,101202101,102201201,102202200,103201202"}  ]} , { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnits" : "in53001,io53105301,io53125301,io53115301,io53135301", 1, "202102200,203101102,203102101,202103201,201103202"}  ]} , { "BattleEventNode" : 100, 0, [ { "BattleResultAddSecondaryGoal" : "bsc12055040201", "During the fight against Muying，All friendly party member survives。"}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0200"} , { "BattleResultAddBuff" : True, "in53001,io53105301,io53125301,io53115301,io53135301", "bt1205504_02_Buff_Sanduo", True} , { "BattleResultTalk" : "t1205504_bs0202"} , { "BattleResultAddBuff" : True, "in0107", "bt1205504_02_Buff_ProtectPower", True}  ]}  ]} , { "BattleEventNode" : 400, 1, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_03", "南飞鍠参加夏校"} , { "BattleAttackUnitCondition" : "in0106", "in53001"} , { "BattleFactorTargetHp" : 0, 0, "in53001"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0209"} , { "BattleResultAddBuff" : True, "in0106", "bt1205504_02_Buff_Knowsword", True}  ]}  ]} , { "BattleEventNode" : 400, 2, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_06", "武辙参加夏校"} , { "BattleAttackUnitCondition" : "io53105301", "in0111"} , { "BattleFactorTargetHp" : 0, 0, "in0111"} , { "BattleFactorLocalFlag" : 1, 0, "bsf120550401", "武辙还没有触发过事件"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0224"} , { "BattleResultAddBuff" : True, "in0111", "bt1205504_02_Buff_Mountain", True} , { "SetLocalFlagBattleAction" : "bsf120550401", 0, 1, "武辙触发过事件了"}  ]}  ]} , { "BattleEventNode" : 400, 2, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_06", "武辙参加夏校"} , { "BattleAttackUnitCondition" : "io53125301", "in0111"} , { "BattleFactorTargetHp" : 0, 0, "in0111"} , { "BattleFactorLocalFlag" : 1, 0, "bsf120550401", "武辙还没有触发过事件"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0224"} , { "BattleResultAddBuff" : True, "in0111", "bt1205504_02_Buff_Mountain", True} , { "SetLocalFlagBattleAction" : "bsf120550401", 0, 1, "武辙触发过事件了"}  ]}  ]} , { "BattleEventNode" : 400, 2, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_06", "武辙参加夏校"} , { "BattleAttackUnitCondition" : "io53115301", "in0111"} , { "BattleFactorTargetHp" : 0, 0, "in0111"} , { "BattleFactorLocalFlag" : 1, 0, "bsf120550401", "武辙还没有触发过事件"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0224"} , { "BattleResultAddBuff" : True, "in0111", "bt1205504_02_Buff_Mountain", True} , { "SetLocalFlagBattleAction" : "bsf120550401", 0, 1, "武辙触发过事件了"}  ]}  ]} , { "BattleEventNode" : 400, 2, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_06", "武辙参加夏校"} , { "BattleAttackUnitCondition" : "io53135301", "in0111"} , { "BattleFactorTargetHp" : 0, 0, "in0111"} , { "BattleFactorLocalFlag" : 1, 0, "bsf120550401", "武辙还没有触发过事件"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0224"} , { "BattleResultAddBuff" : True, "in0111", "bt1205504_02_Buff_Mountain", True} , { "SetLocalFlagBattleAction" : "bsf120550401", 0, 1, "武辙触发过事件了"}  ]}  ]} , { "BattleEventNode" : 400, 3, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_07", "萧芊菱参加夏校"} , { "BattleAttackUnitCondition" : "in53001", "Player"} , { "BattleFactorTargetHp" : 0, 0, "Player"} , { "BattleFactorLocalFlag" : 1, 0, "bsf120550402", "萧芊菱还没有触发过事件"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0232"} , { "BattleResultAddBuff" : True, "Player", "bt1205504_02_Buff_Heal", True} , { "BattleResultTalk" : "t1205504_bs0235"} , { "BattleResultAddBuff" : True, "party01,party02,party03,in0107", "bt1205504_02_Buff_Heal", True} , { "SetLocalFlagBattleAction" : "bsf120550402", 0, 1, "萧芊菱触发过事件了"}  ]}  ]} , { "BattleEventNode" : 400, 3, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_07", "萧芊菱参加夏校"} , { "BattleAttackUnitCondition" : "io53105301", "Player"} , { "BattleFactorTargetHp" : 0, 0, "Player"} , { "BattleFactorLocalFlag" : 1, 0, "bsf120550402", "萧芊菱还没有触发过事件"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0232"} , { "BattleResultAddBuff" : True, "Player", "bt1205504_02_Buff_Heal", True} , { "BattleResultTalk" : "t1205504_bs0235"} , { "BattleResultAddBuff" : True, "party01,party02,party03,in0107", "bt1205504_02_Buff_Heal", True} , { "SetLocalFlagBattleAction" : "bsf120550402", 0, 1, "萧芊菱触发过事件了"}  ]}  ]} , { "BattleEventNode" : 400, 3, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_07", "萧芊菱参加夏校"} , { "BattleAttackUnitCondition" : "io53125301", "Player"} , { "BattleFactorTargetHp" : 0, 0, "Player"} , { "BattleFactorLocalFlag" : 1, 0, "bsf120550402", "萧芊菱还没有触发过事件"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0232"} , { "BattleResultAddBuff" : True, "Player", "bt1205504_02_Buff_Heal", True} , { "BattleResultTalk" : "t1205504_bs0235"} , { "BattleResultAddBuff" : True, "party01,party02,party03,in0107", "bt1205504_02_Buff_Heal", True} , { "SetLocalFlagBattleAction" : "bsf120550402", 0, 1, "萧芊菱触发过事件了"}  ]}  ]} , { "BattleEventNode" : 400, 3, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_07", "萧芊菱参加夏校"} , { "BattleAttackUnitCondition" : "io53115301", "Player"} , { "BattleFactorTargetHp" : 0, 0, "Player"} , { "BattleFactorLocalFlag" : 1, 0, "bsf120550402", "萧芊菱还没有触发过事件"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0232"} , { "BattleResultAddBuff" : True, "Player", "bt1205504_02_Buff_Heal", True} , { "BattleResultTalk" : "t1205504_bs0235"} , { "BattleResultAddBuff" : True, "party01,party02,party03,in0107", "bt1205504_02_Buff_Heal", True} , { "SetLocalFlagBattleAction" : "bsf120550402", 0, 1, "萧芊菱触发过事件了"}  ]}  ]} , { "BattleEventNode" : 400, 3, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_07", "萧芊菱参加夏校"} , { "BattleAttackUnitCondition" : "io53135301", "Player"} , { "BattleFactorTargetHp" : 0, 0, "Player"} , { "BattleFactorLocalFlag" : 1, 0, "bsf120550402", "萧芊菱还没有触发过事件"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0232"} , { "BattleResultAddBuff" : True, "Player", "bt1205504_02_Buff_Heal", True} , { "BattleResultTalk" : "t1205504_bs0235"} , { "BattleResultAddBuff" : True, "party01,party02,party03,in0107", "bt1205504_02_Buff_Heal", True} , { "SetLocalFlagBattleAction" : "bsf120550402", 0, 1, "萧芊菱触发过事件了"}  ]}  ]} , { "BattleEventNode" : 400, 4, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_05", "上官煦参加夏校"} , { "BattleAttackUnitCondition" : "io53105301", "in0110"} , { "BattleFactorTargetHp" : 0, 0, "in0110"} , { "BattleFactorLocalFlag" : 1, 0, "bsf120550403", "上官煦还没有触发过事件"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0239"} , { "BattleResultAddBuff" : True, "in0110", "bt1205504_02_Buff_Deformation", True} , { "SetLocalFlagBattleAction" : "bsf120550403", 0, 1, "上官煦触发过事件了"}  ]}  ]} , { "BattleEventNode" : 400, 4, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_05", "上官煦参加夏校"} , { "BattleAttackUnitCondition" : "io53125301", "in0110"} , { "BattleFactorTargetHp" : 0, 0, "in0110"} , { "BattleFactorLocalFlag" : 1, 0, "bsf120550403", "上官煦还没有触发过事件"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0239"} , { "BattleResultAddBuff" : True, "in0110", "bt1205504_02_Buff_Deformation", True} , { "SetLocalFlagBattleAction" : "bsf120550403", 0, 1, "上官煦触发过事件了"}  ]}  ]} , { "BattleEventNode" : 400, 4, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_05", "上官煦参加夏校"} , { "BattleAttackUnitCondition" : "io53115301", "in0110"} , { "BattleFactorTargetHp" : 0, 0, "in0110"} , { "BattleFactorLocalFlag" : 1, 0, "bsf120550403", "上官煦还没有触发过事件"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0239"} , { "BattleResultAddBuff" : True, "in0110", "bt1205504_02_Buff_Deformation", True} , { "SetLocalFlagBattleAction" : "bsf120550403", 0, 1, "上官煦触发过事件了"}  ]}  ]} , { "BattleEventNode" : 400, 4, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_05", "上官煦参加夏校"} , { "BattleAttackUnitCondition" : "io53135301", "in0110"} , { "BattleFactorTargetHp" : 0, 0, "in0110"} , { "BattleFactorLocalFlag" : 1, 0, "bsf120550403", "上官煦还没有触发过事件"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0239"} , { "BattleResultAddBuff" : True, "in0110", "bt1205504_02_Buff_Deformation", True} , { "SetLocalFlagBattleAction" : "bsf120550403", 0, 1, "上官煦触发过事件了"}  ]}  ]} , { "BattleEventNode" : 400, 5, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_01", "段红儿参加夏校"} , { "BattleAttackUnitCondition" : "io53105301", "in0102"} , { "BattleFactorTargetHp" : 0, 0, "in0102"} , { "BattleFactorLocalFlag" : 1, 0, "bsf120550404", "段红儿还没有触发过事件"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0247"} , { "BattleResultAddBuff" : True, "in0102", "bt1205504_02_Buff_Knowformation", True} , { "BattleResultTalk" : "t1205504_bs0252"} , { "SetLocalFlagBattleAction" : "bsf120550404", 0, 1, "段红儿触发过事件了"}  ]}  ]} , { "BattleEventNode" : 400, 5, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_01", "段红儿参加夏校"} , { "BattleAttackUnitCondition" : "io53125301", "in0102"} , { "BattleFactorTargetHp" : 0, 0, "in0102"} , { "BattleFactorLocalFlag" : 1, 0, "bsf120550404", "段红儿还没有触发过事件"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0247"} , { "BattleResultAddBuff" : True, "in0102", "bt1205504_02_Buff_Knowformation", True} , { "BattleResultTalk" : "t1205504_bs0252"} , { "SetLocalFlagBattleAction" : "bsf120550404", 0, 1, "段红儿触发过事件了"}  ]}  ]} , { "BattleEventNode" : 400, 5, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_01", "段红儿参加夏校"} , { "BattleAttackUnitCondition" : "io53115301", "in0102"} , { "BattleFactorTargetHp" : 0, 0, "in0102"} , { "BattleFactorLocalFlag" : 1, 0, "bsf120550404", "段红儿还没有触发过事件"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0247"} , { "BattleResultAddBuff" : True, "in0102", "bt1205504_02_Buff_Knowformation", True} , { "BattleResultTalk" : "t1205504_bs0252"} , { "SetLocalFlagBattleAction" : "bsf120550404", 0, 1, "段红儿触发过事件了"}  ]}  ]} , { "BattleEventNode" : 400, 5, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_01", "段红儿参加夏校"} , { "BattleAttackUnitCondition" : "io53135301", "in0102"} , { "BattleFactorTargetHp" : 0, 0, "in0102"} , { "BattleFactorLocalFlag" : 1, 0, "bsf120550404", "段红儿还没有触发过事件"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0247"} , { "BattleResultAddBuff" : True, "in0102", "bt1205504_02_Buff_Knowformation", True} , { "BattleResultTalk" : "t1205504_bs0252"} , { "SetLocalFlagBattleAction" : "bsf120550404", 0, 1, "段红儿触发过事件了"}  ]}  ]} , { "BattleEventNode" : 400, 6, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_02", "锺若昕参加夏校"} , { "BattleAttackUnitCondition" : "in0103", "in53001"} , { "BattleFactorTargetHp" : 0, 0, "in53001"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0256"} , { "BattleResultAddBuff" : True, "in0103", "bt1205504_02_Buff_Goldenraven", True}  ]}  ]} , { "BattleEventNode" : 400, 7, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_04", "石崑参加夏校"} , { "BattleAttackUnitCondition" : "in0105", "in53001"} , { "BattleFactorTargetHp" : 0, 0, "in53001"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0269"} , { "BattleResultAddBuff" : True, "in0105", "bt1205504_02_Buff_Breakheart", True}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in53001,io53105301,io53125301,io53115301,io53135301"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0300"} , { "BattleResultAddBuff" : True, "Player,party01,party02,party03,in0107", "", False} , { "BattleResultRemoveUnits" : "Player,party01,party02,party03,in0107", False} , { "BattleResultAddUnit" : "in0204", 0, 101201200, 1.00000, 0.00000} , { "BattleResultAddBuff" : True, "in0204", "", True} , { "BattleResultAddUnit" : "in22001", 1, 202102200, 1.00000, 0.00000} , { "BattleResultAddBuff" : True, "in22001", "", False} , { "BattleResultTalk" : "t1205504_bs0311"} , { "BattleResultEventPoint" : "101102203,102201201,200200200,102202200,201203104,101203102,202201103,102200202"} , { "BattleResultTalk" : "t1205504_bs0324"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 0, "fe1205501_2_69", "柳心萍还未发觉机关变动"} , { "BattleFactorCharacterTile" : "101102203,102201201,200200200,102202200,201203104,101203102,202201103,102200202", "in0204"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0327"} , { "BattleResultRemoveEventPoint" : "101102203,102201201,200200200,102202200,201203104,101203102,202201103,102200202"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "Player"} , { "ExecuteOnceNode" } , { "SetGlobalFlagBattleAction" : "fe1205501_2_87", 0, 1, "沐璎战有人死了"} , { "BattleResultChangeSecondaryGoal" : "bsc12055040201", 2}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in0107"} , { "ExecuteOnceNode" } , { "SetGlobalFlagBattleAction" : "fe1205501_2_87", 0, 1, "沐璎战有人死了"} , { "BattleResultChangeSecondaryGoal" : "bsc12055040201", 2}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "party01"} , { "ExecuteOnceNode" } , { "SetGlobalFlagBattleAction" : "fe1205501_2_87", 0, 1, "沐璎战有人死了"} , { "BattleResultChangeSecondaryGoal" : "bsc12055040201", 2}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "party02"} , { "ExecuteOnceNode" } , { "SetGlobalFlagBattleAction" : "fe1205501_2_87", 0, 1, "沐璎战有人死了"} , { "BattleResultChangeSecondaryGoal" : "bsc12055040201", 2}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "party03"} , { "ExecuteOnceNode" } , { "SetGlobalFlagBattleAction" : "fe1205501_2_87", 0, 1, "沐璎战有人死了"} , { "BattleResultChangeSecondaryGoal" : "bsc12055040201", 2}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in53001,io53105301,io53125301,io53115301,io53135301"} , { "BattleFactorGlobalFlag" : 1, 0, "fe1205501_2_87", "沐璎战无人伤亡"} , { "ExecuteOnceNode" } , { "BattleResultChangeSecondaryGoal" : "bsc12055040201", 1}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 0, "fe1205501_2_69", "柳心萍还未发觉机关变动"} , { "BattleFactorCharacterTile" : "101202101", "in0204"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0335"} , { "BattleResultAddBuff" : True, "in0204", "debuff0001_bleeding00", False} , { "BattleResultAddBuff" : True, "in0204", "debuff0460_Immobility00", False} , { "BattleResultTalk" : "t1205504_bs0336"} , { "SetGlobalFlagBattleAction" : "fe1205501_2_88", 0, 1, "机关1已触发"} , { "BattleResultRemoveEventPoint" : "101102203,102201201,200200200,102202200,201203104,101203102,202201103,102200202"} , { "BattleResultAddBuff" : True, "in0204", "bt1205504_02_Buff_Fierylotus_01", True}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 0, "fe1205501_2_69", "柳心萍还未发觉机关变动"} , { "BattleFactorCharacterTile" : "200201101", "in0204"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0335"} , { "BattleResultAddBuff" : True, "in0204", "debuff0001_bleeding00", False} , { "BattleResultAddBuff" : True, "in0204", "debuff0460_Immobility00", False} , { "BattleResultTalk" : "t1205504_bs0336"} , { "SetGlobalFlagBattleAction" : "fe1205501_2_89", 0, 1, "机关2已触发"} , { "BattleResultRemoveEventPoint" : "101102203,102201201,200200200,102202200,201203104,101203102,202201103,102200202"} , { "BattleResultAddBuff" : True, "in0204", "bt1205504_02_Buff_Fierylotus_01", True}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 0, "fe1205501_2_69", "柳心萍还未发觉机关变动"} , { "BattleFactorCharacterTile" : "201202103", "in0204"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0335"} , { "BattleResultAddBuff" : True, "in0204", "debuff0001_bleeding00", False} , { "BattleResultAddBuff" : True, "in0204", "debuff0460_Immobility00", False} , { "BattleResultTalk" : "t1205504_bs0336"} , { "SetGlobalFlagBattleAction" : "fe1205501_2_90", 0, 1, "机关3已触发"} , { "BattleResultRemoveEventPoint" : "101102203,102201201,200200200,102202200,201203104,101203102,202201103,102200202"} , { "BattleResultAddBuff" : True, "in0204", "bt1205504_02_Buff_Fierylotus_01", True}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 0, "fe1205501_2_69", "柳心萍还未发觉机关变动"} , { "BattleFactorCharacterTile" : "202200102", "in0204"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0335"} , { "BattleResultAddBuff" : True, "in0204", "debuff0001_bleeding00", False} , { "BattleResultAddBuff" : True, "in0204", "debuff0460_Immobility00", False} , { "BattleResultTalk" : "t1205504_bs0336"} , { "SetGlobalFlagBattleAction" : "fe1205501_2_91", 0, 1, "机关4已触发"} , { "BattleResultRemoveEventPoint" : "101102203,102201201,200200200,102202200,201203104,101203102,202201103,102200202"} , { "BattleResultAddBuff" : True, "in0204", "bt1205504_02_Buff_Fierylotus_01", True}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 0, "fe1205501_2_69", "柳心萍还未发觉机关变动"} , { "BattleFactorCharacterTile" : "201101200", "in0204"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0335"} , { "BattleResultAddBuff" : True, "in0204", "debuff0001_bleeding00", False} , { "BattleResultAddBuff" : True, "in0204", "debuff0460_Immobility00", False} , { "BattleResultTalk" : "t1205504_bs0336"} , { "SetGlobalFlagBattleAction" : "fe1205501_2_92", 0, 1, "机关5已触发"} , { "BattleResultRemoveEventPoint" : "101102203,102201201,200200200,102202200,201203104,101203102,202201103,102200202"} , { "BattleResultAddBuff" : True, "in0204", "bt1205504_02_Buff_Fierylotus_01", True}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 0, "fe1205501_2_69", "柳心萍还未发觉机关变动"} , { "BattleFactorCharacterTile" : "200102202", "in0204"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0335"} , { "BattleResultAddBuff" : True, "in0204", "debuff0001_bleeding00", False} , { "BattleResultAddBuff" : True, "in0204", "debuff0460_Immobility00", False} , { "BattleResultTalk" : "t1205504_bs0336"} , { "SetGlobalFlagBattleAction" : "fe1205501_2_93", 0, 1, "机关6已触发"} , { "BattleResultRemoveEventPoint" : "101102203,102201201,200200200,102202200,201203104,101203102,202201103,102200202"} , { "BattleResultAddBuff" : True, "in0204", "bt1205504_02_Buff_Fierylotus_01", True}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 0, "fe1205501_2_69", "柳心萍还未发觉机关变动"} , { "BattleFactorCharacterTile" : "101101202", "in0204"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0335"} , { "BattleResultAddBuff" : True, "in0204", "debuff0001_bleeding00", False} , { "BattleResultAddBuff" : True, "in0204", "debuff0460_Immobility00", False} , { "BattleResultTalk" : "t1205504_bs0336"} , { "SetGlobalFlagBattleAction" : "fe1205501_2_94", 0, 1, "机关7已触发"} , { "BattleResultRemoveEventPoint" : "101102203,102201201,200200200,102202200,201203104,101203102,202201103,102200202"} , { "BattleResultAddBuff" : True, "in0204", "bt1205504_02_Buff_Fierylotus_01", True}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 0, "fe1205501_2_69", "柳心萍还未发觉机关变动"} , { "BattleFactorCharacterTile" : "102101203", "in0204"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0335"} , { "BattleResultAddBuff" : True, "in0204", "debuff0001_bleeding00", False} , { "BattleResultAddBuff" : True, "in0204", "debuff0460_Immobility00", False} , { "BattleResultTalk" : "t1205504_bs0336"} , { "SetGlobalFlagBattleAction" : "fe1205501_2_95", 0, 1, "机关8已触发"} , { "BattleResultRemoveEventPoint" : "101102203,102201201,200200200,102202200,201203104,101203102,202201103,102200202"} , { "BattleResultAddBuff" : True, "in0204", "bt1205504_02_Buff_Fierylotus_01", True}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_69", "柳心萍已发觉机关变动"} , { "BattleFactorCharacterTile" : "101202101", "in0204"} , { "BattleFactorGlobalFlag" : 1, 0, "fe1205501_2_88", "机关1未触发"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0352"} , { "BattleResultAddBuff" : True, "in0204", "debuff0001_bleeding00", False} , { "BattleResultAddBuff" : True, "in0204", "debuff0460_Immobility00", False} , { "BattleResultTalk" : "t1205504_bs0353"} , { "SetGlobalFlagBattleAction" : "fe1205501_2_88", 0, 1, "机关1已触发"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_69", "柳心萍已发觉机关变动"} , { "BattleFactorCharacterTile" : "200201101", "in0204"} , { "BattleFactorGlobalFlag" : 1, 0, "fe1205501_2_89", "机关2未触发"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0352"} , { "BattleResultAddBuff" : True, "in0204", "debuff0001_bleeding00", False} , { "BattleResultAddBuff" : True, "in0204", "debuff0460_Immobility00", False} , { "BattleResultTalk" : "t1205504_bs0353"} , { "SetGlobalFlagBattleAction" : "fe1205501_2_89", 0, 1, "机关2已触发"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_69", "柳心萍已发觉机关变动"} , { "BattleFactorCharacterTile" : "201202103", "in0204"} , { "BattleFactorGlobalFlag" : 1, 0, "fe1205501_2_90", "机关3未触发"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0352"} , { "BattleResultAddBuff" : True, "in0204", "debuff0001_bleeding00", False} , { "BattleResultAddBuff" : True, "in0204", "debuff0460_Immobility00", False} , { "BattleResultTalk" : "t1205504_bs0353"} , { "SetGlobalFlagBattleAction" : "fe1205501_2_90", 0, 1, "机关3已触发"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_69", "柳心萍已发觉机关变动"} , { "BattleFactorCharacterTile" : "202200102", "in0204"} , { "BattleFactorGlobalFlag" : 1, 0, "fe1205501_2_91", "机关4未触发"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0352"} , { "BattleResultAddBuff" : True, "in0204", "debuff0001_bleeding00", False} , { "BattleResultAddBuff" : True, "in0204", "debuff0460_Immobility00", False} , { "BattleResultTalk" : "t1205504_bs0353"} , { "SetGlobalFlagBattleAction" : "fe1205501_2_91", 0, 1, "机关4已触发"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_69", "柳心萍已发觉机关变动"} , { "BattleFactorCharacterTile" : "202101101", "in0204"} , { "BattleFactorGlobalFlag" : 1, 0, "fe1205501_2_92", "机关5未触发"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0352"} , { "BattleResultAddBuff" : True, "in0204", "debuff0001_bleeding00", False} , { "BattleResultAddBuff" : True, "in0204", "debuff0460_Immobility00", False} , { "BattleResultTalk" : "t1205504_bs0353"} , { "SetGlobalFlagBattleAction" : "fe1205501_2_92", 0, 1, "机关5已触发"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_69", "柳心萍已发觉机关变动"} , { "BattleFactorCharacterTile" : "200102202", "in0204"} , { "BattleFactorGlobalFlag" : 1, 0, "fe1205501_2_93", "机关6未触发"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0352"} , { "BattleResultAddBuff" : True, "in0204", "debuff0001_bleeding00", False} , { "BattleResultAddBuff" : True, "in0204", "debuff0460_Immobility00", False} , { "BattleResultTalk" : "t1205504_bs0353"} , { "SetGlobalFlagBattleAction" : "fe1205501_2_93", 0, 1, "机关6已触发"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_69", "柳心萍已发觉机关变动"} , { "BattleFactorCharacterTile" : "101101202", "in0204"} , { "BattleFactorGlobalFlag" : 1, 0, "fe1205501_2_94", "机关7未触发"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0352"} , { "BattleResultAddBuff" : True, "in0204", "debuff0001_bleeding00", False} , { "BattleResultAddBuff" : True, "in0204", "debuff0460_Immobility00", False} , { "BattleResultTalk" : "t1205504_bs0353"} , { "SetGlobalFlagBattleAction" : "fe1205501_2_94", 0, 1, "机关7已触发"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_69", "柳心萍已发觉机关变动"} , { "BattleFactorCharacterTile" : "102101203", "in0204"} , { "BattleFactorGlobalFlag" : 1, 0, "fe1205501_2_95", "机关8未触发"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0352"} , { "BattleResultAddBuff" : True, "in0204", "debuff0001_bleeding00", False} , { "BattleResultAddBuff" : True, "in0204", "debuff0460_Immobility00", False} , { "BattleResultTalk" : "t1205504_bs0353"} , { "SetGlobalFlagBattleAction" : "fe1205501_2_95", 0, 1, "机关8已触发"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 0, "fe1205501_2_69", "柳心萍还未发觉机关变动"} , { "BattleFactorCharacterTile" : "101102203,102201201,200200200,102202200,201203104,101203102,202201103,102200202", "in22001"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0351"} , { "BattleResultRemoveEventPoint" : "101102203,102201201,200200200,102202200,201203104,101203102,202201103,102200202"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "Player,party01,party02,party03,in0107"} , { "BattleFactorGlobalFlag" : 3, 1, "fe1205501_2_71", "对战沐璎没有打赢挡双方同时死状况"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0354"} , { "BattleResultAddBuff" : True, "in53001,io53105301,io53125301,io53115301,io53135301", "", False} , { "BattleResultRemoveUnits" : "in53001,io53105301,io53125301,io53115301,io53135301", False} , { "BattleResultAddUnit" : "in0204", 0, 101201200, 1.00000, 0.00000} , { "BattleResultAddBuff" : True, "in0204", "", True} , { "BattleResultAddUnit" : "in22001", 1, 202102200, 1.00000, 0.00000} , { "BattleResultAddBuff" : True, "in22001", "", False} , { "BattleResultTalk" : "t1205504_bs0359"} , { "BattleResultAddBuff" : True, "in0204", "bt1205504_02_Buff_Fierylotus_01", True} , { "BattleResultTalk" : "t1205504_bs0363"} , { "BattleResultTalk" : "t1205504_bs0317"} , { "BattleResultEventPoint" : "101102203,102201201,200200200,102202200,201203104,101203102,202201103,102200202"} , { "BattleResultTalk" : "t1205504_bs0324"}  ]}  ]} , { "BattleEventNode" : 400, 1, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in22001"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0364"} , { "BattleResultRemoveEventPoint" : "101102203,102201201,200200200,102202200,201203104,101203102,202201103,102200202"}  ]}  ]} , { "BattleEventNode" : 500, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 0, 1, "fe1205501_2_68", "已胜二场"} , { "BattleFactorGlobalFlag" : 1, 0, "fe1205501_2_70", "没有败场"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0373"} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 500, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_68", "胜一场"} , { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_70", "败一场"} , { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_72", "柳心萍胜夏侯焕"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0376"} , { "BattleResultAddBuff" : True, "in0204", "", False} , { "BattleResultRemoveUnit" : "in0204", False} , { "BattleResultAddUnit" : "in0201", 0, 101201200, 1.00000, 0.00000} , { "BattleResultAddBuff" : True, "in0201", "", True} , { "BattleResultAddUnit" : "in39001", 1, 202102200, 1.00000, 0.00000} , { "BattleResultAddBuff" : True, "in39001", "", False} , { "BattleResultTalk" : "t1205504_bs0400"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in0204"} , { "BattleFactorGlobalFlag" : 3, 1, "fe1205501_2_72", "柳心萍没赢夏侯焕挡双方同时死状况"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0410"} , { "BattleResultRemoveEventPoint" : "101102203,102201201,200200200,102202200,201203104,101203102,202201103,102200202"}  ]}  ]} , { "BattleEventNode" : 510, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_68", "胜一场"} , { "BattleFactorGlobalFlag" : 1, 1, "fe1205501_2_70", "败一场"} , { "BattleFactorGlobalFlag" : 1, 2, "fe1205501_2_72", "夏侯焕胜柳心萍"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0430"} , { "BattleResultAddBuff" : True, "in22001", "", False} , { "BattleResultRemoveUnit" : "in22001", False} , { "BattleResultAddUnit" : "in0201", 0, 101201200, 1.00000, 0.00000} , { "BattleResultAddBuff" : True, "in0201", "", True} , { "BattleResultAddUnit" : "in39001", 1, 202102200, 1.00000, 0.00000} , { "BattleResultAddBuff" : True, "in39001", "", False} , { "BattleResultTalk" : "t1205504_bs0400"}  ]}  ]} , { "BattleEventNode" : 400, 1, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in39001"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0434"} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 400, 1, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in0201"} , { "BattleFactorGlobalFlag" : 3, 1, "fe1205501_2_73", "楚天碧没胜过镜目挡两人同时死状况"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0456"} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 2, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in53001,io53105301,io53125301,io53115301,io53135301"} , { "BattleFactorTargetHp" : 0, 0, "in91001"} , { "ExecuteOnceNode" } , { "BattleResultRemoveUnit" : "in91001", False}  ]}  ]} , { "BattleEventNode" : 510, 0, [ { "StepByStepNode" : [ { "BattleFactorGlobalFlag" : 0, 1, "fe1205501_2_70", "已败二场"} , { "BattleFactorGlobalFlag" : 1, 0, "fe1205501_2_68", "没有胜场"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1205504_bs0428"} , { "BattleResultLose" : ""}  ]}  ]}  ]} 		Win two out of the three battles with the imperial coalition forces!	Lose two out of the three battles with the imperial coalition forces.
+{
+  "Id": "bs1205504_02",
+  "Name": "夏校穴獾寨正殿三阵比武战",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnits\" : \"Player,party01,party02,party03,in0107\", 0, \"101201200,101202101,102201201,102202200,103201202\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 3,
+      "Child": [
+        3
+      ]
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnits\" : \"in53001,io53105301,io53125301,io53115301,io53135301\", 1, \"202102200,203101102,203102101,202103201,201103202\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 5,
+      "Child": [
+        5
+      ]
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleResultAddSecondaryGoal\" : \"bsc12055040201\", \"对战沐璎时，全体我方成员存活。\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 7,
+      "Child": [
+        7
+      ]
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 8,
+      "Child": [
+        8,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 10,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0200\"} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in53001,io53105301,io53125301,io53115301,io53135301\", \"bt1205504_02_Buff_Sanduo\", True} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0202\"} ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0107\", \"bt1205504_02_Buff_ProtectPower\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
+      "Next": 15,
+      "Child": [
+        15
+      ]
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 16,
+      "Child": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_03\", \"南飞鍠参加夏校\"} ",
+      "Next": 17,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleAttackUnitCondition\" : \"in0106\", \"in53001\"} ",
+      "Next": 18,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in53001\"} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 20,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0209\"} ",
+      "Next": 21,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0106\", \"bt1205504_02_Buff_Knowsword\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleEventNode\" : 400, 2, [ ]} ",
+      "Next": 23,
+      "Child": [
+        23
+      ]
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 24,
+      "Child": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ]
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_06\", \"武辙参加夏校\"} ",
+      "Next": 25,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleAttackUnitCondition\" : \"io53105301\", \"in0111\"} ",
+      "Next": 26,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in0111\"} ",
+      "Next": 27,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bsf120550401\", \"武辙还没有触发过事件\"} ",
+      "Next": 28,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 29,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0224\"} ",
+      "Next": 30,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0111\", \"bt1205504_02_Buff_Mountain\", True} ",
+      "Next": 31,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bsf120550401\", 0, 1, \"武辙触发过事件了\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleEventNode\" : 400, 2, [ ]} ",
+      "Next": 33,
+      "Child": [
+        33
+      ]
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 34,
+      "Child": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ]
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_06\", \"武辙参加夏校\"} ",
+      "Next": 35,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleAttackUnitCondition\" : \"io53125301\", \"in0111\"} ",
+      "Next": 36,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in0111\"} ",
+      "Next": 37,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bsf120550401\", \"武辙还没有触发过事件\"} ",
+      "Next": 38,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 39,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0224\"} ",
+      "Next": 40,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0111\", \"bt1205504_02_Buff_Mountain\", True} ",
+      "Next": 41,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bsf120550401\", 0, 1, \"武辙触发过事件了\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"BattleEventNode\" : 400, 2, [ ]} ",
+      "Next": 43,
+      "Child": [
+        43
+      ]
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 44,
+      "Child": [
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51
+      ]
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_06\", \"武辙参加夏校\"} ",
+      "Next": 45,
+      "Child": []
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"BattleAttackUnitCondition\" : \"io53115301\", \"in0111\"} ",
+      "Next": 46,
+      "Child": []
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in0111\"} ",
+      "Next": 47,
+      "Child": []
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bsf120550401\", \"武辙还没有触发过事件\"} ",
+      "Next": 48,
+      "Child": []
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 49,
+      "Child": []
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0224\"} ",
+      "Next": 50,
+      "Child": []
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0111\", \"bt1205504_02_Buff_Mountain\", True} ",
+      "Next": 51,
+      "Child": []
+    },
+    {
+      "Index": 51,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bsf120550401\", 0, 1, \"武辙触发过事件了\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 52,
+      "Node": "{ \"BattleEventNode\" : 400, 2, [ ]} ",
+      "Next": 53,
+      "Child": [
+        53
+      ]
+    },
+    {
+      "Index": 53,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 54,
+      "Child": [
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61
+      ]
+    },
+    {
+      "Index": 54,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_06\", \"武辙参加夏校\"} ",
+      "Next": 55,
+      "Child": []
+    },
+    {
+      "Index": 55,
+      "Node": "{ \"BattleAttackUnitCondition\" : \"io53135301\", \"in0111\"} ",
+      "Next": 56,
+      "Child": []
+    },
+    {
+      "Index": 56,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in0111\"} ",
+      "Next": 57,
+      "Child": []
+    },
+    {
+      "Index": 57,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bsf120550401\", \"武辙还没有触发过事件\"} ",
+      "Next": 58,
+      "Child": []
+    },
+    {
+      "Index": 58,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 59,
+      "Child": []
+    },
+    {
+      "Index": 59,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0224\"} ",
+      "Next": 60,
+      "Child": []
+    },
+    {
+      "Index": 60,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0111\", \"bt1205504_02_Buff_Mountain\", True} ",
+      "Next": 61,
+      "Child": []
+    },
+    {
+      "Index": 61,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bsf120550401\", 0, 1, \"武辙触发过事件了\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 62,
+      "Node": "{ \"BattleEventNode\" : 400, 3, [ ]} ",
+      "Next": 63,
+      "Child": [
+        63
+      ]
+    },
+    {
+      "Index": 63,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 64,
+      "Child": [
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73
+      ]
+    },
+    {
+      "Index": 64,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_07\", \"萧芊菱参加夏校\"} ",
+      "Next": 65,
+      "Child": []
+    },
+    {
+      "Index": 65,
+      "Node": "{ \"BattleAttackUnitCondition\" : \"in53001\", \"Player\"} ",
+      "Next": 66,
+      "Child": []
+    },
+    {
+      "Index": 66,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"Player\"} ",
+      "Next": 67,
+      "Child": []
+    },
+    {
+      "Index": 67,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bsf120550402\", \"萧芊菱还没有触发过事件\"} ",
+      "Next": 68,
+      "Child": []
+    },
+    {
+      "Index": 68,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 69,
+      "Child": []
+    },
+    {
+      "Index": 69,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0232\"} ",
+      "Next": 70,
+      "Child": []
+    },
+    {
+      "Index": 70,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"bt1205504_02_Buff_Heal\", True} ",
+      "Next": 71,
+      "Child": []
+    },
+    {
+      "Index": 71,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0235\"} ",
+      "Next": 72,
+      "Child": []
+    },
+    {
+      "Index": 72,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"party01,party02,party03,in0107\", \"bt1205504_02_Buff_Heal\", True} ",
+      "Next": 73,
+      "Child": []
+    },
+    {
+      "Index": 73,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bsf120550402\", 0, 1, \"萧芊菱触发过事件了\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 74,
+      "Node": "{ \"BattleEventNode\" : 400, 3, [ ]} ",
+      "Next": 75,
+      "Child": [
+        75
+      ]
+    },
+    {
+      "Index": 75,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 76,
+      "Child": [
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85
+      ]
+    },
+    {
+      "Index": 76,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_07\", \"萧芊菱参加夏校\"} ",
+      "Next": 77,
+      "Child": []
+    },
+    {
+      "Index": 77,
+      "Node": "{ \"BattleAttackUnitCondition\" : \"io53105301\", \"Player\"} ",
+      "Next": 78,
+      "Child": []
+    },
+    {
+      "Index": 78,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"Player\"} ",
+      "Next": 79,
+      "Child": []
+    },
+    {
+      "Index": 79,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bsf120550402\", \"萧芊菱还没有触发过事件\"} ",
+      "Next": 80,
+      "Child": []
+    },
+    {
+      "Index": 80,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 81,
+      "Child": []
+    },
+    {
+      "Index": 81,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0232\"} ",
+      "Next": 82,
+      "Child": []
+    },
+    {
+      "Index": 82,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"bt1205504_02_Buff_Heal\", True} ",
+      "Next": 83,
+      "Child": []
+    },
+    {
+      "Index": 83,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0235\"} ",
+      "Next": 84,
+      "Child": []
+    },
+    {
+      "Index": 84,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"party01,party02,party03,in0107\", \"bt1205504_02_Buff_Heal\", True} ",
+      "Next": 85,
+      "Child": []
+    },
+    {
+      "Index": 85,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bsf120550402\", 0, 1, \"萧芊菱触发过事件了\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 86,
+      "Node": "{ \"BattleEventNode\" : 400, 3, [ ]} ",
+      "Next": 87,
+      "Child": [
+        87
+      ]
+    },
+    {
+      "Index": 87,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 88,
+      "Child": [
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97
+      ]
+    },
+    {
+      "Index": 88,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_07\", \"萧芊菱参加夏校\"} ",
+      "Next": 89,
+      "Child": []
+    },
+    {
+      "Index": 89,
+      "Node": "{ \"BattleAttackUnitCondition\" : \"io53125301\", \"Player\"} ",
+      "Next": 90,
+      "Child": []
+    },
+    {
+      "Index": 90,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"Player\"} ",
+      "Next": 91,
+      "Child": []
+    },
+    {
+      "Index": 91,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bsf120550402\", \"萧芊菱还没有触发过事件\"} ",
+      "Next": 92,
+      "Child": []
+    },
+    {
+      "Index": 92,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 93,
+      "Child": []
+    },
+    {
+      "Index": 93,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0232\"} ",
+      "Next": 94,
+      "Child": []
+    },
+    {
+      "Index": 94,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"bt1205504_02_Buff_Heal\", True} ",
+      "Next": 95,
+      "Child": []
+    },
+    {
+      "Index": 95,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0235\"} ",
+      "Next": 96,
+      "Child": []
+    },
+    {
+      "Index": 96,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"party01,party02,party03,in0107\", \"bt1205504_02_Buff_Heal\", True} ",
+      "Next": 97,
+      "Child": []
+    },
+    {
+      "Index": 97,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bsf120550402\", 0, 1, \"萧芊菱触发过事件了\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 98,
+      "Node": "{ \"BattleEventNode\" : 400, 3, [ ]} ",
+      "Next": 99,
+      "Child": [
+        99
+      ]
+    },
+    {
+      "Index": 99,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 100,
+      "Child": [
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109
+      ]
+    },
+    {
+      "Index": 100,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_07\", \"萧芊菱参加夏校\"} ",
+      "Next": 101,
+      "Child": []
+    },
+    {
+      "Index": 101,
+      "Node": "{ \"BattleAttackUnitCondition\" : \"io53115301\", \"Player\"} ",
+      "Next": 102,
+      "Child": []
+    },
+    {
+      "Index": 102,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"Player\"} ",
+      "Next": 103,
+      "Child": []
+    },
+    {
+      "Index": 103,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bsf120550402\", \"萧芊菱还没有触发过事件\"} ",
+      "Next": 104,
+      "Child": []
+    },
+    {
+      "Index": 104,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 105,
+      "Child": []
+    },
+    {
+      "Index": 105,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0232\"} ",
+      "Next": 106,
+      "Child": []
+    },
+    {
+      "Index": 106,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"bt1205504_02_Buff_Heal\", True} ",
+      "Next": 107,
+      "Child": []
+    },
+    {
+      "Index": 107,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0235\"} ",
+      "Next": 108,
+      "Child": []
+    },
+    {
+      "Index": 108,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"party01,party02,party03,in0107\", \"bt1205504_02_Buff_Heal\", True} ",
+      "Next": 109,
+      "Child": []
+    },
+    {
+      "Index": 109,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bsf120550402\", 0, 1, \"萧芊菱触发过事件了\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 110,
+      "Node": "{ \"BattleEventNode\" : 400, 3, [ ]} ",
+      "Next": 111,
+      "Child": [
+        111
+      ]
+    },
+    {
+      "Index": 111,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 112,
+      "Child": [
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119,
+        120,
+        121
+      ]
+    },
+    {
+      "Index": 112,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_07\", \"萧芊菱参加夏校\"} ",
+      "Next": 113,
+      "Child": []
+    },
+    {
+      "Index": 113,
+      "Node": "{ \"BattleAttackUnitCondition\" : \"io53135301\", \"Player\"} ",
+      "Next": 114,
+      "Child": []
+    },
+    {
+      "Index": 114,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"Player\"} ",
+      "Next": 115,
+      "Child": []
+    },
+    {
+      "Index": 115,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bsf120550402\", \"萧芊菱还没有触发过事件\"} ",
+      "Next": 116,
+      "Child": []
+    },
+    {
+      "Index": 116,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 117,
+      "Child": []
+    },
+    {
+      "Index": 117,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0232\"} ",
+      "Next": 118,
+      "Child": []
+    },
+    {
+      "Index": 118,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"bt1205504_02_Buff_Heal\", True} ",
+      "Next": 119,
+      "Child": []
+    },
+    {
+      "Index": 119,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0235\"} ",
+      "Next": 120,
+      "Child": []
+    },
+    {
+      "Index": 120,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"party01,party02,party03,in0107\", \"bt1205504_02_Buff_Heal\", True} ",
+      "Next": 121,
+      "Child": []
+    },
+    {
+      "Index": 121,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bsf120550402\", 0, 1, \"萧芊菱触发过事件了\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 122,
+      "Node": "{ \"BattleEventNode\" : 400, 4, [ ]} ",
+      "Next": 123,
+      "Child": [
+        123
+      ]
+    },
+    {
+      "Index": 123,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 124,
+      "Child": [
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131
+      ]
+    },
+    {
+      "Index": 124,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_05\", \"上官煦参加夏校\"} ",
+      "Next": 125,
+      "Child": []
+    },
+    {
+      "Index": 125,
+      "Node": "{ \"BattleAttackUnitCondition\" : \"io53105301\", \"in0110\"} ",
+      "Next": 126,
+      "Child": []
+    },
+    {
+      "Index": 126,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in0110\"} ",
+      "Next": 127,
+      "Child": []
+    },
+    {
+      "Index": 127,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bsf120550403\", \"上官煦还没有触发过事件\"} ",
+      "Next": 128,
+      "Child": []
+    },
+    {
+      "Index": 128,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 129,
+      "Child": []
+    },
+    {
+      "Index": 129,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0239\"} ",
+      "Next": 130,
+      "Child": []
+    },
+    {
+      "Index": 130,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0110\", \"bt1205504_02_Buff_Deformation\", True} ",
+      "Next": 131,
+      "Child": []
+    },
+    {
+      "Index": 131,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bsf120550403\", 0, 1, \"上官煦触发过事件了\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 132,
+      "Node": "{ \"BattleEventNode\" : 400, 4, [ ]} ",
+      "Next": 133,
+      "Child": [
+        133
+      ]
+    },
+    {
+      "Index": 133,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 134,
+      "Child": [
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141
+      ]
+    },
+    {
+      "Index": 134,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_05\", \"上官煦参加夏校\"} ",
+      "Next": 135,
+      "Child": []
+    },
+    {
+      "Index": 135,
+      "Node": "{ \"BattleAttackUnitCondition\" : \"io53125301\", \"in0110\"} ",
+      "Next": 136,
+      "Child": []
+    },
+    {
+      "Index": 136,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in0110\"} ",
+      "Next": 137,
+      "Child": []
+    },
+    {
+      "Index": 137,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bsf120550403\", \"上官煦还没有触发过事件\"} ",
+      "Next": 138,
+      "Child": []
+    },
+    {
+      "Index": 138,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 139,
+      "Child": []
+    },
+    {
+      "Index": 139,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0239\"} ",
+      "Next": 140,
+      "Child": []
+    },
+    {
+      "Index": 140,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0110\", \"bt1205504_02_Buff_Deformation\", True} ",
+      "Next": 141,
+      "Child": []
+    },
+    {
+      "Index": 141,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bsf120550403\", 0, 1, \"上官煦触发过事件了\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 142,
+      "Node": "{ \"BattleEventNode\" : 400, 4, [ ]} ",
+      "Next": 143,
+      "Child": [
+        143
+      ]
+    },
+    {
+      "Index": 143,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 144,
+      "Child": [
+        144,
+        145,
+        146,
+        147,
+        148,
+        149,
+        150,
+        151
+      ]
+    },
+    {
+      "Index": 144,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_05\", \"上官煦参加夏校\"} ",
+      "Next": 145,
+      "Child": []
+    },
+    {
+      "Index": 145,
+      "Node": "{ \"BattleAttackUnitCondition\" : \"io53115301\", \"in0110\"} ",
+      "Next": 146,
+      "Child": []
+    },
+    {
+      "Index": 146,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in0110\"} ",
+      "Next": 147,
+      "Child": []
+    },
+    {
+      "Index": 147,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bsf120550403\", \"上官煦还没有触发过事件\"} ",
+      "Next": 148,
+      "Child": []
+    },
+    {
+      "Index": 148,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 149,
+      "Child": []
+    },
+    {
+      "Index": 149,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0239\"} ",
+      "Next": 150,
+      "Child": []
+    },
+    {
+      "Index": 150,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0110\", \"bt1205504_02_Buff_Deformation\", True} ",
+      "Next": 151,
+      "Child": []
+    },
+    {
+      "Index": 151,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bsf120550403\", 0, 1, \"上官煦触发过事件了\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 152,
+      "Node": "{ \"BattleEventNode\" : 400, 4, [ ]} ",
+      "Next": 153,
+      "Child": [
+        153
+      ]
+    },
+    {
+      "Index": 153,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 154,
+      "Child": [
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        160,
+        161
+      ]
+    },
+    {
+      "Index": 154,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_05\", \"上官煦参加夏校\"} ",
+      "Next": 155,
+      "Child": []
+    },
+    {
+      "Index": 155,
+      "Node": "{ \"BattleAttackUnitCondition\" : \"io53135301\", \"in0110\"} ",
+      "Next": 156,
+      "Child": []
+    },
+    {
+      "Index": 156,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in0110\"} ",
+      "Next": 157,
+      "Child": []
+    },
+    {
+      "Index": 157,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bsf120550403\", \"上官煦还没有触发过事件\"} ",
+      "Next": 158,
+      "Child": []
+    },
+    {
+      "Index": 158,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 159,
+      "Child": []
+    },
+    {
+      "Index": 159,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0239\"} ",
+      "Next": 160,
+      "Child": []
+    },
+    {
+      "Index": 160,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0110\", \"bt1205504_02_Buff_Deformation\", True} ",
+      "Next": 161,
+      "Child": []
+    },
+    {
+      "Index": 161,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bsf120550403\", 0, 1, \"上官煦触发过事件了\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 162,
+      "Node": "{ \"BattleEventNode\" : 400, 5, [ ]} ",
+      "Next": 163,
+      "Child": [
+        163
+      ]
+    },
+    {
+      "Index": 163,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 164,
+      "Child": [
+        164,
+        165,
+        166,
+        167,
+        168,
+        169,
+        170,
+        171,
+        172
+      ]
+    },
+    {
+      "Index": 164,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_01\", \"段红儿参加夏校\"} ",
+      "Next": 165,
+      "Child": []
+    },
+    {
+      "Index": 165,
+      "Node": "{ \"BattleAttackUnitCondition\" : \"io53105301\", \"in0102\"} ",
+      "Next": 166,
+      "Child": []
+    },
+    {
+      "Index": 166,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in0102\"} ",
+      "Next": 167,
+      "Child": []
+    },
+    {
+      "Index": 167,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bsf120550404\", \"段红儿还没有触发过事件\"} ",
+      "Next": 168,
+      "Child": []
+    },
+    {
+      "Index": 168,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 169,
+      "Child": []
+    },
+    {
+      "Index": 169,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0247\"} ",
+      "Next": 170,
+      "Child": []
+    },
+    {
+      "Index": 170,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0102\", \"bt1205504_02_Buff_Knowformation\", True} ",
+      "Next": 171,
+      "Child": []
+    },
+    {
+      "Index": 171,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0252\"} ",
+      "Next": 172,
+      "Child": []
+    },
+    {
+      "Index": 172,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bsf120550404\", 0, 1, \"段红儿触发过事件了\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 173,
+      "Node": "{ \"BattleEventNode\" : 400, 5, [ ]} ",
+      "Next": 174,
+      "Child": [
+        174
+      ]
+    },
+    {
+      "Index": 174,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 175,
+      "Child": [
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183
+      ]
+    },
+    {
+      "Index": 175,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_01\", \"段红儿参加夏校\"} ",
+      "Next": 176,
+      "Child": []
+    },
+    {
+      "Index": 176,
+      "Node": "{ \"BattleAttackUnitCondition\" : \"io53125301\", \"in0102\"} ",
+      "Next": 177,
+      "Child": []
+    },
+    {
+      "Index": 177,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in0102\"} ",
+      "Next": 178,
+      "Child": []
+    },
+    {
+      "Index": 178,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bsf120550404\", \"段红儿还没有触发过事件\"} ",
+      "Next": 179,
+      "Child": []
+    },
+    {
+      "Index": 179,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 180,
+      "Child": []
+    },
+    {
+      "Index": 180,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0247\"} ",
+      "Next": 181,
+      "Child": []
+    },
+    {
+      "Index": 181,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0102\", \"bt1205504_02_Buff_Knowformation\", True} ",
+      "Next": 182,
+      "Child": []
+    },
+    {
+      "Index": 182,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0252\"} ",
+      "Next": 183,
+      "Child": []
+    },
+    {
+      "Index": 183,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bsf120550404\", 0, 1, \"段红儿触发过事件了\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 184,
+      "Node": "{ \"BattleEventNode\" : 400, 5, [ ]} ",
+      "Next": 185,
+      "Child": [
+        185
+      ]
+    },
+    {
+      "Index": 185,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 186,
+      "Child": [
+        186,
+        187,
+        188,
+        189,
+        190,
+        191,
+        192,
+        193,
+        194
+      ]
+    },
+    {
+      "Index": 186,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_01\", \"段红儿参加夏校\"} ",
+      "Next": 187,
+      "Child": []
+    },
+    {
+      "Index": 187,
+      "Node": "{ \"BattleAttackUnitCondition\" : \"io53115301\", \"in0102\"} ",
+      "Next": 188,
+      "Child": []
+    },
+    {
+      "Index": 188,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in0102\"} ",
+      "Next": 189,
+      "Child": []
+    },
+    {
+      "Index": 189,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bsf120550404\", \"段红儿还没有触发过事件\"} ",
+      "Next": 190,
+      "Child": []
+    },
+    {
+      "Index": 190,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 191,
+      "Child": []
+    },
+    {
+      "Index": 191,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0247\"} ",
+      "Next": 192,
+      "Child": []
+    },
+    {
+      "Index": 192,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0102\", \"bt1205504_02_Buff_Knowformation\", True} ",
+      "Next": 193,
+      "Child": []
+    },
+    {
+      "Index": 193,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0252\"} ",
+      "Next": 194,
+      "Child": []
+    },
+    {
+      "Index": 194,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bsf120550404\", 0, 1, \"段红儿触发过事件了\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 195,
+      "Node": "{ \"BattleEventNode\" : 400, 5, [ ]} ",
+      "Next": 196,
+      "Child": [
+        196
+      ]
+    },
+    {
+      "Index": 196,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 197,
+      "Child": [
+        197,
+        198,
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205
+      ]
+    },
+    {
+      "Index": 197,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_01\", \"段红儿参加夏校\"} ",
+      "Next": 198,
+      "Child": []
+    },
+    {
+      "Index": 198,
+      "Node": "{ \"BattleAttackUnitCondition\" : \"io53135301\", \"in0102\"} ",
+      "Next": 199,
+      "Child": []
+    },
+    {
+      "Index": 199,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in0102\"} ",
+      "Next": 200,
+      "Child": []
+    },
+    {
+      "Index": 200,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bsf120550404\", \"段红儿还没有触发过事件\"} ",
+      "Next": 201,
+      "Child": []
+    },
+    {
+      "Index": 201,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 202,
+      "Child": []
+    },
+    {
+      "Index": 202,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0247\"} ",
+      "Next": 203,
+      "Child": []
+    },
+    {
+      "Index": 203,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0102\", \"bt1205504_02_Buff_Knowformation\", True} ",
+      "Next": 204,
+      "Child": []
+    },
+    {
+      "Index": 204,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0252\"} ",
+      "Next": 205,
+      "Child": []
+    },
+    {
+      "Index": 205,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bsf120550404\", 0, 1, \"段红儿触发过事件了\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 206,
+      "Node": "{ \"BattleEventNode\" : 400, 6, [ ]} ",
+      "Next": 207,
+      "Child": [
+        207
+      ]
+    },
+    {
+      "Index": 207,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 208,
+      "Child": [
+        208,
+        209,
+        210,
+        211,
+        212,
+        213
+      ]
+    },
+    {
+      "Index": 208,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_02\", \"锺若昕参加夏校\"} ",
+      "Next": 209,
+      "Child": []
+    },
+    {
+      "Index": 209,
+      "Node": "{ \"BattleAttackUnitCondition\" : \"in0103\", \"in53001\"} ",
+      "Next": 210,
+      "Child": []
+    },
+    {
+      "Index": 210,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in53001\"} ",
+      "Next": 211,
+      "Child": []
+    },
+    {
+      "Index": 211,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 212,
+      "Child": []
+    },
+    {
+      "Index": 212,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0256\"} ",
+      "Next": 213,
+      "Child": []
+    },
+    {
+      "Index": 213,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0103\", \"bt1205504_02_Buff_Goldenraven\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 214,
+      "Node": "{ \"BattleEventNode\" : 400, 7, [ ]} ",
+      "Next": 215,
+      "Child": [
+        215
+      ]
+    },
+    {
+      "Index": 215,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 216,
+      "Child": [
+        216,
+        217,
+        218,
+        219,
+        220,
+        221
+      ]
+    },
+    {
+      "Index": 216,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_04\", \"石崑参加夏校\"} ",
+      "Next": 217,
+      "Child": []
+    },
+    {
+      "Index": 217,
+      "Node": "{ \"BattleAttackUnitCondition\" : \"in0105\", \"in53001\"} ",
+      "Next": 218,
+      "Child": []
+    },
+    {
+      "Index": 218,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in53001\"} ",
+      "Next": 219,
+      "Child": []
+    },
+    {
+      "Index": 219,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 220,
+      "Child": []
+    },
+    {
+      "Index": 220,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0269\"} ",
+      "Next": 221,
+      "Child": []
+    },
+    {
+      "Index": 221,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0105\", \"bt1205504_02_Buff_Breakheart\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 222,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 223,
+      "Child": [
+        223
+      ]
+    },
+    {
+      "Index": 223,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 224,
+      "Child": [
+        224,
+        225,
+        226,
+        227,
+        228,
+        229,
+        230,
+        231,
+        232,
+        233,
+        234,
+        235
+      ]
+    },
+    {
+      "Index": 224,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in53001,io53105301,io53125301,io53115301,io53135301\"} ",
+      "Next": 225,
+      "Child": []
+    },
+    {
+      "Index": 225,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 226,
+      "Child": []
+    },
+    {
+      "Index": 226,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0300\"} ",
+      "Next": 227,
+      "Child": []
+    },
+    {
+      "Index": 227,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"Player,party01,party02,party03,in0107\", \"\", False} ",
+      "Next": 228,
+      "Child": []
+    },
+    {
+      "Index": 228,
+      "Node": "{ \"BattleResultRemoveUnits\" : \"Player,party01,party02,party03,in0107\", False} ",
+      "Next": 229,
+      "Child": []
+    },
+    {
+      "Index": 229,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0204\", 0, 101201200, 1.00000, 0.00000} ",
+      "Next": 230,
+      "Child": []
+    },
+    {
+      "Index": 230,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"\", True} ",
+      "Next": 231,
+      "Child": []
+    },
+    {
+      "Index": 231,
+      "Node": "{ \"BattleResultAddUnit\" : \"in22001\", 1, 202102200, 1.00000, 0.00000} ",
+      "Next": 232,
+      "Child": []
+    },
+    {
+      "Index": 232,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in22001\", \"\", False} ",
+      "Next": 233,
+      "Child": []
+    },
+    {
+      "Index": 233,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0311\"} ",
+      "Next": 234,
+      "Child": []
+    },
+    {
+      "Index": 234,
+      "Node": "{ \"BattleResultEventPoint\" : \"101102203,102201201,200200200,102202200,201203104,101203102,202201103,102200202\"} ",
+      "Next": 235,
+      "Child": []
+    },
+    {
+      "Index": 235,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0324\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 236,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 237,
+      "Child": [
+        237
+      ]
+    },
+    {
+      "Index": 237,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 238,
+      "Child": [
+        238,
+        239,
+        240,
+        241,
+        242
+      ]
+    },
+    {
+      "Index": 238,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1205501_2_69\", \"柳心萍还未发觉机关变动\"} ",
+      "Next": 239,
+      "Child": []
+    },
+    {
+      "Index": 239,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"101102203,102201201,200200200,102202200,201203104,101203102,202201103,102200202\", \"in0204\"} ",
+      "Next": 240,
+      "Child": []
+    },
+    {
+      "Index": 240,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 241,
+      "Child": []
+    },
+    {
+      "Index": 241,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0327\"} ",
+      "Next": 242,
+      "Child": []
+    },
+    {
+      "Index": 242,
+      "Node": "{ \"BattleResultRemoveEventPoint\" : \"101102203,102201201,200200200,102202200,201203104,101203102,202201103,102200202\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 243,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 244,
+      "Child": [
+        244
+      ]
+    },
+    {
+      "Index": 244,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 245,
+      "Child": [
+        245,
+        246,
+        247,
+        248
+      ]
+    },
+    {
+      "Index": 245,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player\"} ",
+      "Next": 246,
+      "Child": []
+    },
+    {
+      "Index": 246,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 247,
+      "Child": []
+    },
+    {
+      "Index": 247,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1205501_2_87\", 0, 1, \"沐璎战有人死了\"} ",
+      "Next": 248,
+      "Child": []
+    },
+    {
+      "Index": 248,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bsc12055040201\", 2} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 249,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 250,
+      "Child": [
+        250
+      ]
+    },
+    {
+      "Index": 250,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 251,
+      "Child": [
+        251,
+        252,
+        253,
+        254
+      ]
+    },
+    {
+      "Index": 251,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0107\"} ",
+      "Next": 252,
+      "Child": []
+    },
+    {
+      "Index": 252,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 253,
+      "Child": []
+    },
+    {
+      "Index": 253,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1205501_2_87\", 0, 1, \"沐璎战有人死了\"} ",
+      "Next": 254,
+      "Child": []
+    },
+    {
+      "Index": 254,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bsc12055040201\", 2} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 255,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 256,
+      "Child": [
+        256
+      ]
+    },
+    {
+      "Index": 256,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 257,
+      "Child": [
+        257,
+        258,
+        259,
+        260
+      ]
+    },
+    {
+      "Index": 257,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"party01\"} ",
+      "Next": 258,
+      "Child": []
+    },
+    {
+      "Index": 258,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 259,
+      "Child": []
+    },
+    {
+      "Index": 259,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1205501_2_87\", 0, 1, \"沐璎战有人死了\"} ",
+      "Next": 260,
+      "Child": []
+    },
+    {
+      "Index": 260,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bsc12055040201\", 2} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 261,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 262,
+      "Child": [
+        262
+      ]
+    },
+    {
+      "Index": 262,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 263,
+      "Child": [
+        263,
+        264,
+        265,
+        266
+      ]
+    },
+    {
+      "Index": 263,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"party02\"} ",
+      "Next": 264,
+      "Child": []
+    },
+    {
+      "Index": 264,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 265,
+      "Child": []
+    },
+    {
+      "Index": 265,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1205501_2_87\", 0, 1, \"沐璎战有人死了\"} ",
+      "Next": 266,
+      "Child": []
+    },
+    {
+      "Index": 266,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bsc12055040201\", 2} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 267,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 268,
+      "Child": [
+        268
+      ]
+    },
+    {
+      "Index": 268,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 269,
+      "Child": [
+        269,
+        270,
+        271,
+        272
+      ]
+    },
+    {
+      "Index": 269,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"party03\"} ",
+      "Next": 270,
+      "Child": []
+    },
+    {
+      "Index": 270,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 271,
+      "Child": []
+    },
+    {
+      "Index": 271,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1205501_2_87\", 0, 1, \"沐璎战有人死了\"} ",
+      "Next": 272,
+      "Child": []
+    },
+    {
+      "Index": 272,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bsc12055040201\", 2} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 273,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 274,
+      "Child": [
+        274
+      ]
+    },
+    {
+      "Index": 274,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 275,
+      "Child": [
+        275,
+        276,
+        277,
+        278
+      ]
+    },
+    {
+      "Index": 275,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in53001,io53105301,io53125301,io53115301,io53135301\"} ",
+      "Next": 276,
+      "Child": []
+    },
+    {
+      "Index": 276,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1205501_2_87\", \"沐璎战None人伤亡\"} ",
+      "Next": 277,
+      "Child": []
+    },
+    {
+      "Index": 277,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 278,
+      "Child": []
+    },
+    {
+      "Index": 278,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bsc12055040201\", 1} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 279,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 280,
+      "Child": [
+        280
+      ]
+    },
+    {
+      "Index": 280,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 281,
+      "Child": [
+        281,
+        282,
+        283,
+        284,
+        285,
+        286,
+        287,
+        288,
+        289,
+        290
+      ]
+    },
+    {
+      "Index": 281,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1205501_2_69\", \"柳心萍还未发觉机关变动\"} ",
+      "Next": 282,
+      "Child": []
+    },
+    {
+      "Index": 282,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"101202101\", \"in0204\"} ",
+      "Next": 283,
+      "Child": []
+    },
+    {
+      "Index": 283,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 284,
+      "Child": []
+    },
+    {
+      "Index": 284,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0335\"} ",
+      "Next": 285,
+      "Child": []
+    },
+    {
+      "Index": 285,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"debuff0001_bleeding00\", False} ",
+      "Next": 286,
+      "Child": []
+    },
+    {
+      "Index": 286,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"debuff0460_Immobility00\", False} ",
+      "Next": 287,
+      "Child": []
+    },
+    {
+      "Index": 287,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0336\"} ",
+      "Next": 288,
+      "Child": []
+    },
+    {
+      "Index": 288,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1205501_2_88\", 0, 1, \"机关1已触发\"} ",
+      "Next": 289,
+      "Child": []
+    },
+    {
+      "Index": 289,
+      "Node": "{ \"BattleResultRemoveEventPoint\" : \"101102203,102201201,200200200,102202200,201203104,101203102,202201103,102200202\"} ",
+      "Next": 290,
+      "Child": []
+    },
+    {
+      "Index": 290,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"bt1205504_02_Buff_Fierylotus_01\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 291,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 292,
+      "Child": [
+        292
+      ]
+    },
+    {
+      "Index": 292,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 293,
+      "Child": [
+        293,
+        294,
+        295,
+        296,
+        297,
+        298,
+        299,
+        300,
+        301,
+        302
+      ]
+    },
+    {
+      "Index": 293,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1205501_2_69\", \"柳心萍还未发觉机关变动\"} ",
+      "Next": 294,
+      "Child": []
+    },
+    {
+      "Index": 294,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"200201101\", \"in0204\"} ",
+      "Next": 295,
+      "Child": []
+    },
+    {
+      "Index": 295,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 296,
+      "Child": []
+    },
+    {
+      "Index": 296,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0335\"} ",
+      "Next": 297,
+      "Child": []
+    },
+    {
+      "Index": 297,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"debuff0001_bleeding00\", False} ",
+      "Next": 298,
+      "Child": []
+    },
+    {
+      "Index": 298,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"debuff0460_Immobility00\", False} ",
+      "Next": 299,
+      "Child": []
+    },
+    {
+      "Index": 299,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0336\"} ",
+      "Next": 300,
+      "Child": []
+    },
+    {
+      "Index": 300,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1205501_2_89\", 0, 1, \"机关2已触发\"} ",
+      "Next": 301,
+      "Child": []
+    },
+    {
+      "Index": 301,
+      "Node": "{ \"BattleResultRemoveEventPoint\" : \"101102203,102201201,200200200,102202200,201203104,101203102,202201103,102200202\"} ",
+      "Next": 302,
+      "Child": []
+    },
+    {
+      "Index": 302,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"bt1205504_02_Buff_Fierylotus_01\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 303,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 304,
+      "Child": [
+        304
+      ]
+    },
+    {
+      "Index": 304,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 305,
+      "Child": [
+        305,
+        306,
+        307,
+        308,
+        309,
+        310,
+        311,
+        312,
+        313,
+        314
+      ]
+    },
+    {
+      "Index": 305,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1205501_2_69\", \"柳心萍还未发觉机关变动\"} ",
+      "Next": 306,
+      "Child": []
+    },
+    {
+      "Index": 306,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"201202103\", \"in0204\"} ",
+      "Next": 307,
+      "Child": []
+    },
+    {
+      "Index": 307,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 308,
+      "Child": []
+    },
+    {
+      "Index": 308,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0335\"} ",
+      "Next": 309,
+      "Child": []
+    },
+    {
+      "Index": 309,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"debuff0001_bleeding00\", False} ",
+      "Next": 310,
+      "Child": []
+    },
+    {
+      "Index": 310,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"debuff0460_Immobility00\", False} ",
+      "Next": 311,
+      "Child": []
+    },
+    {
+      "Index": 311,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0336\"} ",
+      "Next": 312,
+      "Child": []
+    },
+    {
+      "Index": 312,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1205501_2_90\", 0, 1, \"机关3已触发\"} ",
+      "Next": 313,
+      "Child": []
+    },
+    {
+      "Index": 313,
+      "Node": "{ \"BattleResultRemoveEventPoint\" : \"101102203,102201201,200200200,102202200,201203104,101203102,202201103,102200202\"} ",
+      "Next": 314,
+      "Child": []
+    },
+    {
+      "Index": 314,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"bt1205504_02_Buff_Fierylotus_01\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 315,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 316,
+      "Child": [
+        316
+      ]
+    },
+    {
+      "Index": 316,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 317,
+      "Child": [
+        317,
+        318,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326
+      ]
+    },
+    {
+      "Index": 317,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1205501_2_69\", \"柳心萍还未发觉机关变动\"} ",
+      "Next": 318,
+      "Child": []
+    },
+    {
+      "Index": 318,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"202200102\", \"in0204\"} ",
+      "Next": 319,
+      "Child": []
+    },
+    {
+      "Index": 319,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 320,
+      "Child": []
+    },
+    {
+      "Index": 320,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0335\"} ",
+      "Next": 321,
+      "Child": []
+    },
+    {
+      "Index": 321,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"debuff0001_bleeding00\", False} ",
+      "Next": 322,
+      "Child": []
+    },
+    {
+      "Index": 322,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"debuff0460_Immobility00\", False} ",
+      "Next": 323,
+      "Child": []
+    },
+    {
+      "Index": 323,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0336\"} ",
+      "Next": 324,
+      "Child": []
+    },
+    {
+      "Index": 324,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1205501_2_91\", 0, 1, \"机关4已触发\"} ",
+      "Next": 325,
+      "Child": []
+    },
+    {
+      "Index": 325,
+      "Node": "{ \"BattleResultRemoveEventPoint\" : \"101102203,102201201,200200200,102202200,201203104,101203102,202201103,102200202\"} ",
+      "Next": 326,
+      "Child": []
+    },
+    {
+      "Index": 326,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"bt1205504_02_Buff_Fierylotus_01\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 327,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 328,
+      "Child": [
+        328
+      ]
+    },
+    {
+      "Index": 328,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 329,
+      "Child": [
+        329,
+        330,
+        331,
+        332,
+        333,
+        334,
+        335,
+        336,
+        337,
+        338
+      ]
+    },
+    {
+      "Index": 329,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1205501_2_69\", \"柳心萍还未发觉机关变动\"} ",
+      "Next": 330,
+      "Child": []
+    },
+    {
+      "Index": 330,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"201101200\", \"in0204\"} ",
+      "Next": 331,
+      "Child": []
+    },
+    {
+      "Index": 331,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 332,
+      "Child": []
+    },
+    {
+      "Index": 332,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0335\"} ",
+      "Next": 333,
+      "Child": []
+    },
+    {
+      "Index": 333,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"debuff0001_bleeding00\", False} ",
+      "Next": 334,
+      "Child": []
+    },
+    {
+      "Index": 334,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"debuff0460_Immobility00\", False} ",
+      "Next": 335,
+      "Child": []
+    },
+    {
+      "Index": 335,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0336\"} ",
+      "Next": 336,
+      "Child": []
+    },
+    {
+      "Index": 336,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1205501_2_92\", 0, 1, \"机关5已触发\"} ",
+      "Next": 337,
+      "Child": []
+    },
+    {
+      "Index": 337,
+      "Node": "{ \"BattleResultRemoveEventPoint\" : \"101102203,102201201,200200200,102202200,201203104,101203102,202201103,102200202\"} ",
+      "Next": 338,
+      "Child": []
+    },
+    {
+      "Index": 338,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"bt1205504_02_Buff_Fierylotus_01\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 339,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 340,
+      "Child": [
+        340
+      ]
+    },
+    {
+      "Index": 340,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 341,
+      "Child": [
+        341,
+        342,
+        343,
+        344,
+        345,
+        346,
+        347,
+        348,
+        349,
+        350
+      ]
+    },
+    {
+      "Index": 341,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1205501_2_69\", \"柳心萍还未发觉机关变动\"} ",
+      "Next": 342,
+      "Child": []
+    },
+    {
+      "Index": 342,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"200102202\", \"in0204\"} ",
+      "Next": 343,
+      "Child": []
+    },
+    {
+      "Index": 343,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 344,
+      "Child": []
+    },
+    {
+      "Index": 344,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0335\"} ",
+      "Next": 345,
+      "Child": []
+    },
+    {
+      "Index": 345,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"debuff0001_bleeding00\", False} ",
+      "Next": 346,
+      "Child": []
+    },
+    {
+      "Index": 346,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"debuff0460_Immobility00\", False} ",
+      "Next": 347,
+      "Child": []
+    },
+    {
+      "Index": 347,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0336\"} ",
+      "Next": 348,
+      "Child": []
+    },
+    {
+      "Index": 348,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1205501_2_93\", 0, 1, \"机关6已触发\"} ",
+      "Next": 349,
+      "Child": []
+    },
+    {
+      "Index": 349,
+      "Node": "{ \"BattleResultRemoveEventPoint\" : \"101102203,102201201,200200200,102202200,201203104,101203102,202201103,102200202\"} ",
+      "Next": 350,
+      "Child": []
+    },
+    {
+      "Index": 350,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"bt1205504_02_Buff_Fierylotus_01\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 351,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 352,
+      "Child": [
+        352
+      ]
+    },
+    {
+      "Index": 352,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 353,
+      "Child": [
+        353,
+        354,
+        355,
+        356,
+        357,
+        358,
+        359,
+        360,
+        361,
+        362
+      ]
+    },
+    {
+      "Index": 353,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1205501_2_69\", \"柳心萍还未发觉机关变动\"} ",
+      "Next": 354,
+      "Child": []
+    },
+    {
+      "Index": 354,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"101101202\", \"in0204\"} ",
+      "Next": 355,
+      "Child": []
+    },
+    {
+      "Index": 355,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 356,
+      "Child": []
+    },
+    {
+      "Index": 356,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0335\"} ",
+      "Next": 357,
+      "Child": []
+    },
+    {
+      "Index": 357,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"debuff0001_bleeding00\", False} ",
+      "Next": 358,
+      "Child": []
+    },
+    {
+      "Index": 358,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"debuff0460_Immobility00\", False} ",
+      "Next": 359,
+      "Child": []
+    },
+    {
+      "Index": 359,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0336\"} ",
+      "Next": 360,
+      "Child": []
+    },
+    {
+      "Index": 360,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1205501_2_94\", 0, 1, \"机关7已触发\"} ",
+      "Next": 361,
+      "Child": []
+    },
+    {
+      "Index": 361,
+      "Node": "{ \"BattleResultRemoveEventPoint\" : \"101102203,102201201,200200200,102202200,201203104,101203102,202201103,102200202\"} ",
+      "Next": 362,
+      "Child": []
+    },
+    {
+      "Index": 362,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"bt1205504_02_Buff_Fierylotus_01\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 363,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 364,
+      "Child": [
+        364
+      ]
+    },
+    {
+      "Index": 364,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 365,
+      "Child": [
+        365,
+        366,
+        367,
+        368,
+        369,
+        370,
+        371,
+        372,
+        373,
+        374
+      ]
+    },
+    {
+      "Index": 365,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1205501_2_69\", \"柳心萍还未发觉机关变动\"} ",
+      "Next": 366,
+      "Child": []
+    },
+    {
+      "Index": 366,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"102101203\", \"in0204\"} ",
+      "Next": 367,
+      "Child": []
+    },
+    {
+      "Index": 367,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 368,
+      "Child": []
+    },
+    {
+      "Index": 368,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0335\"} ",
+      "Next": 369,
+      "Child": []
+    },
+    {
+      "Index": 369,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"debuff0001_bleeding00\", False} ",
+      "Next": 370,
+      "Child": []
+    },
+    {
+      "Index": 370,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"debuff0460_Immobility00\", False} ",
+      "Next": 371,
+      "Child": []
+    },
+    {
+      "Index": 371,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0336\"} ",
+      "Next": 372,
+      "Child": []
+    },
+    {
+      "Index": 372,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1205501_2_95\", 0, 1, \"机关8已触发\"} ",
+      "Next": 373,
+      "Child": []
+    },
+    {
+      "Index": 373,
+      "Node": "{ \"BattleResultRemoveEventPoint\" : \"101102203,102201201,200200200,102202200,201203104,101203102,202201103,102200202\"} ",
+      "Next": 374,
+      "Child": []
+    },
+    {
+      "Index": 374,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"bt1205504_02_Buff_Fierylotus_01\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 375,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 376,
+      "Child": [
+        376
+      ]
+    },
+    {
+      "Index": 376,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 377,
+      "Child": [
+        377,
+        378,
+        379,
+        380,
+        381,
+        382,
+        383,
+        384,
+        385
+      ]
+    },
+    {
+      "Index": 377,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_69\", \"柳心萍已发觉机关变动\"} ",
+      "Next": 378,
+      "Child": []
+    },
+    {
+      "Index": 378,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"101202101\", \"in0204\"} ",
+      "Next": 379,
+      "Child": []
+    },
+    {
+      "Index": 379,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1205501_2_88\", \"机关1未触发\"} ",
+      "Next": 380,
+      "Child": []
+    },
+    {
+      "Index": 380,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 381,
+      "Child": []
+    },
+    {
+      "Index": 381,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0352\"} ",
+      "Next": 382,
+      "Child": []
+    },
+    {
+      "Index": 382,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"debuff0001_bleeding00\", False} ",
+      "Next": 383,
+      "Child": []
+    },
+    {
+      "Index": 383,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"debuff0460_Immobility00\", False} ",
+      "Next": 384,
+      "Child": []
+    },
+    {
+      "Index": 384,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0353\"} ",
+      "Next": 385,
+      "Child": []
+    },
+    {
+      "Index": 385,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1205501_2_88\", 0, 1, \"机关1已触发\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 386,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 387,
+      "Child": [
+        387
+      ]
+    },
+    {
+      "Index": 387,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 388,
+      "Child": [
+        388,
+        389,
+        390,
+        391,
+        392,
+        393,
+        394,
+        395,
+        396
+      ]
+    },
+    {
+      "Index": 388,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_69\", \"柳心萍已发觉机关变动\"} ",
+      "Next": 389,
+      "Child": []
+    },
+    {
+      "Index": 389,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"200201101\", \"in0204\"} ",
+      "Next": 390,
+      "Child": []
+    },
+    {
+      "Index": 390,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1205501_2_89\", \"机关2未触发\"} ",
+      "Next": 391,
+      "Child": []
+    },
+    {
+      "Index": 391,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 392,
+      "Child": []
+    },
+    {
+      "Index": 392,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0352\"} ",
+      "Next": 393,
+      "Child": []
+    },
+    {
+      "Index": 393,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"debuff0001_bleeding00\", False} ",
+      "Next": 394,
+      "Child": []
+    },
+    {
+      "Index": 394,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"debuff0460_Immobility00\", False} ",
+      "Next": 395,
+      "Child": []
+    },
+    {
+      "Index": 395,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0353\"} ",
+      "Next": 396,
+      "Child": []
+    },
+    {
+      "Index": 396,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1205501_2_89\", 0, 1, \"机关2已触发\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 397,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 398,
+      "Child": [
+        398
+      ]
+    },
+    {
+      "Index": 398,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 399,
+      "Child": [
+        399,
+        400,
+        401,
+        402,
+        403,
+        404,
+        405,
+        406,
+        407
+      ]
+    },
+    {
+      "Index": 399,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_69\", \"柳心萍已发觉机关变动\"} ",
+      "Next": 400,
+      "Child": []
+    },
+    {
+      "Index": 400,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"201202103\", \"in0204\"} ",
+      "Next": 401,
+      "Child": []
+    },
+    {
+      "Index": 401,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1205501_2_90\", \"机关3未触发\"} ",
+      "Next": 402,
+      "Child": []
+    },
+    {
+      "Index": 402,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 403,
+      "Child": []
+    },
+    {
+      "Index": 403,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0352\"} ",
+      "Next": 404,
+      "Child": []
+    },
+    {
+      "Index": 404,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"debuff0001_bleeding00\", False} ",
+      "Next": 405,
+      "Child": []
+    },
+    {
+      "Index": 405,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"debuff0460_Immobility00\", False} ",
+      "Next": 406,
+      "Child": []
+    },
+    {
+      "Index": 406,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0353\"} ",
+      "Next": 407,
+      "Child": []
+    },
+    {
+      "Index": 407,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1205501_2_90\", 0, 1, \"机关3已触发\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 408,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 409,
+      "Child": [
+        409
+      ]
+    },
+    {
+      "Index": 409,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 410,
+      "Child": [
+        410,
+        411,
+        412,
+        413,
+        414,
+        415,
+        416,
+        417,
+        418
+      ]
+    },
+    {
+      "Index": 410,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_69\", \"柳心萍已发觉机关变动\"} ",
+      "Next": 411,
+      "Child": []
+    },
+    {
+      "Index": 411,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"202200102\", \"in0204\"} ",
+      "Next": 412,
+      "Child": []
+    },
+    {
+      "Index": 412,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1205501_2_91\", \"机关4未触发\"} ",
+      "Next": 413,
+      "Child": []
+    },
+    {
+      "Index": 413,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 414,
+      "Child": []
+    },
+    {
+      "Index": 414,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0352\"} ",
+      "Next": 415,
+      "Child": []
+    },
+    {
+      "Index": 415,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"debuff0001_bleeding00\", False} ",
+      "Next": 416,
+      "Child": []
+    },
+    {
+      "Index": 416,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"debuff0460_Immobility00\", False} ",
+      "Next": 417,
+      "Child": []
+    },
+    {
+      "Index": 417,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0353\"} ",
+      "Next": 418,
+      "Child": []
+    },
+    {
+      "Index": 418,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1205501_2_91\", 0, 1, \"机关4已触发\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 419,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 420,
+      "Child": [
+        420
+      ]
+    },
+    {
+      "Index": 420,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 421,
+      "Child": [
+        421,
+        422,
+        423,
+        424,
+        425,
+        426,
+        427,
+        428,
+        429
+      ]
+    },
+    {
+      "Index": 421,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_69\", \"柳心萍已发觉机关变动\"} ",
+      "Next": 422,
+      "Child": []
+    },
+    {
+      "Index": 422,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"202101101\", \"in0204\"} ",
+      "Next": 423,
+      "Child": []
+    },
+    {
+      "Index": 423,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1205501_2_92\", \"机关5未触发\"} ",
+      "Next": 424,
+      "Child": []
+    },
+    {
+      "Index": 424,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 425,
+      "Child": []
+    },
+    {
+      "Index": 425,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0352\"} ",
+      "Next": 426,
+      "Child": []
+    },
+    {
+      "Index": 426,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"debuff0001_bleeding00\", False} ",
+      "Next": 427,
+      "Child": []
+    },
+    {
+      "Index": 427,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"debuff0460_Immobility00\", False} ",
+      "Next": 428,
+      "Child": []
+    },
+    {
+      "Index": 428,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0353\"} ",
+      "Next": 429,
+      "Child": []
+    },
+    {
+      "Index": 429,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1205501_2_92\", 0, 1, \"机关5已触发\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 430,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 431,
+      "Child": [
+        431
+      ]
+    },
+    {
+      "Index": 431,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 432,
+      "Child": [
+        432,
+        433,
+        434,
+        435,
+        436,
+        437,
+        438,
+        439,
+        440
+      ]
+    },
+    {
+      "Index": 432,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_69\", \"柳心萍已发觉机关变动\"} ",
+      "Next": 433,
+      "Child": []
+    },
+    {
+      "Index": 433,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"200102202\", \"in0204\"} ",
+      "Next": 434,
+      "Child": []
+    },
+    {
+      "Index": 434,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1205501_2_93\", \"机关6未触发\"} ",
+      "Next": 435,
+      "Child": []
+    },
+    {
+      "Index": 435,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 436,
+      "Child": []
+    },
+    {
+      "Index": 436,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0352\"} ",
+      "Next": 437,
+      "Child": []
+    },
+    {
+      "Index": 437,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"debuff0001_bleeding00\", False} ",
+      "Next": 438,
+      "Child": []
+    },
+    {
+      "Index": 438,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"debuff0460_Immobility00\", False} ",
+      "Next": 439,
+      "Child": []
+    },
+    {
+      "Index": 439,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0353\"} ",
+      "Next": 440,
+      "Child": []
+    },
+    {
+      "Index": 440,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1205501_2_93\", 0, 1, \"机关6已触发\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 441,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 442,
+      "Child": [
+        442
+      ]
+    },
+    {
+      "Index": 442,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 443,
+      "Child": [
+        443,
+        444,
+        445,
+        446,
+        447,
+        448,
+        449,
+        450,
+        451
+      ]
+    },
+    {
+      "Index": 443,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_69\", \"柳心萍已发觉机关变动\"} ",
+      "Next": 444,
+      "Child": []
+    },
+    {
+      "Index": 444,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"101101202\", \"in0204\"} ",
+      "Next": 445,
+      "Child": []
+    },
+    {
+      "Index": 445,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1205501_2_94\", \"机关7未触发\"} ",
+      "Next": 446,
+      "Child": []
+    },
+    {
+      "Index": 446,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 447,
+      "Child": []
+    },
+    {
+      "Index": 447,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0352\"} ",
+      "Next": 448,
+      "Child": []
+    },
+    {
+      "Index": 448,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"debuff0001_bleeding00\", False} ",
+      "Next": 449,
+      "Child": []
+    },
+    {
+      "Index": 449,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"debuff0460_Immobility00\", False} ",
+      "Next": 450,
+      "Child": []
+    },
+    {
+      "Index": 450,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0353\"} ",
+      "Next": 451,
+      "Child": []
+    },
+    {
+      "Index": 451,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1205501_2_94\", 0, 1, \"机关7已触发\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 452,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 453,
+      "Child": [
+        453
+      ]
+    },
+    {
+      "Index": 453,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 454,
+      "Child": [
+        454,
+        455,
+        456,
+        457,
+        458,
+        459,
+        460,
+        461,
+        462
+      ]
+    },
+    {
+      "Index": 454,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_69\", \"柳心萍已发觉机关变动\"} ",
+      "Next": 455,
+      "Child": []
+    },
+    {
+      "Index": 455,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"102101203\", \"in0204\"} ",
+      "Next": 456,
+      "Child": []
+    },
+    {
+      "Index": 456,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1205501_2_95\", \"机关8未触发\"} ",
+      "Next": 457,
+      "Child": []
+    },
+    {
+      "Index": 457,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 458,
+      "Child": []
+    },
+    {
+      "Index": 458,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0352\"} ",
+      "Next": 459,
+      "Child": []
+    },
+    {
+      "Index": 459,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"debuff0001_bleeding00\", False} ",
+      "Next": 460,
+      "Child": []
+    },
+    {
+      "Index": 460,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"debuff0460_Immobility00\", False} ",
+      "Next": 461,
+      "Child": []
+    },
+    {
+      "Index": 461,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0353\"} ",
+      "Next": 462,
+      "Child": []
+    },
+    {
+      "Index": 462,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1205501_2_95\", 0, 1, \"机关8已触发\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 463,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 464,
+      "Child": [
+        464
+      ]
+    },
+    {
+      "Index": 464,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 465,
+      "Child": [
+        465,
+        466,
+        467,
+        468,
+        469
+      ]
+    },
+    {
+      "Index": 465,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1205501_2_69\", \"柳心萍还未发觉机关变动\"} ",
+      "Next": 466,
+      "Child": []
+    },
+    {
+      "Index": 466,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"101102203,102201201,200200200,102202200,201203104,101203102,202201103,102200202\", \"in22001\"} ",
+      "Next": 467,
+      "Child": []
+    },
+    {
+      "Index": 467,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 468,
+      "Child": []
+    },
+    {
+      "Index": 468,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0351\"} ",
+      "Next": 469,
+      "Child": []
+    },
+    {
+      "Index": 469,
+      "Node": "{ \"BattleResultRemoveEventPoint\" : \"101102203,102201201,200200200,102202200,201203104,101203102,202201103,102200202\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 470,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 471,
+      "Child": [
+        471
+      ]
+    },
+    {
+      "Index": 471,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 472,
+      "Child": [
+        472,
+        473,
+        474,
+        475,
+        476,
+        477,
+        478,
+        479,
+        480,
+        481,
+        482,
+        483,
+        484,
+        485,
+        486,
+        487
+      ]
+    },
+    {
+      "Index": 472,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player,party01,party02,party03,in0107\"} ",
+      "Next": 473,
+      "Child": []
+    },
+    {
+      "Index": 473,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 3, 1, \"fe1205501_2_71\", \"对战沐璎没有打赢挡双方同时死状况\"} ",
+      "Next": 474,
+      "Child": []
+    },
+    {
+      "Index": 474,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 475,
+      "Child": []
+    },
+    {
+      "Index": 475,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0354\"} ",
+      "Next": 476,
+      "Child": []
+    },
+    {
+      "Index": 476,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in53001,io53105301,io53125301,io53115301,io53135301\", \"\", False} ",
+      "Next": 477,
+      "Child": []
+    },
+    {
+      "Index": 477,
+      "Node": "{ \"BattleResultRemoveUnits\" : \"in53001,io53105301,io53125301,io53115301,io53135301\", False} ",
+      "Next": 478,
+      "Child": []
+    },
+    {
+      "Index": 478,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0204\", 0, 101201200, 1.00000, 0.00000} ",
+      "Next": 479,
+      "Child": []
+    },
+    {
+      "Index": 479,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"\", True} ",
+      "Next": 480,
+      "Child": []
+    },
+    {
+      "Index": 480,
+      "Node": "{ \"BattleResultAddUnit\" : \"in22001\", 1, 202102200, 1.00000, 0.00000} ",
+      "Next": 481,
+      "Child": []
+    },
+    {
+      "Index": 481,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in22001\", \"\", False} ",
+      "Next": 482,
+      "Child": []
+    },
+    {
+      "Index": 482,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0359\"} ",
+      "Next": 483,
+      "Child": []
+    },
+    {
+      "Index": 483,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"bt1205504_02_Buff_Fierylotus_01\", True} ",
+      "Next": 484,
+      "Child": []
+    },
+    {
+      "Index": 484,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0363\"} ",
+      "Next": 485,
+      "Child": []
+    },
+    {
+      "Index": 485,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0317\"} ",
+      "Next": 486,
+      "Child": []
+    },
+    {
+      "Index": 486,
+      "Node": "{ \"BattleResultEventPoint\" : \"101102203,102201201,200200200,102202200,201203104,101203102,202201103,102200202\"} ",
+      "Next": 487,
+      "Child": []
+    },
+    {
+      "Index": 487,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0324\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 488,
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
+      "Next": 489,
+      "Child": [
+        489
+      ]
+    },
+    {
+      "Index": 489,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 490,
+      "Child": [
+        490,
+        491,
+        492,
+        493
+      ]
+    },
+    {
+      "Index": 490,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in22001\"} ",
+      "Next": 491,
+      "Child": []
+    },
+    {
+      "Index": 491,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 492,
+      "Child": []
+    },
+    {
+      "Index": 492,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0364\"} ",
+      "Next": 493,
+      "Child": []
+    },
+    {
+      "Index": 493,
+      "Node": "{ \"BattleResultRemoveEventPoint\" : \"101102203,102201201,200200200,102202200,201203104,101203102,202201103,102200202\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 494,
+      "Node": "{ \"BattleEventNode\" : 500, 0, [ ]} ",
+      "Next": 495,
+      "Child": [
+        495
+      ]
+    },
+    {
+      "Index": 495,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 496,
+      "Child": [
+        496,
+        497,
+        498,
+        499,
+        500
+      ]
+    },
+    {
+      "Index": 496,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 0, 1, \"fe1205501_2_68\", \"已胜二场\"} ",
+      "Next": 497,
+      "Child": []
+    },
+    {
+      "Index": 497,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1205501_2_70\", \"没有败场\"} ",
+      "Next": 498,
+      "Child": []
+    },
+    {
+      "Index": 498,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 499,
+      "Child": []
+    },
+    {
+      "Index": 499,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0373\"} ",
+      "Next": 500,
+      "Child": []
+    },
+    {
+      "Index": 500,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 501,
+      "Node": "{ \"BattleEventNode\" : 500, 0, [ ]} ",
+      "Next": 502,
+      "Child": [
+        502
+      ]
+    },
+    {
+      "Index": 502,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 503,
+      "Child": [
+        503,
+        504,
+        505,
+        506,
+        507,
+        508,
+        509,
+        510,
+        511,
+        512,
+        513,
+        514
+      ]
+    },
+    {
+      "Index": 503,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_68\", \"胜一场\"} ",
+      "Next": 504,
+      "Child": []
+    },
+    {
+      "Index": 504,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_70\", \"败一场\"} ",
+      "Next": 505,
+      "Child": []
+    },
+    {
+      "Index": 505,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_72\", \"柳心萍胜夏侯焕\"} ",
+      "Next": 506,
+      "Child": []
+    },
+    {
+      "Index": 506,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 507,
+      "Child": []
+    },
+    {
+      "Index": 507,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0376\"} ",
+      "Next": 508,
+      "Child": []
+    },
+    {
+      "Index": 508,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0204\", \"\", False} ",
+      "Next": 509,
+      "Child": []
+    },
+    {
+      "Index": 509,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in0204\", False} ",
+      "Next": 510,
+      "Child": []
+    },
+    {
+      "Index": 510,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0201\", 0, 101201200, 1.00000, 0.00000} ",
+      "Next": 511,
+      "Child": []
+    },
+    {
+      "Index": 511,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0201\", \"\", True} ",
+      "Next": 512,
+      "Child": []
+    },
+    {
+      "Index": 512,
+      "Node": "{ \"BattleResultAddUnit\" : \"in39001\", 1, 202102200, 1.00000, 0.00000} ",
+      "Next": 513,
+      "Child": []
+    },
+    {
+      "Index": 513,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in39001\", \"\", False} ",
+      "Next": 514,
+      "Child": []
+    },
+    {
+      "Index": 514,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0400\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 515,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 516,
+      "Child": [
+        516
+      ]
+    },
+    {
+      "Index": 516,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 517,
+      "Child": [
+        517,
+        518,
+        519,
+        520,
+        521
+      ]
+    },
+    {
+      "Index": 517,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0204\"} ",
+      "Next": 518,
+      "Child": []
+    },
+    {
+      "Index": 518,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 3, 1, \"fe1205501_2_72\", \"柳心萍没赢夏侯焕挡双方同时死状况\"} ",
+      "Next": 519,
+      "Child": []
+    },
+    {
+      "Index": 519,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 520,
+      "Child": []
+    },
+    {
+      "Index": 520,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0410\"} ",
+      "Next": 521,
+      "Child": []
+    },
+    {
+      "Index": 521,
+      "Node": "{ \"BattleResultRemoveEventPoint\" : \"101102203,102201201,200200200,102202200,201203104,101203102,202201103,102200202\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 522,
+      "Node": "{ \"BattleEventNode\" : 510, 0, [ ]} ",
+      "Next": 523,
+      "Child": [
+        523
+      ]
+    },
+    {
+      "Index": 523,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 524,
+      "Child": [
+        524,
+        525,
+        526,
+        527,
+        528,
+        529,
+        530,
+        531,
+        532,
+        533,
+        534,
+        535
+      ]
+    },
+    {
+      "Index": 524,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_68\", \"胜一场\"} ",
+      "Next": 525,
+      "Child": []
+    },
+    {
+      "Index": 525,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1205501_2_70\", \"败一场\"} ",
+      "Next": 526,
+      "Child": []
+    },
+    {
+      "Index": 526,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 2, \"fe1205501_2_72\", \"夏侯焕胜柳心萍\"} ",
+      "Next": 527,
+      "Child": []
+    },
+    {
+      "Index": 527,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 528,
+      "Child": []
+    },
+    {
+      "Index": 528,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0430\"} ",
+      "Next": 529,
+      "Child": []
+    },
+    {
+      "Index": 529,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in22001\", \"\", False} ",
+      "Next": 530,
+      "Child": []
+    },
+    {
+      "Index": 530,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in22001\", False} ",
+      "Next": 531,
+      "Child": []
+    },
+    {
+      "Index": 531,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0201\", 0, 101201200, 1.00000, 0.00000} ",
+      "Next": 532,
+      "Child": []
+    },
+    {
+      "Index": 532,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0201\", \"\", True} ",
+      "Next": 533,
+      "Child": []
+    },
+    {
+      "Index": 533,
+      "Node": "{ \"BattleResultAddUnit\" : \"in39001\", 1, 202102200, 1.00000, 0.00000} ",
+      "Next": 534,
+      "Child": []
+    },
+    {
+      "Index": 534,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in39001\", \"\", False} ",
+      "Next": 535,
+      "Child": []
+    },
+    {
+      "Index": 535,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0400\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 536,
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
+      "Next": 537,
+      "Child": [
+        537
+      ]
+    },
+    {
+      "Index": 537,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 538,
+      "Child": [
+        538,
+        539,
+        540,
+        541
+      ]
+    },
+    {
+      "Index": 538,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in39001\"} ",
+      "Next": 539,
+      "Child": []
+    },
+    {
+      "Index": 539,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 540,
+      "Child": []
+    },
+    {
+      "Index": 540,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0434\"} ",
+      "Next": 541,
+      "Child": []
+    },
+    {
+      "Index": 541,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 542,
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
+      "Next": 543,
+      "Child": [
+        543
+      ]
+    },
+    {
+      "Index": 543,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 544,
+      "Child": [
+        544,
+        545,
+        546,
+        547,
+        548
+      ]
+    },
+    {
+      "Index": 544,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0201\"} ",
+      "Next": 545,
+      "Child": []
+    },
+    {
+      "Index": 545,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 3, 1, \"fe1205501_2_73\", \"楚天碧没胜过镜目挡两人同时死状况\"} ",
+      "Next": 546,
+      "Child": []
+    },
+    {
+      "Index": 546,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 547,
+      "Child": []
+    },
+    {
+      "Index": 547,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0456\"} ",
+      "Next": 548,
+      "Child": []
+    },
+    {
+      "Index": 548,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 549,
+      "Node": "{ \"BattleEventNode\" : 400, 2, [ ]} ",
+      "Next": 550,
+      "Child": [
+        550
+      ]
+    },
+    {
+      "Index": 550,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 551,
+      "Child": [
+        551,
+        552,
+        553,
+        554
+      ]
+    },
+    {
+      "Index": 551,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in53001,io53105301,io53125301,io53115301,io53135301\"} ",
+      "Next": 552,
+      "Child": []
+    },
+    {
+      "Index": 552,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in91001\"} ",
+      "Next": 553,
+      "Child": []
+    },
+    {
+      "Index": 553,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 554,
+      "Child": []
+    },
+    {
+      "Index": 554,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in91001\", False} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 555,
+      "Node": "{ \"BattleEventNode\" : 510, 0, [ ]} ",
+      "Next": 556,
+      "Child": [
+        556
+      ]
+    },
+    {
+      "Index": 556,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 557,
+      "Child": [
+        557,
+        558,
+        559,
+        560,
+        561
+      ]
+    },
+    {
+      "Index": 557,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 0, 1, \"fe1205501_2_70\", \"已败二场\"} ",
+      "Next": 558,
+      "Child": []
+    },
+    {
+      "Index": 558,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1205501_2_68\", \"没有胜场\"} ",
+      "Next": 559,
+      "Child": []
+    },
+    {
+      "Index": 559,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 560,
+      "Child": []
+    },
+    {
+      "Index": 560,
+      "Node": "{ \"BattleResultTalk\" : \"t1205504_bs0428\"} ",
+      "Next": 561,
+      "Child": []
+    },
+    {
+      "Index": 561,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "",
+  "WinTip": "Win two out of three matches against the coalition forces!",
+  "LoseTip": "Lose two out of three matches against the coalition forces!"
+}

@@ -1,1 +1,378 @@
-bs1112402_09	bs1112402_09	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "Player", 0, 109208201, 1.00000} , { "BattleResultAddUnit" : "party01", 0, 109206203, 1.00000} , { "BattleResultAddUnit" : "party02", 0, 205104101, 1.00000} , { "BattleResultAddUnit" : "party03", 0, 206106200, 1.00000}  ]} , { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "in05808", 2, 209109200, 1.00000} , { "BattleResultAddUnit" : "io222315", 2, 206103103, 1.00000} , { "BattleResultAddUnit" : "in11031", 2, 208107101, 1.00000}  ]} , { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "io451324", 1, 106209103, 1.00000} , { "BattleResultAddUnit" : "io451424", 1, 105207102, 1.00000} , { "BattleResultAddUnit" : "io451124", 1, 105203202, 1.00000} , { "BattleResultAddUnit" : "io451334", 1, 106202204, 1.00000} , { "BattleResultAddUnit" : "io451024", 1, 101107208, 1.00000} , { "BattleResultAddUnit" : "io451134", 1, 202109207, 1.00000} , { "BattleResultAddUnit" : "io451224", 1, 201206107, 1.00000} , { "BattleResultAddUnit" : "io451034", 1, 203204107, 1.00000}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "BattleFactorLocalFlag" : 1, 0, "btf1112402_09_00", ""} , { "SetLocalFlagBattleAction" : "btf1112402_09_00", 0, 1, ""} , { "BattleResultTalk" : "t1112403_bs0100"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 0} , { "BattleFactorLocalFlag" : 1, 0, "btf1112402_09_01", ""} , { "SetLocalFlagBattleAction" : "btf1112402_09_01", 0, 1, ""} , { "BattleResultTalk" : "t1112403_bs0144"} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in11031"} , { "BattleFactorLocalFlag" : 1, 0, "btf1112402_09_02", ""} , { "SetLocalFlagBattleAction" : "btf1112402_09_02", 0, 1, ""} , { "BattleResultTalk" : "t1112403_bs0134"} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 1} , { "BattleFactorLocalFlag" : 1, 0, "btf1112402_09_03", ""} , { "SetLocalFlagBattleAction" : "btf1112402_09_03", 0, 1, ""} , { "SetGlobalFlagBattleAction" : "fe1112401_2_12", 0, 1, ""} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 2, 100, "in11031"} , { "BattleFactorLocalFlag" : 1, 0, "btf1112402_09_04", ""} , { "SetLocalFlagBattleAction" : "btf1112402_09_04", 0, 1, ""} , { "SetGlobalFlagBattleAction" : "fe1112401_2_34", 0, 1, ""} , { "BattleResultChangeWinTip" : "All enemies are defeated!"}  ]}  ]}  ]} 	营地防卫战-巡逻组	Defeat all enemies。（Secondary Objective：Luo Guangze is unharmed）	Luoguang Ze is defeated, or everyone in {name_1}{name_2}'s party is defeated.
+{
+  "Id": "bs1112402_09",
+  "Name": "bs1112402_09",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"Player\", 0, 109208201, 1.00000, 0.00000} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"party01\", 0, 109206203, 1.00000, 0.00000} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnit\" : \"party02\", 0, 205104101, 1.00000, 0.00000} ",
+      "Next": 4,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultAddUnit\" : \"party03\", 0, 206106200, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 6,
+      "Child": [
+        6,
+        7,
+        8
+      ]
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05808\", 2, 209109200, 1.00000, 0.00000} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleResultAddUnit\" : \"io222315\", 2, 206103103, 1.00000, 0.00000} ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultAddUnit\" : \"in11031\", 2, 208107101, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 10,
+      "Child": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultAddUnit\" : \"io451324\", 1, 106209103, 1.00000, 0.00000} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultAddUnit\" : \"io451424\", 1, 105207102, 1.00000, 0.00000} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultAddUnit\" : \"io451124\", 1, 105203202, 1.00000, 0.00000} ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleResultAddUnit\" : \"io451334\", 1, 106202204, 1.00000, 0.00000} ",
+      "Next": 14,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultAddUnit\" : \"io451024\", 1, 101107208, 1.00000, 0.00000} ",
+      "Next": 15,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleResultAddUnit\" : \"io451134\", 1, 202109207, 1.00000, 0.00000} ",
+      "Next": 16,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleResultAddUnit\" : \"io451224\", 1, 201206107, 1.00000, 0.00000} ",
+      "Next": 17,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleResultAddUnit\" : \"io451034\", 1, 203204107, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 19,
+      "Child": [
+        19
+      ]
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 20,
+      "Child": [
+        20,
+        21,
+        22,
+        23
+      ]
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 21,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1112402_09_00\", \"\"} ",
+      "Next": 22,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1112402_09_00\", 0, 1, \"\"} ",
+      "Next": 23,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleResultTalk\" : \"t1112403_bs0100\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 25,
+      "Child": [
+        25
+      ]
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 26,
+      "Child": [
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 0} ",
+      "Next": 27,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1112402_09_01\", \"\"} ",
+      "Next": 28,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1112402_09_01\", 0, 1, \"\"} ",
+      "Next": 29,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleResultTalk\" : \"t1112403_bs0144\"} ",
+      "Next": 30,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 32,
+      "Child": [
+        32
+      ]
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 33,
+      "Child": [
+        33,
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in11031\"} ",
+      "Next": 34,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1112402_09_02\", \"\"} ",
+      "Next": 35,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1112402_09_02\", 0, 1, \"\"} ",
+      "Next": 36,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"BattleResultTalk\" : \"t1112403_bs0134\"} ",
+      "Next": 37,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 39,
+      "Child": [
+        39
+      ]
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 40,
+      "Child": [
+        40,
+        41,
+        42,
+        43,
+        44
+      ]
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 41,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1112402_09_03\", \"\"} ",
+      "Next": 42,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1112402_09_03\", 0, 1, \"\"} ",
+      "Next": 43,
+      "Child": []
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1112401_2_12\", 0, 1, \"\"} ",
+      "Next": 44,
+      "Child": []
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 46,
+      "Child": [
+        46
+      ]
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 47,
+      "Child": [
+        47,
+        48,
+        49,
+        50,
+        51
+      ]
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 100, \"in11031\"} ",
+      "Next": 48,
+      "Child": []
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1112402_09_04\", \"\"} ",
+      "Next": 49,
+      "Child": []
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1112402_09_04\", 0, 1, \"\"} ",
+      "Next": 50,
+      "Child": []
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1112401_2_34\", 0, 1, \"\"} ",
+      "Next": 51,
+      "Child": []
+    },
+    {
+      "Index": 51,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat all Enemies\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "营地防卫战-巡逻组",
+  "WinTip": "Defeat all Enemies（次要目标：罗广泽未受伤害）",
+  "LoseTip": "Luo Guangze is defeated or，all members of {name_1}{name_2} 's party is defeated"
+}

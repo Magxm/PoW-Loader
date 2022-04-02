@@ -1,1 +1,529 @@
-bs1010401_01	击破山贼！	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "Player", 0, 200102202, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in0104", 0, 201101200, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in05407", 1, 101204103, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in05406", 1, 205200105, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in05408", 1, 205103102, 1.00000, 0.00000}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010401_600"} , { "BattleResultAddBuff" : True, "Player", "bt1010401_debuff_poisonous2", False} , { "BattleResultAddBuff" : False, "Player", "bt1010401_debuff_player-30%blood", False}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 1} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010401_612"}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 4} , { "BattleFactorTargetHp" : 0, 0, "in05408"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010401_614"} , { "BattleResultRmoveBuff" : "Player", "bt1010401_debuff_poisonous2"} , { "BattleResultAddBuff" : True, "Player", "bt1010401_debuff_poisonous", False} , { "BattleResultTalk" : "t1010401_615"} , { "BattleResultAddBuff" : True, "in0104", "bt1010401_buff_in0104angry", False}  ]}  ]} , { "BattleEventNode" : 300, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in05408"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010401_622"} , { "BattleResultRmoveBuff" : "Player", "bt1010401_debuff_poisonous2"} , { "BattleResultRmoveBuff" : "Player", "bt1010401_debuff_poisonous"} , { "BattleResultAddBuff" : True, "Player", "bt1010401_debuff_poisonous3", True} , { "BattleResultTalk" : "t1010401_625"} , { "BattleResultChangeWinTip" : "Defeat Remaining Bandits！"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in05406"} , { "BattleFactorTargetHp" : 0, 0, "in05408"} , { "BattleFactorTargetHp" : 0, 0, "in05407"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010401_630"} , { "BattleResultAddBuff" : True, "in05408", "bt1010401_debuff_Banditangry", True} , { "BattleResultAddBuff" : True, "in05407", "bt1010401_debuff_Banditangry", True}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "Player"} , { "ExecuteOnceNode" } , { "SetGlobalFlagBattleAction" : "fe1010401_2_06", 0, 0, "战斗失败"} , { "BattleResultTalk" : "t1010401_800"} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 1} , { "ExecuteOnceNode" } , { "SetGlobalFlagBattleAction" : "fe1010401_2_06", 0, 1, "战斗胜利"} , { "BattleResultTalk" : "t1010401_633"} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 400, 1, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in0104"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010401_647"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in05408,in05407"} , { "BattleFactorTargetHp" : 0, 0, "in05406"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010401_645"} , { "BattleResultAddBuff" : True, "in05406", "bt1010401_debuff_BandBossitangry", True}  ]}  ]}  ]} 	萧千菱一阶段 重制	Find the poisoner	{name_1}{name_2}is defeated。
+{
+  "Id": "bs1010401_01",
+  "Name": "击破山贼！",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"Player\", 0, 200102202, 1.00000, 0.00000} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0104\", 0, 201101200, 1.00000, 0.00000} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05407\", 1, 101204103, 1.00000, 0.00000} ",
+      "Next": 4,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05406\", 1, 205200105, 1.00000, 0.00000} ",
+      "Next": 5,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05408\", 1, 205103102, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 7,
+      "Child": [
+        7
+      ]
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 8,
+      "Child": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 10,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultTalk\" : \"t1010401_600\"} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"bt1010401_debuff_poisonous2\", False} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"Player\", \"bt1010401_debuff_player-30%blood\", False} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 14,
+      "Child": [
+        14
+      ]
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 15,
+      "Child": [
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleFactorTurn\" : 1, 1} ",
+      "Next": 16,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 17,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleResultTalk\" : \"t1010401_612\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 19,
+      "Child": [
+        19
+      ]
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 20,
+      "Child": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleFactorTurn\" : 1, 4} ",
+      "Next": 21,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in05408\"} ",
+      "Next": 22,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 23,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleResultTalk\" : \"t1010401_614\"} ",
+      "Next": 24,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"Player\", \"bt1010401_debuff_poisonous2\"} ",
+      "Next": 25,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"bt1010401_debuff_poisonous\", False} ",
+      "Next": 26,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleResultTalk\" : \"t1010401_615\"} ",
+      "Next": 27,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0104\", \"bt1010401_buff_in0104angry\", False} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleEventNode\" : 300, 0, [ ]} ",
+      "Next": 29,
+      "Child": [
+        29
+      ]
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 30,
+      "Child": [
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37
+      ]
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05408\"} ",
+      "Next": 31,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 32,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleResultTalk\" : \"t1010401_622\"} ",
+      "Next": 33,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"Player\", \"bt1010401_debuff_poisonous2\"} ",
+      "Next": 34,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"Player\", \"bt1010401_debuff_poisonous\"} ",
+      "Next": 35,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"bt1010401_debuff_poisonous3\", True} ",
+      "Next": 36,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"BattleResultTalk\" : \"t1010401_625\"} ",
+      "Next": 37,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat the remaining Mountain Bandit!\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 39,
+      "Child": [
+        39
+      ]
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 40,
+      "Child": [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46
+      ]
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05406\"} ",
+      "Next": 41,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in05408\"} ",
+      "Next": 42,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in05407\"} ",
+      "Next": 43,
+      "Child": []
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 44,
+      "Child": []
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"BattleResultTalk\" : \"t1010401_630\"} ",
+      "Next": 45,
+      "Child": []
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05408\", \"bt1010401_debuff_Banditangry\", True} ",
+      "Next": 46,
+      "Child": []
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05407\", \"bt1010401_debuff_Banditangry\", True} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 48,
+      "Child": [
+        48
+      ]
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 49,
+      "Child": [
+        49,
+        50,
+        51,
+        52,
+        53
+      ]
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player\"} ",
+      "Next": 50,
+      "Child": []
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 51,
+      "Child": []
+    },
+    {
+      "Index": 51,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1010401_2_06\", 0, 0, \"战斗失败\"} ",
+      "Next": 52,
+      "Child": []
+    },
+    {
+      "Index": 52,
+      "Node": "{ \"BattleResultTalk\" : \"t1010401_800\"} ",
+      "Next": 53,
+      "Child": []
+    },
+    {
+      "Index": 53,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 54,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 55,
+      "Child": [
+        55
+      ]
+    },
+    {
+      "Index": 55,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 56,
+      "Child": [
+        56,
+        57,
+        58,
+        59,
+        60
+      ]
+    },
+    {
+      "Index": 56,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 57,
+      "Child": []
+    },
+    {
+      "Index": 57,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 58,
+      "Child": []
+    },
+    {
+      "Index": 58,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1010401_2_06\", 0, 1, \"战斗胜利\"} ",
+      "Next": 59,
+      "Child": []
+    },
+    {
+      "Index": 59,
+      "Node": "{ \"BattleResultTalk\" : \"t1010401_633\"} ",
+      "Next": 60,
+      "Child": []
+    },
+    {
+      "Index": 60,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 61,
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
+      "Next": 62,
+      "Child": [
+        62
+      ]
+    },
+    {
+      "Index": 62,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 63,
+      "Child": [
+        63,
+        64,
+        65
+      ]
+    },
+    {
+      "Index": 63,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0104\"} ",
+      "Next": 64,
+      "Child": []
+    },
+    {
+      "Index": 64,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 65,
+      "Child": []
+    },
+    {
+      "Index": 65,
+      "Node": "{ \"BattleResultTalk\" : \"t1010401_647\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 66,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 67,
+      "Child": [
+        67
+      ]
+    },
+    {
+      "Index": 67,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 68,
+      "Child": [
+        68,
+        69,
+        70,
+        71,
+        72
+      ]
+    },
+    {
+      "Index": 68,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05408,in05407\"} ",
+      "Next": 69,
+      "Child": []
+    },
+    {
+      "Index": 69,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in05406\"} ",
+      "Next": 70,
+      "Child": []
+    },
+    {
+      "Index": 70,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 71,
+      "Child": []
+    },
+    {
+      "Index": 71,
+      "Node": "{ \"BattleResultTalk\" : \"t1010401_645\"} ",
+      "Next": 72,
+      "Child": []
+    },
+    {
+      "Index": 72,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05406\", \"bt1010401_debuff_BandBossitangry\", True} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "萧千菱一阶段 重制",
+  "WinTip": "Find the poisoner",
+  "LoseTip": "{name_1}{name_2} is defeated."
+}

@@ -1,1 +1,387 @@
-bs5104210_00	bs5104210_00	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "in0103", 2, 111205206, 1.00000}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 0, "btf5104210_00_00", ""} , { "BattleFactorTurn" : 1, 0} , { "BattleResultMoveUnit" : "in0103", "107203204"} , { "BattleResultTalk" : "t5104210_001"} , { "BattleResultAddUnit" : "in91001", 0, 207104103, 1.00000} , { "BattleResultMoveUnit" : "in91001", "203102101"} , { "BattleResultTalk" : "t5104210_002"} , { "BattlChanageFaction" : 1, "in0103"} , { "BattleResultChangeWinTip" : "Distract Zhong Ruoxin's attention, for at least 8 turns! "} , { "BattleResultChangeLoseTip" : "Either Nicey or Zhong Ruoxin is defeated. "} , { "BattleResultChangeMusic" : "", 0.00000, False} , { "SetLocalFlagBattleAction" : "btf5104210_00_00", 0, 1, ""}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 0, "btf5104210_00_01", ""} , { "BattleFactorTurn" : 1, 2} , { "BattleResultAddUnit" : "in91002", 0, 207104103, 1.00000} , { "BattleResultMoveUnit" : "in91002", "203102101"} , { "BattleResultTalk" : "t5104210_003"} , { "BattleResultChangeLoseTip" : "One of Nicey, Fiercy, or Zhong Ruoxin is Defeated."} , { "SetLocalFlagBattleAction" : "btf5104210_00_01", 0, 1, ""}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 0, "btf5104210_00_02", ""} , { "BattleFactorTurn" : 1, 4} , { "BattleResultTalk" : "t5104210_004"} , { "BattleResultAddBuff" : True, "in0103", "", True} , { "BattleResultChangeMusic" : "In_battle_02.wav", 1.00000, True} , { "SetLocalFlagBattleAction" : "btf5104210_00_02", 0, 1, ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in91001"} , { "BattleResultTalk" : "t5104210_005"} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in91002"} , { "BattleResultTalk" : "t5104210_006"} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in0103"} , { "BattleResultTalk" : "t5104210_007"} , { "BattleResultLose" : ""}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 7} , { "BattleResultTalk" : "t5104210_008"} , { "BattleResultWin" : ""}  ]}  ]}  ]} 	传书：锺若昕专武传书	none	none
+{
+  "Id": "bs5104210_00",
+  "Name": "bs5104210_00",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0103\", 2, 111205206, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 3,
+      "Child": [
+        3
+      ]
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 4,
+      "Child": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5104210_00_00\", \"\"} ",
+      "Next": 5,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 6,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in0103\", \"107203204\"} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleResultTalk\" : \"t5104210_001\"} ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultAddUnit\" : \"in91001\", 0, 207104103, 1.00000, 0.00000} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in91001\", \"203102101\"} ",
+      "Next": 10,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultTalk\" : \"t5104210_002\"} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattlChanageFaction\" : 1, \"in0103\"} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Divert Zhong Ruoxin's attention, at least eight Round!\"} ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"Either Nicey or Zhong Ruoxin was killed in action.\"} ",
+      "Next": 14,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultChangeMusic\" : \"\", 0.00000, False} ",
+      "Next": 15,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5104210_00_00\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 17,
+      "Child": [
+        17
+      ]
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 18,
+      "Child": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5104210_00_01\", \"\"} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleFactorTurn\" : 1, 2} ",
+      "Next": 20,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultAddUnit\" : \"in91002\", 0, 207104103, 1.00000, 0.00000} ",
+      "Next": 21,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in91002\", \"203102101\"} ",
+      "Next": 22,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleResultTalk\" : \"t5104210_003\"} ",
+      "Next": 23,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"Either Nicey, Fiercy or Zhong Ruoxin was killed in action.\"} ",
+      "Next": 24,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5104210_00_01\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 26,
+      "Child": [
+        26
+      ]
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 27,
+      "Child": [
+        27,
+        28,
+        29,
+        30,
+        31,
+        32
+      ]
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5104210_00_02\", \"\"} ",
+      "Next": 28,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleFactorTurn\" : 1, 4} ",
+      "Next": 29,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleResultTalk\" : \"t5104210_004\"} ",
+      "Next": 30,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0103\", \"\", True} ",
+      "Next": 31,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_battle_02.wav\", 1.00000, True} ",
+      "Next": 32,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5104210_00_02\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 34,
+      "Child": [
+        34
+      ]
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 35,
+      "Child": [
+        35,
+        36,
+        37
+      ]
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in91001\"} ",
+      "Next": 36,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"BattleResultTalk\" : \"t5104210_005\"} ",
+      "Next": 37,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 39,
+      "Child": [
+        39
+      ]
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 40,
+      "Child": [
+        40,
+        41,
+        42
+      ]
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in91002\"} ",
+      "Next": 41,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleResultTalk\" : \"t5104210_006\"} ",
+      "Next": 42,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 44,
+      "Child": [
+        44
+      ]
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 45,
+      "Child": [
+        45,
+        46,
+        47
+      ]
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0103\"} ",
+      "Next": 46,
+      "Child": []
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"BattleResultTalk\" : \"t5104210_007\"} ",
+      "Next": 47,
+      "Child": []
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 49,
+      "Child": [
+        49
+      ]
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 50,
+      "Child": [
+        50,
+        51,
+        52
+      ]
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"BattleFactorTurn\" : 1, 7} ",
+      "Next": 51,
+      "Child": []
+    },
+    {
+      "Index": 51,
+      "Node": "{ \"BattleResultTalk\" : \"t5104210_008\"} ",
+      "Next": 52,
+      "Child": []
+    },
+    {
+      "Index": 52,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "传书：锺若昕专武传书",
+  "WinTip": "None。",
+  "LoseTip": "None。"
+}

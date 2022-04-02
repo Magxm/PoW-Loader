@@ -1,1 +1,505 @@
-bs1201102_11	bs1201102_11	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "Player", 0, 207109202, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in05570", 0, 205109204, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in15131", 2, 207107200, 1.00000, 0.00000}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "ExecuteOnceNode" } , { "BattleResultMoveUnit" : "Player,in05570,in15131", "203105202,201105204,203103200"} , { "BattleResultTalk" : "t1201102_631"} , { "BattleResultMoveUnit" : "in15131", "101201200"} , { "BattleResultTalk" : "t1201102_632"} , { "BattleResultAddUnit" : "in15132", 3, 101208107, 1.00000, 0.00000} , { "BattleResultMoveUnit" : "in15132", "101204103"} , { "BattleResultTalk" : "t1201102_636"} , { "BattleResultChangeMusic" : "In_battle_11.wav", 1.00000, False} , { "BattleResultTalk" : "t1201102_637"} , { "BattleResultAddBuff" : True, "in15132", "bt1201102_10_debuff_Power050", False} , { "BattleResultAddBuff" : False, "in15131,in15132", "bt1201102_00_buff_HpLock01", False} , { "BattleResultChangeWinTip" : "Defeat the Vicious Bear Old Blackie！"} , { "BattleResultChangeLoseTip" : "{name_1}{name_2} is defeated."} , { "BattlChanageFaction" : 1, "in15132"}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 2} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1201102_640"} , { "BattleResultChangeWinTip" : "Defeat Old Blackie……？"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 1, 1, "in15132"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1201102_648"} , { "SetLocalFlagBattleAction" : "bsf1201102_11_00", 0, 1, ""}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 1, 1, "in15132"} , { "BattleFactorLocalFlag" : 1, 1, "bsf1201102_11_00", ""} , { "BattleFactorGlobalFlag" : 1, 4, "fe1201102_2_107", ""} , { "ExecuteOnceNode" } , { "BattleResultMoveUnit" : "in15132", "101208107"} , { "BattleResultRemoveUnit" : "in15132", False} , { "BattleResultChangeMusic" : "", 3.00000, False} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultTalk" : "t1201102_661"} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultChangeMusic" : "In_mood_04.wav", 5.00000, False} , { "BattleResultTalk" : "t1201102_666"} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultTalk" : "t1201102_672"} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 1, 1, "in15132"} , { "BattleFactorLocalFlag" : 1, 1, "bsf1201102_11_00", ""} , { "BattleFactorGlobalFlag" : 3, 4, "fe1201102_2_107", ""} , { "ExecuteOnceNode" } , { "BattleResultMoveUnit" : "in15132", "101208107"} , { "BattleResultRemoveUnit" : "in15132", False} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultTalk" : "t1201102_661"} , { "BattleResultMoveUnit" : "in15131", "101208107"} , { "BattleResultRemoveUnit" : "in15131", False} , { "BattleResultWaitAction" : 0.25000} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "Player"} , { "ExecuteOnceNode" } , { "BattleResultLose" : ""}  ]}  ]}  ]} 	医治石崑：恶熊老黑		
+{
+  "Id": "bs1201102_11",
+  "Name": "bs1201102_11",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"Player\", 0, 207109202, 1.00000, 0.00000} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05570\", 0, 205109204, 1.00000, 0.00000} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnit\" : \"in15131\", 2, 207107200, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 5,
+      "Child": [
+        5
+      ]
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 6,
+      "Child": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultMoveUnit\" : \"Player,in05570,in15131\", \"203105202,201105204,203103200\"} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultTalk\" : \"t1201102_631\"} ",
+      "Next": 10,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in15131\", \"101201200\"} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultTalk\" : \"t1201102_632\"} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultAddUnit\" : \"in15132\", 3, 101208107, 1.00000, 0.00000} ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in15132\", \"101204103\"} ",
+      "Next": 14,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultTalk\" : \"t1201102_636\"} ",
+      "Next": 15,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_battle_11.wav\", 1.00000, False} ",
+      "Next": 16,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleResultTalk\" : \"t1201102_637\"} ",
+      "Next": 17,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in15132\", \"bt1201102_10_debuff_Power050\", False} ",
+      "Next": 18,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in15131,in15132\", \"bt1201102_00_buff_HpLock01\", False} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat the vicious bear Old Black!\"} ",
+      "Next": 20,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1}{name_2} is defeated.。\"} ",
+      "Next": 21,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattlChanageFaction\" : 1, \"in15132\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 23,
+      "Child": [
+        23
+      ]
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 24,
+      "Child": [
+        24,
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleFactorTurn\" : 1, 2} ",
+      "Next": 25,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 26,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleResultTalk\" : \"t1201102_640\"} ",
+      "Next": 27,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Beat the old black ......?\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 29,
+      "Child": [
+        29
+      ]
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 30,
+      "Child": [
+        30,
+        31,
+        32,
+        33
+      ]
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 1, \"in15132\"} ",
+      "Next": 31,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 32,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleResultTalk\" : \"t1201102_648\"} ",
+      "Next": 33,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bsf1201102_11_00\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 35,
+      "Child": [
+        35
+      ]
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 36,
+      "Child": [
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50
+      ]
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 1, \"in15132\"} ",
+      "Next": 37,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"bsf1201102_11_00\", \"\"} ",
+      "Next": 38,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 4, \"fe1201102_2_107\", \"\"} ",
+      "Next": 39,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 40,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in15132\", \"101208107\"} ",
+      "Next": 41,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in15132\", False} ",
+      "Next": 42,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"BattleResultChangeMusic\" : \"\", 3.00000, False} ",
+      "Next": 43,
+      "Child": []
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 44,
+      "Child": []
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"BattleResultTalk\" : \"t1201102_661\"} ",
+      "Next": 45,
+      "Child": []
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 46,
+      "Child": []
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_mood_04.wav\", 5.00000, False} ",
+      "Next": 47,
+      "Child": []
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"BattleResultTalk\" : \"t1201102_666\"} ",
+      "Next": 48,
+      "Child": []
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 49,
+      "Child": []
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"BattleResultTalk\" : \"t1201102_672\"} ",
+      "Next": 50,
+      "Child": []
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 51,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 52,
+      "Child": [
+        52
+      ]
+    },
+    {
+      "Index": 52,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 53,
+      "Child": [
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64
+      ]
+    },
+    {
+      "Index": 53,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 1, \"in15132\"} ",
+      "Next": 54,
+      "Child": []
+    },
+    {
+      "Index": 54,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"bsf1201102_11_00\", \"\"} ",
+      "Next": 55,
+      "Child": []
+    },
+    {
+      "Index": 55,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 3, 4, \"fe1201102_2_107\", \"\"} ",
+      "Next": 56,
+      "Child": []
+    },
+    {
+      "Index": 56,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 57,
+      "Child": []
+    },
+    {
+      "Index": 57,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in15132\", \"101208107\"} ",
+      "Next": 58,
+      "Child": []
+    },
+    {
+      "Index": 58,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in15132\", False} ",
+      "Next": 59,
+      "Child": []
+    },
+    {
+      "Index": 59,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 60,
+      "Child": []
+    },
+    {
+      "Index": 60,
+      "Node": "{ \"BattleResultTalk\" : \"t1201102_661\"} ",
+      "Next": 61,
+      "Child": []
+    },
+    {
+      "Index": 61,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in15131\", \"101208107\"} ",
+      "Next": 62,
+      "Child": []
+    },
+    {
+      "Index": 62,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in15131\", False} ",
+      "Next": 63,
+      "Child": []
+    },
+    {
+      "Index": 63,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 64,
+      "Child": []
+    },
+    {
+      "Index": 64,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 65,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 66,
+      "Child": [
+        66
+      ]
+    },
+    {
+      "Index": 66,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 67,
+      "Child": [
+        67,
+        68,
+        69
+      ]
+    },
+    {
+      "Index": 67,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player\"} ",
+      "Next": 68,
+      "Child": []
+    },
+    {
+      "Index": 68,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 69,
+      "Child": []
+    },
+    {
+      "Index": 69,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "医治石崑：恶熊老黑",
+  "WinTip": "",
+  "LoseTip": ""
+}

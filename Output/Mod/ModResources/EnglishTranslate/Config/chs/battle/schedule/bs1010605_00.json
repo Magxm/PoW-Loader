@@ -1,1 +1,1095 @@
-bs1010605_00	南飞鍠五阶	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnits" : "in05204,in05207", 1, "202101101,201102201"} , { "BattleResultAddUnit" : "in0106", 0, 101202101, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in05201", 2, 202201103, 1.00000, 0.00000}  ]} , { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "ExecuteOnceNode" } , { "BattleResultCameraMoveUnit" : "in0106", 91.31200, 10.00000} , { "BattleResultAddBuff" : True, "in05201", "bt1010605_03_debuff_CrashFeiHuang", False} , { "BattleResultAddBuff" : False, "in0106", "bt1010605_04_debuff_Dream", False} , { "BattleResultAddBuff" : False, "in0106", "bt1010605_01_buff_UndeadFeiHuang", True} , { "BattleResultAddBuff" : False, "in05204,in05207", "bt1010605_05_buff_LockThief", True} , { "SetIsShowItem" : False} , { "BattleResultTalk" : "t1010605_170"} , { "BattleResultChangeWinTip" : "Revenge for your family，Kill the Bandits。"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in05204"} , { "ExecuteOnceNode" } , { "BattleResultAddUnits" : "in05205,in05206", 1, "103205102,101205104"} , { "BattleResultCameraMoveUnit" : "in05205", 91.31200, 10.00000} , { "BattleResultTalk" : "t1010605_127"} , { "BattleResultTalk" : "t1010605_178"}  ]}  ]} , { "BattleEventNode" : 400, 1, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in05207"} , { "ExecuteOnceNode" } , { "BattleResultAddUnits" : "in05208,in05209", 1, "101101202,204103101"} , { "BattleResultCameraMoveUnit" : "in05208", 91.31200, 10.00000} , { "BattleResultTalk" : "t1010605_128"} , { "BattleResultTalk" : "t1010605_182"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 0, "btf1010605_01", "未说过不想杀人"} , { "BattleFactorTargetDestroy" : "in05208"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010605_129"} , { "BattleResultAddBuff" : True, "in0106", "bt1010605_02_buff_FuriousFeiHuang", True} , { "BattlChanageFaction" : 2, "in0106"} , { "BattlChanageFaction" : 4, "in05201"} , { "SetLocalFlagBattleAction" : "btf1010605_01", 0, 1, "说过不想杀人"}  ]}  ]} , { "BattleEventNode" : 400, 1, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 0, "btf1010605_01", "未说过不想杀人"} , { "BattleFactorTargetDestroy" : "in05209"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010605_129"} , { "BattleResultAddBuff" : True, "in0106", "bt1010605_02_buff_FuriousFeiHuang", True} , { "BattlChanageFaction" : 2, "in0106"} , { "BattlChanageFaction" : 4, "in05201"} , { "SetLocalFlagBattleAction" : "btf1010605_01", 0, 1, "说过不想杀人"}  ]}  ]} , { "BattleEventNode" : 400, 2, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 0, "btf1010605_01", "未说过不想杀人"} , { "BattleFactorTargetDestroy" : "in05205"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010605_129"} , { "BattleResultAddBuff" : True, "in0106", "bt1010605_02_buff_FuriousFeiHuang", True} , { "BattlChanageFaction" : 2, "in0106"} , { "BattlChanageFaction" : 4, "in05201"} , { "SetLocalFlagBattleAction" : "btf1010605_01", 0, 1, "说过不想杀人"}  ]}  ]} , { "BattleEventNode" : 400, 3, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 0, "btf1010605_01", "未说过不想杀人"} , { "BattleFactorTargetDestroy" : "in05206"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010605_129"} , { "BattleResultAddBuff" : True, "in0106", "bt1010605_02_buff_FuriousFeiHuang", True} , { "BattlChanageFaction" : 2, "in0106"} , { "BattlChanageFaction" : 4, "in05201"} , { "SetLocalFlagBattleAction" : "btf1010605_01", 0, 1, "说过不想杀人"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 0, "btf1010605_01", "未说过不想杀人"} , { "BattleFactorTargetDestroy" : "in05201"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010605_172"} , { "BattleResultTalk" : "t1010605_179"} , { "BattleResultAddBuff" : True, "in0106", "bt1010605_02_buff_FuriousFeiHuang", True} , { "BattlChanageFaction" : 2, "in0106"} , { "SetLocalFlagBattleAction" : "btf1010605_01", 0, 1, "说过不想杀人"}  ]}  ]} , { "BattleEventNode" : 400, 1, [ { "StepByStepNode" : [ { "BattleFactorLocalFlag" : 1, 0, "btf1010605_01", "未说过不想杀人"} , { "BattleFactorTargetHp" : 1, 1, "in0106"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010605_129"} , { "BattleResultAddBuff" : True, "in0106", "bt1010605_02_buff_FuriousFeiHuang", True} , { "BattlChanageFaction" : 2, "in0106"} , { "BattlChanageFaction" : 4, "in05201"} , { "SetLocalFlagBattleAction" : "btf1010605_01", 0, 1, "说过不想杀人"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorFactionDefeat" : 1} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010605_204"} , { "EndBattleAction" : "m605in010640_06"}  ]}  ]} , { "BattleEventNode" : 400, 1, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 1, 50, "in05204"} , { "BattleFactorLocalFlag" : 1, 0, "btf1010605_04", "盗匪未触发半血对话"} , { "BattleFactorLocalFlag" : 1, 0, "btf1010605_02", "两人尚未同时有过50%血对话"} , { "ExecuteOnceNode" } , { "SetGlobalFlagBattleAction" : "fe1010605_2_02", 1, 1, "盗匪与商人50%血数量"} , { "SetLocalFlagBattleAction" : "btf1010605_04", 0, 1, "盗匪已触发半血对话"} , { "BattleResultTalk" : "t1010605_174"} , { "BattleResultTalk" : "t1010605_181"} , { "BattleResultRmoveBuff" : "in05204", "bt1010605_05_buff_LockThief"} , { "BattleResultAddBuff" : True, "in05204", "bt1010605_06_debuff_ScareThief", False}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 0, 4} , { "BattleFactorTargetHp" : 0, 0, "in05201"} , { "BattleFactorTargetHp" : 0, 1, "in0106"} , { "BattleFactorTargetHp" : 0, 0, "in05204"} , { "BattleFactorTargetHp" : 0, 0, "in05207"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010605_203"} , { "BattleResultWin" : ""}  ]}  ]} , { "BattleEventNode" : 400, 1, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 1, 50, "in05207"} , { "BattleFactorLocalFlag" : 1, 0, "btf1010605_03", "商人未触发半血对话"} , { "BattleFactorLocalFlag" : 1, 0, "btf1010605_02", "两人尚未同时有过50%血对话"} , { "ExecuteOnceNode" } , { "SetGlobalFlagBattleAction" : "fe1010605_2_02", 1, 1, "盗匪与商人50%血数量"} , { "SetLocalFlagBattleAction" : "btf1010605_03", 0, 1, "商人已触发半血对话"} , { "BattleResultTalk" : "t1010605_180"} , { "BattleResultTalk" : "t1010605_181"} , { "BattleResultRmoveBuff" : "in05207", "bt1010605_05_buff_LockThief"} , { "BattleResultAddBuff" : True, "in05207", "bt1010605_06_debuff_ScareThief", False}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 1, 50, "in05207"} , { "BattleFactorTargetHp" : 1, 50, "in05204"} , { "BattleFactorLocalFlag" : 1, 0, "btf1010605_03", "商人未触发半血对话"} , { "BattleFactorLocalFlag" : 1, 0, "btf1010605_04", "盗匪未触发半血对话"} , { "BattleFactorLocalFlag" : 1, 0, "btf1010605_02", "两人尚未同时有过50%血对话"} , { "ExecuteOnceNode" } , { "SetGlobalFlagBattleAction" : "fe1010605_2_02", 1, 2, "盗匪与商人50%血数量"} , { "SetLocalFlagBattleAction" : "btf1010605_02", 0, 1, "两人都已经有过50%血对话"} , { "BattleResultTalk" : "t1010605_180"} , { "BattleResultTalk" : "t1010605_181"} , { "BattleResultRmoveBuff" : "in05207,in05204", "bt1010605_05_buff_LockThief"} , { "BattleResultAddBuff" : True, "in05207,in05204", "bt1010605_06_debuff_ScareThief", False}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetHp" : 2, 80, "in0106"} , { "BattleFactorTargetHp" : 0, 1, "in0106"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t1010605_200"} , { "BattleResultAddBuff" : True, "in0106", "bt1010605_07_buff_BloodTaste", True}  ]}  ]}  ]} 	南飞鍠五阶	Protect the young Nan Feihuang and kill the bandits?	Young you die
+{
+  "Id": "bs1010605_00",
+  "Name": "南飞鍠五阶",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnits\" : \"in05204,in05207\", 1, \"202101101,201102201\"} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0106\", 0, 101202101, 1.00000, 0.00000} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05201\", 2, 202201103, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 5,
+      "Child": [
+        5
+      ]
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 6,
+      "Child": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultCameraMoveUnit\" : \"in0106\", 91.31200, 10.00000} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05201\", \"bt1010605_03_debuff_CrashFeiHuang\", False} ",
+      "Next": 10,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in0106\", \"bt1010605_04_debuff_Dream\", False} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in0106\", \"bt1010605_01_buff_UndeadFeiHuang\", True} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in05204,in05207\", \"bt1010605_05_buff_LockThief\", True} ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"SetIsShowItem\" : False} ",
+      "Next": 14,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultTalk\" : \"t1010605_170\"} ",
+      "Next": 15,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Revenge for the family and kill the bandits.\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 17,
+      "Child": [
+        17
+      ]
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 18,
+      "Child": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ]
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05204\"} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 20,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultAddUnits\" : \"in05205,in05206\", 1, \"103205102,101205104\"} ",
+      "Next": 21,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleResultCameraMoveUnit\" : \"in05205\", 91.31200, 10.00000} ",
+      "Next": 22,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleResultTalk\" : \"t1010605_127\"} ",
+      "Next": 23,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleResultTalk\" : \"t1010605_178\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
+      "Next": 25,
+      "Child": [
+        25
+      ]
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 26,
+      "Child": [
+        26,
+        27,
+        28,
+        29,
+        30,
+        31
+      ]
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05207\"} ",
+      "Next": 27,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 28,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleResultAddUnits\" : \"in05208,in05209\", 1, \"101101202,204103101\"} ",
+      "Next": 29,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleResultCameraMoveUnit\" : \"in05208\", 91.31200, 10.00000} ",
+      "Next": 30,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleResultTalk\" : \"t1010605_128\"} ",
+      "Next": 31,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleResultTalk\" : \"t1010605_182\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 33,
+      "Child": [
+        33
+      ]
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 34,
+      "Child": [
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ]
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1010605_01\", \"未说过不想杀人\"} ",
+      "Next": 35,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05208\"} ",
+      "Next": 36,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 37,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleResultTalk\" : \"t1010605_129\"} ",
+      "Next": 38,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0106\", \"bt1010605_02_buff_FuriousFeiHuang\", True} ",
+      "Next": 39,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"BattlChanageFaction\" : 2, \"in0106\"} ",
+      "Next": 40,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"BattlChanageFaction\" : 4, \"in05201\"} ",
+      "Next": 41,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1010605_01\", 0, 1, \"说过不想杀人\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
+      "Next": 43,
+      "Child": [
+        43
+      ]
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 44,
+      "Child": [
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51
+      ]
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1010605_01\", \"未说过不想杀人\"} ",
+      "Next": 45,
+      "Child": []
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05209\"} ",
+      "Next": 46,
+      "Child": []
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 47,
+      "Child": []
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"BattleResultTalk\" : \"t1010605_129\"} ",
+      "Next": 48,
+      "Child": []
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0106\", \"bt1010605_02_buff_FuriousFeiHuang\", True} ",
+      "Next": 49,
+      "Child": []
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"BattlChanageFaction\" : 2, \"in0106\"} ",
+      "Next": 50,
+      "Child": []
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"BattlChanageFaction\" : 4, \"in05201\"} ",
+      "Next": 51,
+      "Child": []
+    },
+    {
+      "Index": 51,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1010605_01\", 0, 1, \"说过不想杀人\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 52,
+      "Node": "{ \"BattleEventNode\" : 400, 2, [ ]} ",
+      "Next": 53,
+      "Child": [
+        53
+      ]
+    },
+    {
+      "Index": 53,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 54,
+      "Child": [
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61
+      ]
+    },
+    {
+      "Index": 54,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1010605_01\", \"未说过不想杀人\"} ",
+      "Next": 55,
+      "Child": []
+    },
+    {
+      "Index": 55,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05205\"} ",
+      "Next": 56,
+      "Child": []
+    },
+    {
+      "Index": 56,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 57,
+      "Child": []
+    },
+    {
+      "Index": 57,
+      "Node": "{ \"BattleResultTalk\" : \"t1010605_129\"} ",
+      "Next": 58,
+      "Child": []
+    },
+    {
+      "Index": 58,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0106\", \"bt1010605_02_buff_FuriousFeiHuang\", True} ",
+      "Next": 59,
+      "Child": []
+    },
+    {
+      "Index": 59,
+      "Node": "{ \"BattlChanageFaction\" : 2, \"in0106\"} ",
+      "Next": 60,
+      "Child": []
+    },
+    {
+      "Index": 60,
+      "Node": "{ \"BattlChanageFaction\" : 4, \"in05201\"} ",
+      "Next": 61,
+      "Child": []
+    },
+    {
+      "Index": 61,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1010605_01\", 0, 1, \"说过不想杀人\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 62,
+      "Node": "{ \"BattleEventNode\" : 400, 3, [ ]} ",
+      "Next": 63,
+      "Child": [
+        63
+      ]
+    },
+    {
+      "Index": 63,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 64,
+      "Child": [
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71
+      ]
+    },
+    {
+      "Index": 64,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1010605_01\", \"未说过不想杀人\"} ",
+      "Next": 65,
+      "Child": []
+    },
+    {
+      "Index": 65,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05206\"} ",
+      "Next": 66,
+      "Child": []
+    },
+    {
+      "Index": 66,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 67,
+      "Child": []
+    },
+    {
+      "Index": 67,
+      "Node": "{ \"BattleResultTalk\" : \"t1010605_129\"} ",
+      "Next": 68,
+      "Child": []
+    },
+    {
+      "Index": 68,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0106\", \"bt1010605_02_buff_FuriousFeiHuang\", True} ",
+      "Next": 69,
+      "Child": []
+    },
+    {
+      "Index": 69,
+      "Node": "{ \"BattlChanageFaction\" : 2, \"in0106\"} ",
+      "Next": 70,
+      "Child": []
+    },
+    {
+      "Index": 70,
+      "Node": "{ \"BattlChanageFaction\" : 4, \"in05201\"} ",
+      "Next": 71,
+      "Child": []
+    },
+    {
+      "Index": 71,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1010605_01\", 0, 1, \"说过不想杀人\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 72,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 73,
+      "Child": [
+        73
+      ]
+    },
+    {
+      "Index": 73,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 74,
+      "Child": [
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81
+      ]
+    },
+    {
+      "Index": 74,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1010605_01\", \"未说过不想杀人\"} ",
+      "Next": 75,
+      "Child": []
+    },
+    {
+      "Index": 75,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05201\"} ",
+      "Next": 76,
+      "Child": []
+    },
+    {
+      "Index": 76,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 77,
+      "Child": []
+    },
+    {
+      "Index": 77,
+      "Node": "{ \"BattleResultTalk\" : \"t1010605_172\"} ",
+      "Next": 78,
+      "Child": []
+    },
+    {
+      "Index": 78,
+      "Node": "{ \"BattleResultTalk\" : \"t1010605_179\"} ",
+      "Next": 79,
+      "Child": []
+    },
+    {
+      "Index": 79,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0106\", \"bt1010605_02_buff_FuriousFeiHuang\", True} ",
+      "Next": 80,
+      "Child": []
+    },
+    {
+      "Index": 80,
+      "Node": "{ \"BattlChanageFaction\" : 2, \"in0106\"} ",
+      "Next": 81,
+      "Child": []
+    },
+    {
+      "Index": 81,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1010605_01\", 0, 1, \"说过不想杀人\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 82,
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
+      "Next": 83,
+      "Child": [
+        83
+      ]
+    },
+    {
+      "Index": 83,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 84,
+      "Child": [
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91
+      ]
+    },
+    {
+      "Index": 84,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1010605_01\", \"未说过不想杀人\"} ",
+      "Next": 85,
+      "Child": []
+    },
+    {
+      "Index": 85,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 1, \"in0106\"} ",
+      "Next": 86,
+      "Child": []
+    },
+    {
+      "Index": 86,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 87,
+      "Child": []
+    },
+    {
+      "Index": 87,
+      "Node": "{ \"BattleResultTalk\" : \"t1010605_129\"} ",
+      "Next": 88,
+      "Child": []
+    },
+    {
+      "Index": 88,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0106\", \"bt1010605_02_buff_FuriousFeiHuang\", True} ",
+      "Next": 89,
+      "Child": []
+    },
+    {
+      "Index": 89,
+      "Node": "{ \"BattlChanageFaction\" : 2, \"in0106\"} ",
+      "Next": 90,
+      "Child": []
+    },
+    {
+      "Index": 90,
+      "Node": "{ \"BattlChanageFaction\" : 4, \"in05201\"} ",
+      "Next": 91,
+      "Child": []
+    },
+    {
+      "Index": 91,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1010605_01\", 0, 1, \"说过不想杀人\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 92,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 93,
+      "Child": [
+        93
+      ]
+    },
+    {
+      "Index": 93,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 94,
+      "Child": [
+        94,
+        95,
+        96,
+        97
+      ]
+    },
+    {
+      "Index": 94,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 95,
+      "Child": []
+    },
+    {
+      "Index": 95,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 96,
+      "Child": []
+    },
+    {
+      "Index": 96,
+      "Node": "{ \"BattleResultTalk\" : \"t1010605_204\"} ",
+      "Next": 97,
+      "Child": []
+    },
+    {
+      "Index": 97,
+      "Node": "{ \"EndBattleAction\" : \"m605in010640_06\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 98,
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
+      "Next": 99,
+      "Child": [
+        99
+      ]
+    },
+    {
+      "Index": 99,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 100,
+      "Child": [
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        107,
+        108,
+        109
+      ]
+    },
+    {
+      "Index": 100,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 50, \"in05204\"} ",
+      "Next": 101,
+      "Child": []
+    },
+    {
+      "Index": 101,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1010605_04\", \"盗匪未触发半血对话\"} ",
+      "Next": 102,
+      "Child": []
+    },
+    {
+      "Index": 102,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1010605_02\", \"两人尚未同时有过50%血对话\"} ",
+      "Next": 103,
+      "Child": []
+    },
+    {
+      "Index": 103,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 104,
+      "Child": []
+    },
+    {
+      "Index": 104,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1010605_2_02\", 1, 1, \"盗匪与商人50%血数量\"} ",
+      "Next": 105,
+      "Child": []
+    },
+    {
+      "Index": 105,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1010605_04\", 0, 1, \"盗匪已触发半血对话\"} ",
+      "Next": 106,
+      "Child": []
+    },
+    {
+      "Index": 106,
+      "Node": "{ \"BattleResultTalk\" : \"t1010605_174\"} ",
+      "Next": 107,
+      "Child": []
+    },
+    {
+      "Index": 107,
+      "Node": "{ \"BattleResultTalk\" : \"t1010605_181\"} ",
+      "Next": 108,
+      "Child": []
+    },
+    {
+      "Index": 108,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05204\", \"bt1010605_05_buff_LockThief\"} ",
+      "Next": 109,
+      "Child": []
+    },
+    {
+      "Index": 109,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05204\", \"bt1010605_06_debuff_ScareThief\", False} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 110,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 111,
+      "Child": [
+        111
+      ]
+    },
+    {
+      "Index": 111,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 112,
+      "Child": [
+        112,
+        113,
+        114,
+        115,
+        116,
+        117,
+        118,
+        119
+      ]
+    },
+    {
+      "Index": 112,
+      "Node": "{ \"BattleFactorTurn\" : 0, 4} ",
+      "Next": 113,
+      "Child": []
+    },
+    {
+      "Index": 113,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in05201\"} ",
+      "Next": 114,
+      "Child": []
+    },
+    {
+      "Index": 114,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 1, \"in0106\"} ",
+      "Next": 115,
+      "Child": []
+    },
+    {
+      "Index": 115,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in05204\"} ",
+      "Next": 116,
+      "Child": []
+    },
+    {
+      "Index": 116,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 0, \"in05207\"} ",
+      "Next": 117,
+      "Child": []
+    },
+    {
+      "Index": 117,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 118,
+      "Child": []
+    },
+    {
+      "Index": 118,
+      "Node": "{ \"BattleResultTalk\" : \"t1010605_203\"} ",
+      "Next": 119,
+      "Child": []
+    },
+    {
+      "Index": 119,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 120,
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
+      "Next": 121,
+      "Child": [
+        121
+      ]
+    },
+    {
+      "Index": 121,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 122,
+      "Child": [
+        122,
+        123,
+        124,
+        125,
+        126,
+        127,
+        128,
+        129,
+        130,
+        131
+      ]
+    },
+    {
+      "Index": 122,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 50, \"in05207\"} ",
+      "Next": 123,
+      "Child": []
+    },
+    {
+      "Index": 123,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1010605_03\", \"商人未触发半血对话\"} ",
+      "Next": 124,
+      "Child": []
+    },
+    {
+      "Index": 124,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1010605_02\", \"两人尚未同时有过50%血对话\"} ",
+      "Next": 125,
+      "Child": []
+    },
+    {
+      "Index": 125,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 126,
+      "Child": []
+    },
+    {
+      "Index": 126,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1010605_2_02\", 1, 1, \"盗匪与商人50%血数量\"} ",
+      "Next": 127,
+      "Child": []
+    },
+    {
+      "Index": 127,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1010605_03\", 0, 1, \"商人已触发半血对话\"} ",
+      "Next": 128,
+      "Child": []
+    },
+    {
+      "Index": 128,
+      "Node": "{ \"BattleResultTalk\" : \"t1010605_180\"} ",
+      "Next": 129,
+      "Child": []
+    },
+    {
+      "Index": 129,
+      "Node": "{ \"BattleResultTalk\" : \"t1010605_181\"} ",
+      "Next": 130,
+      "Child": []
+    },
+    {
+      "Index": 130,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05207\", \"bt1010605_05_buff_LockThief\"} ",
+      "Next": 131,
+      "Child": []
+    },
+    {
+      "Index": 131,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05207\", \"bt1010605_06_debuff_ScareThief\", False} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 132,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 133,
+      "Child": [
+        133
+      ]
+    },
+    {
+      "Index": 133,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 134,
+      "Child": [
+        134,
+        135,
+        136,
+        137,
+        138,
+        139,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145
+      ]
+    },
+    {
+      "Index": 134,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 50, \"in05207\"} ",
+      "Next": 135,
+      "Child": []
+    },
+    {
+      "Index": 135,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 50, \"in05204\"} ",
+      "Next": 136,
+      "Child": []
+    },
+    {
+      "Index": 136,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1010605_03\", \"商人未触发半血对话\"} ",
+      "Next": 137,
+      "Child": []
+    },
+    {
+      "Index": 137,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1010605_04\", \"盗匪未触发半血对话\"} ",
+      "Next": 138,
+      "Child": []
+    },
+    {
+      "Index": 138,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1010605_02\", \"两人尚未同时有过50%血对话\"} ",
+      "Next": 139,
+      "Child": []
+    },
+    {
+      "Index": 139,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 140,
+      "Child": []
+    },
+    {
+      "Index": 140,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1010605_2_02\", 1, 2, \"盗匪与商人50%血数量\"} ",
+      "Next": 141,
+      "Child": []
+    },
+    {
+      "Index": 141,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1010605_02\", 0, 1, \"两人都已经有过50%血对话\"} ",
+      "Next": 142,
+      "Child": []
+    },
+    {
+      "Index": 142,
+      "Node": "{ \"BattleResultTalk\" : \"t1010605_180\"} ",
+      "Next": 143,
+      "Child": []
+    },
+    {
+      "Index": 143,
+      "Node": "{ \"BattleResultTalk\" : \"t1010605_181\"} ",
+      "Next": 144,
+      "Child": []
+    },
+    {
+      "Index": 144,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05207,in05204\", \"bt1010605_05_buff_LockThief\"} ",
+      "Next": 145,
+      "Child": []
+    },
+    {
+      "Index": 145,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05207,in05204\", \"bt1010605_06_debuff_ScareThief\", False} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 146,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 147,
+      "Child": [
+        147
+      ]
+    },
+    {
+      "Index": 147,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 148,
+      "Child": [
+        148,
+        149,
+        150,
+        151,
+        152
+      ]
+    },
+    {
+      "Index": 148,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 80, \"in0106\"} ",
+      "Next": 149,
+      "Child": []
+    },
+    {
+      "Index": 149,
+      "Node": "{ \"BattleFactorTargetHp\" : 0, 1, \"in0106\"} ",
+      "Next": 150,
+      "Child": []
+    },
+    {
+      "Index": 150,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 151,
+      "Child": []
+    },
+    {
+      "Index": 151,
+      "Node": "{ \"BattleResultTalk\" : \"t1010605_200\"} ",
+      "Next": 152,
+      "Child": []
+    },
+    {
+      "Index": 152,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0106\", \"bt1010605_07_buff_BloodTaste\", True} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "南飞鍠五阶",
+  "WinTip": "Protect the young Nan Feihuang ，and kill the bandits?",
+  "LoseTip": "Young version of yourself dies"
+}

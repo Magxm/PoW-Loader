@@ -1,0 +1,382 @@
+{
+  "Id": "bs1011105_01",
+  "Name": "武辙五保护蔡思",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Prallel": -1,
+      "Child": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"Player\", 0, 200202102, 1.00000, -157.42700} ",
+      "Next": 2,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0111\", 0, 200103203, 1.00000, -157.42700} ",
+      "Next": 3,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05742\", 0, 201102201, 1.00000, -157.42700} ",
+      "Next": 4,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05749\", 0, 201200101, 1.00000, -134.50100} ",
+      "Next": 5,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05750\", 0, 202101101, 1.00000, -114.68900} ",
+      "Next": 6,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0574504\", 1, 101106207, 1.00000, 168.80100} ",
+      "Next": 7,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0574502\", 1, 201108207, 1.00000, 202.75300} ",
+      "Next": 8,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0574501\", 1, 202205107, 1.00000, 12.21400} ",
+      "Next": 9,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0574503\", 1, 200207107, 1.00000, 40.84500} ",
+      "Next": 10,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0574505\", 1, 102206104, 1.00000, 44.73500} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 12,
+      "Prallel": -1,
+      "Child": [
+        12
+      ]
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 13,
+      "Prallel": -1,
+      "Child": [
+        13,
+        14,
+        15,
+        42,
+        41
+      ]
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05742\"} ",
+      "Next": 14,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 15,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1011105_2_02\", 0, 4, \"蔡思死亡战败\"} ",
+      "Next": 42,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 17,
+      "Prallel": -1,
+      "Child": [
+        17,
+        18,
+        19,
+        38,
+        20
+      ]
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0111\"} ",
+      "Next": 18,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 19,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1011105_2_02\", 0, 2, \"武辙死亡战败\"} ",
+      "Next": 38,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 22,
+      "Prallel": -1,
+      "Child": [
+        22,
+        23,
+        24,
+        43,
+        39
+      ]
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05749\"} ",
+      "Next": 23,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 24,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1011105_2_02\", 0, 3, \"老翁死亡战败\"} ",
+      "Next": 43,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 26,
+      "Prallel": -1,
+      "Child": [
+        26,
+        27,
+        28,
+        44,
+        40
+      ]
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05750\"} ",
+      "Next": 27,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 28,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1011105_2_02\", 0, 3, \"女子死亡战败\"} ",
+      "Next": 44,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 16,
+      "Prallel": -1,
+      "Child": [
+        16
+      ]
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 21,
+      "Prallel": -1,
+      "Child": [
+        21
+      ]
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 25,
+      "Prallel": -1,
+      "Child": [
+        25
+      ]
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 36,
+      "Prallel": -1,
+      "Child": [
+        36,
+        33,
+        34,
+        45,
+        37
+      ]
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 34,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1011105_2_02\", 0, 1, \"全灭刺客战胜\"} ",
+      "Next": 45,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 32,
+      "Prallel": -1,
+      "Child": [
+        32
+      ]
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 33,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleResultTalk\" : \"t1011105_110\"} ",
+      "Next": 20,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"BattleResultWaitAction\" : 0.10000} ",
+      "Next": 41,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"BattleResultWaitAction\" : 0.10000} ",
+      "Next": 39,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"BattleResultWaitAction\" : 0.10000} ",
+      "Next": 40,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"BattleResultWaitAction\" : 0.10000} ",
+      "Next": 37,
+      "Prallel": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "武辙五阶战斗",
+  "WinTip": "Protect the objective and defeat all Hall of Vicissitudes assassins",
+  "LoseTip": "Any one of Wu Zhe、 Cai Si、 the old man and the woman is defeated."
+}

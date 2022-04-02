@@ -1,0 +1,269 @@
+{
+  "Id": "bs5201138_00",
+  "Name": "",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Prallel": -1,
+      "Child": [
+        1,
+        10,
+        11
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnits\" : \"in05278,in05282,in05283,in05286,in05287\", 1, \"200103203,102101203,202105203,104200204,204108204\"} ",
+      "Next": 10,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 3,
+      "Prallel": -1,
+      "Child": [
+        3
+      ]
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 4,
+      "Prallel": -1,
+      "Child": [
+        4,
+        5,
+        6,
+        9,
+        7,
+        8,
+        24
+      ]
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 5,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 6,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleResultTalk\" : \"t5201138_081\"} ",
+      "Next": 9,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"Xia Pavillion students were all destroyed.\"} ",
+      "Next": 8,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in0204\", \"bt5201138_00_buff_UndeadTeacher\", True} ",
+      "Next": 24,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat all Corpse Zombies。\"} ",
+      "Next": 7,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultAddUnits\" : \"in0204,in05279,in05280,in05281\", 0, \"201101200,203103200,205104101,200201101\"} ",
+      "Next": 11,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultAddUnits\" : \"Player,in03001,in03002,in03015\", 0, \"205200105,204201105,206200106,207101106\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 13,
+      "Prallel": -1,
+      "Child": [
+        13
+      ]
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 14,
+      "Prallel": -1,
+      "Child": [
+        14,
+        15,
+        16,
+        23
+      ]
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05279,in05280,in05281,Player,in03001,in03002,in03015\"} ",
+      "Next": 15,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 16,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleResultTalk\" : \"t5201138_034\"} ",
+      "Next": 23,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleResultTalk\" : \"t5201138_030\"} ",
+      "Next": 22,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 17,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 21,
+      "Prallel": -1,
+      "Child": [
+        21,
+        18,
+        17,
+        22
+      ]
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
+      "Next": 19,
+      "Prallel": -1,
+      "Child": [
+        19
+      ]
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 18,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleResultAddSecondaryGoal\" : \"ctf5201138_0\", \"快速解决屍人（於<color=#FF0000>四回合内</color>解决屍人）\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 31,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 29,
+      "Prallel": -1,
+      "Child": [
+        29,
+        28,
+        25,
+        31,
+        30
+      ]
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 26,
+      "Prallel": -1,
+      "Child": [
+        26
+      ]
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 25,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleFactorTurn\" : 2, 5} ",
+      "Next": 28,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201138_2_01\", 0, 1, \"于四回合内解决屍人\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"ctf5201138_0\", 1} ",
+      "Next": 30,
+      "Prallel": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "",
+  "WinTip": "",
+  "LoseTip": ""
+}

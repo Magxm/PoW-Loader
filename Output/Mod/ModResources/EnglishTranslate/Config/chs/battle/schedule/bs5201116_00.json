@@ -1,1 +1,250 @@
-bs5201116_00	bs5201116_00	{ "BattleRootNode" : [ { "BattleEventNode" : 200, 0, [ { "StepByStepNode" : [ { "BattleFactorTurn" : 1, 0} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5201116_008"} , { "BattleResultAddUnit" : "Player", 0, 207107200, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in0601", 0, 206107201, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in0110", 0, 207106101, 1.00000, 0.00000} , { "BattleResultMoveUnit" : "in0601", "202104202"} , { "BattleResultMoveUnit" : "in0110", "204102102"} , { "BattleResultMoveUnit" : "Player", "202102200"} , { "BattleResultTalk" : "t5201116_089"} , { "BattleResultAddUnit" : "in0106", 1, 107207200, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in0102", 1, 107206201, 1.00000, 0.00000} , { "BattleResultAddUnit" : "in03002", 1, 106207101, 1.00000, 0.00000} , { "BattleResultMoveUnit" : "in0102", "104202202"} , { "BattleResultMoveUnit" : "in03002", "102204102"} , { "BattleResultMoveUnit" : "in0106", "102202200"} , { "BattleResultTalk" : "t5201116_025"} , { "BattleResultChangeWinTip" : "Defeat Duang Hong'er， Nan Feihuang， Yun Xiaohou! "}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "in0102,in0106,in03002"} , { "ExecuteOnceNode" } , { "BattleResultChangeMusic" : "In_mood_11.wav", 0.50000, False} , { "BattleResultTalk" : "t5201116_028"} , { "SetGlobalFlagBattleAction" : "fe5201115_1_01", 0, 1, "第一场战斗已获胜"} , { "EndBattleAction" : "m5201116_01"}  ]}  ]} , { "BattleEventNode" : 400, 0, [ { "StepByStepNode" : [ { "BattleFactorTargetDestroy" : "Player,in0601,in0110"} , { "ExecuteOnceNode" } , { "BattleResultTalk" : "t5201116_034"} , { "BattleResultLose" : ""}  ]}  ]}  ]} 	第二届侠隐擂台赛上官璘组	Win the ring match!	All friendly characters defeated。
+{
+  "Id": "bs5201116_00",
+  "Name": "bs5201116_00",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 2,
+      "Child": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 4,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultTalk\" : \"t5201116_008\"} ",
+      "Next": 5,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleResultAddUnit\" : \"Player\", 0, 207107200, 1.00000, 0.00000} ",
+      "Next": 6,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0601\", 0, 206107201, 1.00000, 0.00000} ",
+      "Next": 7,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0110\", 0, 207106101, 1.00000, 0.00000} ",
+      "Next": 8,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in0601\", \"202104202\"} ",
+      "Next": 9,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in0110\", \"204102102\"} ",
+      "Next": 10,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultMoveUnit\" : \"Player\", \"202102200\"} ",
+      "Next": 11,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultTalk\" : \"t5201116_089\"} ",
+      "Next": 12,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0106\", 1, 107207200, 1.00000, 0.00000} ",
+      "Next": 13,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0102\", 1, 107206201, 1.00000, 0.00000} ",
+      "Next": 14,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultAddUnit\" : \"in03002\", 1, 106207101, 1.00000, 0.00000} ",
+      "Next": 15,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in0102\", \"104202202\"} ",
+      "Next": 16,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in03002\", \"102204102\"} ",
+      "Next": 17,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in0106\", \"102202200\"} ",
+      "Next": 18,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleResultTalk\" : \"t5201116_025\"} ",
+      "Next": 19,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Duan Hong'Er, Nan Feihuang, Yun Xiaohou!\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 21,
+      "Child": [
+        21
+      ]
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 22,
+      "Child": [
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ]
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0102,in0106,in03002\"} ",
+      "Next": 23,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 24,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_mood_11.wav\", 0.50000, False} ",
+      "Next": 25,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleResultTalk\" : \"t5201116_028\"} ",
+      "Next": 26,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201115_1_01\", 0, 1, \"第一场战斗已获胜\"} ",
+      "Next": 27,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"EndBattleAction\" : \"m5201116_01\"} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 29,
+      "Child": [
+        29
+      ]
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 30,
+      "Child": [
+        30,
+        31,
+        32,
+        33
+      ]
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player,in0601,in0110\"} ",
+      "Next": 31,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 32,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleResultTalk\" : \"t5201116_034\"} ",
+      "Next": 33,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "第二届侠隐擂台赛上官璘组",
+  "WinTip": "Win the ring!",
+  "LoseTip": "All friendly units are defeated"
+}

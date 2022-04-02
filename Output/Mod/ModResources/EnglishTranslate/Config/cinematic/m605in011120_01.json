@@ -2,8 +2,8 @@
   "EntryIndex": 0,
   "Nodes": [
     {
-      "Node": "{ \"TimerAction\" : 0.50000} ",
-      "Next": 1,
+      "Node": "{ \"TimerAction\" : 0.10000} ",
+      "Next": 70,
       "Prallel": -1
     },
     {
@@ -149,7 +149,7 @@
     {
       "Node": "{ \"TimerAction\" : 2.00000} ",
       "Next": 28,
-      "Prallel": -1
+      "Prallel": 72
     },
     {
       "Node": "{ \"NpcSimpleTransformAction\" : False, { -1524.48300, 2.96198, -66.86347} , 0.00000, True, { 0.00000, 121.50610, 0.00000} , \"in0111\"} ",
@@ -348,6 +348,21 @@
     },
     {
       "Node": "{ \"PlayerSimpleTransformAction\" : False, { -1522.50300, 2.96198, -70.83575} , 0.00000, True, { 0.00000, 108.50550, 0.00000} } ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"MusicAction\" : \"In_battle_23.wav\", 0.00000, False, 0.70000, False, 0.00000} ",
+      "Next": 71,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"MusicAction\" : \"In_mood_04.wav\", 2.00000, False, 1.00000, False, 0.00000} ",
       "Next": -1,
       "Prallel": -1
     }

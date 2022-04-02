@@ -1,1 +1,72 @@
-bs1103101_02	春校杂鱼弟子战	{ "BattleRootNode" : [ { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnit" : "party00", 0, 200205105} , { "BattleResultAddUnit" : "party01", 0, 201205106} , { "BattleResultAddUnit" : "party02", 0, 101206105}  ]} , { "BattleEventNode" : 100, 0, [ { "BattleResultWinFaction" : "", 1} , { "BattleResultLoseFaction" : "", 0}  ]} , { "BattleEventNode" : 100, 0, [ { "BattleResultAddUnits" : "in05501,in05502,in05503", 1, "200200200,101200201,201101200"}  ]}  ]} 		Defeat all enemies。	All friendly characters defeated。
+{
+  "Id": "bs1103101_02",
+  "Name": "春校杂鱼弟子战",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Child": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"party00\", 0, 200205105, 1.00000, 0.00000} ",
+      "Next": 2,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"party01\", 0, 201205106, 1.00000, 0.00000} ",
+      "Next": 3,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnit\" : \"party02\", 0, 101206105, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 5,
+      "Child": [
+        5,
+        6
+      ]
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleResultWinFaction\" : \"\", 1} ",
+      "Next": 6,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleResultLoseFaction\" : \"\", 0} ",
+      "Next": -1,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 8,
+      "Child": [
+        8
+      ]
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultAddUnits\" : \"in05501,in05502,in05503\", 1, \"200200200,101200201,201101200\"} ",
+      "Next": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "",
+  "WinTip": "All enemies are defeated",
+  "LoseTip": "All friendly units are defeated"
+}

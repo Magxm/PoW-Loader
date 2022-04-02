@@ -1,0 +1,1695 @@
+{
+  "Id": "bs5305101_02",
+  "Name": "",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 4,
+      "Prallel": -1,
+      "Child": [
+        4,
+        8,
+        5,
+        67,
+        6,
+        7,
+        46
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 2,
+      "Prallel": -1,
+      "Child": [
+        2
+      ]
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 3,
+      "Prallel": -1,
+      "Child": [
+        3,
+        9,
+        10,
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 9,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultAddUnits\" : \"in0104,in52002\", 0, \"203102101,203102101\"} ",
+      "Next": 8,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleResultAddUnits\" : \"in05481,in05482,in05483,in05904\", 2, \"203104201,200105205,201105204,202106204\"} ",
+      "Next": 67,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5305101_2_06\", 0, 1, \"第二战＿第一阶段\"} ",
+      "Next": 7,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleResultAddSecondaryGoal\" : \"ctf5305101_01\", \"纪家None人退场。\"} ",
+      "Next": 46,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultAddUnits\" : \"in05477,in05478,in05479,in05480\", 0, \"204200104,103101204,101102203,202103201\"} ",
+      "Next": 5,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 10,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultTalk\" : \"t5305101_600\"} ",
+      "Next": 11,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in0104\", \"bt5305101_02_in0104hplock\", False} ",
+      "Next": 12,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in52002\", \"bt5305101_02_in52002hplock\", False} ",
+      "Next": 13,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in05483\", \"bt5305101_02_in05483hplock\", False} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 15,
+      "Prallel": -1,
+      "Child": [
+        15
+      ]
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 16,
+      "Prallel": -1,
+      "Child": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        22,
+        21,
+        23,
+        24,
+        25
+      ]
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5305101_2_06\", \"第二战＿第一阶段\"} ",
+      "Next": 17,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 99, \"in05483\"} ",
+      "Next": 18,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 19,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleResultTalk\" : \"t5305101_614\"} ",
+      "Next": 20,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in05904\", \"103202201\"} ",
+      "Next": 22,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05904\", \"bt5305101_02_in05904powerup50%\", True} ",
+      "Next": 23,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 21,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 24,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleResultTalk\" : \"t5305101_624\"} ",
+      "Next": 25,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05483\", \"bt5305101_02_in05483hplock\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 27,
+      "Prallel": -1,
+      "Child": [
+        27
+      ]
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 28,
+      "Prallel": -1,
+      "Child": [
+        28,
+        38,
+        29,
+        30,
+        31,
+        39,
+        40,
+        41
+      ]
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5305101_2_06\", \"第二战＿第一阶段\"} ",
+      "Next": 38,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05482\"} ",
+      "Next": 30,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 31,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleResultTalk\" : \"t5305101_636\"} ",
+      "Next": 39,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 33,
+      "Prallel": -1,
+      "Child": [
+        33
+      ]
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 34,
+      "Prallel": -1,
+      "Child": [
+        34,
+        42,
+        35,
+        36,
+        37,
+        43,
+        44,
+        45
+      ]
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5305101_2_06\", \"第二战＿第一阶段\"} ",
+      "Next": 42,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05481\"} ",
+      "Next": 36,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 37,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleResultTalk\" : \"t5305101_638\"} ",
+      "Next": 43,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe5305101_2_08\", \"雏鹤_存活\"} ",
+      "Next": 29,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5305101_2_08\", 0, 1, \"雏鹤_死亡\"} ",
+      "Next": 40,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5305101_2_11\", 1, 1, \"纪家死亡人数\"} ",
+      "Next": 41,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"ctf5305101_01\", 2} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe5305101_2_07\", \"陵兰_存活\"} ",
+      "Next": 35,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5305101_2_08\", 0, 1, \"陵兰_死亡\"} ",
+      "Next": 44,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5305101_2_11\", 1, 1, \"纪家死亡人数\"} ",
+      "Next": 45,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"ctf5305101_01\", 2} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"ctf5305101_01\", 1} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 48,
+      "Prallel": -1,
+      "Child": [
+        48
+      ]
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 49,
+      "Prallel": -1,
+      "Child": [
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56
+      ]
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5305101_2_06\", \"第二战＿第一阶段\"} ",
+      "Next": 50,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe5305101_2_09\", \"老夫人_存活\"} ",
+      "Next": 51,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 51,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05483\"} ",
+      "Next": 52,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 52,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 53,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 53,
+      "Node": "{ \"BattleResultTalk\" : \"t5305101_640\"} ",
+      "Next": 54,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 54,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5305101_2_09\", 0, 1, \"老夫人_死亡\"} ",
+      "Next": 55,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 55,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5305101_2_11\", 1, 1, \"纪家死亡人数\"} ",
+      "Next": 56,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 56,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"ctf5305101_01\", 2} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 57,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5305101_2_10\", 0, 1, \"老夫人_死亡\"} ",
+      "Next": 58,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 58,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5305101_2_11\", 1, 1, \"纪家死亡人数\"} ",
+      "Next": 59,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 59,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"ctf5305101_01\", 2} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 60,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe5305101_2_10\", \"纪维兴_存活\"} ",
+      "Next": 61,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 61,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05904\"} ",
+      "Next": 62,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 62,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 63,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 63,
+      "Node": "{ \"BattleResultTalk\" : \"t5305101_646\"} ",
+      "Next": 57,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 64,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 65,
+      "Prallel": -1,
+      "Child": [
+        65
+      ]
+    },
+    {
+      "Index": 65,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 66,
+      "Prallel": -1,
+      "Child": [
+        66,
+        60,
+        61,
+        62,
+        63,
+        57,
+        58,
+        59
+      ]
+    },
+    {
+      "Index": 66,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5305101_2_06\", \"第二战＿第一阶段\"} ",
+      "Next": 60,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 67,
+      "Node": "{ \"BattleResultAddUnits\" : \"in05471,in05472,in05473,in05474\", 1, \"103202201,102204102,202203105,204202106\"} ",
+      "Next": 6,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 68,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 69,
+      "Prallel": -1,
+      "Child": [
+        69
+      ]
+    },
+    {
+      "Index": 69,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 70,
+      "Prallel": -1,
+      "Child": [
+        70,
+        71,
+        72,
+        73
+      ]
+    },
+    {
+      "Index": 70,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5305101_2_06\", \"第二战＿第一阶段\"} ",
+      "Next": 71,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 71,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05471\"} ",
+      "Next": 72,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 72,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 73,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 73,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5305101_2_12\", 1, 1, \"萧芊菱传书：第二战＿敌方屍人死亡数量\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 74,
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
+      "Next": 75,
+      "Prallel": -1,
+      "Child": [
+        75
+      ]
+    },
+    {
+      "Index": 75,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 76,
+      "Prallel": -1,
+      "Child": [
+        76,
+        77,
+        78,
+        79
+      ]
+    },
+    {
+      "Index": 76,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5305101_2_06\", \"第二战＿第一阶段\"} ",
+      "Next": 77,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 77,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05472\"} ",
+      "Next": 78,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 78,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 79,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 79,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5305101_2_12\", 1, 1, \"萧芊菱传书：第二战＿敌方屍人死亡数量\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 80,
+      "Node": "{ \"BattleEventNode\" : 400, 2, [ ]} ",
+      "Next": 81,
+      "Prallel": -1,
+      "Child": [
+        81
+      ]
+    },
+    {
+      "Index": 81,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 82,
+      "Prallel": -1,
+      "Child": [
+        82,
+        83,
+        88,
+        89
+      ]
+    },
+    {
+      "Index": 82,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5305101_2_06\", \"第二战＿第一阶段\"} ",
+      "Next": 83,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 83,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05473\"} ",
+      "Next": 88,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 84,
+      "Node": "{ \"BattleEventNode\" : 400, 3, [ ]} ",
+      "Next": 85,
+      "Prallel": -1,
+      "Child": [
+        85
+      ]
+    },
+    {
+      "Index": 85,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 86,
+      "Prallel": -1,
+      "Child": [
+        86,
+        87,
+        90,
+        91
+      ]
+    },
+    {
+      "Index": 86,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5305101_2_06\", \"第二战＿第一阶段\"} ",
+      "Next": 87,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 87,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05474\"} ",
+      "Next": 90,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 88,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 89,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 89,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5305101_2_12\", 1, 1, \"萧芊菱传书：第二战＿敌方屍人死亡数量\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 90,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 91,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 91,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5305101_2_12\", 1, 1, \"萧芊菱传书：第二战＿敌方屍人死亡数量\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 92,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 93,
+      "Prallel": -1,
+      "Child": [
+        93
+      ]
+    },
+    {
+      "Index": 93,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 94,
+      "Prallel": -1,
+      "Child": [
+        94,
+        95,
+        96,
+        107,
+        108
+      ]
+    },
+    {
+      "Index": 94,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5305101_2_06\", \"第二战＿第一阶段\"} ",
+      "Next": 95,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 95,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 50, \"in52002\"} ",
+      "Next": 96,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 96,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 107,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 97,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 98,
+      "Prallel": -1,
+      "Child": [
+        98
+      ]
+    },
+    {
+      "Index": 98,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 99,
+      "Prallel": -1,
+      "Child": [
+        99,
+        100,
+        101,
+        109,
+        122
+      ]
+    },
+    {
+      "Index": 99,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5305101_2_06\", \"第二战＿第一阶段\"} ",
+      "Next": 100,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 100,
+      "Node": "{ \"BattleFactorTargetHp\" : 1, 20, \"in0104\"} ",
+      "Next": 101,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 101,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 109,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 102,
+      "Node": "{ \"BattleEventNode\" : 500, 0, [ ]} ",
+      "Next": 103,
+      "Prallel": -1,
+      "Child": [
+        103
+      ]
+    },
+    {
+      "Index": 103,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 104,
+      "Prallel": -1,
+      "Child": [
+        104,
+        105,
+        106,
+        110,
+        123
+      ]
+    },
+    {
+      "Index": 104,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5305101_2_06\", \"第二战＿第一阶段\"} ",
+      "Next": 105,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 105,
+      "Node": "{ \"BattleFactorTurn\" : 1, 3} ",
+      "Next": 106,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 106,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 110,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 107,
+      "Node": "{ \"BattleResultTalk\" : \"t5305101_665\"} ",
+      "Next": 108,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 108,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5305101_2_06\", 0, 2, \"第二战＿第一阶段\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 109,
+      "Node": "{ \"BattleResultTalk\" : \"t5305101_661\"} ",
+      "Next": 122,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 110,
+      "Node": "{ \"BattleResultTalk\" : \"t5305101_659\"} ",
+      "Next": 123,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 111,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 112,
+      "Prallel": -1,
+      "Child": [
+        112
+      ]
+    },
+    {
+      "Index": 112,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 113,
+      "Prallel": -1,
+      "Child": [
+        113,
+        114,
+        115,
+        116,
+        124
+      ]
+    },
+    {
+      "Index": 113,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5305101_2_06\", \"第二战＿第一阶段\"} ",
+      "Next": 114,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 114,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 0, 1, \"fe5305101_2_12\", \"萧芊菱传书：第二战＿敌方屍人死亡数量\"} ",
+      "Next": 115,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 115,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 116,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 116,
+      "Node": "{ \"BattleResultTalk\" : \"t5305101_654\"} ",
+      "Next": 124,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 117,
+      "Node": "{ \"BattleEventNode\" : 300, 0, [ ]} ",
+      "Next": 118,
+      "Prallel": -1,
+      "Child": [
+        118
+      ]
+    },
+    {
+      "Index": 118,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 119,
+      "Prallel": -1,
+      "Child": [
+        119,
+        120,
+        121,
+        125,
+        203,
+        204,
+        126,
+        127,
+        201,
+        202,
+        128,
+        129,
+        199,
+        200,
+        130,
+        131,
+        132,
+        133,
+        134,
+        197,
+        198,
+        135,
+        136,
+        137,
+        139,
+        138,
+        140,
+        141,
+        142,
+        143,
+        144,
+        145,
+        146,
+        205,
+        147,
+        148,
+        149,
+        150
+      ]
+    },
+    {
+      "Index": 119,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 2, \"fe5305101_2_06\", \"第二战＿第一阶段\"} ",
+      "Next": 120,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 120,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 121,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 121,
+      "Node": "{ \"BattleResultTalk\" : \"t5305101_669\"} ",
+      "Next": 125,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 122,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5305101_2_06\", 0, 2, \"第二战＿第一阶段\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 123,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5305101_2_06\", 0, 2, \"第二战＿第一阶段\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 124,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5305101_2_06\", 0, 2, \"第二战＿第一阶段\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 125,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05469\", 1, 200203103, 1.00000, 0.00000} ",
+      "Next": 203,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 126,
+      "Node": "{ \"BattleResultTalk\" : \"t5305101_673\"} ",
+      "Next": 127,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 127,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05486\", 1, 202203105, 1.00000, 0.00000} ",
+      "Next": 201,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 128,
+      "Node": "{ \"BattleResultTalk\" : \"t5305101_674\"} ",
+      "Next": 129,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 129,
+      "Node": "{ \"BattleResultAddUnits\" : \"in05475,in05476\", 1, \"103205102,101205104\"} ",
+      "Next": 199,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 130,
+      "Node": "{ \"BattleResultTalk\" : \"t5305101_682\"} ",
+      "Next": 131,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 131,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 132,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 132,
+      "Node": "{ \"BattleResultTalk\" : \"t5305101_676\"} ",
+      "Next": 133,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 133,
+      "Node": "{ \"BattleResultChangeMusic\" : \"\", 0.00000, False} ",
+      "Next": 134,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 134,
+      "Node": "{ \"BattleResultAddUnits\" : \"party00,party01,party02,party03\", 0, \"102207105,104208104,102209107,200207107\r\"} ",
+      "Next": 197,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 135,
+      "Node": "{ \"BattleResultTalk\" : \"t5305101_681\"} ",
+      "Next": 136,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 136,
+      "Node": "{ \"BattleResultTalk\" : \"t5305101_700\"} ",
+      "Next": 137,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 137,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 139,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 138,
+      "Node": "{ \"BattleResultRemoveUnits\" : \"in05477,in05478,in05479,in05480,in05481,in05482,in52002,in05904,in05483\", False} ",
+      "Next": 140,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 139,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05477,in05478,in05479,in05480,in05481,in05482,in52002,in05904,in05483\", \"\", True} ",
+      "Next": 138,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 140,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 141,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 141,
+      "Node": "{ \"BattleResultTalk\" : \"t5305101_730\"} ",
+      "Next": 142,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 142,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 143,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 143,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"party00\", \"\", True} ",
+      "Next": 144,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 144,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"party00\", False} ",
+      "Next": 145,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 145,
+      "Node": "{ \"BattleResultWaitAction\" : 0.20000} ",
+      "Next": 146,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 146,
+      "Node": "{ \"BattleResultWaitAction\" : 0.20000} ",
+      "Next": 205,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 147,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"party00\", \"\", True} ",
+      "Next": 148,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 148,
+      "Node": "{ \"BattleResultAddUnit\" : \"party00\", 0, 202103201, 1.00000, 0.00000} ",
+      "Next": 149,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 149,
+      "Node": "{ \"BattleResultTalk\" : \"t5305101_732\"} ",
+      "Next": 150,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 150,
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1}{name_2}defeated。\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 151,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 152,
+      "Prallel": -1,
+      "Child": [
+        152
+      ]
+    },
+    {
+      "Index": 152,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 153,
+      "Prallel": -1,
+      "Child": [
+        153,
+        154,
+        155
+      ]
+    },
+    {
+      "Index": 153,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 2, \"fe5305101_2_06\", \"第二战＿第一阶段\"} ",
+      "Next": 154,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 154,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe5305101_2_11\", \"萧芊菱传书：纪家　存活人\"} ",
+      "Next": 155,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 155,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"ctf5305101_01\", 1} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 156,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 157,
+      "Prallel": -1,
+      "Child": [
+        157
+      ]
+    },
+    {
+      "Index": 157,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 158,
+      "Prallel": -1,
+      "Child": [
+        158,
+        159,
+        160,
+        161
+      ]
+    },
+    {
+      "Index": 158,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 2, \"fe5305101_2_06\", \"第二战＿第一阶段\"} ",
+      "Next": 159,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 159,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05486\"} ",
+      "Next": 160,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 160,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 161,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 161,
+      "Node": "{ \"BattleResultTalk\" : \"t5305101_739\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 162,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 163,
+      "Prallel": -1,
+      "Child": [
+        163
+      ]
+    },
+    {
+      "Index": 163,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 164,
+      "Prallel": -1,
+      "Child": [
+        164,
+        165,
+        166,
+        167
+      ]
+    },
+    {
+      "Index": 164,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 2, \"fe5305101_2_06\", \"第二战＿第一阶段\"} ",
+      "Next": 165,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 165,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05469\"} ",
+      "Next": 166,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 166,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 167,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 167,
+      "Node": "{ \"BattleResultTalk\" : \"t5305101_744\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 168,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 169,
+      "Prallel": -1,
+      "Child": [
+        169
+      ]
+    },
+    {
+      "Index": 169,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 170,
+      "Prallel": -1,
+      "Child": [
+        170,
+        171,
+        172,
+        173
+      ]
+    },
+    {
+      "Index": 170,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 2, \"fe5305101_2_06\", \"第二战＿第一阶段\"} ",
+      "Next": 171,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 171,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0104\"} ",
+      "Next": 172,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 172,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 173,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 173,
+      "Node": "{ \"BattleResultTalk\" : \"t5305101_748\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 174,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 175,
+      "Prallel": -1,
+      "Child": [
+        175
+      ]
+    },
+    {
+      "Index": 175,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 176,
+      "Prallel": -1,
+      "Child": [
+        176,
+        177,
+        178,
+        179,
+        180,
+        206,
+        181
+      ]
+    },
+    {
+      "Index": 176,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 2, \"fe5305101_2_06\", \"第二战＿第一阶段\"} ",
+      "Next": 177,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 177,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"party00\"} ",
+      "Next": 178,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 178,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 179,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 179,
+      "Node": "{ \"BattleResultTalk\" : \"t5305101_750\"} ",
+      "Next": 180,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 180,
+      "Node": "{ \"BattleResultFadeOutMusic\" : 1.50000} ",
+      "Next": 206,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 181,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 182,
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
+      "Next": 183,
+      "Prallel": -1,
+      "Child": [
+        183
+      ]
+    },
+    {
+      "Index": 183,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 184,
+      "Prallel": -1,
+      "Child": [
+        184,
+        187,
+        185,
+        186,
+        188,
+        189,
+        207,
+        190
+      ]
+    },
+    {
+      "Index": 184,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 2, \"fe5305101_2_06\", \"第二战＿第一阶段\"} ",
+      "Next": 187,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 185,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 186,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 186,
+      "Node": "{ \"BattleResultTalk\" : \"t5305101_761\"} ",
+      "Next": 188,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 187,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 185,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 188,
+      "Node": "{ \"BattleResultTalk\" : \"t5305101_764\"} ",
+      "Next": 189,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 189,
+      "Node": "{ \"BattleResultTalk\" : \"t5305101_776\"} ",
+      "Next": 207,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 190,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 191,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 192,
+      "Prallel": -1,
+      "Child": [
+        192
+      ]
+    },
+    {
+      "Index": 192,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 193,
+      "Prallel": -1,
+      "Child": [
+        193,
+        196,
+        194,
+        195
+      ]
+    },
+    {
+      "Index": 193,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 2, \"fe5305101_2_06\", \"第二战＿第一阶段\"} ",
+      "Next": 196,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 194,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 195,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 195,
+      "Node": "{ \"BattleResultTalk\" : \"t5305101_788\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 196,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 80, \"in05486\"} ",
+      "Next": 194,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 197,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"party00,party01,party02,party03\", \"\", True} ",
+      "Next": 198,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 198,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 135,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 199,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05475,in05476\", \"\", True} ",
+      "Next": 200,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 200,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 130,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 201,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05486\", \"\", True} ",
+      "Next": 202,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 202,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 128,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 203,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05469\", \"\", True} ",
+      "Next": 204,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 204,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 126,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 205,
+      "Node": "{ \"BattleResultCameraMoveCell\" : \"202103201\", 0.00000, 5.00000} ",
+      "Next": 147,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 206,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5305101_2_05\", 0, 0, \"第二战失败\"} ",
+      "Next": 181,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 207,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5305101_2_05\", 0, 1, \"第二战成功\"} ",
+      "Next": 190,
+      "Prallel": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "萧千零传书＿夜火混战",
+  "WinTip": "Defeat all enemies",
+  "LoseTip": "Xiao Qianling、 Xiang Zither sub defeated."
+}
