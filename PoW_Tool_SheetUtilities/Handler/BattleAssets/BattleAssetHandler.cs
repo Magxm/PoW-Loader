@@ -13,13 +13,13 @@ namespace PoW_Tool_SheetUtilities.Handler.BattleAssets
 {
     public class BattleAssetHandler : AssetHandler
     {
-        private static string BattleResultChangeWinTipRegexPattern = "\"{ \\\"BattleResultChangeWinTip\\\" : \\\".*\\\"} \"";
+        private static string BattleResultChangeWinTipRegexPattern = @"{ \\""BattleResultChangeWinTip\\"" : \\""(.*)\\""}";
         private static Regex _BattleResultChangeWinTipRegex = new Regex(BattleResultChangeWinTipRegexPattern);
 
-        private static string BattleResultChangeLoseTipRegexPattern = "\"{ \\\"BattleResultChangeLoseTip\\\" : \\\".*\\\"} \"";
+        private static string BattleResultChangeLoseTipRegexPattern = @"{ \\""BattleResultChangeLoseTip\\"" : \\""(.*)\\""}";
         private static Regex BattleResultChangeLoseTipRegex = new Regex(BattleResultChangeLoseTipRegexPattern);
 
-        private static string BattleResultAddSecondaryGoalRegexPattern = "\"{ \\\"BattleResultAddSecondaryGoal\\\" : \\\".*\\\"} \"";
+        private static string BattleResultAddSecondaryGoalRegexPattern = @"{ \\""BattleResultAddSecondaryGoal\\"" : \\"".*\\""}";
         private static Regex BattleResultAddSecondaryGoalRegex = new Regex(BattleResultAddSecondaryGoalRegexPattern);
 
         public BattleAssetHandler()
@@ -89,7 +89,7 @@ namespace PoW_Tool_SheetUtilities.Handler.BattleAssets
             while (m.Success)
             {
                 //Console.WriteLine("----------");
-                patchables.Add(new ToPatchInstance(m.Value, "WinTip"));
+                patchables.Add(new ToPatchInstance(m.Groups[0].Value, "WinTipChange"));
 
                 m = m.NextMatch();
             }
@@ -98,7 +98,7 @@ namespace PoW_Tool_SheetUtilities.Handler.BattleAssets
             while (m.Success)
             {
                 //Console.WriteLine("----------");
-                patchables.Add(new ToPatchInstance(m.Value, "LoseTip"));
+                patchables.Add(new ToPatchInstance(m.Groups[0].Value, "LoseTipChange"));
 
                 m = m.NextMatch();
             }
@@ -107,7 +107,7 @@ namespace PoW_Tool_SheetUtilities.Handler.BattleAssets
             while (m.Success)
             {
                 //Console.WriteLine("----------");
-                patchables.Add(new ToPatchInstance(m.Value, "AddSecondaryGoal"));
+                patchables.Add(new ToPatchInstance(m.Groups[0].Value, "AddSecondaryGoal"));
 
                 m = m.NextMatch();
             }
@@ -258,7 +258,7 @@ namespace PoW_Tool_SheetUtilities.Handler.BattleAssets
             string scheduleFolderPath = outRootPath + Path.DirectorySeparatorChar + scheduleRelativeFolderPath;
             string mergeFileInputPath = Environment.CurrentDirectory + Path.DirectorySeparatorChar + "Input" + Path.DirectorySeparatorChar + FilePathWithoutExtension + ".bytes";
             string mergeFileOutPath = outRootPath + Path.DirectorySeparatorChar + FilePathWithoutExtension + OutputExtension;
-            string outDirectory = Path.GetDirectoryName(scheduleFolderPath);
+            string outDirectory = scheduleFolderPath + Path.DirectorySeparatorChar;
             if (!Directory.Exists(scheduleFolderPath))
             {
                 Directory.CreateDirectory(scheduleFolderPath);

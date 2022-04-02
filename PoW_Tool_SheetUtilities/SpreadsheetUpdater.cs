@@ -14,7 +14,6 @@ namespace PoW_Tool_SheetUtilities
     {
         private static readonly List<IFileHandler> _Handlers = new List<IFileHandler>()
         {
-        new TalkAssetHandler(),
         new BufferAssetHandler(),
         new BattleAssetHandler(),
         new CinameticAssetHandler(),
@@ -51,6 +50,7 @@ namespace PoW_Tool_SheetUtilities
         new RoundAssetHandler(),
         new RegistrationBonusAssetHandler(),
         new NurturanceIdleAssetHandler(),
+        new TalkAssetHandler(),
         };
 
         public static void UpdateSpreadsheetsFromGameFiles()
