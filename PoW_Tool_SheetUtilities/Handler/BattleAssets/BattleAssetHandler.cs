@@ -89,7 +89,7 @@ namespace PoW_Tool_SheetUtilities.Handler.BattleAssets
             while (m.Success)
             {
                 //Console.WriteLine("----------");
-                patchables.Add(new ToPatchInstance(m.Groups[0].Value, "WinTipChange"));
+                patchables.Add(new ToPatchInstance(m.Groups[1].Value, "WinTipChange"));
 
                 m = m.NextMatch();
             }
@@ -98,7 +98,7 @@ namespace PoW_Tool_SheetUtilities.Handler.BattleAssets
             while (m.Success)
             {
                 //Console.WriteLine("----------");
-                patchables.Add(new ToPatchInstance(m.Groups[0].Value, "LoseTipChange"));
+                patchables.Add(new ToPatchInstance(m.Groups[1].Value, "LoseTipChange"));
 
                 m = m.NextMatch();
             }
@@ -107,7 +107,7 @@ namespace PoW_Tool_SheetUtilities.Handler.BattleAssets
             while (m.Success)
             {
                 //Console.WriteLine("----------");
-                patchables.Add(new ToPatchInstance(m.Groups[0].Value, "AddSecondaryGoal"));
+                patchables.Add(new ToPatchInstance(m.Groups[1].Value, "AddSecondaryGoal"));
 
                 m = m.NextMatch();
             }
