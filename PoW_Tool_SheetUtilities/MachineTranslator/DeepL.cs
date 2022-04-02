@@ -16,7 +16,7 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
         private Translator _Translator = null;
         private static string _kAuthFilePath = "DeepL_ApiKey.txt";
         private DateTime _LastTranslatedTime = new DateTime(0);
-        private static int _kMSBetweenTranslations = 250;
+        private static int _kMSBetweenTranslations = 100;
 
         private bool _Useable = false;
 
@@ -62,6 +62,10 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
                     req.TranslatedText = req.Standardized;
                     continue;
                 }
+
+                string inpText = req.Standardized;
+                inpText = inpText.Replace("⋯", "...");
+                inpText = inpText.Replace("。", "");
 
                 var currentTime = DateTime.Now;
                 var msPassed = (currentTime - _LastTranslatedTime).Milliseconds;

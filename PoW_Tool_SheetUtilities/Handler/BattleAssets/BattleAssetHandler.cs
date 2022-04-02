@@ -256,7 +256,7 @@ namespace PoW_Tool_SheetUtilities.Handler.BattleAssets
             //Clearing Asset File
             string scheduleRelativeFolderPath = Path.DirectorySeparatorChar + "chs" + Path.DirectorySeparatorChar + "battle" + Path.DirectorySeparatorChar + "schedule";
             string scheduleFolderPath = outRootPath + Path.DirectorySeparatorChar + scheduleRelativeFolderPath;
-            string mergeFileInputPath = Environment.CurrentDirectory + Path.DirectorySeparatorChar + "Input" + Path.DirectorySeparatorChar + FilePathWithoutExtension + OutputExtension;
+            string mergeFileInputPath = Environment.CurrentDirectory + Path.DirectorySeparatorChar + "Input" + Path.DirectorySeparatorChar + FilePathWithoutExtension + ".bytes";
             string mergeFileOutPath = outRootPath + Path.DirectorySeparatorChar + FilePathWithoutExtension + OutputExtension;
             string outDirectory = Path.GetDirectoryName(scheduleFolderPath);
             if (!Directory.Exists(scheduleFolderPath))
@@ -268,9 +268,9 @@ namespace PoW_Tool_SheetUtilities.Handler.BattleAssets
             File.WriteAllText(mergeFileOutPath, "");
 
             //We patch every input file
-            string inputFolderPath = Environment.CurrentDirectory + Path.DirectorySeparatorChar + "Input" + Path.DirectorySeparatorChar + "chs" + Path.DirectorySeparatorChar + "battle" + Path.DirectorySeparatorChar + "schedule";
+            string inputFolderPath = Environment.CurrentDirectory + Path.DirectorySeparatorChar + "Input" + Path.DirectorySeparatorChar + "chs" + Path.DirectorySeparatorChar + "battle" + Path.DirectorySeparatorChar + "schedule" + Path.DirectorySeparatorChar;
             Console.WriteLine("Patching battle schedule files from " + inputFolderPath + " into " + scheduleFolderPath);
-            string[] files = Directory.GetFiles(scheduleFolderPath, "*.bytes");
+            string[] files = Directory.GetFiles(inputFolderPath, "*.bytes");
             for (int i = 0; i < files.Length; i++)
             {
                 string filePath = files[i];
@@ -293,7 +293,7 @@ namespace PoW_Tool_SheetUtilities.Handler.BattleAssets
             {
                 content = content.Replace(patch.Variables[0].OriginalValue, patch.Variables[0].Translation);
             }
-            File.WriteAllText(content, "");
+            File.WriteAllText(mergeFileOutPath, content);
 
             Console.WriteLine("Done!");
             Console.WriteLine("");

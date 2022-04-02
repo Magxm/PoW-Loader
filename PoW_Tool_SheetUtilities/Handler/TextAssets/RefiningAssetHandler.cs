@@ -10,7 +10,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
         {
             SheetId = "1c2rYtPpcxXnoUliwi6Rz4Sn8WTCdN8RciqST2A9qoKw";
             AssetName = "Refining";
-            SheetRange = "A2:G";
+            SheetRange = "A2:H";
             FilePathWithoutExtension = "chs" + Path.DirectorySeparatorChar + "textfiles" + Path.DirectorySeparatorChar + "Refining";
             OutputExtension = ".txt";
 

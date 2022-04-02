@@ -140,12 +140,15 @@ namespace PoW_Tool_SheetUtilities.Handler
             {
                 //Simple variable
                 OriginalValue = GetOneColumnAndGoForward(row, ref columnIndex);
+                Translation = OriginalValue;
+                StandardizedTermLocator = OriginalValue;
             }
             else if (Definition.VariableType == AssetVariableType.MachineTL)
             {
                 //Translation + Original
                 Translation = GetOneColumnAndGoForward(row, ref columnIndex);
                 OriginalValue = GetOneColumnAndGoForward(row, ref columnIndex);
+                StandardizedTermLocator = OriginalValue;
             }
             else
             {
@@ -809,7 +812,7 @@ namespace PoW_Tool_SheetUtilities.Handler
                     updateRequests.Add(req);
                 }
 
-                if (updateRequests.Count >= 100)
+                if (updateRequests.Count >= 200)
                 {
                     HandleUpdateRequests(ref updateRequests);
                 }
@@ -824,7 +827,7 @@ namespace PoW_Tool_SheetUtilities.Handler
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Unreferenced Entry " + aeE.Key + " in Row " + (ae.Row + 1));
-                    Console.ForegroundColor = ConsoleColor.White;
+                    Console.ForegroundColor = ConsoleColor.White;   
                 }
             }
 
