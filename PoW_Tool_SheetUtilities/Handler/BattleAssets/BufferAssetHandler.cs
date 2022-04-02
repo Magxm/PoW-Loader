@@ -134,7 +134,7 @@ namespace PoW_Tool_SheetUtilities.Handler.BufferAssets
             string bufferFolderPath = outRootPath + Path.DirectorySeparatorChar + scheduleRelativeFolderPath;
 
             //Getting all Sheet entries and dumping them into Talk.txt in right format
-            Console.WriteLine("Extracting to " + FilePathWithoutExtension + OutputExtension + " and the schedules folder");
+            Console.WriteLine("Extracting to " + FilePathWithoutExtension + OutputExtension + " and the buffer folder");
             StreamWriter mergeFileWriter = File.AppendText(mergeFilePath);
 
             if (values != null && values.Count > 0)
@@ -200,25 +200,25 @@ namespace PoW_Tool_SheetUtilities.Handler.BufferAssets
             string[] files = Directory.GetFiles(bufferFolderPath, "*.bytes");
             for (int i = 0; i < files.Length; i++)
             {
-                Console.Title = "[" + AssetName + "] Processing " + i + "/" + files.Length;
-
                 //Reading file
                 string bufferFilePathTmp = files[i];
-                System.IO.StreamReader reader = new System.IO.StreamReader(bufferFilePathTmp);
-                string line = reader.ReadLine();
 
                 //Construction relative .json path
                 int lastSplitterIndex = bufferFilePathTmp.LastIndexOf(Path.DirectorySeparatorChar);
-                string scheduleFilePath = bufferFilePathTmp.Substring(lastSplitterIndex + 1, bufferFilePathTmp.Length - lastSplitterIndex - 1);
-                scheduleFilePath = scheduleFilePath.Replace(".bytes", ".json");
+                string bufferFilePath = bufferFilePathTmp.Substring(lastSplitterIndex + 1, bufferFilePathTmp.Length - lastSplitterIndex - 1);
+                bufferFilePath = bufferFilePath.Replace(".bytes", ".json");
+
+                Console.Title = "[" + AssetName + "] Processing " + i + "/" + files.Length + " => " + bufferFilePath;
 
                 //Parsing
-                string[] data = line.Split('\t');
+                string conent = File.ReadAllText(bufferFilePathTmp);
+
+                string[] data = conent.Split('\t');
                 BufferAsset entry;
-                if (entries.ContainsKey(scheduleFilePath))
+                if (entries.ContainsKey(bufferFilePath))
                 {
                     //Compare and update
-                    entry = entries[scheduleFilePath];
+                    entry = entries[bufferFilePath];
                 }
                 else
                 {
@@ -226,14 +226,14 @@ namespace PoW_Tool_SheetUtilities.Handler.BufferAssets
                     entry = new BufferAsset(VariableDefinitions);
                 }
 
-                entry.PopulateByGameAssetRow(scheduleFilePath, data);
+                entry.PopulateByGameAssetRow(bufferFilePath, data);
                 List<Request> updateReqs = entry.GetUpdateRequests();
                 foreach (Request req in updateReqs)
                 {
                     updateRequests.Add(req);
                 }
 
-                if (updateRequests.Count >= 250)
+                if (updateRequests.Count >= 100)
                 {
                     HandleUpdateRequests(ref updateRequests);
                 }
