@@ -44,7 +44,9 @@
         5,
         6,
         7,
-        8
+        8,
+        35,
+        36
       ]
     },
     {
@@ -71,7 +73,7 @@
     {
       "Index": 8,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in11001\", \"bt1010606_00_buff_PowerDown\", True} ",
-      "Next": -1,
+      "Next": 35,
       "Prallel": -1,
       "Child": []
     },
@@ -87,211 +89,225 @@
     {
       "Index": 10,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
-      "Next": 11,
+      "Next": 37,
       "Prallel": -1,
       "Child": [
+        37,
         11,
         12,
-        13,
-        14
+        13
       ]
     },
     {
       "Index": 11,
-      "Node": "{ \"BattleFactorTargetHp\" : 2, 100, \"in0106\"} ",
+      "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 12,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 12,
-      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Node": "{ \"BattleResultTalk\" : \"t1010606_130\"} ",
       "Next": 13,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 13,
-      "Node": "{ \"BattleResultTalk\" : \"t1010606_130\"} ",
-      "Next": 14,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 14,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1010606_00\", 0, 1, \"已经过南飞鍠接剑事件\"} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 15,
+      "Index": 14,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 15,
+      "Prallel": -1,
+      "Child": [
+        15
+      ]
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 16,
       "Prallel": -1,
       "Child": [
-        16
+        16,
+        17,
+        18,
+        19,
+        20
       ]
     },
     {
       "Index": 16,
-      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1010606_00\", \"已经过南飞鍠接剑事件\"} ",
       "Next": 17,
       "Prallel": -1,
-      "Child": [
-        17,
-        18,
-        19,
-        20,
-        21
-      ]
+      "Child": []
     },
     {
       "Index": 17,
-      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1010606_00\", \"已经过南飞鍠接剑事件\"} ",
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 50, \"in0106\"} ",
       "Next": 18,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 18,
-      "Node": "{ \"BattleFactorTargetHp\" : 2, 50, \"in0106\"} ",
+      "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 19,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 19,
-      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Node": "{ \"BattleResultTalk\" : \"t1010606_134\"} ",
       "Next": 20,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 20,
-      "Node": "{ \"BattleResultTalk\" : \"t1010606_134\"} ",
-      "Next": 21,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 21,
       "Node": "{ \"EndBattleAction\" : \"m605in010650_04\"} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 22,
+      "Index": 21,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 22,
+      "Prallel": -1,
+      "Child": [
+        22
+      ]
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 23,
       "Prallel": -1,
       "Child": [
-        23
+        23,
+        24,
+        25,
+        26,
+        27
       ]
     },
     {
       "Index": 23,
-      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1010606_00\", \"已经过南飞鍠接剑事件\"} ",
       "Next": 24,
       "Prallel": -1,
-      "Child": [
-        24,
-        25,
-        26,
-        27,
-        28
-      ]
+      "Child": []
     },
     {
       "Index": 24,
-      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1010606_00\", \"已经过南飞鍠接剑事件\"} ",
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 50, \"in11001\"} ",
       "Next": 25,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 25,
-      "Node": "{ \"BattleFactorTargetHp\" : 2, 50, \"in11001\"} ",
+      "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 26,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 26,
-      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Node": "{ \"BattleResultTalk\" : \"t1010606_134\"} ",
       "Next": 27,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 27,
-      "Node": "{ \"BattleResultTalk\" : \"t1010606_134\"} ",
-      "Next": 28,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 28,
       "Node": "{ \"BattleResultWin\" : \"\"} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 29,
+      "Index": 28,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 29,
+      "Prallel": -1,
+      "Child": [
+        29
+      ]
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 30,
       "Prallel": -1,
       "Child": [
-        30
+        30,
+        34,
+        31,
+        32,
+        33
       ]
     },
     {
       "Index": 30,
-      "Node": "{ \"StepByStepNode\" : [ ]} ",
-      "Next": 31,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1010606_00\", \"已经过南飞鍠接剑事件\"} ",
+      "Next": 34,
       "Prallel": -1,
-      "Child": [
-        31,
-        35,
-        32,
-        33,
-        34
-      ]
+      "Child": []
     },
     {
       "Index": 31,
-      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1010606_00\", \"已经过南飞鍠接剑事件\"} ",
-      "Next": 35,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 32,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 32,
-      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Node": "{ \"BattleResultTalk\" : \"t1010606_134\"} ",
       "Next": 33,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 33,
-      "Node": "{ \"BattleResultTalk\" : \"t1010606_134\"} ",
-      "Next": 34,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 34,
       "Node": "{ \"EndBattleAction\" : \"m605in010650_04\"} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 35,
+      "Index": 34,
       "Node": "{ \"BattleFactorTurn\" : 0, 5} ",
-      "Next": 32,
+      "Next": 31,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in0106\", \"bt1010606_00_buff_HpLock01\", True} ",
+      "Next": 36,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in11001\", \"bt1010606_00_buff_HpLock01\", True} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleAttackUnitCondition\" : \"in11001\", \"in0106\"} ",
+      "Next": 11,
       "Prallel": -1,
       "Child": []
     }

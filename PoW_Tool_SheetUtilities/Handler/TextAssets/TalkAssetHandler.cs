@@ -79,11 +79,11 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
             };
         }
 
-        //Custom Handling of this one because of it's size
+        //Custom Handling of this one because of it's size and google api liking to complain if one requests all at once
         public override void GetTranslationStats(ref List<TranslationStatEntry> stats)
         {
             Console.WriteLine("Calculating Translation Statistic for " + AssetName);
-            for (int k = 0; k < 4; k++)
+            for (int k = 0; k < 7; k++)
             {
                 SpreadsheetsResource.GetRequest request = GoogleSheetConnector.GetInstance().Service.Spreadsheets.Get(SheetId);
                 request.Ranges = "A" + (k * 10000 + 2) + ":O" + ((k + 1) * 10000 + 2);

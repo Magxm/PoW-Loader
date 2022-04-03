@@ -63,8 +63,8 @@
         30,
         59,
         60,
-        97,
-        123
+        94,
+        120
       ]
     },
     {
@@ -278,9 +278,9 @@
         37,
         39,
         36,
-        110,
-        118,
-        122,
+        107,
+        115,
+        119,
         61,
         62
       ]
@@ -309,7 +309,7 @@
     {
       "Index": 36,
       "Node": "{ \"BattleResultTalk\" : \"t5201136_058\"} ",
-      "Next": 110,
+      "Next": 107,
       "Prallel": -1,
       "Child": []
     },
@@ -356,8 +356,8 @@
         46,
         47,
         45,
-        111,
-        119,
+        108,
+        116,
         63,
         64
       ]
@@ -386,7 +386,7 @@
     {
       "Index": 45,
       "Node": "{ \"BattleResultTalk\" : \"t5201136_077\"} ",
-      "Next": 111,
+      "Next": 108,
       "Prallel": -1,
       "Child": []
     },
@@ -426,9 +426,9 @@
         54,
         55,
         53,
-        112,
-        120,
-        124,
+        109,
+        117,
+        121,
         65,
         66
       ]
@@ -457,7 +457,7 @@
     {
       "Index": 53,
       "Node": "{ \"BattleResultTalk\" : \"t5201136_084\"} ",
-      "Next": 112,
+      "Next": 109,
       "Prallel": -1,
       "Child": []
     },
@@ -505,7 +505,7 @@
     },
     {
       "Index": 59,
-      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5201136_00\", 0, 1, \"屍人狂暴或是死亡人数\"} ",
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5201136_00\", 1, 1, \"屍人狂暴或是死亡人数\"} ",
       "Next": 60,
       "Prallel": -1,
       "Child": []
@@ -513,7 +513,7 @@
     {
       "Index": 60,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201136_2_01\", 0, 1, \"屍人狂暴或是死亡人数\"} ",
-      "Next": 97,
+      "Next": 94,
       "Prallel": -1,
       "Child": []
     },
@@ -597,7 +597,7 @@
     {
       "Index": 72,
       "Node": "{ \"BattleResultTalk\" : \"t5201136_068\"} ",
-      "Next": 96,
+      "Next": 93,
       "Prallel": -1,
       "Child": []
     },
@@ -619,7 +619,7 @@
         70,
         71,
         72,
-        96
+        93
       ]
     },
     {
@@ -639,8 +639,7 @@
       "Child": [
         77,
         78,
-        82,
-        83
+        82
       ]
     },
     {
@@ -680,336 +679,313 @@
     },
     {
       "Index": 82,
-      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5201136_00\", 1, 1, \"屍人狂暴或是死亡人数\"} ",
-      "Next": 83,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 83,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201136_2_01\", 1, 1, \"屍人狂暴或是死亡人数\"} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 84,
+      "Index": 83,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 84,
+      "Prallel": -1,
+      "Child": [
+        84
+      ]
+    },
+    {
+      "Index": 84,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 85,
       "Prallel": -1,
       "Child": [
-        85
+        85,
+        86,
+        87
       ]
     },
     {
       "Index": 85,
-      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05275\"} ",
       "Next": 86,
       "Prallel": -1,
-      "Child": [
-        86,
-        87,
-        88,
-        89
-      ]
+      "Child": []
     },
     {
       "Index": 86,
-      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05275\"} ",
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5201136_02\", 0, 1, \"in05275死亡\"} ",
       "Next": 87,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 87,
-      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5201136_02\", 0, 1, \"in05275死亡\"} ",
-      "Next": 88,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201136_2_01\", 1, 1, \"屍人狂暴或是死亡人数\"} ",
+      "Next": -1,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 88,
-      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5201136_00\", 1, 1, \"屍人狂暴或是死亡人数\"} ",
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 89,
       "Prallel": -1,
-      "Child": []
+      "Child": [
+        89
+      ]
     },
     {
       "Index": 89,
-      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201136_2_01\", 1, 1, \"屍人狂暴或是死亡人数\"} ",
-      "Next": -1,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 90,
+      "Prallel": -1,
+      "Child": [
+        90,
+        91,
+        92
+      ]
+    },
+    {
+      "Index": 90,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05276\"} ",
+      "Next": 91,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 90,
-      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
-      "Next": 91,
-      "Prallel": -1,
-      "Child": [
-        91
-      ]
-    },
-    {
       "Index": 91,
-      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5201136_03\", 0, 1, \"in05276死亡\"} ",
       "Next": 92,
       "Prallel": -1,
-      "Child": [
-        92,
-        93,
-        94,
-        95
-      ]
+      "Child": []
     },
     {
       "Index": 92,
-      "Node": "{ \"BattleFactorTargetDestroy\" : \"in05276\"} ",
-      "Next": 93,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201136_2_01\", 1, 1, \"屍人狂暴或是死亡人数\"} ",
+      "Next": -1,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 93,
-      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5201136_03\", 0, 1, \"in05276死亡\"} ",
-      "Next": 94,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 94,
-      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5201136_00\", 1, 1, \"屍人狂暴或是死亡人数\"} ",
-      "Next": 95,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 95,
-      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201136_2_01\", 1, 1, \"屍人狂暴或是死亡人数\"} ",
-      "Next": -1,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 96,
       "Node": "{ \"BattleResultLose\" : \"\"} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 97,
+      "Index": 94,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201136_2_02\", 0, 1, \"侠隐阁是否全数存活（缺省：是）\"} ",
-      "Next": 123,
+      "Next": 120,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 98,
+      "Index": 95,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201136_2_02\", 0, 2, \"侠隐阁是否全数存活：否\"} ",
       "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 96,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 97,
+      "Prallel": -1,
+      "Child": [
+        97
+      ]
+    },
+    {
+      "Index": 97,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 98,
+      "Prallel": -1,
+      "Child": [
+        98,
+        95
+      ]
+    },
+    {
+      "Index": 98,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in03004\"} ",
+      "Next": 95,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 99,
-      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
-      "Next": 100,
-      "Prallel": -1,
-      "Child": [
-        100
-      ]
-    },
-    {
-      "Index": 100,
-      "Node": "{ \"StepByStepNode\" : [ ]} ",
-      "Next": 101,
-      "Prallel": -1,
-      "Child": [
-        101,
-        98
-      ]
-    },
-    {
-      "Index": 101,
-      "Node": "{ \"BattleFactorTargetDestroy\" : \"in03004\"} ",
-      "Next": 98,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201136_2_02\", 0, 2, \"侠隐阁是否全数存活：否\"} ",
+      "Next": -1,
       "Prallel": -1,
       "Child": []
     },
     {
+      "Index": 100,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 101,
+      "Prallel": -1,
+      "Child": [
+        101
+      ]
+    },
+    {
+      "Index": 101,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 102,
+      "Prallel": -1,
+      "Child": [
+        102,
+        99
+      ]
+    },
+    {
       "Index": 102,
-      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201136_2_02\", 0, 2, \"侠隐阁是否全数存活：否\"} ",
-      "Next": -1,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in03012\"} ",
+      "Next": 99,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 103,
-      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
-      "Next": 104,
-      "Prallel": -1,
-      "Child": [
-        104
-      ]
-    },
-    {
-      "Index": 104,
-      "Node": "{ \"StepByStepNode\" : [ ]} ",
-      "Next": 105,
-      "Prallel": -1,
-      "Child": [
-        105,
-        102
-      ]
-    },
-    {
-      "Index": 105,
-      "Node": "{ \"BattleFactorTargetDestroy\" : \"in03012\"} ",
-      "Next": 102,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 106,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201136_2_02\", 0, 2, \"侠隐阁是否全数存活：否\"} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 107,
+      "Index": 104,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
-      "Next": 108,
+      "Next": 105,
       "Prallel": -1,
       "Child": [
-        108
+        105
       ]
+    },
+    {
+      "Index": 105,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 106,
+      "Prallel": -1,
+      "Child": [
+        106,
+        103
+      ]
+    },
+    {
+      "Index": 106,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player\"} ",
+      "Next": 103,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 107,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05273\", \"bt5201136_01_buff_MutantUndead\"} ",
+      "Next": 115,
+      "Prallel": -1,
+      "Child": []
     },
     {
       "Index": 108,
-      "Node": "{ \"StepByStepNode\" : [ ]} ",
-      "Next": 109,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05274\", \"bt5201136_01_buff_MutantUndead\"} ",
+      "Next": 116,
       "Prallel": -1,
-      "Child": [
-        109,
-        106
-      ]
+      "Child": []
     },
     {
       "Index": 109,
-      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player\"} ",
-      "Next": 106,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05275\", \"bt5201136_01_buff_MutantUndead\"} ",
+      "Next": 117,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 110,
-      "Node": "{ \"BattleResultRmoveBuff\" : \"in05273\", \"bt5201136_01_buff_MutantUndead\"} ",
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in05276\", \"bt5201136_01_buff_MutantUndead\"} ",
       "Next": 118,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 111,
-      "Node": "{ \"BattleResultRmoveBuff\" : \"in05274\", \"bt5201136_01_buff_MutantUndead\"} ",
-      "Next": 119,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 112,
       "Prallel": -1,
-      "Child": []
+      "Child": [
+        112
+      ]
     },
     {
       "Index": 112,
-      "Node": "{ \"BattleResultRmoveBuff\" : \"in05275\", \"bt5201136_01_buff_MutantUndead\"} ",
-      "Next": 120,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 113,
       "Prallel": -1,
-      "Child": []
+      "Child": [
+        113,
+        114,
+        110,
+        118
+      ]
     },
     {
       "Index": 113,
-      "Node": "{ \"BattleResultRmoveBuff\" : \"in05276\", \"bt5201136_01_buff_MutantUndead\"} ",
-      "Next": 121,
+      "Node": "{ \"BattleFactorTurn\" : 1, 8} ",
+      "Next": 114,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 114,
-      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
-      "Next": 115,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 110,
       "Prallel": -1,
-      "Child": [
-        115
-      ]
+      "Child": []
     },
     {
       "Index": 115,
-      "Node": "{ \"StepByStepNode\" : [ ]} ",
-      "Next": 116,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05273\", \"bt5201136_03_debuff_DizzyUndead\", False} ",
+      "Next": 119,
       "Prallel": -1,
-      "Child": [
-        116,
-        117,
-        113,
-        121
-      ]
+      "Child": []
     },
     {
       "Index": 116,
-      "Node": "{ \"BattleFactorTurn\" : 1, 8} ",
-      "Next": 117,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 117,
-      "Node": "{ \"ExecuteOnceNode\" } ",
-      "Next": 113,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 118,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in05273\", \"bt5201136_03_debuff_DizzyUndead\", False} ",
-      "Next": 122,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 119,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in05274\", \"bt5201136_03_debuff_DizzyUndead\", False} ",
       "Next": 63,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 120,
+      "Index": 117,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in05275\", \"bt5201136_03_debuff_DizzyUndead\", False} ",
-      "Next": 124,
+      "Next": 121,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 121,
+      "Index": 118,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in05276\", \"bt5201136_03_debuff_DizzyUndead\", False} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 122,
+      "Index": 119,
       "Node": "{ \"BattleResultTalk\" : \"t5201136_085\"} ",
       "Next": 61,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 123,
+      "Index": 120,
       "Node": "{ \"BattleResultAddBuff\" : False, \"in0207\", \"bt5201136_00_buff_UndeadTeacher\", True} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 124,
+      "Index": 121,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in0207\", \"bt5201136_02_buff_SeriousTeacher\", True} ",
       "Next": 65,
       "Prallel": -1,

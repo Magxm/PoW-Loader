@@ -164,14 +164,15 @@
              <summary>Sorts patch methods by their priority rules</summary>
              <param name="original">The original method</param>
              <param name="patches">Patches to sort</param>
-             <param name="debug">Use debug mode. Present for source parity with Harmony 2, don't use.</param>
+             <param name="debug">Use debug mode</param>
              <returns>The sorted patch methods</returns>
             
         </member>
-        <member name="M:HarmonyLib.PatchFunctions.GetSortedPatchMethodsAsPatches(System.Reflection.MethodBase,HarmonyLib.Patch[])">
+        <member name="M:HarmonyLib.PatchFunctions.GetSortedPatchMethodsAsPatches(System.Reflection.MethodBase,HarmonyLib.Patch[],System.Boolean)">
              <summary>Sorts patch methods by their priority rules</summary>
              <param name="original">The original method</param>
              <param name="patches">Patches to sort</param>
+             <param name="debug">Use debug mode</param>
              <returns>The sorted patch methods</returns>
             
         </member>
@@ -187,11 +188,12 @@
                High-level IL code manipulator for MonoMod that allows to manipulate a method as a stream of CodeInstructions.
             </summary>
         </member>
-        <member name="M:HarmonyLib.Internal.Patching.ILManipulator.#ctor(Mono.Cecil.Cil.MethodBody)">
+        <member name="M:HarmonyLib.Internal.Patching.ILManipulator.#ctor(Mono.Cecil.Cil.MethodBody,System.Boolean)">
             <summary>
                Initialize IL transpiler
             </summary>
             <param name="body">Body of the method to transpile</param>
+            <param name="debug">Whether to always log everything for this instance</param>
         </member>
         <member name="M:HarmonyLib.Internal.Patching.ILManipulator.AddTranspiler(System.Reflection.MethodInfo)">
             <summary>
@@ -213,12 +215,19 @@
             </exception>
             <exception cref="T:System.ArgumentNullException">One of IL opcodes with an operand contains a null operand.</exception>
         </member>
-        <member name="M:HarmonyLib.Internal.Patching.ILManipulator.MakeBranchesLong(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction})">
+        <member name="M:HarmonyLib.Internal.Patching.ILManipulator.NormalizeInstructions(System.Collections.Generic.IEnumerable{HarmonyLib.CodeInstruction})">
             <summary>
-               Converts all branches to long types. This exists to mimic the behaviour of Harmony 2
+               Normalizes instructions into a consistent format for passing to transpilers.
+               Converts short branches to long, ensures that certain fields are properly initialized.
             </summary>
             <param name="instrs">Enumerable of instructions</param>
-            <returns>Enumerable of fixed instructions</returns>
+            <returns>Enumerable of normalized instructions</returns>
+        </member>
+        <member name="T:HarmonyLib.Internal.Util.CecilEmitter">
+            <summary>
+            Basic safe DLL emitter for dynamically generated <see cref="T:Mono.Cecil.MethodDefinition"/>s.
+            </summary>
+            <remarks>Based on https://github.com/MonoMod/MonoMod.Common/blob/master/Utils/DMDGenerators/DMDCecilGenerator.cs</remarks>
         </member>
         <member name="T:HarmonyLib.Internal.Util.ILEmitter">
             <summary>
@@ -329,6 +338,10 @@
         <member name="F:HarmonyLib.MethodType.StaticConstructor">
             <summary>This is a static constructor</summary>
         </member>
+        <member name="F:HarmonyLib.MethodType.Enumerator">
+            <summary>This is an enumerator (<see cref="T:System.Collections.Generic.IEnumerable`1"/>, <see cref="T:System.Collections.Generic.IEnumerator`1"/> or UniTask coroutine)</summary>
+            <remarks>This path will target the <see cref="M:System.Collections.IEnumerator.MoveNext"/> method that contains the actual enumerator code</remarks>
+        </member>
         <member name="T:HarmonyLib.ArgumentType">
              <summary>Specifies the type of argument</summary>
             
@@ -366,6 +379,9 @@
         </member>
         <member name="F:HarmonyLib.HarmonyPatchType.ReversePatch">
             <summary>A reverse patch</summary>
+        </member>
+        <member name="F:HarmonyLib.HarmonyPatchType.ILManipulator">
+            <summary>A MonoMod</summary>
         </member>
         <member name="T:HarmonyLib.HarmonyReversePatchType">
              <summary>Specifies the type of reverse patch</summary>
@@ -420,7 +436,7 @@
             <summary>The common information for all attributes</summary>
         </member>
         <member name="T:HarmonyLib.HarmonyPatch">
-             <summary>Annotation to define your Harmony patch methods</summary>
+             <summary>Annotation to define targets of your Harmony patch methods</summary>
             
         </member>
         <member name="M:HarmonyLib.HarmonyPatch.#ctor">
@@ -455,6 +471,21 @@
              <summary>An annotation that specifies a method, property or constructor to patch</summary>
              <param name="declaringType">The declaring class/type</param>
              <param name="methodName">The name of the method, property or constructor to patch</param>
+             <param name="argumentTypes">An array of argument types to target overloads</param>
+             <param name="argumentVariations">Array of <see cref="T:HarmonyLib.ArgumentType"/></param>
+            
+        </member>
+        <member name="M:HarmonyLib.HarmonyPatch.#ctor(System.String,System.String)">
+             <summary>An annotation that specifies a method, property or constructor to patch</summary>
+             <param name="assemblyQualifiedDeclaringType">Assembly-qualified name of the declaring class/type</param>
+             <param name="methodName">The name of the method, property or constructor to patch</param>
+            
+        </member>
+        <member name="M:HarmonyLib.HarmonyPatch.#ctor(System.String,System.String,HarmonyLib.MethodType,System.Type[],HarmonyLib.ArgumentType[])">
+             <summary>An annotation that specifies a method, property or constructor to patch</summary>
+             <param name="assemblyQualifiedDeclaringType">Assembly-qualified name of the declaring class/type</param>
+             <param name="methodName">The name of the method, property or constructor to patch</param>
+             <param name="methodType">The <see cref="T:HarmonyLib.MethodType"/></param>
              <param name="argumentTypes">An array of argument types to target overloads</param>
              <param name="argumentVariations">Array of <see cref="T:HarmonyLib.ArgumentType"/></param>
             
@@ -671,7 +702,7 @@
             
         </member>
         <member name="T:HarmonyLib.HarmonyPriority">
-             <summary>A Harmony annotation</summary>
+             <summary>A Harmony annotation used to change order in which Harmony patches are applied</summary>
             
         </member>
         <member name="M:HarmonyLib.HarmonyPriority.#ctor(System.Int32)">
@@ -680,7 +711,7 @@
             
         </member>
         <member name="T:HarmonyLib.HarmonyBefore">
-             <summary>A Harmony annotation</summary>
+             <summary>A Harmony annotation to define that a patch comes before another patch</summary>
             
         </member>
         <member name="M:HarmonyLib.HarmonyBefore.#ctor(System.String[])">
@@ -689,7 +720,7 @@
             
         </member>
         <member name="T:HarmonyLib.HarmonyAfter">
-            <summary>A Harmony annotation</summary>
+            <summary>A Harmony annotation to define that a patch comes after another patch</summary>
         </member>
         <member name="M:HarmonyLib.HarmonyAfter.#ctor(System.String[])">
              <summary>A Harmony annotation to define that a patch comes after another patch</summary>
@@ -697,14 +728,28 @@
             
         </member>
         <member name="T:HarmonyLib.HarmonyDebug">
-            <summary>A Harmony annotation</summary>
+            <summary>A Harmony annotation to output a debug log for a patch</summary>
         </member>
         <member name="M:HarmonyLib.HarmonyDebug.#ctor">
              <summary>A Harmony annotation to debug a patch (output uses <see cref="T:HarmonyLib.FileLog"/> to log to your Desktop)</summary>
             
         </member>
+        <member name="T:HarmonyLib.HarmonyEmitIL">
+            <summary>A Harmony annotation to emit IL of the patch to a DLL</summary>
+            
+        </member>
+        <member name="M:HarmonyLib.HarmonyEmitIL.#ctor">
+             <summary>A Harmony annotation to emit IL of the patch to the current working directory</summary>
+            
+        </member>
+        <member name="M:HarmonyLib.HarmonyEmitIL.#ctor(System.String)">
+             <summary>A Harmony annotation to emit IL of the patch to the given path</summary>
+             <param name="dir">Directory to which emit the patch</param>
+            
+        </member>
         <member name="T:HarmonyLib.HarmonyWrapSafe">
-            <summary>A Harmony attribute</summary>
+             <summary>A Harmony attribute to automatically wrap the patch into try/catch. Exceptions are logged to Harmony log and eaten.</summary>
+            
         </member>
         <member name="M:HarmonyLib.HarmonyWrapSafe.#ctor">
              <summary>If specified on a prefix, postfix or a finalizer, the method will be automatically wrapped into try/catch.</summary>
@@ -738,12 +783,16 @@
              <summary>Specifies the Transpiler function in a patch class</summary>
             
         </member>
+        <member name="T:HarmonyLib.HarmonyILManipulator">
+             <summary>Specifies the ILManipulator function in a patch class</summary>>
+            
+        </member>
         <member name="T:HarmonyLib.HarmonyFinalizer">
              <summary>Specifies the Finalizer function in a patch class</summary>
             
         </member>
         <member name="T:HarmonyLib.HarmonyArgument">
-             <summary>A Harmony annotation</summary>
+             <summary>A Harmony annotation to declare injected arguments</summary>
             
         </member>
         <member name="P:HarmonyLib.HarmonyArgument.OriginalName">
@@ -868,6 +917,13 @@
              <returns></returns>
             
         </member>
+        <member name="M:HarmonyLib.CodeInstruction.CallClosure``1(``0)">
+             <summary>Returns an instruction to call the specified closure</summary>
+             <typeparam name="T">The delegate type to emit</typeparam>
+             <param name="closure">The closure that defines the method to call</param>
+             <returns>A <see cref="T:HarmonyLib.CodeInstruction"/> that calls the closure as a method</returns>
+            
+        </member>
         <member name="M:HarmonyLib.CodeInstruction.LoadField(System.Type,System.String,System.Boolean)">
             <summary>Creates a CodeInstruction loading a field (LD[S]FLD[A])</summary>
             <param name="type">The class/type where the field is defined</param>
@@ -987,6 +1043,7 @@
         </member>
         <member name="M:HarmonyLib.Harmony.PatchAll">
              <summary>Searches the current assembly for Harmony annotations and uses them to create patches</summary>
+             <remarks>This method can fail to use the correct assembly when being inlined. It calls StackTrace.GetFrame(1) which can point to the wrong method/assembly. If you are unsure or run into problems, use <code>PatchAll(Assembly.GetExecutingAssembly())</code> instead.</remarks>
             
         </member>
         <member name="M:HarmonyLib.Harmony.CreateProcessor(System.Reflection.MethodBase)">
@@ -1025,6 +1082,17 @@
              <param name="type">The type to search</param>
             
         </member>
+        <member name="M:HarmonyLib.Harmony.Patch(System.Reflection.MethodBase,HarmonyLib.HarmonyMethod,HarmonyLib.HarmonyMethod,HarmonyLib.HarmonyMethod,HarmonyLib.HarmonyMethod,HarmonyLib.HarmonyMethod)">
+             <summary>Creates patches by manually specifying the methods</summary>
+             <param name="original">The original method/constructor</param>
+             <param name="prefix">An optional prefix method wrapped in a <see cref="T:HarmonyLib.HarmonyMethod"/> object</param>
+             <param name="postfix">An optional postfix method wrapped in a <see cref="T:HarmonyLib.HarmonyMethod"/> object</param>
+             <param name="transpiler">An optional transpiler method wrapped in a <see cref="T:HarmonyLib.HarmonyMethod"/> object</param>
+             <param name="finalizer">An optional finalizer method wrapped in a <see cref="T:HarmonyLib.HarmonyMethod"/> object</param>
+             <param name="ilmanipulator">An optional ilmanipulator method wrapped in a <see cref="T:HarmonyLib.HarmonyMethod"/></param>
+             <returns>The replacement method that was created to patch the original method</returns>
+            
+        </member>
         <member name="M:HarmonyLib.Harmony.Patch(System.Reflection.MethodBase,HarmonyLib.HarmonyMethod,HarmonyLib.HarmonyMethod,HarmonyLib.HarmonyMethod,HarmonyLib.HarmonyMethod)">
              <summary>Creates patches by manually specifying the methods</summary>
              <param name="original">The original method/constructor</param>
@@ -1035,6 +1103,15 @@
              <returns>The replacement method that was created to patch the original method</returns>
             
         </member>
+        <member name="M:HarmonyLib.Harmony.ReversePatch(System.Reflection.MethodBase,HarmonyLib.HarmonyMethod,System.Reflection.MethodInfo,System.Reflection.MethodInfo)">
+             <summary>Patches a foreign method onto a stub method of yours and optionally applies transpilers during the process</summary>
+             <param name="original">The original method/constructor you want to duplicate</param>
+             <param name="standin">Your stub method as <see cref="T:HarmonyLib.HarmonyMethod"/> that will become the original. Needs to have the correct signature (either original or whatever your transpilers generates)</param>
+             <param name="transpiler">An optional transpiler as method that will be applied during the process</param>
+             <param name="ilmanipulator">An optional ilmanipulator as method that will be applied during the process</param>
+             <returns>The replacement method that was created to patch the stub method</returns>
+            
+        </member>
         <member name="M:HarmonyLib.Harmony.ReversePatch(System.Reflection.MethodBase,HarmonyLib.HarmonyMethod,System.Reflection.MethodInfo)">
              <summary>Patches a foreign method onto a stub method of yours and optionally applies transpilers during the process</summary>
              <param name="original">The original method/constructor you want to duplicate</param>
@@ -1043,14 +1120,24 @@
              <returns>The replacement method that was created to patch the stub method</returns>
             
         </member>
-        <member name="M:HarmonyLib.Harmony.UnpatchAll(System.String)">
-             <summary>Unpatches methods by patching them with zero patches. Fully unpatching is not supported. Be careful, unpatching is global</summary>
-             <param name="harmonyID">The optional Harmony ID to restrict unpatching to a specific Harmony instance</param>
-             <remarks>This method could be static if it wasn't for the fact that unpatching creates a new replacement method that contains your harmony ID</remarks>
+        <member name="M:HarmonyLib.Harmony.UnpatchID(System.String)">
+             <summary>Unpatches all methods that were patched by the specified <paramref name="harmonyID"/>. Unpatching is done by repatching methods without patches of this instance.</summary>
+             <param name="harmonyID">The Harmony ID to restrict unpatching to a specific Harmony instance.</param>
+             <exception cref="T:System.ArgumentNullException">Gets thrown when a null or empty HarmonyID gets passed in.</exception>
             
         </member>
         <member name="M:HarmonyLib.Harmony.UnpatchSelf">
              <summary>Unpatches all methods that were patched by this Harmony instance's ID. Unpatching is done by repatching methods without patches of this instance.</summary>
+            
+        </member>
+        <member name="M:HarmonyLib.Harmony.UnpatchAll">
+             <summary>Globally unpatches ALL methods by patching them with zero patches. Complete unpatching is not supported.</summary>
+            
+        </member>
+        <member name="M:HarmonyLib.Harmony.UnpatchAll(System.String)">
+             <summary>Unpatches methods by patching them with zero patches. Fully unpatching is not supported. Be careful, unpatching is global</summary>
+             <param name="harmonyID">The Harmony ID to restrict unpatching to a specific Harmony instance. Whether this parameter is actually optional is determined by the <see cref="P:HarmonyLib.HarmonyGlobalSettings.DisallowLegacyGlobalUnpatchAll"/> global flag</param>
+             <remarks>When <see cref="P:HarmonyLib.HarmonyGlobalSettings.DisallowLegacyGlobalUnpatchAll"/> is set to true, the execution of this method will be skipped when no <paramref name="harmonyID"/> is specified.</remarks>
             
         </member>
         <member name="M:HarmonyLib.Harmony.Unpatch(System.Reflection.MethodBase,HarmonyLib.HarmonyPatchType,System.String)">
@@ -1086,6 +1173,18 @@
         <member name="M:HarmonyLib.Harmony.GetAllPatchedMethods">
              <summary>Gets all patched original methods in the appdomain</summary>
              <returns>An enumeration of patched original methods/constructors</returns>
+            
+        </member>
+        <member name="M:HarmonyLib.Harmony.GetOriginalMethod(System.Reflection.MethodInfo)">
+             <summary>Gets the original method from a given replacement method</summary>
+             <param name="replacement">A replacement method, for example from a stacktrace</param>
+             <returns>The original method/constructor or <c>null</c> if not found</returns>
+            
+        </member>
+        <member name="M:HarmonyLib.Harmony.GetMethodFromStackframe(System.Diagnostics.StackFrame)">
+             <summary>Tries to get the method from a stackframe including dynamic replacement methods</summary>
+             <param name="frame">The <see cref="T:System.Diagnostics.StackFrame"/></param>
+             <returns>For normal frames, <c>frame.GetMethod()</c> is returned. For frames containing patched methods, the replacement method is returned or <c>null</c> if no method can be found</returns>
             
         </member>
         <member name="M:HarmonyLib.Harmony.VersionInfo(System.Version@)">
@@ -1136,6 +1235,14 @@
              <returns>The index into the list of instructions or -1 if not found</returns>
             
         </member>
+        <member name="T:HarmonyLib.HarmonyGlobalSettings">
+             <summary>Class that holds all Global Harmony settings</summary>
+            
+        </member>
+        <member name="P:HarmonyLib.HarmonyGlobalSettings.DisallowLegacyGlobalUnpatchAll">
+            <summary>Set to true to disallow executing the legacy instance <see cref="M:HarmonyLib.Harmony.UnpatchAll(System.String)"/> method without specifying a harmonyId.</summary>
+            <remarks>If set to true and the legacy instance <see cref="M:HarmonyLib.Harmony.UnpatchAll(System.String)"/> method is called without passing a harmonyId, then execution of said method will be skipped.</remarks>
+        </member>
         <member name="T:HarmonyLib.HarmonyMethod">
              <summary>A wrapper around a method to use it as a patch (for example a Prefix)</summary>
             
@@ -1178,6 +1285,10 @@
         </member>
         <member name="F:HarmonyLib.HarmonyMethod.debug">
              <summary>Create debug output for this patch</summary>
+            
+        </member>
+        <member name="F:HarmonyLib.HarmonyMethod.debugEmitPath">
+             <summary>If not null, the IL of the patch is output to this path</summary>
             
         </member>
         <member name="F:HarmonyLib.HarmonyMethod.nonVirtualDelegate">
@@ -1384,8 +1495,16 @@
              <summary>Finalizers as an array of <see cref="T:HarmonyLib.Patch"/></summary>
             
         </member>
+        <member name="F:HarmonyLib.PatchInfo.ilmanipulators">
+             <summary>ILManipulators as an array of <see cref="T:HarmonyLib.Patch"/></summary>
+            
+        </member>
         <member name="P:HarmonyLib.PatchInfo.Debugging">
              <summary>Returns if any of the patches wants debugging turned on</summary>
+            
+        </member>
+        <member name="P:HarmonyLib.PatchInfo.DebugEmitPaths">
+             <summary>Returns a list of paths that the IL should be dumped to</summary>
             
         </member>
         <member name="M:HarmonyLib.PatchInfo.AddPrefixes(System.String,HarmonyLib.HarmonyMethod[])">
@@ -1444,6 +1563,17 @@
              <param name="owner">The owner of the finalizers, or <c>*</c> for all</param>
             
         </member>
+        <member name="M:HarmonyLib.PatchInfo.AddILManipulators(System.String,HarmonyLib.HarmonyMethod[])">
+             <summary>Adds ilmanipulators</summary>
+             <param name="owner">An owner (Harmony ID)</param>
+             <param name="methods">The patch methods</param>
+            
+        </member>
+        <member name="M:HarmonyLib.PatchInfo.RemoveILManipulator(System.String)">
+             <summary>Removes ilmanipulators</summary>
+             <param name="owner">The owner of the ilmanipulators, or <c>*</c> for all</param>
+            
+        </member>
         <member name="M:HarmonyLib.PatchInfo.RemovePatch(System.Reflection.MethodInfo)">
              <summary>Removes a patch using its method</summary>
              <param name="patch">The method of the patch to remove</param>
@@ -1490,6 +1620,10 @@
              <summary>A flag that will log the replacement method via <see cref="T:HarmonyLib.FileLog"/> every time this patch is used to build the replacement, even in the future</summary>
             
         </member>
+        <member name="F:HarmonyLib.Patch.debugEmitPath">
+             <summary>If not null, IL DLL is output to this directory</summary>
+            
+        </member>
         <member name="F:HarmonyLib.Patch.wrapTryCatch">
              <summary>Whether to wrap the patch into a general try/catch that logs the error</summary>
             
@@ -1519,6 +1653,19 @@
              <param name="after">A list of Harmony IDs for patches that should run before this patch</param>
              <param name="debug">A flag that will log the replacement method via <see cref="T:HarmonyLib.FileLog"/> every time this patch is used to build the replacement, even in the future</param>
              <param name="wrapTryCatch">Whether to wrap the patch into a general try/catch that logs the error</param>
+            
+        </member>
+        <member name="M:HarmonyLib.Patch.#ctor(System.Reflection.MethodInfo,System.Int32,System.String,System.Int32,System.String[],System.String[],System.Boolean,System.Boolean,System.String)">
+             <summary>Creates a patch</summary>
+             <param name="patch">The method of the patch</param>
+             <param name="index">Zero-based index</param>
+             <param name="owner">An owner (Harmony ID)</param>
+             <param name="priority">The priority, see <see cref="T:HarmonyLib.Priority"/></param>
+             <param name="before">A list of Harmony IDs for patches that should run after this patch</param>
+             <param name="after">A list of Harmony IDs for patches that should run before this patch</param>
+             <param name="debug">A flag that will log the replacement method via <see cref="T:HarmonyLib.FileLog"/> every time this patch is used to build the replacement, even in the future</param>
+             <param name="wrapTryCatch">Whether to wrap the patch into a general try/catch that logs the error</param>
+             <param name="debugEmitPath">If not null, the patch IL DLL is saved to this directory</param>
             
         </member>
         <member name="M:HarmonyLib.Patch.#ctor(HarmonyLib.HarmonyMethod,System.Int32,System.String)">
@@ -1592,9 +1739,22 @@
             <summary>A collection of finalizer <see cref="T:HarmonyLib.Patch"/></summary>
             
         </member>
+        <member name="F:HarmonyLib.Patches.ILManipulators">
+            <summary>A collection of ILManipulator <see cref="T:HarmonyLib.Patch"/></summary>
+            
+        </member>
         <member name="P:HarmonyLib.Patches.Owners">
              <summary>Gets all owners (Harmony IDs) or all known patches</summary>
              <value>The patch owners</value>
+            
+        </member>
+        <member name="M:HarmonyLib.Patches.#ctor(HarmonyLib.Patch[],HarmonyLib.Patch[],HarmonyLib.Patch[],HarmonyLib.Patch[],HarmonyLib.Patch[])">
+             <summary>Creates a group of patches</summary>
+             <param name="prefixes">An array of prefixes as <see cref="T:HarmonyLib.Patch"/></param>
+             <param name="postfixes">An array of postfixes as <see cref="T:HarmonyLib.Patch"/></param>
+             <param name="transpilers">An array of transpileres as <see cref="T:HarmonyLib.Patch"/></param>
+             <param name="finalizers">An array of finalizeres as <see cref="T:HarmonyLib.Patch"/></param>
+             <param name="ilmanipulators">An array of ilmanipulators as <see cref="T:HarmonyLib.Patch"/></param>
             
         </member>
         <member name="M:HarmonyLib.Patches.#ctor(HarmonyLib.Patch[],HarmonyLib.Patch[],HarmonyLib.Patch[],HarmonyLib.Patch[])">
@@ -1606,23 +1766,44 @@
             
         </member>
         <member name="T:HarmonyLib.Public.Patching.HarmonyManipulator">
-             <summary>
-                IL manipulator to create Harmony-style patches
-             </summary>
-            
+            <summary>
+               IL manipulator to create Harmony-style patches.
+            </summary>
+        </member>
+        <member name="M:HarmonyLib.Public.Patching.HarmonyManipulator.#ctor(HarmonyLib.PatchInfo)">
+            <summary>
+               Initializes a new instance of the <see cref="T:HarmonyLib.Public.Patching.HarmonyManipulator" /> class.
+            </summary>
+            <param name="patchInfo">Patches to apply to the body.</param>
         </member>
         <member name="M:HarmonyLib.Public.Patching.HarmonyManipulator.Manipulate(System.Reflection.MethodBase,HarmonyLib.PatchInfo,MonoMod.Cil.ILContext)">
-             <summary>
-             Manipulates a <see cref="T:Mono.Cecil.Cil.MethodBody"/> by applying Harmony patches to it.
-             </summary>
-             <param name="original">Reference to the method that should be considered as original. Used to reference parameter and return types.</param>
-             <param name="patchInfo">Collection of Harmony patches to apply.</param>
-             <param name="ctx">Method body to manipulate as <see cref="T:MonoMod.Cil.ILContext"/> instance. Should contain instructions to patch.</param>
-             <remarks>
-             In most cases you will want to use <see cref="M:HarmonyLib.Public.Patching.PatchManager.ToPatchInfo(System.Reflection.MethodBase)"/> to create or obtain global
-             patch info for the method that contains aggregated info of all Harmony instances.
-             </remarks>
-            
+            <summary>
+               Manipulates a <see cref="T:Mono.Cecil.Cil.MethodBody" /> by applying Harmony patches to it.
+            </summary>
+            <param name="original">
+               Reference to the method that should be considered as original. Used to reference parameter and
+               return types.
+            </param>
+            <param name="patchInfo">Collection of Harmony patches to apply.</param>
+            <param name="ctx">Method body to manipulate as <see cref="T:MonoMod.Cil.ILContext" /> instance. Should contain instructions to patch.</param>
+            <remarks>
+               In most cases you will want to use <see cref="M:HarmonyLib.Public.Patching.PatchManager.ToPatchInfo(System.Reflection.MethodBase)" /> to create or obtain global
+               patch info for the method that contains aggregated info of all Harmony instances.
+            </remarks>
+        </member>
+        <member name="M:HarmonyLib.Public.Patching.HarmonyManipulator.Manipulate(System.Reflection.MethodBase,MonoMod.Cil.ILContext)">
+            <summary>
+               Manipulates IL into a replacement method with Harmony patches applied to it.
+            </summary>
+            <param name="original">Original method that contains <see cref="T:HarmonyLib.PatchInfo" /> and other metadata.</param>
+            <param name="ctx">IL to rewrite.</param>
+        </member>
+        <member name="M:HarmonyLib.Public.Patching.HarmonyManipulator.Process(MonoMod.Cil.ILContext,System.Reflection.MethodBase)">
+            <summary>
+               Convert the IL code into a Harmony patch.
+            </summary>
+            <param name="ilContext">IL body of the method to rewrite into a Harmony patch.</param>
+            <param name="originalMethod">Original method to use for context.</param>
         </member>
         <member name="T:HarmonyLib.Public.Patching.ManagedMethodPatcher">
              <summary>
@@ -1877,6 +2058,18 @@
              <returns>A <see cref="T:HarmonyLib.PatchProcessor"/> for chaining calls</returns>
             
         </member>
+        <member name="M:HarmonyLib.PatchProcessor.AddILManipulator(HarmonyLib.HarmonyMethod)">
+             <summary>Adds an ilmanipulator</summary>
+             <param name="ilmanipulator">The ilmanipulator as a <see cref="T:HarmonyLib.HarmonyMethod"/></param>
+             <returns>A <see cref="T:HarmonyLib.PatchProcessor"/> for chaining calls</returns>
+            
+        </member>
+        <member name="M:HarmonyLib.PatchProcessor.AddILManipulator(System.Reflection.MethodInfo)">
+             <summary>Adds an ilmanipulator</summary>
+             <param name="fixMethod">The ilmanipulator method</param>
+             <returns>A <see cref="T:HarmonyLib.PatchProcessor"/> for chaining calls</returns>
+            
+        </member>
         <member name="M:HarmonyLib.PatchProcessor.GetAllPatchedMethods">
              <summary>Gets all patched original methods in the appdomain</summary>
              <returns>An enumeration of patched method/constructor</returns>
@@ -2085,6 +2278,10 @@
              <summary>Shortcut for <see cref="T:System.Reflection.BindingFlags"/> to simplify the use of reflections and make it work for any access level but only within the current type</summary>
             
         </member>
+        <member name="M:HarmonyLib.AccessTools.AllAssemblies">
+            <summary>Enumerates all assemblies in the current app domain, excluding visual studio assemblies</summary>
+            <returns>An enumeration of <see cref="T:System.Reflection.Assembly"/></returns>
+        </member>
         <member name="M:HarmonyLib.AccessTools.TypeByName(System.String)">
              <summary>Gets a type by name. Prefers a full name with namespace but falls back to the first type matching the name otherwise</summary>
              <param name="name">The name</param>
@@ -2101,6 +2298,10 @@
              filtered for non-null values).
              </remarks>
             
+        </member>
+        <member name="M:HarmonyLib.AccessTools.AllTypes">
+            <summary>Enumerates all successfully loaded types in the current app domain, excluding visual studio assemblies</summary>
+            <returns>An enumeration of all <see cref="T:System.Type"/> in all assemblies, excluding visual studio assemblies</returns>
         </member>
         <member name="M:HarmonyLib.AccessTools.FindIncludingBaseTypes``1(System.Type,System.Func{System.Type,``0})">
              <summary>Applies a function going up the type hierarchy and stops at the first non-<c>null</c> result</summary>
@@ -2211,6 +2412,11 @@
              <param name="generics">Optional list of types that define the generic version of the method</param>
              <returns>A method or null when type/name is null or when the method cannot be found</returns>
             
+        </member>
+        <member name="M:HarmonyLib.AccessTools.EnumeratorMoveNext(System.Reflection.MethodBase)">
+            <summary>Gets <see cref="M:System.Collections.IEnumerator.MoveNext" /> method of an enumerator method.</summary>
+            <param name="enumerator">Enumerator method from which to get its <see cref="M:System.Collections.IEnumerator.MoveNext" /></param>
+            <returns><see cref="M:System.Collections.IEnumerator.MoveNext" /> of the enumerator or <b>null</b> if no valid enumerator is detected</returns>
         </member>
         <member name="M:HarmonyLib.AccessTools.GetMethodNames(System.Type)">
              <summary>Gets the names of all method that are declared in a type</summary>
@@ -2929,6 +3135,16 @@
              <returns>A string representation</returns>
             
         </member>
+        <member name="M:HarmonyLib.CodeMatch.op_Implicit(System.Reflection.Emit.OpCode)~HarmonyLib.CodeMatch">
+             <summary>Creates a new code match for an opcode</summary>
+             <param name="opcode">Opcode to match</param>
+            
+        </member>
+        <member name="M:HarmonyLib.CodeMatch.op_Implicit(HarmonyLib.CodeInstruction)~HarmonyLib.CodeMatch">
+             <summary>Creates a new code match for a code instruction</summary>
+             <param name="instruction">Code instruction</param>
+            
+        </member>
         <member name="T:HarmonyLib.CodeMatcher">
             <summary>A CodeInstruction matcher</summary>
         </member>
@@ -3043,6 +3259,44 @@
              <param name="method">The method involved</param>
              <param name="logger">The logger</param>
              <returns>True if current position is invalid and error was logged</returns>
+            
+        </member>
+        <member name="M:HarmonyLib.CodeMatcher.ThrowIfInvalid(System.String)">
+             <summary>Throw an InvalidOperationException if current state is invalid (position out of bounds / last match failed)</summary>
+             <param name="explanation">Explanation of where/why the exception was thrown that will be added to the exception message</param>
+             <returns>The same code matcher</returns>
+            
+        </member>
+        <member name="M:HarmonyLib.CodeMatcher.ThrowIfNotMatch(System.String,HarmonyLib.CodeMatch[])">
+             <summary>Throw an InvalidOperationException if current state is invalid (position out of bounds / last match failed),
+             or if the matches do not match at current position</summary>
+             <param name="explanation">Explanation of where/why the exception was thrown that will be added to the exception message</param>
+             <param name="matches">Some code matches</param>
+             <returns>The same code matcher</returns>
+            
+        </member>
+        <member name="M:HarmonyLib.CodeMatcher.ThrowIfNotMatchForward(System.String,HarmonyLib.CodeMatch[])">
+             <summary>Throw an InvalidOperationException if current state is invalid (position out of bounds / last match failed),
+             or if the matches do not match at any point between current position and the end</summary>
+             <param name="explanation">Explanation of where/why the exception was thrown that will be added to the exception message</param>
+             <param name="matches">Some code matches</param>
+             <returns>The same code matcher</returns>
+            
+        </member>
+        <member name="M:HarmonyLib.CodeMatcher.ThrowIfNotMatchBack(System.String,HarmonyLib.CodeMatch[])">
+             <summary>Throw an InvalidOperationException if current state is invalid (position out of bounds / last match failed),
+             or if the matches do not match at any point between current position and the start</summary>
+             <param name="explanation">Explanation of where/why the exception was thrown that will be added to the exception message</param>
+             <param name="matches">Some code matches</param>
+             <returns>The same code matcher</returns>
+            
+        </member>
+        <member name="M:HarmonyLib.CodeMatcher.ThrowIfFalse(System.String,System.Func{HarmonyLib.CodeMatcher,System.Boolean})">
+             <summary>Throw an InvalidOperationException if current state is invalid (position out of bounds / last match failed),
+             or if the check function returns false</summary>
+             <param name="explanation">Explanation of where/why the exception was thrown that will be added to the exception message</param>
+             <param name="stateCheckFunc">Function that checks validity of current state. If it returns false, an exception is thrown</param>
+             <returns>The same code matcher</returns>
             
         </member>
         <member name="M:HarmonyLib.CodeMatcher.SetInstruction(HarmonyLib.CodeInstruction)">
@@ -3161,7 +3415,7 @@
             
         </member>
         <member name="M:HarmonyLib.CodeMatcher.RemoveInstructions(System.Int32)">
-             <summary>Removes some instruction fro current position by count</summary>
+             <summary>Removes some instruction from current position by count</summary>
              <param name="count">Number of instructions</param>
              <returns>The same code matcher</returns>
             
@@ -3218,6 +3472,30 @@
         <member name="M:HarmonyLib.CodeMatcher.MatchBack(System.Boolean,HarmonyLib.CodeMatch[])">
              <summary>Matches backwards and reverses position</summary>
              <param name="useEnd">True to set position to end of match, false to set it to the beginning of the match</param>
+             <param name="matches">Some code matches</param>
+             <returns>The same code matcher</returns>
+            
+        </member>
+        <member name="M:HarmonyLib.CodeMatcher.MatchStartForward(HarmonyLib.CodeMatch[])">
+             <summary>Matches forward and advances position to beginning of matching sequence</summary>
+             <param name="matches">Some code matches</param>
+             <returns>The same code matcher</returns>
+            
+        </member>
+        <member name="M:HarmonyLib.CodeMatcher.MatchEndForward(HarmonyLib.CodeMatch[])">
+             <summary>Matches forward and advances position to ending of matching sequence</summary>
+             <param name="matches">Some code matches</param>
+             <returns>The same code matcher</returns>
+            
+        </member>
+        <member name="M:HarmonyLib.CodeMatcher.MatchStartBackwards(HarmonyLib.CodeMatch[])">
+             <summary>Matches backwards and reverses position to beginning of matching sequence</summary>
+             <param name="matches">Some code matches</param>
+             <returns>The same code matcher</returns>
+            
+        </member>
+        <member name="M:HarmonyLib.CodeMatcher.MatchEndBackwards(HarmonyLib.CodeMatch[])">
+             <summary>Matches backwards and reverses position to ending of matching sequence</summary>
              <param name="matches">Some code matches</param>
              <returns>The same code matcher</returns>
             
@@ -3482,7 +3760,7 @@
             <returns>The code instruction that received the blocks</returns>
         </member>
         <member name="T:HarmonyLib.CollectionExtensions">
-            <summary>General extensions for collections</summary>
+             <summary>General extensions for collections</summary>
             
         </member>
         <member name="M:HarmonyLib.CollectionExtensions.Do``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})">
@@ -3525,7 +3803,7 @@
             
         </member>
         <member name="T:HarmonyLib.MethodBaseExtensions">
-            <summary>General extensions for collections</summary>
+             <summary>General extensions for collections</summary>
             
         </member>
         <member name="M:HarmonyLib.MethodBaseExtensions.HasMethodBody(System.Reflection.MethodBase)">
@@ -3583,6 +3861,11 @@
         </member>
         <member name="M:HarmonyLib.FileLog.Log(System.String)">
              <summary>Log a string directly to disk. Slower method that prevents missing information in case of a crash</summary>
+             <param name="str">The string to log.</param>
+            
+        </member>
+        <member name="M:HarmonyLib.FileLog.Debug(System.String)">
+             <summary>Log a string directly to disk if Harmony.DEBUG is true. Slower method that prevents missing information in case of a crash</summary>
              <param name="str">The string to log.</param>
             
         </member>
@@ -3686,6 +3969,14 @@
             <summary>
             Event fired on any incoming message that passes the channel filter.
             </summary>
+        </member>
+        <member name="M:HarmonyLib.Tools.TypeNameHelper.GetTypeDisplayName(System.Type)">
+             <summary>
+                Pretty print a full type name.
+             </summary>
+             <param name="type">The <see cref="T:System.Type" />.</param>
+             <returns>The pretty printed full type name.</returns>
+            
         </member>
         <member name="T:HarmonyLib.SymbolExtensions">
             <summary>A helper class to retrieve reflection info for non-private methods</summary>

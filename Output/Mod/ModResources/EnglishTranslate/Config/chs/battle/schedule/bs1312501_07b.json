@@ -151,6 +151,7 @@
         65,
         66,
         67,
+        1559,
         805,
         1149,
         1349,
@@ -513,7 +514,7 @@
     },
     {
       "Index": 61,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat all enemies\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat <color=#FF0000>Shui Ruo Chan</color>!\"} ",
       "Next": 62,
       "Prallel": -1,
       "Child": []
@@ -555,8 +556,8 @@
     },
     {
       "Index": 67,
-      "Node": "{ \"BattleResultAddBuff\" : False, \"in21001\", \"bt1312501_07_buff_HpLock90\", True} ",
-      "Next": 805,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in21001\", \"bt1312501_02_buff_YunDefendPowerUp\", True} ",
+      "Next": 1559,
       "Prallel": -1,
       "Child": []
     },
@@ -4747,7 +4748,7 @@
     },
     {
       "Index": 585,
-      "Node": "{ \"BattleFactorTargetHp\" : 2, 25, \"in210101\"} ",
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 55, \"in210101\"} ",
       "Next": 586,
       "Prallel": -1,
       "Child": []
@@ -5114,7 +5115,7 @@
     },
     {
       "Index": 629,
-      "Node": "{ \"BattleFactorTargetHp\" : 2, 25, \"in210101\"} ",
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 55, \"in210101\"} ",
       "Next": 630,
       "Prallel": -1,
       "Child": []
@@ -8285,7 +8286,7 @@
     },
     {
       "Index": 1021,
-      "Node": "{ \"BattleFactorTargetHp\" : 2, 25, \"in21013\"} ",
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 55, \"in21013\"} ",
       "Next": 1022,
       "Prallel": -1,
       "Child": []
@@ -9302,7 +9303,7 @@
     },
     {
       "Index": 1148,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"先行击败凌None绝与凌云，令水若婵显露破绽！\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"先行击败<color=#FF0000>凌None绝</color>与<color=#FF0000>凌云</color>，令水若婵显露破绽！\"} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []
@@ -9341,7 +9342,9 @@
         1160,
         1161,
         1162,
-        1163
+        1163,
+        1519,
+        1520
       ]
     },
     {
@@ -9424,7 +9427,7 @@
     {
       "Index": 1163,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1312501_07a_20\", 0, 1, \"凌云复活事件进程：进入土炁衰弱\"} ",
-      "Next": -1,
+      "Next": 1519,
       "Prallel": -1,
       "Child": []
     },
@@ -9462,7 +9465,8 @@
         1174,
         1175,
         1178,
-        1179
+        1179,
+        1521
       ]
     },
     {
@@ -9530,21 +9534,21 @@
     },
     {
       "Index": 1176,
-      "Node": "{ \"BattleResultRmoveBuff\" : \"in21001\", \"bt1312501_07_buff_HpLock90\"} ",
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in21001\", \"bt1312501_02_buff_YunDefendPowerUp\"} ",
       "Next": 1177,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 1177,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in21001\", \"bt1312501_07_buff_HpLock80\", True} ",
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in21001\", \"bt1312501_02_buff_YunDefendPowerUp02\", True} ",
       "Next": 1174,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 1178,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in21001\", \"\", False} ",
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in21001\", \"debuff0420_Daze00\", False} ",
       "Next": 1179,
       "Prallel": -1,
       "Child": []
@@ -9552,7 +9556,7 @@
     {
       "Index": 1179,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1312501_07a_20\", 0, 2, \"凌云复活事件进程：以火生土\"} ",
-      "Next": -1,
+      "Next": 1521,
       "Prallel": -1,
       "Child": []
     },
@@ -9578,7 +9582,9 @@
         1190,
         1194,
         1195,
-        1201
+        1201,
+        1523,
+        1522
       ]
     },
     {
@@ -9622,7 +9628,8 @@
         1198,
         1202,
         1203,
-        1204
+        1204,
+        1524
       ]
     },
     {
@@ -9718,14 +9725,14 @@
     },
     {
       "Index": 1199,
-      "Node": "{ \"BattleResultRmoveBuff\" : \"in21001\", \"bt1312501_07_buff_HpLock80\"} ",
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in21001\", \"bt1312501_02_buff_YunDefendPowerUp02\"} ",
       "Next": 1200,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 1200,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in21001\", \"bt1312501_07_buff_HpLock70\", True} ",
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in21001\", \"bt1312501_02_buff_YunDefendPowerUp03\", True} ",
       "Next": 1198,
       "Prallel": -1,
       "Child": []
@@ -9733,7 +9740,7 @@
     {
       "Index": 1201,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1312501_07a_20\", 0, 3, \"凌云复活事件进程：进入金炁衰弱\"} ",
-      "Next": -1,
+      "Next": 1523,
       "Prallel": -1,
       "Child": []
     },
@@ -9746,7 +9753,7 @@
     },
     {
       "Index": 1203,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in21001\", \"\", False} ",
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in21001\", \"debuff0420_Daze00\", False} ",
       "Next": 1204,
       "Prallel": -1,
       "Child": []
@@ -9754,7 +9761,7 @@
     {
       "Index": 1204,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1312501_07a_20\", 0, 4, \"凌云复活事件进程：以土生金\"} ",
-      "Next": -1,
+      "Next": 1524,
       "Prallel": -1,
       "Child": []
     },
@@ -9780,7 +9787,9 @@
         1216,
         1219,
         1220,
-        1224
+        1224,
+        1526,
+        1525
       ]
     },
     {
@@ -9824,7 +9833,8 @@
         1225,
         1227,
         1228,
-        1229
+        1229,
+        1527
       ]
     },
     {
@@ -9913,7 +9923,7 @@
     },
     {
       "Index": 1223,
-      "Node": "{ \"BattleResultRmoveBuff\" : \"in21001\", \"bt1312501_07_buff_HpLock70\"} ",
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in21001\", \"bt1312501_02_buff_YunDefendPowerUp03\"} ",
       "Next": 1226,
       "Prallel": -1,
       "Child": []
@@ -9921,7 +9931,7 @@
     {
       "Index": 1224,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1312501_07a_20\", 0, 5, \"凌云复活事件进程：进入水炁衰弱\"} ",
-      "Next": -1,
+      "Next": 1526,
       "Prallel": -1,
       "Child": []
     },
@@ -9934,7 +9944,7 @@
     },
     {
       "Index": 1226,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in21001\", \"bt1312501_07_buff_HpLock60\", True} ",
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in21001\", \"bt1312501_02_buff_YunDefendPowerUp04\", True} ",
       "Next": 1225,
       "Prallel": -1,
       "Child": []
@@ -9948,7 +9958,7 @@
     },
     {
       "Index": 1228,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in21001\", \"\", False} ",
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in21001\", \"debuff0420_Daze00\", False} ",
       "Next": 1229,
       "Prallel": -1,
       "Child": []
@@ -9956,7 +9966,7 @@
     {
       "Index": 1229,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1312501_07a_20\", 0, 6, \"凌云复活事件进程：以金生水\"} ",
-      "Next": -1,
+      "Next": 1527,
       "Prallel": -1,
       "Child": []
     },
@@ -9982,7 +9992,9 @@
         1241,
         1244,
         1245,
-        1249
+        1249,
+        1529,
+        1528
       ]
     },
     {
@@ -10027,7 +10039,8 @@
         1252,
         1253,
         1255,
-        1254
+        1254,
+        1530
       ]
     },
     {
@@ -10116,7 +10129,7 @@
     },
     {
       "Index": 1248,
-      "Node": "{ \"BattleResultRmoveBuff\" : \"in21001\", \"bt1312501_07_buff_HpLock60\"} ",
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in21001\", \"bt1312501_02_buff_YunDefendPowerUp04\"} ",
       "Next": 1251,
       "Prallel": -1,
       "Child": []
@@ -10124,7 +10137,7 @@
     {
       "Index": 1249,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1312501_07a_20\", 0, 7, \"凌云复活事件进程：进入木炁衰弱\"} ",
-      "Next": -1,
+      "Next": 1529,
       "Prallel": -1,
       "Child": []
     },
@@ -10137,7 +10150,7 @@
     },
     {
       "Index": 1251,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in21001\", \"bt1312501_07_buff_HpLock50\", True} ",
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in21001\", \"bt1312501_02_buff_YunDefendPowerUp05\", True} ",
       "Next": 1250,
       "Prallel": -1,
       "Child": []
@@ -10151,7 +10164,7 @@
     },
     {
       "Index": 1253,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in21001\", \"\", False} ",
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in21001\", \"debuff0420_Daze00\", False} ",
       "Next": 1255,
       "Prallel": -1,
       "Child": []
@@ -10159,7 +10172,7 @@
     {
       "Index": 1254,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1312501_07a_20\", 0, 8, \"凌云复活事件进程：以水生木\"} ",
-      "Next": -1,
+      "Next": 1530,
       "Prallel": -1,
       "Child": []
     },
@@ -10192,7 +10205,9 @@
         1267,
         1270,
         1271,
-        1273
+        1273,
+        1532,
+        1531
       ]
     },
     {
@@ -10227,6 +10242,7 @@
         1262,
         1263,
         1265,
+        1557,
         1268,
         1269,
         1272,
@@ -10262,7 +10278,9 @@
         1303,
         1304,
         1305,
-        1306
+        1533,
+        1306,
+        1558
       ]
     },
     {
@@ -10289,7 +10307,7 @@
     {
       "Index": 1265,
       "Node": "{ \"BattleFactorPlayerElement\" : 2, False} ",
-      "Next": 1268,
+      "Next": 1557,
       "Prallel": -1,
       "Child": []
     },
@@ -10345,7 +10363,7 @@
     {
       "Index": 1273,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1312501_07a_20\", 0, 9, \"凌云复活事件进程：进入火炁衰弱\"} ",
-      "Next": -1,
+      "Next": 1532,
       "Prallel": -1,
       "Child": []
     },
@@ -10569,14 +10587,14 @@
     {
       "Index": 1305,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1312501_07a_20\", 0, 10, \"凌云复活事件进程：以木生火\"} ",
-      "Next": 1306,
+      "Next": 1533,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 1306,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1312501_07a_21001\", 0, 1, \"凌云阵亡\"} ",
-      "Next": -1,
+      "Next": 1558,
       "Prallel": -1,
       "Child": []
     },
@@ -10637,7 +10655,7 @@
     },
     {
       "Index": 1313,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Shui Ruo Chan!\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat <color=#FF0000>Shui Ruo Chan</color>!\"} ",
       "Next": 1338,
       "Prallel": -1,
       "Child": []
@@ -10986,7 +11004,7 @@
     },
     {
       "Index": 1358,
-      "Node": "{ \"BattleFactorTurn\" : 1, 1} ",
+      "Node": "{ \"BattleFactorTurn\" : 1, 3} ",
       "Next": 1359,
       "Prallel": -1,
       "Child": []
@@ -11029,7 +11047,7 @@
     },
     {
       "Index": 1363,
-      "Node": "{ \"BattleFactorTurn\" : 1, 2} ",
+      "Node": "{ \"BattleFactorTurn\" : 1, 5} ",
       "Next": 1364,
       "Prallel": -1,
       "Child": []
@@ -11072,7 +11090,7 @@
     },
     {
       "Index": 1368,
-      "Node": "{ \"BattleFactorTurn\" : 1, 3} ",
+      "Node": "{ \"BattleFactorTurn\" : 1, 7} ",
       "Next": 1369,
       "Prallel": -1,
       "Child": []
@@ -11108,7 +11126,7 @@
     },
     {
       "Index": 1372,
-      "Node": "{ \"BattleFactorTurn\" : 1, 4} ",
+      "Node": "{ \"BattleFactorTurn\" : 1, 9} ",
       "Next": 1373,
       "Prallel": -1,
       "Child": []
@@ -11378,7 +11396,7 @@
     },
     {
       "Index": 1408,
-      "Node": "{ \"BattleFactorTurn\" : 1, 5} ",
+      "Node": "{ \"BattleFactorTurn\" : 1, 11} ",
       "Next": 1409,
       "Prallel": -1,
       "Child": []
@@ -11414,7 +11432,7 @@
     },
     {
       "Index": 1412,
-      "Node": "{ \"BattleFactorTurn\" : 1, 6} ",
+      "Node": "{ \"BattleFactorTurn\" : 1, 13} ",
       "Next": 1413,
       "Prallel": -1,
       "Child": []
@@ -11450,7 +11468,7 @@
     },
     {
       "Index": 1416,
-      "Node": "{ \"BattleFactorTurn\" : 1, 7} ",
+      "Node": "{ \"BattleFactorTurn\" : 1, 15} ",
       "Next": 1417,
       "Prallel": -1,
       "Child": []
@@ -11486,7 +11504,7 @@
     },
     {
       "Index": 1420,
-      "Node": "{ \"BattleFactorTurn\" : 1, 8} ",
+      "Node": "{ \"BattleFactorTurn\" : 1, 17} ",
       "Next": 1421,
       "Prallel": -1,
       "Child": []
@@ -11578,7 +11596,7 @@
     },
     {
       "Index": 1432,
-      "Node": "{ \"BattleFactorTurn\" : 1, 9} ",
+      "Node": "{ \"BattleFactorTurn\" : 1, 19} ",
       "Next": 1433,
       "Prallel": -1,
       "Child": []
@@ -11621,7 +11639,7 @@
     },
     {
       "Index": 1437,
-      "Node": "{ \"BattleFactorTurn\" : 1, 10} ",
+      "Node": "{ \"BattleFactorTurn\" : 1, 21} ",
       "Next": 1438,
       "Prallel": -1,
       "Child": []
@@ -11664,7 +11682,7 @@
     },
     {
       "Index": 1442,
-      "Node": "{ \"BattleFactorTurn\" : 1, 11} ",
+      "Node": "{ \"BattleFactorTurn\" : 1, 23} ",
       "Next": 1443,
       "Prallel": -1,
       "Child": []
@@ -11707,7 +11725,7 @@
     },
     {
       "Index": 1447,
-      "Node": "{ \"BattleFactorTurn\" : 1, 12} ",
+      "Node": "{ \"BattleFactorTurn\" : 1, 25} ",
       "Next": 1448,
       "Prallel": -1,
       "Child": []
@@ -11750,7 +11768,7 @@
     },
     {
       "Index": 1452,
-      "Node": "{ \"BattleFactorTurn\" : 1, 13} ",
+      "Node": "{ \"BattleFactorTurn\" : 1, 27} ",
       "Next": 1453,
       "Prallel": -1,
       "Child": []
@@ -11793,7 +11811,7 @@
     },
     {
       "Index": 1457,
-      "Node": "{ \"BattleFactorTurn\" : 1, 14} ",
+      "Node": "{ \"BattleFactorTurn\" : 1, 29} ",
       "Next": 1458,
       "Prallel": -1,
       "Child": []
@@ -11920,7 +11938,7 @@
     },
     {
       "Index": 1474,
-      "Node": "{ \"BattleFactorTurn\" : 1, 15} ",
+      "Node": "{ \"BattleFactorTurn\" : 1, 31} ",
       "Next": 1475,
       "Prallel": -1,
       "Child": []
@@ -11963,7 +11981,7 @@
     },
     {
       "Index": 1479,
-      "Node": "{ \"BattleFactorTurn\" : 1, 16} ",
+      "Node": "{ \"BattleFactorTurn\" : 1, 33} ",
       "Next": 1480,
       "Prallel": -1,
       "Child": []
@@ -12006,7 +12024,7 @@
     },
     {
       "Index": 1484,
-      "Node": "{ \"BattleFactorTurn\" : 1, 17} ",
+      "Node": "{ \"BattleFactorTurn\" : 1, 35} ",
       "Next": 1485,
       "Prallel": -1,
       "Child": []
@@ -12049,7 +12067,7 @@
     },
     {
       "Index": 1489,
-      "Node": "{ \"BattleFactorTurn\" : 1, 18} ",
+      "Node": "{ \"BattleFactorTurn\" : 1, 37} ",
       "Next": 1490,
       "Prallel": -1,
       "Child": []
@@ -12254,6 +12272,317 @@
       "Index": 1518,
       "Node": "{ \"BattleResultAddUnits\" : \"io26134101,io261231,io272165,io231466\", 1, \"220105115,221108113,107106213,205207112\"} ",
       "Next": 1377,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1519,
+      "Node": "{ \"BattleResultAddSecondaryGoal\" : \"bsc1312501_07b_03\", \"由{name_1}{name_2}以<color=#FF0000>火</color>行功体攻击凌云！\"} ",
+      "Next": 1520,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1520,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bsc1312501_07b_03\", 0} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1521,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bsc1312501_07b_03\", 1} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1522,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bsc1312501_07b_04\", 0} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1523,
+      "Node": "{ \"BattleResultAddSecondaryGoal\" : \"bsc1312501_07b_04\", \"由{name_1}{name_2}以<color=#FF0000>土</color>行功体攻击凌云！\"} ",
+      "Next": 1522,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1524,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bsc1312501_07b_04\", 1} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1525,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bsc1312501_07b_05\", 0} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1526,
+      "Node": "{ \"BattleResultAddSecondaryGoal\" : \"bsc1312501_07b_05\", \"由{name_1}{name_2}以<color=#FF0000>金</color>行功体攻击凌云！\"} ",
+      "Next": 1525,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1527,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bsc1312501_07b_05\", 1} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1528,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bsc1312501_07b_06\", 0} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1529,
+      "Node": "{ \"BattleResultAddSecondaryGoal\" : \"bsc1312501_07b_06\", \"由{name_1}{name_2}以<color=#FF0000>水</color>行功体攻击凌云！\"} ",
+      "Next": 1528,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1530,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bsc1312501_07b_06\", 1} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1531,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bsc1312501_07b_07\", 0} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1532,
+      "Node": "{ \"BattleResultAddSecondaryGoal\" : \"bsc1312501_07b_07\", \"由{name_1}{name_2}以<color=#FF0000>木</color>行功体攻击凌云！\"} ",
+      "Next": 1531,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1533,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bsc1312501_07b_07\", 1} ",
+      "Next": 1306,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1534,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 1535,
+      "Prallel": -1,
+      "Child": [
+        1535
+      ]
+    },
+    {
+      "Index": 1535,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 1537,
+      "Prallel": -1,
+      "Child": [
+        1537,
+        1536,
+        1538,
+        1539,
+        1542,
+        1540,
+        1541,
+        1543,
+        1544,
+        1545,
+        1546,
+        1547,
+        1548,
+        1549,
+        1550,
+        1551,
+        1552,
+        1553,
+        1554,
+        1555,
+        1556
+      ]
+    },
+    {
+      "Index": 1536,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1312501_07a_21001dead\", \"凌云是否已死亡\"} ",
+      "Next": 1538,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1537,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 3, \"in21001\"} ",
+      "Next": 1536,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1538,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 1539,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1539,
+      "Node": "{ \"BattleResultTalk\" : \"t1312507_105\"} ",
+      "Next": 1542,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1540,
+      "Node": "{ \"BattleResultTalk\" : \"t1312507_113\"} ",
+      "Next": 1541,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1541,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in21001\", \"\", True} ",
+      "Next": 1543,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1542,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 1540,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1543,
+      "Node": "{ \"BattleResultUnitHP\" : 0, 0, \"in21001\"} ",
+      "Next": 1544,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1544,
+      "Node": "{ \"BattleResultWaitAction\" : 1.00000} ",
+      "Next": 1545,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1545,
+      "Node": "{ \"BattleResultTalk\" : \"t1312507_123\"} ",
+      "Next": 1546,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1546,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in21002\", \"\", False} ",
+      "Next": 1547,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1547,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 1548,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1548,
+      "Node": "{ \"BattleResultTalk\" : \"t1312507_124\"} ",
+      "Next": 1549,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1549,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in21002\", \"\", False} ",
+      "Next": 1550,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1550,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 1551,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1551,
+      "Node": "{ \"BattleResultTalk\" : \"t1312507_126\"} ",
+      "Next": 1552,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1552,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in21002\", \"\", True} ",
+      "Next": 1553,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1553,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in21002\", \"\", False} ",
+      "Next": 1554,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1554,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1312501_07a_20\", 0, 10, \"凌云复活事件进程：以木生火\"} ",
+      "Next": 1555,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1555,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1312501_07a_21001\", 0, 1, \"凌云阵亡\"} ",
+      "Next": 1556,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1556,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1312501_07a_21001dead\", 0, 1, \"凌云阵亡\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1557,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1312501_07a_21001dead\", \"凌云是否已死亡\"} ",
+      "Next": 1268,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1558,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1312501_07a_21001dead\", 0, 1, \"凌云阵亡\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1559,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in21001\", \"bt1312501_07_buff_HpLock01\", True} ",
+      "Next": 805,
       "Prallel": -1,
       "Child": []
     }

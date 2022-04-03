@@ -8,11 +8,11 @@
     },
     {
       "Node": "{ \"SetFlagAction\" : 0, 1, \"fe1010306_2_01\"} ",
-      "Next": 2,
+      "Next": 28,
       "Prallel": -1
     },
     {
-      "Node": "{ \"LoadScenesAction\" : \"S0101\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0, \"\"} ",
+      "Node": "{ \"LoadScenesAction\" : \"S0101\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0, \"\", 1.00000} ",
       "Next": 4,
       "Prallel": -1
     },
@@ -139,6 +139,16 @@
     {
       "Node": "{ \"PlayerSimpleTransformAction\" : True, { 413.26500, 29.71350, 383.64000} , 2.00000, True, { 0.00000, 48.21611, 0.00000} } ",
       "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ChangeCharacterProtraitAndModel\" : \"in05404\", True, \"ar0706\", False, \"\"} ",
+      "Next": 29,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.10000} ",
+      "Next": 2,
       "Prallel": -1
     }
   ],
