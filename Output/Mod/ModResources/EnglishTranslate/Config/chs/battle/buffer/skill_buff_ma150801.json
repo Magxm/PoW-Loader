@@ -1,2 +1,1 @@
 skill_buff_ma150801	Pass on the Good Will	SelfHP less than 50%, additional Self and the target 2 heavy Regeneration [Every roundHP +6%, Lasts2Round]			None	0	0	{ "BufferRootNode" : [ { "BufferEventNode" : 150, [ { "BufferSequenceNode" : [ { "BufferAttackCondition" } , { "BufferSelfHPCondition" : 2, 50, False} , { "AttacherAddBuffAction" : "buff0000_regeneration00", 2} , { "DefenderAddBuffAction" : "buff0000_regeneration00", 2}  ]}  ]}  ]} 
-
