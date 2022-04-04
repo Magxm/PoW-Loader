@@ -215,7 +215,7 @@ namespace PoW_Tool_SheetUtilities.Handler.BufferAssets
                 string content = File.ReadAllText(bufferFilePathTmp);
 
                 string[] data = content.Split('\t');
-                data[data.Length - 1] = data[data.Length - 1].Remove('\r').Remove('\n');
+                data[data.Length - 1] = data[data.Length - 1].Replace("\r", "").Replace("\n", "");
 
                 BufferAsset entry;
                 if (entries.ContainsKey(bufferFilePath))

@@ -14,8 +14,8 @@ namespace PoW_Tool_SheetUtilities
     {
         private static readonly List<IFileHandler> _Handlers = new List<IFileHandler>()
         {
-        new AdjustmentAssetHandler(),
         new BufferAssetHandler(),
+        new AdjustmentAssetHandler(),
         new BattleAssetHandler(),
         new CinameticAssetHandler(),
         new NoteDescriptionAssetHandler(),
