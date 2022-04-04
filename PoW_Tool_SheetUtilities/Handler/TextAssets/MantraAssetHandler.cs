@@ -53,27 +53,27 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                 },
                 new AssetVariableDefinition()
                 {
-                    Name = "Text1",
+                    Name = "MantraRunEffectDescription",
                     VariableType = AssetVariableType.Translate
                 },
                 new AssetVariableDefinition()
                 {
-                    Name = "Text2",
+                    Name = "MantraPracticeEffectDescription",
                     VariableType = AssetVariableType.Translate
                 },
                 new AssetVariableDefinition()
                 {
-                    Name = "Effects",
+                    Name = "MantraPropertyEffects",
                     VariableType = AssetVariableType.NoTranslate
                 },
                 new AssetVariableDefinition()
                 {
-                    Name = "Relations",
+                    Name = "BufferEffects",
                     VariableType = AssetVariableType.NoTranslate
                 },
                 new AssetVariableDefinition()
                 {
-                    Name = "Effects",
+                    Name = "LevelUpRewards",
                     VariableType = AssetVariableType.NoTranslate
                 },
             };

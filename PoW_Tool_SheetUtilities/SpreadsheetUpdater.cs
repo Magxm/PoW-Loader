@@ -14,6 +14,7 @@ namespace PoW_Tool_SheetUtilities
     {
         private static readonly List<IFileHandler> _Handlers = new List<IFileHandler>()
         {
+        new MantraAssetHandler(),
         new BufferAssetHandler(),
         new AdjustmentAssetHandler(),
         new BattleAssetHandler(),
@@ -43,7 +44,6 @@ namespace PoW_Tool_SheetUtilities
         new NpcAssetHandler(),
         new CharacterInfoAssetHandler(),
         new BattleAreaAssetHandler(),
-        new MantraAssetHandler(),
         new AchievementAssetHandler(),
         new AlchemyAssetHandler(),
         new SkillAssetHandler(),
