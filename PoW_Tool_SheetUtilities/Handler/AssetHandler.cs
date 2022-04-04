@@ -667,8 +667,13 @@ namespace PoW_Tool_SheetUtilities.Handler
             return requests;
         }
 
-        public void AppendToFile(StreamWriter sw, AssetEntry thisEntry)
+        public void AppendToFile(StreamWriter sw, AssetEntry thisEntry, bool needNewLine)
         {
+            if (needNewLine)
+            {
+                sw.Write('\n');
+            }
+
             for (int i = 0; i < VariableDefinitions.Count; i++)
             {
                 if (i > 0)
@@ -677,8 +682,6 @@ namespace PoW_Tool_SheetUtilities.Handler
                 }
                 Variables[i].AppendToFile(sw);
             }
-
-            sw.Write('\r');
         }
 
         public void CalculateTranslationStats(SheetCellWithColor[] rowRaw, ref List<TranslationStatEntry> stats)
@@ -724,11 +727,13 @@ namespace PoW_Tool_SheetUtilities.Handler
 
             if (values != null && values.Count > 0)
             {
+                bool first = true;
                 foreach (var row in values)
                 {
                     AssetEntry thisEntry = new AssetEntry(VariableDefinitions);
                     thisEntry.PopulateBySheetRow(row);
-                    thisEntry.AppendToFile(sw, thisEntry);
+                    thisEntry.AppendToFile(sw, thisEntry, !first);
+                    first = false;
                 }
             }
 
@@ -827,7 +832,7 @@ namespace PoW_Tool_SheetUtilities.Handler
                 {
                     Console.ForegroundColor = ConsoleColor.Red;
                     Console.WriteLine("Unreferenced Entry " + aeE.Key + " in Row " + (ae.Row + 1));
-                    Console.ForegroundColor = ConsoleColor.White;   
+                    Console.ForegroundColor = ConsoleColor.White;
                 }
             }
 
