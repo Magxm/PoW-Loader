@@ -667,13 +667,8 @@ namespace PoW_Tool_SheetUtilities.Handler
             return requests;
         }
 
-        public void AppendToFile(StreamWriter sw, AssetEntry thisEntry, bool needNewLine)
+        public void AppendToFile(StreamWriter sw, AssetEntry thisEntry)
         {
-            if (needNewLine)
-            {
-                sw.Write('\n');
-            }
-
             for (int i = 0; i < VariableDefinitions.Count; i++)
             {
                 if (i > 0)
@@ -682,6 +677,9 @@ namespace PoW_Tool_SheetUtilities.Handler
                 }
                 Variables[i].AppendToFile(sw);
             }
+
+            sw.Write('\r');
+            sw.Write('\n');
         }
 
         public void CalculateTranslationStats(SheetCellWithColor[] rowRaw, ref List<TranslationStatEntry> stats)
@@ -727,13 +725,11 @@ namespace PoW_Tool_SheetUtilities.Handler
 
             if (values != null && values.Count > 0)
             {
-                bool first = true;
                 foreach (var row in values)
                 {
                     AssetEntry thisEntry = new AssetEntry(VariableDefinitions);
                     thisEntry.PopulateBySheetRow(row);
-                    thisEntry.AppendToFile(sw, thisEntry, !first);
-                    first = false;
+                    thisEntry.AppendToFile(sw, thisEntry);
                 }
             }
 

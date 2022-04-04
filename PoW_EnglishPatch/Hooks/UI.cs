@@ -34,6 +34,27 @@ namespace EnglishPatch.Hooks
         }
     }
 
+    [HarmonyPatch(typeof(UICommission), "Show")]
+    public class UICommission_Show_Hook
+    {
+        public static void Postfix(ref UICommission __instance)
+        {
+            //Adjusting some elements to make the UI less scuffed (bc English texts are longer)
+            RectTransform dynamicCanvas = (RectTransform)__instance.transform.Find("DynamicCanvas");
+            RectTransform proclamation = (RectTransform)dynamicCanvas.transform.Find("Proclamation");
+            RectTransform limit = (RectTransform)proclamation.transform.Find("Limit");
+
+            //Updating the Credits Button Text
+            RectTransform limit_Icon = (RectTransform)limit.Find("Limit_Icon");
+            RectTransform limit_Title = (RectTransform)limit.Find("Limit_Title");
+            RectTransform limit_Content = (RectTransform)limit.Find("Limit_Content");
+
+            limit_Icon.localPosition = new Vector3(-295f, -384f, 0);
+            limit_Title.localPosition = new Vector3(-170f, -384f, 0);
+            limit_Content.localPosition = new Vector3(-11.37f, -385.82f, 0);
+        }
+    }
+
     [HarmonyPatch(typeof(WGStringTable), "UpdateString")]
     public class WGStringTable_UpdateString_Hook
     {

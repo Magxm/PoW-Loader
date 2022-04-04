@@ -30,13 +30,8 @@ namespace PoW_Tool_SheetUtilities.Handler.BufferAssets
             }
         }
 
-        public new void AppendToFile(StreamWriter sw, AssetEntry thisEntry, bool needNewLine)
+        public new void AppendToFile(StreamWriter sw, AssetEntry thisEntry)
         {
-            if (needNewLine)
-            {
-                sw.Write('\n');
-            }
-
             for (int i = 1; i < VariableDefinitions.Count; i++)
             {
                 if (i > 1)
@@ -45,6 +40,9 @@ namespace PoW_Tool_SheetUtilities.Handler.BufferAssets
                 }
                 Variables[i].AppendToFile(sw);
             }
+
+            sw.Write('\r');
+            sw.Write('\n');
         }
     }
 
@@ -142,15 +140,13 @@ namespace PoW_Tool_SheetUtilities.Handler.BufferAssets
 
             if (values != null && values.Count > 0)
             {
-                bool first = true;
                 foreach (var row in values)
                 {
                     BufferAsset thisEntry = new BufferAsset(VariableDefinitions);
                     thisEntry.PopulateBySheetRow(row);
 
                     //Writing to merge file
-                    thisEntry.AppendToFile(mergeFileWriter, thisEntry, !first);
-                    first = false;
+                    thisEntry.AppendToFile(mergeFileWriter, thisEntry);
 
                     //Writting to .json file
                     string fileName = thisEntry.Variables[0].OriginalValue;
@@ -163,7 +159,7 @@ namespace PoW_Tool_SheetUtilities.Handler.BufferAssets
 
                     File.WriteAllText(filePath, "");
                     StreamWriter scheduleFileWriter = File.AppendText(filePath);
-                    thisEntry.AppendToFile(scheduleFileWriter, thisEntry, false);
+                    thisEntry.AppendToFile(scheduleFileWriter, thisEntry);
                     scheduleFileWriter.Close();
                 }
             }
@@ -219,6 +215,8 @@ namespace PoW_Tool_SheetUtilities.Handler.BufferAssets
                 string content = File.ReadAllText(bufferFilePathTmp);
 
                 string[] data = content.Split('\t');
+                data[data.Length - 1] = data[data.Length - 1].Remove('\r').Remove('\n');
+
                 BufferAsset entry;
                 if (entries.ContainsKey(bufferFilePath))
                 {

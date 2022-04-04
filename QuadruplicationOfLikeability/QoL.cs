@@ -1,9 +1,13 @@
 ﻿using System.IO;
+
 using BepInEx;
 using BepInEx.Bootstrap;
 using BepInEx.Configuration;
+
 using HarmonyLib;
+
 using ModAPI;
+
 using UnityEngine;
 
 namespace QoL
@@ -96,7 +100,7 @@ namespace QoL
 
         public void Unload()
         {
-            _HM.UnpatchAll("QoL");
+            _HM.UnpatchSelf();
         }
 
         private void Awake()
@@ -105,7 +109,5 @@ namespace QoL
             //Adding it to ModAPI list
             ModAPI.ModAPI.GetInstance().AddMod(this);
         }
-
-
     }
 }
