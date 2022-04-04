@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 using PoW_Tool_SheetUtilities.Handler;
@@ -200,9 +201,25 @@ namespace PoW_Tool_SheetUtilities
             }
         }
 
+        private static string TestRegexPattern = @"{ \\""BattleResultAddSecondaryGoal\\"" : \\"".*\\""}";
+        private static Regex TestRegex = new Regex(TestRegexPattern);
+
+        private static void TestRegexInput()
+        {
+            string testText = File.ReadAllText("RegexTestInput.txt");
+
+            var m = TestRegex.Match(testText);
+            while (m.Success)
+            {
+                Console.WriteLine(m.ToString());
+                m = m.NextMatch();
+            }
+        }
+
         private static void Main(string[] args)
         {
-            Console.OutputEncoding = System.Text.Encoding.Unicode;
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+            //TestRegexInput();
 
             Console.WriteLine("Do you want to update the spreadsheets after a game update or do you want to build the English Mod data from the spreadsheets?");
             Console.WriteLine("     1: Update after game update");
