@@ -59,9 +59,9 @@
         20,
         22,
         21,
-        284,
-        285,
-        277,
+        278,
+        279,
+        271,
         24,
         23,
         25,
@@ -78,11 +78,11 @@
         36,
         37,
         38,
-        287,
+        281,
         39,
         40,
         41,
-        286,
+        280,
         42,
         43,
         46,
@@ -106,12 +106,12 @@
         62,
         63,
         66,
-        288,
+        282,
         67,
         64,
         65,
-        282,
-        283,
+        276,
+        277,
         68,
         69,
         70
@@ -232,7 +232,7 @@
     {
       "Index": 21,
       "Node": "{ \"BattleResultAddUnit\" : \"in0201\", 2, 101202101, 1.00000, 0.00000} ",
-      "Next": 284,
+      "Next": 278,
       "Prallel": -1,
       "Child": []
     },
@@ -351,7 +351,7 @@
     {
       "Index": 38,
       "Node": "{ \"BattleResultAddUnit\" : \"in06041\", 1, 106207101, 1.00000, 0.00000} ",
-      "Next": 287,
+      "Next": 281,
       "Prallel": -1,
       "Child": []
     },
@@ -372,7 +372,7 @@
     {
       "Index": 41,
       "Node": "{ \"BattleResultrReplaceUnit\" : \"in0201\", \"in05599a\", 1.00000, 0.00000} ",
-      "Next": 286,
+      "Next": 280,
       "Prallel": -1,
       "Child": []
     },
@@ -540,14 +540,14 @@
     {
       "Index": 65,
       "Node": "{ \"BattleResultTalk\" : \"t1306504_079\"} ",
-      "Next": 282,
+      "Next": 276,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 66,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", True} ",
-      "Next": 288,
+      "Next": 282,
       "Prallel": -1,
       "Child": []
     },
@@ -574,7 +574,7 @@
     },
     {
       "Index": 70,
-      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1}{name_2}或Shi Kun is defeated\"} ",
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1}{name_2} or Shi Kun was killed in action.\"} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []
@@ -591,15 +591,18 @@
     {
       "Index": 72,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
-      "Next": 75,
+      "Next": 310,
       "Prallel": -1,
       "Child": [
+        310,
         75,
-        76,
+        316,
         73,
         74,
+        76,
+        306,
         77,
-        78
+        314
       ]
     },
     {
@@ -612,157 +615,163 @@
     {
       "Index": 74,
       "Node": "{ \"BattleResultTalk\" : \"t1306504_100\"} ",
-      "Next": 77,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 75,
-      "Node": "{ \"BattleAttackUnitCondition\" : \"Player\", \"in06041\"} ",
       "Next": 76,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 76,
+      "Index": 75,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1306501_03a_00\", \"主角与宫紫痕是否交手\"} ",
-      "Next": 73,
+      "Next": 316,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 76,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", True} ",
+      "Next": 306,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 77,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", True} ",
-      "Next": 78,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1306501_03a_00\", 0, 1, \"主角与宫紫痕是否交手\"} ",
+      "Next": 314,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 78,
-      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1306501_03a_00\", 0, 1, \"主角与宫紫痕是否交手\"} ",
-      "Next": -1,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 79,
       "Prallel": -1,
-      "Child": []
+      "Child": [
+        79
+      ]
     },
     {
       "Index": 79,
-      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
-      "Next": 80,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 311,
       "Prallel": -1,
       "Child": [
-        80
+        311,
+        82,
+        317,
+        80,
+        81,
+        83,
+        307,
+        84,
+        315
       ]
     },
     {
       "Index": 80,
-      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 81,
-      "Prallel": -1,
-      "Child": [
-        81,
-        84,
-        82,
-        83,
-        85,
-        86
-      ]
-    },
-    {
-      "Index": 81,
-      "Node": "{ \"BattleAttackUnitCondition\" : \"in06041\", \"Player\"} ",
-      "Next": 84,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 82,
-      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Index": 81,
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_100\"} ",
       "Next": 83,
       "Prallel": -1,
       "Child": []
     },
     {
+      "Index": 82,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1306501_03a_00\", \"主角与宫紫痕是否交手\"} ",
+      "Next": 317,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
       "Index": 83,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_100\"} ",
-      "Next": 85,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", True} ",
+      "Next": 307,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 84,
-      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1306501_03a_00\", \"主角与宫紫痕是否交手\"} ",
-      "Next": 82,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1306501_03a_00\", 0, 1, \"主角与宫紫痕是否交手\"} ",
+      "Next": 315,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 85,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", True} ",
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
       "Next": 86,
       "Prallel": -1,
-      "Child": []
+      "Child": [
+        86
+      ]
     },
     {
       "Index": 86,
-      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1306501_03a_00\", 0, 1, \"主角与宫紫痕是否交手\"} ",
-      "Next": -1,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 313,
+      "Prallel": -1,
+      "Child": [
+        313,
+        322,
+        318,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        308,
+        107,
+        320
+      ]
+    },
+    {
+      "Index": 87,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 88,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 87,
-      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
-      "Next": 88,
-      "Prallel": -1,
-      "Child": [
-        88
-      ]
-    },
-    {
       "Index": 88,
-      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_113\"} ",
       "Next": 89,
       "Prallel": -1,
-      "Child": [
-        89,
-        92,
-        90,
-        91,
-        93,
-        94,
-        95,
-        96,
-        97,
-        98,
-        99,
-        113
-      ]
+      "Child": []
     },
     {
       "Index": 89,
-      "Node": "{ \"BattleAttackUnitCondition\" : \"in0105\", \"in06041\"} ",
-      "Next": 92,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0105\", \"\", True} ",
+      "Next": 90,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 90,
-      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_114\"} ",
       "Next": 91,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 91,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_113\"} ",
-      "Next": 93,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", False} ",
+      "Next": 92,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 92,
-      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1306501_03a_01\", \"石崑与宫紫痕是否交手\"} ",
-      "Next": 90,
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_129\"} ",
+      "Next": 93,
       "Prallel": -1,
       "Child": []
     },
@@ -775,522 +784,543 @@
     },
     {
       "Index": 94,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_114\"} ",
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_133\"} ",
       "Next": 95,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 95,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", False} ",
-      "Next": 96,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", True} ",
+      "Next": 308,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 96,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_129\"} ",
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
       "Next": 97,
       "Prallel": -1,
-      "Child": []
+      "Child": [
+        97
+      ]
     },
     {
       "Index": 97,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in0105\", \"\", True} ",
-      "Next": 98,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 312,
       "Prallel": -1,
-      "Child": []
+      "Child": [
+        312,
+        323,
+        319,
+        98,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        106,
+        309,
+        108,
+        321
+      ]
     },
     {
       "Index": 98,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_133\"} ",
+      "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 99,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 99,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", True} ",
-      "Next": 113,
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_113\"} ",
+      "Next": 100,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 100,
-      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0105\", \"\", True} ",
       "Next": 101,
       "Prallel": -1,
-      "Child": [
-        101
-      ]
+      "Child": []
     },
     {
       "Index": 101,
-      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_114\"} ",
       "Next": 102,
       "Prallel": -1,
-      "Child": [
-        102,
-        103,
-        104,
-        105,
-        106,
-        107,
-        108,
-        109,
-        110,
-        111,
-        112,
-        114
-      ]
+      "Child": []
     },
     {
       "Index": 102,
-      "Node": "{ \"BattleAttackUnitCondition\" : \"in06041\", \"in0105\"} ",
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", False} ",
       "Next": 103,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 103,
-      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1306501_03a_01\", \"石崑与宫紫痕是否交手\"} ",
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_129\"} ",
       "Next": 104,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 104,
-      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0105\", \"\", True} ",
       "Next": 105,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 105,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_113\"} ",
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_133\"} ",
       "Next": 106,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 106,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in0105\", \"\", True} ",
-      "Next": 107,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", True} ",
+      "Next": 309,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 107,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_114\"} ",
-      "Next": 108,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1306501_03a_01\", 0, 1, \"石崑与宫紫痕是否交手\"} ",
+      "Next": 320,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 108,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", False} ",
-      "Next": 109,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1306501_03a_01\", 0, 1, \"石崑与宫紫痕是否交手\"} ",
+      "Next": 321,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 109,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_129\"} ",
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
       "Next": 110,
       "Prallel": -1,
-      "Child": []
+      "Child": [
+        110
+      ]
     },
     {
       "Index": 110,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in0105\", \"\", True} ",
-      "Next": 111,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 114,
       "Prallel": -1,
-      "Child": []
+      "Child": [
+        114,
+        111,
+        115,
+        112,
+        113,
+        116,
+        118,
+        117,
+        120,
+        119,
+        122,
+        121,
+        123
+      ]
     },
     {
       "Index": 111,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_133\"} ",
-      "Next": 112,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1306501_03a_01\", \"石崑与宫紫痕是否交手\"} ",
+      "Next": 115,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 112,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", True} ",
-      "Next": 114,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 113,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 113,
-      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1306501_03a_01\", 0, 1, \"石崑与宫紫痕是否交手\"} ",
-      "Next": -1,
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_135\"} ",
+      "Next": 116,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 114,
-      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1306501_03a_01\", 0, 1, \"石崑与宫紫痕是否交手\"} ",
-      "Next": -1,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1306501_03a_00\", \"主角与宫紫痕是否交手\"} ",
+      "Next": 111,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 115,
-      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
-      "Next": 116,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 55, \"in06041\"} ",
+      "Next": 112,
       "Prallel": -1,
-      "Child": [
-        116
-      ]
+      "Child": []
     },
     {
       "Index": 116,
-      "Node": "{ \"StepByStepNode\" : [ ]} ",
-      "Next": 120,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", False} ",
+      "Next": 118,
       "Prallel": -1,
-      "Child": [
-        120,
-        117,
-        121,
-        118,
-        119,
-        122,
-        124,
-        123,
-        126,
-        125,
-        128,
-        127,
-        129
-      ]
+      "Child": []
     },
     {
       "Index": 117,
-      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1306501_03a_01\", \"石崑与宫紫痕是否交手\"} ",
-      "Next": 121,
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_138\"} ",
+      "Next": 120,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 118,
-      "Node": "{ \"ExecuteOnceNode\" } ",
-      "Next": 119,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 117,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 119,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_135\"} ",
+      "Node": "{ \"BattleResultUnitHP\" : 0, 100, \"in06041\"} ",
       "Next": 122,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 120,
-      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1306501_03a_00\", \"主角与宫紫痕是否交手\"} ",
-      "Next": 117,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", True} ",
+      "Next": 119,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 121,
-      "Node": "{ \"BattleFactorTargetHp\" : 2, 55, \"in06041\"} ",
-      "Next": 118,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 122,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", False} ",
-      "Next": 124,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 123,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_138\"} ",
-      "Next": 126,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 124,
-      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_142\"} ",
       "Next": 123,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 125,
-      "Node": "{ \"BattleResultUnitHP\" : 0, 100, \"in06041\"} ",
-      "Next": 128,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 126,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", True} ",
-      "Next": 125,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 127,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_142\"} ",
-      "Next": 129,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 128,
+      "Index": 122,
       "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
-      "Next": 127,
+      "Next": 121,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 129,
+      "Index": 123,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1306501_03a_10\", 0, 1, \"战斗进入第二阶段\"} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 130,
+      "Index": 124,
       "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
-      "Next": 131,
+      "Next": 125,
       "Prallel": -1,
       "Child": [
-        131
+        125
       ]
     },
     {
-      "Index": 131,
+      "Index": 125,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
-      "Next": 132,
+      "Next": 126,
       "Prallel": -1,
       "Child": [
+        126,
+        129,
+        127,
+        128,
+        130,
         132,
-        135,
-        133,
+        131,
         134,
+        133,
+        135,
         136,
-        138,
         137,
+        138,
         140,
-        139,
         141,
+        139,
         142,
         143,
-        144,
         146,
-        147,
         145,
+        144,
+        283,
+        147,
         148,
-        149,
-        152,
-        151,
-        150,
-        289,
-        153,
-        154,
-        311,
-        302
+        305,
+        296
       ]
     },
     {
-      "Index": 132,
+      "Index": 126,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1306501_03a_10\", \"战斗已进入第二阶段\"} ",
-      "Next": 135,
+      "Next": 129,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 133,
+      "Index": 127,
       "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 128,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 128,
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_144\"} ",
+      "Next": 130,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 129,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 55, \"in06041\"} ",
+      "Next": 127,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 130,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", False} ",
+      "Next": 132,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 131,
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_145\"} ",
       "Next": 134,
       "Prallel": -1,
       "Child": []
     },
     {
+      "Index": 132,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 131,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 133,
+      "Node": "{ \"BattleResultUnitHP\" : 0, 100, \"in06041\"} ",
+      "Next": 135,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
       "Index": 134,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_144\"} ",
-      "Next": 136,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", True} ",
+      "Next": 133,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 135,
-      "Node": "{ \"BattleFactorTargetHp\" : 2, 55, \"in06041\"} ",
-      "Next": 133,
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_147\"} ",
+      "Next": 136,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 136,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", False} ",
-      "Next": 138,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 137,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_145\"} ",
-      "Next": 140,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 138,
-      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
       "Next": 137,
       "Prallel": -1,
       "Child": []
     },
     {
+      "Index": 137,
+      "Node": "{ \"BattleResultUnitMP\" : 2, 500, \"in06041\"} ",
+      "Next": 138,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 138,
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_150\"} ",
+      "Next": 140,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
       "Index": 139,
-      "Node": "{ \"BattleResultUnitHP\" : 0, 100, \"in06041\"} ",
-      "Next": 141,
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_156\"} ",
+      "Next": 142,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 140,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", True} ",
-      "Next": 139,
+      "Next": 141,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 141,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_147\"} ",
-      "Next": 142,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 139,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 142,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", False} ",
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", True} ",
       "Next": 143,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 143,
-      "Node": "{ \"BattleResultUnitMP\" : 2, 500, \"in06041\"} ",
-      "Next": 144,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 144,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_150\"} ",
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_158\"} ",
       "Next": 146,
       "Prallel": -1,
       "Child": []
     },
     {
+      "Index": 144,
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_162\"} ",
+      "Next": 283,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
       "Index": 145,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_156\"} ",
-      "Next": 148,
+      "Node": "{ \"BattleResultWaitAction\" : 1.00000} ",
+      "Next": 144,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 146,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", True} ",
-      "Next": 147,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 147,
-      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_battle_11.wav\", 14.00000, True} ",
       "Next": 145,
       "Prallel": -1,
       "Child": []
     },
     {
+      "Index": 147,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Gong Zihen!\"} ",
+      "Next": 148,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
       "Index": 148,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", True} ",
-      "Next": 149,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1306501_03a_20\", 0, 1, \"战斗进入第三阶段\"} ",
+      "Next": 305,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 149,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_158\"} ",
-      "Next": 152,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 150,
       "Prallel": -1,
-      "Child": []
+      "Child": [
+        150
+      ]
     },
     {
       "Index": 150,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_162\"} ",
-      "Next": 289,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 288,
       "Prallel": -1,
-      "Child": []
+      "Child": [
+        288,
+        284,
+        292,
+        153,
+        154,
+        165,
+        167,
+        166,
+        169,
+        168,
+        170,
+        171,
+        272,
+        297,
+        301
+      ]
     },
     {
       "Index": 151,
-      "Node": "{ \"BattleResultWaitAction\" : 1.00000} ",
-      "Next": 150,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 152,
       "Prallel": -1,
-      "Child": []
+      "Child": [
+        152
+      ]
     },
     {
       "Index": 152,
-      "Node": "{ \"BattleResultChangeMusic\" : \"In_battle_11.wav\", 14.00000, True} ",
-      "Next": 151,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 289,
       "Prallel": -1,
-      "Child": []
+      "Child": [
+        289,
+        285,
+        293,
+        155,
+        156,
+        172,
+        174,
+        173,
+        176,
+        175,
+        177,
+        178,
+        273,
+        298,
+        302
+      ]
     },
     {
       "Index": 153,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Gong Zihen!\"} ",
+      "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 154,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 154,
-      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1306501_03a_20\", 0, 1, \"战斗进入第三阶段\"} ",
-      "Next": 311,
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_200\"} ",
+      "Next": 165,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 155,
-      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 156,
       "Prallel": -1,
-      "Child": [
-        156
-      ]
+      "Child": []
     },
     {
       "Index": 156,
-      "Node": "{ \"StepByStepNode\" : [ ]} ",
-      "Next": 294,
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_200\"} ",
+      "Next": 172,
       "Prallel": -1,
-      "Child": [
-        294,
-        290,
-        298,
-        159,
-        160,
-        171,
-        173,
-        172,
-        175,
-        174,
-        176,
-        177,
-        278,
-        303,
-        307
-      ]
+      "Child": []
     },
     {
       "Index": 157,
@@ -1304,404 +1334,350 @@
     {
       "Index": 158,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
-      "Next": 295,
+      "Next": 290,
       "Prallel": -1,
       "Child": [
+        290,
+        286,
         295,
-        291,
-        299,
         161,
-        162,
-        178,
-        180,
+        163,
         179,
-        182,
+        180,
         181,
         183,
+        182,
+        185,
         184,
-        279,
-        304,
-        308
+        186,
+        187,
+        274,
+        300,
+        303
       ]
     },
     {
       "Index": 159,
-      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 160,
       "Prallel": -1,
-      "Child": []
+      "Child": [
+        160
+      ]
     },
     {
       "Index": 160,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_200\"} ",
-      "Next": 171,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 291,
       "Prallel": -1,
-      "Child": []
+      "Child": [
+        291,
+        287,
+        294,
+        162,
+        164,
+        188,
+        189,
+        190,
+        191,
+        192,
+        194,
+        193,
+        195,
+        196,
+        275,
+        299,
+        304
+      ]
     },
     {
       "Index": 161,
       "Node": "{ \"ExecuteOnceNode\" } ",
-      "Next": 162,
+      "Next": 163,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 162,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_200\"} ",
-      "Next": 178,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 164,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 163,
-      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
-      "Next": 164,
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_217\"} ",
+      "Next": 179,
       "Prallel": -1,
-      "Child": [
-        164
-      ]
+      "Child": []
     },
     {
       "Index": 164,
-      "Node": "{ \"StepByStepNode\" : [ ]} ",
-      "Next": 296,
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_217\"} ",
+      "Next": 188,
       "Prallel": -1,
-      "Child": [
-        296,
-        292,
-        301,
-        167,
-        169,
-        185,
-        186,
-        187,
-        189,
-        188,
-        191,
-        190,
-        192,
-        193,
-        280,
-        306,
-        309
-      ]
+      "Child": []
     },
     {
       "Index": 165,
-      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
-      "Next": 166,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"\", True} ",
+      "Next": 167,
       "Prallel": -1,
-      "Child": [
-        166
-      ]
+      "Child": []
     },
     {
       "Index": 166,
-      "Node": "{ \"StepByStepNode\" : [ ]} ",
-      "Next": 297,
-      "Prallel": -1,
-      "Child": [
-        297,
-        293,
-        300,
-        168,
-        170,
-        194,
-        195,
-        196,
-        197,
-        198,
-        200,
-        199,
-        201,
-        202,
-        281,
-        305,
-        310
-      ]
-    },
-    {
-      "Index": 167,
-      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_205\"} ",
       "Next": 169,
       "Prallel": -1,
       "Child": []
     },
     {
+      "Index": 167,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 166,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
       "Index": 168,
-      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_213\"} ",
       "Next": 170,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 169,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_217\"} ",
-      "Next": 185,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 168,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 170,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_217\"} ",
-      "Next": 194,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", False} ",
+      "Next": 171,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 171,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"\", True} ",
-      "Next": 173,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1306501_03a_21\", 0, 1, \"主角与宫紫痕是否交手(2)\"} ",
+      "Next": 272,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 172,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_205\"} ",
-      "Next": 175,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 173,
-      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
-      "Next": 172,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 174,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_213\"} ",
-      "Next": 176,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 175,
-      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"\", True} ",
       "Next": 174,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 176,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", False} ",
+      "Index": 173,
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_205\"} ",
+      "Next": 176,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 174,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 173,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 175,
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_213\"} ",
       "Next": 177,
       "Prallel": -1,
       "Child": []
     },
     {
+      "Index": 176,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 175,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
       "Index": 177,
-      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1306501_03a_21\", 0, 1, \"主角与宫紫痕是否交手(2)\"} ",
-      "Next": 278,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", False} ",
+      "Next": 178,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 178,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"\", True} ",
-      "Next": 180,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1306501_03a_21\", 0, 1, \"主角与宫紫痕是否交手(2)\"} ",
+      "Next": 273,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 179,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_205\"} ",
-      "Next": 182,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", True} ",
+      "Next": 180,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 180,
-      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
-      "Next": 179,
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_223\"} ",
+      "Next": 181,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 181,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_213\"} ",
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0105\", \"\", False} ",
       "Next": 183,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 182,
-      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
-      "Next": 181,
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_224\"} ",
+      "Next": 185,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 183,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", False} ",
-      "Next": 184,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 182,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 184,
-      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1306501_03a_21\", 0, 1, \"主角与宫紫痕是否交手(2)\"} ",
-      "Next": 279,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 185,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", True} ",
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_229\"} ",
       "Next": 186,
       "Prallel": -1,
       "Child": []
     },
     {
+      "Index": 185,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 184,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
       "Index": 186,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_223\"} ",
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", False} ",
       "Next": 187,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 187,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in0105\", \"\", False} ",
-      "Next": 189,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1306501_03a_22\", 0, 1, \"石崑与宫紫痕是否交手(2)\"} ",
+      "Next": 274,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 188,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_224\"} ",
-      "Next": 191,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", True} ",
+      "Next": 189,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 189,
-      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
-      "Next": 188,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 190,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_229\"} ",
-      "Next": 192,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 191,
-      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_223\"} ",
       "Next": 190,
       "Prallel": -1,
       "Child": []
     },
     {
+      "Index": 190,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0105\", \"\", False} ",
+      "Next": 191,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 191,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 192,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
       "Index": 192,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", False} ",
-      "Next": 193,
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_224\"} ",
+      "Next": 194,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 193,
-      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1306501_03a_22\", 0, 1, \"石崑与宫紫痕是否交手(2)\"} ",
-      "Next": 280,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 194,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", True} ",
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_229\"} ",
       "Next": 195,
       "Prallel": -1,
       "Child": []
     },
     {
+      "Index": 194,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 193,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
       "Index": 195,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_223\"} ",
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", False} ",
       "Next": 196,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 196,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in0105\", \"\", False} ",
-      "Next": 197,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1306501_03a_22\", 0, 1, \"石崑与宫紫痕是否交手(2)\"} ",
+      "Next": 275,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 197,
-      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Node": "{ \"BattleEventNode\" : 510, 0, [ ]} ",
       "Next": 198,
       "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 198,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_224\"} ",
-      "Next": 200,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 199,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_229\"} ",
-      "Next": 201,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 200,
-      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
-      "Next": 199,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 201,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", False} ",
-      "Next": 202,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 202,
-      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1306501_03a_22\", 0, 1, \"石崑与宫紫痕是否交手(2)\"} ",
-      "Next": 281,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 203,
-      "Node": "{ \"BattleEventNode\" : 510, 0, [ ]} ",
-      "Next": 204,
-      "Prallel": -1,
       "Child": [
-        204
+        198
       ]
     },
     {
-      "Index": 204,
+      "Index": 198,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
-      "Next": 208,
+      "Next": 202,
       "Prallel": -1,
       "Child": [
-        208,
+        202,
+        199,
+        203,
+        200,
+        204,
         205,
-        209,
-        206,
-        210,
-        211,
+        201,
         207,
+        208,
+        206,
+        209,
+        210,
+        270,
+        212,
+        211,
         213,
         214,
-        212,
         215,
         216,
-        276,
-        218,
         217,
+        218,
         219,
         220,
         221,
@@ -1725,788 +1701,908 @@
         239,
         240,
         241,
-        242,
         243,
-        244,
         245,
+        244,
+        242,
         246,
         247,
-        249,
-        251,
-        250,
         248,
+        249,
+        250,
+        251,
+        257,
         252,
         253,
         254,
         255,
         256,
-        257,
-        263,
         258,
         259,
         260,
         261,
         262,
-        264,
+        263,
         265,
+        264,
         266,
         267,
-        268,
         269,
-        271,
-        270,
-        272,
-        273,
-        275,
-        274
+        268
       ]
     },
     {
-      "Index": 205,
+      "Index": 199,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1306501_03a_22\", \"石崑与宫紫痕是否交手(2)\"} ",
-      "Next": 209,
+      "Next": 203,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 206,
+      "Index": 200,
       "Node": "{ \"ExecuteOnceNode\" } ",
-      "Next": 210,
+      "Next": 204,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 207,
+      "Index": 201,
       "Node": "{ \"BattleResultTalk\" : \"t1306504_236\"} ",
-      "Next": 213,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 208,
-      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1306501_03a_21\", \"主角与宫紫痕是否交手(2)\"} ",
-      "Next": 205,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 209,
-      "Node": "{ \"BattleFactorTargetHp\" : 2, 15, \"in06041\"} ",
-      "Next": 206,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 210,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", False} ",
-      "Next": 211,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 211,
-      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
       "Next": 207,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 212,
+      "Index": 202,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1306501_03a_21\", \"主角与宫紫痕是否交手(2)\"} ",
+      "Next": 199,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 203,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 15, \"in06041\"} ",
+      "Next": 200,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 204,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", False} ",
+      "Next": 205,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 205,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 201,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 206,
       "Node": "{ \"BattleResultTalk\" : \"t1306504_237\"} ",
-      "Next": 215,
+      "Next": 209,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 207,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", False} ",
+      "Next": 208,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 208,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 206,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 209,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", False} ",
+      "Next": 210,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 210,
+      "Node": "{ \"BattleResultrReplaceUnit\" : \"in06041\", \"in05598a\", 1.00000, 0.00000} ",
+      "Next": 270,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 211,
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_239\"} ",
+      "Next": 213,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 212,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 211,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 213,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", False} ",
+      "Node": "{ \"BattleResultFadeOutMusic\" : 4.00000} ",
       "Next": 214,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 214,
-      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
-      "Next": 212,
+      "Node": "{ \"BattleResultPalySound\" : \"Wind01.ogg\", 0.80000} ",
+      "Next": 215,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 215,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in06041\", \"\", False} ",
+      "Node": "{ \"BattleResultWaitAction\" : 1.00000} ",
       "Next": 216,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 216,
-      "Node": "{ \"BattleResultrReplaceUnit\" : \"in06041\", \"in05598a\", 1.00000, 0.00000} ",
-      "Next": 276,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 217,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_239\"} ",
-      "Next": 219,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 218,
-      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_240\"} ",
       "Next": 217,
       "Prallel": -1,
       "Child": []
     },
     {
+      "Index": 217,
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Next": 218,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 218,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_mood_18.wav\", 2.00000, False} ",
+      "Next": 219,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
       "Index": 219,
-      "Node": "{ \"BattleResultFadeOutMusic\" : 4.00000} ",
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
       "Next": 220,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 220,
-      "Node": "{ \"BattleResultPalySound\" : \"Wind01.ogg\", 0.80000} ",
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_249\"} ",
       "Next": 221,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 221,
-      "Node": "{ \"BattleResultWaitAction\" : 1.00000} ",
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
       "Next": 222,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 222,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_240\"} ",
+      "Node": "{ \"BattleResultAddUnit\" : \"in0202\", 0, 201101200, 1.00000, 0.00000} ",
       "Next": 223,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 223,
-      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_300\"} ",
       "Next": 224,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 224,
-      "Node": "{ \"BattleResultChangeMusic\" : \"In_mood_18.wav\", 2.00000, False} ",
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
       "Next": 225,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 225,
-      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_305\"} ",
       "Next": 226,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 226,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_249\"} ",
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0202\", \"\", True} ",
       "Next": 227,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 227,
-      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
       "Next": 228,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 228,
-      "Node": "{ \"BattleResultAddUnit\" : \"in0202\", 0, 201101200, 1.00000, 0.00000} ",
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_308\"} ",
       "Next": 229,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 229,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_300\"} ",
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
       "Next": 230,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 230,
-      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Node": "{ \"BattleResultUnitToUnit\" : \"in0105\", \"in05598a\"} ",
       "Next": 231,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 231,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_305\"} ",
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
       "Next": 232,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 232,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in0202\", \"\", True} ",
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_312\"} ",
       "Next": 233,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 233,
-      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Node": "{ \"BattleResultFadeOutMusic\" : 0.50000} ",
       "Next": 234,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 234,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_308\"} ",
+      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
       "Next": 235,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 235,
-      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_323\"} ",
       "Next": 236,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 236,
-      "Node": "{ \"BattleResultUnitToUnit\" : \"in0105\", \"in05598a\"} ",
+      "Node": "{ \"BattleResultPalySound\" : \"skill_MA0701_a01\", 0.90000} ",
       "Next": 237,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 237,
-      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Node": "{ \"BattleResultWaitAction\" : 1.00000} ",
       "Next": 238,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 238,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_312\"} ",
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05598a\", \"\", False} ",
       "Next": 239,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 239,
-      "Node": "{ \"BattleResultFadeOutMusic\" : 0.50000} ",
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_325\"} ",
       "Next": 240,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 240,
-      "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
+      "Node": "{ \"BattleResultAddUnit\" : \"in21011\", 1, 201202103, 1.00000, 0.00000} ",
       "Next": 241,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 241,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_323\"} ",
-      "Next": 242,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 242,
-      "Node": "{ \"BattleResultPalySound\" : \"skill_MA0701_a01\", 0.90000} ",
+      "Node": "{ \"BattleResultUnitToUnit\" : \"in21011\", \"in05599a\"} ",
       "Next": 243,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 243,
-      "Node": "{ \"BattleResultWaitAction\" : 1.00000} ",
-      "Next": 244,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 244,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in05598a\", \"\", False} ",
-      "Next": 245,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 245,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_325\"} ",
+      "Index": 242,
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_328\"} ",
       "Next": 246,
       "Prallel": -1,
       "Child": []
     },
     {
+      "Index": 243,
+      "Node": "{ \"BattleResultPlayAction\" : \"in21011\", \"skill_MA0610_b02\", 0.00000} ",
+      "Next": 245,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 244,
+      "Node": "{ \"BattleResultPlayAction\" : \"in05599a\", \"m_single_block00\", 0.00000} ",
+      "Next": 242,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 245,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05599a\", \"\", False} ",
+      "Next": 244,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
       "Index": 246,
-      "Node": "{ \"BattleResultAddUnit\" : \"in21011\", 1, 201202103, 1.00000, 0.00000} ",
+      "Node": "{ \"BattleResultUnitToUnit\" : \"in0202\", \"in21011\"} ",
       "Next": 247,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 247,
-      "Node": "{ \"BattleResultUnitToUnit\" : \"in21011\", \"in05599a\"} ",
-      "Next": 249,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 248,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_328\"} ",
-      "Next": 252,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 249,
-      "Node": "{ \"BattleResultPlayAction\" : \"in21011\", \"skill_MA0610_b02\", 0.00000} ",
-      "Next": 251,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 250,
-      "Node": "{ \"BattleResultPlayAction\" : \"in05599a\", \"m_single_block00\", 0.00000} ",
+      "Node": "{ \"BattleResultPlayAction\" : \"in0202\", \"skill_MA0106_b02\", 0.00000} ",
       "Next": 248,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 251,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in05599a\", \"\", False} ",
+      "Index": 248,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in21011\", \"\", False} ",
+      "Next": 249,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 249,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in21011\", False} ",
       "Next": 250,
       "Prallel": -1,
       "Child": []
     },
     {
+      "Index": 250,
+      "Node": "{ \"BattleResultAddUnit\" : \"in21011\", 1, 103210107, 1.00000, 0.00000} ",
+      "Next": 251,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 251,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in21011\", \"\", True} ",
+      "Next": 257,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
       "Index": 252,
-      "Node": "{ \"BattleResultUnitToUnit\" : \"in0202\", \"in21011\"} ",
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_331\"} ",
       "Next": 253,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 253,
-      "Node": "{ \"BattleResultPlayAction\" : \"in0202\", \"skill_MA0106_b02\", 0.00000} ",
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
       "Next": 254,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 254,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in21011\", \"\", False} ",
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_337\"} ",
       "Next": 255,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 255,
-      "Node": "{ \"BattleResultRemoveUnit\" : \"in21011\", False} ",
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05598a\", \"\", False} ",
       "Next": 256,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 256,
-      "Node": "{ \"BattleResultAddUnit\" : \"in21011\", 1, 103210107, 1.00000, 0.00000} ",
-      "Next": 257,
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_340\"} ",
+      "Next": 258,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 257,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in21011\", \"\", True} ",
-      "Next": 263,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_mood_08.wav\", 1.50000, False} ",
+      "Next": 252,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 258,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_331\"} ",
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
       "Next": 259,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 259,
-      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_347\"} ",
       "Next": 260,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 260,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_337\"} ",
+      "Node": "{ \"BattleResultAddUnits\" : \"io261041,io26104101,io261141,io26114101\", 1, \"101208107,105210105,101210109,105212107\"} ",
       "Next": 261,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 261,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in05598a\", \"\", False} ",
+      "Node": "{ \"BattleResultAddBuff\" : True, \"io261041,io26104101,io261141,io26114101\", \"\", True} ",
       "Next": 262,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 262,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_340\"} ",
-      "Next": 264,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 263,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 263,
-      "Node": "{ \"BattleResultChangeMusic\" : \"In_mood_08.wav\", 1.50000, False} ",
-      "Next": 258,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 264,
-      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_358\"} ",
       "Next": 265,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 265,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_347\"} ",
+      "Index": 264,
+      "Node": "{ \"BattleResultChangeMusic\" : \"In_battle_33.wav\", 1.00000, False} ",
       "Next": 266,
       "Prallel": -1,
       "Child": []
     },
     {
+      "Index": 265,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0202\", \"\", True} ",
+      "Next": 264,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
       "Index": 266,
-      "Node": "{ \"BattleResultAddUnits\" : \"io261041,io26104101,io261141,io26114101\", 1, \"101208107,105210105,101210109,105212107\"} ",
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
       "Next": 267,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 267,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"io261041,io26104101,io261141,io26114101\", \"\", True} ",
-      "Next": 268,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 268,
-      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Node": "{ \"BattleResultTalk\" : \"t1306504_359\"} ",
       "Next": 269,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 269,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_358\"} ",
-      "Next": 271,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 270,
-      "Node": "{ \"BattleResultChangeMusic\" : \"In_battle_33.wav\", 1.00000, False} ",
-      "Next": 272,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 271,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in0202\", \"\", True} ",
-      "Next": 270,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 272,
-      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
-      "Next": 273,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 273,
-      "Node": "{ \"BattleResultTalk\" : \"t1306504_359\"} ",
-      "Next": 275,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 274,
+      "Index": 268,
       "Node": "{ \"EndBattleAction\" : \"m1306501_05\"} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 275,
+      "Index": 269,
       "Node": "{ \"BattleResultWaitAction\" : 0.25000} ",
-      "Next": 274,
+      "Next": 268,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 276,
+      "Index": 270,
       "Node": "{ \"BattleResultUnitHP\" : 0, 1, \"in05598a\"} ",
-      "Next": 218,
+      "Next": 212,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 277,
+      "Index": 271,
       "Node": "{ \"BattleResultMoveUnit\" : \"in06041\", \"102203101\"} ",
       "Next": 24,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 278,
+      "Index": 272,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1306501_03a_21a\", 0, 2, \"第三阶段中，主角攻击宫紫痕\"} ",
-      "Next": 303,
+      "Next": 297,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 279,
+      "Index": 273,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1306501_03a_21a\", 0, 2, \"第三阶段中，主角攻击宫紫痕\"} ",
-      "Next": 304,
+      "Next": 298,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 280,
+      "Index": 274,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1306501_03a_22a\", 0, 2, \"第三阶段中，石崑攻击宫紫痕\"} ",
-      "Next": 306,
+      "Next": 300,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 281,
+      "Index": 275,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1306501_03a_22a\", 0, 2, \"第三阶段中，石崑攻击宫紫痕\"} ",
-      "Next": 305,
+      "Next": 299,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 282,
+      "Index": 276,
       "Node": "{ \"BattleResultAddBuff\" : False, \"in06041\", \"bt1306501_03a_Buff_HpLock01\", True} ",
-      "Next": 283,
+      "Next": 277,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 283,
+      "Index": 277,
       "Node": "{ \"BattleResultAddBuff\" : False, \"in06041\", \"bt1306501_03a_Debuff_AttackDown\", True} ",
       "Next": 68,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 284,
+      "Index": 278,
       "Node": "{ \"BattleResultUnitHP\" : 0, 90, \"in0201\"} ",
-      "Next": 285,
+      "Next": 279,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 285,
+      "Index": 279,
       "Node": "{ \"BattleResultUnitHP\" : 0, 70, \"in06041\"} ",
-      "Next": 277,
+      "Next": 271,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 286,
+      "Index": 280,
       "Node": "{ \"BattleResultUnitHP\" : 0, 90, \"in05599a\"} ",
       "Next": 42,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 287,
+      "Index": 281,
       "Node": "{ \"BattleResultUnitHP\" : 0, 70, \"in06041\"} ",
       "Next": 39,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 288,
+      "Index": 282,
       "Node": "{ \"BattleResultUnitHP\" : 0, 100, \"in06041\"} ",
       "Next": 67,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 289,
+      "Index": 283,
       "Node": "{ \"BattleResultAddBuff\" : False, \"in06041\", \"bt1306501_03a_Debuff_AttackDown02\", True} ",
-      "Next": 153,
+      "Next": 147,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 290,
+      "Index": 284,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1306501_03a_21\", \"主角与宫紫痕是否交手(2)\"} ",
-      "Next": 298,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 291,
-      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1306501_03a_21\", \"主角与宫紫痕是否交手(2)\"} ",
-      "Next": 299,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 292,
-      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1306501_03a_22\", \"主角与宫紫痕是否交手(2)\"} ",
-      "Next": 301,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 293,
-      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1306501_03a_22\", \"主角与宫紫痕是否交手(2)\"} ",
-      "Next": 300,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 294,
-      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1306501_03a_20\", \"战斗已进入第三阶段\"} ",
-      "Next": 290,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 295,
-      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1306501_03a_20\", \"战斗已进入第三阶段\"} ",
-      "Next": 291,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 296,
-      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1306501_03a_20\", \"战斗已进入第三阶段\"} ",
       "Next": 292,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 297,
-      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1306501_03a_20\", \"战斗已进入第三阶段\"} ",
+      "Index": 285,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1306501_03a_21\", \"主角与宫紫痕是否交手(2)\"} ",
       "Next": 293,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 298,
-      "Node": "{ \"BattleFactorTargetHp\" : 2, 75, \"in06041\"} ",
-      "Next": 159,
+      "Index": 286,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1306501_03a_22\", \"主角与宫紫痕是否交手(2)\"} ",
+      "Next": 295,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 299,
+      "Index": 287,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1306501_03a_22\", \"主角与宫紫痕是否交手(2)\"} ",
+      "Next": 294,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 288,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1306501_03a_20\", \"战斗已进入第三阶段\"} ",
+      "Next": 284,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 289,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1306501_03a_20\", \"战斗已进入第三阶段\"} ",
+      "Next": 285,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 290,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1306501_03a_20\", \"战斗已进入第三阶段\"} ",
+      "Next": 286,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 291,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1306501_03a_20\", \"战斗已进入第三阶段\"} ",
+      "Next": 287,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 292,
       "Node": "{ \"BattleFactorTargetHp\" : 2, 75, \"in06041\"} ",
+      "Next": 153,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 293,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 75, \"in06041\"} ",
+      "Next": 155,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 294,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 45, \"in06041\"} ",
+      "Next": 162,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 295,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 45, \"in06041\"} ",
       "Next": 161,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 300,
-      "Node": "{ \"BattleFactorTargetHp\" : 2, 45, \"in06041\"} ",
-      "Next": 168,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 301,
-      "Node": "{ \"BattleFactorTargetHp\" : 2, 45, \"in06041\"} ",
-      "Next": 167,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 302,
+      "Index": 296,
       "Node": "{ \"BattleResultAddBuff\" : False, \"in06041\", \"bt1306501_03a_Buff_HpLock70\", True} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 303,
+      "Index": 297,
       "Node": "{ \"BattleResultRmoveBuff\" : \"in06041\", \"bt1306501_03a_Buff_HpLock70\"} ",
-      "Next": 307,
+      "Next": 301,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 298,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in06041\", \"bt1306501_03a_Buff_HpLock70\"} ",
+      "Next": 302,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 299,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in06041\", \"bt1306501_03a_Buff_HpLock40\"} ",
+      "Next": 304,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 300,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in06041\", \"bt1306501_03a_Buff_HpLock40\"} ",
+      "Next": 303,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 301,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in06041\", \"bt1306501_03a_Buff_HpLock40\", True} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 302,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in06041\", \"bt1306501_03a_Buff_HpLock40\", True} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 303,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in06041\", \"bt1306501_03a_Buff_HpLock01\", True} ",
+      "Next": -1,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 304,
-      "Node": "{ \"BattleResultRmoveBuff\" : \"in06041\", \"bt1306501_03a_Buff_HpLock70\"} ",
-      "Next": 308,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in06041\", \"bt1306501_03a_Buff_HpLock01\", True} ",
+      "Next": -1,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 305,
-      "Node": "{ \"BattleResultRmoveBuff\" : \"in06041\", \"bt1306501_03a_Buff_HpLock40\"} ",
-      "Next": 310,
+      "Node": "{ \"BattleResultRmoveBuff\" : \"in06041\", \"bt1306501_03a_Buff_HpLock01\"} ",
+      "Next": 296,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 306,
-      "Node": "{ \"BattleResultRmoveBuff\" : \"in06041\", \"bt1306501_03a_Buff_HpLock40\"} ",
-      "Next": 309,
+      "Node": "{ \"BattleResultUnitHP\" : 0, 100, \"in06041\"} ",
+      "Next": 77,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 307,
-      "Node": "{ \"BattleResultAddBuff\" : False, \"in06041\", \"bt1306501_03a_Buff_HpLock40\", True} ",
-      "Next": -1,
+      "Node": "{ \"BattleResultUnitHP\" : 0, 100, \"in06041\"} ",
+      "Next": 84,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 308,
-      "Node": "{ \"BattleResultAddBuff\" : False, \"in06041\", \"bt1306501_03a_Buff_HpLock40\", True} ",
-      "Next": -1,
+      "Node": "{ \"BattleResultUnitHP\" : 0, 100, \"in06041\"} ",
+      "Next": 107,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 309,
-      "Node": "{ \"BattleResultAddBuff\" : False, \"in06041\", \"bt1306501_03a_Buff_HpLock01\", True} ",
-      "Next": -1,
+      "Node": "{ \"BattleResultUnitHP\" : 0, 100, \"in06041\"} ",
+      "Next": 108,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 310,
-      "Node": "{ \"BattleResultAddBuff\" : False, \"in06041\", \"bt1306501_03a_Buff_HpLock01\", True} ",
-      "Next": -1,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 90, \"in06041\"} ",
+      "Next": 75,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 311,
-      "Node": "{ \"BattleResultRmoveBuff\" : \"in06041\", \"bt1306501_03a_Buff_HpLock01\"} ",
-      "Next": 302,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 90, \"in06041\"} ",
+      "Next": 82,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 312,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 90, \"in06041\"} ",
+      "Next": 323,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 313,
+      "Node": "{ \"BattleFactorTargetHp\" : 2, 90, \"in06041\"} ",
+      "Next": 322,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 314,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1306501_03a_99\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 315,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1306501_03a_99\", 0, 1, \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 316,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1306501_03a_99\", \"\"} ",
+      "Next": 73,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 317,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1306501_03a_99\", \"\"} ",
+      "Next": 80,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 318,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1306501_03a_99\", \"\"} ",
+      "Next": 87,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 319,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1306501_03a_99\", \"\"} ",
+      "Next": 98,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 320,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1306501_03a_99\", 0, 2, \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 321,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1306501_03a_99\", 0, 2, \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 322,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1306501_03a_01\", \"石崑与宫紫痕是否交手\"} ",
+      "Next": 318,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 323,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1306501_03a_01\", \"石崑与宫紫痕是否交手\"} ",
+      "Next": 319,
       "Prallel": -1,
       "Child": []
     }

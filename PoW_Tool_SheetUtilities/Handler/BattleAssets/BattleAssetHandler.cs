@@ -19,7 +19,7 @@ namespace PoW_Tool_SheetUtilities.Handler.BattleAssets
         private static string BattleResultChangeLoseTipRegexPattern = @"{ \\""BattleResultChangeLoseTip\\"" : \\""(.*)\\""}";
         private static Regex BattleResultChangeLoseTipRegex = new Regex(BattleResultChangeLoseTipRegexPattern);
 
-        private static string BattleResultAddSecondaryGoalRegexPattern = @"{ \\""BattleResultAddSecondaryGoal\\"" : \\""(.*)\\""}";
+        private static string BattleResultAddSecondaryGoalRegexPattern = @"{ \\""BattleResultAddSecondaryGoal\\"" : \\""(.*)\\"", \\""(.*)\\""}";
         private static Regex BattleResultAddSecondaryGoalRegex = new Regex(BattleResultAddSecondaryGoalRegexPattern);
 
         public BattleAssetHandler()
@@ -107,7 +107,7 @@ namespace PoW_Tool_SheetUtilities.Handler.BattleAssets
             while (m.Success)
             {
                 //Console.WriteLine("----------");
-                patchables.Add(new ToPatchInstance(m.Groups[1].Value, "AddSecondaryGoal"));
+                patchables.Add(new ToPatchInstance(m.Groups[2].Value, "AddSecondaryGoal"));
 
                 m = m.NextMatch();
             }
