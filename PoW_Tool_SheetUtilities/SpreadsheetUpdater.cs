@@ -14,10 +14,10 @@ namespace PoW_Tool_SheetUtilities
     {
         private static readonly List<IFileHandler> _Handlers = new List<IFileHandler>()
         {
+        new BattleAssetHandler(),
         new MantraAssetHandler(),
         new BufferAssetHandler(),
         new AdjustmentAssetHandler(),
-        new BattleAssetHandler(),
         new CinameticAssetHandler(),
         new NoteDescriptionAssetHandler(),
         new GameFormulaAssetHandler(),
