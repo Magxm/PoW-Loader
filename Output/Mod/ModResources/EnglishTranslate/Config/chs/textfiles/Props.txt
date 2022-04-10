@@ -112,7 +112,7 @@ it501014	Lithospermum Angelica Oil	2级药	A medicine that restores HP and remov
 it501000	Life Powder	一级药	A medicine that restores HP.	5	501		501	200	1	True	True		0			(Hp, 400, Add, False)	Restore 400 HP.
 it501011	Reneration Unguent	2级药	A medicine that restores HP.	5	501		501	600	1	True	True		0			(Hp, 1000, Add, False)	Restore 1000 HP.
 it501015	Atractylodes Aconite Decoction	2级药	A medicine that restores Qi and removes a debuff.	5	501		501	500	1	True	True	0	0			(BattleClearBuffer, Negative, 1)(Mp, 300, Add, False)	Restore 300 Qi，randomly clear 1 negative effect.
-it501001	Qi Pills	一级药	A medicine that restores Qi.	5	501		501	150	1	False	True		0			(Mp, 200, Add, False)	Restore 200 Qi.
+it501001	Qi Pills	一级药	A medicine that restores Qi.	5	501		501	150	1	True	True		0			(Mp, 200, Add, False)	Restore 200 Qi.
 it501012	Ginseng Aconite Decoction	2级药	A medicine that restores Qi.	5	501		501	450	1	True	True		0			(Mp, 500, Add, False)	Restore 500 Qi.
 it601513	Lu Jincheng's Note		A note written by Lu Jincheng before he became a zombie.	6	601		601	0	0	False	True		0				
 it707005	Romance of the Three Kingdoms	新版书籍低级礼品	A novel written by Luo Guanzhong, adapted from the Records of the Three Kingdom, which is a coQiilations of oral storytelling. It talks about the story of Three kingdoms, Wei, Shu and Wu.	7	707		707	900	0	True	True		0			(Favorable, in0102, 2)(Favorable, in0105, 2)	
@@ -735,9 +735,9 @@ it105082	Boundless Tempest	锻造商店9级蓝图或奖励武器、NPC用		1	105
 it105571	Iron Spear	锻造商店8级基础武器、玩家队伍用		1	105	wpt105015	105	22500	1	True	True		0		Player,in0110	(BattleProperty, Attack, False, 260)	ATK+260
 it105572	The Compliant Golden-Hooped Rod	锻造商店8级蓝图或奖励武器、玩家队伍用		1	105	wpt105020	105	25000	1	True	True		0		Player,in0110	(BattleProperty, Attack, False, 260)	ATK+260
 it105581	Fangtian Halberd	锻造商店9级基础武器、玩家队伍用		1	105	wpt105012	105	32000	1	True	True		0		Player,in0110	(BattleProperty, Attack, False, 300)	ATK+300
-it108571	Tiben Knife	锻造商店8级基础武器、玩家队伍用		1	108	wpt108009	108	22500	1	True	True		0		in0102	(BattleProperty, Attack, False, 260)	ATK+260
+it108571	Tiben Knife	锻造商店8级基础武器、玩家队伍用	The forging technique is said to come from the western exotic, sharp and valuable	1	108	wpt108009	108	22500	1	True	True		0		in0102	(BattleProperty, Attack, False, 260)	ATK+260
 it108572	Water Horses	锻造商店8级蓝图或奖励武器、玩家队伍用		1	108	wpt108012	108	25000	1	True	True		0		in0102	(BattleProperty, Attack, False, 260)	ATK+260
-it108581	Double Snake Dagger	锻造商店9级基础武器、玩家队伍用		1	108	wpt108010	108	32000	1	True	True		0		in0102	(BattleProperty, Attack, False, 300)	ATK+300
+it108581	Double Snake Dagger	锻造商店9级基础武器、玩家队伍用	Blade body is like a snake spitting out its letters, easily creating wounds that are difficult to heal	1	108	wpt108010	108	32000	1	True	True		0		in0102	(BattleProperty, Attack, False, 300)	ATK+300
 it108582	Leave No Trace	锻造商店9级蓝图或奖励武器、玩家队伍用		1	108	wpt108013	108	50000	1	True	True		0		in0102	(BattleProperty, Attack, False, 300)	ATK+300
 it201033	Thief's Dress	4级，第一年冬校59回合，成绩单上级奖励	A design imitating the stealth uniform of the Sky Stealer Fort. Effective for sneaking and hiding.	2	201		201	2500	1	True	True		0			(BattleProperty, Defense, False, 83)(BattleProperty, Dodge, False, 10)	DEF+83，Dodge+10
 it201034	Lilac Skirt		Looks like a nomal peice of clothing but has hidden needles. It also has added protection in vital spots.	2	201		201	2200	1	False	True		0		in0104	(BattleProperty, Defense, False, 80)(BattleProperty, Dodge, False, 3)	DEF +80, dodge +3
