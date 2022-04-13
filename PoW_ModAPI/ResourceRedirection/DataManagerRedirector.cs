@@ -48,7 +48,7 @@ namespace PoW_ModAPI.ResourceRedirection
             Type type = typeof(Item);
             foreach (Type dataType in from t in type.Assembly.GetTypes() where t.IsSubclassOf(type) && !t.HasAttribute<Hidden>(false) select t)
             {
-                //Debug.Log("Loading " + dataType.Name);
+                Debug.Log("Loading " + dataType.Name);
                 try
                 {
                     IDictionary result;
