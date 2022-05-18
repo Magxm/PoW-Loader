@@ -1,0 +1,161 @@
+{
+  "EntryIndex": 30,
+  "Nodes": [
+    {
+      "Node": "{ \"MusicAction\" : \"In_mood_08.wav\", 1.00000, False, 1.00000, False, 0.00000} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetNpcAnimationAction\" : \"io26103101_h99\", \"m_dead00_loop00\", False} ",
+      "Next": 2,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetNpcAnimationAction\" : \"io26103102_h99\", \"m_dead01_loop00\", False} ",
+      "Next": 3,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetNpcAnimationAction\" : \"io26113101_h99\", \"f_dead00_loop00\", False} ",
+      "Next": 4,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetNpcAnimationAction\" : \"io26113102_h99\", \"f_dead02_loop00\", False} ",
+      "Next": 5,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetNpcAnimationAction\" : \"io26123101_h99\", \"m_dead04_loop00\", False} ",
+      "Next": 6,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetNpcAnimationAction\" : \"io26133101_h99\", \"f_dead03_loop00\", False} ",
+      "Next": 7,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetNpcAnimationAction\" : \"io26133102_h99\", \"f_dead01_loop00\", False} ",
+      "Next": 8,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetNpcAnimationAction\" : \"io26143101_h99\", \"m_dead03_loop00\", False} ",
+      "Next": 9,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe1212401_2_11\"}  ], 0} , 10, 12} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetNpcAnimationAction\" : \"io41124301_h99\", \"f_dead03_loop00\", False} ",
+      "Next": 11,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetNpcTalkIdAction\" : \"io41124301_h99\", \"t1212402_022\"} ",
+      "Next": 27,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe1212401_2_12\"}  ], 0} , 13, 19} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetNpcAnimationAction\" : \"io41104301_h99\", \"f_dead00_loop00\", False} ",
+      "Next": 14,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetNpcTalkIdAction\" : \"io41104301_h99\", \"t1212402_022\"} ",
+      "Next": 15,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetNpcAnimationAction\" : \"io41124301_h99\", \"f_stand05_await00\", False} ",
+      "Next": 29,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe1212401_2_12\"}  ], 0} , 17, 19} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetNpcAnimationAction\" : \"io41104301_h99\", \"f_dead00_loop00\", False} ",
+      "Next": 18,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetNpcTalkIdAction\" : \"io41104301_h99\", \"t1212402_022\"} ",
+      "Next": 28,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 20,
+      "Prallel": 0
+    },
+    {
+      "Node": "{ \"SortOutDesignatedNpcAction\" : \"io41124301,io41104301,io26103101,io26123101,io26113101,io26133101,io26113102,io26103102,io26133102,io26143101\"} ",
+      "Next": 21,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayerTransformAction\" : True, { 360.31000, 23.69529, 257.80000} , True, { 0.00000, 275.51610, 0.00000} } ",
+      "Next": 22,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 23,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SaveAction\" } ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcWeaponActiveAction\" : True, \"in03005,in03006,in03012,io41114301,io41134301,io41144301,io41144302,in05533,io41100311,in21007,io41124301,io41104301\"} ",
+      "Next": 25,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcChangeWeaponPointAction\" : True, \"in03005,in03006,in03012,io41114301,io41134301,io41144301,io41144302,in05533,io41100311,in21007\"} ",
+      "Next": 26,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcChangeWeaponPointAction\" : False, \"io41124301,io41104301\"} ",
+      "Next": 1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcWeaponActiveAction\" : False, \"io41124301\"} ",
+      "Next": 16,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcWeaponActiveAction\" : False, \"io41104301\"} ",
+      "Next": 19,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcWeaponActiveAction\" : False, \"io41104301\"} ",
+      "Next": 19,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 24,
+      "Prallel": -1
+    }
+  ],
+  "Name": "第二年冬校冰清剑派山道一战后NPC重新排位存盘进探索S0501"
+}

@@ -1,0 +1,396 @@
+{
+  "EntryIndex": 0,
+  "Nodes": [
+    {
+      "Node": "{ \"CameraTransformAction\" : True, { 154.63700, 1.87800, 17.16100} , 0.00000, True, { 11.51737, 293.64110, -0.00040} , 0.00000, 45} ",
+      "Next": 1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"GroupTransformAction\" : [ { \"in0107\", { 148.48000, 0.23000, 23.21000} , { 0.00000, 177.86240, 0.00000} } , { \"party01\", { 149.46000, 0.23000, 24.43000} , { 0.00000, 180.45740, 0.00000} } , { \"party02\", { 151.42000, 0.23129, 24.70000} , { 0.00000, 189.67360, 0.00000} } , { \"party03\", { 147.84000, 0.23000, 24.71000} , { 0.00000, 179.90620, 0.00000} } , { \"in05834\", { 150.19700, 0.23000, 17.77800} , { 0.00000, 0.00000, 0.00000} } , { \"io48145303\", { 148.49350, 0.23000, 16.41709} , { 0.00000, 0.00000, 0.00000} } , { \"io48145304\", { 143.77980, 0.23128, 20.43866} , { 0.00000, 73.08023, 0.00000} } , { \"io48145305\", { 143.80000, 0.23000, 14.68000} , { 0.00000, 39.92615, 0.00000} } , { \"io45100405\", { 142.00000, 0.23128, 16.83000} , { 0.00000, 123.73550, 0.00000} } , { \"io45100408\", { 152.69000, 0.23000, 20.13000} , { 0.00000, 178.32660, 0.00000} }  ]} ",
+      "Next": 77,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"m_kneel12_await00\", 1.00000}  ], \"io48145303\"} ",
+      "Next": 3,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcWeaponActiveAction\" : True, \"in0107,party01,party02,party03,in05834,io48145303\"} ",
+      "Next": 4,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcChangeWeaponPointAction\" : False, \"in0107,party01,party02,party03,in05834\"} ",
+      "Next": 5,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcChangeWeaponPointAction\" : True, \"io48145303\"} ",
+      "Next": 6,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayerWeaponActiveAction\" : True} ",
+      "Next": 7,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayerChangeWeaponPointAction\" : False} ",
+      "Next": 8,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"m_dead00_loop00\", 1.00000}  ], \"io45100405\"} ",
+      "Next": 9,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"m_dead02_loop00\", 1.00000}  ], \"io45100408\"} ",
+      "Next": 12,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : True, 1.00000} ",
+      "Next": 17,
+      "Prallel": 11
+    },
+    {
+      "Node": "{ \"NpcSimpleTransformAction\" : True, { 148.28350, 0.23000, 20.71430} , 2.00000, True, { 0.00000, 148.53630, 0.00000} , \"in0107\"} ",
+      "Next": -1,
+      "Prallel": 13
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 10,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcSimpleTransformAction\" : True, { 149.56900, 0.23000, 22.20397} , 2.00000, True, { 0.00000, 170.77160, 0.00000} , \"party01\"} ",
+      "Next": -1,
+      "Prallel": 14
+    },
+    {
+      "Node": "{ \"NpcSimpleTransformAction\" : True, { 151.30000, 0.23000, 22.06000} , 2.00000, True, { 0.00000, 194.18750, 0.00000} , \"party02\"} ",
+      "Next": -1,
+      "Prallel": 15
+    },
+    {
+      "Node": "{ \"NpcSimpleTransformAction\" : True, { 147.83000, 0.23000, 22.08000} , 2.00000, True, { 0.00000, 146.60680, 0.00000} , \"party03\"} ",
+      "Next": -1,
+      "Prallel": 16
+    },
+    {
+      "Node": "{ \"PlayerSimpleTransformAction\" : True, { 150.29800, 0.23000, 20.71800} , 2.00000, True, { 0.00000, 184.14980, 0.00000} } ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe1205501_2_43\"}  ], 0} , 18, 19} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1205503_500\"} ",
+      "Next": 20,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1205503_502\"} ",
+      "Next": 20,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcFaceToNPC\" : \"in05834\", \"in0107\", 0} ",
+      "Next": 21,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1205503_509\"} ",
+      "Next": 24,
+      "Prallel": 22
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"m_single_idle06\", 1.00000}  ], \"in05834\"} ",
+      "Next": -1,
+      "Prallel": 23
+    },
+    {
+      "Node": "{ \"NpcChangeWeaponPointAction\" : True, \"in05834\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcFaceToNPC\" : \"in05834\", \"io48145303\", 0} ",
+      "Next": 25,
+      "Prallel": 26
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1205503_512\"} ",
+      "Next": 30,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcFaceToNPC\" : \"in0107\", \"io48145303\", 0} ",
+      "Next": -1,
+      "Prallel": 27
+    },
+    {
+      "Node": "{ \"NpcFaceToNPC\" : \"party01\", \"io48145303\", 0} ",
+      "Next": -1,
+      "Prallel": 28
+    },
+    {
+      "Node": "{ \"NpcFaceToNPC\" : \"party02\", \"io48145303\", 0} ",
+      "Next": -1,
+      "Prallel": 29
+    },
+    {
+      "Node": "{ \"NpcFaceToNPC\" : \"party03\", \"io48145303\", 0} ",
+      "Next": -1,
+      "Prallel": 35
+    },
+    {
+      "Node": "{ \"NpcSimpleTransformAction\" : True, { 148.38100, 0.23000, 19.13100} , 1.00000, True, { 0.00000, 175.16000, 0.00000} , \"in0107\"} ",
+      "Next": -1,
+      "Prallel": 31
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 32,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcSimpleTransformAction\" : False, { 150.19700, 0.23000, 17.77800} , 0.00000, True, { 0.00000, 305.77150, 0.00000} , \"in05834\"} ",
+      "Next": 34,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"m_single_idle06\", 1.00000}  ], \"in05834\"} ",
+      "Next": -1,
+      "Prallel": 36
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1205503_513\"} ",
+      "Next": 40,
+      "Prallel": 33
+    },
+    {
+      "Node": "{ \"PlayerSimpleTransformAction\" : False, { 150.29800, 0.23000, 20.71800} , 0.00000, True, { 0.00000, 199.49970, 0.00000} } ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcFaceToNPC\" : \"party01\", \"in05834\", 0} ",
+      "Next": -1,
+      "Prallel": 37
+    },
+    {
+      "Node": "{ \"NpcFaceToNPC\" : \"party02\", \"in05834\", 0} ",
+      "Next": -1,
+      "Prallel": 38
+    },
+    {
+      "Node": "{ \"NpcFaceToNPC\" : \"party03\", \"in05834\", 0} ",
+      "Next": -1,
+      "Prallel": 39
+    },
+    {
+      "Node": "{ \"PlayerSimpleTransformAction\" : False, { 150.29800, 0.23000, 20.71800} , 0.00000, True, { 0.00000, 180.11040, 0.00000} } ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 2.00000} ",
+      "Next": 41,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"m_stand00_await00\", 1.00000}  ], \"in05834\"} ",
+      "Next": 43,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcChangeWeaponPointAction\" : False, \"in05834\"} ",
+      "Next": -1,
+      "Prallel": 51
+    },
+    {
+      "Node": "{ \"NpcSimpleTransformAction\" : True, { 147.54300, 0.23000, 17.19900} , 1.50000, True, { 0.00000, 96.55276, 0.00000} , \"in0107\"} ",
+      "Next": 44,
+      "Prallel": 45
+    },
+    {
+      "Node": "{ \"NpcFaceToNPC\" : \"in05834\", \"in0107\", 0} ",
+      "Next": 49,
+      "Prallel": 42
+    },
+    {
+      "Node": "{ \"NpcFaceToNPC\" : \"party01\", \"io48145303\", 0} ",
+      "Next": -1,
+      "Prallel": 46
+    },
+    {
+      "Node": "{ \"NpcFaceToNPC\" : \"party02\", \"io48145303\", 0} ",
+      "Next": -1,
+      "Prallel": 47
+    },
+    {
+      "Node": "{ \"NpcFaceToNPC\" : \"party03\", \"io48145303\", 0} ",
+      "Next": -1,
+      "Prallel": 48
+    },
+    {
+      "Node": "{ \"PlayerSimpleTransformAction\" : False, { 150.29800, 0.23000, 20.71800} , 0.00000, True, { 0.00000, 202.36540, 0.00000} } ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 50,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1205503_517\"} ",
+      "Next": 52,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 0, \"m_kneel03_start00\", 1.00000} , { 2, \"m_kneel03_await00\", 1.00000}  ], \"in0107\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 0, \"m_kneel03_stop00\", 1.00000} , { 2, \"m_stand00_await00\", 1.00000}  ], \"in0107\"} ",
+      "Next": 53,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcFaceToNPC\" : \"in0107\", \"in05834\", 0} ",
+      "Next": 54,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1205503_525\"} ",
+      "Next": 55,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 56,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcFaceToPlayer\" : \"in05834\", 0} ",
+      "Next": 61,
+      "Prallel": 57
+    },
+    {
+      "Node": "{ \"NpcFaceToNPC\" : \"party01\", \"in05834\", 0} ",
+      "Next": -1,
+      "Prallel": 58
+    },
+    {
+      "Node": "{ \"NpcFaceToNPC\" : \"party02\", \"in05834\", 0} ",
+      "Next": -1,
+      "Prallel": 59
+    },
+    {
+      "Node": "{ \"NpcFaceToNPC\" : \"party03\", \"in05834\", 0} ",
+      "Next": -1,
+      "Prallel": 60
+    },
+    {
+      "Node": "{ \"PlayerSimpleTransformAction\" : False, { 150.29800, 0.23000, 20.71800} , 0.00000, True, { 0.00000, 180.11040, 0.00000} } ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1205503_529\"} ",
+      "Next": 63,
+      "Prallel": 62
+    },
+    {
+      "Node": "{ \"NpcFaceToPlayer\" : \"in0107\", 0} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 64,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcFaceToPlayer\" : \"in05834\", 0} ",
+      "Next": 65,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1205503_539\"} ",
+      "Next": 66,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 67,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1205503_547\"} ",
+      "Next": 68,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 69,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1205503_549\"} ",
+      "Next": 74,
+      "Prallel": 70
+    },
+    {
+      "Node": "{ \"NpcFaceToNPC\" : \"party01\", \"in0107\", 0} ",
+      "Next": -1,
+      "Prallel": 71
+    },
+    {
+      "Node": "{ \"NpcFaceToNPC\" : \"party02\", \"in0107\", 0} ",
+      "Next": -1,
+      "Prallel": 72
+    },
+    {
+      "Node": "{ \"NpcFaceToNPC\" : \"party03\", \"in0107\", 0} ",
+      "Next": -1,
+      "Prallel": 73
+    },
+    {
+      "Node": "{ \"PlayerSimpleTransformAction\" : False, { 150.29800, 0.23000, 20.71800} , 0.00000, True, { 0.00000, 220.06680, 0.00000} } ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : False, 2.00000} ",
+      "Next": 75,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 76,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SaveAction\" } ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayerTransformAction\" : True, { 150.47500, 0.23000, 24.27869} , True, { 0.00000, 185.33090, 0.00000} } ",
+      "Next": 2,
+      "Prallel": -1
+    }
+  ],
+  "Name": "夏校穴獾寨中厅内演出"
+}

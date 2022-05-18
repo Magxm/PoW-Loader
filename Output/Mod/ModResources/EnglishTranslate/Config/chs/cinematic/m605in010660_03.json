@@ -1,0 +1,696 @@
+{
+  "EntryIndex": 0,
+  "Nodes": [
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"LoadScenesAction\" : \"S0605\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0, \"\"} ",
+      "Next": 2,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 3,
+      "Prallel": 132
+    },
+    {
+      "Node": "{ \"CameraTransformAction\" : True, { 253.19090, 121.00360, 109.57390} , 0.00000, True, { 357.80240, 338.27400, -0.00001} , 0.00000, 45} ",
+      "Next": 4,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayerTransformAction\" : True, { 251.92400, 119.78340, 113.04750} , True, { 0.00000, 348.24030, 0.00000} } ",
+      "Next": 5,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcTransformAction\" : True, { 250.07640, 119.87860, 112.89950} , True, { 0.00000, 338.20930, 0.00000} , \"in0106\"} ",
+      "Next": 6,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcTransformAction\" : True, { 251.01250, 119.68270, 107.93460} , True, { 0.00000, 11.10398, 0.00000} , \"in25001\"} ",
+      "Next": 7,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcTransformAction\" : True, { 251.41200, 119.71280, 109.42300} , True, { 0.00000, 178.10280, 0.00000} , \"in05591c\"} ",
+      "Next": 8,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcWeaponActiveAction\" : True, \"in0106,in25001,in05591c\"} ",
+      "Next": 9,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcChangeWeaponPointAction\" : True, \"in25001\"} ",
+      "Next": 10,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"m_single_idle04\", 1.00000}  ], \"in25001\"} ",
+      "Next": 22,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 12,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : True, 1.50000} ",
+      "Next": 13,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 14,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010607_200\"} ",
+      "Next": 15,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 16,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010607_202\"} ",
+      "Next": 17,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 2.50000} ",
+      "Next": 18,
+      "Prallel": 19
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010607_204\"} ",
+      "Next": 23,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"CameraTransformAction\" : True, { 253.12600, 120.93200, 106.13300} , 3.00000, True, { 6.39775, 329.33610, 0.00000} , 3.00000, 45} ",
+      "Next": -1,
+      "Prallel": 20
+    },
+    {
+      "Node": "{ \"PlayerSimpleTransformAction\" : False, { 251.92400, 119.78340, 113.04750} , 0.00000, True, { 0.00000, 185.56380, 0.00000} } ",
+      "Next": -1,
+      "Prallel": 21
+    },
+    {
+      "Node": "{ \"NpcSimpleTransformAction\" : False, { 250.07640, 119.87860, 112.89950} , 0.00000, True, { 0.00000, 167.02740, 0.00000} , \"in0106\"} ",
+      "Next": -1,
+      "Prallel": 134
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"m_dead00_loop00\", 1.00000}  ], \"in05591c\"} ",
+      "Next": 11,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 2.50000} ",
+      "Next": 27,
+      "Prallel": 24
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 25,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcChangeWeaponPointAction\" : False, \"in25001\"} ",
+      "Next": -1,
+      "Prallel": 26
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"m_stand00_await00\", 1.00000}  ], \"in25001\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010607_209\"} ",
+      "Next": 28,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 5.00000} ",
+      "Next": 31,
+      "Prallel": 29
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 30,
+      "Prallel": 32
+    },
+    {
+      "Node": "{ \"NpcSimpleTransformAction\" : True, { 247.80000, 120.06000, 115.68000} , 7.00000, True, { 0.00000, 333.74790, 0.00000} , \"in25001\"} ",
+      "Next": -1,
+      "Prallel": 36
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010607_214\"} ",
+      "Next": 37,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 5.00000} ",
+      "Next": 34,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"CameraTransformAction\" : True, { 249.75800, 121.28500, 109.07100} , 8.00000, True, { 2.96059, 358.55680, 0.00000} , 8.00000, 45} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayerSimpleTransformAction\" : True, { 251.32720, 119.84950, 113.17980} , 0.75000, True, { 0.00000, 320.75640, 0.00000} } ",
+      "Next": -1,
+      "Prallel": 35
+    },
+    {
+      "Node": "{ \"NpcSimpleTransformAction\" : False, { 250.07640, 119.87860, 112.89950} , 0.00000, True, { 0.00000, 335.75880, 0.00000} , \"in0106\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 33,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 2.00000} ",
+      "Next": 38,
+      "Prallel": 135
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010607_219\"} ",
+      "Next": 39,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 40,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010607_227\"} ",
+      "Next": 41,
+      "Prallel": 136
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.50000} ",
+      "Next": 42,
+      "Prallel": 43
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010607_234\"} ",
+      "Next": 45,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 44,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcSimpleTransformAction\" : False, { 247.80000, 120.06000, 115.68000} , 0.00000, True, { 0.00000, 149.17450, 0.00000} , \"in25001\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 46,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010607_247\"} ",
+      "Next": 47,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 48,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010607_259\"} ",
+      "Next": 49,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 2.50000} ",
+      "Next": 50,
+      "Prallel": 51
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010607_262\"} ",
+      "Next": 53,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 52,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcSimpleTransformAction\" : False, { 247.80000, 120.06000, 115.68000} , 0.00000, True, { 0.00000, 335.89650, 0.00000} , \"in25001\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 54,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010607_265\"} ",
+      "Next": 55,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.50000} ",
+      "Next": 56,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010607_269\"} ",
+      "Next": 57,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 6.00000} ",
+      "Next": 62,
+      "Prallel": 58
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 59,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcSimpleTransformAction\" : False, { 247.80000, 120.06000, 115.68000} , 0.00000, True, { 0.00000, 149.37320, 0.00000} , \"in25001\"} ",
+      "Next": 60,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.50000} ",
+      "Next": 61,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcSimpleTransformAction\" : True, { 249.23400, 119.97100, 113.69900} , 2.50000, True, { 0.00000, 149.37320, 0.00000} , \"in25001\"} ",
+      "Next": 63,
+      "Prallel": 65
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010607_271\"} ",
+      "Next": 67,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcWeaponActiveAction\" : False, \"in25001\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcSimpleTransformAction\" : False, { 250.07640, 119.87860, 112.89950} , 0.00000, True, { 0.00000, 327.41190, 0.00000} , \"in0106\"} ",
+      "Next": -1,
+      "Prallel": 66
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.50000} ",
+      "Next": 64,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayerSimpleTransformAction\" : False, { 251.80000, 119.78340, 113.11100} , 0.00000, True, { 0.00000, 320.75640, 0.00000} } ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 7.00000} ",
+      "Next": 68,
+      "Prallel": 69
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010607_300\"} ",
+      "Next": 76,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 70,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcSimpleTransformAction\" : True, { 245.38000, 120.10000, 114.11000} , 3.50000, True, { 0.00000, 289.84380, 0.00000} , \"in25001\"} ",
+      "Next": -1,
+      "Prallel": 71
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 72,
+      "Prallel": 73
+    },
+    {
+      "Node": "{ \"CameraTransformAction\" : True, { 252.45000, 121.08210, 109.68650} , 5.00000, True, { 3.47603, 317.81900, 0.00000} , 5.00000, 45} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.50000} ",
+      "Next": 74,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcSimpleTransformAction\" : False, { 250.07640, 119.87860, 112.89950} , 0.00000, True, { 0.00000, 298.73430, 0.00000} , \"in0106\"} ",
+      "Next": -1,
+      "Prallel": 75
+    },
+    {
+      "Node": "{ \"PlayerSimpleTransformAction\" : False, { 251.80000, 119.78340, 113.11100} , 0.00000, True, { 0.00000, 307.55860, 0.00000} } ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 77,
+      "Prallel": 137
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010607_304\"} ",
+      "Next": 78,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 3.00000} ",
+      "Next": 79,
+      "Prallel": 80
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010607_309\"} ",
+      "Next": 82,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 81,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcSimpleTransformAction\" : True, { 238.92800, 120.29400, 114.37300} , 7.00000, True, { 0.00000, 283.50680, 0.00000} , \"in25001\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 83,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : False, 1.50000} ",
+      "Next": 84,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 85,
+      "Prallel": 88
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : True, 1.50000} ",
+      "Next": 86,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 87,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010607_314\"} ",
+      "Next": 89,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"CameraTransformAction\" : True, { 242.14360, 121.06020, 110.44310} , 0.00000, True, { 349.89770, 315.24120, -0.00001} , 0.00000, 45} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.50000} ",
+      "Next": 90,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010607_318\"} ",
+      "Next": 91,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 92,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : False, 2.00000} ",
+      "Next": 93,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 94,
+      "Prallel": 96
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : True, 1.50000} ",
+      "Next": 95,
+      "Prallel": 100
+    },
+    {
+      "Node": "{ \"TimerAction\" : 2.00000} ",
+      "Next": 97,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"CameraTransformAction\" : True, { 255.85370, 121.13070, 109.12400} , 0.00000, True, { 2.78873, 204.37340, 0.00002} , 0.00000, 45} ",
+      "Next": -1,
+      "Prallel": 98
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010607_322\"} ",
+      "Next": 102,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayerTransformAction\" : True, { 252.28110, 119.54600, 107.20290} , True, { 0.00000, 172.42910, 0.00000} } ",
+      "Next": -1,
+      "Prallel": 99
+    },
+    {
+      "Node": "{ \"NpcTransformAction\" : True, { 253.66200, 119.52170, 107.59400} , True, { 0.00000, 181.37290, 0.00000} , \"in0106\"} ",
+      "Next": -1,
+      "Prallel": 129
+    },
+    {
+      "Node": "{ \"PlayerSimpleTransformAction\" : True, { 252.10700, 119.54600, 105.06200} , 2.00000, True, { 0.00000, 175.26550, 0.00000} } ",
+      "Next": -1,
+      "Prallel": 101
+    },
+    {
+      "Node": "{ \"NpcSimpleTransformAction\" : True, { 253.91600, 119.52170, 105.84600} , 2.20000, True, { 0.00000, 176.76740, 0.00000} , \"in0106\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcSimpleTransformAction\" : False, { 253.91600, 119.52170, 105.84600} , 0.00000, True, { 0.00000, 297.53370, 0.00000} , \"in0106\"} ",
+      "Next": 103,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010607_327\"} ",
+      "Next": 104,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 4.50000} ",
+      "Next": 105,
+      "Prallel": 130
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010607_329\"} ",
+      "Next": 109,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"CameraTransformAction\" : True, { 256.36850, 120.65930, 105.87390} , 5.00000, True, { 3.13272, 279.66010, 0.00001} , 5.00000, 45} ",
+      "Next": -1,
+      "Prallel": 107
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 108,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayerSimpleTransformAction\" : False, { 252.10700, 119.54600, 105.06200} , 0.00000, True, { 0.00000, 301.48170, 0.00000} } ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 10.00000} ",
+      "Next": 110,
+      "Prallel": 112
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010607_330\"} ",
+      "Next": 118,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayerSimpleTransformAction\" : True, { 250.29250, 119.73790, 108.88320} , 2.50000, True, { 0.00000, 303.82500, 0.00000} } ",
+      "Next": 117,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcSimpleTransformAction\" : True, { 250.56000, 119.84260, 110.76000} , 2.50000, True, { 0.00000, 286.92720, 0.00000} , \"in0106\"} ",
+      "Next": 116,
+      "Prallel": 113
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.25000} ",
+      "Next": 111,
+      "Prallel": 114
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 115,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"CameraTransformAction\" : True, { 243.90240, 121.63420, 113.90850} , 12.00000, True, { 356.60030, 283.95790, 0.00001} , 12.00000, 45} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcSimpleTransformAction\" : True, { 239.24000, 120.23230, 115.22000} , 4.00000, True, { 0.00000, 297.66300, 0.00000} , \"in0106\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayerSimpleTransformAction\" : True, { 239.61780, 120.27540, 113.51650} , 5.00000, True, { 0.00000, 284.05490, 0.00000} } ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 2.00000} ",
+      "Next": 119,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : False, 3.00000} ",
+      "Next": 120,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 2.00000} ",
+      "Next": 121,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010607_334\"} ",
+      "Next": 122,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 123,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010607_339\"} ",
+      "Next": 124,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.50000} ",
+      "Next": 125,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010607_342\"} ",
+      "Next": 126,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 127,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"LoadScenesAction\" : \"S0307\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0, \"\"} ",
+      "Next": 128,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"RunCinematicAction\" : \"m605in010660_04\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcTransformAction\" : True, { 0.00000, 0.00000, 0.00000} , True, { 0.00000, 0.00000, 0.00000} , \"in25001\"} ",
+      "Next": -1,
+      "Prallel": 131
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 106,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcTransformAction\" : True, { 0.00000, 0.00000, 0.00000} , True, { 0.00000, 0.00000, 0.00000} , \"in05591c\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"MusicAction\" : \"\", 0.00000, False, 0.00000, True, 1.00000} ",
+      "Next": -1,
+      "Prallel": 133
+    },
+    {
+      "Node": "{ \"SoundAction\" : 1, \"Wind02.ogg\", 0.00000, 0.50000} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"MusicAction\" : \"In_mood_07.wav\", 2.00000, False, 0.50000, False, 0.00000} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"MusicAction\" : \"In_mood_18.wav\", 6.00000, False, 0.70000, False, 0.00000} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"CameraTransformAction\" : True, { 249.73600, 121.24100, 109.92900} , 12.00000, True, { 2.96059, 358.55680, 0.00000} , 12.00000, 45} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"MusicAction\" : \"In_mood_19.wav\", 2.00000, False, 0.80000, False, 0.00000} ",
+      "Next": -1,
+      "Prallel": -1
+    }
+  ],
+  "Name": "m605in010660_03：南飞鍠七阶_转场至五老山三山顶"
+}

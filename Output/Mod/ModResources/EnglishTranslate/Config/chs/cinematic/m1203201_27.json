@@ -1,0 +1,81 @@
+{
+  "EntryIndex": 0,
+  "Nodes": [
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"LoadScenesAction\" : \"S0105\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0} ",
+      "Next": 2,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 3,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1203202_138\"} ",
+      "Next": 4,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 5,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1203202_129\"} ",
+      "Next": 6,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 7,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1203202_134\"} ",
+      "Next": 9,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe1203201_2_04\"}  ], 0} , 12, -1} ",
+      "Next": -1,
+      "Prallel": 11
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.50000} ",
+      "Next": 14,
+      "Prallel": 10
+    },
+    {
+      "Node": "{ \"SetEvaluationAction\" : \"ev1203201\", 0} ",
+      "Next": -1,
+      "Prallel": 8
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe1203201_2_05\"}  ], 0} , 13, -1} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetEvaluationAction\" : \"ev1203201\", 1} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetEvaluationAction\" : \"ev1203201\", 2} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"OpenUIEvaluationAction\" : \"ev1203201\", \"m1203201_31\"} ",
+      "Next": -1,
+      "Prallel": -1
+    }
+  ],
+  "Name": "m1203201_27：烟貘战后(败)"
+}

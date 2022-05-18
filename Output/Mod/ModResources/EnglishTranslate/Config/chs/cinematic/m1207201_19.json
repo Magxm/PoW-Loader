@@ -1,0 +1,231 @@
+{
+  "EntryIndex": 0,
+  "Nodes": [
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 1, \"fe1207201_1_00\"} ",
+      "Next": 1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 1, \"fe1207201_1_04\"} ",
+      "Next": 2,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SortOutNpcAndEventCubeAction\" } ",
+      "Next": 3,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"CameraTransformAction\" : True, { 2556.31800, 9.90433, 828.33290} , 0.00000, True, { 11.61900, 17.63700, 0.00000} , 0.00000, 45} ",
+      "Next": 4,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"GroupTransformAction\" : [ { \"in05411\", { 2556.07600, 8.27642, 831.51700} , { 0.00000, 129.51380, 0.00000} } , { \"in05412\", { 2556.96200, 8.28356, 832.15100} , { 0.00000, 237.64690, 0.00000} }  ]} ",
+      "Next": 6,
+      "Prallel": 5
+    },
+    {
+      "Node": "{ \"PlayerTransformAction\" : True, { 2557.37600, 8.27642, 830.07700} , True, { 0.00000, 344.69950, 0.00000} } ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : True, 0.50000} ",
+      "Next": 7,
+      "Prallel": 9
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1207202_139\"} ",
+      "Next": 39,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1207202_149\"} ",
+      "Next": 10,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"k_stand05_await00\", 1.00000}  ], \"in05412\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1207202_154\"} ",
+      "Next": 11,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe1207201_2_41\"}  ], 0} , 36, -1} ",
+      "Next": -1,
+      "Prallel": 12
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 2, \"fe1207201_2_41\"}  ], 0} , 14, -1} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1207202_164\"} ",
+      "Next": 22,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1207202_184\"} ",
+      "Next": 44,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1207202_188\"} ",
+      "Next": 19,
+      "Prallel": 16
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"k_stand05_await00\", 1.00000}  ], \"in05412\"} ",
+      "Next": -1,
+      "Prallel": 18
+    },
+    {
+      "Node": "{ \"NpcFaceToPlayer\" : \"in05411\", 0} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 0, \"f_stand00_talk03\", 1.00000}  ], \"in05411\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : False, 0.50000} ",
+      "Next": 41,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 2, \"fe1207201_2_40\"} ",
+      "Next": 34,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SortOutDesignatedNpcAction\" : \"in05411,in05412\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcSimpleTransformAction\" : True, { 2557.36900, 8.28356, 831.21000} , 0.30000, True, { 0.00000, 184.79860, 0.00000} , \"in05412\"} ",
+      "Next": 24,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 0, \"k_stand05_start00\", 1.00000} , { 2, \"k_stand05_await00\", 1.00000}  ], \"in05412\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 25,
+      "Prallel": 23
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1207202_167\"} ",
+      "Next": 26,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcSimpleTransformAction\" : True, { 2556.20200, 8.28356, 831.15670} , 0.50000, True, { 0.00000, 137.92400, 0.00000} , \"in05411\"} ",
+      "Next": 35,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1207202_174\"} ",
+      "Next": 28,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1207202_176\"} ",
+      "Next": 29,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1207202_182\"} ",
+      "Next": 31,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayPlayerAnimationAction\" : [ { 0, \"m_stand00_talk01\", 1.00000}  ]} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : False, 0.50000} ",
+      "Next": 43,
+      "Prallel": 30
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1207202_183\"} ",
+      "Next": 20,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcFaceToPlayer\" : \"in05412\", 0} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayerTransformAction\" : True, { 2550.97900, 8.27642, 830.51100} , True, { 0.00000, 0.00000, 0.00000} } ",
+      "Next": 21,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1207202_168\"} ",
+      "Next": 27,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"RewardAction\" : \"re1207201_03\"} ",
+      "Next": 38,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcFaceToPlayer\" : \"in05411\", 0} ",
+      "Next": -1,
+      "Prallel": 33
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.30000} ",
+      "Next": 13,
+      "Prallel": 37
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 8,
+      "Prallel": 40
+    },
+    {
+      "Node": "{ \"PlayPlayerAnimationAction\" : [ { 0, \"m_stand00_talk02\", 1.00000}  ]} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1207202_187\"} ",
+      "Next": 42,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 20,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 32,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 15,
+      "Prallel": 17
+    }
+  ],
+  "Name": "南昌七夕宴_泥人军士_演出"
+}

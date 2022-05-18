@@ -1,0 +1,166 @@
+{
+  "EntryIndex": 2,
+  "Nodes": [
+    {
+      "Node": "{ \"NpcTransformAction\" : True, { 1500.15400, -0.03036, 764.51310} , True, { 0.00000, 282.63340, 0.00000} , \"in0111\"} ",
+      "Next": 7,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayerTransformAction\" : True, { 1496.98200, -0.03036, 765.72960} , True, { 0.00000, 175.97530, 0.00000} } ",
+      "Next": 0,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"CameraTransformAction\" : True, { 1497.35200, 1.08519, 767.69460} , 0.00000, True, { 2.17530, 131.11900, -0.00017} , 0.00000, 45} ",
+      "Next": 1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : True, 1.00000} ",
+      "Next": 4,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"CameraTransformAction\" : False, { 1497.35200, 1.08519, 767.69460} , 2.00000, True, { 4.40963, 160.85570, -0.00017} , 5.00000, 45} ",
+      "Next": -1,
+      "Prallel": 8
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1101202_000\"} ",
+      "Next": 10,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayerSimpleTransformAction\" : True, { 1497.75900, -0.03036, 764.72100} , 1.50000, True, { 0.00000, 127.73510, 0.00000} } ",
+      "Next": 5,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 3,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 6,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1101202_035\"} ",
+      "Next": 12,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcSimpleTransformAction\" : False, { 1500.15400, -0.02911, 766.81240} , 0.60000, True, { 0.00000, -163.40900, 0.00000} , \"in0111\"} ",
+      "Next": 9,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1101202_020\"} ",
+      "Next": 13,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"CameraTransformAction\" : True, { 1498.81500, 0.87927, 763.96660} , 0.00000, True, { 0.11243, 218.43730, -0.00017} , 0.00000, 45} ",
+      "Next": 11,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1101202_017\"} ",
+      "Next": 17,
+      "Prallel": 14
+    },
+    {
+      "Node": "{ \"CameraTransformAction\" : True, { 1497.35200, 1.08519, 767.69460} , 0.00000, True, { 4.40963, 160.85570, -0.00017} , 0.00000, 45} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"LoadScenesAction\" : \"\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 2, False, 1} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1101202_015\"} ",
+      "Next": 19,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcSimpleTransformAction\" : False, { 1500.15400, -0.02911, 766.81240} , 0.60000, True, { 0.00000, -85.93900, 0.00000} , \"in0111\"} ",
+      "Next": 16,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : False, 1.00000} ",
+      "Next": 20,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 18,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.50000} ",
+      "Next": 21,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1101202_011\"} ",
+      "Next": 27,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckQuestState\" : 2, \"q1101204_00\"}  ], 0} , 24, 15} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"RunCinematicAction\" : \"m1101204_01\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"LoadScenesAction\" : \"S0201\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0} ",
+      "Next": 23,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 22,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ChangeCharacterIdentity\" : \"Player\", 2} ",
+      "Next": 25,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckPlayerGender\" : True}  ], 0} , 29, 28} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckPlayerGender\" : False}  ], 0} , 31, -1} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ChangeCharacterProtraitAndModel\" : \"Player\", False, \"\", True, \"in0101\"} ",
+      "Next": 26,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ChangeCharacterIdentity\" : \"Player\", 2} ",
+      "Next": 25,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ChangeCharacterProtraitAndModel\" : \"Player\", False, \"\", True, \"in0115\"} ",
+      "Next": 30,
+      "Prallel": -1
+    }
+  ],
+  "Name": "m1101202_00室友相见欢(男版)"
+}

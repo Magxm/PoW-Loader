@@ -1,0 +1,66 @@
+{
+  "EntryIndex": 0,
+  "Nodes": [
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 4,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"LoadScenesAction\" : \"S1301\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0} ",
+      "Next": 2,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BattleAction\" : \"bt5107302_00\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"TeammateCondition\" : \"in0102\", True}  ], 0} , 5, -1} ",
+      "Next": -1,
+      "Prallel": 6
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 1,
+      "Prallel": 3
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 1, \"fe5107302_2_04\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"TeammateCondition\" : \"in0103\", True}  ], 0} , 7, -1} ",
+      "Next": -1,
+      "Prallel": 8
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 1, \"fe5107302_2_05\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"TeammateCondition\" : \"in0106\", True}  ], 0} , 9, -1} ",
+      "Next": -1,
+      "Prallel": 10
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 1, \"fe5107302_2_06\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"TeammateCondition\" : \"in0107\", True}  ], 0} , 11, -1} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 1, \"fe5107302_2_07\"} ",
+      "Next": -1,
+      "Prallel": -1
+    }
+  ],
+  "Name": "m5107302_01：［传书］帮道恒送货"
+}

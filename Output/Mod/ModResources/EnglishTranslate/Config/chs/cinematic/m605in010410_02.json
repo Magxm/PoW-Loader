@@ -1,0 +1,186 @@
+{
+  "EntryIndex": 0,
+  "Nodes": [
+    {
+      "Node": "{ \"PlayerTransformAction\" : True, { -1385.89500, 8.58778, 698.92940} , True, { 0.00000, 74.20128, 0.00000} } ",
+      "Next": 2,
+      "Prallel": 3
+    },
+    {
+      "Node": "{ \"NpcTransformAction\" : True, { -1378.63000, 8.58735, 687.87460} , True, { 1.21365, 314.26730, 359.81380} , \"in04001\"} ",
+      "Next": -1,
+      "Prallel": 5
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"m_kneel02_await00\", 1.00000}  ], \"in0104\"} ",
+      "Next": 9,
+      "Prallel": 27
+    },
+    {
+      "Node": "{ \"CameraTransformAction\" : True, { -1384.46500, 11.55011, 702.34800} , 0.00000, True, { 39.07000, 213.71900, 0.00000} , 0.00000, 45} ",
+      "Next": -1,
+      "Prallel": 4
+    },
+    {
+      "Node": "{ \"NpcTransformAction\" : True, { -1386.05900, 8.58778, 697.96020} , True, { 0.00000, 4.63926, 0.00000} , \"in0104\"} ",
+      "Next": -1,
+      "Prallel": 1
+    },
+    {
+      "Node": "{ \"NpcTransformAction\" : True, { -1377.13300, 8.58778, 688.45860} , True, { 0.00000, 310.96130, 0.00000} , \"in04002\"} ",
+      "Next": -1,
+      "Prallel": 6
+    },
+    {
+      "Node": "{ \"NpcTransformAction\" : True, { -1375.99700, 8.58778, 689.52420} , True, { 0.00000, 302.65630, 0.00000} , \"in04003\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010402_035\"} ",
+      "Next": 11,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayPlayerAnimationAction\" : [ { 2, \"f_sleep00_await00\", 1.00000}  ]} ",
+      "Next": 7,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckPlayerGender\" : False}  ], 0} , 8, 10} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayPlayerAnimationAction\" : [ { 2, \"m_sleep00_await00\", 1.00000}  ]} ",
+      "Next": 7,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : False, 1.00000} ",
+      "Next": 12,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayerTransformAction\" : True, { -1386.18900, 8.58778, 698.78500} , True, { 0.00000, 190.14380, 0.00000} } ",
+      "Next": 30,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"CameraTransformAction\" : True, { -1384.05400, 11.16402, 701.78450} , 0.00000, True, { 25.91500, 214.28300, 0.00000} , 0.00000, 45} ",
+      "Next": 16,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"f_stand00_talk00\", 1.00000}  ], \"in0104\"} ",
+      "Next": 13,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : True, 1.00000} ",
+      "Next": 17,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe1010402_2_03\"}  ], 0} , 34, 18} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010402_044\"} ",
+      "Next": 21,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 0, \"fe1010402_2_03\"}  ], 0} , 23, -1} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010402_063\"} ",
+      "Next": 20,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : False, 1.00000} ",
+      "Next": 22,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1010402_010\"} ",
+      "Next": 25,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NextOrEndQuestAction\" } ",
+      "Next": 31,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayPlayerAnimationAction\" : [ { 2, \"f_stand00_await00\", 1.00000}  ]} ",
+      "Next": 35,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : True, 1.00000} ",
+      "Next": 19,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : False, 1.00000} ",
+      "Next": 26,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 1, \"fe1010402_2_05\"} ",
+      "Next": 22,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ChangCharactereName" : \"in04001\", \"Xia Pavillion\", \"Disciple\"} ",
+      "Next": -1,
+      "Prallel": 28
+    },
+    {
+      "Node": "{ \"ChangCharactereName" : \"in04002\", \"Xia Pavillion\", \"Disciple\"} ",
+      "Next": -1,
+      "Prallel": 29
+    },
+    {
+      "Node": "{ \"ChangCharactereName" : \"in04003\", \"Xia Pavillion\", \"Disciple\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayPlayerAnimationAction\" : [ { 2, \"m_stand00_talk02\", 1.00000}  ]} ",
+      "Next": 14,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckCurrentTime\" : 1}  ], 0} , 32, 33} ",
+      "Next": 33,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, True, 0} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 1} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 15,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 24,
+      "Prallel": -1
+    }
+  ],
+  "Name": "萧芊菱支线二阶(02战斗输@后山"
+}

@@ -6,6 +6,7 @@
       "Index": 0,
       "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
       "Next": 1,
+      "Prallel": -1,
       "Child": [
         1
       ]
@@ -14,12 +15,14 @@
       "Index": 1,
       "Node": "{ \"BattleResultAddUnit\" : \"party00\", 0, 200103203, 1.00000, 0.00000} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 2,
       "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
       "Next": 3,
+      "Prallel": -1,
       "Child": [
         3
       ]
@@ -28,12 +31,14 @@
       "Index": 3,
       "Node": "{ \"BattleResultAddUnit\" : \"in03007\", 1, 104201203, 1.00000, 0.00000} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 4,
       "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
       "Next": 5,
+      "Prallel": -1,
       "Child": [
         5
       ]
@@ -42,6 +47,7 @@
       "Index": 5,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 6,
+      "Prallel": -1,
       "Child": [
         6,
         7,
@@ -56,48 +62,56 @@
       "Index": 6,
       "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
       "Next": 7,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 7,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5104204_00_00\", \"\"} ",
       "Next": 8,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 8,
       "Node": "{ \"BattleResultTalk\" : \"t5104204_007\"} ",
       "Next": 9,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 9,
       "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"bt5104204_00_debuff_ColdWind\", False} ",
       "Next": 10,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 10,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in03007\", \"bt5104204_00_debuff_ColdWind\", False} ",
       "Next": 11,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 11,
       "Node": "{ \"BattleResultTalk\" : \"t5104204_035\"} ",
       "Next": 12,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 12,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5104204_00_00\", 0, 1, \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 13,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 14,
+      "Prallel": -1,
       "Child": [
         14
       ]
@@ -106,6 +120,7 @@
       "Index": 14,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 15,
+      "Prallel": -1,
       "Child": [
         15,
         16,
@@ -121,54 +136,63 @@
       "Index": 15,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"in03007\"} ",
       "Next": 16,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 16,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5104204_00_01\", \"\"} ",
       "Next": 17,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 17,
       "Node": "{ \"BattleResultTalk\" : \"t5104204_008\"} ",
       "Next": 18,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 18,
       "Node": "{ \"BattleResultAddUnit\" : \"in03008\", 1, 104201203, 1.00000, 0.00000} ",
       "Next": 19,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 19,
       "Node": "{ \"BattleResultTalk\" : \"t5104204_010\"} ",
       "Next": 20,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 20,
       "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Lou Yanyu!\"} ",
       "Next": 21,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 21,
       "Node": "{ \"BattleResultTalk\" : \"t5104204_043\"} ",
       "Next": 22,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 22,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5104204_00_01\", 0, 1, \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 23,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 24,
+      "Prallel": -1,
       "Child": [
         24
       ]
@@ -177,6 +201,7 @@
       "Index": 24,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 25,
+      "Prallel": -1,
       "Child": [
         25,
         26,
@@ -184,6 +209,7 @@
         28,
         29,
         30,
+        138,
         31,
         32,
         33
@@ -193,60 +219,70 @@
       "Index": 25,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"in03008\"} ",
       "Next": 26,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 26,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 2, \"btf5104204_00_01\", \"\"} ",
       "Next": 27,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 27,
       "Node": "{ \"BattleResultTalk\" : \"t5104204_004\"} ",
       "Next": 28,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 28,
       "Node": "{ \"BattleResultAddUnit\" : \"in0109\", 1, 104201203, 1.00000, 0.00000} ",
       "Next": 29,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 29,
       "Node": "{ \"BattleResultTalk\" : \"t5104204_011\"} ",
       "Next": 30,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 30,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in0109\", \"bt5104204_00_debuff_Power050\", False} ",
-      "Next": 31,
+      "Next": 138,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 31,
       "Node": "{ \"BattleResultChangeWinTip\" : \"Weaken Jing's HP to 80%。\"} ",
       "Next": 32,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 32,
       "Node": "{ \"BattleResultTalk\" : \"t5104204_048\"} ",
       "Next": 33,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 33,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5104204_00_01\", 0, 3, \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 34,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 35,
+      "Prallel": -1,
       "Child": [
         35
       ]
@@ -255,6 +291,7 @@
       "Index": 35,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 36,
+      "Prallel": -1,
       "Child": [
         36,
         37,
@@ -267,36 +304,42 @@
       "Index": 36,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"Player\"} ",
       "Next": 37,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 37,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf5104204_00_02\", \"\"} ",
       "Next": 38,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 38,
       "Node": "{ \"BattleResultTalk\" : \"t5104204_005\"} ",
       "Next": 39,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 39,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5104204_00_02\", 0, 1, \"\"} ",
       "Next": 40,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 40,
       "Node": "{ \"BattleResultLose\" : \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 41,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 42,
+      "Prallel": -1,
       "Child": [
         42
       ]
@@ -305,6 +348,7 @@
       "Index": 42,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 43,
+      "Prallel": -1,
       "Child": [
         43,
         44,
@@ -317,36 +361,42 @@
       "Index": 43,
       "Node": "{ \"BattleFactorTargetHp\" : 2, 81, \"in0109\"} ",
       "Next": 44,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 44,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 4, \"btf5104204_00_01\", \"\"} ",
       "Next": 45,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 45,
       "Node": "{ \"BattleResultTalk\" : \"t5104204_000\"} ",
       "Next": 46,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 46,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5104204_00_01\", 0, 5, \"\"} ",
       "Next": 47,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 47,
       "Node": "{ \"BattleResultWin\" : \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 48,
       "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
       "Next": 49,
+      "Prallel": -1,
       "Child": [
         49
       ]
@@ -355,6 +405,7 @@
       "Index": 49,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 50,
+      "Prallel": -1,
       "Child": [
         50,
         51,
@@ -368,42 +419,49 @@
       "Index": 50,
       "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
       "Next": 51,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 51,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf5104204_00_00\", \"\"} ",
       "Next": 52,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 52,
       "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5104204_2_05\", \"\"} ",
       "Next": 53,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 53,
       "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"bt5104204_00_buff_MantraParry\", True} ",
       "Next": 54,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 54,
       "Node": "{ \"BattleResultTalk\" : \"t5104204_041\"} ",
       "Next": 55,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 55,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5104204_00_00\", 0, 2, \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 56,
       "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
       "Next": 57,
+      "Prallel": -1,
       "Child": [
         57
       ]
@@ -412,6 +470,7 @@
       "Index": 57,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 58,
+      "Prallel": -1,
       "Child": [
         58,
         59,
@@ -425,42 +484,49 @@
       "Index": 58,
       "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
       "Next": 59,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 59,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf5104204_00_00\", \"\"} ",
       "Next": 60,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 60,
       "Node": "{ \"BattleFactorGlobalFlag\" : 1, 2, \"fe5104204_2_05\", \"\"} ",
       "Next": 61,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 61,
       "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"bt5104204_00_buff_MantraAttack\", True} ",
       "Next": 62,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 62,
       "Node": "{ \"BattleResultTalk\" : \"t5104204_041\"} ",
       "Next": 63,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 63,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5104204_00_00\", 0, 2, \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 64,
       "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
       "Next": 65,
+      "Prallel": -1,
       "Child": [
         65
       ]
@@ -469,6 +535,7 @@
       "Index": 65,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 66,
+      "Prallel": -1,
       "Child": [
         66,
         67,
@@ -482,42 +549,49 @@
       "Index": 66,
       "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
       "Next": 67,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 67,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf5104204_00_00\", \"\"} ",
       "Next": 68,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 68,
       "Node": "{ \"BattleFactorGlobalFlag\" : 1, 3, \"fe5104204_2_05\", \"\"} ",
       "Next": 69,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 69,
       "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"bt5104204_00_buff_MantraEvasion\", True} ",
       "Next": 70,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 70,
       "Node": "{ \"BattleResultTalk\" : \"t5104204_041\"} ",
       "Next": 71,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 71,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5104204_00_00\", 0, 2, \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 72,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 73,
+      "Prallel": -1,
       "Child": [
         73
       ]
@@ -526,6 +600,7 @@
       "Index": 73,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 74,
+      "Prallel": -1,
       "Child": [
         74,
         75,
@@ -542,60 +617,70 @@
       "Index": 74,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"in03007\"} ",
       "Next": 75,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 75,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf5104204_00_01\", \"\"} ",
       "Next": 76,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 76,
       "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5104204_2_06\", \"\"} ",
       "Next": 77,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 77,
       "Node": "{ \"BattleResultRmoveBuff\" : \"Player\", \"bt5104204_00_buff_MantraParry\"} ",
       "Next": 78,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 78,
       "Node": "{ \"BattleResultRmoveBuff\" : \"Player\", \"bt5104204_00_buff_MantraAttack\"} ",
       "Next": 79,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 79,
       "Node": "{ \"BattleResultRmoveBuff\" : \"Player\", \"bt5104204_00_buff_MantraEvasion\"} ",
       "Next": 80,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 80,
       "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"bt5104204_00_buff_MantraParry\", True} ",
       "Next": 81,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 81,
       "Node": "{ \"BattleResultTalk\" : \"t5104204_047\"} ",
       "Next": 82,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 82,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5104204_00_01\", 0, 2, \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 83,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 84,
+      "Prallel": -1,
       "Child": [
         84
       ]
@@ -604,6 +689,7 @@
       "Index": 84,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 85,
+      "Prallel": -1,
       "Child": [
         85,
         86,
@@ -620,60 +706,70 @@
       "Index": 85,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"in03007\"} ",
       "Next": 86,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 86,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf5104204_00_01\", \"\"} ",
       "Next": 87,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 87,
       "Node": "{ \"BattleFactorGlobalFlag\" : 1, 2, \"fe5104204_2_06\", \"\"} ",
       "Next": 88,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 88,
       "Node": "{ \"BattleResultRmoveBuff\" : \"Player\", \"bt5104204_00_buff_MantraParry\"} ",
       "Next": 89,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 89,
       "Node": "{ \"BattleResultRmoveBuff\" : \"Player\", \"bt5104204_00_buff_MantraAttack\"} ",
       "Next": 90,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 90,
       "Node": "{ \"BattleResultRmoveBuff\" : \"Player\", \"bt5104204_00_buff_MantraEvasion\"} ",
       "Next": 91,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 91,
       "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"bt5104204_00_buff_MantraAttack\", True} ",
       "Next": 92,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 92,
       "Node": "{ \"BattleResultTalk\" : \"t5104204_047\"} ",
       "Next": 93,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 93,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5104204_00_01\", 0, 2, \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 94,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 95,
+      "Prallel": -1,
       "Child": [
         95
       ]
@@ -682,6 +778,7 @@
       "Index": 95,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 96,
+      "Prallel": -1,
       "Child": [
         96,
         97,
@@ -698,60 +795,70 @@
       "Index": 96,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"in03007\"} ",
       "Next": 97,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 97,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf5104204_00_01\", \"\"} ",
       "Next": 98,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 98,
       "Node": "{ \"BattleFactorGlobalFlag\" : 1, 3, \"fe5104204_2_06\", \"\"} ",
       "Next": 99,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 99,
       "Node": "{ \"BattleResultRmoveBuff\" : \"Player\", \"bt5104204_00_buff_MantraParry\"} ",
       "Next": 100,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 100,
       "Node": "{ \"BattleResultRmoveBuff\" : \"Player\", \"bt5104204_00_buff_MantraAttack\"} ",
       "Next": 101,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 101,
       "Node": "{ \"BattleResultRmoveBuff\" : \"Player\", \"bt5104204_00_buff_MantraEvasion\"} ",
       "Next": 102,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 102,
       "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"bt5104204_00_buff_MantraEvasion\", True} ",
       "Next": 103,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 103,
       "Node": "{ \"BattleResultTalk\" : \"t5104204_047\"} ",
       "Next": 104,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 104,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5104204_00_01\", 0, 2, \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 105,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 106,
+      "Prallel": -1,
       "Child": [
         106
       ]
@@ -760,6 +867,7 @@
       "Index": 106,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 107,
+      "Prallel": -1,
       "Child": [
         107,
         108,
@@ -776,60 +884,70 @@
       "Index": 107,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"in03008\"} ",
       "Next": 108,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 108,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 3, \"btf5104204_00_01\", \"\"} ",
       "Next": 109,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 109,
       "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe5104204_2_07\", \"\"} ",
       "Next": 110,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 110,
       "Node": "{ \"BattleResultRmoveBuff\" : \"Player\", \"bt5104204_00_buff_MantraParry\"} ",
       "Next": 111,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 111,
       "Node": "{ \"BattleResultRmoveBuff\" : \"Player\", \"bt5104204_00_buff_MantraAttack\"} ",
       "Next": 112,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 112,
       "Node": "{ \"BattleResultRmoveBuff\" : \"Player\", \"bt5104204_00_buff_MantraEvasion\"} ",
       "Next": 113,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 113,
       "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"bt5104204_00_buff_MantraParry\", True} ",
       "Next": 114,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 114,
       "Node": "{ \"BattleResultTalk\" : \"t5104204_047\"} ",
       "Next": 115,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 115,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5104204_00_01\", 0, 4, \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 116,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 117,
+      "Prallel": -1,
       "Child": [
         117
       ]
@@ -838,6 +956,7 @@
       "Index": 117,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 118,
+      "Prallel": -1,
       "Child": [
         118,
         119,
@@ -854,60 +973,70 @@
       "Index": 118,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"in03008\"} ",
       "Next": 119,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 119,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 3, \"btf5104204_00_01\", \"\"} ",
       "Next": 120,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 120,
       "Node": "{ \"BattleFactorGlobalFlag\" : 1, 2, \"fe5104204_2_07\", \"\"} ",
       "Next": 121,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 121,
       "Node": "{ \"BattleResultRmoveBuff\" : \"Player\", \"bt5104204_00_buff_MantraParry\"} ",
       "Next": 122,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 122,
       "Node": "{ \"BattleResultRmoveBuff\" : \"Player\", \"bt5104204_00_buff_MantraAttack\"} ",
       "Next": 123,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 123,
       "Node": "{ \"BattleResultRmoveBuff\" : \"Player\", \"bt5104204_00_buff_MantraEvasion\"} ",
       "Next": 124,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 124,
       "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"bt5104204_00_buff_MantraAttack\", True} ",
       "Next": 125,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 125,
       "Node": "{ \"BattleResultTalk\" : \"t5104204_047\"} ",
       "Next": 126,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 126,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5104204_00_01\", 0, 4, \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 127,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 128,
+      "Prallel": -1,
       "Child": [
         128
       ]
@@ -916,6 +1045,7 @@
       "Index": 128,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 129,
+      "Prallel": -1,
       "Child": [
         129,
         130,
@@ -932,54 +1062,70 @@
       "Index": 129,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"in03008\"} ",
       "Next": 130,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 130,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 3, \"btf5104204_00_01\", \"\"} ",
       "Next": 131,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 131,
       "Node": "{ \"BattleFactorGlobalFlag\" : 1, 3, \"fe5104204_2_07\", \"\"} ",
       "Next": 132,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 132,
       "Node": "{ \"BattleResultRmoveBuff\" : \"Player\", \"bt5104204_00_buff_MantraParry\"} ",
       "Next": 133,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 133,
       "Node": "{ \"BattleResultRmoveBuff\" : \"Player\", \"bt5104204_00_buff_MantraAttack\"} ",
       "Next": 134,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 134,
       "Node": "{ \"BattleResultRmoveBuff\" : \"Player\", \"bt5104204_00_buff_MantraEvasion\"} ",
       "Next": 135,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 135,
       "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"bt5104204_00_buff_MantraEvasion\", True} ",
       "Next": 136,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 136,
       "Node": "{ \"BattleResultTalk\" : \"t5104204_047\"} ",
       "Next": 137,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 137,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5104204_00_01\", 0, 4, \"\"} ",
       "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 138,
+      "Node": "{ \"BattleResultAddBuff\" : False, \"in0109\", \"bt5104204_00_buff_HpLock01\", True} ",
+      "Next": 31,
+      "Prallel": -1,
       "Child": []
     }
   ],
