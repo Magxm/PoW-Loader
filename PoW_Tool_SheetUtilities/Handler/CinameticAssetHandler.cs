@@ -80,7 +80,7 @@ namespace PoW_Tool_SheetUtilities.Handler
 
         public override void UpdateSheetFromGameFile(string outRootPath)
         {
-            string cinameticFolder = Environment.CurrentDirectory + Path.DirectorySeparatorChar + "Input" + Path.DirectorySeparatorChar + "cinematic";
+            string cinameticFolder = Environment.CurrentDirectory + Path.DirectorySeparatorChar + "Input" + Path.DirectorySeparatorChar + "chs" + Path.DirectorySeparatorChar + "cinematic";
             Console.WriteLine("Getting Cinametic Patching Spreadsheet content");
 
             SpreadsheetsResource.ValuesResource.GetRequest request = GoogleSheetConnector.GetInstance().Service.Spreadsheets.Values.Get(SheetId, SheetRange);
@@ -194,8 +194,8 @@ namespace PoW_Tool_SheetUtilities.Handler
                 }
             }
 
-            string cinameticFolder = Environment.CurrentDirectory + Path.DirectorySeparatorChar + "Input" + Path.DirectorySeparatorChar + "cinematic";
-            string outputFileDirectory = outRootPath + Path.DirectorySeparatorChar + "cinematic";
+            string cinameticFolder = Environment.CurrentDirectory + Path.DirectorySeparatorChar + "Input" + Path.DirectorySeparatorChar + "chs" + Path.DirectorySeparatorChar + "cinematic";
+            string outputFileDirectory = outRootPath + Path.DirectorySeparatorChar + "chs" + Path.DirectorySeparatorChar + "cinematic";
             if (!Directory.Exists(outputFileDirectory))
             {
                 Directory.CreateDirectory(outputFileDirectory);

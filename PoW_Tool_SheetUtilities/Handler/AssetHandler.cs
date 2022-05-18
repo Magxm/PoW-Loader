@@ -24,7 +24,7 @@ namespace PoW_Tool_SheetUtilities.Handler
         public bool AutoML = true;
         public bool IsScriptField_FilterNoText = false;
 
-        public override string ToString() 
+        public override string ToString()
         {
             return "(AssetVariableDefinition) " + Name + " [" + VariableType.ToString() + "]";
         }
@@ -419,12 +419,12 @@ namespace PoW_Tool_SheetUtilities.Handler
                 columnIndex++; //StandarizedTermLocator
             }
 
-            if (Translation.Contains(@"""") && !Translation.Contains(@"\"""))
-            {
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("Questionable quotes in translation " + Translation + " in variable with definition " + Definition.ToString());
-                Console.ForegroundColor = ConsoleColor.White;
-            }
+            //if (Translation.Contains(@"""") && !Translation.Contains(@"\"""))
+            //{
+            //    Console.ForegroundColor = ConsoleColor.Red;
+            //    Console.WriteLine("Questionable quotes in translation " + Translation + " in variable with definition " + Definition.ToString());
+            //    Console.ForegroundColor = ConsoleColor.White;
+            //}
             return updateRequests;
         }
 
