@@ -118,7 +118,7 @@ BattlePositiveState_Repel	驱除	Repel Lv {0}
 BattlePositiveState_Vitalization	化气	Vitalization Lv {0}
 BattleProperty_Counter_Rate	反击率	Counter Rate
 BattleProperty_Critical_Rate	暴击率	Critical Rate
-BattleProperty_Dodge_Rate	闪避率	Evasion Rate
+BattleProperty_Dodge_Rate	闪避率	Dodge Rate
 BattleProperty_Force_Counter	必反	Inevitable Counter Attack
 BattleProperty_Force_Critical	必爆	Inevitable Critical Hit
 BattleProperty_Force_Dodge	必闪	Inevitable Evasion
@@ -251,7 +251,7 @@ Forge_Condition	装备条件	Pre-req
 Forge_Level	锻造难度	Difficulty Lv
 General_Area	范围	Applied Area
 General_Armor	防具	Armor
-General_BladeAndSword	刀剑	Saber and Sword
+General_BladeAndSword	刀剑	<size=19>Saber<br>Sword</size>
 General_Cancel	取消	Cancel
 General_CD	冷却回合	CD
 General_Condition	条件	Criteria
@@ -260,7 +260,7 @@ General_Consumption	消耗	Consumption
 General_Effect	效果	Effect
 General_Equipment	装备	Gears
 General_Favorability	友好度	Friendship
-General_Fight	搏击	Spar
+General_Fight	搏击	<size=19>Palm<br>Leg</size>
 General_Formula	行囊页签_秘笈/图纸/配方	Books
 General_FourArts	四艺	Four Arts
 General_FourAttribute	四维	Stats
@@ -268,12 +268,12 @@ General_FourAttributePoint	四维点数	Attribute Point
 General_FourTraits	四轴	Personality
 General_Herb	药材	Herb
 General_Hold	持有	In Possession
-General_HoldCount	持有数量	Amount
+General_HoldCount	持有数量	Owned
 General_Hurt	伤害	Damage
 General_Information	交友	Socialise
-General_Introduction	介绍	Intro
+General_Introduction	介绍	Info
 General_Inventory	行囊	Items
-General_LongAndShort	长短兵	Polearm And Dagger
+General_LongAndShort	长短兵	<size=18>Polearm<br>Dagger</size>
 General_MartialArts	武学	Skills
 General_Medicine	药品	Medicine
 General_New	新	New
@@ -430,17 +430,17 @@ PropsCategory709	道具小分类	Silk
 PropsCategory710	道具小分类	Paper Umbrella
 PropsCategory711	道具小分类	Paper Fan
 PropsCategory712	道具小分类	Sweet Tooth
-PropsCategory713	道具小分类	Weaponary
+PropsCategory713	道具小分类	Weaponry
 PropsCategory714	道具小分类	Tea
 PropsCategory801	道具小分类	Crafting Diagrams
 PropsCategory802	道具小分类	Medication Formula
 Props_ConditionFail	使用条件不符	Criteria Not Met
 Reading_NPC_NoBook	没有任何书籍	Come back later. There are no suitable books available.
 Reading_NPC_Normal	未选择书籍	Please select a book.
-Reading_Tab_Mantra	心法	Inner Style
-Reading_Tab_MartialArt	武学	Martial Art
+Reading_Tab_Mantra	心法	<size=20>Inner<br>Style</size>
+Reading_Tab_MartialArt	武学	<size=20>Martial<br>Art</size>
 Refining_AlchemyFurnace	炼丹炉	Alchemy Furnace
-Refining_Count	炼制数量	Required Amount
+Refining_Count	炼制数量	<size=26>Amount to Refine</size>
 Refining_DemandRound	炼制需要回合	Required Number of Turns
 Refining_Herb	所需药材	Required Herbs
 Refining_ResultCount	可炼制数量	Capacity
@@ -547,8 +547,8 @@ RoundOfTime_2	时间	Early
 RoundOfTime_3	时间	Mid
 RoundOfTime_4	时间	Late
 RoundOfTime_5	时间	End
-SecondaryInterface0101	选课次级介面字符串	Confirm selection of {0}？
-SecondaryInterface0102	选课次级介面字符串	Criteria not met, please try again later
+SecondaryInterface0101	选课次级介面字符串	Are you sure you want to take {0} ？
+SecondaryInterface0102	选课次级介面字符串	Criteria not met, please try again next time
 SecondaryInterface0103	选课介面	Elementary
 SecondaryInterface0104	选课介面	Intermediate
 SecondaryInterface0105	选课介面	Course Requirement
@@ -557,13 +557,13 @@ SecondaryInterface0107	选课介面	Course Description
 SecondaryInterface0108	选课介面	Teaching Master
 SecondaryInterface0109	选课介面	Confirm Course
 SecondaryInterface0110	选课介面	Not yet available
-SecondaryInterface0201	炼药次级介面（确认选项）	Confirm selection of {0} {1}
-SecondaryInterface0202	炼药介面道恒对白	Becareful not to burn down this place...
-SecondaryInterface0203	炼药介面道恒对白	Still not yet decided? I am already....(yawn)
-SecondaryInterface0204	炼药介面道恒对白	Please take care of.... too much trouble, lets talk about it again
-SecondaryInterface0205	炼药介面	Make Medication
-SecondaryInterface0206	炼药介面	Craft
-SecondaryInterface0301	锻造介面确认提示	Confirm selection of {0}？
+SecondaryInterface0201	炼药次级介面（确认选项）	Are you sure to refine {1} {0}?
+SecondaryInterface0202	炼药介面道恒对白	Be careful not to burn down this place...
+SecondaryInterface0203	炼药介面道恒对白	Haven't figured out what medicine to make yet? I am already....(yawn)
+SecondaryInterface0204	炼药介面道恒对白	Be very careful when refining medicine... It's a hassle, I'll talk about it next time.
+SecondaryInterface0205	炼药介面	Refine Medicine
+SecondaryInterface0206	炼药介面	<size=27>Refine</size>
+SecondaryInterface0301	锻造介面确认提示	Forge {0}？
 SecondaryInterface0302	铁匠次级介面锻造条件不符提示	Unable to make the item now.
 SecondaryInterface0311	铁匠钱不够台词1	You dont have enough money. Please do not make things difficult for me...
 SecondaryInterface0312	铁匠钱不够台词2	Though I'm your friend, a business is a business...
@@ -583,11 +583,11 @@ SecondaryInterface0406	泛用商店文本	Wallet
 SecondaryInterface0407	泛用商店文本	Sold out
 SecondaryInterface0408	泛用商店文本	Store
 SecondaryInterface0409	当舖介面	Pawn Shop
-SecondaryInterface0410	当舖介面	Sold
+SecondaryInterface0410	当舖介面	Sell
 SecondaryInterface0501	装备介面背包里没东西换的提示	No replaceable Gear in Inventory
 SecondaryInterface0502	装备品的对象限制叙述	Suitable for:
 SecondaryInterface0503	装备介面	Does not meet pre-requisite for equipping this item!
-SecondaryInterface0511	药品介面服用药品的提示	Confirm to let {0} have {1} ？
+SecondaryInterface0511	药品介面服用药品的提示	Are you sure you want {0} to take {1}?
 SecondaryInterface0512	药品介面使用提示（使用条件不符）	You can only use this item while in battle
 SecondaryInterface0513	药品介面使用提示（战斗中）	There is no selectable items in storage.
 SecondaryInterface0601	战斗结算	Press any key to skip battle
@@ -618,8 +618,8 @@ SecondaryInterface1002	招式养成指令TIP标题	Foundation Skill Criteria
 SecondaryInterface1003	招式养成指令TIP标题2	Experience
 SecondaryInterface1004	招式养成指令TIP标题	1 Turn required
 SecondaryInterface1005	养成介面设施指令TIP	Facilities
-SecondaryInterface1006	习武门槛加速提示	<color=#FD420DFF>Min criteria reached, accelerated learning</color>
-SecondaryInterface1007	习武门槛减速提示	<color=#43C386FF>Min criteria NOT reached, slow learning</color>
+SecondaryInterface1006	习武门槛加速提示	<size=21><color=#FD420DFF>Min criteria reached, faster learning</color></size>
+SecondaryInterface1007	习武门槛减速提示	<size=21><color=#43C386FF>Min criteria NOT reached, slower learning</color></size>
 SecondaryInterface1008	招式威力tip	<color=#FD420DFF>Damage {0}→{1}</color>
 SecondaryInterface1009	招式提升tip	{0} +
 SecondaryInterface1010	不消耗时间指令	0 Turn required
@@ -629,17 +629,17 @@ SecondaryInterface1102	养成介面精神状态提示	<color=#CC9933FF>Tired, lo
 SecondaryInterface1103	养成介面精神状态提示	<color=#43C386FF>Exhausted, very low productivity</color>
 SecondaryInterface1104	养成介面精神状态提示	<color=#3B5FECFF>Fatigue, burning out</color>
 SecondaryInterface1201	战斗按键TIP	Gear
-SecondaryInterface1202	战斗按键TIP	Medication
+SecondaryInterface1202	战斗按键TIP	Medicine
 SecondaryInterface1203	战斗按键TIP	Standby
 SecondaryInterface1204	战斗按键TIP	<size=19>Usage of medication ends the current turn</size>
 SecondaryInterface1205	战斗按键TIP	Turn
 SecondaryInterface1206	战斗按键TIP，待机回10％（未移动）～5％（移动後）	<size=19>End turn. Recover Qi slightly.</size>
 SecondaryInterface1207	战斗按键TIP	Insufficient Qi
-SecondaryInterface1208	主角特技按键TIP	Element changed to <color=#FF0000>金</color>. Attacking from the back will trigger Critical Hit. Attacking from the side will increase Critical Hit rate by 25%. Extra move available
-SecondaryInterface1209	主角特技按键TIP	Element changed to <color=#FF0000>木</color>. For the immediate turn, 100% Evasion on all attacks except Critical Hit
-SecondaryInterface1210	主角特技按键TIP	Element changed to <color=#FF0000>水</color>. Remove all negative stats effect. HP recover by 15%, Qi recovered by 25%
-SecondaryInterface1211	主角特技按键TIP	Element changed to <color=#FF0000>火</color>. For the immediate turn, +25% on Attack damage, Inevitable Parry on receiving damaging
-SecondaryInterface1212	主角特技按键TIP	Element changed to <color=#FF0000>土</color>. For the immediate turn, Counterattack rate +50%, Counter Attack range + 1, and 50% chance of Counter Attack for a party member that took damage.
+SecondaryInterface1208	主角特技按键TIP	Element changed to <color=#FF0000>金</color>. Attacking from the back will trigger Critical Hit. Attacking from the side will increase Critical rate by 25%.
+SecondaryInterface1209	主角特技按键TIP	Element changed to <color=#FF0000>木</color>. In this turn, 100% Dodge on all attacks except Critical Hit.
+SecondaryInterface1210	主角特技按键TIP	Element changed to <color=#FF0000>水</color>. Remove all negative status effect. Restore 15% HP. Restore 25% Qi.
+SecondaryInterface1211	主角特技按键TIP	Element changed to <color=#FF0000>火</color>. In this turn, Attack damage +25%. Parry all incoming attack.
+SecondaryInterface1212	主角特技按键TIP	Element changed to <color=#FF0000>土</color>. In this turn, Counter attack rate +50%, Counter Attack range + 1, and 50% chance to Counter Attack for an ally that took damage.
 SecondaryInterface1213	主角特技按键TIP	Five Elements
 SecondaryInterface1214	主角特技按键TIP	Movement restricted!
 SecondaryInterface1215	主角特技按键TIP	While dazzed, Movement and Attacks are restricted!
@@ -667,7 +667,7 @@ SecondaryInterface1406	招式说明TIP（武学介面与战斗）	Effect
 SecondaryInterface1501	包包无礼品	No appropriate Gift in Inventory
 SecondaryInterface1502	赠送确认介面	Confirming gifting {0} to {1}?
 SecondaryInterface1601	贩售介面文本	Out of Stock
-SecondaryInterface1602	贩售介面文本	Select sales volume
+SecondaryInterface1602	贩售介面文本	Amount to Sell
 SecondaryInterface1603	贩售介面文本	Are you sure you want to sell {1} {0}?
 SecondaryInterface1604	贩售介面文本	Upper Limit Reached
 SecondaryInterface1701	传书介面无法接取	Criteria not met, unable to accept Quest
@@ -684,7 +684,7 @@ SecondaryInterface1711	传书介面来信人	Sender
 SecondaryInterface1712	传书介面所需日程	Time
 SecondaryInterface1713	传书介面承接条件	Criteria
 SecondaryInterface1714	传书介面完成奖励	Reward
-SecondaryInterface1715	传书介面期限	Validity
+SecondaryInterface1715	传书介面期限	<size=30>Validity</size>
 SecondaryInterface1716	传书介面传书分页标题	Quest
 SecondaryInterface1717	传书介面记录分页标题	Record
 SecondaryInterface1718	传书介面任务日程不费时	0 turn
@@ -706,7 +706,7 @@ SecondaryInterface2001	整备介面文本	Confirm Proceed？
 SecondaryInterface2002	整备介面文本	Adv Element
 SecondaryInterface2003	整备介面文本	Disadv Element
 SecondaryInterface2004	整备介面文本	Empty
-SecondaryInterface2005	整备介面文本	Change Eqp
+SecondaryInterface2005	整备介面文本	<size=22>Change<br>Equipment</size>
 SecondaryInterface2006	整备介面文本	Can't leave Party
 SecondaryInterface2007	整备介面文本	GO!
 SecondaryInterface2008	整备介面文本	Preparation
@@ -747,13 +747,13 @@ SecondaryInterface2404	标题画面	SYSTEM SETTINGS
 SecondaryInterface2405	标题画面	EXIT GAME
 SecondaryInterface2406	标题画面	ACHIEVEMENT
 SecondaryInterface2407	标题画面	MODULE
-SecondaryInterface2408	游戏选单TIP	Return to the Title Screen？Unsaved progress will be lost.
-SecondaryInterface2409	游戏选单TIP	Exit the Game？Unsaved progress will be lost.
+SecondaryInterface2408	游戏选单TIP	Return to the Title Screen ? (Unsaved progress will be lost)
+SecondaryInterface2409	游戏选单TIP	Exit the Game ? (Unsaved progress will be lost)
 SecondaryInterface2410	游戏选单	SAVE GAME
 SecondaryInterface2411	游戏选单	BACK TO TITLE SCREEN
 SecondaryInterface2412	游戏选单	Load Game?
 SecondaryInterface2413	游戏标题	Current Version： {0}
-SecondaryInterface2414	选单文本	Restart the battle
+SecondaryInterface2414	选单文本	RESTART BATTLE
 SecondaryInterface2415	游戏标题	Do you want to restart this battle? The current progress will not be retained.
 SecondaryInterface2501	人物状态	Traits
 SecondaryInterface2601	创角介面	There are still Basic Skills points {0} and Traits points {1} unassigned, leave？
@@ -841,7 +841,7 @@ SecondaryInterface3115	按键设置	Skill 1 Hotkey
 SecondaryInterface3116	按键设置	Skill 2 Hotkey
 SecondaryInterface3117	按键设置	Skill 3 Hotkey
 SecondaryInterface3118	按键设置	Skill 4 Hotkey
-SecondaryInterface3119	按键设置	Special Skills
+SecondaryInterface3119	按键设置	<size=18>Special Skill</size>
 SecondaryInterface3120	按键设置	Combat: Switch Equipment
 SecondaryInterface3121	按键设置	Combat: Use Medicine
 SecondaryInterface3122	按键设置	Combat: Wait
@@ -970,7 +970,7 @@ SecondaryInterface3606	战斗胜败介面：次要目标失败格式	－{0}（Fa
 SecondaryInterface3607	战斗胜败介面：胜利tip格式	<color=#B4D3FF><size=21>✓</size>.{0}</color>
 SecondaryInterface3608	战斗胜败介面：失败tip格式	<color=#FF9E9E><size=21>✗</size>.{0}</color>
 SecondaryInterface3609	战斗胜败介面：主要目标	Main objectives：
-SecondaryInterface3701	百科介面	Xia Notes
+SecondaryInterface3701	百科介面	XIA NOTES
 SecondaryInterface3702	百科介面	Studies
 SecondaryInterface3703	百科介面	Characters
 SecondaryInterface3704	百科介面	Anecdote
@@ -1060,12 +1060,12 @@ JoyButtonXBoxId12	按键设置手把按键13	Handlebar button 13
 JoyButtonXBoxId13	按键设置手把按键14	Handlebar button 14
 JoyButtonXBoxId14	按键设置手把按键15	Handlebar button 15
 JoyButtonXBoxId15	按键设置手把按键16	Handlebar button 16
-SecondaryInterface1226	战斗按键文本	All staff on standby
-SecondaryInterface1227	战斗按键文本	Does it put all members on standby and close the operation?
+SecondaryInterface1226	战斗按键文本	All on standby
+SecondaryInterface1227	战斗按键文本	Put all characters on standby and end the turn?
 SecondaryInterface2117	存盘介面文本	Local storage
-SecondaryInterface2118	存盘介面文本	Combat Inventory
-SecondaryInterface2626	创角介面	New Student Name
-SecondaryInterface2627	创角介面	Please enter your last name and first name, up to two characters each
-SecondaryInterface2628	创角介面	Last name
-SecondaryInterface2629	创角介面	Name
+SecondaryInterface2118	存盘介面文本	Combat Autosave
+SecondaryInterface2626	创角介面	<size=29>New Student Name</size>
+SecondaryInterface2627	创角介面	<size=27>Please enter your first name and last name</size>
+SecondaryInterface2628	创角介面	<size=24>First<br>Name</size>
+SecondaryInterface2629	创角介面	<size=24>Last<br>Name</size>
 SecondaryInterface3178	按键设置	One Click Full Standby
