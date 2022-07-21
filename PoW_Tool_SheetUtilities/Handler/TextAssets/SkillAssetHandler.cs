@@ -43,109 +43,114 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                 },
                 new AssetVariableDefinition()
                 {
-                    Name = "J",
+                    Name = "Rank",
                     VariableType = AssetVariableType.NoTranslate
                 },
                 new AssetVariableDefinition()
                 {
-                    Name = "Requirement Type",
+                    Name = "RequireAttribute",
                     VariableType = AssetVariableType.NoTranslate
                 },
                 new AssetVariableDefinition()
                 {
-                    Name = "Requirement Amount",
+                    Name = "RequireValue",
                     VariableType = AssetVariableType.NoTranslate
                 },
                 new AssetVariableDefinition()
                 {
-                    Name = "M",
+                    Name = "IconName",
                     VariableType = AssetVariableType.NoTranslate
                 },
                 new AssetVariableDefinition()
                 {
-                    Name = "N",
+                    Name = "Icon",
                     VariableType = AssetVariableType.NoTranslate
                 },
                 new AssetVariableDefinition()
                 {
-                    Name = "O",
+                    Name = "Type",
                     VariableType = AssetVariableType.NoTranslate,
                 },
                  new AssetVariableDefinition()
                 {
-                    Name = "P",
+                    Name = "DamageType",
                     VariableType = AssetVariableType.NoTranslate,
                 },
                 new AssetVariableDefinition()
                 {
-                    Name = "Q",
+                    Name = "TargetType",
                     VariableType = AssetVariableType.NoTranslate,
                 },
                 new AssetVariableDefinition()
                 {
-                    Name = "R",
+                    Name = "TargetArea",
                     VariableType = AssetVariableType.NoTranslate,
                 },
                 new AssetVariableDefinition()
                 {
-                    Name = "S",
+                    Name = "MaxRange",
                     VariableType = AssetVariableType.NoTranslate,
                 },
                 new AssetVariableDefinition()
                 {
-                    Name = "T",
+                    Name = "MinRange",
                     VariableType = AssetVariableType.NoTranslate,
                 },
                 new AssetVariableDefinition()
                 {
-                    Name = "U",
+                    Name = "AOE",
                     VariableType = AssetVariableType.NoTranslate,
                 },
                  new AssetVariableDefinition()
                 {
-                    Name = "V",
+                    Name = "Algorithm",
                     VariableType = AssetVariableType.NoTranslate,
                 },
                  new AssetVariableDefinition()
                 {
-                    Name = "W",
+                    Name = "RequestMP",
                     VariableType = AssetVariableType.NoTranslate,
                 },
                 new AssetVariableDefinition()
                 {
-                    Name = "X",
+                    Name = "MaxCD",
                     VariableType = AssetVariableType.NoTranslate,
                 },
                 new AssetVariableDefinition()
                 {
-                    Name = "Y",
+                    Name = "TargetBuffList",
                     VariableType = AssetVariableType.NoTranslate,
                 },
                 new AssetVariableDefinition()
                 {
-                    Name = "Z",
+                    Name = "SelfBuffList",
                     VariableType = AssetVariableType.NoTranslate,
                 },
                 new AssetVariableDefinition()
                 {
-                    Name = "AA",
+                    Name = "Effect",
                     VariableType = AssetVariableType.NoTranslate,
                 },
                 new AssetVariableDefinition()
                 {
-                    Name = "AB",
+                    Name = "PushDistance",
                     VariableType = AssetVariableType.NoTranslate,
                 },
                  new AssetVariableDefinition()
                 {
-                    Name = "AC",
+                    Name = "Summonid",
                     VariableType = AssetVariableType.NoTranslate,
                 },
                 new AssetVariableDefinition()
                 {
-                    Name = "Script",
+                    Name = "Rewards",
                     VariableType = AssetVariableType.NoTranslate,
                 },
+                new AssetVariableDefinition()
+                {
+                    Name = "FullSkillTransformId",
+                    VariableType = AssetVariableType.NoTranslate,
+                }
             };
         }
     }
