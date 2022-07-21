@@ -1,0 +1,523 @@
+{
+  "Id": "bs5206102_00",
+  "Name": "bs5206102_00",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Prallel": -1,
+      "Child": [
+        1,
+        2,
+        3,
+        57
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnits\" : \"Player,in0106,in0107\", 0, \"103105208,103104207,103103206\"} ",
+      "Next": 2,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnits\" : \"in05010,in05011\", 1, \"205108203,207106101\"} ",
+      "Next": 3,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnits\" : \"in05012,in05013,in05014\", 1, \"201107206,201104203,201101200\"} ",
+      "Next": 57,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 5,
+      "Prallel": -1,
+      "Child": [
+        5
+      ]
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 6,
+      "Prallel": -1,
+      "Child": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 7,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 8,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultTalk\" : \"t5206102_173\"} ",
+      "Next": 9,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultExitPoint\" : \"206108202,206107201,207107200\"} ",
+      "Next": 10,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultChangeWinTip\" : \"The trio arrive at the escape point within seven Rounds\"} ",
+      "Next": 11,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"The trio did not reach the escape point within seven Rounds\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 13,
+      "Prallel": -1,
+      "Child": [
+        13
+      ]
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 14,
+      "Prallel": -1,
+      "Child": [
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"206108202,206107201,207107200\", \"Player\"} ",
+      "Next": 15,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"Player\", False} ",
+      "Next": 16,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5206102_00\", 1, 1, \"玩家走到逃脱点\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 18,
+      "Prallel": -1,
+      "Child": [
+        18
+      ]
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 19,
+      "Prallel": -1,
+      "Child": [
+        19,
+        20,
+        21
+      ]
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"206108202,206107201,207107200\", \"in0106\"} ",
+      "Next": 20,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in0106\", False} ",
+      "Next": 21,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5206102_00\", 1, 1, \"南哥走到逃脱点\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 23,
+      "Prallel": -1,
+      "Child": [
+        23
+      ]
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 24,
+      "Prallel": -1,
+      "Child": [
+        24,
+        25,
+        26
+      ]
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"206108202,206107201,207107200\", \"in0107\"} ",
+      "Next": 25,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in0107\", False} ",
+      "Next": 26,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf5206102_00\", 1, 1, \"程哥走到逃脱点\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleEventNode\" : 500, 0, [ ]} ",
+      "Next": 28,
+      "Prallel": -1,
+      "Child": [
+        28
+      ]
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 29,
+      "Prallel": -1,
+      "Child": [
+        29,
+        30,
+        35,
+        50,
+        31
+      ]
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleFactorTurn\" : 1, 7} ",
+      "Next": 30,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleFactorLocalFlag\" : 2, 3, \"btf5206102_00\", \"有人还没逃脱\"} ",
+      "Next": 35,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 34,
+      "Prallel": -1,
+      "Child": [
+        34,
+        36,
+        37
+      ]
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 32,
+      "Prallel": -1,
+      "Child": [
+        32
+      ]
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 3, \"btf5206102_00\", \"全员逃走中\"} ",
+      "Next": 36,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5206102_2_04\", 0, 1, \"逃走失败\"} ",
+      "Next": 50,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5206102_2_03\", 0, 1, \"成功逃走\"} ",
+      "Next": 37,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 39,
+      "Prallel": -1,
+      "Child": [
+        39,
+        51,
+        52,
+        41
+      ]
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player\"} ",
+      "Next": 51,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
+      "Next": 38,
+      "Prallel": -1,
+      "Child": [
+        38
+      ]
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"BattleEventNode\" : 400, 2, [ ]} ",
+      "Next": 43,
+      "Prallel": -1,
+      "Child": [
+        43
+      ]
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 44,
+      "Prallel": -1,
+      "Child": [
+        44,
+        53,
+        54,
+        45
+      ]
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0106\"} ",
+      "Next": 53,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"BattleEventNode\" : 400, 3, [ ]} ",
+      "Next": 47,
+      "Prallel": -1,
+      "Child": [
+        47
+      ]
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 48,
+      "Prallel": -1,
+      "Child": [
+        48,
+        55,
+        56,
+        49
+      ]
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0107\"} ",
+      "Next": 55,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"BattleResultTalk\" : \"t5206102_177\"} ",
+      "Next": 31,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 51,
+      "Node": "{ \"BattleResultTalk\" : \"t5206102_177\"} ",
+      "Next": 52,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 52,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5206102_2_04\", 0, 1, \"逃走失败\"} ",
+      "Next": 41,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 53,
+      "Node": "{ \"BattleResultTalk\" : \"t5206102_177\"} ",
+      "Next": 54,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 54,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5206102_2_04\", 0, 1, \"逃走失败\"} ",
+      "Next": 45,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 55,
+      "Node": "{ \"BattleResultTalk\" : \"t5206102_177\"} ",
+      "Next": 56,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 56,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5206102_2_04\", 0, 1, \"逃走失败\"} ",
+      "Next": 49,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 57,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05010,in05011\", \"bt5206102_00_debuff_StopMove\", False} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 58,
+      "Node": "{ \"BattleEventNode\" : 400, 4, [ ]} ",
+      "Next": 59,
+      "Prallel": -1,
+      "Child": [
+        59
+      ]
+    },
+    {
+      "Index": 59,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 60,
+      "Prallel": -1,
+      "Child": [
+        60,
+        61,
+        62
+      ]
+    },
+    {
+      "Index": 60,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 61,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 61,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5206102_2_03\", 0, 1, \"成功逃走\"} ",
+      "Next": 62,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 62,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "第二年爽朗传书",
+  "WinTip": "",
+  "LoseTip": ""
+}

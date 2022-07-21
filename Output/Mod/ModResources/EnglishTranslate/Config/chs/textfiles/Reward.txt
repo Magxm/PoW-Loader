@@ -280,7 +280,7 @@ re5104207_04	传书：萧芊菱医术特别修业（萧芊菱遗忘恢复技）	
 re5104210_00	传书：锺若昕专武传书（获得肉丸子）	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it501599"}  ], 0} 
 re5105101_00	传书：端午佳节食王挑战	True	Participation Award: Purple Return Oil x2	{ "LogicalNode" : [ { "RewardProps" : 1, 2, "it501014"}  ], 0} 
 re5105101_01	传书：端午佳节食王挑战	True	Food King: learned blueprint: gluttonous cloak	{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it801000"} , { "LearnForgeAction" : "fo201017"}  ], 0} 
-re5105101_02	传书：端午佳节食王挑战	True	Perseverance: indigestion, spirit-15	{ "LogicalNode" : [ { "RewardEmotionAction" : 2, 15}  ], 0} 
+re5105101_02	传书：端午佳节食王挑战	True	Perseverance: indigestion, spirit-15	{ "LogicalNode" : [ { "RewardEmotionAction" : 2, 10}  ], 0} 
 re5105101_03	传书：端午佳节食王战斗胜利	True	Four Basic Stats +1	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 100, 1010} , { "SetPlayerUpgradableProperty" : 1, 100, 1020} , { "SetPlayerUpgradableProperty" : 1, 100, 1030} , { "SetPlayerUpgradableProperty" : 1, 100, 1040}  ], 0} 
 re5105101_04	艾草	True	Wormwood	{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it604701"}  ], 0} 
 re5105101_05	菖蒲	True	Calamus	{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it604702"}  ], 0} 
@@ -357,25 +357,24 @@ re6030500_00	长柄修练泡澡	True	Strength +3	{ "LogicalNode" : [ { "SetPlaye
 re6030600_00	短柄修练泡澡	True	Smart + 3	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 300, 1030}  ], 0} 
 re6030700_00	暗器修练泡澡	True	Spirit +3	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 300, 1040}  ], 0} 
 re6031300_00	医学修练泡澡	True	Body +3	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 300, 1020}  ], 0} 
-re6041100_00	斗琴初阶泡澡	True	Qin +5 cultivation +5	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 500, 3010} , { "SetPlayerUpgradableProperty" : 1, 800, 2020}  ], 0} 
-re6041200_00	斗琴中阶泡澡	True	Qin +8 cultivation +8	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 800, 3010} , { "SetPlayerUpgradableProperty" : 1, 1000, 2020}  ], 0} 
-re6041300_00	斗琴高端泡澡	True	Qin +10 Cultivation +10	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 3010} , { "SetPlayerUpgradableProperty" : 1, 1500, 2020}  ], 0} 
-re6042100_00	对弈初阶泡澡	True	Hearty +5 Chess +5	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 800, 2010} , { "SetPlayerUpgradableProperty" : 1, 500, 3020}  ], 0} 
-re6042200_00	对弈中阶泡澡	True	Hearty +8 Chess +8	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 2010} , { "SetPlayerUpgradableProperty" : 1, 800, 3020}  ], 0} 
-re6042300_00	对弈高端泡澡	True	Hearty +10 Chess +10	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1500, 2010} , { "SetPlayerUpgradableProperty" : 1, 1000, 3020}  ], 0} 
-re6043100_00	狂草初阶泡澡	True	Boldness +5 book +5	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 800, 2040} , { "SetPlayerUpgradableProperty" : 1, 500, 3030}  ], 0} 
-re6043200_00	狂草中阶泡澡	True	Boldness +8 book +8	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 2040} , { "SetPlayerUpgradableProperty" : 1, 800, 3030}  ], 0} 
-re6043300_00	狂草高端泡澡	True	Courage +10 Book +10	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1500, 2040} , { "SetPlayerUpgradableProperty" : 1, 1000, 3030}  ], 0} 
-re6044100_00	山水初阶泡澡	True	Painting +5 Perseverance +5	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 500, 3040} , { "SetPlayerUpgradableProperty" : 1, 800, 2030}  ], 0} 
-re6044200_00	山水中阶泡澡	True	Painting +8 Perseverance +8	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 800, 3040} , { "SetPlayerUpgradableProperty" : 1, 1000, 2030}  ], 0} 
-re6044300_00	山水高端泡澡	True	Painting +10 Perseverance +10	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 3040} , { "SetPlayerUpgradableProperty" : 1, 1500, 2030}  ], 0} 
-re6046100_00	巡游泡澡	True	Courage +30	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 800, 2040}  ], 0} 
-re6046200_00	花草泡澡	True	Cultivation +30	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 800, 2020}  ], 0} 
-re6046300_00	阁宠泡澡	True	Perseverance +30	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 800, 2030}  ], 0} 
-re6046400_00	马吊泡澡	True	Hearty +30	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 800, 2010}  ], 0} 
-re6046500_00	投壶泡澡	True	Cultivation +20 Perseverance +20	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 800, 2020} , { "SetPlayerUpgradableProperty" : 1, 800, 2030}  ], 0} 
-re6046600_00	蹴鞠泡澡	True	Hearty +20 Courage +20	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 800, 2010} , { "SetPlayerUpgradableProperty" : 1, 800, 2040}  ], 0} 
-re6046700_00	食堂聊天泡澡	True	Hearty +20	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 2000, 2010}  ], 0} 
+re6041100_00	斗琴初阶泡澡	True	Qin +5 cultivation +5	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 800, 3010} , { "SetPlayerUpgradableProperty" : 1, 1000, 2020}  ], 0} 
+re6041200_00	斗琴中阶泡澡	True	Qin +8 cultivation +8	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 3010} , { "SetPlayerUpgradableProperty" : 1, 1500, 2020}  ], 0} 
+re6041300_00	斗琴高端泡澡	True	Qin +10 Cultivation +10	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1500, 3010} , { "SetPlayerUpgradableProperty" : 1, 2000, 2020}  ], 0} 
+re6042100_00	对弈初阶泡澡	True	Hearty +5 Chess +5	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 2010} , { "SetPlayerUpgradableProperty" : 1, 800, 3020}  ], 0} 
+re6042200_00	对弈中阶泡澡	True	Hearty +8 Chess +8	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1500, 2010} , { "SetPlayerUpgradableProperty" : 1, 1000, 3020}  ], 0} 
+re6042300_00	对弈高端泡澡	True	Hearty +10 Chess +10	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 2000, 2010} , { "SetPlayerUpgradableProperty" : 1, 1500, 3020}  ], 0} 
+re6043100_00	狂草初阶泡澡	True	Boldness +5 book +5	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 2040} , { "SetPlayerUpgradableProperty" : 1, 800, 3030}  ], 0} 
+re6043200_00	狂草中阶泡澡	True	Boldness +8 book +8	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1500, 2040} , { "SetPlayerUpgradableProperty" : 1, 1000, 3030}  ], 0} 
+re6043300_00	狂草高端泡澡	True	Courage +10 Book +10	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 2000, 2040} , { "SetPlayerUpgradableProperty" : 1, 1500, 3030}  ], 0} 
+re6044100_00	山水初阶泡澡	True	Painting +5 Perseverance +5	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 800, 3040} , { "SetPlayerUpgradableProperty" : 1, 1000, 2030}  ], 0} 
+re6044200_00	山水中阶泡澡	True	Painting +8 Perseverance +8	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 3040} , { "SetPlayerUpgradableProperty" : 1, 1500, 2030}  ], 0} 
+re6044300_00	山水高端泡澡	True	Painting +10 Perseverance +10	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1500, 3040} , { "SetPlayerUpgradableProperty" : 1, 2000, 2030}  ], 0} 
+re6046100_00	巡游泡澡	True	Courage +30	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 2040}  ], 0} 
+re6046200_00	花草泡澡	True	Cultivation +30	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 2020}  ], 0} 
+re6046300_00	阁宠泡澡	True	Perseverance +30	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 2030}  ], 0} 
+re6046400_00	马吊泡澡	True	Hearty +30	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 2010}  ], 0} 
+re6046500_00	投壶泡澡	True	Cultivation +20 Perseverance +20	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 2020} , { "SetPlayerUpgradableProperty" : 1, 1000, 2030}  ], 0} 
+re6046600_00	蹴鞠泡澡	True	Hearty +20 Courage +20	{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 2010} , { "SetPlayerUpgradableProperty" : 1, 1000, 2040}  ], 0} 
 re605in010200_00	段红儿泡澡	True	Like +1	{ "LogicalNode" : [ { "SetFavorabilityEXP" : 1, 1, "in0102"}  ], 0} 
 re605in010200_01	段红儿泡澡	True	Goodwill +2	{ "LogicalNode" : [ { "SetFavorabilityEXP" : 1, 2, "in0102"}  ], 0} 
 re605in010200_02	段红儿泡澡	True	Goodwill +3	{ "LogicalNode" : [ { "SetFavorabilityEXP" : 1, 3, "in0102"}  ], 0} 
@@ -389,23 +388,23 @@ re605in010600_02	南飞鍠泡澡	True	Goodwill +3	{ "LogicalNode" : [ { "SetFavo
 re605in010700_00	程墉泡澡	True	Like +1	{ "LogicalNode" : [ { "SetFavorabilityEXP" : 1, 1, "in0107"}  ], 0} 
 re605in010700_01	程墉泡澡	True	Goodwill +2	{ "LogicalNode" : [ { "SetFavorabilityEXP" : 1, 2, "in0107"}  ], 0} 
 re605in010700_02	程墉泡澡	True	Goodwill +3	{ "LogicalNode" : [ { "SetFavorabilityEXP" : 1, 3, "in0107"}  ], 0} 
-re6060100_00	打铁泡澡	True	Money +150	{ "LogicalNode" : [ { "RewardMoney" : 1, 150}  ], 0} 
-re6060200_00	食堂泡澡	True	Money +150	{ "LogicalNode" : [ { "RewardMoney" : 1, 150}  ], 0} 
+re6060100_00	打铁泡澡	True	Money +150	{ "LogicalNode" : [ { "RewardMoney" : 1, 200}  ], 0} 
+re6060200_00	食堂泡澡	True	Money +150	{ "LogicalNode" : [ { "RewardMoney" : 1, 200}  ], 0} 
 re6060300_00	药材泡澡	True	Money +150	{ "LogicalNode" : [ { "RewardMoney" : 1, 150}  ], 0} 
-re6060400_00	澡堂泡澡	True	Money +150	{ "LogicalNode" : [ { "RewardMoney" : 1, 150}  ], 0} 
-re6061500_00	掌柜泡澡	True	Money +200	{ "LogicalNode" : [ { "RewardMoney" : 1, 200}  ], 0} 
-re6062400_00	秘笈泡澡	True	Money +300	{ "LogicalNode" : [ { "RewardMoney" : 1, 450}  ], 0} 
+re6060400_00	澡堂泡澡	True	Money +150	{ "LogicalNode" : [ { "RewardMoney" : 1, 200}  ], 0} 
+re6061500_00	掌柜泡澡	True	Money +200	{ "LogicalNode" : [ { "RewardMoney" : 1, 300}  ], 0} 
+re6062400_00	秘笈泡澡	True	Money +300	{ "LogicalNode" : [ { "RewardMoney" : 1, 500}  ], 0} 
 re6062500_00	小二泡澡	True	Money +250	{ "LogicalNode" : [ { "RewardMoney" : 1, 300}  ], 0} 
-re6062600_00	琴师泡澡	True	Money +400	{ "LogicalNode" : [ { "RewardMoney" : 1, 600}  ], 0} 
-re6062700_00	棋师泡澡	True	Money +400	{ "LogicalNode" : [ { "RewardMoney" : 1, 600}  ], 0} 
-re6062800_00	书生泡澡	True	Money +400	{ "LogicalNode" : [ { "RewardMoney" : 1, 600}  ], 0} 
-re6062900_00	画家泡澡	True	Money +400	{ "LogicalNode" : [ { "RewardMoney" : 1, 600}  ], 0} 
+re6062600_00	琴师泡澡	True	Money +400	{ "LogicalNode" : [ { "RewardMoney" : 1, 1000}  ], 0} 
+re6062700_00	棋师泡澡	True	Money +400	{ "LogicalNode" : [ { "RewardMoney" : 1, 1000}  ], 0} 
+re6062800_00	书生泡澡	True	Money +400	{ "LogicalNode" : [ { "RewardMoney" : 1, 1000}  ], 0} 
+re6062900_00	画家泡澡	True	Money +400	{ "LogicalNode" : [ { "RewardMoney" : 1, 1000}  ], 0} 
 re7000001_01	阵营小幅倾向楚天碧	True		{ "LogicalNode" : [ { "SetPlayerPropertyAction" : 1, 1, 4120}  ], 0} 
 re7000001_02	阵营中幅倾向楚天碧	True		{ "LogicalNode" : [ { "SetPlayerPropertyAction" : 1, 3, 4120}  ], 0} 
-re7000001_03	阵营大幅倾向楚天碧	True		{ "LogicalNode" : [ { "SetPlayerPropertyAction" : 1, 5, 4120}  ], 0} 
+re7000001_03	阵营大幅倾向楚天碧	True		{ "LogicalNode" : [ { "SetPlayerPropertyAction" : 1, 10, 4120}  ], 0} 
 re7000002_01	阵营小幅倾向段霄烈	True		{ "LogicalNode" : [ { "SetPlayerPropertyAction" : 2, 1, 4120}  ], 0} 
 re7000002_02	阵营中幅倾向段霄烈	True		{ "LogicalNode" : [ { "SetPlayerPropertyAction" : 2, 3, 4120}  ], 0} 
-re7000002_03	阵营大幅倾向段霄烈	True		{ "LogicalNode" : [ { "SetPlayerPropertyAction" : 2, 5, 4120}  ], 0} 
+re7000002_03	阵营大幅倾向段霄烈	True		{ "LogicalNode" : [ { "SetPlayerPropertyAction" : 2, 10, 4120}  ], 0} 
 re7000101_01	四维“力量”小幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 100, 1010}  ], 0} 
 re7000101_02	四维“力量”中幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 300, 1010}  ], 0} 
 re7000101_03	四维“力量”大幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 1010}  ], 0} 
@@ -414,7 +413,7 @@ re7000101_05	四维“力量”中幅提升(第二年)	True		{ "LogicalNode" : [
 re7000101_06	四维“力量”大幅提升(第二年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1500, 1010}  ], 0} 
 re7000101_07	四维“力量”小幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 500, 1010}  ], 0} 
 re7000101_08	四维“力量”中幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 1010}  ], 0} 
-re7000101_09	四维“力量”大幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 2500, 1010}  ], 0} 
+re7000101_09	四维“力量”大幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 2000, 1010}  ], 0} 
 re7000102_01	四维“体魄”小幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 100, 1020}  ], 0} 
 re7000102_02	四维“体魄”中幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 300, 1020}  ], 0} 
 re7000102_03	四维“体魄”大幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 1020}  ], 0} 
@@ -423,7 +422,7 @@ re7000102_05	四维“体魄”中幅提升(第二年)	True		{ "LogicalNode" : [
 re7000102_06	四维“体魄”大幅提升(第二年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1500, 1020}  ], 0} 
 re7000102_07	四维“体魄”小幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 500, 1020}  ], 0} 
 re7000102_08	四维“体魄”中幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 1020}  ], 0} 
-re7000102_09	四维“体魄”大幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 2500, 1020}  ], 0} 
+re7000102_09	四维“体魄”大幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 2000, 1020}  ], 0} 
 re7000103_01	四维“灵巧”小幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 100, 1030}  ], 0} 
 re7000103_02	四维“灵巧”中幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 300, 1030}  ], 0} 
 re7000103_03	四维“灵巧”大幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 1030}  ], 0} 
@@ -432,7 +431,7 @@ re7000103_05	四维“灵巧”中幅提升(第二年)	True		{ "LogicalNode" : [
 re7000103_06	四维“灵巧”大幅提升(第二年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1500, 1030}  ], 0} 
 re7000103_07	四维“灵巧”小幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 500, 1030}  ], 0} 
 re7000103_08	四维“灵巧”中幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 1030}  ], 0} 
-re7000103_09	四维“灵巧”大幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 2500, 1030}  ], 0} 
+re7000103_09	四维“灵巧”大幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 2000, 1030}  ], 0} 
 re7000104_01	四维“意志”小幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 100, 1040}  ], 0} 
 re7000104_02	四维“意志”中幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 300, 1040}  ], 0} 
 re7000104_03	四维“意志”大幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 1040}  ], 0} 
@@ -441,7 +440,7 @@ re7000104_05	四维“意志”中幅提升(第二年)	True		{ "LogicalNode" : [
 re7000104_06	四维“意志”大幅提升(第二年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1500, 1040}  ], 0} 
 re7000104_07	四维“意志”小幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 500, 1040}  ], 0} 
 re7000104_08	四维“意志”中幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 1040}  ], 0} 
-re7000104_09	四维“意志”大幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 2500, 1040}  ], 0} 
+re7000104_09	四维“意志”大幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 2000, 1040}  ], 0} 
 re7000201_01	四轴“爽朗”小幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 200, 2010}  ], 0} 
 re7000201_02	四轴“爽朗”中幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 2010}  ], 0} 
 re7000201_03	四轴“爽朗”大幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 2000, 2010}  ], 0} 
@@ -478,42 +477,42 @@ re7000204_06	四轴“胆识”大幅提升(第二年)	True		{ "LogicalNode" : [
 re7000204_07	四轴“胆识”小幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 500, 2040}  ], 0} 
 re7000204_08	四轴“胆识”中幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 2500, 2040}  ], 0} 
 re7000204_09	四轴“胆识”大幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 4000, 2040}  ], 0} 
-re7000301_01	四艺“琴艺”小幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 300, 3010}  ], 0} 
-re7000301_02	四艺“琴艺”中幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 500, 3010}  ], 0} 
-re7000301_03	四艺“琴艺”大幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 3010}  ], 0} 
-re7000301_04	四艺“琴艺”小幅提升(第二年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 500, 3010}  ], 0} 
-re7000301_05	四艺“琴艺”中幅提升(第二年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 3010}  ], 0} 
-re7000301_06	四艺“琴艺”大幅提升(第二年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 2000, 3010}  ], 0} 
+re7000301_01	四艺“琴艺”小幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 500, 3010}  ], 0} 
+re7000301_02	四艺“琴艺”中幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 3010}  ], 0} 
+re7000301_03	四艺“琴艺”大幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 2000, 3010}  ], 0} 
+re7000301_04	四艺“琴艺”小幅提升(第二年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 800, 3010}  ], 0} 
+re7000301_05	四艺“琴艺”中幅提升(第二年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1500, 3010}  ], 0} 
+re7000301_06	四艺“琴艺”大幅提升(第二年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 3000, 3010}  ], 0} 
 re7000301_07	四艺“琴艺”小幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 3010}  ], 0} 
-re7000301_08	四艺“琴艺”中幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1500, 3010}  ], 0} 
-re7000301_09	四艺“琴艺”大幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 3000, 3010}  ], 0} 
-re7000302_01	四艺“棋艺”小幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 300, 3020}  ], 0} 
-re7000302_02	四艺“棋艺”中幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 500, 3020}  ], 0} 
-re7000302_03	四艺“棋艺”大幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 3020}  ], 0} 
-re7000302_04	四艺“棋艺”小幅提升(第二年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 500, 3020}  ], 0} 
-re7000302_05	四艺“棋艺”中幅提升(第二年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 3020}  ], 0} 
-re7000302_06	四艺“棋艺”大幅提升(第二年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 2000, 3020}  ], 0} 
+re7000301_08	四艺“琴艺”中幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 2500, 3010}  ], 0} 
+re7000301_09	四艺“琴艺”大幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 4000, 3010}  ], 0} 
+re7000302_01	四艺“棋艺”小幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 500, 3020}  ], 0} 
+re7000302_02	四艺“棋艺”中幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 3020}  ], 0} 
+re7000302_03	四艺“棋艺”大幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 2000, 3020}  ], 0} 
+re7000302_04	四艺“棋艺”小幅提升(第二年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 800, 3020}  ], 0} 
+re7000302_05	四艺“棋艺”中幅提升(第二年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1500, 3020}  ], 0} 
+re7000302_06	四艺“棋艺”大幅提升(第二年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 3000, 3020}  ], 0} 
 re7000302_07	四艺“棋艺”小幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 3020}  ], 0} 
-re7000302_08	四艺“棋艺”中幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1500, 3020}  ], 0} 
-re7000302_09	四艺“棋艺”大幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 3000, 3020}  ], 0} 
-re7000303_01	四艺“书艺”小幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 300, 3030}  ], 0} 
-re7000303_02	四艺“书艺”中幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 500, 3030}  ], 0} 
-re7000303_03	四艺“书艺”大幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 3030}  ], 0} 
-re7000303_04	四艺“书艺”小幅提升(第二年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 500, 3030}  ], 0} 
-re7000303_05	四艺“书艺”中幅提升(第二年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 3030}  ], 0} 
-re7000303_06	四艺“书艺”大幅提升(第二年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 2000, 3030}  ], 0} 
+re7000302_08	四艺“棋艺”中幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 2500, 3020}  ], 0} 
+re7000302_09	四艺“棋艺”大幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 4000, 3020}  ], 0} 
+re7000303_01	四艺“书艺”小幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 500, 3030}  ], 0} 
+re7000303_02	四艺“书艺”中幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 3030}  ], 0} 
+re7000303_03	四艺“书艺”大幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 2000, 3030}  ], 0} 
+re7000303_04	四艺“书艺”小幅提升(第二年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 800, 3030}  ], 0} 
+re7000303_05	四艺“书艺”中幅提升(第二年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1500, 3030}  ], 0} 
+re7000303_06	四艺“书艺”大幅提升(第二年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 3000, 3030}  ], 0} 
 re7000303_07	四艺“书艺”小幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 3030}  ], 0} 
-re7000303_08	四艺“书艺”中幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1500, 3030}  ], 0} 
-re7000303_09	四艺“书艺”大幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 3000, 3030}  ], 0} 
-re7000304_01	四艺“画艺”小幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 300, 3040}  ], 0} 
-re7000304_02	四艺“画艺”中幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 500, 3040}  ], 0} 
-re7000304_03	四艺“画艺”大幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 3040}  ], 0} 
-re7000304_04	四艺“画艺”小幅提升(第二年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 500, 3040}  ], 0} 
-re7000304_05	四艺“画艺”中幅提升(第二年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 3040}  ], 0} 
-re7000304_06	四艺“画艺”大幅提升(第二年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 2000, 3040}  ], 0} 
+re7000303_08	四艺“书艺”中幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 2500, 3030}  ], 0} 
+re7000303_09	四艺“书艺”大幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 4000, 3030}  ], 0} 
+re7000304_01	四艺“画艺”小幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 500, 3040}  ], 0} 
+re7000304_02	四艺“画艺”中幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 3040}  ], 0} 
+re7000304_03	四艺“画艺”大幅提升(第一年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 2000, 3040}  ], 0} 
+re7000304_04	四艺“画艺”小幅提升(第二年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 800, 3040}  ], 0} 
+re7000304_05	四艺“画艺”中幅提升(第二年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1500, 3040}  ], 0} 
+re7000304_06	四艺“画艺”大幅提升(第二年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 3000, 3040}  ], 0} 
 re7000304_07	四艺“画艺”小幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1000, 3040}  ], 0} 
-re7000304_08	四艺“画艺”中幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 1500, 3040}  ], 0} 
-re7000304_09	四艺“画艺”大幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 3000, 3040}  ], 0} 
+re7000304_08	四艺“画艺”中幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 2500, 3040}  ], 0} 
+re7000304_09	四艺“画艺”大幅提升(第三年)	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 4000, 3040}  ], 0} 
 re7000402_01	段红儿友好度“小幅”提升	True		{ "LogicalNode" : [ { "SetFavorabilityEXP" : 1, 2, "in0102"}  ], 0} 
 re7000402_02	段红儿友好度“中小”提升	True		{ "LogicalNode" : [ { "SetFavorabilityEXP" : 1, 4, "in0102"}  ], 0} 
 re7000402_03	段红儿友好度“中幅”提升	True		{ "LogicalNode" : [ { "SetFavorabilityEXP" : 1, 6, "in0102"}  ], 0} 
@@ -648,25 +647,25 @@ re7000702_09	金钱大幅减少(第三年)	True		{ "LogicalNode" : [ { "RewardMo
 re7000704_91	金钱减少200	True		{ "LogicalNode" : [ { "RewardMoney" : 2, 200}  ], 0} 
 re7000704_92	金钱减少1000	True		{ "LogicalNode" : [ { "RewardMoney" : 2, 1000}  ], 0} 
 re7000704_93	金钱减少2000	True		{ "LogicalNode" : [ { "RewardMoney" : 2, 2000}  ], 0} 
-re7000801_01	精神值奖励：小幅增加(第一年)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 1, 5}  ], 0} 
-re7000801_02	精神值奖励：中幅增加(第一年)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 1, 10}  ], 0} 
-re7000801_03	精神值奖励：大幅增加(第一年)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 1, 30}  ], 0} 
+re7000801_01	精神值奖励：小幅增加(第一年)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 1, 3}  ], 0} 
+re7000801_02	精神值奖励：中幅增加(第一年)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 1, 7}  ], 0} 
+re7000801_03	精神值奖励：大幅增加(第一年)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 1, 15}  ], 0} 
 re7000801_04	精神值奖励：小幅增加(第二年)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 1, 5}  ], 0} 
 re7000801_05	精神值奖励：中幅增加(第二年)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 1, 10}  ], 0} 
-re7000801_06	精神值奖励：大幅增加(第二年)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 1, 30}  ], 0} 
-re7000801_07	精神值奖励：小幅增加(第三年)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 1, 5}  ], 0} 
-re7000801_08	精神值奖励：中幅增加(第三年)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 1, 10}  ], 0} 
+re7000801_06	精神值奖励：大幅增加(第二年)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 1, 20}  ], 0} 
+re7000801_07	精神值奖励：小幅增加(第三年)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 1, 7}  ], 0} 
+re7000801_08	精神值奖励：中幅增加(第三年)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 1, 15}  ], 0} 
 re7000801_09	精神值奖励：大幅增加(第三年)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 1, 30}  ], 0} 
-re7000802_01	精神值惩罚：小幅减少(第一年)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 2, 5}  ], 0} 
-re7000802_02	精神值惩罚：中幅减少(第一年)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 2, 10}  ], 0} 
-re7000802_03	精神值惩罚：大幅减少(第一年)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 2, 30}  ], 0} 
+re7000802_01	精神值惩罚：小幅减少(第一年)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 2, 3}  ], 0} 
+re7000802_02	精神值惩罚：中幅减少(第一年)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 2, 7}  ], 0} 
+re7000802_03	精神值惩罚：大幅减少(第一年)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 2, 15}  ], 0} 
 re7000802_04	精神值惩罚：小幅减少(第二年)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 2, 5}  ], 0} 
 re7000802_05	精神值惩罚：中幅减少(第二年)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 2, 10}  ], 0} 
-re7000802_06	精神值惩罚：大幅减少(第二年)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 2, 30}  ], 0} 
-re7000802_07	精神值惩罚：小幅减少(第三年)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 2, 5}  ], 0} 
-re7000802_08	精神值惩罚：中幅减少(第三年)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 2, 10}  ], 0} 
+re7000802_06	精神值惩罚：大幅减少(第二年)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 2, 20}  ], 0} 
+re7000802_07	精神值惩罚：小幅减少(第三年)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 2, 7}  ], 0} 
+re7000802_08	精神值惩罚：中幅减少(第三年)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 2, 15}  ], 0} 
 re7000802_09	精神值惩罚：大幅减少(第三年)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 2, 30}  ], 0} 
-re7000803_01	精神值奖励：日常交友用	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 1, 10}  ], 0} 
+re7000803_01	精神值奖励：日常交友用(1~3阶)	True	Spirit +5	{ "LogicalNode" : [ { "RewardEmotionAction" : 1, 5}  ], 0} 
 re7000902_01	段红儿好感度阶段提升	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0102", ""}  ], 0} 
 re7000903_01	锺若昕好感度阶段提升	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0103", ""}  ], 0} 
 re7000904_01	萧芊菱好感度阶段提升	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0104", ""}  ], 0} 
@@ -682,7 +681,7 @@ re7001002_03	段红儿事件三阶奖励打包（友好升阶、第一招升至�
 re7001003_01	锺若昕事件一阶奖励打包（开启社群）	True		{ "LogicalNode" : [ { "CommunityAction" : "in0103", True} , { "SetNpcSpecial" : 1, "specialskill0103", "in0103"}  ], 0} 
 re7001003_02	锺若昕事件二阶奖励打包（友好升阶、第三招习得并升至３级）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0103", ""} , { "SetNpcSkill" : 1, "ma160301", "in0103"} , { "SetNpcSkillEXP" : 1, 200, "ma160301", "in0103"} , { "RewardEmotionAction" : 1, 10}  ], 0} 
 re7001003_03	锺若昕事件三阶奖励打包（友好升阶、第一招升至３级、心法升至５级、习得特质二）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0103", ""} , { "SetNpcSkillEXP" : 1, 200, "ma160101", "in0103"} , { "SetNpcMantraEXP" : 1, 400, "xinfain010301", "in0103"} , { "SetNpcTrait" : 1, "in0103_trait02", "in0103"} , { "RewardEmotionAction" : 1, 10}  ], 0} 
-re7001003_04	锺若昕事件四阶奖励打包（友好升阶、第二招习得并升至１０级）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0103", ""} , { "SetNpcSkill" : 1, "ma160201", "in0103"} , { "SetNpcSkillEXP" : 1, 900, "ma160201", "in0103"} , { "RewardEmotionAction" : 1, 10}  ], 0} 
+re7001003_04	锺若昕事件四阶奖励打包（友好升阶、第二招习得并升至１０级）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0103", ""} , { "SetNpcSkill" : 1, "ma160201", "in0103"} , { "SetNpcSkillEXP" : 1, 900, "ma160201", "in0103"} , { "RewardEmotionAction" : 1, 15}  ], 0} 
 re7001004_01	萧芊菱事件一阶奖励打包：开启社群	True		{ "LogicalNode" : [ { "CommunityAction" : "in0104", True}  ], 0} 
 re7001005_00	石崑事件０阶奖励打包（破心掌Lv9、归元功Lv9、蚀心双破Lv5、心法Lv5）	False		{ "LogicalNode" : [ { "SetNpcSkill" : 1, "ma150201", "in0105"} , { "SetNpcSkill" : 1, "ma150301", "in0105"} , { "SetNpcSkillEXP" : 1, 800, "ma150201", "in0105"} , { "SetNpcSkillEXP" : 1, 400, "ma150301", "in0105"} , { "SetNpcTrait" : 1, "in0105_trait01", "in0105"}  ], 0} 
 re7001005_01	石崑事件一阶奖励打包（开启社群）	False		{ "LogicalNode" : [ { "CommunityAction" : "in0105", True}  ], 0} 
@@ -690,7 +689,7 @@ re7001005_99	石崑事件一阶奖励打包（关闭社群）	False		{ "LogicalN
 re7001006_01	南飞鍠事件一阶奖励打包（开启社群）	True		{ "LogicalNode" : [ { "CommunityAction" : "in0106", True}  ], 0} 
 re7001006_02	南飞鍠事件二阶奖励打包（友好升阶、第一招升至８级、第二招习得１０级，习得特质一）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0106", ""} , { "SetNpcSkill" : 1, "ma170201", "in0106"} , { "SetNpcSkillEXP" : 1, 500, "ma170101", "in0106"} , { "SetNpcSkillEXP" : 1, 900, "ma170201", "in0106"} , { "RewardEmotionAction" : 1, 10}  ], 0} 
 re7001006_03	南飞鍠事件三阶奖励打包（友好升阶、第一招升至１０级、习得第二招５级）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0106", ""} , { "SetNpcSkill" : 1, "ma170301", "in0106"} , { "SetNpcSkillEXP" : 1, 400, "ma170301", "in0106"} , { "SetNpcSkillEXP" : 1, 200, "ma170101", "in0106"} , { "RewardEmotionAction" : 1, 10} , { "SetNpcMantraEXP" : 1, 200, "xinfain010601", "in0106"}  ], 0} 
-re7001006_04	南飞鍠事件四阶奖励打包（友好升阶、第三招升至８级、望庐诀升至７级、习得特质二）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0106", ""} , { "SetNpcSkillEXP" : 1, 300, "ma170301", "in0106"} , { "SetNpcMantraEXP" : 1, 400, "xinfain010601", "in0106"} , { "SetNpcTrait" : 1, "in0106_trait02", "in0106"} , { "RewardEmotionAction" : 1, 10}  ], 0} 
+re7001006_04	南飞鍠事件四阶奖励打包（友好升阶、第三招升至８级、望庐诀升至７级、习得特质二）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0106", ""} , { "SetNpcSkillEXP" : 1, 300, "ma170301", "in0106"} , { "SetNpcMantraEXP" : 1, 400, "xinfain010601", "in0106"} , { "SetNpcTrait" : 1, "in0106_trait02", "in0106"} , { "RewardEmotionAction" : 1, 15}  ], 0} 
 re7001007_01	程墉事件一阶奖励打包（开启社群）	True		{ "LogicalNode" : [ { "CommunityAction" : "in0107", True}  ], 0} 
 re7001007_02	程墉事件二阶奖励打包（友好升阶、第一招升至６级、第二招习得１级後升至３级、获得二式机关伞）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0107", ""} , { "SetNpcSkill" : 1, "ma090201", "in0107"} , { "SetNpcSkillEXP" : 1, 500, "ma090101", "in0107"} , { "RewardProps" : 1, 1, "it109511"} , { "RewardEmotionAction" : 1, 10} , { "SetNpcSkillEXP" : 1, 200, "ma090201", "in0107"}  ], 0} 
 re7001007_03	程墉事件三阶奖励打包（友好升阶、第二招升至３级、习得特质二、心法升至５级）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0107", ""} , { "SetNpcTrait" : 1, "in0107_trait02", "in0107"} , { "SetNpcSkillEXP" : 1, 500, "ma090101", "in0107"} , { "SetNpcSkillEXP" : 1, 400, "ma090201", "in0107"} , { "RewardEmotionAction" : 1, 10} , { "SetNpcMantraEXP" : 1, 400, "xinfain010701", "in0107"}  ], 0} 
@@ -930,75 +929,75 @@ re804it419000	特质：豪气干云（阅读《虯髯客传》）	True		{ "Logic
 re804it419001	特质：不衿不盈（阅读《三戒》）	True		{ "LogicalNode" : [ { "SetPlayerTrait" : 1, "book_trait02_it419001"}  ], 0} 
 re804it419002	特质：鸿志凌云（阅读《淮阴侯列传》）	True		{ "LogicalNode" : [ { "SetPlayerTrait" : 1, "book_trait03_it419002"}  ], 0} 
 re804it419003	特质：诡秘莫测（阅读《搜神记》）	True		{ "LogicalNode" : [ { "SetPlayerTrait" : 1, "book_trait04_it419003"}  ], 0} 
-re804ma010301	招式：《七十二势地煞拳》凌振碎城郭	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma010301", True} , { "SetPlayerSkillEXP" : 1, 200, "ma010301"}  ], 0} 
-re804ma010401	招式：《七十二势地煞拳》时迁夜盗甲	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma010401", True} , { "SetPlayerSkillEXP" : 1, 200, "ma010401"}  ], 0} 
-re804ma010501	招式：《天罡三十六掌》吴用智取纲	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma010501", True} , { "SetPlayerSkillEXP" : 1, 200, "ma010501"}  ], 0} 
-re804ma010601	招式：《天罡三十六掌》柴进示丹书	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma010601", True} , { "SetPlayerSkillEXP" : 1, 400, "ma010601"}  ], 0} 
-re804ma010701	招式：《天罡三十六掌》云龙祭五雷	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma010701", True} , { "SetPlayerSkillEXP" : 1, 400, "ma010701"}  ], 0} 
-re804ma011701	招式：《棋诀》攻敌之要	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma011701", True} , { "SetPlayerSkillEXP" : 1, 200, "ma011701"}  ], 0} 
-re804ma020301	招式：《银轮九转》静影沉璧	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma020301", True} , { "SetPlayerSkillEXP" : 1, 200, "ma020301"}  ], 0} 
-re804ma020401	招式：《银轮九转》玉兔捣药	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma020401", True} , { "SetPlayerSkillEXP" : 1, 200, "ma020401"}  ], 0} 
-re804ma020501	招式：《残云腿法》兴风作浪	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma020501", True} , { "SetPlayerSkillEXP" : 1, 200, "ma020501"}  ], 0} 
-re804ma020601	招式：《残云腿法》天龙首尾	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma020601", True} , { "SetPlayerSkillEXP" : 1, 400, "ma020601"}  ], 0} 
-re804ma020701	招式：《残云腿法》云涌风飞	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma020701", True} , { "SetPlayerSkillEXP" : 1, 400, "ma020701"}  ], 0} 
-re804ma030301	招式：《庐君剑法》白练破青山	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma030301", True} , { "SetPlayerSkillEXP" : 1, 200, "ma030301"}  ], 0} 
-re804ma030401	招式：《庐君剑法》九叠云锦张	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma030401", True} , { "SetPlayerSkillEXP" : 1, 200, "ma030401"}  ], 0} 
-re804ma030501	招式：《松石诡剑》苍松迎来风	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma030501", True} , { "SetPlayerSkillEXP" : 1, 200, "ma030501"}  ], 0} 
-re804ma030601	招式：《松石诡剑》诡石绝渊壁	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma030601", True} , { "SetPlayerSkillEXP" : 1, 400, "ma030601"}  ], 0} 
-re804ma030701	招式：《松石诡剑》雨云覆重山	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma030701", True} , { "SetPlayerSkillEXP" : 1, 400, "ma030701"}  ], 0} 
-re804ma031101	招式：《凌波飞雪剑》山阴夜雪	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma031101", True} , { "SetPlayerSkillEXP" : 1, 400, "ma031101"}  ], 0} 
-re804ma032001	招式：《玄宿剑法》牛下九坎	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma032001", True} , { "SetPlayerSkillEXP" : 1, 400, "ma032001"}  ], 0} 
-re804ma040301	招式：《朔风刀法》红旗不翻	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma040301", True} , { "SetPlayerSkillEXP" : 1, 200, "ma040301"}  ], 0} 
-re804ma040401	招式：《朔风刀法》万树梨花	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma040401", True} , { "SetPlayerSkillEXP" : 1, 200, "ma040401"}  ], 0} 
-re804ma041701	招式：《六合刀》长风破浪	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma041701", True} , { "SetPlayerSkillEXP" : 1, 200, "ma041701"}  ], 0} 
-re804ma041801	招式：《六合刀》穿云裂石	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma041801", True} , { "SetPlayerSkillEXP" : 1, 400, "ma041801"}  ], 0} 
-re804ma041901	招式：《六合刀》五丁开山	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma041901", True} , { "SetPlayerSkillEXP" : 1, 400, "ma041901"}  ], 0} 
-re804ma050301	招式：《五老棍法》笠翁独钓	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma050301", True} , { "SetPlayerSkillEXP" : 1, 200, "ma050301"}  ], 0} 
-re804ma050401	招式：《五老棍法》老将当关	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma050401", True} , { "SetPlayerSkillEXP" : 1, 200, "ma050401"}  ], 0} 
-re804ma051101	招式：《岳家枪法》毒龙出洞	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma051101", True} , { "SetPlayerSkillEXP" : 1, 200, "ma051101"}  ], 0} 
-re804ma051201	招式：《岳家枪法》旋风破道	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma051201", True} , { "SetPlayerSkillEXP" : 1, 400, "ma051201"}  ], 0} 
-re804ma051301	招式：《岳家枪法》白蛇吐信	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma051301", True} , { "SetPlayerSkillEXP" : 1, 400, "ma051301"}  ], 0} 
-re804ma051701	招式：《千里江山图卷》丹青余绚	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma051701", True} , { "SetPlayerSkillEXP" : 1, 200, "ma051701"}  ], 0} 
-re804ma060301	招式：《七步吟歌》豆在釜中泣	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma060301", True} , { "SetPlayerSkillEXP" : 1, 200, "ma060301"}  ], 0} 
-re804ma060401	招式：《七步吟歌》相煎何太急	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma060401", True} , { "SetPlayerSkillEXP" : 1, 200, "ma060401"}  ], 0} 
-re804ma060801	招式：《椎心刺》玉盘红泪滴	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma060801", True} , { "SetPlayerSkillEXP" : 1, 200, "ma060801"}  ], 0} 
-re804ma060901	招式：《椎心刺》伤心画不成	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma060901", True} , { "SetPlayerSkillEXP" : 1, 400, "ma060901"}  ], 0} 
-re804ma06090101	招式：《椎心刺》春归带愁去	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma06090101", True} , { "SetPlayerSkillEXP" : 1, 400, "ma06090101"}  ], 0} 
-re804ma061501	招式：《古诗四帖》颠张狂素	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma061501", True} , { "SetPlayerSkillEXP" : 1, 200, "ma061501"}  ], 0} 
-re804ma071101	招式：《风雷引》殛雷索命	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma071101", True} , { "SetPlayerSkillEXP" : 1, 200, "ma071101"}  ], 0} 
-re804ma071201	招式：《风雷引》风雷惊鸿	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma071201", True} , { "SetPlayerSkillEXP" : 1, 400, "ma071201"}  ], 0} 
-re804ma130101	招式：《岐黄九针》三法人脉	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma130101", True} , { "SetPlayerSkillEXP" : 1, 200, "ma130101"}  ], 0} 
-re804ma130201	招式：《岐黄九针》一法天阳	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma130201", True} , { "SetPlayerSkillEXP" : 1, 400, "ma130201"}  ], 0} 
+re804ma010301	招式：《七十二势地煞拳》凌振碎城郭	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma010301", True} , { "SetPlayerSkillEXP" : 1, 100, "ma010301"}  ], 0} 
+re804ma010401	招式：《七十二势地煞拳》时迁夜盗甲	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma010401", True} , { "SetPlayerSkillEXP" : 1, 100, "ma010401"}  ], 0} 
+re804ma010501	招式：《天罡三十六掌》吴用智取纲	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma010501", True} , { "SetPlayerSkillEXP" : 1, 100, "ma010501"}  ], 0} 
+re804ma010601	招式：《天罡三十六掌》柴进示丹书	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma010601", True} , { "SetPlayerSkillEXP" : 1, 300, "ma010601"}  ], 0} 
+re804ma010701	招式：《天罡三十六掌》云龙祭五雷	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma010701", True} , { "SetPlayerSkillEXP" : 1, 300, "ma010701"}  ], 0} 
+re804ma011701	招式：《棋诀》攻敌之要	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma011701", True} , { "SetPlayerSkillEXP" : 1, 100, "ma011701"}  ], 0} 
+re804ma020301	招式：《银轮九转》静影沉璧	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma020301", True} , { "SetPlayerSkillEXP" : 1, 100, "ma020301"}  ], 0} 
+re804ma020401	招式：《银轮九转》玉兔捣药	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma020401", True} , { "SetPlayerSkillEXP" : 1, 100, "ma020401"}  ], 0} 
+re804ma020501	招式：《残云腿法》兴风作浪	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma020501", True} , { "SetPlayerSkillEXP" : 1, 100, "ma020501"}  ], 0} 
+re804ma020601	招式：《残云腿法》天龙首尾	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma020601", True} , { "SetPlayerSkillEXP" : 1, 300, "ma020601"}  ], 0} 
+re804ma020701	招式：《残云腿法》云涌风飞	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma020701", True} , { "SetPlayerSkillEXP" : 1, 300, "ma020701"}  ], 0} 
+re804ma030301	招式：《庐君剑法》白练破青山	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma030301", True} , { "SetPlayerSkillEXP" : 1, 100, "ma030301"}  ], 0} 
+re804ma030401	招式：《庐君剑法》九叠云锦张	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma030401", True} , { "SetPlayerSkillEXP" : 1, 100, "ma030401"}  ], 0} 
+re804ma030501	招式：《松石诡剑》苍松迎来风	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma030501", True} , { "SetPlayerSkillEXP" : 1, 100, "ma030501"}  ], 0} 
+re804ma030601	招式：《松石诡剑》诡石绝渊壁	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma030601", True} , { "SetPlayerSkillEXP" : 1, 300, "ma030601"}  ], 0} 
+re804ma030701	招式：《松石诡剑》雨云覆重山	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma030701", True} , { "SetPlayerSkillEXP" : 1, 300, "ma030701"}  ], 0} 
+re804ma031101	招式：《凌波飞雪剑》山阴夜雪	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma031101", True} , { "SetPlayerSkillEXP" : 1, 300, "ma031101"}  ], 0} 
+re804ma032001	招式：《玄宿剑法》牛下九坎	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma032001", True} , { "SetPlayerSkillEXP" : 1, 300, "ma032001"}  ], 0} 
+re804ma040301	招式：《朔风刀法》红旗不翻	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma040301", True} , { "SetPlayerSkillEXP" : 1, 100, "ma040301"}  ], 0} 
+re804ma040401	招式：《朔风刀法》万树梨花	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma040401", True} , { "SetPlayerSkillEXP" : 1, 100, "ma040401"}  ], 0} 
+re804ma041701	招式：《六合刀》长风破浪	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma041701", True} , { "SetPlayerSkillEXP" : 1, 100, "ma041701"}  ], 0} 
+re804ma041801	招式：《六合刀》穿云裂石	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma041801", True} , { "SetPlayerSkillEXP" : 1, 300, "ma041801"}  ], 0} 
+re804ma041901	招式：《六合刀》五丁开山	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma041901", True} , { "SetPlayerSkillEXP" : 1, 300, "ma041901"}  ], 0} 
+re804ma050301	招式：《五老棍法》笠翁独钓	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma050301", True} , { "SetPlayerSkillEXP" : 1, 100, "ma050301"}  ], 0} 
+re804ma050401	招式：《五老棍法》老将当关	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma050401", True} , { "SetPlayerSkillEXP" : 1, 100, "ma050401"}  ], 0} 
+re804ma051101	招式：《岳家枪法》毒龙出洞	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma051101", True} , { "SetPlayerSkillEXP" : 1, 100, "ma051101"}  ], 0} 
+re804ma051201	招式：《岳家枪法》旋风破道	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma051201", True} , { "SetPlayerSkillEXP" : 1, 300, "ma051201"}  ], 0} 
+re804ma051301	招式：《岳家枪法》白蛇吐信	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma051301", True} , { "SetPlayerSkillEXP" : 1, 300, "ma051301"}  ], 0} 
+re804ma051701	招式：《千里江山图卷》丹青余绚	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma051701", True} , { "SetPlayerSkillEXP" : 1, 100, "ma051701"}  ], 0} 
+re804ma060301	招式：《七步吟歌》豆在釜中泣	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma060301", True} , { "SetPlayerSkillEXP" : 1, 100, "ma060301"}  ], 0} 
+re804ma060401	招式：《七步吟歌》相煎何太急	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma060401", True} , { "SetPlayerSkillEXP" : 1, 100, "ma060401"}  ], 0} 
+re804ma060801	招式：《椎心刺》玉盘红泪滴	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma060801", True} , { "SetPlayerSkillEXP" : 1, 100, "ma060801"}  ], 0} 
+re804ma060901	招式：《椎心刺》伤心画不成	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma060901", True} , { "SetPlayerSkillEXP" : 1, 300, "ma060901"}  ], 0} 
+re804ma06090101	招式：《椎心刺》春归带愁去	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma06090101", True} , { "SetPlayerSkillEXP" : 1, 300, "ma06090101"}  ], 0} 
+re804ma061501	招式：《古诗四帖》颠张狂素	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma061501", True} , { "SetPlayerSkillEXP" : 1, 100, "ma061501"}  ], 0} 
+re804ma071101	招式：《风雷引》殛雷索命	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma071101", True} , { "SetPlayerSkillEXP" : 1, 100, "ma071101"}  ], 0} 
+re804ma071201	招式：《风雷引》风雷惊鸿	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma071201", True} , { "SetPlayerSkillEXP" : 1, 300, "ma071201"}  ], 0} 
+re804ma130101	招式：《岐黄九针》三法人脉	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma130101", True} , { "SetPlayerSkillEXP" : 1, 100, "ma130101"}  ], 0} 
+re804ma130201	招式：《岐黄九针》一法天阳	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma130201", True} , { "SetPlayerSkillEXP" : 1, 300, "ma130201"}  ], 0} 
 re804ma130301	招式：《岐黄九针》七法星窍	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma130301", True}  ], 0} 
-re804ma130701	招式：《广陵止息谱》广陵散	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma130701", True} , { "SetPlayerSkillEXP" : 1, 200, "ma130701"}  ], 0} 
-re804xinfa001	心法：《扛鼎功》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa001kangding"} , { "SetPlayerMantraEXP" : 1, 200, "xinfa001kangding"}  ], 0} 
-re804xinfa002	心法：《铁衣劲》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa002tieyi"} , { "SetPlayerMantraEXP" : 1, 200, "xinfa002tieyi"}  ], 0} 
-re804xinfa003	心法：《如燕诀》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa003ruyan"} , { "SetPlayerMantraEXP" : 1, 200, "xinfa003ruyan"}  ], 0} 
-re804xinfa004	心法：《凝神籙》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa004dingshen"} , { "SetPlayerMantraEXP" : 1, 200, "xinfa004dingshen"}  ], 0} 
-re804xinfa102	心法：《养心诀》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa102yangxin"} , { "SetPlayerMantraEXP" : 1, 400, "xinfa102yangxin"}  ], 0} 
-re804xinfa103	心法：《天海功》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa103Tianhai"} , { "SetPlayerMantraEXP" : 1, 200, "xinfa103Tianhai"}  ], 0} 
-re804xinfa104	心法：《武成诀》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa104Wuchan"} , { "SetPlayerMantraEXP" : 1, 200, "xinfa104Wuchan"}  ], 0} 
-re804xinfa105	心法：《丹鹤心法》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa105Danhe"} , { "SetPlayerMantraEXP" : 1, 200, "xinfa105Danhe"}  ], 0} 
-re804xinfa106	心法：《恒娥心诀》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa106Henwer"} , { "SetPlayerMantraEXP" : 1, 200, "xinfa106Henwer"}  ], 0} 
-re804xinfa107	心法：《龙城军势》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa107Longchen"} , { "SetPlayerMantraEXP" : 1, 200, "xinfa107Longchen"}  ], 0} 
-re804xinfa108	心法：《九宫算诀》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa108Jiugong"} , { "SetPlayerMantraEXP" : 1, 200, "xinfa108Jiugong"}  ], 0} 
-re804xinfa109	心法：《龙岩经》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa109Longyien"} , { "SetPlayerMantraEXP" : 1, 200, "xinfa109Longyien"}  ], 0} 
-re804xinfa110	心法：《梨园百戏》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa110Liyuan"} , { "SetPlayerMantraEXP" : 1, 200, "xinfa110Liyuan"}  ], 0} 
-re804xinfa201	心法：《逐月功》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa201zhuyue"} , { "SetPlayerMantraEXP" : 1, 200, "xinfa201zhuyue"}  ], 0} 
-re804xinfa202	心法：《山雨江潮诀》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa202shanyujiangchao"} , { "SetPlayerMantraEXP" : 1, 200, "xinfa202shanyujiangchao"}  ], 0} 
+re804ma130701	招式：《广陵止息谱》广陵散	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma130701", True} , { "SetPlayerSkillEXP" : 1, 100, "ma130701"}  ], 0} 
+re804xinfa001	心法：《扛鼎功》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa001kangding"} , { "SetPlayerMantraEXP" : 1, 300, "xinfa001kangding"}  ], 0} 
+re804xinfa002	心法：《铁衣劲》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa002tieyi"} , { "SetPlayerMantraEXP" : 1, 300, "xinfa002tieyi"}  ], 0} 
+re804xinfa003	心法：《如燕诀》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa003ruyan"} , { "SetPlayerMantraEXP" : 1, 300, "xinfa003ruyan"}  ], 0} 
+re804xinfa004	心法：《凝神籙》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa004dingshen"} , { "SetPlayerMantraEXP" : 1, 300, "xinfa004dingshen"}  ], 0} 
+re804xinfa102	心法：《养心诀》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa102yangxin"} , { "SetPlayerMantraEXP" : 1, 300, "xinfa102yangxin"}  ], 0} 
+re804xinfa103	心法：《天海功》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa103Tianhai"} , { "SetPlayerMantraEXP" : 1, 100, "xinfa103Tianhai"}  ], 0} 
+re804xinfa104	心法：《武成诀》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa104Wuchan"} , { "SetPlayerMantraEXP" : 1, 100, "xinfa104Wuchan"}  ], 0} 
+re804xinfa105	心法：《丹鹤心法》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa105Danhe"} , { "SetPlayerMantraEXP" : 1, 100, "xinfa105Danhe"}  ], 0} 
+re804xinfa106	心法：《恒娥心诀》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa106Henwer"} , { "SetPlayerMantraEXP" : 1, 100, "xinfa106Henwer"}  ], 0} 
+re804xinfa107	心法：《龙城军势》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa107Longchen"} , { "SetPlayerMantraEXP" : 1, 100, "xinfa107Longchen"}  ], 0} 
+re804xinfa108	心法：《九宫算诀》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa108Jiugong"} , { "SetPlayerMantraEXP" : 1, 100, "xinfa108Jiugong"}  ], 0} 
+re804xinfa109	心法：《龙岩经》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa109Longyien"} , { "SetPlayerMantraEXP" : 1, 100, "xinfa109Longyien"}  ], 0} 
+re804xinfa110	心法：《梨园百戏》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa110Liyuan"} , { "SetPlayerMantraEXP" : 1, 100, "xinfa110Liyuan"}  ], 0} 
+re804xinfa201	心法：《逐月功》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa201zhuyue"} , { "SetPlayerMantraEXP" : 1, 100, "xinfa201zhuyue"}  ], 0} 
+re804xinfa202	心法：《山雨江潮诀》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa202shanyujiangchao"} , { "SetPlayerMantraEXP" : 1, 100, "xinfa202shanyujiangchao"}  ], 0} 
 re804xinfa204	心法：《素魂心诀》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa204Suhuen"} , { "SetPlayerMantraEXP" : 1, 300, "xinfa204Suhuen"}  ], 0} 
 re804xinfa206	心法：《九泉心经》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa206Jiuchuan"}  ], 0} 
 re804xinfa301	心法：《夜影摘星》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa301Yieying"}  ], 0} 
 re804xinfa302	心法：《连山功》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa302Lianshan"}  ], 0} 
-re804xinfa303	心法：《潇湘水云经》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa303xiaoxiangshuiyun"} , { "SetPlayerMantraEXP" : 1, 200, "xinfa303xiaoxiangshuiyun"}  ], 0} 
-re804xinfa304	心法：《天元策》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa304tianyuance"} , { "SetPlayerMantraEXP" : 1, 200, "xinfa304tianyuance"}  ], 0} 
-re804xinfa305	心法：《丧乱诀》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa305sangluanjue"} , { "SetPlayerMantraEXP" : 1, 200, "xinfa305sangluanjue"}  ], 0} 
-re804xinfa306	心法：《大斧劈皴诀》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa306dafupicun"} , { "SetPlayerMantraEXP" : 1, 200, "xinfa306dafupicun"}  ], 0} 
+re804xinfa303	心法：《潇湘水云经》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa303xiaoxiangshuiyun"} , { "SetPlayerMantraEXP" : 1, 300, "xinfa303xiaoxiangshuiyun"}  ], 0} 
+re804xinfa304	心法：《天元策》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa304tianyuance"} , { "SetPlayerMantraEXP" : 1, 300, "xinfa304tianyuance"}  ], 0} 
+re804xinfa305	心法：《丧乱诀》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa305sangluanjue"} , { "SetPlayerMantraEXP" : 1, 300, "xinfa305sangluanjue"}  ], 0} 
+re804xinfa306	心法：《大斧劈皴诀》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa306dafupicun"} , { "SetPlayerMantraEXP" : 1, 300, "xinfa306dafupicun"}  ], 0} 
 re804xinfa501	心法：《七宿罡风》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa501qisugangfong"}  ], 0} 
-re804xinfa701	心法：《捭阖弈策》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa701baiheyice"} , { "SetPlayerMantraEXP" : 1, 200, "xinfa701baiheyice"}  ], 0} 
-re804xinfa702	心法：《流徽琴心诀》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa702liuhuiqinxin"} , { "SetPlayerMantraEXP" : 1, 200, "xinfa702liuhuiqinxin"}  ], 0} 
-re804xinfa703	心法：《墨染功》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa703morangong"} , { "SetPlayerMantraEXP" : 1, 200, "xinfa703morangong"}  ], 0} 
-re804xinfa704	心法：《无声诗诀》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa704wushengshijue"} , { "SetPlayerMantraEXP" : 1, 200, "xinfa704wushengshijue"}  ], 0} 
+re804xinfa701	心法：《捭阖弈策》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa701baiheyice"} , { "SetPlayerMantraEXP" : 1, 300, "xinfa701baiheyice"}  ], 0} 
+re804xinfa702	心法：《流徽琴心诀》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa702liuhuiqinxin"} , { "SetPlayerMantraEXP" : 1, 300, "xinfa702liuhuiqinxin"}  ], 0} 
+re804xinfa703	心法：《墨染功》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa703morangong"} , { "SetPlayerMantraEXP" : 1, 300, "xinfa703morangong"}  ], 0} 
+re804xinfa704	心法：《无声诗诀》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa704wushengshijue"} , { "SetPlayerMantraEXP" : 1, 300, "xinfa704wushengshijue"}  ], 0} 
 re804xinfa901	心法：《仙鼎五气》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa901xianding"}  ], 0} 
 re804xinfa902	心法：《混沌开天功》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa902hundunkaitian"}  ], 0} 
 re804xinfa903	心法：《北风歌》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa903beifong"}  ], 0} 
@@ -1347,60 +1346,60 @@ re605in011000_02	上官煦泡澡	True	Favor +3	{ "LogicalNode" : [ { "SetFavorab
 re605in011100_00	武辙泡澡	True	Favor +1	{ "LogicalNode" : [ { "SetFavorabilityEXP" : 1, 1, "in0111"}  ], 0} 
 re605in011100_01	武辙泡澡	True	Favor +2	{ "LogicalNode" : [ { "SetFavorabilityEXP" : 1, 2, "in0111"}  ], 0} 
 re605in011100_02	武辙泡澡	True	Favor +3	{ "LogicalNode" : [ { "SetFavorabilityEXP" : 1, 3, "in0111"}  ], 0} 
-re6061300_00	药材中阶泡澡	True	Gold Coin (Coins)+200	{ "LogicalNode" : [ { "RewardMoney" : 1, 200}  ], 0} 
-re7001002_04	段红儿事件四阶奖励打包（友好升阶、第一招升至10级、第二招升至6级、心法升至10级、习得第三招并升至3级、特技）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0102", ""} , { "SetNpcSkillEXP" : 1, 100, "ma080101", "in0102"} , { "SetNpcSkillEXP" : 1, 300, "ma080301", "in0102"} , { "SetNpcMantraEXP" : 1, 500, "xinfain010201", "in0102"} , { "SetNpcSpecial" : 1, "specialskill0102", "in0102"} , { "SetNpcSkill" : 1, "ma080401", "in0102"} , { "SetNpcSkillEXP" : 1, 200, "ma080401", "in0102"} , { "RewardEmotionAction" : 1, 10}  ], 0} 
-re7001002_05	段红儿事件五阶奖励打包（友好升阶、第二招升至10级、第三招升至6级、习得新燕啄春泥并升至3级、特质沉着冷静升级、习得百工心鉴3级）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0102", ""} , { "SetNpcSkillEXP" : 1, 400, "ma080301", "in0102"} , { "SetNpcSkill" : 1, "ma080402", "in0102"} , { "SetNpcSkillEXP" : 1, 200, "ma080402", "in0102"} , { "SetNpcMantra" : 1, "xinfa909baigongxinjian", "in0102"} , { "SetNpcMantraEXP" : 1, 200, "xinfa909baigongxinjian", "in0102"} , { "ReplaceNPCTrait" : "in0102_trait01", "in0102_trait01_01", "in0102"} , { "RewardEmotionAction" : 1, 10}  ], 0} 
-re7001003_05	锺若昕事件五阶奖励打包（友好升阶、拨云见日五级、霞光万道2五级）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0103", ""} , { "RewardEmotionAction" : 1, 10} , { "ReplaceNPCSkill" : "ma160301", "ma16030101", "in0103"} , { "SetNpcSkillEXP" : 1, 400, "ma16030101", "in0103"} , { "SetNpcSkillEXP" : 1, 200, "ma160101", "in0103"} , { "SetNpcMantra" : 1, "xinfain010302", "in0103"} , { "SetNpcMantraEXP" : 1, 200, "xinfain010302", "in0103"} , { "SetNpcTrait" : 1, "in0103_trait04", "in0103"}  ], 0} 
+re6061300_00	药材中阶泡澡	True	Gold Coin (Coins)+200	{ "LogicalNode" : [ { "RewardMoney" : 1, 400}  ], 0} 
+re7001002_04	段红儿事件四阶奖励打包（友好升阶、第一招升至10级、第二招升至6级、心法升至10级、习得第三招并升至3级、特技）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0102", ""} , { "SetNpcSkillEXP" : 1, 100, "ma080101", "in0102"} , { "SetNpcSkillEXP" : 1, 300, "ma080301", "in0102"} , { "SetNpcMantraEXP" : 1, 500, "xinfain010201", "in0102"} , { "SetNpcSpecial" : 1, "specialskill0102", "in0102"} , { "SetNpcSkill" : 1, "ma080401", "in0102"} , { "SetNpcSkillEXP" : 1, 200, "ma080401", "in0102"} , { "RewardEmotionAction" : 1, 15}  ], 0} 
+re7001002_05	段红儿事件五阶奖励打包（友好升阶、第二招升至10级、第三招升至6级、习得新燕啄春泥并升至3级、特质沉着冷静升级、习得百工心鉴3级）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0102", ""} , { "SetNpcSkillEXP" : 1, 400, "ma080301", "in0102"} , { "SetNpcSkill" : 1, "ma080402", "in0102"} , { "SetNpcSkillEXP" : 1, 200, "ma080402", "in0102"} , { "SetNpcMantra" : 1, "xinfa909baigongxinjian", "in0102"} , { "SetNpcMantraEXP" : 1, 200, "xinfa909baigongxinjian", "in0102"} , { "ReplaceNPCTrait" : "in0102_trait01", "in0102_trait01_01", "in0102"} , { "RewardEmotionAction" : 1, 15}  ], 0} 
+re7001003_05	锺若昕事件五阶奖励打包（友好升阶、拨云见日五级、霞光万道2五级）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0103", ""} , { "RewardEmotionAction" : 1, 15} , { "ReplaceNPCSkill" : "ma160301", "ma16030101", "in0103"} , { "SetNpcSkillEXP" : 1, 400, "ma16030101", "in0103"} , { "SetNpcSkillEXP" : 1, 200, "ma160101", "in0103"} , { "SetNpcMantra" : 1, "xinfain010302", "in0103"} , { "SetNpcMantraEXP" : 1, 200, "xinfain010302", "in0103"} , { "SetNpcTrait" : 1, "in0103_trait04", "in0103"}  ], 0} 
 re7001004_02	萧芊菱事件二阶奖励打包:强化招式百鸟朝凤6_获得雪鹤送暖1_获得笼鸟啼鸣_获得特技	True		{ "LogicalNode" : [ { "SetNpcSkillEXP" : 1, 300, "ma220301", "in0104"} , { "SetFavorabilityRank" : "in0104", ""} , { "SetNpcSkill" : 1, "ma220401", "in0104"} , { "RewardEmotionAction" : 1, 10} , { "SetNpcTrait" : 1, "in0104_trait02", "in0104"} , { "SetNpcSpecial" : 1, "specialskill0104", "in0104"}  ], 0} 
 re7001005_00b	石崑第二年年初奖励打包（破心掌Lv10、归元功Lv10、蚀心双破Lv8、心法Lv8、四维小幅成长、血内恢复全满）	False		{ "LogicalNode" : [ { "SetNpcSkillEXP" : 1, 100, "ma150101", "in0105"} , { "SetNpcSkillEXP" : 1, 100, "ma150201", "in0105"} , { "SetNpcSkillEXP" : 1, 300, "ma150301", "in0105"} , { "SetNpcMantraEXP" : 1, 300, "xinfain010501", "in0105"} , { "SetNpcUpgradableProperty" : 1, 3400, 1010, "in0105"} , { "SetNpcUpgradableProperty" : 1, 3300, 1020, "in0105"} , { "SetNpcUpgradableProperty" : 1, 3300, 1030, "in0105"} , { "SetNpcUpgradableProperty" : 1, 3300, 1040, "in0105"} , { "SetNpcPropertyAction" : 1, 1000, 4010, "in0105"} , { "SetNpcPropertyAction" : 1, 1000, 4030, "in0105"}  ], 0} 
 re7001005_02	石崑事件二阶奖励打包（蚀心双破lv8>>10、习得特技胜者唯我）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0105", ""} , { "SetNpcSkillEXP" : 1, 200, "ma150301", "in0105"} , { "SetNpcSpecial" : 1, "specialskill0105", "in0105"} , { "RewardEmotionAction" : 1, 10}  ], 0} 
-re7001006_05	南飞鍠事件五阶奖励打包（望庐诀lv10、飞瀑七连功lv6、一剑式lv10、竹翼式lv10、特技无匹剑意阳春版）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0106", ""} , { "SetNpcSpecial" : 1, "specialskill0106", "in0106"} , { "SetNpcMantra" : 1, "xinfain010602", "in0106"} , { "SetNpcMantraEXP" : 1, 500, "xinfain010602", "in0106"} , { "SetNpcMantraEXP" : 1, 300, "xinfain010601", "in0106"} , { "SetNpcSkillEXP" : 1, 200, "ma170101", "in0106"} , { "SetNpcSkillEXP" : 1, 200, "ma170301", "in0106"} , { "RewardEmotionAction" : 1, 10}  ], 0} 
-re7001007_04	程墉事件四阶奖励打包（霏雨尘沙漫lv10、血雨满西风lv7、荒壑心法lv10）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0107", ""} , { "SetNpcSkill" : 1, "ma090301", "in0107"} , { "SetNpcSkillEXP" : 1, 600, "ma090301", "in0107"} , { "SetNpcSkillEXP" : 1, 300, "ma090201", "in0107"} , { "SetNpcMantraEXP" : 1, 500, "xinfain010701", "in0107"} , { "RewardEmotionAction" : 1, 10}  ], 0} 
+re7001006_05	南飞鍠事件五阶奖励打包（望庐诀lv10、飞瀑七连功lv6、一剑式lv10、竹翼式lv10、特技无匹剑意阳春版）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0106", ""} , { "SetNpcSpecial" : 1, "specialskill0106", "in0106"} , { "SetNpcMantra" : 1, "xinfain010602", "in0106"} , { "SetNpcMantraEXP" : 1, 500, "xinfain010602", "in0106"} , { "SetNpcMantraEXP" : 1, 300, "xinfain010601", "in0106"} , { "SetNpcSkillEXP" : 1, 200, "ma170101", "in0106"} , { "SetNpcSkillEXP" : 1, 200, "ma170301", "in0106"} , { "RewardEmotionAction" : 1, 15}  ], 0} 
+re7001007_04	程墉事件四阶奖励打包（霏雨尘沙漫lv10、血雨满西风lv7、荒壑心法lv10）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0107", ""} , { "SetNpcSkill" : 1, "ma090301", "in0107"} , { "SetNpcSkillEXP" : 1, 600, "ma090301", "in0107"} , { "SetNpcSkillEXP" : 1, 300, "ma090201", "in0107"} , { "SetNpcMantraEXP" : 1, 500, "xinfain010701", "in0107"} , { "RewardEmotionAction" : 1, 15}  ], 0} 
 re7001010_02	上官煦事件二阶奖励打包（友好升阶、获得特质骁勇、上官煦气血上限加150）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0110", ""} , { "RewardEmotionAction" : 1, 10} , { "SetNpcTrait" : 1, "in0110_trait02", "in0110"} , { "SetNpcPropertyAction" : 1, 150, 4020, "in0110"}  ], 0} 
 re7001011_02	武辙事件二阶奖励打包：友好升阶、获得特质广厦之荫	True		{ "LogicalNode" : [ { "SetNpcTrait" : 1, "in0111_trait02", "in0111"} , { "SetFavorabilityRank" : "in0111", ""} , { "RewardEmotionAction" : 1, 10}  ], 0} 
-re804ma010901	招式：《铁心铡》阴铡斩妖	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma010901", True} , { "SetPlayerSkillEXP" : 1, 200, "ma010901"}  ], 0} 
-re804ma011801	招式：《炼神掌》御神还虚	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma011801", True} , { "SetPlayerSkillEXP" : 1, 200, "ma011801"}  ], 0} 
-re804ma011901	招式：《炼神掌》抱元守一	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma011901", True} , { "SetPlayerSkillEXP" : 1, 400, "ma011901"}  ], 0} 
-re804ma012001	招式：《炼神掌》炼虚合道	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma012001", True} , { "SetPlayerSkillEXP" : 1, 200, "ma012001"}  ], 0} 
-re804ma020901	招式：《飞狐迷踪步》素雪凝华	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma020901", True} , { "SetPlayerSkillEXP" : 1, 400, "ma020901"}  ], 0} 
-re804ma021001	招式：《飞狐迷踪步》雪破春妍	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma021001", True} , { "SetPlayerSkillEXP" : 1, 200, "ma021001"}  ], 0} 
-re804ma021101	招式：《天狼脚》天外恶兆	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma021101", True} , { "SetPlayerSkillEXP" : 1, 200, "ma021101"}  ], 0} 
-re804ma021201	招式：《天狼脚》月下狼顾	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma021201", True} , { "SetPlayerSkillEXP" : 1, 400, "ma021201"}  ], 0} 
-re804ma021301	招式：《天狼脚》灾星掠地	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma021301", True} , { "SetPlayerSkillEXP" : 1, 200, "ma021301"}  ], 0} 
-re804ma021701	招式：《自叙书帖》笔走龙蛇	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma021701", True} , { "SetPlayerSkillEXP" : 1, 400, "ma021701"}  ], 0} 
-re804ma031401	招式：《寒梅七绝剑》雪挽寒梅	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma031401", True} , { "SetPlayerSkillEXP" : 1, 200, "ma031401"}  ], 0} 
-re804ma031501	招式：《寒梅七绝剑》冬严欺霜	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma031501", True} , { "SetPlayerSkillEXP" : 1, 400, "ma031501"}  ], 0} 
-re804ma031601	招式：《寒梅七绝剑》月映寒江	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma031601", True} , { "SetPlayerSkillEXP" : 1, 200, "ma031601"}  ], 0} 
-re804ma032101	招式：《玄宿剑法》女渡天津	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma032101", True} , { "SetPlayerSkillEXP" : 1, 400, "ma032101"}  ], 0} 
-re804ma032201	招式：《玄宿剑法》危落天钱	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma032201", True} , { "SetPlayerSkillEXP" : 1, 400, "ma032201"}  ], 0} 
-re804ma032301	招式：《浑脱曲谱》琴剑相合	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma032301", True} , { "SetPlayerSkillEXP" : 1, 400, "ma032301"}  ], 0} 
-re804ma040501	招式：《水月禅刀》海底捞月	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma040501", True} , { "SetPlayerSkillEXP" : 1, 200, "ma040501"}  ], 0} 
-re804ma040601	招式：《水月禅刀》镜月落发	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma040601", True} , { "SetPlayerSkillEXP" : 1, 400, "ma040601"}  ], 0} 
-re804ma040701	招式：《水月禅刀》鸳鸯斩月	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma040701", True} , { "SetPlayerSkillEXP" : 1, 400, "ma040701"}  ], 0} 
-re804ma041101	招式：《风火连环刀》搧风点火	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma041101", True} , { "SetPlayerSkillEXP" : 1, 400, "ma041101"}  ], 0} 
-re804ma041201	招式：《风火连环刀》火海刀山	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma041201", True} , { "SetPlayerSkillEXP" : 1, 400, "ma041201"}  ], 0} 
-re804ma041301	招式：《风火连环刀》烽火连天	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma041301", True} , { "SetPlayerSkillEXP" : 1, 200, "ma041301"}  ], 0} 
-re804ma041401	招式：《霸山刀法》劈山开河	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma041401", True} , { "SetPlayerSkillEXP" : 1, 400, "ma041401"}  ], 0} 
-re804ma041501	招式：《霸山刀法》飞石崩沙	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma041501", True} , { "SetPlayerSkillEXP" : 1, 400, "ma041501"}  ], 0} 
-re804ma041601	招式：《霸山刀法》霸刀横拦	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma041601", True} , { "SetPlayerSkillEXP" : 1, 400, "ma041601"}  ], 0} 
-re804ma042001	招式：《富春山居图》身游水墨	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma042001", True} , { "SetPlayerSkillEXP" : 1, 400, "ma042001"}  ], 0} 
-re804ma050501	招式：《神威烈阳枪》烈日征人	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma050501", True} , { "SetPlayerSkillEXP" : 1, 400, "ma050501"}  ], 0} 
-re804ma050601	招式：《神威烈阳枪》飞蛾扑火	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma050601", True} , { "SetPlayerSkillEXP" : 1, 400, "ma050601"}  ], 0} 
-re804ma050701	招式：《神威烈阳枪》星火燎原	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma050701", True} , { "SetPlayerSkillEXP" : 1, 400, "ma050701"}  ], 0} 
-re804ma050801	招式：《三十六路沧浪铁桨》掘泥扬波	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma050801", True} , { "SetPlayerSkillEXP" : 1, 200, "ma050801"}  ], 0} 
-re804ma050901	招式：《三十六路沧浪铁桨》江上潮信来	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma050901", True} , { "SetPlayerSkillEXP" : 1, 400, "ma050901"}  ], 0} 
-re804ma060501	招式：《黄沙百变》含沙射影	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma060501", True} , { "SetPlayerSkillEXP" : 1, 200, "ma060501"}  ], 0} 
-re804ma060601	招式：《黄沙百变》飞沙走石	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma060601", True} , { "SetPlayerSkillEXP" : 1, 400, "ma060601"}  ], 0} 
-re804ma060701	招式：《黄沙百变》阴风吼漠	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma060701", True} , { "SetPlayerSkillEXP" : 1, 400, "ma060701"}  ], 0} 
-re804ma061001	招式：《六道无念》无念穿心	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma061001", True} , { "SetPlayerSkillEXP" : 1, 200, "ma061001"}  ], 0} 
-re804ma061101	招式：《六道无念》催心裂魂	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma061101", True} , { "SetPlayerSkillEXP" : 1, 200, "ma061101"}  ], 0} 
-re804ma06110101	招式：《六道无念》修罗破心	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma06110101", True} , { "SetPlayerSkillEXP" : 1, 400, "ma06110101"}  ], 0} 
-re804ma070101	招式：《蝶恋花》烟雨飘风	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma070101", True} , { "SetPlayerSkillEXP" : 1, 200, "ma070201"}  ], 0} 
-re804ma071301	招式：《草木棋谱》落子无悔	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma071301", True} , { "SetPlayerSkillEXP" : 1, 400, "ma071301"}  ], 0} 
+re804ma010901	招式：《铁心铡》阴铡斩妖	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma010901", True} , { "SetPlayerSkillEXP" : 1, 100, "ma010901"}  ], 0} 
+re804ma011801	招式：《炼神掌》御神还虚	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma011801", True} , { "SetPlayerSkillEXP" : 1, 100, "ma011801"}  ], 0} 
+re804ma011901	招式：《炼神掌》抱元守一	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma011901", True} , { "SetPlayerSkillEXP" : 1, 300, "ma011901"}  ], 0} 
+re804ma012001	招式：《炼神掌》炼虚合道	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma012001", True} , { "SetPlayerSkillEXP" : 1, 100, "ma012001"}  ], 0} 
+re804ma020901	招式：《飞狐迷踪步》素雪凝华	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma020901", True} , { "SetPlayerSkillEXP" : 1, 300, "ma020901"}  ], 0} 
+re804ma021001	招式：《飞狐迷踪步》雪破春妍	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma021001", True} , { "SetPlayerSkillEXP" : 1, 100, "ma021001"}  ], 0} 
+re804ma021101	招式：《天狼脚》天外恶兆	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma021101", True} , { "SetPlayerSkillEXP" : 1, 100, "ma021101"}  ], 0} 
+re804ma021201	招式：《天狼脚》月下狼顾	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma021201", True} , { "SetPlayerSkillEXP" : 1, 300, "ma021201"}  ], 0} 
+re804ma021301	招式：《天狼脚》灾星掠地	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma021301", True} , { "SetPlayerSkillEXP" : 1, 100, "ma021301"}  ], 0} 
+re804ma021701	招式：《自叙书帖》笔走龙蛇	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma021701", True} , { "SetPlayerSkillEXP" : 1, 300, "ma021701"}  ], 0} 
+re804ma031401	招式：《寒梅七绝剑》雪挽寒梅	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma031401", True} , { "SetPlayerSkillEXP" : 1, 100, "ma031401"}  ], 0} 
+re804ma031501	招式：《寒梅七绝剑》冬严欺霜	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma031501", True} , { "SetPlayerSkillEXP" : 1, 300, "ma031501"}  ], 0} 
+re804ma031601	招式：《寒梅七绝剑》月映寒江	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma031601", True} , { "SetPlayerSkillEXP" : 1, 100, "ma031601"}  ], 0} 
+re804ma032101	招式：《玄宿剑法》女渡天津	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma032101", True} , { "SetPlayerSkillEXP" : 1, 300, "ma032101"}  ], 0} 
+re804ma032201	招式：《玄宿剑法》危落天钱	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma032201", True} , { "SetPlayerSkillEXP" : 1, 300, "ma032201"}  ], 0} 
+re804ma032301	招式：《浑脱曲谱》琴剑相合	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma032301", True} , { "SetPlayerSkillEXP" : 1, 300, "ma032301"}  ], 0} 
+re804ma040501	招式：《水月禅刀》海底捞月	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma040501", True} , { "SetPlayerSkillEXP" : 1, 100, "ma040501"}  ], 0} 
+re804ma040601	招式：《水月禅刀》镜月落发	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma040601", True} , { "SetPlayerSkillEXP" : 1, 300, "ma040601"}  ], 0} 
+re804ma040701	招式：《水月禅刀》鸳鸯斩月	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma040701", True} , { "SetPlayerSkillEXP" : 1, 300, "ma040701"}  ], 0} 
+re804ma041101	招式：《风火连环刀》搧风点火	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma041101", True} , { "SetPlayerSkillEXP" : 1, 300, "ma041101"}  ], 0} 
+re804ma041201	招式：《风火连环刀》火海刀山	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma041201", True} , { "SetPlayerSkillEXP" : 1, 300, "ma041201"}  ], 0} 
+re804ma041301	招式：《风火连环刀》烽火连天	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma041301", True} , { "SetPlayerSkillEXP" : 1, 100, "ma041301"}  ], 0} 
+re804ma041401	招式：《霸山刀法》劈山开河	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma041401", True} , { "SetPlayerSkillEXP" : 1, 300, "ma041401"}  ], 0} 
+re804ma041501	招式：《霸山刀法》飞石崩沙	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma041501", True} , { "SetPlayerSkillEXP" : 1, 300, "ma041501"}  ], 0} 
+re804ma041601	招式：《霸山刀法》霸刀横拦	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma041601", True} , { "SetPlayerSkillEXP" : 1, 300, "ma041601"}  ], 0} 
+re804ma042001	招式：《富春山居图》身游水墨	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma042001", True} , { "SetPlayerSkillEXP" : 1, 300, "ma042001"}  ], 0} 
+re804ma050501	招式：《神威烈阳枪》烈日征人	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma050501", True} , { "SetPlayerSkillEXP" : 1, 300, "ma050501"}  ], 0} 
+re804ma050601	招式：《神威烈阳枪》飞蛾扑火	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma050601", True} , { "SetPlayerSkillEXP" : 1, 300, "ma050601"}  ], 0} 
+re804ma050701	招式：《神威烈阳枪》星火燎原	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma050701", True} , { "SetPlayerSkillEXP" : 1, 300, "ma050701"}  ], 0} 
+re804ma050801	招式：《三十六路沧浪铁桨》掘泥扬波	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma050801", True} , { "SetPlayerSkillEXP" : 1, 100, "ma050801"}  ], 0} 
+re804ma050901	招式：《三十六路沧浪铁桨》江上潮信来	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma050901", True} , { "SetPlayerSkillEXP" : 1, 300, "ma050901"}  ], 0} 
+re804ma060501	招式：《黄沙百变》含沙射影	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma060501", True} , { "SetPlayerSkillEXP" : 1, 100, "ma060501"}  ], 0} 
+re804ma060601	招式：《黄沙百变》飞沙走石	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma060601", True} , { "SetPlayerSkillEXP" : 1, 300, "ma060601"}  ], 0} 
+re804ma060701	招式：《黄沙百变》阴风吼漠	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma060701", True} , { "SetPlayerSkillEXP" : 1, 300, "ma060701"}  ], 0} 
+re804ma061001	招式：《六道无念》无念穿心	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma061001", True} , { "SetPlayerSkillEXP" : 1, 100, "ma061001"}  ], 0} 
+re804ma061101	招式：《六道无念》催心裂魂	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma061101", True} , { "SetPlayerSkillEXP" : 1, 100, "ma061101"}  ], 0} 
+re804ma06110101	招式：《六道无念》修罗破心	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma06110101", True} , { "SetPlayerSkillEXP" : 1, 300, "ma06110101"}  ], 0} 
+re804ma070101	招式：《蝶恋花》烟雨飘风	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma070101", True} , { "SetPlayerSkillEXP" : 1, 100, "ma070201"}  ], 0} 
+re804ma071301	招式：《草木棋谱》落子无悔	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma071301", True} , { "SetPlayerSkillEXP" : 1, 300, "ma071301"}  ], 0} 
 re804ma130401	医术招式一阳来复，道恒社群传书1给出	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma130401", True}  ], 0} 
-re804xinfa403	心法：飞流势	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa403feiliu"} , { "SetPlayerMantraEXP" : 1, 200, "xinfa403feiliu"}  ], 0} 
-re804xinfa404	心法：移花诀	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa404yihua"} , { "SetPlayerMantraEXP" : 1, 200, "xinfa404yihua"}  ], 0} 
-re804xinfa405	心法：金刚法	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa405jingang"} , { "SetPlayerMantraEXP" : 1, 200, "xinfa405jingang"}  ], 0} 
+re804xinfa403	心法：飞流势	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa403feiliu"} , { "SetPlayerMantraEXP" : 1, 300, "xinfa403feiliu"}  ], 0} 
+re804xinfa404	心法：移花诀	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa404yihua"} , { "SetPlayerMantraEXP" : 1, 300, "xinfa404yihua"}  ], 0} 
+re804xinfa405	心法：金刚法	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa405jingang"} , { "SetPlayerMantraEXP" : 1, 300, "xinfa405jingang"}  ], 0} 
 re804xinfa503	心法：《明心守正诀》	True	LibraryClear Mind's tactics	{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa503shouzheng"} , { "SetPlayerMantraEXP" : 1, 300, "xinfa503shouzheng"}  ], 0} 
 re804xinfa504	心法：心意六合功	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa504xinyiliuhe"} , { "SetPlayerMantraEXP" : 1, 300, "xinfa504xinyiliuhe"}  ], 0} 
 re804xinfa601	心法：《狮子禅》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa601shizichan"} , { "SetPlayerMantraEXP" : 1, 300, "xinfa601shizichan"}  ], 0} 
@@ -1489,14 +1488,14 @@ re605in010500_00	石崑泡澡	True	Favor+1	{ "LogicalNode" : [ { "SetFavorabilit
 re605in010500_01	石崑泡澡	True	Favor+2	{ "LogicalNode" : [ { "SetFavorabilityEXP" : 1, 2, "in0105"}  ], 0} 
 re605in010500_02	石崑泡澡	True	Favor+3	{ "LogicalNode" : [ { "SetFavorabilityEXP" : 1, 3, "in0105"}  ], 0} 
 re7001004_03	萧芊菱事件三阶奖励打包：雪鹤送暖ＬＶ６、心法＿凤尾习得	True		{ "LogicalNode" : [ { "SetNpcSkillEXP" : 1, 500, "ma220401", "in0104"} , { "SetNpcMantraEXP" : 1, 400, "xinfain010401", "in0104"} , { "SetFavorabilityRank" : "in0104", ""} , { "RewardEmotionAction" : 1, 10}  ], 0} 
-re7001004_04	萧芊菱事件四阶奖励打包：雪鹤送暖ＬＶ１０、来鸿去燕进化	True		{ "LogicalNode" : [ { "SetNpcSkillEXP" : 1, 400, "ma220401", "in0104"} , { "SetFavorabilityRank" : "in0104", ""} , { "RewardEmotionAction" : 1, 10} , { "ReplaceNPCSkill" : "ma220101", "ma22010101", "in0104"} , { "SetNpcSkillEXP" : 1, 500, "ma22010101", "in0104"}  ], 0} 
+re7001004_04	萧芊菱事件四阶奖励打包：雪鹤送暖ＬＶ１０、来鸿去燕进化	True		{ "LogicalNode" : [ { "SetNpcSkillEXP" : 1, 400, "ma220401", "in0104"} , { "SetFavorabilityRank" : "in0104", ""} , { "RewardEmotionAction" : 1, 15} , { "ReplaceNPCSkill" : "ma220101", "ma22010101", "in0104"} , { "SetNpcSkillEXP" : 1, 500, "ma22010101", "in0104"}  ], 0} 
 re7001005_03	石崑事件三阶奖励打包（习得特质黑毒赤炼、取代技能蚀心双破、蚀心双破lv1>>10）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0105", ""} , { "SetNpcTrait" : 1, "in0105_trait02", "in0105"} , { "ReplaceNPCSkill" : "ma150301", "ma15030101", "in0105"} , { "SetNpcSkillEXP" : 1, 900, "ma15030101", "in0105"} , { "RewardEmotionAction" : 1, 10}  ], 0} 
-re7001005_04	石崑事件四阶奖励打包（习得技能破魂天殛、破魂天殛lv1>>5）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0105", ""} , { "SetNpcSkill" : 1, "ma150401", "in0105"} , { "SetNpcSkillEXP" : 1, 400, "ma150401", "in0105"} , { "RewardEmotionAction" : 1, 10}  ], 0} 
-re7001007_05	程墉事件五阶奖励打包（习得招式凄雨崩山壑lv7、习得特技荒沙绝影、血雨满西风lv7>>10、获得六式机关伞）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0107", ""} , { "SetNpcSkill" : 1, "ma090401", "in0107"} , { "SetNpcSkillEXP" : 1, 600, "ma090401", "in0107"} , { "SetNpcSpecial" : 1, "specialskill0107", "in0107"} , { "SetNpcSkillEXP" : 1, 300, "ma090301", "in0107"} , { "RewardProps" : 1, 1, "it109551"} , { "RewardEmotionAction" : 1, 10}  ], 0} 
+re7001005_04	石崑事件四阶奖励打包（习得技能破魂天殛、破魂天殛lv1>>5）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0105", ""} , { "SetNpcSkill" : 1, "ma150401", "in0105"} , { "SetNpcSkillEXP" : 1, 400, "ma150401", "in0105"} , { "RewardEmotionAction" : 1, 15}  ], 0} 
+re7001007_05	程墉事件五阶奖励打包（习得招式凄雨崩山壑lv7、习得特技荒沙绝影、血雨满西风lv7>>10、获得六式机关伞）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0107", ""} , { "SetNpcSkill" : 1, "ma090401", "in0107"} , { "SetNpcSkillEXP" : 1, 600, "ma090401", "in0107"} , { "SetNpcSpecial" : 1, "specialskill0107", "in0107"} , { "SetNpcSkillEXP" : 1, 300, "ma090301", "in0107"} , { "RewardProps" : 1, 1, "it109551"} , { "RewardEmotionAction" : 1, 15}  ], 0} 
 re7001010_03	上官煦事件三阶奖励打包（友好升阶、夜烧原招式强化、上官煦气血上限加150）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0110", ""} , { "RewardEmotionAction" : 1, 10} , { "SetNpcPropertyAction" : 1, 150, 4020, "in0110"} , { "ReplaceNPCSkill" : "ma190701", "ma19070101", "in0110"} , { "SetNpcSkillEXP" : 1, 900, "ma19070101", "in0110"}  ], 0} 
-re7001010_04	上官煦事件四阶奖励打包（友好升阶、强化烈侯武书心法至十阶）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0110", ""} , { "RewardEmotionAction" : 1, 10} , { "SetNpcMantraEXP" : 1, 500, "xinfain011001", "in0110"} , { "SetNpcSkill" : 1, "ma191501", "in0110"} , { "SetNpcSkillEXP" : 1, 900, "ma191501", "in0110"}  ], 0} 
+re7001010_04	上官煦事件四阶奖励打包（友好升阶、强化烈侯武书心法至十阶）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0110", ""} , { "RewardEmotionAction" : 1, 15} , { "SetNpcMantraEXP" : 1, 500, "xinfain011001", "in0110"} , { "SetNpcSkill" : 1, "ma191501", "in0110"} , { "SetNpcSkillEXP" : 1, 900, "ma191501", "in0110"}  ], 0} 
 re7001011_03	武辙事件三阶奖励打包：友好升阶、强化招式以己	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0111", ""} , { "RewardEmotionAction" : 1, 10} , { "ReplaceNPCSkill" : "ma150701", "ma15070101", "in0111"} , { "SetNpcSkillEXP" : 1, 900, "ma15070101", "in0111"}  ], 0} 
-re804ma151701	招式：《炼神掌》御神还虚	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma151701", True} , { "SetPlayerSkillEXP" : 1, 200, "ma151701"}  ], 0} 
+re804ma151701	招式：《炼神掌》御神还虚	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma151701", True} , { "SetPlayerSkillEXP" : 1, 100, "ma151701"}  ], 0} 
 re1010206_01	段红儿六：战胜木人心，且短兵造诣、机关术任务皆符合，习得神算千机、获得500经验	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma010801", True} , { "LearnReadingAction" : "book_ma010901"}  ], 0} 
 re1010206_02	段红儿六：战败木人心，且短兵造诣、机关术任务皆符合，习得神算千机、获得250经验	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma010801", True} , { "LearnReadingAction" : "book_ma010901"}  ], 0} 
 re1010206_03	段红儿六：战胜木人心，短兵造诣、机关术任务其一不符合或战败木人心时，开启藏经阁	True		{ "LogicalNode" : [ { "LearnReadingAction" : "book_ma010901"}  ], 0} 
@@ -1637,7 +1636,7 @@ re5201128_00	传书：异声协寻	True	heterophonic synesthesia	{ "LogicalNode"
 re5201128_01	传书：异声协寻	True	Isoacoustic co-search: Baohua Lingxian Dan	{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it501552"}  ], 0} 
 re5201129_00	传书：协助训练阿哈	True	Assist in training Ahab: peony cake	{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it712017"}  ], 0} 
 re5201129_01	传书：协助训练阿哈	True	Assist in training Ahab: Fang Tian Jie	{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it105581"}  ], 0} 
-re5201140_00	彩蛋：藏宝图	True	Colorful egg: Yan warrior treasure map	{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it606301"}  ], 0} 
+re5201140_00	彩蛋：藏宝图	True	Colorful egg: Yan warrior treasure map	{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it715025"}  ], 0} 
 re5201141_00	相约练拳：还是挥拳新招	True	Meet to practice: or swinging a new move	{ "LogicalNode" : [ { "ReplacePlayerSkill" : "ma010001", "ma01000101", True} , { "SetPlayerSkillEXP" : 1, 900, "ma01000101"}  ], 0} 
 re5201141_01	相约练拳：腌萝卜	True	Meet to practice: pickled radish	{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it501565"}  ], 0} 
 re5201207_01	医疔特质4，新药方，道恒社群传书4给出	True		{ "LogicalNode" : [ { "ReplacePlayerTrait" : "medicine_trait03", "medicine_trait04"} , { "LearnRefiningAction" : "me501030,me501031,me501032,me501033"}  ], 0} 
@@ -1698,72 +1697,72 @@ re5307318_00	想学暗器的话……：习得蝶恋花３（宁楚楚）	True		
 re5307318_01	想学暗器的话……：习得烟笼寒水３（飞雪皊狐）	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma070601", True} , { "SetPlayerSkillEXP" : 1, 400, "ma070601"}  ], 0} 
 re5310401_00	得转交给你：习得神算千机第一、二招	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma061601", True} , { "SetPlayerSkill" : 1, "ma061701", True}  ], 0} 
 re6046401_00	天外武林彩蛋	True	Strange Solitaire	{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it605701"}  ], 0} 
-re6062300_00	药材高端泡澡	True	Money +300	{ "LogicalNode" : [ { "RewardMoney" : 1, 300}  ], 0} 
-re7001002_06	段红儿事件六阶奖励打包（友好升阶、第三招升至10级、第四招升至10级、习得鸿鹄莫相嗤并升至6级、习得拂花开红影并升至6级、百工心鉴升至6级）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0102", ""} , { "SetNpcSkill" : 1, "ma080201", "in0102"} , { "SetNpcSkillEXP" : 1, 500, "ma080201", "in0102"} , { "SetNpcMantraEXP" : 1, 300, "xinfa909baigongxinjian", "in0102"} , { "SetNpcSkill" : 1, "ma080403", "in0102"} , { "SetNpcSkillEXP" : 1, 500, "ma080403", "in0102"} , { "SetNpcSkillEXP" : 1, 700, "ma080402", "in0102"} , { "SetNpcSkillEXP" : 1, 400, "ma080401", "in0102"} , { "RewardEmotionAction" : 2, 10}  ], 0} 
-re7001002_07	段红儿事件七阶奖励打包（友好升阶、鸿鹄莫相嗤升至10级、拂花开红影升至10级、习得啼鹃带血归并升至10级、百工心鉴升至10级、碧血丹心升级、识变算机升级）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0102", ""} , { "SetNpcSkill" : 1, "ma080404", "in0102"} , { "SetNpcSkillEXP" : 1, 900, "ma080404", "in0102"} , { "SetNpcMantraEXP" : 1, 400, "xinfa909baigongxinjian", "in0102"} , { "SetNpcSkillEXP" : 1, 400, "ma080201", "in0102"} , { "SetNpcSkillEXP" : 1, 400, "ma080403", "in0102"} , { "ReplaceNPCSpecial" : "specialskill010201", "in0102"} , { "ReplaceNPCTrait" : "in0102_trait02", "in0102_trait02_01", "in0102"} , { "RewardEmotionAction" : 2, 10}  ], 0} 
+re6062300_00	药材高端泡澡	True	Money +300	{ "LogicalNode" : [ { "RewardMoney" : 1, 700}  ], 0} 
+re7001002_06	段红儿事件六阶奖励打包（友好升阶、第三招升至10级、第四招升至10级、习得鸿鹄莫相嗤并升至6级、习得拂花开红影并升至6级、百工心鉴升至6级）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0102", ""} , { "SetNpcSkill" : 1, "ma080201", "in0102"} , { "SetNpcSkillEXP" : 1, 500, "ma080201", "in0102"} , { "SetNpcMantraEXP" : 1, 300, "xinfa909baigongxinjian", "in0102"} , { "SetNpcSkill" : 1, "ma080403", "in0102"} , { "SetNpcSkillEXP" : 1, 500, "ma080403", "in0102"} , { "SetNpcSkillEXP" : 1, 700, "ma080402", "in0102"} , { "SetNpcSkillEXP" : 1, 400, "ma080401", "in0102"} , { "RewardEmotionAction" : 1, 20}  ], 0} 
+re7001002_07	段红儿事件七阶奖励打包（友好升阶、鸿鹄莫相嗤升至10级、拂花开红影升至10级、习得啼鹃带血归并升至10级、百工心鉴升至10级、碧血丹心升级、识变算机升级）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0102", ""} , { "SetNpcSkill" : 1, "ma080404", "in0102"} , { "SetNpcSkillEXP" : 1, 900, "ma080404", "in0102"} , { "SetNpcMantraEXP" : 1, 400, "xinfa909baigongxinjian", "in0102"} , { "SetNpcSkillEXP" : 1, 400, "ma080201", "in0102"} , { "SetNpcSkillEXP" : 1, 400, "ma080403", "in0102"} , { "ReplaceNPCSpecial" : "specialskill010201", "in0102"} , { "ReplaceNPCTrait" : "in0102_trait02", "in0102_trait02_01", "in0102"} , { "RewardEmotionAction" : 1, 20}  ], 0} 
 re7001002_08	与段红儿成为恋人	True		{ "LogicalNode" : [ { "SetFavorabilityLover" : "in0102"}  ], 0} 
-re7001003_06	锺若昕事件六阶奖励打包（友好升阶／东君心诀强化至Lv.10／两曜心诀强化至Lv.5／拨云见日强化至Lv.10／霞光万道强化至Lv.10／开启招式-日升月恒Lv.10	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0103", ""} , { "RewardEmotionAction" : 1, 10} , { "SetNpcSkill" : 1, "ma160401", "in0103"} , { "SetNpcSkillEXP" : 1, 900, "ma160401", "in0103"} , { "SetNpcSkillEXP" : 1, 500, "ma160101", "in0103"} , { "SetNpcSkillEXP" : 1, 500, "ma16030101", "in0103"} , { "SetNpcMantraEXP" : 1, 500, "xinfain010301", "in0103"} , { "SetNpcMantraEXP" : 1, 200, "xinfain010302", "in0103"} , { "ReplaceNPCSpecial" : "specialskill010301", "in0103"} , { "SetNpcTrait" : 1, "in0103_trait05", "in0103"} , { "SetNpcSkill" : 1, "ma16040101", "in0103"} , { "SetNpcSkillEXP" : 1, 1000, "ma16040101", "in0103"}  ], 0} 
-re7001003_07	锺若昕事件七阶奖励打包（友好升阶／两曜心诀强化至Lv.10／旭日东升ＬＶ10／金乌西坠ＬＶ10／朱辉散霞ＬＶ10	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0103", ""} , { "RewardEmotionAction" : 1, 10} , { "SetNpcSkill" : 1, "ma160701", "in0103"} , { "SetNpcSkill" : 1, "ma160801", "in0103"} , { "SetNpcSkill" : 1, "ma160901", "in0103"} , { "SetNpcSkillEXP" : 1, 1000, "ma160701", "in0103"} , { "SetNpcSkillEXP" : 1, 1000, "ma160801", "in0103"} , { "SetNpcSkillEXP" : 1, 1000, "ma160901", "in0103"} , { "SetNpcMantraEXP" : 1, 500, "xinfain010302", "in0103"}  ], 0} 
+re7001003_06	锺若昕事件六阶奖励打包（友好升阶／东君心诀强化至Lv.10／两曜心诀强化至Lv.5／拨云见日强化至Lv.10／霞光万道强化至Lv.10／开启招式-日升月恒Lv.10	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0103", ""} , { "RewardEmotionAction" : 1, 20} , { "SetNpcSkill" : 1, "ma160401", "in0103"} , { "SetNpcSkillEXP" : 1, 900, "ma160401", "in0103"} , { "SetNpcSkillEXP" : 1, 500, "ma160101", "in0103"} , { "SetNpcSkillEXP" : 1, 500, "ma16030101", "in0103"} , { "SetNpcMantraEXP" : 1, 500, "xinfain010301", "in0103"} , { "SetNpcMantraEXP" : 1, 200, "xinfain010302", "in0103"} , { "ReplaceNPCSpecial" : "specialskill010301", "in0103"} , { "SetNpcTrait" : 1, "in0103_trait05", "in0103"} , { "SetNpcSkill" : 1, "ma16040101", "in0103"} , { "SetNpcSkillEXP" : 1, 1000, "ma16040101", "in0103"}  ], 0} 
+re7001003_07	锺若昕事件七阶奖励打包（友好升阶／两曜心诀强化至Lv.10／旭日东升ＬＶ10／金乌西坠ＬＶ10／朱辉散霞ＬＶ10	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0103", ""} , { "RewardEmotionAction" : 1, 20} , { "SetNpcSkill" : 1, "ma160701", "in0103"} , { "SetNpcSkill" : 1, "ma160801", "in0103"} , { "SetNpcSkill" : 1, "ma160901", "in0103"} , { "SetNpcSkillEXP" : 1, 1000, "ma160701", "in0103"} , { "SetNpcSkillEXP" : 1, 1000, "ma160801", "in0103"} , { "SetNpcSkillEXP" : 1, 1000, "ma160901", "in0103"} , { "SetNpcMantraEXP" : 1, 500, "xinfain010302", "in0103"}  ], 0} 
 re7001003_08	锺若昕事件八阶奖励打包：成为恋人	True		{ "LogicalNode" : [ { "SetFavorabilityLover" : "in0103"}  ], 0} 
-re7001004_05	萧芊菱事件五阶奖励打包:黄雀衔环进化，习得天赋:依旧年时月01	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0104", ""} , { "RewardEmotionAction" : 1, 10} , { "ReplaceNPCSkill" : "ma220201", "ma22020101", "in0104"} , { "SetNpcSkillEXP" : 1, 900, "ma22020101", "in0104"} , { "SetNpcTrait" : 1, "in0104_trait03_01", "in0104"}  ], 0} 
-re7001004_06	萧芊菱事件六阶奖励打包:百鸟朝凤进化／新法九天lv10	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0104", ""} , { "RewardEmotionAction" : 1, 10} , { "ReplaceNPCSkill" : "ma220301", "ma22030101", "in0104"} , { "SetNpcSkillEXP" : 1, 900, "ma22030101", "in0104"} , { "SetNpcMantraEXP" : 1, 500, "xinfain010401", "in0104"}  ], 0} 
-re7001004_07	萧芊菱事件七阶奖励打包:雪鹤送暖进化，添加天赋比翼双飞去	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0104", ""} , { "RewardEmotionAction" : 1, 10} , { "ReplaceNPCSkill" : "ma220401", "ma22040101", "in0104"} , { "SetNpcSkillEXP" : 1, 900, "ma22040101", "in0104"} , { "ReplaceNPCTrait" : "in0104_trait02", "in0104_trait04", "in0104"}  ], 0} 
+re7001004_05	萧芊菱事件五阶奖励打包:黄雀衔环进化，习得天赋:依旧年时月01	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0104", ""} , { "RewardEmotionAction" : 1, 15} , { "ReplaceNPCSkill" : "ma220201", "ma22020101", "in0104"} , { "SetNpcSkillEXP" : 1, 900, "ma22020101", "in0104"} , { "SetNpcTrait" : 1, "in0104_trait03_01", "in0104"}  ], 0} 
+re7001004_06	萧芊菱事件六阶奖励打包:百鸟朝凤进化／新法九天lv10	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0104", ""} , { "RewardEmotionAction" : 1, 20} , { "ReplaceNPCSkill" : "ma220301", "ma22030101", "in0104"} , { "SetNpcSkillEXP" : 1, 900, "ma22030101", "in0104"} , { "SetNpcMantraEXP" : 1, 500, "xinfain010401", "in0104"}  ], 0} 
+re7001004_07	萧芊菱事件七阶奖励打包:雪鹤送暖进化，添加天赋比翼双飞去	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0104", ""} , { "RewardEmotionAction" : 1, 20} , { "ReplaceNPCSkill" : "ma220401", "ma22040101", "in0104"} , { "SetNpcSkillEXP" : 1, 900, "ma22040101", "in0104"} , { "ReplaceNPCTrait" : "in0104_trait02", "in0104_trait04", "in0104"}  ], 0} 
 re7001004_08	萧芊菱事件八阶奖励打包（成为恋人）	True		{ "LogicalNode" : [ { "SetFavorabilityLover" : "in0104"}  ], 0} 
-re7001005_05	石崑事件五阶奖励打包（破魂天殛lv5>>lv10）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0105", ""} , { "SetNpcSkillEXP" : 1, 500, "ma150401", "in0105"} , { "RewardEmotionAction" : 1, 10}  ], 0} 
-re7001005_06	石崑事件六阶奖励打包（归元功强化）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0105", ""} , { "ReplaceNPCSkill" : "ma150201", "ma15020101", "in0105"} , { "SetNpcSkillEXP" : 1, 900, "ma15020101", "in0105"} , { "RewardEmotionAction" : 1, 10}  ], 0} 
-re7001005_07	石崑事件七阶奖励打包（玄心功诀lv8>>10--剧情额外给出）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0105", ""} , { "RewardEmotionAction" : 1, 10}  ], 0} 
+re7001005_05	石崑事件五阶奖励打包（破魂天殛lv5>>lv10）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0105", ""} , { "SetNpcSkillEXP" : 1, 500, "ma150401", "in0105"} , { "RewardEmotionAction" : 1, 15}  ], 0} 
+re7001005_06	石崑事件六阶奖励打包（归元功强化）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0105", ""} , { "ReplaceNPCSkill" : "ma150201", "ma15020101", "in0105"} , { "SetNpcSkillEXP" : 1, 900, "ma15020101", "in0105"} , { "RewardEmotionAction" : 1, 20}  ], 0} 
+re7001005_07	石崑事件七阶奖励打包（玄心功诀lv8>>10--剧情额外给出）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0105", ""} , { "RewardEmotionAction" : 1, 20}  ], 0} 
 re7001005_08	石崑事件八阶奖励打包（成为恋人）	True		{ "LogicalNode" : [ { "SetFavorabilityLover" : "in0105"}  ], 0} 
-re7001006_06	南飞鍠事件六阶奖励打包（飞瀑七连功lv10、飞鸢式lv10）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0106", ""} , { "SetNpcMantraEXP" : 1, 400, "xinfain010602", "in0106"} , { "SetNpcSkill" : 1, "ma170401", "in0106"} , { "SetNpcSkillEXP" : 1, 900, "ma170401", "in0106"} , { "RewardEmotionAction" : 1, 10}  ], 0} 
-re7001006_07	南飞鍠事件七阶奖励打包（开云见天lv10、白云苍狗lv10、星落云散lv10）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0106", ""} , { "SetNpcSkillEXP" : 1, 100, "ma030801", "in0106"} , { "SetNpcSkillEXP" : 1, 400, "ma030901", "in0106"} , { "SetNpcSkillEXP" : 1, 700, "ma031001", "in0106"} , { "RewardEmotionAction" : 1, 10}  ], 0} 
+re7001006_06	南飞鍠事件六阶奖励打包（飞瀑七连功lv10、飞鸢式lv10）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0106", ""} , { "SetNpcMantraEXP" : 1, 400, "xinfain010602", "in0106"} , { "SetNpcSkill" : 1, "ma170401", "in0106"} , { "SetNpcSkillEXP" : 1, 900, "ma170401", "in0106"} , { "RewardEmotionAction" : 1, 20}  ], 0} 
+re7001006_07	南飞鍠事件七阶奖励打包（开云见天lv10、白云苍狗lv10、星落云散lv10）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0106", ""} , { "SetNpcSkillEXP" : 1, 100, "ma030801", "in0106"} , { "SetNpcSkillEXP" : 1, 400, "ma030901", "in0106"} , { "SetNpcSkillEXP" : 1, 700, "ma031001", "in0106"} , { "RewardEmotionAction" : 1, 20}  ], 0} 
 re7001006_08	南飞鍠事件八阶奖励打包（成为恋人）	True		{ "LogicalNode" : [ { "SetFavorabilityLover" : "in0106"}  ], 0} 
-re7001007_06	程墉事件六阶奖励打包（习得招式暴雨震五荒lv10、习得招式新雨落千仞lv10、凄雨崩山壑lv7>>10）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0107", ""} , { "SetNpcSkill" : 1, "ma090402", "in0107"} , { "SetNpcSkillEXP" : 1, 900, "ma090402", "in0107"} , { "SetNpcSkill" : 1, "ma090403", "in0107"} , { "SetNpcSkillEXP" : 1, 900, "ma090403", "in0107"} , { "SetNpcSkillEXP" : 1, 300, "ma090401", "in0107"} , { "RewardEmotionAction" : 1, 10}  ], 0} 
-re7001007_07	程墉事件七阶奖励打包（习得招式顺雨登百谷lv10、、获得七式机关伞）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0107", ""} , { "SetNpcSkill" : 1, "ma090404", "in0107"} , { "SetNpcSkillEXP" : 1, 900, "ma090404", "in0107"} , { "RewardProps" : 1, 1, "it109561"} , { "RewardEmotionAction" : 1, 10}  ], 0} 
+re7001007_06	程墉事件六阶奖励打包（习得招式暴雨震五荒lv10、习得招式新雨落千仞lv10、凄雨崩山壑lv7>>10）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0107", ""} , { "SetNpcSkill" : 1, "ma090402", "in0107"} , { "SetNpcSkillEXP" : 1, 900, "ma090402", "in0107"} , { "SetNpcSkill" : 1, "ma090403", "in0107"} , { "SetNpcSkillEXP" : 1, 900, "ma090403", "in0107"} , { "SetNpcSkillEXP" : 1, 300, "ma090401", "in0107"} , { "RewardEmotionAction" : 1, 20}  ], 0} 
+re7001007_07	程墉事件七阶奖励打包（习得招式顺雨登百谷lv10、、获得七式机关伞）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0107", ""} , { "SetNpcSkill" : 1, "ma090404", "in0107"} , { "SetNpcSkillEXP" : 1, 900, "ma090404", "in0107"} , { "RewardProps" : 1, 1, "it109561"} , { "RewardEmotionAction" : 1, 20}  ], 0} 
 re7001007_08	程墉事件八阶奖励打包（成为恋人）	True		{ "LogicalNode" : [ { "SetFavorabilityLover" : "in0107"}  ], 0} 
 re7001009_02	净事件二阶奖励打包：心法十阶	True		{ "LogicalNode" : [ { "SetNpcMantraEXP" : 1, 500, "xinfain010901", "in0109"} , { "RewardEmotionAction" : 1, 10} , { "SetFavorabilityRank" : "in0109", ""}  ], 0} 
 re7001009_03	净事件三阶奖励打包：伏龙探珠	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 1, 10} , { "SetFavorabilityRank" : "in0109", ""} , { "ReplaceNPCSkill" : "ma170701", "ma17070101", "in0109"} , { "SetNpcSkillEXP" : 1, 900, "ma17070101", "in0109"}  ], 0} 
-re7001009_04	净事件四阶奖励打包：强跃龙门	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 1, 10} , { "SetFavorabilityRank" : "in0109", ""} , { "SetNpcSpecial" : 1, "specialskill0109", "in0109"}  ], 0} 
-re7001009_05	净事件五阶奖励打包：尽心、蛰惊龙起	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 1, 10} , { "SetFavorabilityRank" : "in0109", ""} , { "SetNpcTrait" : 1, "in0109_trait03", "in0109"} , { "ReplaceNPCSkill" : "ma170801", "ma17080101", "in0109"} , { "SetNpcSkillEXP" : 1, 900, "ma17080101", "in0109"}  ], 0} 
-re7001009_06	净事件六阶奖励打包：螭龙细雨	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 1, 10} , { "SetFavorabilityRank" : "in0109", ""} , { "ReplaceNPCSkill" : "ma170601", "ma17060101", "in0109"} , { "SetNpcSkillEXP" : 1, 900, "ma17060101", "in0109"}  ], 0} 
-re7001009_07	净事件七阶奖励打包：镜湖映月(另给)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 1, 10} , { "SetFavorabilityRank" : "in0109", ""}  ], 0} 
+re7001009_04	净事件四阶奖励打包：强跃龙门	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 1, 15} , { "SetFavorabilityRank" : "in0109", ""} , { "SetNpcSpecial" : 1, "specialskill0109", "in0109"}  ], 0} 
+re7001009_05	净事件五阶奖励打包：尽心、蛰惊龙起	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 1, 15} , { "SetFavorabilityRank" : "in0109", ""} , { "SetNpcTrait" : 1, "in0109_trait03", "in0109"} , { "ReplaceNPCSkill" : "ma170801", "ma17080101", "in0109"} , { "SetNpcSkillEXP" : 1, 900, "ma17080101", "in0109"}  ], 0} 
+re7001009_06	净事件六阶奖励打包：螭龙细雨	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 1, 20} , { "SetFavorabilityRank" : "in0109", ""} , { "ReplaceNPCSkill" : "ma170601", "ma17060101", "in0109"} , { "SetNpcSkillEXP" : 1, 900, "ma17060101", "in0109"}  ], 0} 
+re7001009_07	净事件七阶奖励打包：镜湖映月(另给)	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 1, 20} , { "SetFavorabilityRank" : "in0109", ""}  ], 0} 
 re7001009_08	净事件八阶奖励打包：成为恋人	True		{ "LogicalNode" : [ { "SetFavorabilityLover" : "in0109"}  ], 0} 
-re7001010_05	上官煦事件五阶奖励打包（友好升阶、连空明灭、孤舟寒雪）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0110", ""} , { "RewardEmotionAction" : 1, 10} , { "SetNpcSkill" : 1, "ma190801", "in0110"} , { "SetNpcSkillEXP" : 1, 900, "ma190801", "in0110"} , { "SetNpcSkill" : 1, "ma191601", "in0110"} , { "SetNpcSkillEXP" : 1, 900, "ma191601", "in0110"}  ], 0} 
-re7001010_06	上官煦事件六阶奖励打包（友好升阶、奋迅、气血+300）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0110", ""} , { "RewardEmotionAction" : 1, 10} , { "SetNpcTrait" : 1, "in0110_trait03", "in0110"} , { "SetNpcPropertyAction" : 1, 300, 4020, "in0110"}  ], 0} 
-re7001010_07	上官煦事件七阶奖励打包（友好升阶、千人弗过、月曜戈甲）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0110", ""} , { "RewardEmotionAction" : 1, 10} , { "SetNpcSkill" : 1, "ma191701", "in0110"} , { "SetNpcSkillEXP" : 1, 900, "ma191701", "in0110"} , { "SetNpcSpecial" : 1, "specialskill0110", "in0110"}  ], 0} 
+re7001010_05	上官煦事件五阶奖励打包（友好升阶、连空明灭、孤舟寒雪）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0110", ""} , { "RewardEmotionAction" : 1, 15} , { "SetNpcSkill" : 1, "ma190801", "in0110"} , { "SetNpcSkillEXP" : 1, 900, "ma190801", "in0110"} , { "SetNpcSkill" : 1, "ma191601", "in0110"} , { "SetNpcSkillEXP" : 1, 900, "ma191601", "in0110"}  ], 0} 
+re7001010_06	上官煦事件六阶奖励打包（友好升阶、奋迅、气血+300）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0110", ""} , { "RewardEmotionAction" : 1, 20} , { "SetNpcTrait" : 1, "in0110_trait03", "in0110"} , { "SetNpcPropertyAction" : 1, 300, 4020, "in0110"}  ], 0} 
+re7001010_07	上官煦事件七阶奖励打包（友好升阶、千人弗过、月曜戈甲）	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0110", ""} , { "RewardEmotionAction" : 1, 20} , { "SetNpcSkill" : 1, "ma191701", "in0110"} , { "SetNpcSkillEXP" : 1, 900, "ma191701", "in0110"} , { "SetNpcSpecial" : 1, "specialskill0110", "in0110"}  ], 0} 
 re7001010_08	上官煦事件八阶奖励打包（成为恋人）	True		{ "LogicalNode" : [ { "SetFavorabilityLover" : "in0110"}  ], 0} 
-re7001011_04	武辙事件四阶奖励打包：友好升阶、获得招式谜之丹丸、举手开云关	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0111", ""} , { "RewardEmotionAction" : 1, 10} , { "SetNpcSpecial" : 1, "specialskill0111", "in0111"} , { "SetNpcSkill" : 1, "ma153201", "in0111"} , { "SetNpcSkillEXP" : 1, 900, "ma153201", "in0111"}  ], 0} 
-re7001011_05	武辙事件五阶奖励打包：擒邪II及人岱山六龙回	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0111", ""} , { "RewardEmotionAction" : 1, 10} , { "ReplaceNPCSkill" : "ma150601", "ma15060101", "in0111"} , { "SetNpcSkillEXP" : 1, 900, "ma15060101", "in0111"} , { "SetNpcSkill" : 1, "ma150801", "in0111"} , { "SetNpcSkillEXP" : 1, 900, "ma150801", "in0111"} , { "SetNpcSkill" : 1, "ma153301", "in0111"} , { "SetNpcSkillEXP" : 1, 900, "ma153301", "in0111"}  ], 0} 
-re7001011_06	武辙事件六阶奖励打包：松苍千载、孤灯不灭	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0111", ""} , { "RewardEmotionAction" : 1, 10} , { "SetNpcMantraEXP" : 1, 500, "xinfain011101", "in0111"} , { "SetNpcTrait" : 1, "in0111_trait03", "in0111"}  ], 0} 
-re7001011_07	武辙事件七阶奖励打包：石铭正王度、百草秘炼	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0111", ""} , { "RewardEmotionAction" : 1, 10} , { "SetNpcSkill" : 1, "ma153401", "in0111"} , { "SetNpcSkillEXP" : 1, 900, "ma153401", "in0111"} , { "ReplaceNPCSpecial" : "specialskill011101", "in0111"}  ], 0} 
+re7001011_04	武辙事件四阶奖励打包：友好升阶、获得招式谜之丹丸、举手开云关	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0111", ""} , { "RewardEmotionAction" : 1, 15} , { "SetNpcSpecial" : 1, "specialskill0111", "in0111"} , { "SetNpcSkill" : 1, "ma153201", "in0111"} , { "SetNpcSkillEXP" : 1, 900, "ma153201", "in0111"}  ], 0} 
+re7001011_05	武辙事件五阶奖励打包：擒邪II及人岱山六龙回	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0111", ""} , { "RewardEmotionAction" : 1, 15} , { "ReplaceNPCSkill" : "ma150601", "ma15060101", "in0111"} , { "SetNpcSkillEXP" : 1, 900, "ma15060101", "in0111"} , { "SetNpcSkill" : 1, "ma150801", "in0111"} , { "SetNpcSkillEXP" : 1, 900, "ma150801", "in0111"} , { "SetNpcSkill" : 1, "ma153301", "in0111"} , { "SetNpcSkillEXP" : 1, 900, "ma153301", "in0111"}  ], 0} 
+re7001011_06	武辙事件六阶奖励打包：松苍千载、孤灯不灭	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0111", ""} , { "RewardEmotionAction" : 1, 20} , { "SetNpcMantraEXP" : 1, 500, "xinfain011101", "in0111"} , { "SetNpcTrait" : 1, "in0111_trait03", "in0111"}  ], 0} 
+re7001011_07	武辙事件七阶奖励打包：石铭正王度、百草秘炼	True		{ "LogicalNode" : [ { "SetFavorabilityRank" : "in0111", ""} , { "RewardEmotionAction" : 1, 20} , { "SetNpcSkill" : 1, "ma153401", "in0111"} , { "SetNpcSkillEXP" : 1, 900, "ma153401", "in0111"} , { "ReplaceNPCSpecial" : "specialskill011101", "in0111"}  ], 0} 
 re7001011_08	武辙事件八阶奖励打包：成为恋人	True		{ "LogicalNode" : [ { "SetFavorabilityLover" : "in0111"}  ], 0} 
-re804ma011401	招式：《大风云雕手》金雕展翼	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma011401", True} , { "SetPlayerSkillEXP" : 1, 200, "ma011401"}  ], 0} 
-re804ma011501	招式：《大风云雕手》鹰拿燕雀	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma011501", True} , { "SetPlayerSkillEXP" : 1, 200, "ma011501"}  ], 0} 
-re804ma011601	招式：《大风云雕手》血爪腥喙	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma011601", True} , { "SetPlayerSkillEXP" : 1, 400, "ma011601"}  ], 0} 
-re804ma021801	招式：《御风七绝》风刀霜剑	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma021801", True} , { "SetPlayerSkillEXP" : 1, 200, "ma021801"}  ], 0} 
-re804ma021901	招式：《御风七绝》云龙风虎	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma021901", True} , { "SetPlayerSkillEXP" : 1, 200, "ma021901"}  ], 0} 
-re804ma022001	招式：《御风七绝》东风浩荡	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma022001", True} , { "SetPlayerSkillEXP" : 1, 400, "ma022001"}  ], 0} 
-re804ma031201	招式：《凌波飞雪剑》履霜冰至	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma031201", True} , { "SetPlayerSkillEXP" : 1, 400, "ma031201"}  ], 0} 
-re804ma031301	招式：《凌波飞雪剑》玉壶冰心	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma031301", True} , { "SetPlayerSkillEXP" : 1, 400, "ma031301"}  ], 0} 
-re804ma040801	招式：《落霞孤雁刀》雁阵惊炎火	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma040801", True} , { "SetPlayerSkillEXP" : 1, 200, "ma040801"}  ], 0} 
-re804ma040901	招式：《落霞孤雁刀》焱声断衡阳	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma040901", True} , { "SetPlayerSkillEXP" : 1, 200, "ma040901"}  ], 0} 
-re804ma041001	招式：《落霞孤雁刀》燚响穷彭蠡	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma041001", True} , { "SetPlayerSkillEXP" : 1, 400, "ma041001"}  ], 0} 
-re804ma051401	招式：《大圣棍法》魔高一丈	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma051401", True} , { "SetPlayerSkillEXP" : 1, 200, "ma051401"}  ], 0} 
-re804ma051501	招式：《大圣棍法》定海神针	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma051501", True} , { "SetPlayerSkillEXP" : 1, 200, "ma051501"}  ], 0} 
-re804ma051601	招式：《大圣棍法》大闹天宫	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma051601", True} , { "SetPlayerSkillEXP" : 1, 400, "ma051601"}  ], 0} 
-re804ma051801	招式：《凤王大枪》凤翔	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma051801", True} , { "SetPlayerSkillEXP" : 1, 200, "ma051801"}  ], 0} 
-re804ma051901	招式：《凤王大枪》啼阳	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma051901", True} , { "SetPlayerSkillEXP" : 1, 200, "ma051901"}  ], 0} 
-re804ma052001	招式：《凤王大枪》焚天	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma052001", True} , { "SetPlayerSkillEXP" : 1, 400, "ma052001"}  ], 0} 
-re804ma061201	招式：《摄魂阴风》形销骨立	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma061201", True} , { "SetPlayerSkillEXP" : 1, 200, "ma061201"}  ], 0} 
-re804ma061301	招式：《摄魂阴风》五痨七伤	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma061301", True} , { "SetPlayerSkillEXP" : 1, 200, "ma061301"}  ], 0} 
-re804ma061401	招式：《摄魂阴风》天愁地惨	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma061401", True} , { "SetPlayerSkillEXP" : 1, 400, "ma061401"}  ], 0} 
-re804ma070401	招式：《烟笼寒水》清辉玉臂	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma070401", True} , { "SetPlayerSkillEXP" : 1, 200, "ma070401"}  ], 0} 
-re804ma070501	招式：《烟笼寒水》寒对雾窗	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma070501", True} , { "SetPlayerSkillEXP" : 1, 200, "ma070501"}  ], 0} 
-re804ma070601	招式：《烟笼寒水》月迷津渡	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma070601", True} , { "SetPlayerSkillEXP" : 1, 400, "ma070601"}  ], 0} 
+re804ma011401	招式：《大风云雕手》金雕展翼	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma011401", True} , { "SetPlayerSkillEXP" : 1, 100, "ma011401"}  ], 0} 
+re804ma011501	招式：《大风云雕手》鹰拿燕雀	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma011501", True} , { "SetPlayerSkillEXP" : 1, 100, "ma011501"}  ], 0} 
+re804ma011601	招式：《大风云雕手》血爪腥喙	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma011601", True} , { "SetPlayerSkillEXP" : 1, 300, "ma011601"}  ], 0} 
+re804ma021801	招式：《御风七绝》风刀霜剑	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma021801", True} , { "SetPlayerSkillEXP" : 1, 100, "ma021801"}  ], 0} 
+re804ma021901	招式：《御风七绝》云龙风虎	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma021901", True} , { "SetPlayerSkillEXP" : 1, 100, "ma021901"}  ], 0} 
+re804ma022001	招式：《御风七绝》东风浩荡	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma022001", True} , { "SetPlayerSkillEXP" : 1, 300, "ma022001"}  ], 0} 
+re804ma031201	招式：《凌波飞雪剑》履霜冰至	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma031201", True} , { "SetPlayerSkillEXP" : 1, 300, "ma031201"}  ], 0} 
+re804ma031301	招式：《凌波飞雪剑》玉壶冰心	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma031301", True} , { "SetPlayerSkillEXP" : 1, 300, "ma031301"}  ], 0} 
+re804ma040801	招式：《落霞孤雁刀》雁阵惊炎火	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma040801", True} , { "SetPlayerSkillEXP" : 1, 100, "ma040801"}  ], 0} 
+re804ma040901	招式：《落霞孤雁刀》焱声断衡阳	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma040901", True} , { "SetPlayerSkillEXP" : 1, 100, "ma040901"}  ], 0} 
+re804ma041001	招式：《落霞孤雁刀》燚响穷彭蠡	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma041001", True} , { "SetPlayerSkillEXP" : 1, 300, "ma041001"}  ], 0} 
+re804ma051401	招式：《大圣棍法》魔高一丈	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma051401", True} , { "SetPlayerSkillEXP" : 1, 100, "ma051401"}  ], 0} 
+re804ma051501	招式：《大圣棍法》定海神针	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma051501", True} , { "SetPlayerSkillEXP" : 1, 100, "ma051501"}  ], 0} 
+re804ma051601	招式：《大圣棍法》大闹天宫	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma051601", True} , { "SetPlayerSkillEXP" : 1, 300, "ma051601"}  ], 0} 
+re804ma051801	招式：《凤王大枪》凤翔	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma051801", True} , { "SetPlayerSkillEXP" : 1, 100, "ma051801"}  ], 0} 
+re804ma051901	招式：《凤王大枪》啼阳	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma051901", True} , { "SetPlayerSkillEXP" : 1, 100, "ma051901"}  ], 0} 
+re804ma052001	招式：《凤王大枪》焚天	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma052001", True} , { "SetPlayerSkillEXP" : 1, 300, "ma052001"}  ], 0} 
+re804ma061201	招式：《摄魂阴风》形销骨立	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma061201", True} , { "SetPlayerSkillEXP" : 1, 100, "ma061201"}  ], 0} 
+re804ma061301	招式：《摄魂阴风》五痨七伤	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma061301", True} , { "SetPlayerSkillEXP" : 1, 100, "ma061301"}  ], 0} 
+re804ma061401	招式：《摄魂阴风》天愁地惨	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma061401", True} , { "SetPlayerSkillEXP" : 1, 300, "ma061401"}  ], 0} 
+re804ma070401	招式：《烟笼寒水》清辉玉臂	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma070401", True} , { "SetPlayerSkillEXP" : 1, 100, "ma070401"}  ], 0} 
+re804ma070501	招式：《烟笼寒水》寒对雾窗	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma070501", True} , { "SetPlayerSkillEXP" : 1, 100, "ma070501"}  ], 0} 
+re804ma070601	招式：《烟笼寒水》月迷津渡	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma070601", True} , { "SetPlayerSkillEXP" : 1, 300, "ma070601"}  ], 0} 
 re804ma130601	医术招式天道还阳，道恒社群传书4给出	True		{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma130601", True}  ], 0} 
 re804xinfa705	心法：《叹世宝卷》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa705tanshibaojuan"} , { "SetPlayerMantraEXP" : 1, 300, "xinfa705tanshibaojuan"}  ], 0} 
-re804xinfa707	心法：《天王策》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa707tianwangce"} , { "SetPlayerMantraEXP" : 1, 200, "xinfa707tianwangce"}  ], 0} 
-re804xinfa708	心法：《瑜珈经》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa708yujiajing"} , { "SetPlayerMantraEXP" : 1, 200, "xinfa708yujiajing"}  ], 0} 
-re804xinfa801	心法：《八方风雨势》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa801bafangfengyu"} , { "SetPlayerMantraEXP" : 1, 200, "xinfa801bafangfengyu"}  ], 0} 
-re804xinfa910	心法：《逍遥劲》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa910xiaoyaobian"} , { "SetPlayerMantraEXP" : 1, 200, "xinfa910xiaoyaobian"}  ], 0} 
+re804xinfa707	心法：《天王策》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa707tianwangce"} , { "SetPlayerMantraEXP" : 1, 100, "xinfa707tianwangce"}  ], 0} 
+re804xinfa708	心法：《瑜珈经》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa708yujiajing"} , { "SetPlayerMantraEXP" : 1, 100, "xinfa708yujiajing"}  ], 0} 
+re804xinfa801	心法：《八方风雨势》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa801bafangfengyu"} , { "SetPlayerMantraEXP" : 1, 100, "xinfa801bafangfengyu"}  ], 0} 
+re804xinfa910	心法：《逍遥劲》	True		{ "LogicalNode" : [ { "SetPlayerMantra" : 1, "xinfa910xiaoyaobian"} , { "SetPlayerMantraEXP" : 1, 100, "xinfa910xiaoyaobian"}  ], 0} 
 re9000301_00	［成就-主线］侠道为何：完成第三年年初剧情（隐藏、铜牌）	True		{ "LogicalNode" : [ { "RewardAchievementAction" : "ac9000301_00", 1}  ], 0} 
 re9000301_01	［成就-主线］天清再现：完成第三年春校事件（隐藏、铜牌）	True		{ "LogicalNode" : [ { "RewardAchievementAction" : "ac9000301_01", 1}  ], 0} 
 re9000301_02	［成就-主线］侠心犹存：完成第三年夏校事件（隐藏、铜牌）	True		{ "LogicalNode" : [ { "RewardAchievementAction" : "ac9000301_02", 1}  ], 0} 
@@ -1824,3 +1823,158 @@ re9000304_17	［成就-结局］松石连理：与武辙经历恋人结局（隐
 re9000304_18	［成就-结局］两心相隔：经历过两心相隔结局（隐藏、金牌）	True		{ "LogicalNode" : [ { "RewardAchievementAction" : "ac9000304_18", 1}  ], 0} 
 test001_reward		False		{ "LogicalNode" : [ { "RewardProps" : 0, 1, "it101051"}  ], 0} 
 re5201107_01	传书：守备型机关人之一	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it501000"}  ], 0} 
+Drop_baozi_01	掉落物_奶皇包*1豆沙包*1咸肉饼*1	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it712007"} , { "RewardProps" : 1, 1, "it712008"} , { "RewardProps" : 1, 1, "it712009"}  ], 0} 
+Drop_beast_01_2_4	掉落物_兽牙*2~4	True		{ "LogicalNode" : [ { "RewardReadomProps" : 1, 2, 4, True, "it715019"}  ], 0} 
+Drop_beast_01_4_6	掉落物_兽牙*4~6	True		{ "LogicalNode" : [ { "RewardReadomProps" : 1, 4, 6, True, "it715019"}  ], 0} 
+Drop_beast_02_2_4	掉落物_稀有兽牙*2~4	True		{ "LogicalNode" : [ { "RewardReadomProps" : 1, 2, 4, True, "it715020"}  ], 0} 
+Drop_beast_02_4_6	掉落物_稀有兽牙*4~6	True		{ "LogicalNode" : [ { "RewardReadomProps" : 1, 4, 6, True, "it715020"}  ], 0} 
+Drop_beast_02_6_8	掉落物_稀有兽牙*6~8	True		{ "LogicalNode" : [ { "RewardReadomProps" : 1, 6, 8, True, "it715020"}  ], 0} 
+Drop_beast_03_1	掉落物_兽皮*1	True		{ "LogicalNode" : [ { "RewardReadomProps" : 1, 1, 1, True, "it715021"}  ], 0} 
+Drop_beast_03_1_2	掉落物_兽皮*1~2	True		{ "LogicalNode" : [ { "RewardReadomProps" : 1, 1, 2, True, "it715021"}  ], 0} 
+Drop_beast_03_2_3	掉落物_兽皮*2~3	True		{ "LogicalNode" : [ { "RewardReadomProps" : 1, 2, 3, True, "it715021"}  ], 0} 
+Drop_beast_04_1	掉落物_稀有兽皮*1	True		{ "LogicalNode" : [ { "RewardReadomProps" : 1, 1, 1, True, "it715022"}  ], 0} 
+Drop_beast_04_1_2	掉落物_稀有兽皮*1~2	True		{ "LogicalNode" : [ { "RewardReadomProps" : 1, 1, 2, True, "it715022"}  ], 0} 
+Drop_beast_04_2_3	掉落物_稀有兽皮*2~3	True		{ "LogicalNode" : [ { "RewardReadomProps" : 1, 2, 3, True, "it715022"}  ], 0} 
+Drop_drug_01_1	掉落物_1阶药品_数量1	True		{ "LogicalNode" : [ { "RewardReadomProps" : 1, 1, 1, True, "it501000,it501001,it501002,it501003"}  ], 0} 
+Drop_drug_01_1_2	掉落物_1阶药品_数量1~2	True		{ "LogicalNode" : [ { "RewardReadomProps" : 1, 1, 2, True, "it501000,it501001,it501002,it501003"}  ], 0} 
+Drop_drug_02_1	掉落物_2阶药品_数量1	True		{ "LogicalNode" : [ { "RewardReadomProps" : 1, 1, 1, True, "it501011,it501012,it501013,it501014"}  ], 0} 
+Drop_drug_02_1_2	掉落物_2阶药品_数量1~2	True		{ "LogicalNode" : [ { "RewardReadomProps" : 1, 1, 2, True, "it501011,it501012,it501013,it501014"}  ], 0} 
+Drop_drug_03_1	掉落物_3阶药品_数量1	True		{ "LogicalNode" : [ { "RewardReadomProps" : 1, 1, 1, True, "it501020,it501021,it501022,it501023"}  ], 0} 
+Drop_drug_03_1_2	掉落物_3阶药品_数量1~2	True		{ "LogicalNode" : [ { "RewardReadomProps" : 1, 1, 2, True, "it501020,it501021,it501022,it501023"}  ], 0} 
+Drop_drug_04_1	掉落物_4阶药品_数量1	True		{ "LogicalNode" : [ { "RewardReadomProps" : 1, 1, 1, True, "it501030,it501031,it501032,it501033"}  ], 0} 
+Drop_drug_04_2	掉落物_4阶药品_数量2	True		{ "LogicalNode" : [ { "RewardReadomProps" : 2, 1, 1, True, "it501030,it501031,it501032,it501033"}  ], 0} 
+Drop_drug_04_3	掉落物_4阶药品_数量3	True		{ "LogicalNode" : [ { "RewardReadomProps" : 3, 1, 1, True, "it501030,it501031,it501032,it501033"}  ], 0} 
+Drop_gear_01_1	掉落物_源玉碎片*1	True		{ "LogicalNode" : [ { "RewardReadomProps" : 1, 1, 1, True, "it715023"}  ], 0} 
+Drop_gear_01_1_2	掉落物_源玉碎片*1~2	True		{ "LogicalNode" : [ { "RewardReadomProps" : 1, 1, 2, True, "it715023"}  ], 0} 
+Drop_gear_01_1_3	掉落物_源玉碎片*1~3	True		{ "LogicalNode" : [ { "RewardReadomProps" : 1, 1, 3, True, "it715023"}  ], 0} 
+Drop_gear_01_2_3	掉落物_源玉碎片*2~3	True		{ "LogicalNode" : [ { "RewardReadomProps" : 1, 2, 3, True, "it715023"}  ], 0} 
+Drop_gear_01_2_4	掉落物_源玉碎片*2~4	True		{ "LogicalNode" : [ { "RewardReadomProps" : 1, 2, 4, True, "it715023"}  ], 0} 
+Drop_gear_01_2_5	掉落物_源玉碎片*2~5	True		{ "LogicalNode" : [ { "RewardReadomProps" : 1, 2, 5, True, "it715023"}  ], 0} 
+Drop_gear_02_1	掉落物_机关零件*1	True		{ "LogicalNode" : [ { "RewardReadomProps" : 1, 1, 1, True, "it713010"}  ], 0} 
+Drop_gear_02_1_2	掉落物_机关零件*1~2	True		{ "LogicalNode" : [ { "RewardReadomProps" : 1, 1, 2, True, "it713010"}  ], 0} 
+Drop_gear_02_1_3	掉落物_机关零件*1~3	True		{ "LogicalNode" : [ { "RewardReadomProps" : 1, 1, 3, True, "it713010"}  ], 0} 
+Drop_gear_02_1_4	掉落物_机关零件*1~4	True		{ "LogicalNode" : [ { "RewardReadomProps" : 1, 1, 4, True, "it713010"}  ], 0} 
+Drop_gift_01_1	掉落物_初阶礼品_数量1	True		{ "LogicalNode" : [ { "RewardReadomProps" : 1, 1, 1, False, "it701018,it701019,it702013,it702014,it703017,it703018,it704006,it704008,it705005,it705016,it706011,it706012,it707010,it707011,it708012,it708013,it710005,it710010,it711010,it711011,it712005,it712009,it713008,it713009,it714005,it714006"}  ], 0} 
+Drop_it501000	掉落物_活血散	True		{ "LogicalNode" : [ { "RewardReadomProps" : 1, 1, 1, True, "it501000"}  ], 0} 
+Drop_it501011	掉落物_生肌膏	True		{ "LogicalNode" : [ { "RewardReadomProps" : 1, 1, 1, True, "it501011"}  ], 0} 
+Drop_it501021	掉落物_生肌玉红膏	True		{ "LogicalNode" : [ { "RewardReadomProps" : 1, 1, 1, True, "it501021"}  ], 0} 
+Drop_it501566	五炁心火丹	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it501566"}  ], 0} 
+Drop_it501567	逍遥雁行丹	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it501567"}  ], 0} 
+Drop_it501568	仙风赤牛露	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it501568"}  ], 0} 
+Drop_it701018	掉落物_墨弦	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it701018"}  ], 0} 
+Drop_it701019	掉落物_陈旧琴谱	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it701019"}  ], 0} 
+Drop_it702013	掉落物_五色棋具	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it702013"}  ], 0} 
+Drop_it702014	掉落物_陈旧棋谱	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it702014"}  ], 0} 
+Drop_it703017	掉落物_狼毫笔	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it703017"}  ], 0} 
+Drop_it703018	掉落物_陶瓷笔	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it703018"}  ], 0} 
+Drop_it704005	掉落物_朱砂	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it704005"}  ], 0} 
+Drop_it704006	掉落物_胡粉	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it704006"}  ], 0} 
+Drop_it705005	掉落物_杂粮酒	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it705005"}  ], 0} 
+Drop_it705006	掉落物_花雕酒	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it705006"}  ], 0} 
+Drop_it705007	掉落物_即墨老酒	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it705007"}  ], 0} 
+Drop_it705009	掉落物_茅台	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it705009"}  ], 0} 
+Drop_it705016	掉落物_酒葫芦	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it705016"}  ], 0} 
+Drop_it706011	掉落物_金纹花剪	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it706011"}  ], 0} 
+Drop_it706012	掉落物_鲜花香包	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it706012"}  ], 0} 
+Drop_it707010	掉落物_沉香书签	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it707010"}  ], 0} 
+Drop_it707011	掉落物_陈旧话本	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it707011"}  ], 0} 
+Drop_it708008	掉落物_青玉簪	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it708008"}  ], 0} 
+Drop_it708012	掉落物_古纹铜币	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it708012"}  ], 0} 
+Drop_it708013	掉落物_古瓷碗	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it708013"}  ], 0} 
+Drop_it710010	掉落物_竹伞	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it710010"}  ], 0} 
+Drop_it711010	掉落物_油纸扇	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it711010"}  ], 0} 
+Drop_it711011	掉落物_铁骨扇	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it711011"}  ], 0} 
+Drop_it715024	奇怪的石头	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it715024"}  ], 0} 
+Drop_money_100	掉落物_钱100	True		{ "LogicalNode" : [ { "RewardMoney" : 1, 100}  ], 0} 
+Drop_money_1000_2000	掉落物_钱1000~2000	True		{ "LogicalNode" : [ { "RewardReadomMoney" : 1, 1000, 2000, True}  ], 0} 
+Drop_money_200_500	掉落物_钱200~500	True		{ "LogicalNode" : [ { "RewardReadomMoney" : 1, 200, 500, True}  ], 0} 
+Drop_money_20_50	掉落物_钱20~50	True		{ "LogicalNode" : [ { "RewardReadomMoney" : 1, 20, 50, True}  ], 0} 
+Drop_money_400_800	掉落物_钱400~800	True		{ "LogicalNode" : [ { "RewardReadomMoney" : 1, 400, 800, True}  ], 0} 
+Drop_money_600_1000	掉落物_钱600~1000	True		{ "LogicalNode" : [ { "RewardReadomMoney" : 1, 600, 1000, True}  ], 0} 
+Drop_money_80_150	掉落物_钱80~150	True		{ "LogicalNode" : [ { "RewardReadomMoney" : 1, 80, 150, True}  ], 0} 
+Drop_money_80_200	掉落物_钱80~200	True		{ "LogicalNode" : [ { "RewardReadomMoney" : 1, 80, 200, True}  ], 0} 
+re1010208_01	段红儿挽回:赤红绸带	True	Crimson Ribbonx1	{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it301006"}  ], 0} 
+re1010903_21	净三：战斗狼王掉落	True	BSWolf King drops rare beast teeth	{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it715020"}  ], 0} 
+re1010903_22	净三：宝藏点	True	BS Treasure Point Money 500	{ "LogicalNode" : [ { "RewardReadomMoney" : 1, 450, 550, False}  ], 0} 
+re1011005_02	血狼军战斗掉落：狼牙坠	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it715018"}  ], 0} 
+re1011006_01	战斗宝藏掉落：兽骨酒	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it501569"}  ], 0} 
+re1306505_00	第三年夏校前置：上官璘给豆沙包	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it712008"}  ], 0} 
+re1306505_01	第三年夏校前置：湘琴子给丹药	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it501041"}  ], 0} 
+re1306505_02	第三年夏校前置：墨弦	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it701018"}  ], 0} 
+re1306505_03	第三年夏校前置：陈旧琴谱	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it701019"}  ], 0} 
+re1306505_04	第三年夏校前置：陈旧棋谱	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it702014"}  ], 0} 
+re1306505_05	第三年夏校前置：白莲笔洗	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it703002"}  ], 0} 
+re1306505_06	第三年夏校前置：陶瓷笔	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it703018"}  ], 0} 
+re1306505_07	第三年夏校前置：陈旧话本	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it707011"}  ], 0} 
+re1306505_08	第三年夏校前置：鲜花香包	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it706012"}  ], 0} 
+re1306505_09	第三年夏校前置：古纹铜币	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it708012"}  ], 0} 
+re1306505_10	第三年夏校前置：竹伞	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it710010"}  ], 0} 
+re1306505_11	第三年夏校前置：油纸扇	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it711010"}  ], 0} 
+re1306505_12	第三年夏校前置：咸肉饼	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it712009"}  ], 0} 
+re1306505_13	第三年夏校前置：锈油	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it713007"}  ], 0} 
+re1306505_14	第三年夏校前置：云小猴给书签	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it707010"}  ], 0} 
+re5201142_00	传书．传授机关术：蜕骨扩经膏	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it501524"}  ], 0} 
+re5201142_01	传授机关术：玉能箭	True	Teach machine art: Jade Energy Arrow	{ "LogicalNode" : [ { "SetPlayerSkill" : 1, "ma071401", False} , { "SetPlayerSkillEXP" : 1, 900, "ma071401"}  ], 0} 
+re5201143_00	传书．神秘掌印：续命紫金丹	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it501030"}  ], 0} 
+re5206101_00	第二年修养传书-整理成功	True	Xuan Wu Ning Shen San + Jade Red Ointment	{ "LogicalNode" : [ { "RewardProps" : 1, 2, "it501021"} , { "RewardProps" : 1, 1, "it501505"}  ], 0} 
+re5206101_01	第二年修养传书-整理失败	True	Jade Red Cream	{ "LogicalNode" : [ { "RewardProps" : 1, 2, "it501021"}  ], 0} 
+re5206101_02	第二年修养传书-捡到药	True	Vermilion Bird San	{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it501504"}  ], 0} 
+re5206102_00	第二年爽朗传书-丹药	True	White tiger strong body *1 Xuanwu *1	{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it501503"} , { "RewardProps" : 1, 1, "it501505"}  ], 0} 
+re5206102_01	第二年爽朗传书-礼品	True	Zither Art & Calligraphy Gifts	{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it701020"} , { "RewardProps" : 1, 1, "it703019"}  ], 0} 
+re5206103_00	第二年坚毅传书-丹药	True	Vermilion Bird*2	{ "LogicalNode" : [ { "RewardProps" : 1, 2, "it501504"}  ], 0} 
+re5206103_01	第二年坚毅传书-悲欢离合糕	True	Sad and happy cake*2	{ "LogicalNode" : [ { "RewardProps" : 1, 2, "it501555"}  ], 0} 
+re5206104_00	第二年胆识传书-啥都没达成的奖励	True	Green Dragon*2	{ "LogicalNode" : [ { "RewardProps" : 1, 2, "it501502"}  ], 0} 
+re5206104_01	第二年胆识传书-达成两个次要	True	Green Dragon*2 Blast Accessories*1	{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it301053"} , { "RewardProps" : 1, 2, "it501502"}  ], 0} 
+re5206104_02	第二年胆识传书-只达成一个次要	True	Green Dragon*2 Four Saints*1	{ "LogicalNode" : [ { "RewardProps" : 1, 2, "it501502"} , { "RewardProps" : 1, 1, "it501506"}  ], 0} 
+re5303301_01	第三年书艺达标传书	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it501505"}  ], 0} 
+re5303302_01	第三年琴艺达标传书	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it501503"}  ], 0} 
+re5303303_01	第三年画艺达标传书	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it501504"}  ], 0} 
+re5303303_02	第三年画艺达标传书成功骗了骗子的钱	True		{ "LogicalNode" : [ { "RewardMoney" : 1, 1000}  ], 0} 
+re5303304_01	第三年棋艺达标传书	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it501502"}  ], 0} 
+re5401101_01	云纹彩果	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it501513"}  ], 0} 
+re5401101_02	炽火战甲+1000钱	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it201053"} , { "RewardMoney" : 1, 1000}  ], 0} 
+re5401101_03	机关零件	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it713010"}  ], 0} 
+re5401103_01	试药3胜利_4唯+4	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 400, 1010} , { "SetPlayerUpgradableProperty" : 1, 400, 1020} , { "SetPlayerUpgradableProperty" : 1, 400, 1030} , { "SetPlayerUpgradableProperty" : 1, 400, 1040}  ], 0} 
+re5401104_01	试药1胜利_4唯+2	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 200, 1010} , { "SetPlayerUpgradableProperty" : 1, 200, 1020} , { "SetPlayerUpgradableProperty" : 1, 200, 1030} , { "SetPlayerUpgradableProperty" : 1, 200, 1040}  ], 0} 
+re5401104_02	试药失败_精神-10	True		{ "LogicalNode" : [ { "RewardEmotionAction" : 2, 10}  ], 0} 
+re5401105_01	试药2胜利_4唯+3	True		{ "LogicalNode" : [ { "SetPlayerUpgradableProperty" : 1, 300, 1010} , { "SetPlayerUpgradableProperty" : 1, 300, 1020} , { "SetPlayerUpgradableProperty" : 1, 300, 1030} , { "SetPlayerUpgradableProperty" : 1, 300, 1040}  ], 0} 
+re605in010571_01	石崑七阶日常:石崑四维随机+5(力量	True		{ "LogicalNode" : [ { "SetNpcUpgradableProperty" : 1, 500, 1010, "in0105"}  ], 0} 
+re605in010571_02	石崑七阶日常:石崑四维随机+5(体魄	True		{ "LogicalNode" : [ { "SetNpcUpgradableProperty" : 1, 500, 1020, "in0105"}  ], 0} 
+re605in010571_03	石崑七阶日常:石崑四维随机+5(灵巧	True		{ "LogicalNode" : [ { "SetNpcUpgradableProperty" : 1, 500, 1030, "in0105"}  ], 0} 
+re605in010571_04	石崑七阶日常:石崑四维随机+5(意志	True		{ "LogicalNode" : [ { "SetNpcUpgradableProperty" : 1, 500, 1040, "in0105"}  ], 0} 
+re605in010571_05	石崑七阶日常:随机获得中级药活血养心丹	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it501020"}  ], 0} 
+re605in010571_06	石崑七阶日常:随机获得中级药生肌玉红膏	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it501021"}  ], 0} 
+re605in010571_07	石崑七阶日常:随机获得中级药益气生脉丹	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it501022"}  ], 0} 
+re605in010571_08	石崑七阶日常:随机获得中级药三顺逍遥散	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it501023"}  ], 0} 
+re605in010571_09	石崑七阶日常:花草茶奖励：气血＋150	True		{ "LogicalNode" : [ { "SetPlayerPropertyAction" : 1, 150, 4020}  ], 0} 
+re605in010571_10	石崑七阶日常:花草茶奖励：真气最大＋150	True		{ "LogicalNode" : [ { "SetPlayerPropertyAction" : 1, 150, 4040}  ], 0} 
+re605in010571_11	石崑七阶日常:花草茶奖励：攻击力++15	True		{ "LogicalNode" : [ { "SetPlayerPropertyAction" : 1, 15, 4050}  ], 0} 
+re605in010571_12	石崑七阶日常:花草茶奖励：防御力+25	True		{ "LogicalNode" : [ { "SetPlayerPropertyAction" : 1, 25, 4060}  ], 0} 
+re605in010671_01	南飞鍠七阶日常:南四维随机+5(力量	True		{ "LogicalNode" : [ { "SetNpcUpgradableProperty" : 1, 500, 1010, "in0106"}  ], 0} 
+re605in010671_02	南飞鍠七阶日常:南四维随机+5(体魄	True		{ "LogicalNode" : [ { "SetNpcUpgradableProperty" : 1, 500, 1020, "in0106"}  ], 0} 
+re605in010671_03	南飞鍠七阶日常:南四维随机+5(灵巧	True		{ "LogicalNode" : [ { "SetNpcUpgradableProperty" : 1, 500, 1030, "in0106"}  ], 0} 
+re605in010671_04	南飞鍠七阶日常:南四维随机+5(意志	True		{ "LogicalNode" : [ { "SetNpcUpgradableProperty" : 1, 500, 1040, "in0106"}  ], 0} 
+re605in010771_01	程墉七阶日常：随机获得低级礼品＿玉辟邪	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it708005"}  ], 0} 
+re605in010771_02	程墉七阶日常：随机获得低级礼品＿花穗	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it713006"}  ], 0} 
+re605in010771_03	程墉七阶日常：随机获得低级礼品＿淮南子	True		{ "LogicalNode" : [ { "RewardProps" : 1, 1, "it707002"}  ], 0} 
+re605in010771_04	程墉七阶日常：随机获得低级礼品＿玉制棋具	True		{ "LogicalNode" : [ { "RewardAction" : "re605in010771_04"}  ], 0} 
+re605in011171_01	武辙七阶日常:气血＋6	True		{ "LogicalNode" : [ { "SetPlayerPropertyAction" : 1, 6, 4020}  ], 0} 
+re605in011171_02	武辙七阶日常:真气＋6	True		{ "LogicalNode" : [ { "SetPlayerPropertyAction" : 1, 6, 4040}  ], 0} 
+re605in011171_03	武辙七阶日常:气血/真气+3	True		{ "LogicalNode" : [ { "SetPlayerPropertyAction" : 1, 3, 4040} , { "SetPlayerPropertyAction" : 1, 3, 4020}  ], 0} 
+re7000803_02	精神值奖励：日常交友用(4~5阶)	True	Spirit +10	{ "LogicalNode" : [ { "RewardEmotionAction" : 1, 10}  ], 0} 
+re7000803_03	精神值奖励：日常交友用(6~7阶)	True	Spirit +15	{ "LogicalNode" : [ { "RewardEmotionAction" : 1, 15}  ], 0} 
+re9000301_11	［成就-主线］侠隐．一心：完成结局，并让侠隐阁回归最初的平和（隐藏、金牌）	True		{ "LogicalNode" : [ { "RewardAchievementAction" : "ac9000301_11", 1}  ], 0} 
+re9000302_28	［成就-支线］挽日托天：求道梦醒，风雨同舟（隐藏、银牌）	True		{ "LogicalNode" : [ { "RewardAchievementAction" : "ac9000302_28", 1}  ], 0} 
+re9000302_29	［成就-支线］心之所向：下定决心，便无尤疑（隐藏、银牌）	True		{ "LogicalNode" : [ { "RewardAchievementAction" : "ac9000302_29", 1}  ], 0} 
+re9000302_30	［成就-支线］身之所往：下定决心，便无尤疑（隐藏、银牌）	True		{ "LogicalNode" : [ { "RewardAchievementAction" : "ac9000302_30", 1}  ], 0} 
+re9000302_31	［成就-支线］青出于蓝：坚定觉悟，并战胜侠隐阁的所有师父（隐藏、金牌）	True		{ "LogicalNode" : [ { "RewardAchievementAction" : "ac9000302_31", 1}  ], 0} 
+re9000304_19	［成就-结局］花落燕归：打破不安与隔阂，拥抱彼此真正的心意，与段红儿经历恋人结局（隐藏、金牌）	True		{ "LogicalNode" : [ { "RewardAchievementAction" : "ac9000304_19", 1}  ], 0} 
+re9000304_20	［成就-结局］倾阳朝华：打破不安与隔阂，拥抱彼此真正的心意，与锺若昕经历恋人结局（隐藏、金牌）	True		{ "LogicalNode" : [ { "RewardAchievementAction" : "ac9000304_20", 1}  ], 0} 
+re9000304_21	［成就-结局］比翼天涯：打破不安与隔阂，拥抱彼此真正的心意，与萧芊菱经历恋人结局（隐藏、金牌）	True		{ "LogicalNode" : [ { "RewardAchievementAction" : "ac9000304_21", 1}  ], 0} 
+re9000304_22	［成就-结局］悲欢与共：打破不安与隔阂，拥抱彼此真正的心意，与石崑经历恋人结局（隐藏、金牌）	True		{ "LogicalNode" : [ { "RewardAchievementAction" : "ac9000304_22", 1}  ], 0} 
+re9000304_23	［成就-结局］情意之剑：打破不安与隔阂，拥抱彼此真正的心意，与南飞鍠经历恋人结局（隐藏、金牌）	True		{ "LogicalNode" : [ { "RewardAchievementAction" : "ac9000304_23", 1}  ], 0} 
+re9000304_24	［成就-结局］煦火萦缭：打破不安与隔阂，拥抱彼此真正的心意，与上官煦经历恋人结局（隐藏、金牌）	True		{ "LogicalNode" : [ { "RewardAchievementAction" : "ac9000304_24", 1}  ], 0} 
+re9000304_25	［成就-结局］松槐相应：打破不安与隔阂，拥抱彼此真正的心意，与武辙经历恋人结局（隐藏、金牌）	True		{ "LogicalNode" : [ { "RewardAchievementAction" : "ac9000304_25", 1}  ], 0} 
+test001		True		{ "LogicalNode" : [ { "RewardReadomProps" : 3, 1, 3, True, "it101000,it101001,it101002,it101003,it101011,it101012"}  ], 0} 
+test002		True		{ "LogicalNode" : [ { "RewardReadomProps" : 3, 1, 3, False, "it101000,it101001,it101002,it101003,it101011,it101012"}  ], 0} 
+test003		True		{ "LogicalNode" : [ { "RewardReadomMoney" : 2, 10, 500, False}  ], 0} 

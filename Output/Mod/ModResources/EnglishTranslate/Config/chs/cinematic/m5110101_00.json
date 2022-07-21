@@ -1,5 +1,5 @@
 {
-  "EntryIndex": 31,
+  "EntryIndex": 28,
   "Nodes": [
     {
       "Node": "{ \"CameraTransformAction\" : True, { 1268.86300, 2.06542, 15.07346} , 0.00000, True, { 6.70459, 0.00107, -0.00001} , 0.00000, 45} ",
@@ -23,12 +23,12 @@
     },
     {
       "Node": "{ \"PlayPlayerAnimationAction\" : [ { 2, \"m_stand10_await03\", 1.00000}  ]} ",
-      "Next": 47,
+      "Next": 44,
       "Prallel": -1
     },
     {
       "Node": "{ \"TalkAction\" : \"t5110101_001\"} ",
-      "Next": 37,
+      "Next": 34,
       "Prallel": -1
     },
     {
@@ -38,11 +38,11 @@
     },
     {
       "Node": "{ \"PlayerSimpleTransformAction\" : True, { 1269.59900, 0.04500, 18.53400} , 1.50000, False, { 0.00000, 331.67770, 0.00000} } ",
-      "Next": 34,
+      "Next": 31,
       "Prallel": -1
     },
     {
-      "Node": "{ \"LoadScenesAction\" : \"S0103\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0} ",
+      "Node": "{ \"LoadScenesAction\" : \"S0103\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0, \"\", 1.00000} ",
       "Next": 0,
       "Prallel": -1
     },
@@ -54,12 +54,12 @@
     {
       "Node": "{ \"TimerAction\" : 1.50000} ",
       "Next": 11,
-      "Prallel": 40
+      "Prallel": 37
     },
     {
       "Node": "{ \"CameraTransformAction\" : True, { 1268.58500, 2.26300, 18.33500} , 0.00000, True, { 23.38539, 359.86100, 0.00000} , 0.00000, 45} ",
       "Next": 5,
-      "Prallel": 36
+      "Prallel": 33
     },
     {
       "Node": "{ \"ScreenFadeAction\" : False, 1.00000} ",
@@ -78,7 +78,7 @@
     },
     {
       "Node": "{ \"CameraTransformAction\" : True, { 1261.95000, 1.54339, 22.66195} , 0.00000, True, { 6.18868, 81.99170, -0.00002} , 0.00000, 45} ",
-      "Next": 46,
+      "Next": 43,
       "Prallel": -1
     },
     {
@@ -93,12 +93,12 @@
     },
     {
       "Node": "{ \"TalkAction\" : \"t5110101_019\"} ",
-      "Next": 32,
+      "Next": 29,
       "Prallel": -1
     },
     {
       "Node": "{ \"ScreenFadeAction\" : False, 1.00000} ",
-      "Next": 48,
+      "Next": 45,
       "Prallel": -1
     },
     {
@@ -123,7 +123,7 @@
     },
     {
       "Node": "{ \"ScreenFadeAction\" : False, 1.00000} ",
-      "Next": 33,
+      "Next": 30,
       "Prallel": -1
     },
     {
@@ -133,26 +133,11 @@
     },
     {
       "Node": "{ \"TimerAction\" : 1.00000} ",
-      "Next": 28,
+      "Next": 27,
       "Prallel": -1
     },
     {
-      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, True, 0} ",
-      "Next": -1,
-      "Prallel": -1
-    },
-    {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckCurrentTime\" : 1}  ], 0} , 27, 30} ",
-      "Next": -1,
-      "Prallel": -1
-    },
-    {
-      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 1} ",
-      "Next": -1,
-      "Prallel": -1
-    },
-    {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckCurrentTime\" : 2}  ], 0} , 29, -1} ",
+      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0, \"\", 1.00000} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -173,7 +158,7 @@
     },
     {
       "Node": "{ \"NpcSimpleTransformAction\" : False, { 256.85100, 203.30830, 505.57100} , 1.00000, True, { 0.00000, 137.29900, 0.00000} , \"in0207\"} ",
-      "Next": 53,
+      "Next": 50,
       "Prallel": -1
     },
     {
@@ -188,47 +173,47 @@
     },
     {
       "Node": "{ \"NpcSimpleTransformAction\" : False, { 256.85100, 203.30830, 505.57100} , 1.00000, True, { 0.00000, 25.19400, 0.00000} , \"in0207\"} ",
-      "Next": 38,
+      "Next": 35,
       "Prallel": -1
     },
     {
       "Node": "{ \"TalkAction\" : \"t5110101_009\"} ",
-      "Next": 44,
-      "Prallel": 56
+      "Next": 41,
+      "Prallel": 53
     },
     {
       "Node": "{ \"TalkAction\" : \"t5110101_014\"} ",
       "Next": 13,
-      "Prallel": 54
+      "Prallel": 51
     },
     {
       "Node": "{ \"NpcSimpleTransformAction\" : False, { 256.85100, 203.30830, 505.57100} , 1.00000, True, { 0.00000, -203.79100, 0.00000} , \"in36006\"} ",
-      "Next": 41,
+      "Next": 38,
       "Prallel": -1
     },
     {
       "Node": "{ \"NpcSimpleTransformAction\" : False, { 256.85100, 203.30830, 505.57100} , 1.00000, True, { 0.00000, -176.02300, 0.00000} , \"in36007\"} ",
-      "Next": 42,
+      "Next": 39,
       "Prallel": -1
     },
     {
       "Node": "{ \"NpcSimpleTransformAction\" : False, { 256.85100, 203.30830, 505.57100} , 1.00000, True, { 0.00000, -230.31900, 0.00000} , \"in36009\"} ",
-      "Next": 51,
+      "Next": 48,
       "Prallel": -1
     },
     {
       "Node": "{ \"TalkAction\" : \"t5110101_011\"} ",
-      "Next": 45,
-      "Prallel": 52
+      "Next": 42,
+      "Prallel": 49
     },
     {
       "Node": "{ \"NpcSimpleTransformAction\" : False, { 256.85100, 203.30830, 505.57100} , 1.00000, True, { 0.00000, -171.03500, 0.00000} , \"in36009\"} ",
-      "Next": 43,
+      "Next": 40,
       "Prallel": -1
     },
     {
       "Node": "{ \"NpcSimpleTransformAction\" : False, { 256.85100, 203.30830, 505.57100} , 1.00000, True, { 0.00000, 91.18301, 0.00000} , \"in0207\"} ",
-      "Next": 39,
+      "Next": 36,
       "Prallel": -1
     },
     {
@@ -243,7 +228,7 @@
     },
     {
       "Node": "{ \"GroupTransformAction\" : [ { \"in0207\", { 1267.17600, 0.04500, 20.73400} , { 0.00000, 92.47202, 0.00000} } , { \"in36006\", { 1268.83600, 0.04500, 21.91400} , { 0.00000, 156.20900, 0.00000} } , { \"in36007\", { 1269.63500, 0.04500, 22.95200} , { 0.00000, 183.97700, 0.00000} } , { \"in36008\", { 1268.14800, 0.04500, 23.16300} , { 0.00000, 148.02100, 0.00000} } , { \"in36009\", { 1267.66600, 0.04500, 21.97699} , { 0.00000, 129.68100, 0.00000} }  ]} ",
-      "Next": 50,
+      "Next": 47,
       "Prallel": -1
     },
     {
@@ -253,7 +238,7 @@
     },
     {
       "Node": "{ \"PlayerTransformAction\" : True, { 1269.82800, 0.04500, 20.68600} , True, { 0.00000, 300.27100, 0.00000} } ",
-      "Next": 55,
+      "Next": 52,
       "Prallel": -1
     },
     {
@@ -268,7 +253,7 @@
     },
     {
       "Node": "{ \"TimerAction\" : 0.50000} ",
-      "Next": 35,
+      "Next": 32,
       "Prallel": -1
     },
     {
@@ -278,7 +263,7 @@
     },
     {
       "Node": "{ \"PlayerResetWeaponAction\" } ",
-      "Next": 49,
+      "Next": 46,
       "Prallel": -1
     },
     {

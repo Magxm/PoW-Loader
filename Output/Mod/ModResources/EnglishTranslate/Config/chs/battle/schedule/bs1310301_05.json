@@ -24,13 +24,14 @@
       "Next": 3,
       "Prallel": -1,
       "Child": [
-        3
+        3,
+        1748
       ]
     },
     {
       "Index": 3,
       "Node": "{ \"BattleResultAddUnits\" : \"in39001,in38003,io49115501,io49105501,io49145501,io49125501,io48135303,io48125302,io48145307,io48105302\", 1, \"101101202,103201202,201102201,202104202,204105201,203106203,104203201,106204202,107206201,108205203\"} ",
-      "Next": -1,
+      "Next": 1748,
       "Prallel": -1,
       "Child": []
     },
@@ -14006,9 +14007,65 @@
         903,
         902
       ]
+    },
+    {
+      "Index": 1748,
+      "Node": "{ \"BattleResultTreasurePoint\" : \"106202204\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1749,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 1750,
+      "Prallel": -1,
+      "Child": [
+        1750,
+        1751,
+        1752,
+        1753
+      ]
+    },
+    {
+      "Index": 1750,
+      "Node": "{ \"BattleFactorCellFaction\" : 0, \"106202204\"} ",
+      "Next": 1751,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1751,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 1752,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1752,
+      "Node": "{ \"BattleResultAddReward\" : \"Drop_drug_04_1\"} ",
+      "Next": 1753,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1753,
+      "Node": "{ \"BattleResultRemoveTreasurePoint\" : \"106202204\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1754,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 1749,
+      "Prallel": -1,
+      "Child": [
+        1749
+      ]
     }
   ],
   "Remark": "",
-  "WinTip": "Defeat Holy Rock Sect、 Zhenwu Temple",
+  "WinTip": "Defeat Holy Rock Sect， Zhenwu Temple",
   "LoseTip": "All friendly units are defeated"
 }

@@ -6,6 +6,7 @@
       "Index": 0,
       "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
       "Next": 1,
+      "Prallel": -1,
       "Child": [
         1
       ]
@@ -14,12 +15,14 @@
       "Index": 1,
       "Node": "{ \"BattleResultAddUnits\" : \"Player,party01,party02,party03,in03002,in03006,in0553201\", 0, \"203104201,204103101,202104202,204102102,204101103,201104203,203103200\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 2,
       "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
       "Next": 3,
+      "Prallel": -1,
       "Child": [
         3,
         4,
@@ -31,30 +34,35 @@
       "Index": 3,
       "Node": "{ \"BattleResultAddUnits\" : \"in21007,io26141102,io26131102,io26121102,io26101102,io26101103,io26141103,io26131103,io26111103\", 1, \"102202200,200201101,101200201,201102201,202201103,101102203,103101204,201203104,200201101\"} ",
       "Next": 4,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 4,
       "Node": "{ \"BattleResultAddBuff\" : False, \"in21007\", \"bt1212402_03_debuff_BuddaAttack75\", False} ",
       "Next": 5,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 5,
       "Node": "{ \"BattleResultAddBuff\" : True, \"io26141102,io26131102,io26121102,io26101102,io26101103,io26141103,io26131103,io26111103\", \"bt1212402_01_buff_ZombiePower\", True} ",
       "Next": 6,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 6,
       "Node": "{ \"BattleResultAddBuff\" : True, \"io26141102,io26131102,io26121102,io26101102,io26101103,io26141103,io26131103,io26111103\", \"bt1210402_02_Buff_DeathPower\", True} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 7,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 8,
+      "Prallel": -1,
       "Child": [
         8
       ]
@@ -63,6 +71,7 @@
       "Index": 8,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 9,
+      "Prallel": -1,
       "Child": [
         9,
         10,
@@ -73,24 +82,28 @@
       "Index": 9,
       "Node": "{ \"BattleFactorFactionDefeat\" : 0} ",
       "Next": 10,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 10,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 11,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 11,
       "Node": "{ \"BattleResultLose\" : \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 12,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 13,
+      "Prallel": -1,
       "Child": [
         13
       ]
@@ -99,6 +112,7 @@
       "Index": 13,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 14,
+      "Prallel": -1,
       "Child": [
         14,
         15,
@@ -113,48 +127,56 @@
       "Index": 14,
       "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
       "Next": 15,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 15,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 16,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 16,
       "Node": "{ \"BattleResultTalk\" : \"t1212402_bs0330\"} ",
       "Next": 17,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 17,
       "Node": "{ \"BattleResultAddUnits\" : \"io26100102,io26100103,io26100104,io26100105,io26110101,io26110102\", 1, \"204104200,204105201,204106202,206104102,205104101,205107202\"} ",
       "Next": 18,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 18,
       "Node": "{ \"BattleResultAddBuff\" : True, \"io26100102,io26100103,io26100104,io26100105,io26110101,io26110102\", \"\", False} ",
       "Next": 19,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 19,
       "Node": "{ \"BattleResultTalk\" : \"t1212402_bs0354\"} ",
       "Next": 20,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 20,
       "Node": "{ \"BattleResultWin\" : \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 21,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 22,
+      "Prallel": -1,
       "Child": [
         22
       ]
@@ -163,6 +185,7 @@
       "Index": 22,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 23,
+      "Prallel": -1,
       "Child": [
         23,
         24,
@@ -177,48 +200,56 @@
       "Index": 23,
       "Node": "{ \"BattleFactorTurn\" : 0, 1} ",
       "Next": 24,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 24,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"io41144301\"} ",
       "Next": 25,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 25,
       "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1212401_2_24\", \"朱倩未死\"} ",
       "Next": 26,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 26,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 27,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 27,
       "Node": "{ \"BattleResultTalk\" : \"t1212402_bs0317\"} ",
       "Next": 28,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 28,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in31001\", \"bt1212402_01_buff_Attack&DefenceIncrease\", True} ",
       "Next": 29,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 29,
       "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bsc12124020301\", 2} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 30,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 31,
+      "Prallel": -1,
       "Child": [
         31
       ]
@@ -227,6 +258,7 @@
       "Index": 31,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 32,
+      "Prallel": -1,
       "Child": [
         32,
         33,
@@ -241,48 +273,56 @@
       "Index": 32,
       "Node": "{ \"BattleFactorTurn\" : 0, 1} ",
       "Next": 33,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 33,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"io41144302\"} ",
       "Next": 34,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 34,
       "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1212401_2_24\", \"朱倩未死\"} ",
       "Next": 35,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 35,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 36,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 36,
       "Node": "{ \"BattleResultTalk\" : \"t1212402_bs0319\"} ",
       "Next": 37,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 37,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in31001\", \"bt1212402_03_buff_Attack&DefenceIncrease2\", True} ",
       "Next": 38,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 38,
       "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bsc12124020301\", 2} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 39,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 40,
+      "Prallel": -1,
       "Child": [
         40
       ]
@@ -291,6 +331,7 @@
       "Index": 40,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 41,
+      "Prallel": -1,
       "Child": [
         41,
         42,
@@ -303,36 +344,42 @@
       "Index": 41,
       "Node": "{ \"BattleFactorTurn\" : 0, 1} ",
       "Next": 42,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 42,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"in31001\"} ",
       "Next": 43,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 43,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 44,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 44,
       "Node": "{ \"BattleResultTalk\" : \"t1212402_bs0321\"} ",
       "Next": 45,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 45,
       "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bsc12124020301\", 2} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 46,
       "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
       "Next": 47,
+      "Prallel": -1,
       "Child": [
         47
       ]
@@ -341,6 +388,7 @@
       "Index": 47,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 48,
+      "Prallel": -1,
       "Child": [
         48,
         49,
@@ -355,48 +403,56 @@
       "Index": 48,
       "Node": "{ \"BattleFactorTurn\" : 1, 2} ",
       "Next": 49,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 49,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 50,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 50,
       "Node": "{ \"BattleResultAddUnits\" : \"in31001,io41144301,io41144302\", 0, \"104204200,103206103,106203203\"} ",
       "Next": 51,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 51,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in31001,io41144301,io41144302\", \"\", True} ",
       "Next": 52,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 52,
       "Node": "{ \"BattleResultUnitHP\" : 0, 50, \"in31001\"} ",
       "Next": 53,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 53,
       "Node": "{ \"BattleResultTalk\" : \"t1212402_bs0312\"} ",
       "Next": 54,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 54,
       "Node": "{ \"BattleResultAddSecondaryGoal\" : \"bsc12124020301\", \"Ensure the survival of Zhu Qian and Ice Clear Sword Sect's disciples\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 55,
       "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
       "Next": 56,
+      "Prallel": -1,
       "Child": [
         56
       ]
@@ -405,6 +461,7 @@
       "Index": 56,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 57,
+      "Prallel": -1,
       "Child": [
         57,
         58,
@@ -415,24 +472,28 @@
       "Index": 57,
       "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
       "Next": 58,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 58,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 59,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 59,
       "Node": "{ \"BattleResultTalk\" : \"t1212402_bs0300\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 60,
       "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
       "Next": 61,
+      "Prallel": -1,
       "Child": [
         61
       ]
@@ -441,6 +502,7 @@
       "Index": 61,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 62,
+      "Prallel": -1,
       "Child": [
         62,
         63,
@@ -452,24 +514,28 @@
       "Index": 62,
       "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
       "Next": 63,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 63,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 64,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 64,
       "Node": "{ \"BattleResultUnitHP\" : 0, 100, \"in0553201\"} ",
       "Next": 65,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 65,
       "Node": "{ \"BattleResultUnitMP\" : 1, 9999, \"in0553201\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     }
   ],

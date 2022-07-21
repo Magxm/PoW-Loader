@@ -113,7 +113,7 @@
     },
     {
       "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"skill_MA0202_b02_neff\", 1.00000}  ], \"in04007\"} ",
-      "Next": 23,
+      "Next": 168,
       "Prallel": -1
     },
     {
@@ -767,7 +767,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckCurrentRound\" : 106, 1, 109, \"\"}  ], 0} , 155, 105} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckCurrentRound\" : 106, 1, 109, \"\"}  ], 0} , 155, 159} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -794,6 +794,141 @@
     {
       "Node": "{ \"TimerAction\" : 0.50000} ",
       "Next": 156,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckPlayerUpgradableProperty\" : 0, 449, 2040}  ], 0} , 105, 160} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe1011003_2_21\"}  ], 0} , 162, 1} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1011003_430\"} ",
+      "Next": 164,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 161,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1011003_431\"} ",
+      "Next": 166,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 163,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1011003_432\"} ",
+      "Next": 167,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 165,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckPlayerUpgradableProperty\" : 0, 449, 2040}  ], 0} , 23, 169} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe1011003_2_21\"}  ], 0} , -1, 170} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 171,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : True, 1.00000} ",
+      "Next": 172,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 173,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1011003_426\"} ",
+      "Next": 174,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 175,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1011003_427\"} ",
+      "Next": 176,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 177,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1011003_428\"} ",
+      "Next": 178,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 179,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1011003_429\"} ",
+      "Next": 180,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 181,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : False, 0.50000} ",
+      "Next": 182,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 1, \"fe1011003_2_21\"} ",
+      "Next": 185,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 184,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0, \"\", 1.00000} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 0, \"fe1011003_2_01\"} ",
+      "Next": 183,
       "Prallel": -1
     }
   ],

@@ -1,0 +1,374 @@
+{
+  "Id": "bs1011009_01",
+  "Name": "上官煦挽回战斗",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 21,
+      "Prallel": -1,
+      "Child": [
+        21
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 2,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0110\", 1, 200203103, 1.00000, 0.00000} ",
+      "Next": 3,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnit\" : \"Player\", 0, 200103203, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 22,
+      "Prallel": -1,
+      "Child": [
+        22
+      ]
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 25,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 17,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 23,
+      "Prallel": -1,
+      "Child": [
+        23
+      ]
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0110\"} ",
+      "Next": 9,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 10,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultTalk\" : \"t1312526_102\"} ",
+      "Next": 11,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 24,
+      "Prallel": -1,
+      "Child": [
+        24
+      ]
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"Player\"} ",
+      "Next": 14,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 15,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleResultTalk\" : \"t1312526_101\"} ",
+      "Next": 16,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleResultCameraMoveCell\" : \"200203103\", -17.09200, 8.00000} ",
+      "Next": 18,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleResultWaitAction\" : 0.30000} ",
+      "Next": 19,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0110\", \"bt1011009_01_duan\", True} ",
+      "Next": 20,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultWaitAction\" : 1.00000} ",
+      "Next": 27,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 1,
+      "Prallel": -1,
+      "Child": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 5,
+      "Prallel": -1,
+      "Child": [
+        5,
+        25,
+        6,
+        17,
+        18,
+        19,
+        20,
+        27,
+        26,
+        29,
+        28,
+        30
+      ]
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 8,
+      "Prallel": -1,
+      "Child": [
+        8,
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 13,
+      "Prallel": -1,
+      "Child": [
+        13,
+        14,
+        15,
+        16
+      ]
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1312501_1_99\", \"楚派\"} ",
+      "Next": 6,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleResultWaitAction\" : 0.30000} ",
+      "Next": 29,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"BattleResultCameraMoveCell\" : \"200103203\", -17.09200, 8.00000} ",
+      "Next": 26,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleResultWaitAction\" : 1.00000} ",
+      "Next": 30,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"bt1011009_01_chu\", True} ",
+      "Next": 28,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"BattleResultCameraMoveCell\" : \"200103203\", 254.48500, 8.00000} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 34,
+      "Prallel": -1,
+      "Child": [
+        34
+      ]
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 35,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 36,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 32,
+      "Prallel": -1,
+      "Child": [
+        32,
+        35,
+        33,
+        36,
+        37,
+        38,
+        39,
+        41,
+        40,
+        43,
+        42,
+        44
+      ]
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 3, \"fe1312501_1_99\", \"中立\"} ",
+      "Next": 33,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"BattleResultCameraMoveCell\" : \"200203103\", -17.09200, 8.00000} ",
+      "Next": 37,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"BattleResultWaitAction\" : 0.30000} ",
+      "Next": 38,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0110\", \"bt1011009_01_duan\", True} ",
+      "Next": 39,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"BattleResultWaitAction\" : 1.00000} ",
+      "Next": 41,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"BattleResultWaitAction\" : 0.30000} ",
+      "Next": 43,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleResultCameraMoveCell\" : \"200103203\", -17.09200, 8.00000} ",
+      "Next": 40,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"BattleResultWaitAction\" : 1.00000} ",
+      "Next": 44,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"Player\", \"bt1011009_01_zhong\", True} ",
+      "Next": 42,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"BattleResultCameraMoveCell\" : \"200103203\", 254.48500, 8.00000} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "",
+  "WinTip": "Defeated Shangguan Xu",
+  "LoseTip": "{name_1}{name_2} is defeated"
+}

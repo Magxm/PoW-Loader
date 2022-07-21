@@ -6,6 +6,7 @@
       "Index": 0,
       "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
       "Next": 1,
+      "Prallel": -1,
       "Child": [
         1,
         2,
@@ -22,60 +23,70 @@
       "Index": 1,
       "Node": "{ \"BattleResultAddUnit\" : \"in0605\", 0, 201101200, 1.00000, 0.00000} ",
       "Next": 2,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 2,
       "Node": "{ \"BattleResultAddUnit\" : \"in05504\", 1, 104204200, 1.00000, 0.00000} ",
       "Next": 3,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 3,
       "Node": "{ \"BattleResultAddUnit\" : \"in05505\", 1, 105208103, 1.00000, 0.00000} ",
       "Next": 4,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 4,
       "Node": "{ \"BattleResultAddUnit\" : \"in05503\", 1, 108205203, 1.00000, 0.00000} ",
       "Next": 5,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 5,
       "Node": "{ \"BattleResultAddUnit\" : \"in0601\", 1, 108208200, 1.00000, 0.00000} ",
       "Next": 6,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 6,
       "Node": "{ \"BattleResultUnitHP\" : 0, 70, \"in0605\"} ",
       "Next": 7,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 7,
       "Node": "{ \"BattleResultUnitHP\" : 0, 80, \"in0601,in05504,in05505,in05503\"} ",
       "Next": 8,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 8,
       "Node": "{ \"SetUnitCanEquip\" : \"in0605\", False} ",
       "Next": 9,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 9,
       "Node": "{ \"SetUnitCanUseItem\" : \"in0605\", False} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 10,
       "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
       "Next": 11,
+      "Prallel": -1,
       "Child": [
         11
       ]
@@ -84,6 +95,7 @@
       "Index": 11,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 12,
+      "Prallel": -1,
       "Child": [
         12,
         13,
@@ -98,48 +110,56 @@
       "Index": 12,
       "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
       "Next": 13,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 13,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 14,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 14,
       "Node": "{ \"BattleResultCameraMoveUnit\" : \"in0605\", -60.00000, 10.00000} ",
       "Next": 15,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 15,
       "Node": "{ \"BattleResultTalk\" : \"t1203201_500\"} ",
       "Next": 16,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 16,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in0601,in05504,in05505,in05503\", \"bt1203201_03_buff_StudentLoseMind\", False} ",
       "Next": 17,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 17,
       "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat all enemies!\"} ",
       "Next": 18,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 18,
       "Node": "{ \"BattleResultChangeMusic\" : \"In_battle_11.wav\", 1.00000, False} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 19,
       "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
       "Next": 20,
+      "Prallel": -1,
       "Child": [
         20
       ]
@@ -148,6 +168,7 @@
       "Index": 20,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 21,
+      "Prallel": -1,
       "Child": [
         21,
         22,
@@ -160,36 +181,42 @@
       "Index": 21,
       "Node": "{ \"BattleFactorTurn\" : 1, 1} ",
       "Next": 22,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 22,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 23,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 23,
       "Node": "{ \"BattleResultTalk\" : \"t1203201_510\"} ",
       "Next": 24,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 24,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in0605\", \"bt1203201_03_buff_DiTingPowerUp\", True} ",
       "Next": 25,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 25,
       "Node": "{ \"BattleResultTalk\" : \"t1203201_513\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 26,
       "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
       "Next": 27,
+      "Prallel": -1,
       "Child": [
         27
       ]
@@ -198,6 +225,7 @@
       "Index": 27,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 28,
+      "Prallel": -1,
       "Child": [
         28,
         29,
@@ -236,192 +264,224 @@
       "Index": 28,
       "Node": "{ \"BattleFactorTurn\" : 1, 2} ",
       "Next": 29,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 29,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 30,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 30,
       "Node": "{ \"BattleResultAddUnit\" : \"in03014\", 0, 211111200, 1.00000, 0.00000} ",
       "Next": 31,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 31,
       "Node": "{ \"BattleResultMoveUnit\" : \"in03014\", \"205105200\"} ",
       "Next": 32,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 32,
       "Node": "{ \"BattleResultCameraMoveUnit\" : \"in03014\", -60.00000, 10.00000} ",
       "Next": 33,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 33,
       "Node": "{ \"BattleResultTalk\" : \"t1203201_516\"} ",
       "Next": 34,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 34,
       "Node": "{ \"BattleResultAddUnit\" : \"party00\", 0, 210111201, 1.00000, 0.00000} ",
       "Next": 35,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 35,
       "Node": "{ \"BattleResultMoveUnit\" : \"Player\", \"206107201\"} ",
       "Next": 36,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 36,
       "Node": "{ \"BattleResultAddUnit\" : \"party01\", 0, 211110101, 1.00000, 0.00000} ",
       "Next": 37,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 37,
       "Node": "{ \"BattleResultMoveUnit\" : \"in0106\", \"207106101\"} ",
       "Next": 38,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 38,
       "Node": "{ \"BattleResultAddUnit\" : \"party02\", 0, 208111203, 1.00000, 0.00000} ",
       "Next": 39,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 39,
       "Node": "{ \"BattleResultMoveUnit\" : \"party02\", \"206109203\"} ",
       "Next": 40,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 40,
       "Node": "{ \"BattleResultAddUnit\" : \"party03\", 0, 211108103, 1.00000, 0.00000} ",
       "Next": 41,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 41,
       "Node": "{ \"BattleResultMoveUnit\" : \"party03\", \"209106103\"} ",
       "Next": 42,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 42,
       "Node": "{ \"BattleResultTalk\" : \"t1203201_518\"} ",
       "Next": 43,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 43,
       "Node": "{ \"BattleResultAddUnits\" : \"in05904,in04010\", 1, \"206204110,208203111\"} ",
       "Next": 44,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 44,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in05904,in04010\", \"bt1203201_03_buff_StudentLoseMind\", False} ",
       "Next": 45,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 45,
       "Node": "{ \"BattleResultTalk\" : \"t1203201_528\"} ",
       "Next": 46,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 46,
       "Node": "{ \"BattleResultAddUnits\" : \"in03015,in04007\", 1, \"103107210,102109211\"} ",
       "Next": 47,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 47,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in03015,in04007\", \"bt1203201_03_buff_StudentLoseMind\", False} ",
       "Next": 48,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 48,
       "Node": "{ \"BattleResultTalk\" : \"t1203201_530\"} ",
       "Next": 49,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 49,
       "Node": "{ \"BattleResultChangeLoseTip\" : \"All friendly units are defeated\"} ",
       "Next": 50,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 50,
       "Node": "{ \"BattleResultAddSecondaryGoal\" : \"bssc1203201_03_01\", \"Di Ting Survives。\"} ",
       "Next": 51,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 51,
       "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bssc1203201_03_01\", 1} ",
       "Next": 52,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 52,
       "Node": "{ \"BattleResultAddSecondaryGoal\" : \"bssc1203201_03_02\", \"He Changrui survives\"} ",
       "Next": 53,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 53,
       "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bssc1203201_03_02\", 1} ",
       "Next": 54,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 54,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in03014\", \"bt1203201_03_buff_HePowerUp\", True} ",
       "Next": 55,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 55,
       "Node": "{ \"BattleResultChangeWinTip\" : \"Subdue all juniors!\"} ",
       "Next": 56,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 56,
       "Node": "{ \"BattleResultChangeMusic\" : \"In_battle_12.wav\", 1.00000, True} ",
       "Next": 57,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 57,
       "Node": "{ \"SetUnitCanEquip\" : \"in0605\", True} ",
       "Next": 58,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 58,
       "Node": "{ \"SetUnitCanUseItem\" : \"in0605\", True} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 59,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 60,
+      "Prallel": -1,
       "Child": [
         60
       ]
@@ -430,6 +490,7 @@
       "Index": 60,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 61,
+      "Prallel": -1,
       "Child": [
         61,
         62,
@@ -453,102 +514,119 @@
       "Index": 61,
       "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
       "Next": 62,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 62,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 63,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 63,
       "Node": "{ \"BattleResultTalk\" : \"t1203201_558\"} ",
       "Next": 64,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 64,
       "Node": "{ \"BattleResultRemoveUnits\" : \"Player,in0106,party02,party03\", False} ",
       "Next": 65,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 65,
       "Node": "{ \"BattleResultChangeMusic\" : \"In_mood_15.wav\", 5.00000, False} ",
       "Next": 66,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 66,
       "Node": "{ \"BattleResultTalk\" : \"t1203201_572\"} ",
       "Next": 67,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 67,
       "Node": "{ \"BattleResultChangeMusic\" : \"In_mood_08.wav\", 3.00000, False} ",
       "Next": 68,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 68,
       "Node": "{ \"BattleResultTalk\" : \"t1203201_586\"} ",
       "Next": 69,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 69,
       "Node": "{ \"BattleResultMoveUnit\" : \"in03014\", \"106201205\"} ",
       "Next": 70,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 70,
       "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
       "Next": 71,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 71,
       "Node": "{ \"BattleResultTalk\" : \"t1203201_591\"} ",
       "Next": 72,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 72,
       "Node": "{ \"BattleResultMoveUnit\" : \"in03014\", \"114206208\"} ",
       "Next": 73,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 73,
       "Node": "{ \"BattleResultRemoveUnit\" : \"in03014\", False} ",
       "Next": 74,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 74,
       "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
       "Next": 75,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 75,
       "Node": "{ \"BattleResultTalk\" : \"t1203201_592\"} ",
       "Next": 76,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 76,
       "Node": "{ \"BattleResultWin\" : \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 77,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 78,
+      "Prallel": -1,
       "Child": [
         78
       ]
@@ -557,6 +635,7 @@
       "Index": 78,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 79,
+      "Prallel": -1,
       "Child": [
         79,
         80,
@@ -567,24 +646,28 @@
       "Index": 79,
       "Node": "{ \"BattleFactorFactionDefeat\" : 0} ",
       "Next": 80,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 80,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 81,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 81,
       "Node": "{ \"BattleResultLose\" : \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 82,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 83,
+      "Prallel": -1,
       "Child": [
         83
       ]
@@ -593,6 +676,7 @@
       "Index": 83,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 84,
+      "Prallel": -1,
       "Child": [
         84,
         85,
@@ -603,24 +687,28 @@
       "Index": 84,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"in0605\"} ",
       "Next": 85,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 85,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 86,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 86,
       "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bssc1203201_03_01\", 2} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 87,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 88,
+      "Prallel": -1,
       "Child": [
         88
       ]
@@ -629,6 +717,7 @@
       "Index": 88,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 89,
+      "Prallel": -1,
       "Child": [
         89,
         90,
@@ -639,18 +728,21 @@
       "Index": 89,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"in03014\"} ",
       "Next": 90,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 90,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 91,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 91,
       "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bssc1203201_03_02\", 2} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     }
   ],

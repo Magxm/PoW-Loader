@@ -22,7 +22,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"LoadScenesAction\" : \"S0302\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0} ",
+      "Node": "{ \"LoadScenesAction\" : \"S0302\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0, \"\", 1.00000} ",
       "Next": 0,
       "Prallel": -1
     },
@@ -253,21 +253,11 @@
     },
     {
       "Node": "{ \"SortOutDesignatedEventCubeAction\" : \"eb5105201_01\"} ",
-      "Next": 52,
+      "Next": 51,
       "Prallel": -1
     },
     {
-      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, True, 0} ",
-      "Next": -1,
-      "Prallel": -1
-    },
-    {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckCurrentTime\" : 1}  ], 0} , 51, 53} ",
-      "Next": -1,
-      "Prallel": -1
-    },
-    {
-      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 1} ",
+      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0, \"\", 1.00000} ",
       "Next": -1,
       "Prallel": -1
     }

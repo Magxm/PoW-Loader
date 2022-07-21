@@ -32,13 +32,14 @@
       "Next": 4,
       "Prallel": -1,
       "Child": [
-        4
+        4,
+        53
       ]
     },
     {
       "Index": 4,
       "Node": "{ \"BattleResultAddUnit\" : \"in05532\", 2, 209105104, 1.00000, 0.00000} ",
-      "Next": -1,
+      "Next": 53,
       "Prallel": -1,
       "Child": []
     },
@@ -430,9 +431,65 @@
       "Next": 17,
       "Prallel": -1,
       "Child": []
+    },
+    {
+      "Index": 53,
+      "Node": "{ \"BattleResultTreasurePoint\" : \"203202105\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 54,
+      "Node": "{ \"BattleFactorCellFaction\" : 0, \"203202105\"} ",
+      "Next": 55,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 55,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 58,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 56,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 54,
+      "Prallel": -1,
+      "Child": [
+        54,
+        55,
+        58,
+        59
+      ]
+    },
+    {
+      "Index": 57,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 56,
+      "Prallel": -1,
+      "Child": [
+        56
+      ]
+    },
+    {
+      "Index": 58,
+      "Node": "{ \"BattleResultAddReward\" : \"Drop_it701019\"} ",
+      "Next": 59,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 59,
+      "Node": "{ \"BattleResultRemoveTreasurePoint\" : \"203202105\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
     }
   ],
   "Remark": "",
-  "WinTip": "Weaken Zhu Qian's HP to 30%!",
+  "WinTip": "reduce Zhu Qian's HP to 30%!",
   "LoseTip": "Zhang Qiluo is defeated"
 }

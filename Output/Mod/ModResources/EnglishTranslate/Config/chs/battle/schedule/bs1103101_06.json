@@ -10,7 +10,8 @@
       "Child": [
         1,
         2,
-        3
+        3,
+        120
       ]
     },
     {
@@ -30,7 +31,7 @@
     {
       "Index": 3,
       "Node": "{ \"BattleResultAddUnit\" : \"party02\", 0, 204102102, 1.00000, 0.00000} ",
-      "Next": -1,
+      "Next": 120,
       "Prallel": -1,
       "Child": []
     },
@@ -973,6 +974,62 @@
       "Next": -1,
       "Prallel": -1,
       "Child": []
+    },
+    {
+      "Index": 120,
+      "Node": "{ \"BattleResultTreasurePoint\" : \"102206104\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 121,
+      "Node": "{ \"BattleFactorCellFaction\" : 0, \"102206104\"} ",
+      "Next": 122,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 122,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 123,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 123,
+      "Node": "{ \"BattleResultAddReward\" : \"Drop_gear_02_1\"} ",
+      "Next": 124,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 124,
+      "Node": "{ \"BattleResultRemoveTreasurePoint\" : \"102206104\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 125,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 126,
+      "Prallel": -1,
+      "Child": [
+        126
+      ]
+    },
+    {
+      "Index": 126,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 121,
+      "Prallel": -1,
+      "Child": [
+        121,
+        122,
+        123,
+        124
+      ]
     }
   ],
   "Remark": "春校宫紫痕战(女子组)",

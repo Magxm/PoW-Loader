@@ -162,7 +162,7 @@
       "Prallel": 33
     },
     {
-      "Node": "{ \"ChangCharactereName\" : \"in0604\", \"special\", \"examiner\"} ",
+      "Node": "{ \"ChangCharactereName\" : \"in0604\", \"Special\", \" Examiner\"} ",
       "Next": 131,
       "Prallel": -1
     },
@@ -537,7 +537,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"LoadScenesAction\" : \"S0204\", { 1496.48500, -0.03036, 760.03700} , { 0.00000, 80.28638, 0.00000} , 1, True, 0} ",
+      "Node": "{ \"LoadScenesAction\" : \"S0204\", { 1496.48500, -0.03036, 760.03700} , { 0.00000, 80.28638, 0.00000} , 1, True, 0, \"\", 1.00000} ",
       "Next": 108,
       "Prallel": -1
     },
@@ -572,7 +572,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"ProcessAction\" : \"ending0002_m\", \"In_mood_20.wav\", \"\"} ",
+      "Node": "{ \"ProcessAction\" : \"ending0002_m\", \"In_mood_20.wav\", \"m1103101_14a\", \"\", True} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -602,7 +602,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"ProcessAction\" : \"ending0002_f\", \"In_mood_20.wav\", \"\"} ",
+      "Node": "{ \"ProcessAction\" : \"ending0002_f\", \"In_mood_20.wav\", \"m1103101_14a\", \"\", True} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -668,6 +668,11 @@
     },
     {
       "Node": "{ \"NpcWeaponActiveAction\" : True, \"in0102,in0106,in0107\"} ",
+      "Next": 134,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcChangeWeaponPointAction\" : True, \"in0102,in0106,in0107\"} ",
       "Next": 40,
       "Prallel": -1
     }

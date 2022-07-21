@@ -159,7 +159,9 @@
         1378,
         1496,
         1495,
-        1497
+        1497,
+        1561,
+        1560
       ]
     },
     {
@@ -4790,7 +4792,7 @@
     },
     {
       "Index": 591,
-      "Node": "{ \"BattleBranchNode\" : 1, 2, True, \"fe1310301_2_17\", \"苗疆二战战斗结果：是否为楚派胜(鬼蛊存活)\", 592, 620} ",
+      "Node": "{ \"BattleBranchNode\" : 1, 1, True, \"fe1310301_1_06\", \"苗疆二战战斗结果：是否为楚派胜(鬼蛊存活)\", 592, 620} ",
       "Next": 592,
       "Prallel": 620,
       "Child": []
@@ -5641,7 +5643,7 @@
     },
     {
       "Index": 694,
-      "Node": "{ \"BattleBranchNode\" : 1, 2, True, \"fe1310301_2_17\", \"若鬼蛊存活\", 695, 697} ",
+      "Node": "{ \"BattleBranchNode\" : 1, 1, True, \"fe1310301_1_06\", \"若鬼蛊存活\", 695, 697} ",
       "Next": 695,
       "Prallel": 697,
       "Child": []
@@ -9309,7 +9311,8 @@
         1157,
         1158,
         1530,
-        1531
+        1531,
+        1562
       ]
     },
     {
@@ -12124,7 +12127,7 @@
     {
       "Index": 1497,
       "Node": "{ \"BattleResultAddBuff\" : False, \"in21002\", \"bt1312501_02_buff_ShuiPowerUp\", False} ",
-      "Next": -1,
+      "Next": 1561,
       "Prallel": -1,
       "Child": []
     },
@@ -12362,7 +12365,7 @@
     {
       "Index": 1531,
       "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bsc1312501_07b_03\", 0} ",
-      "Next": -1,
+      "Next": 1562,
       "Prallel": -1,
       "Child": []
     },
@@ -12375,7 +12378,7 @@
     },
     {
       "Index": 1533,
-      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat <color=#FF0000>Ling Wu Jie</color> and <color=#FF0000>Ling Yun</color> first， so Shui Ruo Chan can show her weakness\"} ",
+      "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat <color=#FF0000>Ling Wu Jie</color> and <color=#FF0000>Ling Yun</color> first，so Shui Ruo Chan can show her weakness\"} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []
@@ -12583,6 +12586,27 @@
       "Index": 1559,
       "Node": "{ \"BattleResultAddBuff\" : False, \"in21001\", \"bt1312501_02_buff_YunDefendPowerUp\", True} ",
       "Next": 67,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1560,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bsc1312501_07b_99\", 0} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1561,
+      "Node": "{ \"BattleResultAddSecondaryGoal\" : \"bsc1312501_07b_99\", \"Reduce Ling Yun HP to 95%!\"} ",
+      "Next": 1560,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 1562,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bsc1312501_07b_99\", 1} ",
+      "Next": -1,
       "Prallel": -1,
       "Child": []
     }

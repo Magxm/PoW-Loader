@@ -9,6 +9,7 @@
       "Prallel": -1,
       "Child": [
         1,
+        265,
         2,
         262,
         263
@@ -16,8 +17,8 @@
     },
     {
       "Index": 1,
-      "Node": "{ \"BattleResultAddUnits\" : \"in0202,in0104,in0111,in03002,in03013,io041345,io041246,io041442,io041347\", 0, \"103103206,202105203,105202203,201106205,204108204,201103202,103201202,108204204,106201205\"} ",
-      "Next": 2,
+      "Node": "{ \"BattleResultAddUnits\" : \"in0104,in0111,in03002,in03013,io041345,io041246,io041442,io041347\", 0, \"202105203,105202203,201106205,204108204,201103202,103201202,108204204,106201205\"} ",
+      "Next": 265,
       "Prallel": -1,
       "Child": []
     },
@@ -1263,7 +1264,7 @@
     {
       "Index": 155,
       "Node": "{ \"BattleResultTalk\" : \"t1306501_162\"} ",
-      "Next": 157,
+      "Next": 266,
       "Prallel": -1,
       "Child": []
     },
@@ -1305,6 +1306,8 @@
         153,
         154,
         155,
+        266,
+        267,
         157,
         257,
         156
@@ -2141,6 +2144,27 @@
       "Index": 264,
       "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bs1306501_00_02\", 2} ",
       "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 265,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0202\", 2, 103103206, 1.00000, 0.00000} ",
+      "Next": 2,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 266,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0202\", \"\", True} ",
+      "Next": 267,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 267,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in0202\", False} ",
+      "Next": 157,
       "Prallel": -1,
       "Child": []
     }

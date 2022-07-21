@@ -1,0 +1,155 @@
+{
+  "Id": "bs5201143_01",
+  "Name": "",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Prallel": -1,
+      "Child": [
+        1,
+        7,
+        8
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnits\" : \"io041467,io041466,io041361\", 1, \"201202103,203202105,200205105\"} ",
+      "Next": 7,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 3,
+      "Prallel": -1,
+      "Child": [
+        3
+      ]
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 5,
+      "Prallel": -1,
+      "Child": [
+        5,
+        4,
+        14,
+        16,
+        9
+      ]
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 14,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 4,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0105\", 0, 201101200, 1.00000, 0.00000} ",
+      "Next": 8,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"BattleResultAddUnit\" : \"Player\", 0, 101200201, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 11,
+      "Prallel": -1,
+      "Child": [
+        11
+      ]
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 12,
+      "Prallel": -1,
+      "Child": [
+        12,
+        13,
+        15,
+        17,
+        6
+      ]
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0105\"} ",
+      "Next": 13,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 15,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultTalk\" : \"t5201143_115\"} ",
+      "Next": 16,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleResultTalk\" : \"t5201143_118\"} ",
+      "Next": 17,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201143_2_02\", 0, 1, \"神秘掌印：石崑战斗成功\"} ",
+      "Next": 9,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe5201143_2_02\", 0, 2, \"神秘掌印：石崑战斗失败\"} ",
+      "Next": 6,
+      "Prallel": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "",
+  "WinTip": "Defeat the disciple who provoked the dispute",
+  "LoseTip": "Shi Kun is defeated"
+}

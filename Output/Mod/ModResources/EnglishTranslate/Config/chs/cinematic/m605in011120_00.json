@@ -8,7 +8,7 @@
     },
     {
       "Node": "{ \"TimerAction\" : 0.20000} ",
-      "Next": 141,
+      "Next": 181,
       "Prallel": -1
     },
     {
@@ -63,7 +63,7 @@
     },
     {
       "Node": "{ \"NpcTransformAction\" : True, { -1516.03900, 2.95764, -64.20900} , True, { 0.00000, 271.41750, 0.00000} , \"in0105\"} ",
-      "Next": 13,
+      "Next": 188,
       "Prallel": -1
     },
     {
@@ -903,6 +903,146 @@
     },
     {
       "Node": "{ \"MusicAction\" : \"In_battle_23.wav\", 1.50000, False, 0.70000, False, 0.00000} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckPlayerUpgradableProperty\" : 0, 449, 2030}  ], 0} , 141, 182} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe1011103_2_06\"}  ], 0} , 183, 0} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 184,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1011103_217\"} ",
+      "Next": 185,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 186,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1011103_218\"} ",
+      "Next": 187,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckPlayerUpgradableProperty\" : 0, 449, 2030}  ], 0} , 13, 189} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe1011103_2_06\"}  ], 0} , -1, 190} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"m_stand42_loop00\", 1.00000}  ], \"in0111\"} ",
+      "Next": 191,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"EventCubeTransformAction\" : True, { -1520.20700, 3.07866, -63.96500} , 0.00000, True, { 0.00000, 317.18480, 0.00000} , 0.00000, \"eb1011103_00\"} ",
+      "Next": 192,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.20000} ",
+      "Next": 193,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : True, 0.50000} ",
+      "Next": 194,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 195,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1011103_212\"} ",
+      "Next": 196,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 197,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1011103_213\"} ",
+      "Next": 198,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.30000} ",
+      "Next": 199,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1011103_214\"} ",
+      "Next": 200,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 201,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1011103_215\"} ",
+      "Next": 202,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 203,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1011103_216\"} ",
+      "Next": 204,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : False, 0.50000} ",
+      "Next": 205,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 1, \"fe1011103_2_06\"} ",
+      "Next": 207,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 208,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 0, \"fe1011103_2_01\"} ",
+      "Next": 206,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0, \"\", 1.00000} ",
       "Next": -1,
       "Prallel": -1
     }

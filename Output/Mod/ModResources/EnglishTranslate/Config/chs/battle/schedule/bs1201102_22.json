@@ -6,34 +6,40 @@
       "Index": 0,
       "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
       "Next": 1,
+      "Prallel": -1,
       "Child": [
         1,
         2,
-        3
+        3,
+        160
       ]
     },
     {
       "Index": 1,
       "Node": "{ \"BattleResultAddUnit\" : \"Player\", 0, 208201109, 1.00000, 0.00000} ",
       "Next": 2,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 2,
       "Node": "{ \"BattleResultAddUnit\" : \"in0105\", 0, 207202109, 1.00000, 0.00000} ",
       "Next": 3,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 3,
       "Node": "{ \"BattleResultAddUnit\" : \"in22003\", 1, 104200204, 1.00000, 0.00000} ",
-      "Next": -1,
+      "Next": 160,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 4,
       "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
       "Next": 5,
+      "Prallel": -1,
       "Child": [
         5
       ]
@@ -42,6 +48,7 @@
       "Index": 5,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 6,
+      "Prallel": -1,
       "Child": [
         6,
         7,
@@ -67,114 +74,133 @@
       "Index": 6,
       "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
       "Next": 7,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 7,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 8,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 8,
       "Node": "{ \"BattleResultMoveUnit\" : \"in0105,Player\", \"200202102,202102200\"} ",
       "Next": 9,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 9,
       "Node": "{ \"BattleResultTalk\" : \"t1201103_523\"} ",
       "Next": 10,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 10,
       "Node": "{ \"BattleResultAddUnit\" : \"in05573\", 1, 105203202, 1.00000, 0.00000} ",
       "Next": 11,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 11,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in05573\", \"\", False} ",
       "Next": 12,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 12,
       "Node": "{ \"BattleResultTalk\" : \"t1201103_530\"} ",
       "Next": 13,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 13,
       "Node": "{ \"BattleResultAddUnit\" : \"in05574\", 1, 102103205, 1.00000, 0.00000} ",
       "Next": 14,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 14,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in05574\", \"\", False} ",
       "Next": 15,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 15,
       "Node": "{ \"BattleResultTalk\" : \"t1201103_531\"} ",
       "Next": 16,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 16,
       "Node": "{ \"BattleResultAddUnit\" : \"in05575\", 1, 102200202, 1.00000, 0.00000} ",
       "Next": 17,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 17,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in05575\", \"\", False} ",
       "Next": 18,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 18,
       "Node": "{ \"BattleResultChangeMusic\" : \"In_battle_21.wav\", 1.00000, False} ",
       "Next": 19,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 19,
       "Node": "{ \"BattleResultTalk\" : \"t1201103_532\"} ",
       "Next": 20,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 20,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in22003\", \"bt1201102_22_buff_ShiYieMoraleUp\", True} ",
       "Next": 21,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 21,
       "Node": "{ \"BattleResultAddBuff\" : False, \"in22003\", \"bt1201102_22_debuff_Attack&DefenceDecrease2\", False} ",
       "Next": 22,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 22,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in05575\", \"\", True} ",
       "Next": 23,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 23,
       "Node": "{ \"BattleResultAddBuff\" : False, \"in05573,in05574,in05575\", \"bt1201102_22_debuff_Attack&DefenceDecrease\", False} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 24,
       "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
       "Next": 25,
+      "Prallel": -1,
       "Child": [
         25
       ]
@@ -183,6 +209,7 @@
       "Index": 25,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 26,
+      "Prallel": -1,
       "Child": [
         26,
         27,
@@ -195,36 +222,42 @@
       "Index": 26,
       "Node": "{ \"BattleFactorTurn\" : 1, 1} ",
       "Next": 27,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 27,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bsf1201102_22_01\", \"石崑因药材获得buff顺序\"} ",
       "Next": 28,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 28,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 29,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 29,
       "Node": "{ \"BattleResultTalk\" : \"t1201103_562\"} ",
       "Next": 30,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 30,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"bsf1201102_22_01\", 0, 1, \"石崑因药材获得buff顺序\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 31,
       "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
       "Next": 32,
+      "Prallel": -1,
       "Child": [
         32
       ]
@@ -233,6 +266,7 @@
       "Index": 32,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 33,
+      "Prallel": -1,
       "Child": [
         33,
         34,
@@ -245,36 +279,42 @@
       "Index": 33,
       "Node": "{ \"BattleFactorTurn\" : 1, 1} ",
       "Next": 34,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 34,
       "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1201102_2_111\", \"是否给出曼陀罗花\"} ",
       "Next": 35,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 35,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"bsf1201102_22_01\", \"石崑因药材获得buff顺序\"} ",
       "Next": 36,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 36,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 37,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 37,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"bsf1201102_22_01\", 0, 2, \"石崑因药材获得buff顺序\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 38,
       "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
       "Next": 39,
+      "Prallel": -1,
       "Child": [
         39
       ]
@@ -283,6 +323,7 @@
       "Index": 39,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 40,
+      "Prallel": -1,
       "Child": [
         40,
         41,
@@ -299,60 +340,70 @@
       "Index": 40,
       "Node": "{ \"BattleFactorTurn\" : 1, 1} ",
       "Next": 41,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 41,
       "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1201102_2_111\", \"是否给出曼陀罗花\"} ",
       "Next": 42,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 42,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"bsf1201102_22_01\", \"石崑因药材获得buff顺序\"} ",
       "Next": 43,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 43,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 44,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 44,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in0105\", \"bt1201102_22_buff_ShiQuenPowerUp01\", True} ",
       "Next": 45,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 45,
       "Node": "{ \"BattleResultUnitHP\" : 1, 100, \"in0105\"} ",
       "Next": 46,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 46,
       "Node": "{ \"BattleResultUnitMP\" : 1, 999, \"in0105\"} ",
       "Next": 47,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 47,
       "Node": "{ \"BattleResultTalk\" : \"t1201103_568\"} ",
       "Next": 48,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 48,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"bsf1201102_22_01\", 0, 2, \"石崑因药材获得buff顺序\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 49,
       "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
       "Next": 50,
+      "Prallel": -1,
       "Child": [
         50
       ]
@@ -361,6 +412,7 @@
       "Index": 50,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 51,
+      "Prallel": -1,
       "Child": [
         51,
         52,
@@ -373,36 +425,42 @@
       "Index": 51,
       "Node": "{ \"BattleFactorTurn\" : 1, 1} ",
       "Next": 52,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 52,
       "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1201102_2_112\", \"是否给出三十年人参药酒\"} ",
       "Next": 53,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 53,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 2, \"bsf1201102_22_01\", \"石崑因药材获得buff顺序\"} ",
       "Next": 54,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 54,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 55,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 55,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"bsf1201102_22_01\", 0, 3, \"石崑因药材获得buff顺序\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 56,
       "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
       "Next": 57,
+      "Prallel": -1,
       "Child": [
         57
       ]
@@ -411,6 +469,7 @@
       "Index": 57,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 58,
+      "Prallel": -1,
       "Child": [
         58,
         59,
@@ -425,48 +484,56 @@
       "Index": 58,
       "Node": "{ \"BattleFactorTurn\" : 1, 1} ",
       "Next": 59,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 59,
       "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1201102_2_112\", \"是否给出三十年人参药酒\"} ",
       "Next": 60,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 60,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 2, \"bsf1201102_22_01\", \"石崑因药材获得buff顺序\"} ",
       "Next": 61,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 61,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 62,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 62,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in0105\", \"bt1201102_22_buff_ShiQuenPowerUp02\", True} ",
       "Next": 63,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 63,
       "Node": "{ \"BattleResultTalk\" : \"t1201103_569\"} ",
       "Next": 64,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 64,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"bsf1201102_22_01\", 0, 3, \"石崑因药材获得buff顺序\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 65,
       "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
       "Next": 66,
+      "Prallel": -1,
       "Child": [
         66
       ]
@@ -475,6 +542,7 @@
       "Index": 66,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 67,
+      "Prallel": -1,
       "Child": [
         67,
         68,
@@ -487,36 +555,42 @@
       "Index": 67,
       "Node": "{ \"BattleFactorTurn\" : 1, 1} ",
       "Next": 68,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 68,
       "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1201102_2_113\", \"是否给出黑熊胆\"} ",
       "Next": 69,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 69,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 3, \"bsf1201102_22_01\", \"石崑因药材获得buff顺序\"} ",
       "Next": 70,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 70,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 71,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 71,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"bsf1201102_22_01\", 0, 4, \"石崑因药材获得buff顺序\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 72,
       "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
       "Next": 73,
+      "Prallel": -1,
       "Child": [
         73
       ]
@@ -525,6 +599,7 @@
       "Index": 73,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 74,
+      "Prallel": -1,
       "Child": [
         74,
         75,
@@ -539,48 +614,56 @@
       "Index": 74,
       "Node": "{ \"BattleFactorTurn\" : 1, 1} ",
       "Next": 75,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 75,
       "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1201102_2_113\", \"是否给出黑熊胆\"} ",
       "Next": 76,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 76,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 3, \"bsf1201102_22_01\", \"石崑因药材获得buff顺序\"} ",
       "Next": 77,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 77,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 78,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 78,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in0105\", \"bt1201102_22_buff_ShiQuenPowerUp02\", True} ",
       "Next": 79,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 79,
       "Node": "{ \"BattleResultTalk\" : \"t1201103_570\"} ",
       "Next": 80,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 80,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"bsf1201102_22_01\", 0, 4, \"石崑因药材获得buff顺序\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 81,
       "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
       "Next": 82,
+      "Prallel": -1,
       "Child": [
         82
       ]
@@ -589,6 +672,7 @@
       "Index": 82,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 83,
+      "Prallel": -1,
       "Child": [
         83,
         84,
@@ -601,36 +685,42 @@
       "Index": 83,
       "Node": "{ \"BattleFactorTurn\" : 1, 1} ",
       "Next": 84,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 84,
       "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1201102_2_114\", \"是否给出千年何首乌\"} ",
       "Next": 85,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 85,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 4, \"bsf1201102_22_01\", \"石崑因药材获得buff顺序\"} ",
       "Next": 86,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 86,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 87,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 87,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"bsf1201102_22_01\", 0, 5, \"石崑因药材获得buff顺序\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 88,
       "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
       "Next": 89,
+      "Prallel": -1,
       "Child": [
         89
       ]
@@ -639,6 +729,7 @@
       "Index": 89,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 90,
+      "Prallel": -1,
       "Child": [
         90,
         91,
@@ -653,48 +744,56 @@
       "Index": 90,
       "Node": "{ \"BattleFactorTurn\" : 1, 1} ",
       "Next": 91,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 91,
       "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1201102_2_114\", \"是否给出千年何首乌\"} ",
       "Next": 92,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 92,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 4, \"bsf1201102_22_01\", \"石崑因药材获得buff顺序\"} ",
       "Next": 93,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 93,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 94,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 94,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in0105\", \"bt1201102_22_buff_ShiQuenPowerUp03\", True} ",
       "Next": 95,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 95,
       "Node": "{ \"BattleResultTalk\" : \"t1201103_571\"} ",
       "Next": 96,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 96,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"bsf1201102_22_01\", 0, 5, \"石崑因药材获得buff顺序\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 97,
       "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
       "Next": 98,
+      "Prallel": -1,
       "Child": [
         98
       ]
@@ -703,6 +802,7 @@
       "Index": 98,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 99,
+      "Prallel": -1,
       "Child": [
         99,
         100,
@@ -714,30 +814,35 @@
       "Index": 99,
       "Node": "{ \"BattleFactorTurn\" : 1, 1} ",
       "Next": 100,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 100,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 5, \"bsf1201102_22_01\", \"石崑因药材获得buff顺序\"} ",
       "Next": 101,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 101,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 102,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 102,
       "Node": "{ \"BattleResultTalk\" : \"t1201103_572\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 103,
       "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
       "Next": 104,
+      "Prallel": -1,
       "Child": [
         104
       ]
@@ -746,6 +851,7 @@
       "Index": 104,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 105,
+      "Prallel": -1,
       "Child": [
         105,
         106,
@@ -768,110 +874,128 @@
     },
     {
       "Index": 105,
-      "Node": "{ \"BattleFactorTurn\" : 1, 3} ",
+      "Node": "{ \"BattleFactorTurn\" : 1, 5} ",
       "Next": 106,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 106,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bsf1201102_22_02\", \"段霄烈是否已抵达\"} ",
       "Next": 107,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 107,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 108,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 108,
       "Node": "{ \"BattleResultTalk\" : \"t1201103_582\"} ",
       "Next": 109,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 109,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in0105\", \"\", False} ",
       "Next": 110,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 110,
       "Node": "{ \"BattleResultTalk\" : \"t1201103_585\"} ",
       "Next": 111,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 111,
       "Node": "{ \"BattleResultAddUnit\" : \"in0202\", 2, 201200101, 1.00000, 0.00000} ",
       "Next": 112,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 112,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in0202\", \"\", True} ",
       "Next": 113,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 113,
       "Node": "{ \"BattleResultCameraMoveUnit\" : \"in0202\", -20.00000, 10.00000} ",
       "Next": 114,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 114,
       "Node": "{ \"BattleResultChangeMusic\" : \"In_battle_22.wav\", 1.00000, False} ",
       "Next": 115,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 115,
       "Node": "{ \"BattleResultWaitAction\" : 1.00000} ",
       "Next": 116,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 116,
       "Node": "{ \"BattleResultTalk\" : \"t1201103_590\"} ",
       "Next": 117,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 117,
       "Node": "{ \"BattleResultAddBuff\" : True, \"Player,in0105\", \"bt1201102_22_buff_MoraleUp\", True} ",
       "Next": 118,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 118,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in22003\", \"\", False} ",
       "Next": 119,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 119,
       "Node": "{ \"BattleResultRmoveBuff\" : \"in22003\", \"bt1201102_22_buff_ShiYieMoraleUp\"} ",
       "Next": 120,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 120,
       "Node": "{ \"BattleResultChangeLoseTip\" : \"All friendly units are defeated\"} ",
       "Next": 121,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 121,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"bsf1201102_22_02\", 0, 1, \"段霄烈已经抵达\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 122,
       "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
       "Next": 123,
+      "Prallel": -1,
       "Child": [
         123
       ]
@@ -880,6 +1004,7 @@
       "Index": 123,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 124,
+      "Prallel": -1,
       "Child": [
         124,
         125,
@@ -892,36 +1017,42 @@
       "Index": 124,
       "Node": "{ \"BattleFactorTargetHp\" : 2, 50, \"in22003\"} ",
       "Next": 125,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 125,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"bsf1201102_22_02\", \"段霄烈是否已抵达\"} ",
       "Next": 126,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 126,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 127,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 127,
       "Node": "{ \"BattleResultTalk\" : \"t1201103_600\"} ",
       "Next": 128,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 128,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in22003\", \"bt1201102_22_buff_ShiYieMoraleDown\", False} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 129,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 130,
+      "Prallel": -1,
       "Child": [
         130
       ]
@@ -930,8 +1061,10 @@
       "Index": 130,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 131,
+      "Prallel": -1,
       "Child": [
         131,
+        153,
         132,
         133,
         134
@@ -940,31 +1073,36 @@
     {
       "Index": 131,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"in22003\"} ",
-      "Next": 132,
+      "Next": 153,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 132,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 133,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 133,
       "Node": "{ \"BattleResultTalk\" : \"t1201103_603\"} ",
       "Next": 134,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 134,
       "Node": "{ \"BattleResultWin\" : \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 135,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 136,
+      "Prallel": -1,
       "Child": [
         136
       ]
@@ -973,6 +1111,7 @@
       "Index": 136,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 137,
+      "Prallel": -1,
       "Child": [
         137,
         138,
@@ -984,30 +1123,35 @@
       "Index": 137,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"Player\"} ",
       "Next": 138,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 138,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bsf1201102_22_02\", \"段霄烈是否已抵达\"} ",
       "Next": 139,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 139,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 140,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 140,
       "Node": "{ \"BattleResultLose\" : \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 141,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 142,
+      "Prallel": -1,
       "Child": [
         142
       ]
@@ -1016,6 +1160,7 @@
       "Index": 142,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 143,
+      "Prallel": -1,
       "Child": [
         143,
         144,
@@ -1027,24 +1172,188 @@
       "Index": 143,
       "Node": "{ \"BattleFactorFactionDefeat\" : 0} ",
       "Next": 144,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 144,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"bsf1201102_22_02\", \"段霄烈是否已抵达\"} ",
       "Next": 145,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 145,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 146,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 146,
       "Node": "{ \"BattleResultLose\" : \"\"} ",
       "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 147,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 148,
+      "Prallel": -1,
+      "Child": [
+        148,
+        152,
+        149,
+        154,
+        155,
+        156,
+        157,
+        158,
+        159,
+        150
+      ]
+    },
+    {
+      "Index": 148,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in22003\"} ",
+      "Next": 152,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 149,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 154,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 150,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 151,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 147,
+      "Prallel": -1,
+      "Child": [
+        147
+      ]
+    },
+    {
+      "Index": 152,
+      "Node": "{ \"BattleFactorLocalFlag\" : 3, 1, \"bsf1201102_22_02\", \"段霄烈是否已抵达\"} ",
+      "Next": 149,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 153,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"bsf1201102_22_02\", \"段霄烈是否已抵达\"} ",
+      "Next": 132,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 154,
+      "Node": "{ \"BattleResultAddUnit\" : \"in0202\", 2, 201200101, 1.00000, 0.00000} ",
+      "Next": 155,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 155,
+      "Node": "{ \"BattleResultCameraMoveUnit\" : \"in0202\", -20.00000, 10.00000} ",
+      "Next": 156,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 156,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0202\", \"\", True} ",
+      "Next": 157,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 157,
+      "Node": "{ \"BattleResultWaitAction\" : 1.00000} ",
+      "Next": 158,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 158,
+      "Node": "{ \"BattleResultTalk\" : \"t1201103_745\"} ",
+      "Next": 159,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 159,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fg0202_MasterLove\", 1, 1, \"\"} ",
+      "Next": 150,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 160,
+      "Node": "{ \"BattleResultTreasurePoint\" : \"105101206\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 161,
+      "Node": "{ \"BattleResultAddReward\" : \"Drop_gear_02_1_2\"} ",
+      "Next": 166,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 162,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 161,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 163,
+      "Node": "{ \"BattleFactorCellFaction\" : 0, \"105101206\"} ",
+      "Next": 162,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 164,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 163,
+      "Prallel": -1,
+      "Child": [
+        163,
+        162,
+        161,
+        166
+      ]
+    },
+    {
+      "Index": 165,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 164,
+      "Prallel": -1,
+      "Child": [
+        164
+      ]
+    },
+    {
+      "Index": 166,
+      "Node": "{ \"BattleResultRemoveTreasurePoint\" : \"105101206\"} ",
+      "Next": -1,
+      "Prallel": -1,
       "Child": []
     }
   ],

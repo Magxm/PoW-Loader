@@ -6,20 +6,24 @@
       "Index": 0,
       "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
       "Next": 1,
+      "Prallel": -1,
       "Child": [
-        1
+        1,
+        63
       ]
     },
     {
       "Index": 1,
       "Node": "{ \"BattleResultAddUnits\" : \"Player,party01,party02,party03,in03004,in03012,io41114301,io41134301,in0553201\", 0, \"201102201,202101101,202103201,203102101,203101102,201103202,105206101,106205201,202102200\"} ",
-      "Next": -1,
+      "Next": 63,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 2,
       "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
       "Next": 3,
+      "Prallel": -1,
       "Child": [
         3,
         4,
@@ -30,24 +34,28 @@
       "Index": 3,
       "Node": "{ \"BattleResultAddUnits\" : \"io26103103,io26113103,io26143105,io26123102,io26133106,io26123103,io26143106,io26103104\", 1, \"201204105,203201104,101101202,201201102,104101205,101202101,102201201,101103204\"} ",
       "Next": 4,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 4,
       "Node": "{ \"BattleResultAddBuff\" : False, \"io26103103,io26113103,io26143105,io26123102,io26133106,io26123103,io26143106,io26103104\", \"bt1212402_01_debuff_ZombieAttack80\", False} ",
       "Next": 5,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 5,
       "Node": "{ \"BattleResultAddBuff\" : True, \"io26103103,io26113103,io26143105,io26123102,io26133106,io26123103,io26143106,io26103104\", \"bt1212402_01_buff_ZombiePower\", True} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 6,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 7,
+      "Prallel": -1,
       "Child": [
         7
       ]
@@ -56,6 +64,7 @@
       "Index": 7,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 8,
+      "Prallel": -1,
       "Child": [
         8,
         9,
@@ -66,24 +75,28 @@
       "Index": 8,
       "Node": "{ \"BattleFactorFactionDefeat\" : 0} ",
       "Next": 9,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 9,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 10,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 10,
       "Node": "{ \"BattleResultLose\" : \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 11,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 12,
+      "Prallel": -1,
       "Child": [
         12
       ]
@@ -92,6 +105,7 @@
       "Index": 12,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 13,
+      "Prallel": -1,
       "Child": [
         13,
         14,
@@ -103,30 +117,35 @@
       "Index": 13,
       "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
       "Next": 14,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 14,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 15,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 15,
       "Node": "{ \"BattleResultTalk\" : \"t1212402_bs0210\"} ",
       "Next": 16,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 16,
       "Node": "{ \"BattleResultWin\" : \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 17,
       "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
       "Next": 18,
+      "Prallel": -1,
       "Child": [
         18
       ]
@@ -135,12 +154,14 @@
       "Index": 18,
       "Node": "{ \"BattleResultAddSecondaryGoal\" : \"bsc12124020201\", \"Ensure the survival of Ice Clear Sword Sect's disciples\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 19,
       "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
       "Next": 20,
+      "Prallel": -1,
       "Child": [
         20
       ]
@@ -149,6 +170,7 @@
       "Index": 20,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 21,
+      "Prallel": -1,
       "Child": [
         21,
         22,
@@ -162,42 +184,49 @@
       "Index": 21,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"io41114301\"} ",
       "Next": 22,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 22,
       "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1212401_2_14\", \"冰清弟子4还未死亡\"} ",
       "Next": 23,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 23,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 24,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 24,
       "Node": "{ \"BattleResultTalk\" : \"t1212402_bs0200\"} ",
       "Next": 25,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 25,
       "Node": "{ \"BattleResultAddBuff\" : True, \"io41134301\", \"bt1212402_01_buff_Attack&DefenceIncrease.json\", True} ",
       "Next": 26,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 26,
       "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bsc12124020201\", 2} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 27,
       "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
       "Next": 28,
+      "Prallel": -1,
       "Child": [
         28
       ]
@@ -206,6 +235,7 @@
       "Index": 28,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 29,
+      "Prallel": -1,
       "Child": [
         29,
         30,
@@ -217,30 +247,35 @@
       "Index": 29,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"io41114301\"} ",
       "Next": 30,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 30,
       "Node": "{ \"BattleFactorGlobalFlag\" : 1, 2, \"fe1212401_2_26\", \"34301师妹先死\"} ",
       "Next": 31,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 31,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 32,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 32,
       "Node": "{ \"BattleResultTalk\" : \"t1212402_bs0203\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 33,
       "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
       "Next": 34,
+      "Prallel": -1,
       "Child": [
         34
       ]
@@ -249,6 +284,7 @@
       "Index": 34,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 35,
+      "Prallel": -1,
       "Child": [
         35,
         36,
@@ -262,42 +298,49 @@
       "Index": 35,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"io41134301\"} ",
       "Next": 36,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 36,
       "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1212401_2_13\", \"冰清弟子3还未死亡\"} ",
       "Next": 37,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 37,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 38,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 38,
       "Node": "{ \"BattleResultTalk\" : \"t1212402_bs0205\"} ",
       "Next": 39,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 39,
       "Node": "{ \"BattleResultAddBuff\" : True, \"io41114301\", \"bt1212402_01_debuff_Attack&DefenceDecrease.json\", False} ",
       "Next": 40,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 40,
       "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bsc12124020201\", 2} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 41,
       "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
       "Next": 42,
+      "Prallel": -1,
       "Child": [
         42
       ]
@@ -306,6 +349,7 @@
       "Index": 42,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 43,
+      "Prallel": -1,
       "Child": [
         43,
         44,
@@ -317,30 +361,35 @@
       "Index": 43,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"io41134301\"} ",
       "Next": 44,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 44,
       "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1212401_2_26\", \"14301师姐先死\"} ",
       "Next": 45,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 45,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 46,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 46,
       "Node": "{ \"BattleResultTalk\" : \"t1212402_bs0208\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 47,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 48,
+      "Prallel": -1,
       "Child": [
         48
       ]
@@ -349,6 +398,7 @@
       "Index": 48,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 49,
+      "Prallel": -1,
       "Child": [
         49,
         50,
@@ -359,24 +409,28 @@
       "Index": 49,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"io41114301\"} ",
       "Next": 50,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 50,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 51,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 51,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1212401_2_13\", 0, 1, \"冰清弟子3已死亡\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 52,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 53,
+      "Prallel": -1,
       "Child": [
         53
       ]
@@ -385,6 +439,7 @@
       "Index": 53,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 54,
+      "Prallel": -1,
       "Child": [
         54,
         55,
@@ -395,24 +450,28 @@
       "Index": 54,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"io41134301\"} ",
       "Next": 55,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 55,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 56,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 56,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1212401_2_14\", 0, 1, \"冰清弟子4已死亡\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 57,
       "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
       "Next": 58,
+      "Prallel": -1,
       "Child": [
         58
       ]
@@ -421,6 +480,7 @@
       "Index": 58,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 59,
+      "Prallel": -1,
       "Child": [
         59,
         60,
@@ -432,24 +492,84 @@
       "Index": 59,
       "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
       "Next": 60,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 60,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 61,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 61,
       "Node": "{ \"BattleResultUnitHP\" : 0, 100, \"in0553201\"} ",
       "Next": 62,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 62,
       "Node": "{ \"BattleResultUnitMP\" : 1, 9999, \"in0553201\"} ",
       "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 63,
+      "Node": "{ \"BattleResultTreasurePoint\" : \"104208104\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 64,
+      "Node": "{ \"BattleFactorCellFaction\" : 0, \"104208104\"} ",
+      "Next": 68,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 65,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 64,
+      "Prallel": -1,
+      "Child": [
+        64,
+        68,
+        67,
+        69
+      ]
+    },
+    {
+      "Index": 66,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 65,
+      "Prallel": -1,
+      "Child": [
+        65
+      ]
+    },
+    {
+      "Index": 67,
+      "Node": "{ \"BattleResultAddReward\" : \"Drop_it706011\"} ",
+      "Next": 69,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 68,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 67,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 69,
+      "Node": "{ \"BattleResultRemoveTreasurePoint\" : \"104208104\"} ",
+      "Next": -1,
+      "Prallel": -1,
       "Child": []
     }
   ],

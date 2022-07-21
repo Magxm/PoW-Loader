@@ -42,12 +42,12 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckPlayerUpgradableProperty\" : 0, 199, 3010} , { \"CheckFlag\" : 1, 0, \"fe6041200_2_00\"}  ], 0} , 6, 9} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckPlayerUpgradableProperty\" : 0, 199, 3010} , { \"CheckFlag\" : 1, 0, \"fe6041200_2_00\"}  ], 0} , 6, 34} ",
       "Next": -1,
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckPlayerUpgradableProperty\" : 0, 199, 3020} , { \"CheckFlag\" : 1, 0, \"fe6042200_2_00\"}  ], 0} , 10, 11} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckPlayerUpgradableProperty\" : 0, 199, 3020} , { \"CheckFlag\" : 1, 0, \"fe6042200_2_00\"}  ], 0} , 10, 35} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -57,7 +57,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckPlayerUpgradableProperty\" : 0, 199, 3030} , { \"CheckFlag\" : 1, 0, \"fe6043200_2_00\"}  ], 0} , 12, 13} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckPlayerUpgradableProperty\" : 0, 199, 3030} , { \"CheckFlag\" : 1, 0, \"fe6043200_2_00\"}  ], 0} , 12, 36} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -67,7 +67,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckPlayerUpgradableProperty\" : 0, 199, 3040} , { \"CheckFlag\" : 1, 0, \"fe6044200_2_00\"}  ], 0} , 14, 17} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckPlayerUpgradableProperty\" : 0, 199, 3040} , { \"CheckFlag\" : 1, 0, \"fe6044200_2_00\"}  ], 0} , 14, 37} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -107,7 +107,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 1} ",
+      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 1, \"\", 1.00000} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -129,6 +129,66 @@
     {
       "Node": "{ \"TimerAction\" : 0.50000} ",
       "Next": 13,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NurturanceOpenOrder\" : \"Nurturance_04_12\"} ",
+      "Next": 27,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 1, \"fe6041200_2_99\"} ",
+      "Next": 9,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NurturanceOpenOrder\" : \"Nurturance_04_22\"} ",
+      "Next": 29,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 1, \"fe6042200_2_99\"} ",
+      "Next": 11,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NurturanceOpenOrder\" : \"Nurturance_04_32\"} ",
+      "Next": 31,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 1, \"fe6043200_2_99\"} ",
+      "Next": 13,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NurturanceOpenOrder\" : \"Nurturance_04_42\"} ",
+      "Next": 33,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 1, \"fe6044200_2_99\"} ",
+      "Next": 17,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 0, \"fe6041200_2_00\"}  ], 0} , 26, 9} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 0, \"fe6042200_2_00\"}  ], 0} , 28, 11} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 0, \"fe6043200_2_00\"}  ], 0} , 30, 13} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 0, \"fe6044200_2_00\"}  ], 0} , 32, 17} ",
+      "Next": -1,
       "Prallel": -1
     }
   ],

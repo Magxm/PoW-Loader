@@ -1,0 +1,171 @@
+{
+  "EntryIndex": 1,
+  "Nodes": [
+    {
+      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0, \"\", 1.00000} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NextOrEndQuestAction\" } ",
+      "Next": 8,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t5401104_013\"} ",
+      "Next": 3,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 28,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayPlayerAnimationAction\" : [ { 2, \"f_sit60_await00\", 1.00000}  ]} ",
+      "Next": 17,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckPlayerGender\" : True}  ], 0} , 6, 4} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayPlayerAnimationAction\" : [ { 2, \"m_sit60_await00\", 1.00000}  ]} ",
+      "Next": 17,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : True, 2.00000} ",
+      "Next": 22,
+      "Prallel": 12
+    },
+    {
+      "Node": "{ \"LoadScenesAction\" : \"S0105\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0, \"\", 1.00000} ",
+      "Next": 11,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcTransformAction\" : True, { 113.67800, 1.81954, -793.78300} , True, { 0.00000, 151.49960, 0.00000} , \"in03013\"} ",
+      "Next": 10,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayerTransformAction\" : True, { 113.64500, 2.64037, -795.25200} , True, { 0.00000, 264.87390, 0.00000} } ",
+      "Next": 19,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"CameraTransformAction\" : True, { 112.61000, 5.22000, -796.81000} , 0.00000, True, { 49.36684, 36.55484, 0.01392} , 0.00000, 45} ",
+      "Next": 9,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 0, \"f_stand00_await08\", 1.00000}  ], \"in03013\"} ",
+      "Next": -1,
+      "Prallel": 21
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t5401104_023\"} ",
+      "Next": 14,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 2.00000} ",
+      "Next": 7,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : False, 1.00000} ",
+      "Next": 5,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : True, 2.00000} ",
+      "Next": 2,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 3.40000} ",
+      "Next": 23,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayPlayerAnimationAction\" : [ { 2, \"f_sleep02_await00\", 1.00000}  ]} ",
+      "Next": 13,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckPlayerGender\" : True}  ], 0} , 20, 18} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayPlayerAnimationAction\" : [ { 2, \"m_sleep02_await00\", 1.00000}  ]} ",
+      "Next": 13,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"CameraTransformAction\" : True, { 112.13660, 6.14794, -797.45200} , 8.00000, False, { 49.36684, 36.55484, 0.01392} , 0.00000, 45} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 3.00000} ",
+      "Next": 15,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t5401104_010\"} ",
+      "Next": 24,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.40000} ",
+      "Next": 25,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t5401104_011\"} ",
+      "Next": 26,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 27,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t5401104_012\"} ",
+      "Next": 31,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t5401104_016\"} ",
+      "Next": 29,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 30,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t5401104_020\"} ",
+      "Next": 32,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.60000} ",
+      "Next": 16,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : False, 2.00000} ",
+      "Next": 0,
+      "Prallel": -1
+    }
+  ],
+  "Name": "魔化大娘_获胜"
+}

@@ -6,20 +6,24 @@
       "Index": 0,
       "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
       "Next": 1,
+      "Prallel": -1,
       "Child": [
-        1
+        1,
+        14
       ]
     },
     {
       "Index": 1,
       "Node": "{ \"BattleResultAddUnits\" : \"Player,in0208,party01,party02,party03\", 0, \"102205103,103205102,200204104,103207104,101206105\"} ",
-      "Next": -1,
+      "Next": 14,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 2,
       "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
       "Next": 3,
+      "Prallel": -1,
       "Child": [
         3
       ]
@@ -28,12 +32,14 @@
       "Index": 3,
       "Node": "{ \"BattleResultAddUnits\" : \"io93126901,io93121901,io93121902,io93121903,io93121904,io93121905,io93121906,io93121907\", 1, \"101201200,103201202,201200101,202200102,105211106,104211107,103210107,102210108\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 4,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 5,
+      "Prallel": -1,
       "Child": [
         5
       ]
@@ -42,6 +48,7 @@
       "Index": 5,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 6,
+      "Prallel": -1,
       "Child": [
         6,
         7,
@@ -52,24 +59,28 @@
       "Index": 6,
       "Node": "{ \"BattleFactorFactionDefeat\" : 0} ",
       "Next": 7,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 7,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 8,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 8,
       "Node": "{ \"BattleResultLose\" : \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 9,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 10,
+      "Prallel": -1,
       "Child": [
         10
       ]
@@ -78,6 +89,7 @@
       "Index": 10,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 11,
+      "Prallel": -1,
       "Child": [
         11,
         12,
@@ -88,18 +100,126 @@
       "Index": 11,
       "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
       "Next": 12,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 12,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 13,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 13,
       "Node": "{ \"BattleResultWin\" : \"\"} ",
       "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"BattleResultTreasurePoint\" : \"107211104,205200105\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleFactorCellFaction\" : 0, \"107211104\"} ",
+      "Next": 19,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 15,
+      "Prallel": -1,
+      "Child": [
+        15,
+        19,
+        18,
+        20
+      ]
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 16,
+      "Prallel": -1,
+      "Child": [
+        16
+      ]
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleResultAddReward\" : \"Drop_beast_01_2_4\"} ",
+      "Next": 20,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 18,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultRemoveTreasurePoint\" : \"107211104\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleFactorCellFaction\" : 0, \"205200105\"} ",
+      "Next": 25,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 21,
+      "Prallel": -1,
+      "Child": [
+        21,
+        25,
+        24,
+        26
+      ]
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 22,
+      "Prallel": -1,
+      "Child": [
+        22
+      ]
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleResultAddReward\" : \"Drop_beast_03_1_2\"} ",
+      "Next": 26,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 24,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleResultRemoveTreasurePoint\" : \"205200105\"} ",
+      "Next": -1,
+      "Prallel": -1,
       "Child": []
     }
   ],

@@ -240,11 +240,11 @@
         78,
         79,
         80,
-        83,
-        81,
-        153,
-        84,
-        85
+        169,
+        174,
+        171,
+        172,
+        170
       ]
     },
     {
@@ -662,14 +662,14 @@
     },
     {
       "Index": 80,
-      "Node": "{ \"BattleResultUnitHP\" : 0, 0, \"in03006\"} ",
-      "Next": 83,
+      "Node": "{ \"BattleResultUnitHP\" : 0, 50, \"in03006\"} ",
+      "Next": 169,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 81,
-      "Node": "{ \"BattleResultTalk\" : \"t1306502_249\"} ",
+      "Node": "{ \"BattleResultTalk\" : \"t1306502_251\"} ",
       "Next": 153,
       "Prallel": -1,
       "Child": []
@@ -698,7 +698,7 @@
     {
       "Index": 85,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1306501_1_02\", 0, 1, \"关巧儿死亡\"} ",
-      "Next": -1,
+      "Next": 173,
       "Prallel": -1,
       "Child": []
     },
@@ -1264,6 +1264,192 @@
     {
       "Index": 156,
       "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bs1306501_01b_01\", 2} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 157,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 158,
+      "Prallel": -1,
+      "Child": [
+        158
+      ]
+    },
+    {
+      "Index": 158,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 160,
+      "Prallel": -1,
+      "Child": [
+        160,
+        166,
+        165,
+        159,
+        83,
+        81,
+        153,
+        84,
+        85,
+        173,
+        179
+      ]
+    },
+    {
+      "Index": 159,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 83,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 160,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 3, 2, \"fe5201127_2_00\", \"三侠村民兵训练（一）：是否进行过？>>None\"} ",
+      "Next": 166,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 161,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 162,
+      "Prallel": -1,
+      "Child": [
+        162
+      ]
+    },
+    {
+      "Index": 162,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 164,
+      "Prallel": -1,
+      "Child": [
+        164,
+        167,
+        168,
+        163,
+        175,
+        176,
+        177,
+        178
+      ]
+    },
+    {
+      "Index": 163,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 175,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 164,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 3, 2, \"fe5201127_2_00\", \"三侠村民兵训练（一）：是否进行过？>>None\"} ",
+      "Next": 167,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 165,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in03006\"} ",
+      "Next": 159,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 166,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1306501_01b_99\", \"关巧儿陷入危机\"} ",
+      "Next": 165,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 167,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1306501_01b_99\", \"关巧儿陷入危机\"} ",
+      "Next": 168,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 168,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"io261231,io26114101,in05566b\"} ",
+      "Next": 163,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 169,
+      "Node": "{ \"BattleResultTalk\" : \"t1306502_249\"} ",
+      "Next": 174,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 170,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1306501_01b_99\", 0, 1, \"关巧儿陷入危机\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 171,
+      "Node": "{ \"BattleResultAddSecondaryGoal\" : \"bs1306501_01b_99\", \"Defeat the Corpse Zombie surrounding Guan Qiao'er and save Guan Qiao'er from death。\"} ",
+      "Next": 172,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 172,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bs1306501_01b_99\", 0} ",
+      "Next": 170,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 173,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bs1306501_01b_99\", 2} ",
+      "Next": 179,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 174,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in03006\", \"bt1306501_01b_Deuff_GuanInjured\", False} ",
+      "Next": 171,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 175,
+      "Node": "{ \"BattleResultTalk\" : \"t1306502_298\"} ",
+      "Next": 176,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 176,
+      "Node": "{ \"BattleResultRemoveUnit\" : \"in03006\", False} ",
+      "Next": 177,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 177,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bs1306501_01b_99\", 1} ",
+      "Next": 178,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 178,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1306501_01b_99\", 0, 2, \"关巧儿陷入危机：事件结束\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 179,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1306501_01b_99\", 0, 2, \"关巧儿陷入危机：事件结束\"} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []

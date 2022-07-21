@@ -1,0 +1,36 @@
+{
+  "EntryIndex": 0,
+  "Nodes": [
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 3,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"LoadScenesAction\" : \"S0602\", { 531.39370, 32.14802, 274.53340} , { 0.00000, 37.98731, 0.00000} , 1, False, 0, \"\", 1.00000} ",
+      "Next": 2,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 0, \"fe1306500_2_00a\"}  ], 0} , 1, 4} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe1306500_2_00a\"}  ], 0} , 5, -1} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 1, \"fe1306500_2_00b\"} ",
+      "Next": 1,
+      "Prallel": -1
+    }
+  ],
+  "Name": "m1306505_10：(发送点)山门>>一山"
+}

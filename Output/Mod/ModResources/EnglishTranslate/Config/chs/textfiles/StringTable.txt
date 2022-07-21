@@ -1,12 +1,3 @@
-02004001	互动介面	Enter
-02004002	互动介面	Dialogue
-02004003	互动介面	Use
-02004004	互动介面	View
-02004005	互动介面	Training
-02004006	互动介面	Study
-02004007	互动介面	Take
-02004008	互动介面	Investigate
-03003001	地名	Hall of Moral Perfection
 100001	文本	Saber
 100002	文本	Sword
 100003	文本	Polearm
@@ -245,8 +236,8 @@ Favorability_Rank_03		Schoolmate
 Favorability_Rank_04		Friend
 Favorability_Rank_05		Companion
 Favorability_Rank_06		Confidant
-Favorability_Rank_07		Sworn Sibling
-Favorability_Rank_Sp		Romantic Interest
+Favorability_Rank_07		<size=38>Sworn Sibling</size>
+Favorability_Rank_Sp		Lovers
 Forge_Condition	装备条件	Pre-req
 Forge_Level	锻造难度	Difficulty Lv
 General_Area	范围	Applied Area
@@ -273,7 +264,7 @@ General_Hurt	伤害	Damage
 General_Information	交友	Socialise
 General_Introduction	介绍	Info
 General_Inventory	行囊	Items
-General_LongAndShort	长短兵	<size=18>Polearm<br>Dagger</size>
+General_LongAndShort	长短兵	<size=18>Polearm<br>Fan</size>
 General_MartialArts	武学	Skills
 General_Medicine	药品	Medicine
 General_New	新	New
@@ -313,21 +304,21 @@ LoadingInterface0106	读取介面TIP	A special friendship event will be triggere
 LoadingInterface0107	读取介面TIP	A turn will not be consumed for the special friendship event if the criteria to Lv up a relationship is not met
 LoadingInterface0108	读取介面TIP	Sending gifts will not consume a turn
 LoadingInterface0109	读取介面TIP	It is more effective to practice a skill if you have hit the minimum stats requirement
-LoadingInterface0110	读取介面TIP	All work and no play makes Jack a dull boy. Practicing a skill when exhuasted will be counterproductive
+LoadingInterface0110	读取介面TIP	All work and no play makes Jack a dull boy. Practicing a skill when exhausted will be counterproductive
 LoadingInterface0111	读取介面TIP	Practicing the Four Arts will not only let you stand a chance to claim trophies in the Bi-annual Competitions but also trigger special events
 LoadingInterface0113	读取介面TIP	HP and Qi will not recover after each battle outside of the campus
 LoadingInterface0115	读取介面TIP	While in battles, Counter Attack extends to 2 grids
 LoadingInterface0117	读取介面TIP	There are 5 rounds in a month and 2 turns in each round
-LoadingInterface0120	读取介面TIP	If the hit rate is too low while attacking, it may trigger a fumble which reduces the damage.
+LoadingInterface0120	读取介面TIP	If the accuracy is too low while attacking, it may trigger a fumble which reduces the damage.
 LoadingInterface0121	读取介面TIP	Attacking from the back or the side will increase the Accuracy
-MartialArts_CurrentMantra	武学_当前心法	Current Inner Style
+MartialArts_CurrentMantra	武学_当前心法	Current Inner Arts 
 MartialArts_CurrentSkill	武学_当前技能	Current Skill
 MartialArts_PracticeEffect	修练效果	Practice Effect
 MartialArts_RunEffect	运行效果	Application Effect
-MartialArts_SetMantra	武学_配置心法	Apply Inner Style
+MartialArts_SetMantra	武学_配置心法	Apply Inner Arts 
 MartialArts_SetSkill	武学_配置技能	Set Skill
 Medicine_Browse	浏览持有药品	Browse Medications
-Mission001_MissionStart	使用Node：【动作/任务/开始任务】开始新任务时	“{0}”Event Began！
+Mission001_MissionStart	使用Node：【动作/任务/开始任务】开始新任务时	“{0}”Event Started！
 Mission002_MissionUpdate	使用Node：【动作/任务/接下一个任务or结束任务】更新任务阶段时	“{0}”Event Updated!
 Mission003_MissionComplete	使用Node：【动作/任务/接下一个任务or结束任务】且该任务有勾选“是否显示任务完成提示”时	“{0}”Event Completed!
 Number_01	数字1	1
@@ -401,16 +392,16 @@ PropsCategory404	道具小分类	Saber Skill Book
 PropsCategory405	道具小分类	Polearm Skill Book
 PropsCategory406	道具小分类	Short Range Skill Book
 PropsCategory407	道具小分类	Darts Skill Book
-PropsCategory408	道具小分类	Inner Style Skill Book
+PropsCategory408	道具小分类	Inner Arts  Skill Book
 PropsCategory409	道具小分类	Others
-PropsCategory411	道具小分类	Boxing Skill Book (Hall of Modesty)
-PropsCategory412	道具小分类	Kicks Skill Book (Hall of Modesty)
+PropsCategory411	道具小分类	Palm Skill Book (Hall of Modesty)
+PropsCategory412	道具小分类	Legs Skill Book (Hall of Modesty)
 PropsCategory413	道具小分类	Sword Skill Book (Hall of Modesty)
 PropsCategory414	道具小分类	Saber Skill Book (Hall of Modesty)
 PropsCategory415	道具小分类	Polearm Skill Book (Hall of Modesty)
 PropsCategory416	道具小分类	Short Range Skill Book (Hall of Modesty)
 PropsCategory417	道具小分类	Darts Skill Book (Hall of Modesty)
-PropsCategory418	道具小分类	Inner Style Skill Book (Hall of Modesty)
+PropsCategory418	道具小分类	Inner Arts Skill Book (Hall of Modesty)
 PropsCategory419	道具小分类	Others
 PropsCategory501	道具小分类	Medication
 PropsCategory502	道具小分类	Herbs
@@ -457,7 +448,7 @@ Repeat_08	重数八	Lv 8
 Repeat_09	重数九	Lv 9
 Repeat_10	重数十	Lv 10
 Reward10101_PropsAdd	道具增加	Acquired {1} {0}
-Reward10102_PropsLose	道具减少	Reduction of {0} by {1}
+Reward10102_PropsLose	道具减少	Lost {1} {0}
 Reward10201_MoneyAdd	金钱增加	Acquired {0} money
 Reward10202_MoneyLose	金钱减少	Spend {0} money
 Reward10301_TeammateJoin	队友增加	{0} joined the party
@@ -507,12 +498,12 @@ Reward30301_PlayerGetSkillExp	玩家获得某招式的经验值	The Skill “{0}
 Reward30401_NpcGetSkillExp	NPC获得某招式的经验值	{0}‘s Skill “{1}” has gained {2} experience
 Reward30501_PlayerSkillPowerUp	玩家的某招式被取代	You made progress in the Skill “{0}”
 Reward30601_NpcSkillPowerUp	NPC的某招式被取代	{0} made progress in the Skill “{1}”
-Reward30701_PlayerLearnMantra	玩家获得新心法	New Inner Style Learned “{0}”！
-Reward30801_NpcLearnMantra	NPC获得新心法	{0} learned new Inner Style “{1}”！
-Reward30901_PlayerGetMantraExp	玩家获得某心法的经验值	The Inner Style “{0}” has gained {1} experience
-Reward31001_NpcGetMantraExp	NPC获得某心法的经验值	{0}'s Inner Style “{1}” has gained {2} experience
-Reward31101_PlayerMantraPowerUp	玩家的某心法被取代	You made progress in the Inner Style “{0}”
-Reward31201_NpcMantraPowerUp	NPC的某心法被取代	{0} made progress in the Inner Style “{1}”
+Reward30701_PlayerLearnMantra	玩家获得新心法	New Inner Arts Learned “{0}”！
+Reward30801_NpcLearnMantra	NPC获得新心法	{0} learned new Inner Arts “{1}”！
+Reward30901_PlayerGetMantraExp	玩家获得某心法的经验值	The Inner Arts “{0}” has gained {1} experience
+Reward31001_NpcGetMantraExp	NPC获得某心法的经验值	{0}'s Inner Arts “{1}” has gained {2} experience
+Reward31101_PlayerMantraPowerUp	玩家的某心法被取代	You made progress in the Inner Arts “{0}”
+Reward31201_NpcMantraPowerUp	NPC的某心法被取代	{0} made progress in the Inner Arts “{1}”
 Reward31301_PlayerLearnUniqueSkill		Acquired new Special Skill “{0}”！！
 Reward31302_PlayerUniqueSkillPowerUp		You made progress in the Special Skill “{0}”
 Reward31401_NpcLearnUniqueSkill		{0} acquired new Special Skill “{1}”！！
@@ -551,8 +542,8 @@ SecondaryInterface0101	选课次级介面字符串	Are you sure you want to take
 SecondaryInterface0102	选课次级介面字符串	Criteria not met, please try again next time
 SecondaryInterface0103	选课介面	Elementary
 SecondaryInterface0104	选课介面	Intermediate
-SecondaryInterface0105	选课介面	Course Requirement
-SecondaryInterface0106	选课介面	Skills Learned
+SecondaryInterface0105	选课介面	<size=19>Course<br>Requirement</size>
+SecondaryInterface0106	选课介面	<size=19>Skills Learned</size>
 SecondaryInterface0107	选课介面	Course Description
 SecondaryInterface0108	选课介面	Teaching Master
 SecondaryInterface0109	选课介面	Confirm Course
@@ -576,7 +567,7 @@ SecondaryInterface0342	铁匠符合条件台词2	Good Choice! You will not be di
 SecondaryInterface0351	铁匠介面文本	Skill Lv
 SecondaryInterface0401	泛用商店的购买确认提示	Confirm Purchase?
 SecondaryInterface0402	泛用商店金钱不足提示	Insufficient Money
-SecondaryInterface0403	泛用商店持有数上限提示	Max inventory for current item
+SecondaryInterface0403	泛用商店持有数上限提示	Limit reached, can't carry more!
 SecondaryInterface0404	泛用商店的购买确认提示	Select Amount
 SecondaryInterface0405	泛用商店文本	Total
 SecondaryInterface0406	泛用商店文本	Wallet
@@ -599,19 +590,19 @@ SecondaryInterface0705	招式范围叙述溅射	Affecting {0} steps around
 SecondaryInterface0706	招式范围叙述	Ownself
 SecondaryInterface0707	招式范围叙述	Donut
 SecondaryInterface0708	招式范围叙述	Line
-SecondaryInterface0801	养成介面交友即将升阶提示	Relationship at Lv {0}, progression available
-SecondaryInterface0802	养成介面交友提示	Relationship at Lv {0}
+SecondaryInterface0801	养成介面交友即将升阶提示	<size=22>Relationship Lv. {0}, Upgrade available</size>
+SecondaryInterface0802	养成介面交友提示	<size=22>Relationship Lv. {0}</size>
 SecondaryInterface0803	赠送礼物键	Send Gifts
 SecondaryInterface0804	出游键	Outings
 SecondaryInterface0805	出游tip01	Get closer
-SecondaryInterface0806	出游tip02	Energy +10
+SecondaryInterface0806	出游tip02(1~3阶)	Energy +5
 SecondaryInterface0807	赠送礼物tip01	Get closer
 SecondaryInterface0808	好友等级	Friendship
 SecondaryInterface0809	好友各阶能力	Ability
 SecondaryInterface0810	好友升阶提示	<color=#FFFF00>Affection level increased!</color>
 SecondaryInterface0811	交友介面标签	Not in the Pavilion
 SecondaryInterface0901	武学介面无技能可替换提示。	No Skills acquired yet
-SecondaryInterface0902	武学介面无心法可替换提示	No Inner Styles acquired yet
+SecondaryInterface0902	武学介面无心法可替换提示	No Inner Arts acquired yet
 SecondaryInterface0903	武学介面无心法可替换提示	Cannot change friend's skill or inner style.
 SecondaryInterface1001	四艺四轴养成指令TIP标题	Application Effect
 SecondaryInterface1002	招式养成指令TIP标题	Foundation Skill Criteria
@@ -636,8 +627,8 @@ SecondaryInterface1205	战斗按键TIP	Turn
 SecondaryInterface1206	战斗按键TIP，待机回10％（未移动）～5％（移动後）	<size=19>End turn. Recover Qi slightly.</size>
 SecondaryInterface1207	战斗按键TIP	Insufficient Qi
 SecondaryInterface1208	主角特技按键TIP	Element changed to <color=#FF0000>金</color>. Attacking from the back will trigger Critical Hit. Attacking from the side will increase Critical rate by 25%.
-SecondaryInterface1209	主角特技按键TIP	Element changed to <color=#FF0000>木</color>. In this turn, 100% Dodge on all attacks except Critical Hit.
-SecondaryInterface1210	主角特技按键TIP	Element changed to <color=#FF0000>水</color>. Remove all negative status effect. Restore 15% HP. Restore 25% Qi.
+SecondaryInterface1209	主角特技按键TIP	Element changed to <color=#FF0000>木</color>. In this turn, Dodge all attacks except critical hit.
+SecondaryInterface1210	主角特技按键TIP	Element changed to <color=#FF0000>水</color>. Remove all negative status effect. Restore 15% HP and 25% Qi.
 SecondaryInterface1211	主角特技按键TIP	Element changed to <color=#FF0000>火</color>. In this turn, Attack damage +25%. Parry all incoming attack.
 SecondaryInterface1212	主角特技按键TIP	Element changed to <color=#FF0000>土</color>. In this turn, Counter attack rate +50%, Counter Attack range + 1, and 50% chance to Counter Attack for an ally that took damage.
 SecondaryInterface1213	主角特技按键TIP	Five Elements
@@ -665,7 +656,7 @@ SecondaryInterface1404	招式说明TIP（武学介面与战斗）	Attack Area
 SecondaryInterface1405	招式说明TIP（武学介面与战斗）	Cooldown Time
 SecondaryInterface1406	招式说明TIP（武学介面与战斗）	Effect
 SecondaryInterface1501	包包无礼品	No appropriate Gift in Inventory
-SecondaryInterface1502	赠送确认介面	Confirming gifting {0} to {1}?
+SecondaryInterface1502	赠送确认介面	Confirm giving {0} to {1}?
 SecondaryInterface1601	贩售介面文本	Out of Stock
 SecondaryInterface1602	贩售介面文本	Amount to Sell
 SecondaryInterface1603	贩售介面文本	Are you sure you want to sell {1} {0}?
@@ -702,12 +693,12 @@ SecondaryInterface1904	好感阶级	Affection Lv 4
 SecondaryInterface1905	好感阶级	Affection Lv 5
 SecondaryInterface1906	好感阶级	Affection Lv 6
 SecondaryInterface1907	好感阶级	Affection Lv 7
-SecondaryInterface2001	整备介面文本	Confirm Proceed？
-SecondaryInterface2002	整备介面文本	Adv Element
-SecondaryInterface2003	整备介面文本	Disadv Element
+SecondaryInterface2001	整备介面文本	Confirm Selection？
+SecondaryInterface2002	整备介面文本	<size=17>Adv Element</size>
+SecondaryInterface2003	整备介面文本	<size=16>Disadv Element</size>
 SecondaryInterface2004	整备介面文本	Empty
 SecondaryInterface2005	整备介面文本	<size=22>Change<br>Equipment</size>
-SecondaryInterface2006	整备介面文本	Can't leave Party
+SecondaryInterface2006	整备介面文本	<size=19>Can't<br>leave Party</size>
 SecondaryInterface2007	整备介面文本	GO!
 SecondaryInterface2008	整备介面文本	Preparation
 SecondaryInterface2009	整备介面文本	Min Party size：{0} People
@@ -716,7 +707,7 @@ SecondaryInterface2011	整备介面文本	Lose Condition:
 SecondaryInterface2012	整备介面文本	Still Needs {0} Additional Party Members
 SecondaryInterface2101	存盘介面文本	Save Game
 SecondaryInterface2102	存盘介面文本	Load Game
-SecondaryInterface2103	存盘介面文本	Save
+SecondaryInterface2103	存盘介面文本	Cloud Save
 SecondaryInterface2104	存盘介面文本	Auto Save
 SecondaryInterface2105	存盘介面文本	New
 SecondaryInterface2106	存盘介面文本	Overwrite?
@@ -754,7 +745,7 @@ SecondaryInterface2411	游戏选单	BACK TO TITLE SCREEN
 SecondaryInterface2412	游戏选单	Load Game?
 SecondaryInterface2413	游戏标题	Current Version： {0}
 SecondaryInterface2414	选单文本	RESTART BATTLE
-SecondaryInterface2415	游戏标题	Do you want to restart this battle? The current progress will not be retained.
+SecondaryInterface2415	游戏标题	Restart this battle? Current progress will not be saved.
 SecondaryInterface2501	人物状态	Traits
 SecondaryInterface2601	创角介面	There are still Basic Skills points {0} and Traits points {1} unassigned, leave？
 SecondaryInterface2602	创角介面	There are still Basic Skills {0} points unassigned, leave？
@@ -806,10 +797,10 @@ SecondaryInterface2819	系统设置介面	Off
 SecondaryInterface2820	系统设置介面	Five Elements<br>Counter Chart
 SecondaryInterface2821	系统设置介面	You have to restart the game for Language change to take effect, do you want to save the change and close the immediately?
 SecondaryInterface2822	系统设置介面	Status<br>Display Button
-SecondaryInterface2823	系统设置介面	Battle Animation
-SecondaryInterface2824	系统设置介面	Skip
-SecondaryInterface2825	系统设置介面	Enabled
-SecondaryInterface2901	抢先体验声明	Dear players, thank you for your support of "The Way of Chivalry". Currently, "The Way of Chivalry" is in the early access stage. You will be able to play the content of the first to second year of the game. <br> During the game, you may encounter some BUGs that affect your gaming experience. I hope you can provide your feedback and suggestions on Steam forums, post bars, FB and other platforms. According to your valuable comments, we will continue to repair and strengthen the BUG and deficiencies in the game while updating the content of the subsequent school year. <br> Once again, I sincerely thank every player who is willing to support us at this stage. I hope this work can also bring you the fun and fantasy of the martial arts world.
+SecondaryInterface2823	系统设置介面	Battle Animation Skipping
+SecondaryInterface2824	系统设置介面	On
+SecondaryInterface2825	系统设置介面	Off
+SecondaryInterface2901	抢先体验声明	Dear players, thank you for your support of "Path of Wuxia". Currently, "Path of Wuxia" is in the early access stage. You will be able to play the content of the first to second year of the game. <br> During the game, you may encounter some BUGs that affect your gaming experience. I hope you can provide your feedback and suggestions on Steam forums, post bars, FB and other platforms. According to your valuable comments, we will continue to repair and strengthen the bug and deficiencies in the game while updating the content of the subsequent school year. <br> Once again, I sincerely thank every player who is willing to support us at this stage. I hope this work can also bring you the fun and fantasy of the martial arts world.
 SecondaryInterface2902	抢先体验声明	Heluo Studio
 SecondaryInterface2903	抢先体验声明	Press Any Key to Continue
 SecondaryInterface3001	图象设置	Video Setting
@@ -910,7 +901,7 @@ SecondaryInterface3207	MOD介面	This Mod conflict with the current version, thi
 SecondaryInterface3208	MOD介面	Open the linked page?
 SecondaryInterface3209	MOD介面	Enter Steam Workshop?
 SecondaryInterface3210	MOD介面	This Mod require the program to be restarted to take effect, restart now? 
-SecondaryInterface3301	MOVIE加速	Quick Play
+SecondaryInterface3301	MOVIE加速	Fast Forward
 SecondaryInterface3302	MOVIE加速	Normal Speed
 SecondaryInterface3401	操作说明	＝Return
 SecondaryInterface3402	操作说明	＝Confirm
@@ -993,22 +984,22 @@ SecondaryInterface3903	难度选择介面	Hard
 SecondaryInterface3904	难度选择介面	Normal
 SecondaryInterface3905	难度选择介面	Chill
 SecondaryInterface3906	难度选择介面	Hell Difficulty, Enemies will be ruthless and merciless.
-SecondaryInterface3907	难度选择介面	Hard Difficulty, Suitable for players who likes a challenge!
-SecondaryInterface3908	难度选择介面	Normal Difficulty, Suitable for players who has a basic grasp of the simulation aspect of the game.
+SecondaryInterface3907	难度选择介面	Hard Difficulty, Suitable for players who likes a challenge in managing and strategy.
+SecondaryInterface3908	难度选择介面	Normal Difficulty, Suitable for players who has a basic grasp of the simulation aspect of the game and first time players.
 SecondaryInterface3909	难度选择介面	Easy Diffculty, suitable for players who wish to enjoy the story.
-SecondaryInterface3910	难度选择介面	You will not be able to change the diffculty of the game once you begins! Selected Difficulty : {0} , proceed?
+SecondaryInterface3910	难度选择介面	Cannot change the difficulty of the game once you begin, difficulty will not affect plot!<br>Selected Difficulty : {0} . Proceed?
 Unit_First	单位(第)	No.
 Unit_Month	单位(月)	Mth
 Unit_Year	单位(年)	Yr
 SecondaryInterface2826	系统设置介面	Do you want to save the changes and close the game? If you do not close the game, some changes will be restored.
 Reward50601_FriendshipLover	与好友成为恋人时	You became lovers with {0}!
-SecondaryInterface0812	交友介面标签	The friendliness level has reached Max, no need to raise it further.
+SecondaryInterface0812	交友介面标签	Friendlship has reached Max, no need to raise it further.
 SecondaryInterface1222	上官煦特技名	Moon Obsidian Goa
-SecondaryInterface1223	掷碗展帜TIP	Friendly attack Damage +10% on the field, Damage -10% on the attack
+SecondaryInterface1223	掷碗展帜TIP	Friendly units deals and recieves 10% more damage.
 SecondaryInterface1224	朔寒征杀TIP	When moving ignore the enemy control range (ZOC), attack Damage +50%, Damage +50%, Every round HP-10%, HP 60% or less, Every round additional SelfOnslaught2 heavy
 SecondaryInterface1225	孤关伏兕TIP	Attack Damage-50%, Attack Damage-20%, Counterattack and Counterattack Damage+50%. every roundQi-15%, Every roundHP+10% when Qi is greater than 15%.
 SecondaryInterface2416	开发人员名单	List of Developers
-SecondaryInterface2827	系统设置介面	Stance acceleration
+SecondaryInterface2827	系统设置介面	Animation Acceleration
 SecondaryInterface2828	系统设置介面	Original speed
 SecondaryInterface2829	系统设置介面	2X
 SecondaryInterface2830	系统设置介面	5X
@@ -1016,15 +1007,15 @@ SecondaryInterface4001	战斗布阵	Deploy Characters
 SecondaryInterface4002	战斗布阵	Number of deployables
 SecondaryInterface4003	战斗布阵	Deployed
 SecondaryInterface4004	战斗布阵	Deployment complete
-SecondaryInterface4005	战斗布阵	There are {0} spots left to deploy, do you enter combat?
-SecondaryInterface4006	战斗布阵	Is deployment complete and entering combat?
-SecondaryInterface4007	战斗布阵	The number of participants in the war has reached the deployment ceiling
-SecondaryInterface4008	战斗布阵	Key to select a character
-SecondaryInterface4009	战斗布阵	Key selection position
-SecondaryInterface4010	战斗布阵	Perform confirmation
-SecondaryInterface4011	战斗布阵	View information about the characters on the field
-SecondaryInterface4012	战斗布阵	There are still {0} roles that must be deployed.
-SecondaryInterface4013	战斗布阵	Key to select the direction
+SecondaryInterface4005	战斗布阵	There are {0} spots left to deploy, enter combat?
+SecondaryInterface4006	战斗布阵	Confirm deployments and start combat?
+SecondaryInterface4007	战斗布阵	Deployment Limit Reached 
+SecondaryInterface4008	战斗布阵	Select Character
+SecondaryInterface4009	战斗布阵	Select Position
+SecondaryInterface4010	战斗布阵	Confirm Selection
+SecondaryInterface4011	战斗布阵	Character Info
+SecondaryInterface4012	战斗布阵	{0} characters left that must be deployed
+SecondaryInterface4013	战斗布阵	Choose Direction
 SecondaryInterface4020	传书介面机关人替换文本肯定	...........
 SecondaryInterface4021	传书介面机关人替换文本否定	......................
 SecondaryInterface2831	系统设置介面	Standby to choose the direction
@@ -1060,7 +1051,7 @@ JoyButtonXBoxId12	按键设置手把按键13	Handlebar button 13
 JoyButtonXBoxId13	按键设置手把按键14	Handlebar button 14
 JoyButtonXBoxId14	按键设置手把按键15	Handlebar button 15
 JoyButtonXBoxId15	按键设置手把按键16	Handlebar button 16
-SecondaryInterface1226	战斗按键文本	All on standby
+SecondaryInterface1226	战斗按键文本	Party Standby
 SecondaryInterface1227	战斗按键文本	Put all characters on standby and end the turn?
 SecondaryInterface2117	存盘介面文本	Local storage
 SecondaryInterface2118	存盘介面文本	Combat Autosave
@@ -1068,4 +1059,23 @@ SecondaryInterface2626	创角介面	<size=29>New Student Name</size>
 SecondaryInterface2627	创角介面	<size=27>Please enter your first name and last name</size>
 SecondaryInterface2628	创角介面	<size=24>First<br>Name</size>
 SecondaryInterface2629	创角介面	<size=24>Last<br>Name</size>
-SecondaryInterface3178	按键设置	One Click Full Standby
+SecondaryInterface3178	按键设置	Full Party Standby
+SecondaryInterface0813	出游tip02(4~5阶)	Energy +10
+SecondaryInterface0814	出游tip02(6~7阶)	Energy +15
+SecondaryInterface1105	养成介面效果加乘提示	Exercise bonus!
+SecondaryInterface1106	养成介面效果加乘提示	Martial arts training bouns!
+SecondaryInterface1107	养成介面效果加乘提示	Art effect bonus!
+SecondaryInterface1108	养成介面效果加乘提示	Task bonus!
+SecondaryInterface1109	养成介面效果加乘提示	Number of remaining medicine bath buffs: {0}
+SecondaryInterface1110	养成介面效果加乘提示	Exercise, martial arts training, arts, outing and, Task effects are enhanced!
+SecondaryInterface1111	养成介面	(Total value: {0})
+SecondaryInterface2209	阅读介面文本	Your energy is too low to understand the content of the tome.
+ta02004001	互动介面	Enter
+ta02004002	互动介面	Conversation
+ta02004003	互动介面	Use
+ta02004004	互动介面	View
+ta02004005	互动介面	Practice
+ta02004006	互动介面	study
+ta02004007	互动介面	Pickup
+ta02004008	互动介面	Survey
+ta03003001	地名	Flawless Hall

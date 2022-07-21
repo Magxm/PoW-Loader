@@ -7,7 +7,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"LoadScenesAction\" : \"S1301\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0, \"In_mood_18.wav\"} ",
+      "Node": "{ \"LoadScenesAction\" : \"S1301\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0, \"In_mood_18.wav\", 1.00000} ",
       "Next": 3,
       "Prallel": -1
     },
@@ -39,7 +39,7 @@
     {
       "Node": "{ \"CameraTransformAction\" : True, { 333.14000, 27.55000, 362.17000} , 0.00000, True, { 340.82100, 266.65400, 0.00000} , 0.00000, 45} ",
       "Next": -1,
-      "Prallel": -1
+      "Prallel": 19
     },
     {
       "Node": "{ \"CameraTransformAction\" : True, { 330.99000, 27.55000, 361.95000} , 7.00000, True, { 340.82100, 266.65400, 0.00000} , 7.00000, 45} ",
@@ -94,6 +94,11 @@
     {
       "Node": "{ \"ChangeCharacterProtraitAndModel\" : \"in0104\", True, \"in01041\", False, \"\"} ",
       "Next": 17,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayerTransformAction\" : True, { 452.06550, 39.06875, 291.13050} , True, { 0.00000, 0.00000, 0.00000} } ",
+      "Next": -1,
       "Prallel": -1
     }
   ],

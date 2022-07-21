@@ -9,13 +9,16 @@
       "Prallel": -1,
       "Child": [
         7,
+        198,
+        142,
         1,
         2,
         3,
         4,
         5,
         6,
-        8
+        8,
+        141
       ]
     },
     {
@@ -63,14 +66,14 @@
     {
       "Index": 7,
       "Node": "{ \"ExecuteOnceNode\" } ",
-      "Next": 1,
+      "Next": 198,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 8,
       "Node": "{ \"BattleResultExitPoint\" : \"209209118\"} ",
-      "Next": -1,
+      "Next": 141,
       "Prallel": -1,
       "Child": []
     },
@@ -470,6 +473,7 @@
         57,
         101,
         140,
+        197,
         58,
         59,
         60,
@@ -1138,7 +1142,474 @@
     {
       "Index": 140,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"fg101100601_03\", \"还没全灭\"} ",
+      "Next": 197,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 141,
+      "Node": "{ \"BattleResultTreasurePoint\" : \"109101210\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 142,
+      "Node": "{ \"SetDropRewardProbability\" : 100.00000} ",
+      "Next": 1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 143,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 144,
+      "Prallel": -1,
+      "Child": [
+        144
+      ]
+    },
+    {
+      "Index": 144,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 145,
+      "Prallel": -1,
+      "Child": [
+        145,
+        148,
+        146,
+        147,
+        149
+      ]
+    },
+    {
+      "Index": 145,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"109101210\", \"in0110\"} ",
+      "Next": 148,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 146,
+      "Node": "{ \"BattleResultAddReward\" : \"re1011006_01\"} ",
+      "Next": 147,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 147,
+      "Node": "{ \"BattleResultRemoveTreasurePoint\" : \"109101210\"} ",
+      "Next": 149,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 148,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bf101100601_01\", \"是否挖过宝藏\"} ",
+      "Next": 146,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 149,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bf101100601_01\", 0, 1, \"挖过宝藏\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 150,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 151,
+      "Prallel": -1,
+      "Child": [
+        151
+      ]
+    },
+    {
+      "Index": 151,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 152,
+      "Prallel": -1,
+      "Child": [
+        152,
+        153,
+        154,
+        155,
+        156
+      ]
+    },
+    {
+      "Index": 152,
+      "Node": "{ \"BattleFactorCharacterTile\" : \"109101210\", \"Player\"} ",
+      "Next": 153,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 153,
+      "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"bf101100601_01\", \"是否挖过宝藏\"} ",
+      "Next": 154,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 154,
+      "Node": "{ \"BattleResultAddReward\" : \"re1011006_01\"} ",
+      "Next": 155,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 155,
+      "Node": "{ \"BattleResultRemoveTreasurePoint\" : \"109101210\"} ",
+      "Next": 156,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 156,
+      "Node": "{ \"SetLocalFlagBattleAction\" : \"bf101100601_01\", 0, 1, \"挖过宝藏\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 157,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 158,
+      "Prallel": -1,
+      "Child": [
+        158
+      ]
+    },
+    {
+      "Index": 158,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 159,
+      "Prallel": -1,
+      "Child": [
+        159,
+        164,
+        160,
+        161,
+        162,
+        163,
+        165
+      ]
+    },
+    {
+      "Index": 159,
+      "Node": "{ \"BattleFactorTurn\" : 1, 2} ",
+      "Next": 164,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 160,
+      "Node": "{ \"BattleResultAddUnit\" : \"in64011\", 1, 105104209, 1.00000, 0.00000} ",
+      "Next": 161,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 161,
+      "Node": "{ \"BattleResultAddUnit\" : \"in64013\", 1, 103105208, 1.00000, 0.00000} ",
+      "Next": 162,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 162,
+      "Node": "{ \"BattleResultAddUnit\" : \"in64014\", 1, 105102207, 1.00000, 0.00000} ",
+      "Next": 163,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 163,
+      "Node": "{ \"BattleResultAddUnit\" : \"in64021\", 1, 107102209, 1.00000, 0.00000} ",
+      "Next": 165,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 164,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 160,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 165,
+      "Node": "{ \"BattleResultTalk\" : \"t1011006_249\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 166,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 167,
+      "Prallel": -1,
+      "Child": [
+        167
+      ]
+    },
+    {
+      "Index": 167,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 168,
+      "Prallel": -1,
+      "Child": [
+        168,
+        169,
+        170,
+        171,
+        172,
+        173
+      ]
+    },
+    {
+      "Index": 168,
+      "Node": "{ \"BattleFactorTurn\" : 1, 5} ",
+      "Next": 169,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 169,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 170,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 170,
+      "Node": "{ \"BattleResultAddUnit\" : \"in64011\", 1, 105104209, 1.00000, 0.00000} ",
+      "Next": 171,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 171,
+      "Node": "{ \"BattleResultAddUnit\" : \"in64013\", 1, 103105208, 1.00000, 0.00000} ",
+      "Next": 172,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 172,
+      "Node": "{ \"BattleResultAddUnit\" : \"in64014\", 1, 105102207, 1.00000, 0.00000} ",
+      "Next": 173,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 173,
+      "Node": "{ \"BattleResultAddUnit\" : \"in64021\", 1, 107102209, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 174,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 175,
+      "Prallel": -1,
+      "Child": [
+        175
+      ]
+    },
+    {
+      "Index": 175,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 176,
+      "Prallel": -1,
+      "Child": [
+        176,
+        177,
+        178,
+        179,
+        180,
+        181
+      ]
+    },
+    {
+      "Index": 176,
+      "Node": "{ \"BattleFactorTurn\" : 1, 8} ",
+      "Next": 177,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 177,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 178,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 178,
+      "Node": "{ \"BattleResultAddUnit\" : \"in64011\", 1, 105104209, 1.00000, 0.00000} ",
+      "Next": 179,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 179,
+      "Node": "{ \"BattleResultAddUnit\" : \"in64013\", 1, 103105208, 1.00000, 0.00000} ",
+      "Next": 180,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 180,
+      "Node": "{ \"BattleResultAddUnit\" : \"in64014\", 1, 105102207, 1.00000, 0.00000} ",
+      "Next": 181,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 181,
+      "Node": "{ \"BattleResultAddUnit\" : \"in64021\", 1, 107102209, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 182,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 183,
+      "Prallel": -1,
+      "Child": [
+        183
+      ]
+    },
+    {
+      "Index": 183,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 184,
+      "Prallel": -1,
+      "Child": [
+        184,
+        185,
+        186,
+        187,
+        188,
+        189
+      ]
+    },
+    {
+      "Index": 184,
+      "Node": "{ \"BattleFactorTurn\" : 1, 11} ",
+      "Next": 185,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 185,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 186,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 186,
+      "Node": "{ \"BattleResultAddUnit\" : \"in64011\", 1, 105104209, 1.00000, 0.00000} ",
+      "Next": 187,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 187,
+      "Node": "{ \"BattleResultAddUnit\" : \"in64013\", 1, 103105208, 1.00000, 0.00000} ",
+      "Next": 188,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 188,
+      "Node": "{ \"BattleResultAddUnit\" : \"in64014\", 1, 105102207, 1.00000, 0.00000} ",
+      "Next": 189,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 189,
+      "Node": "{ \"BattleResultAddUnit\" : \"in64021\", 1, 107102209, 1.00000, 0.00000} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 190,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 191,
+      "Prallel": -1,
+      "Child": [
+        191
+      ]
+    },
+    {
+      "Index": 191,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 192,
+      "Prallel": -1,
+      "Child": [
+        192,
+        193,
+        194,
+        195,
+        196
+      ]
+    },
+    {
+      "Index": 192,
+      "Node": "{ \"BattleFactorTurn\" : 1, 14} ",
+      "Next": 193,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 193,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 194,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 194,
+      "Node": "{ \"BattleResultCameraMoveCell\" : \"105104209\", 0.00000, 8.00000} ",
+      "Next": 195,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 195,
+      "Node": "{ \"BattleResultWaitAction\" : 3.00000} ",
+      "Next": 196,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 196,
+      "Node": "{ \"BattleResultTalk\" : \"t1011006_250\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 197,
+      "Node": "{ \"BattleFactorTurn\" : 0, 14} ",
       "Next": 58,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 198,
+      "Node": "{ \"SetIsDropReward\" : True} ",
+      "Next": 142,
       "Prallel": -1,
       "Child": []
     }

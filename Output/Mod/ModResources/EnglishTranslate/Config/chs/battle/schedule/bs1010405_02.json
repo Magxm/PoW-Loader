@@ -1,0 +1,769 @@
+{
+  "Id": "bs1010405_02",
+  "Name": "",
+  "Infos": [
+    {
+      "Index": 0,
+      "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
+      "Next": 1,
+      "Prallel": -1,
+      "Child": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "Index": 1,
+      "Node": "{ \"BattleResultAddUnit\" : \"in05445\", 1, 108202206, 1.00000, 0.00000} ",
+      "Next": 2,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 2,
+      "Node": "{ \"BattleResultAddUnits\" : \"party00,in0104,in11034\", 0, \"110200210,108103211,107106213\"} ",
+      "Next": 3,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 3,
+      "Node": "{ \"BattleResultAddUnits\" : \"in05441,in05442,in05443,in05444,in05461\", 4, \"103117220,103109212,203110207,203105202,205117212\"} ",
+      "Next": 4,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 4,
+      "Node": "{ \"BattleResultAddFactionBuff\" : True, 4, \"bf1010405_nomoveparty\", True} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 5,
+      "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
+      "Next": 6,
+      "Prallel": -1,
+      "Child": [
+        6
+      ]
+    },
+    {
+      "Index": 6,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 7,
+      "Prallel": -1,
+      "Child": [
+        7,
+        8,
+        88,
+        9,
+        10,
+        89,
+        90,
+        91,
+        11,
+        92,
+        93,
+        12
+      ]
+    },
+    {
+      "Index": 7,
+      "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
+      "Next": 8,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 8,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 88,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 9,
+      "Node": "{ \"BattleResultTalk\" : \"t1010405_608\"} ",
+      "Next": 10,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 10,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 89,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 11,
+      "Node": "{ \"BattleResultTalk\" : \"t1010405_208\"} ",
+      "Next": 92,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 12,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in05445\", \"in05445_buff01\", True} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 13,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 14,
+      "Prallel": -1,
+      "Child": [
+        14
+      ]
+    },
+    {
+      "Index": 14,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 15,
+      "Prallel": -1,
+      "Child": [
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "Index": 15,
+      "Node": "{ \"BattleAttackUnitCondition\" : \"party00\", \"in05445\"} ",
+      "Next": 16,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 16,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1010406_2_08\", \"主人公／萧芊菱是否攻击？\"} ",
+      "Next": 17,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 17,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 18,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 18,
+      "Node": "{ \"BattleResultTalk\" : \"t1010405_214\"} ",
+      "Next": 19,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 19,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1010406_2_08\", 0, 1, \"主人公／萧芊菱是否攻击？_是\"} ",
+      "Next": 20,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 20,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0104\", \"bf1010405_in0104\", True} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 21,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 22,
+      "Prallel": -1,
+      "Child": [
+        22
+      ]
+    },
+    {
+      "Index": 22,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 23,
+      "Prallel": -1,
+      "Child": [
+        23,
+        24,
+        25,
+        26,
+        27,
+        28
+      ]
+    },
+    {
+      "Index": 23,
+      "Node": "{ \"BattleAttackUnitCondition\" : \"in0104\", \"in05445\"} ",
+      "Next": 24,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 24,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1010406_2_08\", \"主人公／萧芊菱是否攻击？\"} ",
+      "Next": 25,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 25,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 26,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 26,
+      "Node": "{ \"BattleResultTalk\" : \"t1010405_214\"} ",
+      "Next": 27,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 27,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1010406_2_08\", 0, 1, \"主人公／萧芊菱是否攻击？_是\"} ",
+      "Next": 28,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 28,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0104\", \"bf1010405_in0104\", True} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 29,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 30,
+      "Prallel": -1,
+      "Child": [
+        30
+      ]
+    },
+    {
+      "Index": 30,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 31,
+      "Prallel": -1,
+      "Child": [
+        31,
+        32,
+        33,
+        34,
+        35
+      ]
+    },
+    {
+      "Index": 31,
+      "Node": "{ \"BattleAttackUnitCondition\" : \"in11034\", \"in05445\"} ",
+      "Next": 32,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 32,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1010406_2_09\", \"阿琉是否攻击\"} ",
+      "Next": 33,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 33,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 34,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 34,
+      "Node": "{ \"BattleResultTalk\" : \"t1010405_230\"} ",
+      "Next": 35,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 35,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1010406_2_09\", 0, 1, \"阿琉是否攻击？_是\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 36,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 37,
+      "Prallel": -1,
+      "Child": [
+        37
+      ]
+    },
+    {
+      "Index": 37,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 38,
+      "Prallel": -1,
+      "Child": [
+        38,
+        39,
+        40,
+        41,
+        42
+      ]
+    },
+    {
+      "Index": 38,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1010406_2_10\", \"主人公／萧芊菱其中一人是否阵亡\"} ",
+      "Next": 39,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 39,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"party00\"} ",
+      "Next": 40,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 40,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 41,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 41,
+      "Node": "{ \"BattleResultTalk\" : \"t1010405_271\"} ",
+      "Next": 42,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 42,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1010406_2_10\", 0, 1, \"主人公／萧芊菱其中一人是否阵亡_是\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 43,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 44,
+      "Prallel": -1,
+      "Child": [
+        44
+      ]
+    },
+    {
+      "Index": 44,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 45,
+      "Prallel": -1,
+      "Child": [
+        45,
+        46,
+        47,
+        48,
+        49
+      ]
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1010406_2_10\", \"主人公／萧芊菱其中一人是否阵亡\"} ",
+      "Next": 46,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0104\"} ",
+      "Next": 47,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 48,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"BattleResultTalk\" : \"t1010405_259\"} ",
+      "Next": 49,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1010406_2_10\", 0, 1, \"主人公／萧芊菱其中一人是否阵亡_是\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 51,
+      "Prallel": -1,
+      "Child": [
+        51
+      ]
+    },
+    {
+      "Index": 51,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 52,
+      "Prallel": -1,
+      "Child": [
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58
+      ]
+    },
+    {
+      "Index": 52,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1010406_2_10\", \"主人公／萧芊菱其中一人是否阵亡_是\"} ",
+      "Next": 53,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 53,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"party00\"} ",
+      "Next": 54,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 54,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 0} ",
+      "Next": 55,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 55,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 56,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 56,
+      "Node": "{ \"BattleResultTalk\" : \"t1010405_283\"} ",
+      "Next": 57,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 57,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1010406_2_04\", 0, 2, \"主人公、萧芊菱落败(接续失败01\"} ",
+      "Next": 58,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 58,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 59,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 60,
+      "Prallel": -1,
+      "Child": [
+        60
+      ]
+    },
+    {
+      "Index": 60,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 61,
+      "Prallel": -1,
+      "Child": [
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67
+      ]
+    },
+    {
+      "Index": 61,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1010406_2_10\", \"主人公／萧芊菱其中一人是否阵亡_是\"} ",
+      "Next": 62,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 62,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in0104\"} ",
+      "Next": 63,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 63,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 0} ",
+      "Next": 64,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 64,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 65,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 65,
+      "Node": "{ \"BattleResultTalk\" : \"t1010405_267\"} ",
+      "Next": 66,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 66,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1010406_2_04\", 0, 2, \"主人公、萧芊菱落败(接续失败01\"} ",
+      "Next": 67,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 67,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 68,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 69,
+      "Prallel": -1,
+      "Child": [
+        69
+      ]
+    },
+    {
+      "Index": 69,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 70,
+      "Prallel": -1,
+      "Child": [
+        70,
+        71,
+        72,
+        73,
+        74,
+        75
+      ]
+    },
+    {
+      "Index": 70,
+      "Node": "{ \"BattleAttackUnitCondition\" : \"in05445\", \"in11034\"} ",
+      "Next": 71,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 71,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in11034\"} ",
+      "Next": 72,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 72,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 73,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 73,
+      "Node": "{ \"BattleResultTalk\" : \"t1010405_295\"} ",
+      "Next": 74,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 74,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1010406_2_04\", 0, 4, \"战斗失败０３（阿琉因窃酒贼战败\"} ",
+      "Next": 75,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 75,
+      "Node": "{ \"BattleResultLose\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 76,
+      "Node": "{ \"BattleEventNode\" : 500, 0, [ ]} ",
+      "Next": 77,
+      "Prallel": -1,
+      "Child": [
+        77
+      ]
+    },
+    {
+      "Index": 77,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 78,
+      "Prallel": -1,
+      "Child": [
+        78,
+        79,
+        80,
+        81,
+        83,
+        82
+      ]
+    },
+    {
+      "Index": 78,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 79,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 79,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 0, \"fe1010406_2_11\", \"窃酒贼是否阵亡_是(0时触发对话\"} ",
+      "Next": 80,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 80,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 81,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 81,
+      "Node": "{ \"BattleResultTalk\" : \"t1010405_601\"} ",
+      "Next": 83,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 82,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 83,
+      "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1010406_2_04\", 0, 1, \"战斗成功\"} ",
+      "Next": 82,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 84,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 85,
+      "Prallel": -1,
+      "Child": [
+        85
+      ]
+    },
+    {
+      "Index": 85,
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 4, \"fe1010406_2_02\", \"是否调查全部尸体_是\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 86,
+      "Node": "{ \"BattleBranchNode\" : 1, 1, True, \"fe1010406_2_02\", \"调查完第一具尸体\", 87, 84} ",
+      "Next": 87,
+      "Prallel": 84,
+      "Child": []
+    },
+    {
+      "Index": 87,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 88,
+      "Node": "{ \"BattleResultUnitToUnit\" : \"in11034\", \"in05441\"} ",
+      "Next": 9,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 89,
+      "Node": "{ \"BattleResultMoveUnit\" : \"in11034\", \"107106213\"} ",
+      "Next": 90,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 90,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in11034\", \"bt1010405_in11034\", False} ",
+      "Next": 91,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 91,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 11,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 92,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in11034\", \"bt1010405_in11034\", False} ",
+      "Next": 93,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 93,
+      "Node": "{ \"BattleResultWaitAction\" : 0.50000} ",
+      "Next": 12,
+      "Prallel": -1,
+      "Child": []
+    }
+  ],
+  "Remark": "",
+  "WinTip": "Defeat all enemies",
+  "LoseTip": "All friendly units are defeated or Aliu is defeated"
+}

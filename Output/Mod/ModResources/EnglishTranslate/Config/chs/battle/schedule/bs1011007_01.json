@@ -29,7 +29,10 @@
         18,
         20,
         21,
-        10
+        10,
+        86,
+        87,
+        88
       ]
     },
     {
@@ -98,7 +101,7 @@
     {
       "Index": 10,
       "Node": "{ \"BattleResultAddUnit\" : \"in0602\", 1, 110209201, 1.00000, 0.00000} ",
-      "Next": -1,
+      "Next": 86,
       "Prallel": -1,
       "Child": []
     },
@@ -693,6 +696,76 @@
       "Index": 85,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"fg101100701_02\", \"上官煦未死\"} ",
       "Next": 84,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 86,
+      "Node": "{ \"SetIsDropReward\" : True} ",
+      "Next": 87,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 87,
+      "Node": "{ \"SetDropRewardProbability\" : 100.00000} ",
+      "Next": 88,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 88,
+      "Node": "{ \"BattleResultTreasurePoint\" : \"111200211\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 89,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 90,
+      "Prallel": -1,
+      "Child": [
+        90
+      ]
+    },
+    {
+      "Index": 90,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 91,
+      "Prallel": -1,
+      "Child": [
+        91,
+        92,
+        93,
+        94
+      ]
+    },
+    {
+      "Index": 91,
+      "Node": "{ \"BattleFactorCellFaction\" : 0, \"111200211\"} ",
+      "Next": 92,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 92,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 93,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 93,
+      "Node": "{ \"BattleResultAddReward\" : \"re1011006_01\"} ",
+      "Next": 94,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 94,
+      "Node": "{ \"BattleResultRemoveTreasurePoint\" : \"111200211\"} ",
+      "Next": -1,
       "Prallel": -1,
       "Child": []
     }

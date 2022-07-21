@@ -53,7 +53,7 @@
     },
     {
       "Node": "{ \"TalkAction\" : \"t1211101_234\"} ",
-      "Next": 19,
+      "Next": 67,
       "Prallel": -1
     },
     {
@@ -68,7 +68,7 @@
     },
     {
       "Node": "{ \"TalkAction\" : \"t1211101_235\"} ",
-      "Next": 20,
+      "Next": 69,
       "Prallel": -1
     },
     {
@@ -78,7 +78,7 @@
     },
     {
       "Node": "{ \"TalkAction\" : \"t1211101_236\"} ",
-      "Next": 21,
+      "Next": 71,
       "Prallel": -1
     },
     {
@@ -88,7 +88,7 @@
     },
     {
       "Node": "{ \"TalkAction\" : \"t1211101_237\"} ",
-      "Next": 18,
+      "Next": 73,
       "Prallel": -1
     },
     {
@@ -142,12 +142,12 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckPlayerUpgradableProperty\" : 0, 599, 3010} , { \"CheckFlag\" : 1, 1, \"fe6041200_2_00\"} , { \"CheckFlag\" : 1, 0, \"fe6041300_2_00\"}  ], 0} , 27, 29} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckPlayerUpgradableProperty\" : 0, 599, 3010} , { \"CheckFlag\" : 1, 1, \"fe6041200_2_00\"} , { \"CheckFlag\" : 1, 0, \"fe6041300_2_00\"}  ], 0} , 27, 63} ",
       "Next": -1,
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckPlayerUpgradableProperty\" : 0, 599, 3020} , { \"CheckFlag\" : 1, 1, \"fe6042200_2_00\"} , { \"CheckFlag\" : 1, 0, \"fe6042300_2_00\"}  ], 0} , 30, 31} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckPlayerUpgradableProperty\" : 0, 599, 3020} , { \"CheckFlag\" : 1, 1, \"fe6042200_2_00\"} , { \"CheckFlag\" : 1, 0, \"fe6042300_2_00\"}  ], 0} , 30, 64} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -157,7 +157,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckPlayerUpgradableProperty\" : 0, 599, 3030} , { \"CheckFlag\" : 1, 1, \"fe6043200_2_00\"} , { \"CheckFlag\" : 1, 0, \"fe6043300_2_00\"}  ], 0} , 32, 33} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckPlayerUpgradableProperty\" : 0, 599, 3030} , { \"CheckFlag\" : 1, 1, \"fe6043200_2_00\"} , { \"CheckFlag\" : 1, 0, \"fe6043300_2_00\"}  ], 0} , 32, 65} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -167,7 +167,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckPlayerUpgradableProperty\" : 0, 599, 3040} , { \"CheckFlag\" : 1, 1, \"fe6044200_2_00\"} , { \"CheckFlag\" : 1, 0, \"fe6044300_2_00\"}  ], 0} , 34, 35} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckPlayerUpgradableProperty\" : 0, 599, 3040} , { \"CheckFlag\" : 1, 1, \"fe6044200_2_00\"} , { \"CheckFlag\" : 1, 0, \"fe6044300_2_00\"}  ], 0} , 34, 66} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -217,7 +217,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 1} ",
+      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 1, \"\", 1.00000} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -274,6 +274,106 @@
     {
       "Node": "{ \"RewardAction\" : \"re9000103_01\"} ",
       "Next": 1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NurturanceOpenOrder\" : \"Nurturance_04_13\"} ",
+      "Next": 56,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 1, \"fe6041300_2_99\"} ",
+      "Next": 29,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NurturanceOpenOrder\" : \"Nurturance_04_23\"} ",
+      "Next": 58,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 1, \"fe6042300_2_99\"} ",
+      "Next": 31,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NurturanceOpenOrder\" : \"Nurturance_04_33\"} ",
+      "Next": 60,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 1, \"fe6043300_2_99\"} ",
+      "Next": 33,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NurturanceOpenOrder\" : \"Nurturance_04_43\"} ",
+      "Next": 62,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 1, \"fe6044300_2_99\"} ",
+      "Next": 35,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 0, \"fe6041200_2_00\"}  ], 0} , 29, 55} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 0, \"fe6042200_2_00\"}  ], 0} , 31, 57} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 0, \"fe6043200_2_00\"}  ], 0} , 33, 59} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 0, \"fe6044200_2_00\"}  ], 0} , 35, 61} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NurturanceOpenOrder\" : \"Nurturance_04_13\"} ",
+      "Next": 68,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 1, \"fe6041300_2_99\"} ",
+      "Next": 19,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NurturanceOpenOrder\" : \"Nurturance_04_23\"} ",
+      "Next": 70,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 1, \"fe6042300_2_99\"} ",
+      "Next": 20,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NurturanceOpenOrder\" : \"Nurturance_04_33\"} ",
+      "Next": 72,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 1, \"fe6043300_2_99\"} ",
+      "Next": 21,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NurturanceOpenOrder\" : \"Nurturance_04_43\"} ",
+      "Next": 74,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 1, \"fe6044300_2_99\"} ",
+      "Next": 18,
       "Prallel": -1
     }
   ],

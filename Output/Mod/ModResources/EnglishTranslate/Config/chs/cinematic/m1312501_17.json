@@ -59,7 +59,7 @@
     {
       "Node": "{ \"CameraTransformAction\" : True, { 93.83514, 8.12132, 53.31966} , 0.00000, True, { 24.41197, 70.87302, 0.00003} , 0.00000, 45} ",
       "Next": -1,
-      "Prallel": 503
+      "Prallel": 502
     },
     {
       "Node": "{ \"NpcTransformAction\" : True, { 92.58400, 6.15180, 61.52000} , True, { 0.00000, 251.36900, 0.00000} , \"in03014\"} ",
@@ -252,7 +252,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 2, \"fe1312501_1_03\"}  ], 0} , 53, 514} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 2, \"fe1312501_1_03\"}  ], 0} , 53, 513} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -344,7 +344,7 @@
     {
       "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"m_empty_idle05\", 1.00000}  ], \"in0202\"} ",
       "Next": 55,
-      "Prallel": 506
+      "Prallel": 505
     },
     {
       "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"k_stand00_await00\", 1.00000}  ], \"in15006\"} ",
@@ -359,7 +359,7 @@
     {
       "Node": "{ \"TimerAction\" : 1.50000} ",
       "Next": 73,
-      "Prallel": 510
+      "Prallel": 509
     },
     {
       "Node": "{ \"TalkAction\" : \"t1312510_339\"} ",
@@ -428,7 +428,7 @@
     },
     {
       "Node": "{ \"TimerAction\" : 2.00000} ",
-      "Next": 508,
+      "Next": 507,
       "Prallel": -1
     },
     {
@@ -468,7 +468,7 @@
     },
     {
       "Node": "{ \"TalkAction\" : \"t1312510_367\"} ",
-      "Next": 511,
+      "Next": 510,
       "Prallel": -1
     },
     {
@@ -557,8 +557,8 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"TalkAction\" : \"t1312510_408\"} ",
-      "Next": 117,
+      "Node": "{ \"TalkAction\" : \"t1312530_000\"} ",
+      "Next": 585,
       "Prallel": -1
     },
     {
@@ -837,7 +837,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFavorabilityIsLover\" : 1, 1, \"in0104\"}  ], 0} , 169, 168} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFavorabilityIsLover\" : 1, 1, \"in0104\", False}  ], 0} , 169, 168} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -938,7 +938,7 @@
     },
     {
       "Node": "{ \"TimerAction\" : 0.50000} ",
-      "Next": 530,
+      "Next": 529,
       "Prallel": -1
     },
     {
@@ -967,7 +967,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe1312501_1_99\"} , { \"CheckFlag\" : 1, 3, \"fe1312501_1_99\"}  ], 1} , 532, 194} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe1312501_1_99\"} , { \"CheckFlag\" : 1, 3, \"fe1312501_1_99\"}  ], 1} , 531, 194} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -1402,7 +1402,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFavorabilityIsLover\" : 1, 1, \"in0104\"}  ], 0} , 281, 313} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFavorabilityIsLover\" : 1, 1, \"in0104\", False}  ], 0} , 281, 313} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -2003,7 +2003,7 @@
     },
     {
       "Node": "{ \"TimerAction\" : 0.25000} ",
-      "Next": 512,
+      "Next": 511,
       "Prallel": 404
     },
     {
@@ -2158,7 +2158,7 @@
     },
     {
       "Node": "{ \"TimerAction\" : 0.25000} ",
-      "Next": 513,
+      "Next": 512,
       "Prallel": 435
     },
     {
@@ -2508,18 +2508,13 @@
     },
     {
       "Node": "{ \"TimerAction\" : 5.00000} ",
-      "Next": 502,
-      "Prallel": 505
-    },
-    {
-      "Node": "{ \"RunCinematicAction\" : \"m1312501_18\"} ",
-      "Next": -1,
-      "Prallel": -1
+      "Next": 590,
+      "Prallel": 504
     },
     {
       "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 2, \"fe1310301_2_17\"}  ], 0} , 6, -1} ",
       "Next": -1,
-      "Prallel": 504
+      "Prallel": 503
     },
     {
       "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe1312501_1_03\"}  ], 0} , 7, -1} ",
@@ -2543,12 +2538,12 @@
     },
     {
       "Node": "{ \"PlayNpcAnimationAction\" : [ { 0, \"m_stand03_stop00\", 1.00000} , { 2, \"m_stand00_await00\", 1.00000}  ], \"in0202\"} ",
-      "Next": 509,
+      "Next": 508,
       "Prallel": -1
     },
     {
       "Node": "{ \"SetNpcAnimationAction\" : \"in0202_01\", \"m_stand00_await00\", True} ",
-      "Next": 507,
+      "Next": 506,
       "Prallel": -1
     },
     {
@@ -2572,7 +2567,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 3, \"fe1312501_1_03\"}  ], 0} , 515, -1} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 3, \"fe1312501_1_03\"}  ], 0} , 514, -1} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -2583,76 +2578,76 @@
     },
     {
       "Node": "{ \"TimerAction\" : 1.00000} ",
-      "Next": 517,
+      "Next": 516,
       "Prallel": -1
     },
     {
       "Node": "{ \"CameraTransformAction\" : True, { 89.38795, 7.76264, 53.50786} , 0.00000, True, { 15.47304, 67.08988, -0.00001} , 0.00000, 45} ",
+      "Next": 517,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
       "Next": 518,
       "Prallel": -1
     },
     {
-      "Node": "{ \"TimerAction\" : 1.00000} ",
-      "Next": 519,
-      "Prallel": -1
-    },
-    {
       "Node": "{ \"TalkAction\" : \"t1312510_483\"} ",
-      "Next": 536,
+      "Next": 535,
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe1312501_2_30\"}  ], 0} , 531, 521} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe1312501_2_30\"}  ], 0} , 530, 520} ",
       "Next": -1,
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 2, \"fe1312501_2_30\"}  ], 0} , 523, 522} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 2, \"fe1312501_2_30\"}  ], 0} , 522, 521} ",
       "Next": -1,
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 3, \"fe1312501_2_30\"}  ], 0} , 526, -1} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 3, \"fe1312501_2_30\"}  ], 0} , 525, -1} ",
       "Next": -1,
       "Prallel": -1
     },
     {
       "Node": "{ \"TimerAction\" : 1.00000} ",
-      "Next": 524,
+      "Next": 523,
       "Prallel": -1
     },
     {
       "Node": "{ \"PlayerSimpleTransformAction\" : True, { 87.20300, 6.15180, 53.57100} , 3.00000, True, { 0.00000, 268.80920, 0.00000} } ",
-      "Next": 525,
+      "Next": 524,
       "Prallel": -1
     },
     {
       "Node": "{ \"PlayerSimpleTransformAction\" : True, { 86.64300, 6.17680, 56.99600} , 3.00000, True, { 0.00000, 103.02760, 0.00000} } ",
-      "Next": 529,
-      "Prallel": -1
-    },
-    {
-      "Node": "{ \"TimerAction\" : 0.50000} ",
-      "Next": 527,
-      "Prallel": -1
-    },
-    {
-      "Node": "{ \"PlayerSimpleTransformAction\" : True, { 88.17500, 6.15180, 52.93000} , 3.00000, True, { 0.00000, 240.96720, 0.00000} } ",
       "Next": 528,
       "Prallel": -1
     },
     {
-      "Node": "{ \"PlayerSimpleTransformAction\" : True, { 86.45900, 6.17680, 49.61200} , 3.00000, False, { 0.00000, 13.81477, 0.00000} } ",
-      "Next": 538,
-      "Prallel": 556
-    },
-    {
-      "Node": "{ \"TalkAction\" : \"t1312510_498\"} ",
-      "Next": 531,
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 526,
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 3, \"fe1312501_1_99\"}  ], 0} , 516, 531} ",
+      "Node": "{ \"PlayerSimpleTransformAction\" : True, { 88.17500, 6.15180, 52.93000} , 3.00000, True, { 0.00000, 240.96720, 0.00000} } ",
+      "Next": 527,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayerSimpleTransformAction\" : True, { 86.45900, 6.17680, 49.61200} , 3.00000, False, { 0.00000, 13.81477, 0.00000} } ",
+      "Next": 537,
+      "Prallel": 555
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t1312510_498\"} ",
+      "Next": 530,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 3, \"fe1312501_1_99\"}  ], 0} , 515, 530} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -2663,11 +2658,11 @@
     },
     {
       "Node": "{ \"TimerAction\" : 0.25000} ",
-      "Next": 533,
+      "Next": 532,
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe1312501_1_99\"}  ], 0} , 195, 534} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe1312501_1_99\"}  ], 0} , 195, 533} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -2678,82 +2673,82 @@
     },
     {
       "Node": "{ \"CameraTransformAction\" : True, { 81.30100, 8.97500, 52.50900} , 0.00000, True, { 24.58371, 65.19917, 0.00001} , 0.00000, 45} ",
-      "Next": 537,
+      "Next": 536,
       "Prallel": -1
     },
     {
       "Node": "{ \"TimerAction\" : 1.00000} ",
-      "Next": 535,
+      "Next": 534,
       "Prallel": -1
     },
     {
       "Node": "{ \"TimerAction\" : 1.00000} ",
-      "Next": 520,
+      "Next": 519,
       "Prallel": -1
     },
     {
       "Node": "{ \"TimerAction\" : 1.00000} ",
-      "Next": 539,
-      "Prallel": 560
-    },
-    {
-      "Node": "{ \"TalkAction\" : \"t1312511_000\"} ",
-      "Next": 540,
+      "Next": 538,
       "Prallel": 559
     },
     {
+      "Node": "{ \"TalkAction\" : \"t1312511_000\"} ",
+      "Next": 539,
+      "Prallel": 558
+    },
+    {
       "Node": "{ \"TimerAction\" : 0.50000} ",
-      "Next": 541,
+      "Next": 540,
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 0, \"fg0404_FriendshipLover\"}  ], 0} , 543, 542} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 0, \"fg0404_FriendshipLover\"}  ], 0} , 542, 541} ",
       "Next": -1,
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fg0404_FriendshipLover\"}  ], 0} , 544, -1} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fg0404_FriendshipLover\"}  ], 0} , 543, -1} ",
       "Next": -1,
       "Prallel": -1
     },
     {
       "Node": "{ \"TimerAction\" : 1.00000} ",
-      "Next": 547,
+      "Next": 546,
       "Prallel": -1
     },
     {
       "Node": "{ \"TimerAction\" : 0.50000} ",
-      "Next": 545,
+      "Next": 544,
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 3, 2, \"fe1010907_2_03\"}  ], 0} , 549, 546} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 3, 2, \"fe1010907_2_03\"}  ], 0} , 548, 545} ",
       "Next": -1,
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 2, \"fe1010907_2_03\"}  ], 0} , 554, -1} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 2, \"fe1010907_2_03\"}  ], 0} , 553, -1} ",
       "Next": -1,
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 3, 1, \"fe1010907_2_03\"}  ], 0} , 551, 548} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 3, 1, \"fe1010907_2_03\"}  ], 0} , 550, 547} ",
       "Next": -1,
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe1010907_2_03\"}  ], 0} , 576, -1} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe1010907_2_03\"}  ], 0} , 575, -1} ",
       "Next": -1,
       "Prallel": -1
     },
     {
       "Node": "{ \"TalkAction\" : \"t1312511_015\"} ",
-      "Next": 543,
+      "Next": 542,
       "Prallel": -1
     },
     {
       "Node": "{ \"NpcSimpleTransformAction\" : True, { 89.67648, 6.15180, 53.76197} , 1.50000, True, { 0.00000, 248.26540, 0.00000} , \"in0109\"} ",
-      "Next": 575,
+      "Next": 574,
       "Prallel": -1
     },
     {
@@ -2763,27 +2758,27 @@
     },
     {
       "Node": "{ \"TalkAction\" : \"t1312511_100\"} ",
-      "Next": 553,
+      "Next": 552,
       "Prallel": -1
     },
     {
       "Node": "{ \"TimerAction\" : 1.00000} ",
-      "Next": 555,
+      "Next": 554,
       "Prallel": -1
     },
     {
       "Node": "{ \"TimerAction\" : 0.50000} ",
-      "Next": 576,
-      "Prallel": 578
+      "Next": 575,
+      "Prallel": 577
     },
     {
       "Node": "{ \"TalkAction\" : \"t1312511_119\"} ",
-      "Next": 579,
+      "Next": 578,
       "Prallel": -1
     },
     {
       "Node": "{ \"TimerAction\" : 0.50000} ",
-      "Next": 557,
+      "Next": 556,
       "Prallel": -1
     },
     {
@@ -2798,33 +2793,33 @@
     },
     {
       "Node": "{ \"TimerAction\" : 2.00000} ",
-      "Next": 558,
+      "Next": 557,
       "Prallel": -1
     },
     {
       "Node": "{ \"NpcSimpleTransformAction\" : False, { 85.67800, 6.17680, 52.87800} , 0.00000, True, { 0.00000, 164.25710, 0.00000} , \"in0102\"} ",
       "Next": -1,
-      "Prallel": 561
+      "Prallel": 560
     },
     {
       "Node": "{ \"NpcSimpleTransformAction\" : False, { 90.77001, 6.17680, 56.10001} , 0.00000, True, { 0.00000, 211.75240, 0.00000} , \"in0103\"} ",
       "Next": -1,
-      "Prallel": 562
+      "Prallel": 561
     },
     {
       "Node": "{ \"NpcSimpleTransformAction\" : False, { 90.02500, 6.17680, 52.82401} , 0.00000, True, { 0.00000, 232.43610, 0.00000} , \"in0104\"} ",
       "Next": -1,
-      "Prallel": 563
+      "Prallel": 562
     },
     {
       "Node": "{ \"NpcSimpleTransformAction\" : False, { 84.12771, 6.20892, 54.51606} , 0.00000, True, { 0.00000, 144.44150, 0.00000} , \"in0105\"} ",
       "Next": -1,
-      "Prallel": 564
+      "Prallel": 563
     },
     {
       "Node": "{ \"NpcSimpleTransformAction\" : False, { 89.59200, 6.17680, 51.15900} , 0.00000, True, { 0.00000, 248.86940, 0.00000} , \"in0106\"} ",
-      "Next": 565,
-      "Prallel": 566
+      "Next": 564,
+      "Prallel": 565
     },
     {
       "Node": "{ \"NpcSimpleTransformAction\" : True, { 89.59200, 6.17680, 51.15900} , 1.00000, True, { 0.00000, 248.86940, 0.00000} , \"in0106\"} ",
@@ -2834,32 +2829,32 @@
     {
       "Node": "{ \"NpcSimpleTransformAction\" : False, { 90.89002, 6.17680, 57.49001} , 0.00000, True, { 0.00000, 208.12400, 0.00000} , \"in0107\"} ",
       "Next": -1,
-      "Prallel": 567
+      "Prallel": 566
     },
     {
       "Node": "{ \"NpcSimpleTransformAction\" : False, { 91.17056, 6.17680, 53.47883} , 0.00000, True, { 0.00000, 231.91460, 0.00000} , \"in0109\"} ",
       "Next": -1,
-      "Prallel": 568
+      "Prallel": 567
     },
     {
       "Node": "{ \"NpcSimpleTransformAction\" : False, { 84.05814, 6.21038, 56.87200} , 0.00000, True, { 0.00000, 148.97320, 0.00000} , \"in0110\"} ",
       "Next": -1,
-      "Prallel": 569
+      "Prallel": 568
     },
     {
       "Node": "{ \"NpcSimpleTransformAction\" : False, { 89.55001, 6.17680, 58.22999} , 0.00000, True, { 0.00000, 200.63460, 0.00000} , \"in0111\"} ",
       "Next": -1,
-      "Prallel": 570
+      "Prallel": 569
     },
     {
       "Node": "{ \"NpcSimpleTransformAction\" : False, { 91.27301, 6.17680, 55.14900} , 0.00000, True, { 0.00000, 226.69520, 0.00000} , \"in0201\"} ",
       "Next": -1,
-      "Prallel": 571
+      "Prallel": 570
     },
     {
       "Node": "{ \"NpcSimpleTransformAction\" : False, { 88.07900, 6.17680, 54.66200} , 0.00000, True, { 0.00000, 200.39530, 0.00000} , \"in15005\"} ",
       "Next": -1,
-      "Prallel": 573
+      "Prallel": 572
     },
     {
       "Node": "{ \"NpcSimpleTransformAction\" : False, { 89.50901, 6.17680, 55.15800} , 0.00000, True, { 0.00000, 212.62170, 0.00000} , \"in21009\"} ",
@@ -2867,7 +2862,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckPlayerGender\" : True}  ], 0} , 572, 574} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckPlayerGender\" : True}  ], 0} , 571, 573} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -2883,8 +2878,8 @@
     },
     {
       "Node": "{ \"TimerAction\" : 2.50000} ",
-      "Next": 552,
-      "Prallel": 550
+      "Next": 551,
+      "Prallel": 549
     },
     {
       "Node": "{ \"CameraTransformAction\" : True, { 85.56569, 7.91076, 48.99119} , 6.00000, True, { 23.89679, 37.69654, 0.00002} , 6.00000, 45} ",
@@ -2893,32 +2888,32 @@
     },
     {
       "Node": "{ \"TimerAction\" : 1.50000} ",
-      "Next": 577,
+      "Next": 576,
       "Prallel": -1
     },
     {
       "Node": "{ \"TimerAction\" : 2.00000} ",
-      "Next": 551,
-      "Prallel": 585
+      "Next": 550,
+      "Prallel": 584
     },
     {
       "Node": "{ \"NpcSimpleTransformAction\" : True, { 82.65338, 6.21751, 50.61777} , 4.00000, True, { 0.00000, 244.30580, 0.00000} , \"in0109\"} ",
       "Next": -1,
-      "Prallel": 581
+      "Prallel": 580
     },
     {
       "Node": "{ \"TimerAction\" : 1.25000} ",
-      "Next": 582,
+      "Next": 581,
       "Prallel": -1
     },
     {
       "Node": "{ \"PlayerSimpleTransformAction\" : False, { 86.10075, 6.20224, 47.09039} , 0.00000, True, { 0.00000, 188.08160, 0.00000} } ",
-      "Next": 583,
+      "Next": 582,
       "Prallel": -1
     },
     {
       "Node": "{ \"TimerAction\" : 1.25000} ",
-      "Next": 584,
+      "Next": 583,
       "Prallel": -1
     },
     {
@@ -2928,7 +2923,42 @@
     },
     {
       "Node": "{ \"TimerAction\" : 2.00000} ",
-      "Next": 580,
+      "Next": 579,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe1312501_2_48\"}  ], 0} , 117, 586} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 2, \"fe1312501_2_48\"}  ], 0} , 587, -1} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : False, 1.00000} ",
+      "Next": 588,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"RunCinematicAction\" : \"m1312501_30\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"RunCinematicAction\" : \"m1312501_30b\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"LogicalNode\" : [ { \"CheckFavorabilityIsLover\" : 1, 1, \"in0102\", False} , { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe1312501_1_99\"} , { \"CheckFlag\" : 1, 3, \"fe1312501_1_99\"}  ], 1}  ], 0} , { \"LogicalNode\" : [ { \"CheckFavorabilityIsLover\" : 1, 1, \"in0103\", False} , { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 2, \"fe1312501_1_99\"} , { \"CheckFlag\" : 1, 3, \"fe1312501_1_99\"}  ], 1}  ], 0} , { \"LogicalNode\" : [ { \"CheckFavorabilityIsLover\" : 1, 1, \"in0104\", False} , { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 2, \"fe1312501_1_99\"} , { \"CheckFlag\" : 1, 3, \"fe1312501_1_99\"}  ], 1}  ], 0} , { \"LogicalNode\" : [ { \"CheckFavorabilityIsLover\" : 1, 1, \"in0105\", False} , { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe1312501_1_99\"} , { \"CheckFlag\" : 1, 3, \"fe1312501_1_99\"}  ], 1}  ], 0} , { \"LogicalNode\" : [ { \"CheckFavorabilityIsLover\" : 1, 1, \"in0106\", False} , { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 2, \"fe1312501_1_99\"} , { \"CheckFlag\" : 1, 3, \"fe1312501_1_99\"}  ], 1}  ], 0} , { \"LogicalNode\" : [ { \"CheckFavorabilityIsLover\" : 1, 1, \"in0110\", False} , { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe1312501_1_99\"} , { \"CheckFlag\" : 1, 3, \"fe1312501_1_99\"}  ], 1}  ], 0} , { \"LogicalNode\" : [ { \"CheckFavorabilityIsLover\" : 1, 1, \"in0111\", False} , { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 2, \"fe1312501_1_99\"} , { \"CheckFlag\" : 1, 3, \"fe1312501_1_99\"}  ], 1}  ], 0}  ], 1} , 589, 591} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"RunCinematicAction\" : \"m1312501_18\"} ",
+      "Next": -1,
       "Prallel": -1
     }
   ],

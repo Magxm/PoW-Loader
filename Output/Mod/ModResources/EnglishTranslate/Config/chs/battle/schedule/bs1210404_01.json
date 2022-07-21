@@ -6,6 +6,7 @@
       "Index": 0,
       "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
       "Next": 1,
+      "Prallel": -1,
       "Child": [
         1
       ]
@@ -14,12 +15,14 @@
       "Index": 1,
       "Node": "{ \"BattleResultAddUnits\" : \"Player,party01,party02,party03,in0102,in0601,in0605,in03013\", 0, \"107102209,105104209,108101209,104105209,106103209,107104211,105105210,108103211\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 2,
       "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
       "Next": 3,
+      "Prallel": -1,
       "Child": [
         3,
         4,
@@ -30,24 +33,28 @@
       "Index": 3,
       "Node": "{ \"BattleResultAddUnits\" : \"in030141,io26111101,io26131101,io26102101,io26122101,io26142101,io26122102\", 1, \"101202101,103203200,203103200,108205203,105204201,203107204,203105202\"} ",
       "Next": 4,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 4,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in030141,io26111101,io26131101\", \"bt1210402_02_Buff_DeathPower\", True} ",
       "Next": 5,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 5,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in030141,io26111101,io26131101,io26102101,io26122101,io26142101,io26122102\", \"bt1210402_02_Buff_ZombiePower\", True} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 6,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 7,
+      "Prallel": -1,
       "Child": [
         7
       ]
@@ -56,6 +63,7 @@
       "Index": 7,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 8,
+      "Prallel": -1,
       "Child": [
         8,
         9,
@@ -83,126 +91,147 @@
       "Index": 8,
       "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1112401_1_00\", \"对阵屍人吴平\"} ",
       "Next": 9,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 9,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1210404_01_00\", \"飞鱿尚未进场\"} ",
       "Next": 10,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 10,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"in058091,in030141\"} ",
       "Next": 11,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 11,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 12,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 12,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0107\"} ",
       "Next": 13,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 13,
       "Node": "{ \"BattleResultAddUnits\" : \"in21006,io26121101,io26141101,io26111102,io26122104\", 1, \"201201102,104206102,205104101,101204103,204101103\"} ",
       "Next": 14,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 14,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in21006,io26121101,io26141101,io26111102,io26122104\", \"\", False} ",
       "Next": 15,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 15,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0109\"} ",
       "Next": 16,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 16,
       "Node": "{ \"BattleResultAddUnit\" : \"in11031\", 0, 201202103, 1.00000, 0.00000} ",
       "Next": 17,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 17,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in11031\", \"\", True} ",
       "Next": 18,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 18,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0133\"} ",
       "Next": 19,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 19,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in21006\", \"bt1210404_01_debuff_Squidwounded\", False} ",
       "Next": 20,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 20,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0135\"} ",
       "Next": 21,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 21,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in11031\", \"\", False} ",
       "Next": 22,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 22,
       "Node": "{ \"BattleResultRemoveUnit\" : \"in11031\", False} ",
       "Next": 23,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 23,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0145\"} ",
       "Next": 24,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 24,
       "Node": "{ \"BattleResultChangeWinTip\" : \"Reduce Flying Squid HP to below 50%。\"} ",
       "Next": 25,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 25,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1210404_01_00\", 0, 1, \"飞鱿进场\"} ",
       "Next": 26,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 26,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in21006,io26121101,io26141101,io26111102,io26122104\", \"bt1210402_02_Buff_DeathPower\", True} ",
       "Next": 27,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 27,
       "Node": "{ \"BattleResultAddBuff\" : True, \"io26121101,io26141101,io26111102,io26122104\", \"bt1210402_02_Buff_ZombiePower\", True} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 28,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 29,
+      "Prallel": -1,
       "Child": [
         29
       ]
@@ -211,6 +240,7 @@
       "Index": 29,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 30,
+      "Prallel": -1,
       "Child": [
         30,
         31,
@@ -222,30 +252,35 @@
       "Index": 30,
       "Node": "{ \"BattleFactorFactionDefeat\" : 0} ",
       "Next": 31,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 31,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 32,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 32,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0472\"} ",
       "Next": 33,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 33,
       "Node": "{ \"BattleResultLose\" : \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 34,
       "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
       "Next": 35,
+      "Prallel": -1,
       "Child": [
         35
       ]
@@ -254,6 +289,7 @@
       "Index": 35,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 36,
+      "Prallel": -1,
       "Child": [
         36,
         37,
@@ -265,30 +301,35 @@
       "Index": 36,
       "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1112401_1_00\", \"对阵屍人吴平\"} ",
       "Next": 37,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 37,
       "Node": "{ \"BattleResultAddUnits\" : \"in058091\", 1, \"202101101\"} ",
       "Next": 38,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 38,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in058091\", \"bt1210402_02_Buff_DeathPower\", True} ",
       "Next": 39,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 39,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in058091\", \"bt1210402_02_Buff_ZombiePower\", True} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 40,
       "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
       "Next": 41,
+      "Prallel": -1,
       "Child": [
         41
       ]
@@ -297,6 +338,7 @@
       "Index": 41,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 42,
+      "Prallel": -1,
       "Child": [
         42,
         43,
@@ -308,44 +350,51 @@
       "Index": 42,
       "Node": "{ \"BattleFactorGlobalFlag\" : 1, 3, \"fe1112401_1_00\", \"对阵屍人罗夫人\"} ",
       "Next": 43,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 43,
       "Node": "{ \"BattleResultAddUnits\" : \"in110321\", 1, \"202101101\"} ",
       "Next": 44,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 44,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in110321\", \"bt1210402_02_Buff_DeathPower\", True} ",
       "Next": 45,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 45,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in110321\", \"bt1210402_02_Buff_ZombiePower\", True} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 46,
       "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
       "Next": 47,
+      "Prallel": -1,
       "Child": [
         47
       ]
     },
     {
       "Index": 47,
-      "Node": "{ \"BattleResultAddSecondaryGoal\" : \"bsc12104040101\", \"{name_1}{name_2} and Duan Hong'Er‘s party are not defeated in battle。\"} ",
+      "Node": "{ \"BattleResultAddSecondaryGoal\" : \"bsc12104040101\", \"{name_1}{name_2} and Duan Hong'Er ‘s group team did not suffer loss in the battle\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 48,
       "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
       "Next": 49,
+      "Prallel": -1,
       "Child": [
         49
       ]
@@ -354,6 +403,7 @@
       "Index": 49,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 50,
+      "Prallel": -1,
       "Child": [
         50,
         51,
@@ -365,30 +415,35 @@
       "Index": 50,
       "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
       "Next": 51,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 51,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 52,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 52,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0100\"} ",
       "Next": 53,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 53,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in0102\", \"bt1210404_01_Buff_Justiceheart\", True} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 54,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 55,
+      "Prallel": -1,
       "Child": [
         55
       ]
@@ -397,6 +452,7 @@
       "Index": 55,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 56,
+      "Prallel": -1,
       "Child": [
         56,
         57,
@@ -424,126 +480,147 @@
       "Index": 56,
       "Node": "{ \"BattleFactorGlobalFlag\" : 1, 3, \"fe1112401_1_00\", \"对阵屍人罗夫人\"} ",
       "Next": 57,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 57,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1210404_01_00\", \"飞鱿尚未进场\"} ",
       "Next": 58,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 58,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"in110321,in030141\"} ",
       "Next": 59,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 59,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 60,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 60,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0200\"} ",
       "Next": 61,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 61,
       "Node": "{ \"BattleResultAddUnits\" : \"in21006,io26121101,io26141101,io26111102,io26122104\", 1, \"201201102,104206102,205104101,101204103,204101103\"} ",
       "Next": 62,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 62,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in21006,io26121101,io26141101,io26111102,io26122104\", \"\", False} ",
       "Next": 63,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 63,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0202\"} ",
       "Next": 64,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 64,
       "Node": "{ \"BattleResultAddUnit\" : \"in05809\", 0, 201202103, 1.00000, 0.00000} ",
       "Next": 65,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 65,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in05809\", \"\", True} ",
       "Next": 66,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 66,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0212\"} ",
       "Next": 67,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 67,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in21006\", \"bt1210404_01_debuff_Squidwounded\", False} ",
       "Next": 68,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 68,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0214\"} ",
       "Next": 69,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 69,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in05809\", \"\", False} ",
       "Next": 70,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 70,
       "Node": "{ \"BattleResultRemoveUnit\" : \"in05809\", False} ",
       "Next": 71,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 71,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0221\"} ",
       "Next": 72,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 72,
       "Node": "{ \"BattleResultChangeWinTip\" : \"Reduce Flying Squid HP to below 50%。\"} ",
       "Next": 73,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 73,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1210404_01_00\", 0, 1, \"飞鱿进场\"} ",
       "Next": 74,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 74,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in21006,io26121101,io26141101,io26111102,io26122104\", \"bt1210402_02_Buff_DeathPower\", True} ",
       "Next": 75,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 75,
       "Node": "{ \"BattleResultAddBuff\" : True, \"io26121101,io26141101,io26111102,io26122104\", \"bt1210402_02_Buff_ZombiePower\", True} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 76,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 77,
+      "Prallel": -1,
       "Child": [
         77
       ]
@@ -552,6 +629,7 @@
       "Index": 77,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 78,
+      "Prallel": -1,
       "Child": [
         78,
         79,
@@ -577,114 +655,133 @@
       "Index": 78,
       "Node": "{ \"BattleFactorGlobalFlag\" : 1, 2, \"fe1112401_1_00\", \"只对阵何长瑞\"} ",
       "Next": 79,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 79,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 0, \"btf1210404_01_00\", \"飞鱿尚未进场\"} ",
       "Next": 80,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 80,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"in030141\"} ",
       "Next": 81,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 81,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 82,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 82,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0300\"} ",
       "Next": 83,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 83,
       "Node": "{ \"BattleResultAddUnits\" : \"in21006,io26121101,io26141101,io26111102,io26122104\", 1, \"201201102,104206102,205104101,101204103,204101103\"} ",
       "Next": 84,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 84,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in21006,io26121101,io26141101,io26111102,io26122104\", \"\", False} ",
       "Next": 85,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 85,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0302\"} ",
       "Next": 86,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 86,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0312\"} ",
       "Next": 87,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 87,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in21006\", \"bt1210404_01_debuff_Squidwounded\", False} ",
       "Next": 88,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 88,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0314\"} ",
       "Next": 89,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 89,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in0102\", \"\", False} ",
       "Next": 90,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 90,
       "Node": "{ \"BattleResultRemoveUnit\" : \"in0102\", False} ",
       "Next": 91,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 91,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0321\"} ",
       "Next": 92,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 92,
       "Node": "{ \"BattleResultChangeWinTip\" : \"Reduce Flying Squid HP to below 50%。\"} ",
       "Next": 93,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 93,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1210404_01_00\", 0, 1, \"飞鱿进场\"} ",
       "Next": 94,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 94,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in21006,io26121101,io26141101,io26111102,io26122104\", \"bt1210402_02_Buff_DeathPower\", True} ",
       "Next": 95,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 95,
       "Node": "{ \"BattleResultAddBuff\" : True, \"io26121101,io26141101,io26111102,io26122104\", \"bt1210402_02_Buff_ZombiePower\", True} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 96,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 97,
+      "Prallel": -1,
       "Child": [
         97
       ]
@@ -693,6 +790,7 @@
       "Index": 97,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 98,
+      "Prallel": -1,
       "Child": [
         98,
         99,
@@ -729,180 +827,210 @@
       "Index": 98,
       "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1112401_1_00\", \"对阵屍人吴平\"} ",
       "Next": 99,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 99,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1210404_01_00\", \"飞鱿已经进场\"} ",
       "Next": 100,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 100,
       "Node": "{ \"BattleFactorTargetHp\" : 2, 50, \"in21006\"} ",
       "Next": 101,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 101,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 102,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 102,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0400\"} ",
       "Next": 103,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 103,
       "Node": "{ \"BattleResultUnitHP\" : 1, 100, \"in21006\"} ",
       "Next": 104,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 104,
       "Node": "{ \"BattleResultUnitMP\" : 1, 999, \"in21006\"} ",
       "Next": 105,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 105,
       "Node": "{ \"BattleResultAddUnits\" : \"in058091,in030141,io26101101,io26112101,io26132101,io26142104\", 1, \"203101102,101203102,107207200,105206101,205107202,205105200\"} ",
       "Next": 106,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 106,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in058091,in030141,io26101101,io26112101,io26132101,io26142104\", \"\", False} ",
       "Next": 107,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 107,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0402\"} ",
       "Next": 108,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 108,
       "Node": "{ \"BattleResultAddUnit\" : \"io27134401\", 0, 202202104, 1.00000, 0.00000} ",
       "Next": 109,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 109,
       "Node": "{ \"BattleResultAddBuff\" : True, \"io27134401\", \"\", True} ",
       "Next": 110,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 110,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0411\"} ",
       "Next": 111,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 111,
       "Node": "{ \"BattleResultAddUnit\" : \"io27104501\", 0, 200204104, 1.00000, 0.00000} ",
       "Next": 112,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 112,
       "Node": "{ \"BattleResultAddBuff\" : True, \"io27104501\", \"\", True} ",
       "Next": 113,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 113,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0412\"} ",
       "Next": 114,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 114,
       "Node": "{ \"BattleResultAddUnit\" : \"io27124701\", 0, 204200104, 1.00000, 0.00000} ",
       "Next": 115,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 115,
       "Node": "{ \"BattleResultAddBuff\" : True, \"io27124701\", \"\", True} ",
       "Next": 116,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 116,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0413\"} ",
       "Next": 117,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 117,
       "Node": "{ \"BattleResultAddUnit\" : \"in0209\", 0, 202203105, 1.00000, 0.00000} ",
       "Next": 118,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 118,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in0209\", \"\", True} ",
       "Next": 119,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 119,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0425\"} ",
       "Next": 120,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 120,
       "Node": "{ \"BattleResultAddUnit\" : \"in0208\", 0, 203202105, 1.00000, 0.00000} ",
       "Next": 121,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 121,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in0208\", \"\", True} ",
       "Next": 122,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 122,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0428\"} ",
       "Next": 123,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 123,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in058091,in030141,io26101101,io26112101,io26132101,io26142104\", \"bt1210402_02_Buff_DeathPower\", True} ",
       "Next": 124,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 124,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in058091,in030141,io26101101,io26112101,io26132101,io26142104\", \"bt1210402_02_Buff_ZombiePower\", True} ",
       "Next": 125,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 125,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in21006\", \"bt1210404_01_Buff_FeiYouZombiePower\", True} ",
       "Next": 126,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 126,
       "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Flying Squid and Corpse Zombies!\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 127,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 128,
+      "Prallel": -1,
       "Child": [
         128
       ]
@@ -911,6 +1039,7 @@
       "Index": 128,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 129,
+      "Prallel": -1,
       "Child": [
         129,
         130,
@@ -947,180 +1076,210 @@
       "Index": 129,
       "Node": "{ \"BattleFactorGlobalFlag\" : 1, 3, \"fe1112401_1_00\", \"对阵屍人罗夫人\"} ",
       "Next": 130,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 130,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1210404_01_00\", \"飞鱿已经进场\"} ",
       "Next": 131,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 131,
       "Node": "{ \"BattleFactorTargetHp\" : 2, 50, \"in21006\"} ",
       "Next": 132,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 132,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 133,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 133,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0400\"} ",
       "Next": 134,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 134,
       "Node": "{ \"BattleResultUnitHP\" : 1, 100, \"in21006\"} ",
       "Next": 135,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 135,
       "Node": "{ \"BattleResultUnitMP\" : 1, 999, \"in21006\"} ",
       "Next": 136,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 136,
       "Node": "{ \"BattleResultAddUnits\" : \"in110321,in030141,io26101101,io26112101,io26132101,io26142104\", 1, \"203101102,101203102,107207200,105206101,205107202,205105200\"} ",
       "Next": 137,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 137,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in110321,in030141,io26101101,io26112101,io26132101,io26142104\", \"\", False} ",
       "Next": 138,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 138,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0402\"} ",
       "Next": 139,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 139,
       "Node": "{ \"BattleResultAddUnit\" : \"io27134401\", 0, 202202104, 1.00000, 0.00000} ",
       "Next": 140,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 140,
       "Node": "{ \"BattleResultAddBuff\" : True, \"io27134401\", \"\", True} ",
       "Next": 141,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 141,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0411\"} ",
       "Next": 142,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 142,
       "Node": "{ \"BattleResultAddUnit\" : \"io27104501\", 0, 200204104, 1.00000, 0.00000} ",
       "Next": 143,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 143,
       "Node": "{ \"BattleResultAddBuff\" : True, \"io27104501\", \"\", True} ",
       "Next": 144,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 144,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0412\"} ",
       "Next": 145,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 145,
       "Node": "{ \"BattleResultAddUnit\" : \"io27124701\", 0, 204200104, 1.00000, 0.00000} ",
       "Next": 146,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 146,
       "Node": "{ \"BattleResultAddBuff\" : True, \"io27124701\", \"\", True} ",
       "Next": 147,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 147,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0413\"} ",
       "Next": 148,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 148,
       "Node": "{ \"BattleResultAddUnit\" : \"in0209\", 0, 202203105, 1.00000, 0.00000} ",
       "Next": 149,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 149,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in0209\", \"\", True} ",
       "Next": 150,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 150,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0425\"} ",
       "Next": 151,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 151,
       "Node": "{ \"BattleResultAddUnit\" : \"in0208\", 0, 203202105, 1.00000, 0.00000} ",
       "Next": 152,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 152,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in0208\", \"\", True} ",
       "Next": 153,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 153,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0428\"} ",
       "Next": 154,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 154,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in110321,in030141,io26101101,io26112101,io26132101,io26142104\", \"bt1210402_02_Buff_DeathPower\", True} ",
       "Next": 155,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 155,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in110321,in030141,io26101101,io26112101,io26132101,io26142104\", \"bt1210402_02_Buff_ZombiePower\", True} ",
       "Next": 156,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 156,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in21006\", \"bt1210404_01_Buff_FeiYouZombiePower\", True} ",
       "Next": 157,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 157,
       "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Flying Squid and Corpse Zombies!\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 158,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 159,
+      "Prallel": -1,
       "Child": [
         159
       ]
@@ -1129,6 +1288,7 @@
       "Index": 159,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 160,
+      "Prallel": -1,
       "Child": [
         160,
         161,
@@ -1165,180 +1325,210 @@
       "Index": 160,
       "Node": "{ \"BattleFactorGlobalFlag\" : 1, 2, \"fe1112401_1_00\", \"只对阵屍人何长瑞\"} ",
       "Next": 161,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 161,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1210404_01_00\", \"飞鱿已经进场\"} ",
       "Next": 162,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 162,
       "Node": "{ \"BattleFactorTargetHp\" : 2, 50, \"in21006\"} ",
       "Next": 163,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 163,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 164,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 164,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0400\"} ",
       "Next": 165,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 165,
       "Node": "{ \"BattleResultUnitHP\" : 1, 100, \"in21006\"} ",
       "Next": 166,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 166,
       "Node": "{ \"BattleResultUnitMP\" : 1, 999, \"in21006\"} ",
       "Next": 167,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 167,
       "Node": "{ \"BattleResultAddUnits\" : \"in030141,io26101101,io26112101,io26132101,io26142104\", 1, \"101203102,107207200,105206101,205107202,205105200\"} ",
       "Next": 168,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 168,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in030141,io26101101,io26112101,io26132101,io26142104\", \"\", False} ",
       "Next": 169,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 169,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0402\"} ",
       "Next": 170,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 170,
       "Node": "{ \"BattleResultAddUnit\" : \"io27134401\", 0, 202202104, 1.00000, 0.00000} ",
       "Next": 171,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 171,
       "Node": "{ \"BattleResultAddBuff\" : True, \"io27134401\", \"\", True} ",
       "Next": 172,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 172,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0411\"} ",
       "Next": 173,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 173,
       "Node": "{ \"BattleResultAddUnit\" : \"io27104501\", 0, 200204104, 1.00000, 0.00000} ",
       "Next": 174,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 174,
       "Node": "{ \"BattleResultAddBuff\" : True, \"io27104501\", \"\", True} ",
       "Next": 175,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 175,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0412\"} ",
       "Next": 176,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 176,
       "Node": "{ \"BattleResultAddUnit\" : \"io27124701\", 0, 204200104, 1.00000, 0.00000} ",
       "Next": 177,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 177,
       "Node": "{ \"BattleResultAddBuff\" : True, \"io27124701\", \"\", True} ",
       "Next": 178,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 178,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0413\"} ",
       "Next": 179,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 179,
       "Node": "{ \"BattleResultAddUnit\" : \"in0209\", 0, 202203105, 1.00000, 0.00000} ",
       "Next": 180,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 180,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in0209\", \"\", True} ",
       "Next": 181,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 181,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0425\"} ",
       "Next": 182,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 182,
       "Node": "{ \"BattleResultAddUnit\" : \"in0208\", 0, 203202105, 1.00000, 0.00000} ",
       "Next": 183,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 183,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in0208\", \"\", True} ",
       "Next": 184,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 184,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0444\"} ",
       "Next": 185,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 185,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in030141,io26101101,io26112101,io26132101,io26142104\", \"bt1210402_02_Buff_DeathPower\", True} ",
       "Next": 186,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 186,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in030141,io26101101,io26112101,io26132101,io26142104\", \"bt1210402_02_Buff_ZombiePower\", True} ",
       "Next": 187,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 187,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in21006\", \"bt1210404_01_Buff_FeiYouZombiePower\", True} ",
       "Next": 188,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 188,
       "Node": "{ \"BattleResultChangeWinTip\" : \"Defeat Flying Squid and Corpse Zombies!\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 189,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 190,
+      "Prallel": -1,
       "Child": [
         190
       ]
@@ -1347,6 +1537,7 @@
       "Index": 190,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 191,
+      "Prallel": -1,
       "Child": [
         191,
         192,
@@ -1359,36 +1550,42 @@
       "Index": 191,
       "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1210401_2_33\", \"已经入第三阶段\"} ",
       "Next": 192,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 192,
       "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
       "Next": 193,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 193,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 194,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 194,
       "Node": "{ \"BattleResultTalk\" : \"t1210404_bs0459\"} ",
       "Next": 195,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 195,
       "Node": "{ \"BattleResultWin\" : \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 196,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 197,
+      "Prallel": -1,
       "Child": [
         197
       ]
@@ -1397,6 +1594,7 @@
       "Index": 197,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 198,
+      "Prallel": -1,
       "Child": [
         198,
         199,
@@ -1408,30 +1606,35 @@
       "Index": 198,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"Player\"} ",
       "Next": 199,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 199,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 200,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 200,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1210401_2_34\", 0, 1, \"主角或段红儿队伍有人阵亡\"} ",
       "Next": 201,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 201,
       "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bsc12104040101\", 2} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 202,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 203,
+      "Prallel": -1,
       "Child": [
         203
       ]
@@ -1440,6 +1643,7 @@
       "Index": 203,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 204,
+      "Prallel": -1,
       "Child": [
         204,
         205,
@@ -1451,30 +1655,35 @@
       "Index": 204,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"party01\"} ",
       "Next": 205,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 205,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 206,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 206,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1210401_2_34\", 0, 1, \"主角或段红儿队伍有人阵亡\"} ",
       "Next": 207,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 207,
       "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bsc12104040101\", 2} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 208,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 209,
+      "Prallel": -1,
       "Child": [
         209
       ]
@@ -1483,6 +1692,7 @@
       "Index": 209,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 210,
+      "Prallel": -1,
       "Child": [
         210,
         211,
@@ -1494,30 +1704,35 @@
       "Index": 210,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"party02\"} ",
       "Next": 211,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 211,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 212,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 212,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1210401_2_34\", 0, 1, \"主角或段红儿队伍有人阵亡\"} ",
       "Next": 213,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 213,
       "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bsc12104040101\", 2} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 214,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 215,
+      "Prallel": -1,
       "Child": [
         215
       ]
@@ -1526,6 +1741,7 @@
       "Index": 215,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 216,
+      "Prallel": -1,
       "Child": [
         216,
         217,
@@ -1537,30 +1753,35 @@
       "Index": 216,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"party03\"} ",
       "Next": 217,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 217,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 218,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 218,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1210401_2_34\", 0, 1, \"主角或段红儿队伍有人阵亡\"} ",
       "Next": 219,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 219,
       "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bsc12104040101\", 2} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 220,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 221,
+      "Prallel": -1,
       "Child": [
         221
       ]
@@ -1569,6 +1790,7 @@
       "Index": 221,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 222,
+      "Prallel": -1,
       "Child": [
         222,
         223,
@@ -1580,30 +1802,35 @@
       "Index": 222,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"in0102\"} ",
       "Next": 223,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 223,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 224,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 224,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1210401_2_34\", 0, 1, \"主角或段红儿队伍有人阵亡\"} ",
       "Next": 225,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 225,
       "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bsc12104040101\", 2} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 226,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 227,
+      "Prallel": -1,
       "Child": [
         227
       ]
@@ -1612,6 +1839,7 @@
       "Index": 227,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 228,
+      "Prallel": -1,
       "Child": [
         228,
         229,
@@ -1623,30 +1851,35 @@
       "Index": 228,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"in0601\"} ",
       "Next": 229,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 229,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 230,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 230,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1210401_2_34\", 0, 1, \"主角或段红儿队伍有人阵亡\"} ",
       "Next": 231,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 231,
       "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bsc12104040101\", 2} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 232,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 233,
+      "Prallel": -1,
       "Child": [
         233
       ]
@@ -1655,6 +1888,7 @@
       "Index": 233,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 234,
+      "Prallel": -1,
       "Child": [
         234,
         235,
@@ -1666,30 +1900,35 @@
       "Index": 234,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"in0605\"} ",
       "Next": 235,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 235,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 236,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 236,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1210401_2_34\", 0, 1, \"主角或段红儿队伍有人阵亡\"} ",
       "Next": 237,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 237,
       "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bsc12104040101\", 2} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 238,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 239,
+      "Prallel": -1,
       "Child": [
         239
       ]
@@ -1698,6 +1937,7 @@
       "Index": 239,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 240,
+      "Prallel": -1,
       "Child": [
         240,
         241,
@@ -1709,24 +1949,28 @@
       "Index": 240,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"in03013\"} ",
       "Next": 241,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 241,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 242,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 242,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1210401_2_34\", 0, 1, \"主角或段红儿队伍有人阵亡\"} ",
       "Next": 243,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 243,
       "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bsc12104040101\", 2} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     }
   ],

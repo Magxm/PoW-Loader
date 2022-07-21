@@ -1,0 +1,131 @@
+{
+  "EntryIndex": 0,
+  "Nodes": [
+    {
+      "Node": "{ \"TimerAction\" : 1.00000} ",
+      "Next": 1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 1, \"fe5206102_2_00\"} ",
+      "Next": 2,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"LoadScenesAction\" : \"S0101\", { 0.00000, 0.00000, 0.00000} , { 0.00000, 0.00000, 0.00000} , 0, False, 0, \"\", 1.00000} ",
+      "Next": 24,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 4,
+      "Prallel": 21
+    },
+    {
+      "Node": "{ \"CameraTransformAction\" : True, { 53.24965, 4.28531, 52.49165} , 0.00000, True, { 27.55043, 57.78419, 0.00017} , 0.00000, 45} ",
+      "Next": 8,
+      "Prallel": 5
+    },
+    {
+      "Node": "{ \"NpcTransformAction\" : True, { 55.99500, 1.86687, 55.10800} , True, { 0.00000, 69.92851, 0.00000} , \"in0106\"} ",
+      "Next": -1,
+      "Prallel": 6
+    },
+    {
+      "Node": "{ \"NpcTransformAction\" : True, { 56.67562, 1.86687, 57.31799} , True, { 0.00000, 116.51300, 0.00000} , \"in0107\"} ",
+      "Next": -1,
+      "Prallel": 7
+    },
+    {
+      "Node": "{ \"PlayerTransformAction\" : True, { 57.20147, 1.86687, 53.49211} , True, { 0.00000, 42.38429, 0.00000} } ",
+      "Next": -1,
+      "Prallel": 9
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : True, 1.00000} ",
+      "Next": 10,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcTransformAction\" : True, { 58.38172, 1.86687, 55.52693} , True, { 0.00000, 264.11960, 0.00000} , \"in0209\"} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t5206102_202\"} ",
+      "Next": 19,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 0, \"m_stand00_talk30\", 1.00000}  ], \"in0106\"} ",
+      "Next": 14,
+      "Prallel": 13
+    },
+    {
+      "Node": "{ \"PlayPlayerAnimationAction\" : [ { 0, \"m_stand00_talk30\", 1.00000}  ]} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"PlayNpcAnimationAction\" : [ { 0, \"m_stand00_talk01\", 1.00000}  ], \"in0107\"} ",
+      "Next": -1,
+      "Prallel": 12
+    },
+    {
+      "Node": "{ \"ScreenFadeAction\" : False, 2.00000} ",
+      "Next": 15,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t5206102_206\"} ",
+      "Next": 17,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NextOrEndQuestAction\" } ",
+      "Next": 18,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetFlagAction\" : 0, 2, \"fe5206102_2_00\"} ",
+      "Next": 16,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"LoadScenesAction\" : \"S0202\", { 1499.94800, -0.00600, 758.87900} , { 0.00000, 0.00000, 0.00000} , 0, True, 1, \"\", 1.00000} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"NpcSimpleTransformAction\" : True, { 60.05000, 1.86688, 55.53000} , 2.00000, True, { 0.00000, 89.47979, 0.00000} , \"in0209\"} ",
+      "Next": 20,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t5206102_205\"} ",
+      "Next": 11,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"SetNpcAnimationAction\" : \"in0209_i99\", \"m_stand00_await00\", False} ",
+      "Next": -1,
+      "Prallel": 22
+    },
+    {
+      "Node": "{ \"SetNpcAnimationAction\" : \"in0106_i98\", \"m_stand00_await00\", False} ",
+      "Next": -1,
+      "Prallel": 23
+    },
+    {
+      "Node": "{ \"SetNpcAnimationAction\" : \"in0107_i98\", \"m_stand00_await00\", False} ",
+      "Next": -1,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"ChangeDayAndNightAction\" : 2} ",
+      "Next": 3,
+      "Prallel": -1
+    }
+  ],
+  "Name": "第二年爽朗传书6-逃脱失败"
+}

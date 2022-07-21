@@ -6,20 +6,24 @@
       "Index": 0,
       "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
       "Next": 1,
+      "Prallel": -1,
       "Child": [
-        1
+        1,
+        45
       ]
     },
     {
       "Index": 1,
       "Node": "{ \"BattleResultAddUnits\" : \"in05823,in05824,io44115401,io44125401,io44145401,in05825,in05826,in05827,in05828,io48145301,io48135301,io48115301\", 1, \"105105210,101104205,103106209,200106206,202107205,102102204,107203204,203108205,105101206,104200204,106200206,108202206\"} ",
-      "Next": -1,
+      "Next": 45,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 2,
       "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
       "Next": 3,
+      "Prallel": -1,
       "Child": [
         3
       ]
@@ -28,12 +32,14 @@
       "Index": 3,
       "Node": "{ \"BattleResultAddUnits\" : \"Player,party01,party02,party03,in0201,in0204,in0205,in03009,in03010\", 0, \"201200101,202101101,101202101,102203101,200101201,202102200,101201200,204103101,205104101\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 4,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 5,
+      "Prallel": -1,
       "Child": [
         5
       ]
@@ -42,6 +48,7 @@
       "Index": 5,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 6,
+      "Prallel": -1,
       "Child": [
         6,
         7,
@@ -53,30 +60,35 @@
       "Index": 6,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"in05823\"} ",
       "Next": 7,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 7,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 8,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 8,
       "Node": "{ \"BattleResultTalk\" : \"t1205502_bs0121\"} ",
       "Next": 9,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 9,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"bs1205502_01_01\", 0, 1, \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 10,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 11,
+      "Prallel": -1,
       "Child": [
         11
       ]
@@ -85,6 +97,7 @@
       "Index": 11,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 12,
+      "Prallel": -1,
       "Child": [
         12,
         13,
@@ -95,24 +108,28 @@
       "Index": 12,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"Player\"} ",
       "Next": 13,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 13,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 14,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 14,
       "Node": "{ \"BattleResultTalk\" : \"t1205502_bs0141\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 15,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 16,
+      "Prallel": -1,
       "Child": [
         16
       ]
@@ -121,6 +138,7 @@
       "Index": 16,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 17,
+      "Prallel": -1,
       "Child": [
         17,
         18,
@@ -131,24 +149,28 @@
       "Index": 17,
       "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
       "Next": 18,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 18,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 19,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 19,
       "Node": "{ \"BattleResultWin\" : \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 20,
       "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
       "Next": 21,
+      "Prallel": -1,
       "Child": [
         21
       ]
@@ -157,6 +179,7 @@
       "Index": 21,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 22,
+      "Prallel": -1,
       "Child": [
         22,
         23,
@@ -176,78 +199,91 @@
       "Index": 22,
       "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
       "Next": 23,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 23,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 24,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 24,
       "Node": "{ \"BattleResultTalk\" : \"t1205502_bs0100\"} ",
       "Next": 25,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 25,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in05828\", \"bt1205502_01_Buff_TaoPower\", True} ",
       "Next": 26,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 26,
       "Node": "{ \"BattleResultAddBuff\" : True, \"io48145301\", \"bt1205502_01_Buff_TaoPower\", True} ",
       "Next": 27,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 27,
       "Node": "{ \"BattleResultAddBuff\" : True, \"io48135301\", \"bt1205502_01_Buff_TaoPower\", True} ",
       "Next": 28,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 28,
       "Node": "{ \"BattleResultAddBuff\" : True, \"io48115301\", \"bt1205502_01_Buff_TaoPower\", True} ",
       "Next": 29,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 29,
       "Node": "{ \"BattleResultTalk\" : \"t1205502_bs0105\"} ",
       "Next": 30,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 30,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in05824,io44115401,io44125401,io44145401\", \"bt1205502_01_Buff_FirePower\", True} ",
       "Next": 31,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 31,
       "Node": "{ \"BattleResultTalk\" : \"t1205502_bs0118\"} ",
       "Next": 32,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 32,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in05825,in05826,in05827\", \"bt1205502_01_Buff_MachinePower\", True} ",
       "Next": 33,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 33,
       "Node": "{ \"BattleResultTalk\" : \"t1205502_bs0119\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 34,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 35,
+      "Prallel": -1,
       "Child": [
         35
       ]
@@ -256,6 +292,7 @@
       "Index": 35,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 36,
+      "Prallel": -1,
       "Child": [
         36,
         37,
@@ -267,30 +304,35 @@
       "Index": 36,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"in05823\"} ",
       "Next": 37,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 37,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"bs1205502_01_01\", \"\"} ",
       "Next": 38,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 38,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 39,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 39,
       "Node": "{ \"BattleResultUnitHP\" : 0, 0, \"in05825,in05826,in05827\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 40,
       "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
       "Next": 41,
+      "Prallel": -1,
       "Child": [
         41
       ]
@@ -299,6 +341,7 @@
       "Index": 41,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 42,
+      "Prallel": -1,
       "Child": [
         42,
         43,
@@ -309,22 +352,179 @@
       "Index": 42,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"Player\"} ",
       "Next": 43,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 43,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 44,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 44,
       "Node": "{ \"BattleResultLose\" : \"\"} ",
       "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 45,
+      "Node": "{ \"BattleResultTreasurePoint\" : \"204108204,107204203,101206105\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 46,
+      "Node": "{ \"BattleFactorCellFaction\" : 0, \"204108204\"} ",
+      "Next": 50,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 47,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 46,
+      "Prallel": -1,
+      "Child": [
+        46,
+        50,
+        49,
+        51
+      ]
+    },
+    {
+      "Index": 48,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 47,
+      "Prallel": -1,
+      "Child": [
+        47
+      ]
+    },
+    {
+      "Index": 49,
+      "Node": "{ \"BattleResultAddReward\" : \"Drop_gear_01_1_3\"} ",
+      "Next": 51,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 50,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 49,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 51,
+      "Node": "{ \"BattleResultRemoveTreasurePoint\" : \"204108204\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 52,
+      "Node": "{ \"BattleFactorCellFaction\" : 0, \"107204203\"} ",
+      "Next": 56,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 53,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 52,
+      "Prallel": -1,
+      "Child": [
+        52,
+        56,
+        55,
+        57
+      ]
+    },
+    {
+      "Index": 54,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 53,
+      "Prallel": -1,
+      "Child": [
+        53
+      ]
+    },
+    {
+      "Index": 55,
+      "Node": "{ \"BattleResultAddReward\" : \"Drop_gear_02_1\"} ",
+      "Next": 57,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 56,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 55,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 57,
+      "Node": "{ \"BattleResultRemoveTreasurePoint\" : \"107204203\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 58,
+      "Node": "{ \"BattleFactorCellFaction\" : 0, \"101206105\"} ",
+      "Next": 62,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 59,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 58,
+      "Prallel": -1,
+      "Child": [
+        58,
+        62,
+        61,
+        63
+      ]
+    },
+    {
+      "Index": 60,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 59,
+      "Prallel": -1,
+      "Child": [
+        59
+      ]
+    },
+    {
+      "Index": 61,
+      "Node": "{ \"BattleResultAddReward\" : \"Drop_it710010\"} ",
+      "Next": 63,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 62,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 61,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 63,
+      "Node": "{ \"BattleResultRemoveTreasurePoint\" : \"101206105\"} ",
+      "Next": -1,
+      "Prallel": -1,
       "Child": []
     }
   ],
   "Remark": "",
-  "WinTip": "Subdue Secret Guard、 North Flame Guard and Zhenwu Temple!",
+  "WinTip": "Suppress Secret Guard， North Flame Guard and Zhenwu Temple!",
   "LoseTip": "{name_1}{name_2} defeated"
 }

@@ -107,37 +107,37 @@ skill_dart_damage_10	暗器伤害1倍		1
 skill_dart_damage_11	暗器伤害1.1倍		1.1
 skill_dart_damage_13	暗器伤害1.3倍		1.3
 skill_defautl_leveup	基本技能修练增加经验公式		str*100
-skill_exp	招式与心法养成指令经验公式，招式看个别四维，心法看四维总值	招式经验公式	((math.log(player_status/require_status)/math.log(10))*2)*500+225
+skill_exp	招式与心法养成指令经验公式，招式看个别四维，心法看四维总值	招式经验公式	((math.log(player_status/require_status)/math.log(10))*2)*500+300
 skill_heal	先填单位治愈力，没多种治疔coefficent就填100即可	AI通用治疔公式	cure*coefficient*0.01
 skill_heal_ma091201	绿江岸治疔公式		defender_max_hp*0.33
 skill_heal_ma093101	乖乖担心你的治疔公式		(str+vit+dex+spi)*0.6+400
-skill_heal_ma130101	三法人脉治疔公式岐黄九针1		(str+vit+dex+spi)*0.7*(slv/10)+180
-skill_heal_ma130201	一法天阳治疔公式岐黄九针2		(str+vit+dex+spi)*0.8+0.4*(slv/10)*(str+vit+dex+spi)
+skill_heal_ma130101	三法人脉治疔公式岐黄九针1		(str+vit+dex+spi)*0.23*(slv/10)+300
+skill_heal_ma130201	一法天阳治疔公式岐黄九针2		450+0.55*(slv/10)*(str+vit+dex+spi)
 skill_heal_ma130301	七法星窍治疔公式岐黄九针3		(str+vit+dex+spi)*1.35*(slv/10)
 skill_heal_ma130401	一阳来复治疔公式纯阳指1646		(str+vit+dex+spi)*0.7*(slv/10)+160
-skill_heal_ma130501	阳煦山立治疔公式纯阳指2		(str+vit+dex+spi)*1.8*(slv/10)
-skill_heal_ma130601	天道还阳治疔公式纯阳指3		(str+vit+dex+spi)*1.6*(slv/10)
-skill_heal_ma130701	广陵散		(zither*1.6+(str+vit+dex+spi)*0.52)*(slv*0.06+0.4)
+skill_heal_ma130501	阳煦山立治疔公式纯阳指2		(str+vit+dex+spi)*1.35*(slv/10)
+skill_heal_ma130601	天道还阳治疔公式纯阳指3		(str+vit+dex+spi)*1.65*(slv/10)
+skill_heal_ma130701	广陵散		(zither*2+(str+vit+dex+spi)*slv*0.1*(zither/1000))
 skill_heal_ma150201	石昆归元工治疔公式		(str+vit+dex+spi)*0.8+0.4*(slv/10)*(str+vit+dex+spi)
-skill_heal_ma170601	蟠龙细雨治疔公式		(str+vit+dex+spi)*(slv/10)
-skill_heal_ma17060101	蟠龙细雨治疔公式		(str+vit+dex+spi)*1.5*(slv/10)
+skill_heal_ma170601	蟠龙细雨治疔公式		(str+vit+dex+spi)*0.8*(slv/10)
+skill_heal_ma17060101	蟠龙细雨治疔公式		(str+vit+dex+spi)*1.2*(slv/10)
 skill_heal_ma21010101	机关人阴阳灸治疔公式		(str+vit+dex+spi)*0.6+defender_max_hp*0.2
-skill_heal_ma220201	黄雀衔环治疔公式		(str+vit+dex+spi)*0.6+500
-skill_heal_ma220301	百鸟朝凤治疔公式		(str+vit+dex+spi)*0.4+defender_max_hp*0.5
-skill_heal_ma22030101	百鸟朝凤2治疔公式		(str+vit+dex+spi)*0.4+defender_max_hp*0.6
-skill_heal_ma220401	百鸟朝凤2治疔公式		(str+vit+dex+spi)*2.4
+skill_heal_ma220201	黄雀衔环治疔公式		(str+vit+dex+spi)*0.3+500
+skill_heal_ma220301	百鸟朝凤治疔公式		(str+vit+dex+spi)*0.4+defender_max_hp*0.2
+skill_heal_ma22030101	百鸟朝凤2治疔公式		(str+vit+dex+spi)*0.65+defender_max_hp*0.3
+skill_heal_ma220401	雪鹤送暖治疔公式		(str+vit+dex+spi)*2.1
 skill_heal_specialskill0111	武彻特技		max_hp*0.6
 skill_heal_test_hp2000	HP治疔测试公式	HP治疔测试公式	2000
 skill_heal_test_mp2000	MP治疔测试公式	MP治疔测试公式	2000
-status_coefficient_of_community_in0102	段红儿社群成长加成％数	段红儿社群成长加成％数	(community_lv-1)*0.08+math.max(community_lv-5,0)*0.11
-status_coefficient_of_community_in0103	锺若昕社群成长加成％数	锺若昕社群成长加成％数	(community_lv-1)*0.1
-status_coefficient_of_community_in0104	萧芊苓社群成长加成％数	萧芊苓社群成长加成％数	(community_lv-1)*0.075
-status_coefficient_of_community_in0105	石崑社群成长加成％数	石崑社群成长加成％数	(community_lv-1)*0.075
-status_coefficient_of_community_in0106	南飞鍠社群成长加成％数	南飞鍠社群成长加成％数	(community_lv-1)*0.1
-status_coefficient_of_community_in0107	程墉社群成长加成％数	程墉社群成长加成％数	(community_lv-1)*0.1
+status_coefficient_of_community_in0102	段红儿社群成长加成％数	段红儿社群成长加成％数	(community_lv-1)*0.04+math.max(community_lv-5,0)*0.055
+status_coefficient_of_community_in0103	锺若昕社群成长加成％数	锺若昕社群成长加成％数	(community_lv-1)*0.05
+status_coefficient_of_community_in0104	萧芊苓社群成长加成％数	萧芊苓社群成长加成％数	(community_lv-1)*0.0375
+status_coefficient_of_community_in0105	石崑社群成长加成％数	石崑社群成长加成％数	(community_lv-1)*0.0375
+status_coefficient_of_community_in0106	南飞鍠社群成长加成％数	南飞鍠社群成长加成％数	(community_lv-1)*0.05
+status_coefficient_of_community_in0107	程墉社群成长加成％数	程墉社群成长加成％数	(community_lv-1)*0.05
 status_coefficient_of_community_in0109	净社群成长加成％数	净社群成长加成％数	(community_lv-1)*0.025
-status_coefficient_of_community_in0110	上官煦社群成长加成％数	上官煦社群成长加成％数	(community_lv-1)*0.075
-status_coefficient_of_community_in0111	武辙社群成长加成％数	武辙社群成长加成％数	(community_lv-1)*0.075
+status_coefficient_of_community_in0110	上官煦社群成长加成％数	上官煦社群成长加成％数	(community_lv-1)*0.0375
+status_coefficient_of_community_in0111	武辙社群成长加成％数	武辙社群成长加成％数	(community_lv-1)*0.0375
 status_grow_1year	一般角色第一年成长系数	一般角色第一年成长系数	0.5
 status_grow_2year	一般角色第二年成长系数	一般角色第一年成长系数	1
 status_grow_3year	一般角色第三年成长系数	一般角色第一年成长系数	1.5
@@ -148,3 +148,5 @@ skill_damage_09_17			0.9+slv*0.08
 skill_damage_20_20			2
 skill_damage_22_22			2.2
 skill_damage_godfist001	挥拳伤害		math.max(0,(slv-9))*5.2+0.31
+skill_damage_01_04	0级*0.1，满级*0.4		0.1+slv*0.03
+skill_heal_ma22020101	黄雀衔环治疔公式		(str+vit+dex+spi)*0.6+500

@@ -9,6 +9,7 @@
       "Prallel": -1,
       "Child": [
         5,
+        99,
         6,
         92,
         93,
@@ -72,8 +73,8 @@
     },
     {
       "Index": 5,
-      "Node": "{ \"BattleResultAddUnits\" : \"in0208,in0110,in0111,in0104,in03001,in03005,io041163,io041355,io041262,io041260\", 0, \"102102204,101101202,200103203,103200203,104202202,202104202,105204201,204105201,107203204,203107204\"} ",
-      "Next": 6,
+      "Node": "{ \"BattleResultAddUnits\" : \"in0208,in0110,in0111,in0104,in03001,in03005\", 0, \"102102204,101101202,200103203,103200203,104202202,202104202\"} ",
+      "Next": 99,
       "Prallel": -1,
       "Child": []
     },
@@ -358,7 +359,7 @@
     },
     {
       "Index": 42,
-      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1}{name_2}，Chu Tianbi or Duan Xiaolie is defeated。\"} ",
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1}{name_2}， Chu Tianbi or Duan Xiaolie were defeated\"} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []
@@ -797,6 +798,13 @@
       "Index": 98,
       "Node": "{ \"BattleResultCameraMoveUnit\" : \"Player\", 0.00000, 10.00000} ",
       "Next": 14,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 99,
+      "Node": "{ \"BattleResultAddUnits\" : \"io041163,io041355,io041262,io041260\", 2, \"105204201,204105201,107203204,203107204\"} ",
+      "Next": 6,
       "Prallel": -1,
       "Child": []
     }

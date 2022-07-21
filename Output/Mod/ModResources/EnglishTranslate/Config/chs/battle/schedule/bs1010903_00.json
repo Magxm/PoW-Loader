@@ -6,20 +6,25 @@
       "Index": 0,
       "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
       "Next": 1,
+      "Prallel": -1,
       "Child": [
-        1
+        1,
+        106,
+        107
       ]
     },
     {
       "Index": 1,
       "Node": "{ \"BattleResultAddUnit\" : \"Player\", 0, 200102202, 1.00000, -74.55400} ",
-      "Next": -1,
+      "Next": 106,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 2,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 3,
+      "Prallel": -1,
       "Child": [
         3
       ]
@@ -28,6 +33,7 @@
       "Index": 3,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 4,
+      "Prallel": -1,
       "Child": [
         4,
         5,
@@ -39,30 +45,35 @@
       "Index": 4,
       "Node": "{ \"BattleFactorFactionDefeat\" : 0} ",
       "Next": 5,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 5,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 6,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 6,
       "Node": "{ \"BattleResultTalk\" : \"t1010903_129\"} ",
       "Next": 7,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 7,
       "Node": "{ \"BattleResultLose\" : \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 8,
       "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
       "Next": 9,
+      "Prallel": -1,
       "Child": [
         9
       ]
@@ -71,10 +82,12 @@
       "Index": 9,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 10,
+      "Prallel": -1,
       "Child": [
         10,
         11,
         12,
+        103,
         13
       ]
     },
@@ -82,30 +95,35 @@
       "Index": 10,
       "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
       "Next": 11,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 11,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 12,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 12,
       "Node": "{ \"BattleResultEventPoint\" : \"102207105,106209103,109209200,107205202,107101208,106103209,103106209,101108209\"} ",
-      "Next": 13,
+      "Next": 103,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 13,
       "Node": "{ \"BattleResultTalk\" : \"t1010903_100\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 14,
       "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
       "Next": 15,
+      "Prallel": -1,
       "Child": [
         15
       ]
@@ -114,6 +132,7 @@
       "Index": 15,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 16,
+      "Prallel": -1,
       "Child": [
         16,
         17,
@@ -125,30 +144,35 @@
       "Index": 16,
       "Node": "{ \"BattleFactorCharacterTile\" : \"101108209\", \"Player\"} ",
       "Next": 17,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 17,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 18,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 18,
       "Node": "{ \"BattleResultTalk\" : \"t1010903_131\"} ",
       "Next": 19,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 19,
       "Node": "{ \"BattleResultRemoveEventPoint\" : \"101108209\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 20,
       "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
       "Next": 21,
+      "Prallel": -1,
       "Child": [
         21
       ]
@@ -157,6 +181,7 @@
       "Index": 21,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 22,
+      "Prallel": -1,
       "Child": [
         22,
         23,
@@ -168,30 +193,35 @@
       "Index": 22,
       "Node": "{ \"BattleFactorCharacterTile\" : \"109209200\", \"Player\"} ",
       "Next": 23,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 23,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 24,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 24,
       "Node": "{ \"BattleResultTalk\" : \"t1010903_131\"} ",
       "Next": 25,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 25,
       "Node": "{ \"BattleResultRemoveEventPoint\" : \"109209200\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 26,
       "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
       "Next": 27,
+      "Prallel": -1,
       "Child": [
         27
       ]
@@ -200,6 +230,7 @@
       "Index": 27,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 28,
+      "Prallel": -1,
       "Child": [
         28,
         29,
@@ -216,60 +247,70 @@
       "Index": 28,
       "Node": "{ \"BattleFactorCharacterTile\" : \"106103209\", \"Player\"} ",
       "Next": 29,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 29,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 30,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 30,
       "Node": "{ \"BattleResultTalk\" : \"t1010903_102\"} ",
       "Next": 31,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 31,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1010903_00_01\", 0, 1, \"采集到红花\"} ",
       "Next": 32,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 32,
       "Node": "{ \"BattleResultRemoveEventPoint\" : \"106103209\"} ",
       "Next": 33,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 33,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1010903_00_02\", \"已采到老鹳草\"} ",
       "Next": 34,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 34,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1010903_00_03\", \"已采到伸筋草\"} ",
       "Next": 35,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 35,
       "Node": "{ \"BattleResultTalk\" : \"t1010903_128\"} ",
       "Next": 36,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 36,
       "Node": "{ \"BattleResultWin\" : \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 37,
       "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
       "Next": 38,
+      "Prallel": -1,
       "Child": [
         38
       ]
@@ -278,6 +319,7 @@
       "Index": 38,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 39,
+      "Prallel": -1,
       "Child": [
         39,
         40,
@@ -294,60 +336,70 @@
       "Index": 39,
       "Node": "{ \"BattleFactorCharacterTile\" : \"107205202\", \"Player\"} ",
       "Next": 40,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 40,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 41,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 41,
       "Node": "{ \"BattleResultTalk\" : \"t1010903_103\"} ",
       "Next": 42,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 42,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1010903_00_02\", 0, 1, \"采集到老鹳草\"} ",
       "Next": 43,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 43,
       "Node": "{ \"BattleResultRemoveEventPoint\" : \"107205202\"} ",
       "Next": 44,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 44,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1010903_00_03\", \"已采到伸筋草\"} ",
       "Next": 45,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 45,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1010903_00_01\", \"已采到红花\"} ",
       "Next": 46,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 46,
       "Node": "{ \"BattleResultTalk\" : \"t1010903_128\"} ",
       "Next": 47,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 47,
       "Node": "{ \"BattleResultWin\" : \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 48,
       "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
       "Next": 49,
+      "Prallel": -1,
       "Child": [
         49
       ]
@@ -356,6 +408,7 @@
       "Index": 49,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 50,
+      "Prallel": -1,
       "Child": [
         50,
         51,
@@ -372,60 +425,70 @@
       "Index": 50,
       "Node": "{ \"BattleFactorCharacterTile\" : \"102207105\", \"Player\"} ",
       "Next": 51,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 51,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 52,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 52,
       "Node": "{ \"BattleResultTalk\" : \"t1010903_101\"} ",
       "Next": 53,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 53,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1010903_00_03\", 0, 1, \"采集到伸筋草\"} ",
       "Next": 54,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 54,
       "Node": "{ \"BattleResultRemoveEventPoint\" : \"102207105\"} ",
       "Next": 55,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 55,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1010903_00_02\", \"已采到老鹳草\"} ",
       "Next": 56,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 56,
       "Node": "{ \"BattleFactorLocalFlag\" : 1, 1, \"btf1010903_00_01\", \"已采到红花\"} ",
       "Next": 57,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 57,
       "Node": "{ \"BattleResultTalk\" : \"t1010903_128\"} ",
       "Next": 58,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 58,
       "Node": "{ \"BattleResultWin\" : \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 59,
       "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
       "Next": 60,
+      "Prallel": -1,
       "Child": [
         60
       ]
@@ -434,6 +497,7 @@
       "Index": 60,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 61,
+      "Prallel": -1,
       "Child": [
         61,
         62,
@@ -449,54 +513,63 @@
       "Index": 61,
       "Node": "{ \"BattleFactorCharacterTile\" : \"107101208\", \"Player\"} ",
       "Next": 62,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 62,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 63,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 63,
       "Node": "{ \"BattleResultRemoveEventPoint\" : \"107101208\"} ",
       "Next": 64,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 64,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1010903_00_04\", 0, 1, \"踩到小狼格\"} ",
       "Next": 65,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 65,
       "Node": "{ \"BattleResultAddUnit\" : \"io93127901\", 1, 103207104, 1.00000, -4.06700} ",
       "Next": 66,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 66,
       "Node": "{ \"BattleResultMoveUnit\" : \"io93127901\", \"104206102\"} ",
       "Next": 67,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 67,
       "Node": "{ \"BattleResultMoveUnit\" : \"io93127901\", \"104205101\"} ",
       "Next": 68,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 68,
       "Node": "{ \"BattleResultTalk\" : \"t1010903_104\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 69,
       "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
       "Next": 70,
+      "Prallel": -1,
       "Child": [
         70
       ]
@@ -505,6 +578,7 @@
       "Index": 70,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 71,
+      "Prallel": -1,
       "Child": [
         71,
         72,
@@ -523,72 +597,84 @@
       "Index": 71,
       "Node": "{ \"BattleFactorCharacterTile\" : \"103106209\", \"Player\"} ",
       "Next": 72,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 72,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 73,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 73,
       "Node": "{ \"BattleResultRemoveEventPoint\" : \"103106209\"} ",
       "Next": 74,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 74,
       "Node": "{ \"SetLocalFlagBattleAction\" : \"btf1010903_00_05\", 0, 1, \"踩到大狼格\"} ",
       "Next": 75,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 75,
       "Node": "{ \"BattleResultAddUnit\" : \"in05751\", 1, 206104102, 1.20000, -15.65800} ",
       "Next": 76,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 76,
       "Node": "{ \"BattleResultAddUnit\" : \"io93127902\", 1, 207105102, 1.00000, -37.25700} ",
       "Next": 77,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 77,
       "Node": "{ \"BattleResultMoveUnit\" : \"in05751\", \"205103102\"} ",
       "Next": 78,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 78,
       "Node": "{ \"BattleResultMoveUnit\" : \"in05751\", \"204103101\"} ",
       "Next": 79,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 79,
       "Node": "{ \"BattleResultMoveUnit\" : \"io93127902\", \"206106200\"} ",
       "Next": 80,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 80,
       "Node": "{ \"BattleResultMoveUnit\" : \"io93127902\", \"205106201\"} ",
       "Next": 81,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 81,
       "Node": "{ \"BattleResultTalk\" : \"t1010903_106\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 82,
       "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
       "Next": 83,
+      "Prallel": -1,
       "Child": [
         83
       ]
@@ -597,9 +683,12 @@
       "Index": 83,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 84,
+      "Prallel": -1,
       "Child": [
         84,
         85,
+        104,
+        105,
         86,
         87,
         88,
@@ -618,90 +707,105 @@
       "Index": 84,
       "Node": "{ \"BattleFactorCharacterTile\" : \"106209103\", \"Player\"} ",
       "Next": 85,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 85,
       "Node": "{ \"ExecuteOnceNode\" } ",
-      "Next": 86,
+      "Next": 104,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 86,
       "Node": "{ \"BattleResultRemoveEventPoint\" : \"106209103\"} ",
       "Next": 87,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 87,
       "Node": "{ \"BattleResultAddUnit\" : \"in05752\", 1, 203203106, 1.00000, -83.73801} ",
       "Next": 88,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 88,
       "Node": "{ \"BattleResultAddUnit\" : \"in05753\", 1, 203204107, 1.00000, -28.36800} ",
       "Next": 89,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 89,
       "Node": "{ \"BattleResultAddUnit\" : \"in05754\", 1, 203202105, 1.00000, -108.88100} ",
       "Next": 90,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 90,
       "Node": "{ \"BattleResultTalk\" : \"t1010903_113\"} ",
       "Next": 91,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 91,
       "Node": "{ \"BattleResultMoveUnit\" : \"in05752\", \"201203104\"} ",
       "Next": 92,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 92,
       "Node": "{ \"BattleResultMoveUnit\" : \"in05752\", \"200204104\"} ",
       "Next": 93,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 93,
       "Node": "{ \"BattleResultMoveUnit\" : \"in05753\", \"201206107\"} ",
       "Next": 94,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 94,
       "Node": "{ \"BattleResultMoveUnit\" : \"in05753\", \"200206106\"} ",
       "Next": 95,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 95,
       "Node": "{ \"BattleResultMoveUnit\" : \"in05754\", \"101202101\"} ",
       "Next": 96,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 96,
       "Node": "{ \"BattleResultMoveUnit\" : \"in05754\", \"102203101\"} ",
       "Next": 97,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 97,
       "Node": "{ \"BattleResultTalk\" : \"t1010903_117\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 98,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 99,
+      "Prallel": -1,
       "Child": [
         99
       ]
@@ -710,6 +814,7 @@
       "Index": 99,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 100,
+      "Prallel": -1,
       "Child": [
         100,
         101,
@@ -720,22 +825,60 @@
       "Index": 100,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"in05752,in05753,in05754\"} ",
       "Next": 101,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 101,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 102,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 102,
       "Node": "{ \"BattleResultTalk\" : \"t1010903_121\"} ",
       "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 103,
+      "Node": "{ \"BattleResultTreasurePoint\" : \"106209103\"} ",
+      "Next": 13,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 104,
+      "Node": "{ \"BattleResultRemoveTreasurePoint\" : \"106209103\"} ",
+      "Next": 105,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 105,
+      "Node": "{ \"BattleResultAddReward\" : \"re1010903_22\"} ",
+      "Next": 86,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 106,
+      "Node": "{ \"SetIsDropReward\" : True} ",
+      "Next": 107,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 107,
+      "Node": "{ \"SetDropRewardProbability\" : 100.00000} ",
+      "Next": -1,
+      "Prallel": -1,
       "Child": []
     }
   ],
   "Remark": "净三阶采药",
-  "WinTip": "Collect <color=#FF0000>Stretching Grass、 Red Flower</color> and <color=#FF0000>Old Stork grass</color>。",
+  "WinTip": "Collect <color=#FF0000>Stretching Grass，Red Flower</color> and <color=#FF0000>Old Stork grass</color>。",
   "LoseTip": "{name_1}{name_2} is defeated。"
 }

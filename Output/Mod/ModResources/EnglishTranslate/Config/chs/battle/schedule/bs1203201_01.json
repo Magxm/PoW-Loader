@@ -6,6 +6,7 @@
       "Index": 0,
       "Node": "{ \"BattleEventNode\" : 100, 0, [ ]} ",
       "Next": 1,
+      "Prallel": -1,
       "Child": [
         1,
         2,
@@ -14,61 +15,71 @@
         5,
         6,
         7,
-        8
+        8,
+        121
       ]
     },
     {
       "Index": 1,
       "Node": "{ \"BattleResultAddUnit\" : \"party00\", 0, 200101201, 1.00000, 0.00000} ",
       "Next": 2,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 2,
       "Node": "{ \"BattleResultAddUnit\" : \"party01\", 0, 101200201, 1.00000, 0.00000} ",
       "Next": 3,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 3,
       "Node": "{ \"BattleResultAddUnit\" : \"party02\", 0, 101202101, 1.00000, 0.00000} ",
       "Next": 4,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 4,
       "Node": "{ \"BattleResultAddUnit\" : \"party03\", 0, 202101101, 1.00000, 0.00000} ",
       "Next": 5,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 5,
       "Node": "{ \"BattleResultAddUnit\" : \"in05558\", 1, 104102206, 1.00000, 0.00000} ",
       "Next": 6,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 6,
       "Node": "{ \"BattleResultAddUnit\" : \"in05559\", 1, 102104206, 1.00000, 0.00000} ",
       "Next": 7,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 7,
       "Node": "{ \"BattleResultAddSecondaryGoal\" : \"bs1203201_01_01\", \"Defeating Irascible Guard and Welcoming Guard\"} ",
       "Next": 8,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 8,
       "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bs1203201_01_01\", 0} ",
-      "Next": -1,
+      "Next": 121,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 9,
       "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
       "Next": 10,
+      "Prallel": -1,
       "Child": [
         10
       ]
@@ -77,48 +88,56 @@
       "Index": 10,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 11,
+      "Prallel": -1,
       "Child": [
         11,
         12,
         13,
         14,
-        15
+        15,
+        128
       ]
     },
     {
       "Index": 11,
       "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
       "Next": 12,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 12,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 13,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 13,
       "Node": "{ \"BattleResultTalk\" : \"t1203201_165\"} ",
       "Next": 14,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 14,
       "Node": "{ \"BattleResultAddBuff\" : False, \"in05558,in05559\", \"bt1203201_01_debuff_Attack&Defence65\", False} ",
       "Next": 15,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 15,
       "Node": "{ \"BattleResultExitPoint\" : \"106103209,105104209,104105209,103106209\"} ",
-      "Next": -1,
+      "Next": 128,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 16,
       "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
       "Next": 17,
+      "Prallel": -1,
       "Child": [
         17
       ]
@@ -127,6 +146,7 @@
       "Index": 17,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 18,
+      "Prallel": -1,
       "Child": [
         18,
         19,
@@ -149,96 +169,112 @@
       "Index": 18,
       "Node": "{ \"BattleFactorTurn\" : 1, 1} ",
       "Next": 19,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 19,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 20,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 20,
       "Node": "{ \"BattleResultAddUnit\" : \"io222255\", 1, 204204108, 1.00000, 0.00000} ",
       "Next": 21,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 21,
       "Node": "{ \"BattleResultAddUnit\" : \"io22204401\", 1, 201204105, 1.00000, 0.00000} ",
       "Next": 22,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 22,
       "Node": "{ \"BattleResultAddUnit\" : \"io22204402\", 1, 204201105, 1.00000, 0.00000} ",
       "Next": 23,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 23,
       "Node": "{ \"BattleResultAddBuff\" : True, \"io222255,io22204401,io22204402\", \"bt1203201_01_buff_MoraleUp\", True} ",
       "Next": 24,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 24,
       "Node": "{ \"BattleResultAddBuff\" : True, \"io222255,io22204401,io22204402\", \"bt1203201_02_buff_FastStep\", True} ",
       "Next": 25,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 25,
       "Node": "{ \"BattleResultAddBuff\" : False, \"io222255,io22204401,io22204402\", \"bt1203201_02_debuff_PowerDown\", False} ",
       "Next": 26,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 26,
       "Node": "{ \"BattleResultTalk\" : \"t1203201_168\"} ",
       "Next": 27,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 27,
       "Node": "{ \"BattleResultAddUnit\" : \"io22234401\", 1, 105103208, 1.00000, 0.00000} ",
       "Next": 28,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 28,
       "Node": "{ \"BattleResultAddUnit\" : \"io22234402\", 1, 103105208, 1.00000, 0.00000} ",
       "Next": 29,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 29,
       "Node": "{ \"BattleResultAddBuff\" : True, \"io22234401,io22234402\", \"bt1203201_01_buff_MoraleUp\", True} ",
       "Next": 30,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 30,
       "Node": "{ \"BattleResultAddBuff\" : True, \"io22234401,io22234402\", \"bt1203201_02_buff_FastStep\", True} ",
       "Next": 31,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 31,
       "Node": "{ \"BattleResultAddBuff\" : False, \"io22234401,io22234402\", \"bt1203201_02_debuff_PowerDown\", False} ",
       "Next": 32,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 32,
       "Node": "{ \"BattleResultTalk\" : \"t1203201_169\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 33,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 34,
+      "Prallel": -1,
       "Child": [
         34
       ]
@@ -247,6 +283,7 @@
       "Index": 34,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 35,
+      "Prallel": -1,
       "Child": [
         35,
         36,
@@ -258,30 +295,35 @@
       "Index": 35,
       "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
       "Next": 36,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 36,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 37,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 37,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1203201_2_03\", 0, 1, \"战胜\"} ",
       "Next": 38,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 38,
       "Node": "{ \"BattleResultWin\" : \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 39,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 40,
+      "Prallel": -1,
       "Child": [
         40
       ]
@@ -290,6 +332,7 @@
       "Index": 40,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 41,
+      "Prallel": -1,
       "Child": [
         41,
         42,
@@ -301,30 +344,35 @@
       "Index": 41,
       "Node": "{ \"BattleFactorFactionDefeat\" : 0} ",
       "Next": 42,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 42,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 43,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 43,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1203201_2_03\", 0, 2, \"战败\"} ",
       "Next": 44,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 44,
       "Node": "{ \"BattleResultLose\" : \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 45,
       "Node": "{ \"BattleEventNode\" : 510, 0, [ ]} ",
       "Next": 46,
+      "Prallel": -1,
       "Child": [
         46
       ]
@@ -333,6 +381,7 @@
       "Index": 46,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 47,
+      "Prallel": -1,
       "Child": [
         47,
         48,
@@ -344,30 +393,35 @@
       "Index": 47,
       "Node": "{ \"BattleFactorTurn\" : 1, 5} ",
       "Next": 48,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 48,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 49,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 49,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1203201_2_03\", 0, 2, \"战败\"} ",
       "Next": 50,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 50,
       "Node": "{ \"BattleResultLose\" : \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 51,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 52,
+      "Prallel": -1,
       "Child": [
         52
       ]
@@ -376,6 +430,7 @@
       "Index": 52,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 53,
+      "Prallel": -1,
       "Child": [
         53,
         54,
@@ -388,36 +443,42 @@
       "Index": 53,
       "Node": "{ \"BattleFactorCharacterTile\" : \"106103209,105104209,104105209,103106209\", \"Player\"} ",
       "Next": 54,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 54,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 55,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 55,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1203201_2_02\", 0, 1, \"主角抵达脱逃点\"} ",
       "Next": 56,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 56,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1203201_2_03\", 0, 1, \"战胜\"} ",
       "Next": 57,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 57,
       "Node": "{ \"BattleResultWin\" : \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 58,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 59,
+      "Prallel": -1,
       "Child": [
         59
       ]
@@ -426,6 +487,7 @@
       "Index": 59,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 60,
+      "Prallel": -1,
       "Child": [
         60,
         61,
@@ -438,36 +500,42 @@
       "Index": 60,
       "Node": "{ \"BattleFactorCharacterTile\" : \"106103209,105104209,104105209,103106209\", \"in0102\"} ",
       "Next": 61,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 61,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 62,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 62,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1203201_2_02\", 0, 2, \"段红儿抵达脱逃点\"} ",
       "Next": 63,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 63,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1203201_2_03\", 0, 1, \"战胜\"} ",
       "Next": 64,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 64,
       "Node": "{ \"BattleResultWin\" : \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 65,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 66,
+      "Prallel": -1,
       "Child": [
         66
       ]
@@ -476,6 +544,7 @@
       "Index": 66,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 67,
+      "Prallel": -1,
       "Child": [
         67,
         68,
@@ -488,36 +557,42 @@
       "Index": 67,
       "Node": "{ \"BattleFactorCharacterTile\" : \"106103209,105104209,104105209,103106209\", \"in0103\"} ",
       "Next": 68,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 68,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 69,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 69,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1203201_2_02\", 0, 3, \"锺若昕抵达脱逃点\"} ",
       "Next": 70,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 70,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1203201_2_03\", 0, 1, \"战胜\"} ",
       "Next": 71,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 71,
       "Node": "{ \"BattleResultWin\" : \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 72,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 73,
+      "Prallel": -1,
       "Child": [
         73
       ]
@@ -526,6 +601,7 @@
       "Index": 73,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 74,
+      "Prallel": -1,
       "Child": [
         74,
         75,
@@ -538,36 +614,42 @@
       "Index": 74,
       "Node": "{ \"BattleFactorCharacterTile\" : \"106103209,105104209,104105209,103106209\", \"in0104\"} ",
       "Next": 75,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 75,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 76,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 76,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1203201_2_02\", 0, 4, \"萧芊菱抵达脱逃点\"} ",
       "Next": 77,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 77,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1203201_2_03\", 0, 1, \"战胜\"} ",
       "Next": 78,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 78,
       "Node": "{ \"BattleResultWin\" : \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 79,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 80,
+      "Prallel": -1,
       "Child": [
         80
       ]
@@ -576,6 +658,7 @@
       "Index": 80,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 81,
+      "Prallel": -1,
       "Child": [
         81,
         82,
@@ -588,36 +671,42 @@
       "Index": 81,
       "Node": "{ \"BattleFactorCharacterTile\" : \"106103209,105104209,104105209,103106209\", \"in0106\"} ",
       "Next": 82,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 82,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 83,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 83,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1203201_2_02\", 0, 6, \"南飞鍠抵达脱逃点\"} ",
       "Next": 84,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 84,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1203201_2_03\", 0, 1, \"战胜\"} ",
       "Next": 85,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 85,
       "Node": "{ \"BattleResultWin\" : \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 86,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 87,
+      "Prallel": -1,
       "Child": [
         87
       ]
@@ -626,6 +715,7 @@
       "Index": 87,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 88,
+      "Prallel": -1,
       "Child": [
         88,
         89,
@@ -638,36 +728,42 @@
       "Index": 88,
       "Node": "{ \"BattleFactorCharacterTile\" : \"106103209,105104209,104105209,103106209\", \"in0105\"} ",
       "Next": 89,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 89,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 90,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 90,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1203201_2_02\", 0, 5, \"石崑抵达脱逃点\"} ",
       "Next": 91,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 91,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1203201_2_03\", 0, 1, \"战胜\"} ",
       "Next": 92,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 92,
       "Node": "{ \"BattleResultWin\" : \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 93,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 94,
+      "Prallel": -1,
       "Child": [
         94
       ]
@@ -676,6 +772,7 @@
       "Index": 94,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 95,
+      "Prallel": -1,
       "Child": [
         95,
         96,
@@ -688,36 +785,42 @@
       "Index": 95,
       "Node": "{ \"BattleFactorCharacterTile\" : \"106103209,105104209,104105209,103106209\", \"in0107\"} ",
       "Next": 96,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 96,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 97,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 97,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1203201_2_02\", 0, 7, \"程墉抵达脱逃点\"} ",
       "Next": 98,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 98,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1203201_2_03\", 0, 1, \"战胜\"} ",
       "Next": 99,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 99,
       "Node": "{ \"BattleResultWin\" : \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 100,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 101,
+      "Prallel": -1,
       "Child": [
         101
       ]
@@ -726,6 +829,7 @@
       "Index": 101,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 102,
+      "Prallel": -1,
       "Child": [
         102,
         103,
@@ -738,36 +842,42 @@
       "Index": 102,
       "Node": "{ \"BattleFactorCharacterTile\" : \"106103209,105104209,104105209,103106209\", \"in0110\"} ",
       "Next": 103,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 103,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 104,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 104,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1203201_2_02\", 0, 10, \"上官煦抵达脱逃点\"} ",
       "Next": 105,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 105,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1203201_2_03\", 0, 1, \"战胜\"} ",
       "Next": 106,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 106,
       "Node": "{ \"BattleResultWin\" : \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 107,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 108,
+      "Prallel": -1,
       "Child": [
         108
       ]
@@ -776,6 +886,7 @@
       "Index": 108,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 109,
+      "Prallel": -1,
       "Child": [
         109,
         110,
@@ -788,36 +899,42 @@
       "Index": 109,
       "Node": "{ \"BattleFactorCharacterTile\" : \"106103209,105104209,104105209,103106209\", \"in0111\"} ",
       "Next": 110,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 110,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 111,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 111,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1203201_2_02\", 0, 11, \"武辙抵达脱逃点\"} ",
       "Next": 112,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 112,
       "Node": "{ \"SetGlobalFlagBattleAction\" : \"fe1203201_2_03\", 0, 1, \"战胜\"} ",
       "Next": 113,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 113,
       "Node": "{ \"BattleResultWin\" : \"\"} ",
       "Next": -1,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 114,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
       "Next": 115,
+      "Prallel": -1,
       "Child": [
         115
       ]
@@ -826,6 +943,7 @@
       "Index": 115,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 116,
+      "Prallel": -1,
       "Child": [
         116,
         117,
@@ -838,34 +956,102 @@
       "Index": 116,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"in05558,in05559\"} ",
       "Next": 117,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 117,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 118,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 118,
       "Node": "{ \"BattleResultAddBuff\" : True, \"io222255,io22204401,io22204402,io22234401,io22234402\", \"\", False} ",
       "Next": 119,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 119,
       "Node": "{ \"BattleResultRmoveBuff\" : \"io222255,io22204401,io22204402,io22234401,io22234402\", \"bt1203201_01_buff_MoraleUp\"} ",
       "Next": 120,
+      "Prallel": -1,
       "Child": []
     },
     {
       "Index": 120,
       "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"bs1203201_01_01\", 1} ",
       "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 121,
+      "Node": "{ \"BattleResultTreasurePoint\" : \"203101102\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 122,
+      "Node": "{ \"BattleResultAddReward\" : \"Drop_gift_01_1\"} ",
+      "Next": 127,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 123,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 122,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 124,
+      "Node": "{ \"BattleFactorCellFaction\" : 0, \"203101102\"} ",
+      "Next": 123,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 125,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 124,
+      "Prallel": -1,
+      "Child": [
+        124,
+        123,
+        122,
+        127
+      ]
+    },
+    {
+      "Index": 126,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 125,
+      "Prallel": -1,
+      "Child": [
+        125
+      ]
+    },
+    {
+      "Index": 127,
+      "Node": "{ \"BattleResultRemoveTreasurePoint\" : \"203101102\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 128,
+      "Node": "{ \"BattleResultCameraMoveUnit\" : \"Player\", -10.00000, 9.00000} ",
+      "Next": -1,
+      "Prallel": -1,
       "Child": []
     }
   ],
   "Remark": "",
-  "WinTip": "One party member reaches escape point、 or defeats all the enemies!",
-  "LoseTip": "All friendly units are defeated。、 or the battle exceeds five Rounds"
+  "WinTip": "One party member reaches escape point，or defeats all the enemies!",
+  "LoseTip": "All friendly units are defeated。，or the battle exceeds five Rounds"
 }

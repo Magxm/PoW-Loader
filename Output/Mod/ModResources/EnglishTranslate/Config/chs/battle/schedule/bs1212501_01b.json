@@ -14,7 +14,8 @@
         4,
         5,
         6,
-        7
+        7,
+        514
       ]
     },
     {
@@ -62,7 +63,7 @@
     {
       "Index": 7,
       "Node": "{ \"BattleResultAddUnits\" : \"in15102,in15141,in15173,in19001\", 4, \"114203211,205117212,213111102,224109115\"} ",
-      "Next": -1,
+      "Next": 514,
       "Prallel": -1,
       "Child": []
     },
@@ -1694,7 +1695,7 @@
     },
     {
       "Index": 210,
-      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1}{name_2}， Shi Kun， Tang Yun， Shangguan Yan， or Tang Sanchang is defeated。\"} ",
+      "Node": "{ \"BattleResultChangeLoseTip\" : \"{name_1}{name_2}， Shi Kun， Tang Yun， Shangguan Yan， or Tang Sanchang were defeated。\"} ",
       "Next": 513,
       "Prallel": -1,
       "Child": []
@@ -4130,6 +4131,160 @@
       "Index": 513,
       "Node": "{ \"BattleResultAddBuff\" : False, \"in21006\", \"bt1212501_01_buff_FeiYouMadPower\", True} ",
       "Next": 211,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 514,
+      "Node": "{ \"BattleResultTreasurePoint\" : \"104201203,115207208,211115204\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 515,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 516,
+      "Prallel": -1,
+      "Child": [
+        516
+      ]
+    },
+    {
+      "Index": 516,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 517,
+      "Prallel": -1,
+      "Child": [
+        517,
+        518,
+        519,
+        520
+      ]
+    },
+    {
+      "Index": 517,
+      "Node": "{ \"BattleFactorCellFaction\" : 0, \"104201203\"} ",
+      "Next": 518,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 518,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 519,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 519,
+      "Node": "{ \"BattleResultAddReward\" : \"Drop_gear_02_1_3\"} ",
+      "Next": 520,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 520,
+      "Node": "{ \"BattleResultRemoveTreasurePoint\" : \"104201203\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 521,
+      "Node": "{ \"BattleFactorCellFaction\" : 0, \"115207208\"} ",
+      "Next": 523,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 522,
+      "Node": "{ \"BattleResultAddReward\" : \"Drop_drug_04_1\"} ",
+      "Next": 524,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 523,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 522,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 524,
+      "Node": "{ \"BattleResultRemoveTreasurePoint\" : \"115207208\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 525,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 521,
+      "Prallel": -1,
+      "Child": [
+        521,
+        523,
+        522,
+        524
+      ]
+    },
+    {
+      "Index": 526,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 525,
+      "Prallel": -1,
+      "Child": [
+        525
+      ]
+    },
+    {
+      "Index": 527,
+      "Node": "{ \"BattleFactorCellFaction\" : 0, \"211115204\"} ",
+      "Next": 531,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 528,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 527,
+      "Prallel": -1,
+      "Child": [
+        527,
+        531,
+        530,
+        532
+      ]
+    },
+    {
+      "Index": 529,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 528,
+      "Prallel": -1,
+      "Child": [
+        528
+      ]
+    },
+    {
+      "Index": 530,
+      "Node": "{ \"BattleResultAddReward\" : \"Drop_drug_04_1\"} ",
+      "Next": 532,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 531,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 530,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 532,
+      "Node": "{ \"BattleResultRemoveTreasurePoint\" : \"211115204\"} ",
+      "Next": -1,
       "Prallel": -1,
       "Child": []
     }
