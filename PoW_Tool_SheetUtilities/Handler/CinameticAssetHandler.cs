@@ -217,6 +217,15 @@ namespace PoW_Tool_SheetUtilities.Handler
 
                 string outFilePath = filePath.Replace(cinameticFolder, outputFileDirectory);
                 outFilePath = outFilePath.Replace(".bytes", ".json");
+
+                //Checking if json is valid
+                if (!IsValidJson(data))
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Invalid export JSON " + outFilePath);
+                    Console.ForegroundColor = ConsoleColor.White;
+                }
+
                 File.WriteAllText(outFilePath, data);
             }
 
