@@ -831,6 +831,19 @@ namespace PoW_Tool_SheetUtilities.Handler
             //Parse every line in the game asset file
             System.IO.StreamReader reader = new System.IO.StreamReader(gameFilePath);
             string[] lines = File.ReadAllLines(gameFilePath);
+
+            //Testing row count
+            if (lines.Length > 0)
+            {
+                string line = lines[0];
+                string[] data = line.Split('\t');
+                if (data.Length != VariableDefinitions.Count)
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    Console.WriteLine("CRITICAL: " + AssetName + " changed format!");
+                    Console.ForegroundColor = ConsoleColor.White;
+                }
+            }
             for (int i = 0; i < lines.Length; i++)
             {
                 string line = lines[i];
