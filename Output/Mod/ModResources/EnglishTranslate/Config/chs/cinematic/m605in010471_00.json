@@ -342,12 +342,12 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"NpcLocateAction\" : { 1.23000, -199.26000, -0.64000} , { 0.00000, 321.75690, 0.00000} , \"in0104\"} ",
+      "Node": "{ \"NpcLocateAction\" : { 1.23000, -199.80100, -0.64000} , { 0.00000, 321.75690, 0.00000} , \"in0104\"} ",
       "Next": 70,
       "Prallel": -1
     },
     {
-      "Node": "{ \"PlayerLocateAction\" : { -0.47200, -199.26900, 0.56800} , { 0.00000, 168.43380, 0.00000} } ",
+      "Node": "{ \"PlayerLocateAction\" : { -0.47200, -199.81000, 0.56800} , { 0.00000, 168.43380, 0.00000} } ",
       "Next": 68,
       "Prallel": -1
     },
@@ -538,7 +538,7 @@
     },
     {
       "Node": "{ \"ScreenFadeAction\" : False, 0.50000} ",
-      "Next": 76,
+      "Next": 161,
       "Prallel": -1
     },
     {
@@ -662,7 +662,7 @@
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"Probability\" : 50.00000} , { \"CheckFavorabilityIsLover\" : 0, 1, \"in0104\"}  ], 0} , 134, 61} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"Probability\" : 50.00000} , { \"CheckFavorabilityIsLover\" : 0, 1, \"in0104\", False}  ], 0} , 134, 61} ",
       "Next": -1,
       "Prallel": -1
     },
@@ -799,6 +799,16 @@
     {
       "Node": "{ \"SetFlagAction\" : 0, 1, \"fe605in010471_2_01\"} ",
       "Next": 29,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TalkAction\" : \"t605in0104_245\"} ",
+      "Next": 76,
+      "Prallel": -1
+    },
+    {
+      "Node": "{ \"TimerAction\" : 0.50000} ",
+      "Next": 160,
       "Prallel": -1
     }
   ],

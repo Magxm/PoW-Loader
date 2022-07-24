@@ -11,7 +11,8 @@
         1,
         2,
         5,
-        6
+        6,
+        104
       ]
     },
     {
@@ -52,7 +53,7 @@
     {
       "Index": 6,
       "Node": "{ \"BattleResultAddUnit\" : \"party03\", 0, 201101200, 1.00000, 0.00000} ",
-      "Next": -1,
+      "Next": 104,
       "Prallel": -1,
       "Child": []
     },
@@ -198,7 +199,7 @@
     },
     {
       "Index": 25,
-      "Node": "{ \"BattleResultAddUnit\" : \"bec5400101_02\", 1, 102101203, 1.00000, 0.00000} ",
+      "Node": "{ \"BattleResultAddUnit\" : \"bec5400101_02\", 1, 104101205, 1.00000, 0.00000} ",
       "Next": 35,
       "Prallel": -1,
       "Child": []
@@ -293,7 +294,7 @@
     },
     {
       "Index": 36,
-      "Node": "{ \"BattleResultAddUnit\" : \"bec5400101_02\", 1, 103202201, 1.00000, 0.00000} ",
+      "Node": "{ \"BattleResultAddUnit\" : \"bec5400101_02\", 1, 103204101, 1.00000, 0.00000} ",
       "Next": 37,
       "Prallel": -1,
       "Child": []
@@ -550,6 +551,7 @@
       "Child": [
         65,
         66,
+        105,
         79,
         67,
         71,
@@ -573,7 +575,7 @@
     {
       "Index": 66,
       "Node": "{ \"ExecuteOnceNode\" } ",
-      "Next": 79,
+      "Next": 105,
       "Prallel": -1,
       "Child": []
     },
@@ -841,9 +843,64 @@
       "Next": 102,
       "Prallel": -1,
       "Child": []
+    },
+    {
+      "Index": 104,
+      "Node": "{ \"BattleResultAddSecondaryGoal\" : \"SVC_01\", \"Release all caged blood wolves\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 105,
+      "Node": "{ \"BattleResultChangeSecondaryGoal\" : \"SVC_01\", 1} ",
+      "Next": 79,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 106,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 107,
+      "Prallel": -1,
+      "Child": [
+        107
+      ]
+    },
+    {
+      "Index": 107,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 108,
+      "Prallel": -1,
+      "Child": [
+        108,
+        109,
+        110
+      ]
+    },
+    {
+      "Index": 108,
+      "Node": "{ \"BattleFactorFactionDefeat\" : 1} ",
+      "Next": 109,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 109,
+      "Node": "{ \"BattleResultTalk\" : \"t5401101_011\"} ",
+      "Next": 110,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 110,
+      "Node": "{ \"BattleResultWin\" : \"\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
     }
   ],
   "Remark": "",
-  "WinTip": "All enemies are defeated",
+  "WinTip": "Repel all blood wolves.",
   "LoseTip": "All friendly units are defeated"
 }
