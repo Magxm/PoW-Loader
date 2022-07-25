@@ -260,11 +260,21 @@ namespace PoW_Tool_SheetUtilities.Handler.BattleAssets
             string scheduleRelativeFolderPath = Path.DirectorySeparatorChar + "chs" + Path.DirectorySeparatorChar + "battle" + Path.DirectorySeparatorChar + "schedule";
             string scheduleFolderPath = outRootPath + Path.DirectorySeparatorChar + scheduleRelativeFolderPath;
             string mergeFileInputPath = Environment.CurrentDirectory + Path.DirectorySeparatorChar + "Input" + Path.DirectorySeparatorChar + FilePathWithoutExtension + ".bytes";
+            string mergeFileOutFolder = outRootPath + Path.DirectorySeparatorChar + FilePathWithoutExtension;
             string mergeFileOutPath = outRootPath + Path.DirectorySeparatorChar + FilePathWithoutExtension + OutputExtension;
             string outDirectory = scheduleFolderPath + Path.DirectorySeparatorChar;
+
             if (!Directory.Exists(scheduleFolderPath))
             {
                 Directory.CreateDirectory(scheduleFolderPath);
+            }
+            if (!Directory.Exists(outDirectory))
+            {
+                Directory.CreateDirectory(outDirectory);
+            }
+            if (!Directory.Exists(mergeFileOutFolder))
+            {
+                Directory.CreateDirectory(mergeFileOutFolder);
             }
 
             //Resetting merge file

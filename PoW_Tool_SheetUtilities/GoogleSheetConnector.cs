@@ -40,7 +40,7 @@ namespace PoW_Tool_SheetUtilities
             //See https://developers.google.com/sheets/api/quickstart/dotnet
             using (var stream = new FileStream("credentials.json", FileMode.Open, FileAccess.Read))
             {
-                // The file token.jsson stores the user's access and refresh tokens, and is created
+                // The file token.json stores the user's access and refresh tokens, and is created
                 // automatically when the authorization flow completes for the first time.
                 string credPath = "token.json";
                 credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
