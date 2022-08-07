@@ -316,6 +316,17 @@ namespace PoW_Tool_SheetUtilities.Handler
                             }
                         }
 
+                        //We check if there is a known translation for the new text (happens if they shuffle ids), if yes we update the translation
+                        string? knownTranslation = KnownTranslationHandler.GetInstance().GetKnownTranslation(OriginalValue);
+                        bool hasKnownTranslation = knownTranslation != null;
+                        if (hasKnownTranslation)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Blue;
+                            Console.WriteLine("Found known translation for \"" + OriginalValue + "\" => \"" + knownTranslation + "\" (Did the ids change?)");
+                            Console.ForegroundColor = ConsoleColor.White;
+                            Translation = knownTranslation;
+                        }
+
                         updateReq.UpdateCells = new UpdateCellsRequest
                         {
                             Range = new GridRange()
@@ -351,7 +362,6 @@ namespace PoW_Tool_SheetUtilities.Handler
                     //We update OriginalValue
                     OriginalValue = NewOriginalValue;
                     {
-                        //Then we prepare the update request for these
                         Request updateValueReq = new Request();
                         updateValueReq.UpdateCells = new UpdateCellsRequest
                         {
@@ -595,6 +605,11 @@ namespace PoW_Tool_SheetUtilities.Handler
                 }
             }
         }
+
+        public void PopulateKnownTranslations()
+        {
+            KnownTranslationHandler.GetInstance().AddTranslation(OriginalValue, Translation);
+        }
     }
 
     public class AssetEntry
@@ -702,6 +717,14 @@ namespace PoW_Tool_SheetUtilities.Handler
             for (int i = 0; i < Variables.Length; i++)
             {
                 Variables[i].CalculateTranslationStats(rowRaw, ref columnIndex, ref stats);
+            }
+        }
+
+        internal void PopulateKnownTranslations()
+        {
+            for (int i = 0; i < Variables.Length; i++)
+            {
+                Variables[i].PopulateKnownTranslations();
             }
         }
     }
@@ -822,6 +845,7 @@ namespace PoW_Tool_SheetUtilities.Handler
                         Console.ForegroundColor = ConsoleColor.White;
                     }
                     entries[index] = ae;
+                    ae.PopulateKnownTranslations();
                     rowC++;
                 }
             }

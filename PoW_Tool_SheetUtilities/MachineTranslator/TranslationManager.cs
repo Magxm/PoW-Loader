@@ -38,6 +38,12 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
                 return original;
             }
 
+            //We check if a known translation is available
+            string? knownTranslation = KnownTranslationHandler.GetInstance().GetKnownTranslation(original);
+            if (knownTranslation != null)
+                return knownTranslation;
+
+            //We MTL it
             foreach (var translator in Translators)
             {
                 if (translator.IsUseable())
@@ -92,6 +98,7 @@ namespace PoW_Tool_SheetUtilities.MachineTranslator
                         req.TranslatedText = req.TranslatedText.Replace("\\ \"", "\\\"");
 
                         //We got a valid translation, returning it...
+                        KnownTranslationHandler.GetInstance().AddTranslation(original, req.TranslatedText);
                         return req.TranslatedText;
                     }
                 }

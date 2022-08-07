@@ -148,6 +148,7 @@ namespace PoW_Tool_SheetUtilities.Handler.BattleAssets
                         Console.ForegroundColor = ConsoleColor.White;
                     }
                     entries[hash] = ae;
+                    ae.PopulateKnownTranslations();
 
                     rowC++;
                 }

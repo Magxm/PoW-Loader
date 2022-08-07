@@ -191,6 +191,7 @@ namespace PoW_Tool_SheetUtilities.Handler.BufferAssets
                     ae.Row = rowC;
 
                     entries[(string)row[0]] = ae;
+                    ae.PopulateKnownTranslations();
                     rowC++;
                 }
             }

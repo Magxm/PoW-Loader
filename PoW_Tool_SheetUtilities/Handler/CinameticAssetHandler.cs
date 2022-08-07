@@ -105,6 +105,7 @@ namespace PoW_Tool_SheetUtilities.Handler
                         Console.ForegroundColor = ConsoleColor.White;
                     }
                     entries[index] = ae;
+                    ae.PopulateKnownTranslations();
 
                     rowC++;
                 }
