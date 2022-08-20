@@ -59,7 +59,7 @@
     },
     {
       "Index": 7,
-      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
       "Next": 8,
       "Prallel": -1,
       "Child": [
@@ -94,7 +94,7 @@
     },
     {
       "Index": 11,
-      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Node": "{ \"BattleEventNode\" : 400, 1, [ ]} ",
       "Next": 12,
       "Prallel": -1,
       "Child": [
@@ -349,7 +349,9 @@
         99,
         101,
         103,
-        102
+        102,
+        111,
+        112
       ]
     },
     {
@@ -410,7 +412,7 @@
     },
     {
       "Index": 47,
-      "Node": "{ \"BattleResultAddUnit\" : \"io54924903\", 1, 202202104, 1.20000, 0.00000} ",
+      "Node": "{ \"BattleResultAddUnit\" : \"io54924903\", 1, 202202104, 1.40000, 0.00000} ",
       "Next": 69,
       "Prallel": -1,
       "Child": []
@@ -452,7 +454,7 @@
     },
     {
       "Index": 52,
-      "Node": "{ \"BattleResultAddUnit\" : \"io54924904\", 1, 101103204, 1.20000, 0.00000} ",
+      "Node": "{ \"BattleResultAddUnit\" : \"io54924904\", 1, 101103204, 1.40000, 0.00000} ",
       "Next": 68,
       "Prallel": -1,
       "Child": []
@@ -494,7 +496,7 @@
     },
     {
       "Index": 57,
-      "Node": "{ \"BattleResultAddUnit\" : \"io54924905\", 1, 105203202, 1.20000, 0.00000} ",
+      "Node": "{ \"BattleResultAddUnit\" : \"io54924905\", 1, 105203202, 1.40000, 0.00000} ",
       "Next": 70,
       "Prallel": -1,
       "Child": []
@@ -833,7 +835,7 @@
     {
       "Index": 102,
       "Node": "{ \"BattleResultTalk\" : \"t5401101_018\"} ",
-      "Next": -1,
+      "Next": 111,
       "Prallel": -1,
       "Child": []
     },
@@ -898,9 +900,23 @@
       "Next": -1,
       "Prallel": -1,
       "Child": []
+    },
+    {
+      "Index": 111,
+      "Node": "{ \"BattleResultCameraMoveCell\" : \"203104201\", 0.00000, 10.00000} ",
+      "Next": 112,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 112,
+      "Node": "{ \"BattleResultTalk\" : \"t5401101_020\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
     }
   ],
   "Remark": "",
   "WinTip": "Repel all blood wolves.",
-  "LoseTip": "All friendly units are defeated"
+  "LoseTip": "All your party members are defeated"
 }

@@ -1,4 +1,4 @@
-100001	文本	Saber
+100001	文本	Sabre
 100002	文本	Sword
 100003	文本	Polearm
 100004	文本	Staff
@@ -79,12 +79,12 @@ BattleLiberatedState_Invincible	气血无限	Infinite HP
 BattleLiberatedState_MoveAgain	再次移动	Move Again
 BattleLiberatedState_No_Consumption	真气无限	Infinite Qi
 BattleLiberatedState_One_Shot	一击必杀	One-Hit-Kill
-BattleNegativeState_Bind	缚身	Bind Lv {0}
+BattleNegativeState_Bind	缚身	Restriction Lv {0}
 BattleNegativeState_Bleeding	流血	Bleeding Lv {0}
 BattleNegativeState_Burn	灼伤	Burned Lv {0}
 BattleNegativeState_Confusion	迷茫	Confused Lv {0}
 BattleNegativeState_Dazzle	目眩	Dazzled Lv {0}
-BattleNegativeState_Dislocation	错骨	Dislocated Lv {0}
+BattleNegativeState_Dislocation	错骨	Bone Fractures Lv {0}
 BattleNegativeState_Enervation	散功	Enervated Lv {0}
 BattleNegativeState_Exhaustion	脱力	Fatigue Lv {0}
 BattleNegativeState_Frostbite	寒伤	Frostbite Lv {0}
@@ -98,7 +98,7 @@ BattlePositiveState_Concentration	专注	Concentrate Lv {0}
 BattlePositiveState_Eagle_Vision	隼目	Eagle Vision Lv {0}
 BattlePositiveState_Evasion	迅捷	Agility Lv {0}
 BattlePositiveState_Guard	坚守	Determination Lv {0}
-BattlePositiveState_Insight	识破	Clarity Lv {0}
+BattlePositiveState_Insight	识破	Observant Lv {0}
 BattlePositiveState_Invigoration	归元	Invigorate Lv {0}
 BattlePositiveState_Macrocosmic_Orbit	大周天流转	Macrocosmic Orbit Lv {0}
 BattlePositiveState_Microcosmic_Orbit	小周天流转	Microcosmic Orbit Lv {0}
@@ -315,7 +315,7 @@ MartialArts_CurrentMantra	武学_当前心法	Current Inner Arts
 MartialArts_CurrentSkill	武学_当前技能	Current Skill
 MartialArts_PracticeEffect	修练效果	Practice Effect
 MartialArts_RunEffect	运行效果	Application Effect
-MartialArts_SetMantra	武学_配置心法	Apply Inner Arts 
+MartialArts_SetMantra	武学_配置心法	Inner Arts 
 MartialArts_SetSkill	武学_配置技能	Set Skill
 Medicine_Browse	浏览持有药品	Browse Medications
 Mission001_MissionStart	使用Node：【动作/任务/开始任务】开始新任务时	“{0}”Event Started！
@@ -710,10 +710,10 @@ SecondaryInterface2102	存盘介面文本	Load Game
 SecondaryInterface2103	存盘介面文本	Cloud Save
 SecondaryInterface2104	存盘介面文本	Auto Save
 SecondaryInterface2105	存盘介面文本	New
-SecondaryInterface2106	存盘介面文本	Overwrite?
-SecondaryInterface2107	存盘介面文本	Load?
-SecondaryInterface2108	存盘介面文本	Confirm loading? Unsaved progress will be lost.
-SecondaryInterface2109	存盘介面文本	Confirm deletion? Data will be lost
+SecondaryInterface2106	存盘介面文本	Overwrite saved game?
+SecondaryInterface2107	存盘介面文本	Load saved game?
+SecondaryInterface2108	存盘介面文本	Confirm loading saved game? Unsaved progress will be lost.
+SecondaryInterface2109	存盘介面文本	Confirm deletion of saved game? Data will be lost
 SecondaryInterface2110	存盘介面文本	Day
 SecondaryInterface2111	存盘介面文本	Night
 SecondaryInterface2112	存盘介面文本	Game Time
@@ -987,7 +987,7 @@ SecondaryInterface3906	难度选择介面	Hell Difficulty, Enemies will be ruthl
 SecondaryInterface3907	难度选择介面	Hard Difficulty, Suitable for players who likes a challenge in managing and strategy.
 SecondaryInterface3908	难度选择介面	Normal Difficulty, Suitable for players who has a basic grasp of the simulation aspect of the game and first time players.
 SecondaryInterface3909	难度选择介面	Easy Diffculty, suitable for players who wish to enjoy the story.
-SecondaryInterface3910	难度选择介面	Cannot change the difficulty of the game once you begin, difficulty will not affect plot!<br>Selected Difficulty : {0} . Proceed?
+SecondaryInterface3910	难度选择介面	Cannot change the difficulty once you begin. Difficulty will not affect plot!<br>Selected Difficulty: " {0} ". Proceed?
 Unit_First	单位(第)	No.
 Unit_Month	单位(月)	Mth
 Unit_Year	单位(年)	Yr
@@ -1062,12 +1062,12 @@ SecondaryInterface2629	创角介面	<size=24>Last<br>Name</size>
 SecondaryInterface3178	按键设置	Full Party Standby
 SecondaryInterface0813	出游tip02(4~5阶)	Energy +10
 SecondaryInterface0814	出游tip02(6~7阶)	Energy +15
-SecondaryInterface1105	养成介面效果加乘提示	Exercise bonus!
-SecondaryInterface1106	养成介面效果加乘提示	Martial arts training bouns!
-SecondaryInterface1107	养成介面效果加乘提示	Art effect bonus!
-SecondaryInterface1108	养成介面效果加乘提示	Task bonus!
-SecondaryInterface1109	养成介面效果加乘提示	Number of remaining medicine bath buffs: {0}
-SecondaryInterface1110	养成介面效果加乘提示	Exercise, martial arts training, arts, outing and, Task effects are enhanced!
+SecondaryInterface1105	养成介面效果加乘提示	<size=20>Workout bonus!</size>
+SecondaryInterface1106	养成介面效果加乘提示	<size=20>Martial arts training and reading bonus!</size>
+SecondaryInterface1107	养成介面效果加乘提示	<size=20>Four Arts effect bonus!</size>
+SecondaryInterface1108	养成介面效果加乘提示	<size=20>Errands bonus!</size>
+SecondaryInterface1109	养成介面效果加乘提示	<size=20>Number of remaining herbal bath buffs: {0}</size>
+SecondaryInterface1110	养成介面效果加乘提示	<size=20>Workout, martial arts training, four arts, outing and, errands effects are enhanced!</size>
 SecondaryInterface1111	养成介面	(Total value: {0})
 SecondaryInterface2209	阅读介面文本	Your energy is too low to understand the content of the tome.
 ta02004001	互动介面	Enter
@@ -1081,4 +1081,4 @@ ta02004008	互动介面	Survey
 ta03003001	地名	Flawless Hall
 Property_Counter	反击	Counter
 Property_Dodge	闪避	Dodge
-BattlePositiveState_Light_Step	飞步	Flying step{0} heavy
+BattlePositiveState_Light_Step	飞步	Flying Steps Lv {0}
