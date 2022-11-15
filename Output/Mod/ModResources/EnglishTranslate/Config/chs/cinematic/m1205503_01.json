@@ -283,7 +283,7 @@
     },
     {
       "Node": "{ \"SetNpcAnimationAction\" : \"in05829_h99\", \"m_kneel10_stop00_loop\", False} ",
-      "Next": 101,
+      "Next": -1,
       "Prallel": -1
     },
     {
@@ -433,7 +433,7 @@
     },
     {
       "Node": "{ \"NextOrEndQuestAction\" } ",
-      "Next": 106,
+      "Next": 99,
       "Prallel": -1
     },
     {
@@ -453,32 +453,32 @@
     },
     {
       "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"m_dead00_loop00\", 1.00000}  ], \"io22115501\"} ",
-      "Next": 99,
+      "Next": -1,
       "Prallel": -1
     },
     {
       "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"m_dead02_loop00\", 1.00000}  ], \"io22125501\"} ",
-      "Next": 100,
+      "Next": -1,
       "Prallel": -1
     },
     {
       "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"m_dead01_loop00\", 1.00000}  ], \"io48105301\"} ",
-      "Next": 102,
+      "Next": -1,
       "Prallel": -1
     },
     {
       "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"m_dead03_loop00\", 1.00000}  ], \"io48145302\"} ",
-      "Next": 103,
+      "Next": -1,
       "Prallel": -1
     },
     {
       "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"m_dead04_loop00\", 1.00000}  ], \"io48115302\"} ",
-      "Next": 104,
+      "Next": -1,
       "Prallel": -1
     },
     {
       "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"m_dead00_loop00\", 1.00000}  ], \"io48135302\"} ",
-      "Next": 105,
+      "Next": -1,
       "Prallel": -1
     },
     {
@@ -494,46 +494,11 @@
     {
       "Node": "{ \"NpcChangeWeaponPointAction\" : False, \"in0107\"} ",
       "Next": -1,
-      "Prallel": 107
-    },
-    {
-      "Node": "{ \"SetNpcCurrentBehaviourRemark\" : \"io22115501_h99\", \"查看\"} ",
-      "Next": -1,
-      "Prallel": -1
-    },
-    {
-      "Node": "{ \"SetNpcCurrentBehaviourRemark\" : \"io22125501_h99\", \"查看\"} ",
-      "Next": -1,
-      "Prallel": -1
-    },
-    {
-      "Node": "{ \"SetNpcCurrentBehaviourRemark\" : \"in05829_h99\", \"查看\"} ",
-      "Next": -1,
-      "Prallel": -1
-    },
-    {
-      "Node": "{ \"SetNpcCurrentBehaviourRemark\" : \"io48105301_h99\", \"查看\"} ",
-      "Next": -1,
-      "Prallel": -1
-    },
-    {
-      "Node": "{ \"SetNpcCurrentBehaviourRemark\" : \"io48145302_h99\", \"查看\"} ",
-      "Next": -1,
-      "Prallel": -1
-    },
-    {
-      "Node": "{ \"SetNpcCurrentBehaviourRemark\" : \"io48115302_h99\", \"查看\"} ",
-      "Next": -1,
-      "Prallel": -1
-    },
-    {
-      "Node": "{ \"SetNpcCurrentBehaviourRemark\" : \"io48135302_h99\", \"查看\"} ",
-      "Next": -1,
-      "Prallel": -1
+      "Prallel": 100
     },
     {
       "Node": "{ \"NpcChangeWeaponPointAction\" : False, \"io45114402\"} ",
-      "Next": 108,
+      "Next": 101,
       "Prallel": -1
     },
     {
@@ -543,72 +508,72 @@
     },
     {
       "Node": "{ \"NpcWeaponActiveAction\" : False, \"in05829,io22115501,io22125501,io48105301,io48145302,io48115302,io48135302\"} ",
-      "Next": 109,
+      "Next": 102,
       "Prallel": -1
     },
     {
       "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"m_sit60_await00\", 1.00000}  ], \"io45114402\"} ",
-      "Next": 110,
+      "Next": 103,
       "Prallel": -1
     },
     {
       "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"f_sit00_await00\", 1.00000}  ], \"in05831\"} ",
-      "Next": 111,
+      "Next": 104,
       "Prallel": -1
     },
     {
       "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"m_sit00_await00\", 1.00000}  ], \"in05832\"} ",
-      "Next": 112,
+      "Next": 105,
       "Prallel": -1
     },
     {
       "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"f_sit34_await00\", 1.00000}  ], \"in05833\"} ",
-      "Next": 113,
+      "Next": 106,
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 3, \"fe1112401_1_00\"}  ], 0} , 114, 115} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 3, \"fe1112401_1_00\"}  ], 0} , 107, 108} ",
       "Next": -1,
       "Prallel": -1
     },
     {
       "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"m_sit60_await00\", 1.00000}  ], \"in05809\"} ",
-      "Next": 115,
+      "Next": 108,
       "Prallel": -1
     },
     {
-      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe1205501_2_29\"}  ], 0} , 116, 87} ",
+      "Node": "{ \"BranchAction\" : { \"LogicalNode\" : [ { \"CheckFlag\" : 1, 1, \"fe1205501_2_29\"}  ], 0} , 109, 87} ",
       "Next": -1,
       "Prallel": -1
     },
     {
       "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"m_kneel31_await00\", 1.00000}  ], \"in05829\"} ",
-      "Next": 117,
+      "Next": 110,
       "Prallel": -1
     },
     {
       "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"m_kneel31_await00\", 1.00000}  ], \"io22115501\"} ",
-      "Next": 118,
+      "Next": 111,
       "Prallel": -1
     },
     {
       "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"m_kneel31_await00\", 1.00000}  ], \"io22125501\"} ",
-      "Next": 119,
+      "Next": 112,
       "Prallel": -1
     },
     {
       "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"m_kneel31_await00\", 1.00000}  ], \"io48105301\"} ",
-      "Next": 120,
+      "Next": 113,
       "Prallel": -1
     },
     {
       "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"m_kneel31_await00\", 1.00000}  ], \"io48145302\"} ",
-      "Next": 121,
+      "Next": 114,
       "Prallel": -1
     },
     {
       "Node": "{ \"PlayNpcAnimationAction\" : [ { 2, \"m_kneel31_await00\", 1.00000}  ], \"io48115302\"} ",
-      "Next": 122,
+      "Next": 115,
       "Prallel": -1
     },
     {

@@ -15,9 +15,9 @@
         5,
         35,
         36,
+        69,
         70,
-        71,
-        73
+        72
       ]
     },
     {
@@ -58,16 +58,16 @@
     {
       "Index": 6,
       "Node": "{ \"BattleEventNode\" : 200, 0, [ ]} ",
-      "Next": 74,
+      "Next": 73,
       "Prallel": -1,
       "Child": [
-        74
+        73
       ]
     },
     {
       "Index": 7,
       "Node": "{ \"BattleFactorTurn\" : 1, 0} ",
-      "Next": 72,
+      "Next": 71,
       "Prallel": -1,
       "Child": []
     },
@@ -297,7 +297,7 @@
     {
       "Index": 36,
       "Node": "{ \"BattlChanageFaction\" : 1, \"in33001\"} ",
-      "Next": 70,
+      "Next": 69,
       "Prallel": -1,
       "Child": []
     },
@@ -359,247 +359,241 @@
       "Prallel": -1,
       "Child": [
         45,
-        48,
         47,
-        46
+        46,
+        75,
+        74
       ]
     },
     {
       "Index": 45,
       "Node": "{ \"BattleFactorTargetHp\" : 1, 1, \"in0103\"} ",
-      "Next": 48,
+      "Next": 47,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 46,
-      "Node": "{ \"BattleResultAddBuff\" : True, \"in0103\", \"bt1010307_in0103Immortal\", True} ",
-      "Next": -1,
+      "Node": "{ \"BattleResultTalk\" : \"t1010307_913\"} ",
+      "Next": 75,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 47,
-      "Node": "{ \"BattleResultTalk\" : \"t1010307_913\"} ",
+      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1010307_2_06\", \"锺若昕事件回光返照对话\"} ",
       "Next": 46,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 48,
-      "Node": "{ \"BattleFactorGlobalFlag\" : 1, 1, \"fe1010307_2_06\", \"锺若昕事件回光返照对话\"} ",
-      "Next": 47,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 49,
       "Prallel": -1,
-      "Child": []
+      "Child": [
+        49
+      ]
     },
     {
       "Index": 49,
-      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 50,
       "Prallel": -1,
       "Child": [
-        50
+        50,
+        55,
+        51
       ]
     },
     {
       "Index": 50,
-      "Node": "{ \"StepByStepNode\" : [ ]} ",
-      "Next": 51,
-      "Prallel": -1,
-      "Child": [
-        51,
-        56,
-        52
-      ]
-    },
-    {
-      "Index": 51,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"party00\"} ",
-      "Next": 56,
+      "Next": 55,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 52,
+      "Index": 51,
       "Node": "{ \"BattleResultTalk\" : \"t1010307_916\"} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 53,
+      "Index": 52,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 53,
+      "Prallel": -1,
+      "Child": [
+        53
+      ]
+    },
+    {
+      "Index": 53,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 54,
       "Prallel": -1,
       "Child": [
-        54
+        54,
+        56,
+        57
       ]
     },
     {
       "Index": 54,
-      "Node": "{ \"StepByStepNode\" : [ ]} ",
-      "Next": 55,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in33011\"} ",
+      "Next": 56,
       "Prallel": -1,
-      "Child": [
-        55,
-        57,
-        58
-      ]
+      "Child": []
     },
     {
       "Index": 55,
-      "Node": "{ \"BattleFactorTargetDestroy\" : \"in33011\"} ",
-      "Next": 57,
+      "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 51,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 56,
       "Node": "{ \"ExecuteOnceNode\" } ",
-      "Next": 52,
+      "Next": 57,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 57,
-      "Node": "{ \"ExecuteOnceNode\" } ",
-      "Next": 58,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 58,
       "Node": "{ \"BattleResultTalk\" : \"t1010307_900\"} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 59,
+      "Index": 58,
       "Node": "{ \"ExecuteOnceNode\" } ",
-      "Next": 63,
+      "Next": 62,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 60,
+      "Index": 59,
       "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 60,
+      "Prallel": -1,
+      "Child": [
+        60
+      ]
+    },
+    {
+      "Index": 60,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 61,
       "Prallel": -1,
       "Child": [
-        61
+        61,
+        58,
+        62
       ]
     },
     {
       "Index": 61,
-      "Node": "{ \"StepByStepNode\" : [ ]} ",
-      "Next": 62,
-      "Prallel": -1,
-      "Child": [
-        62,
-        59,
-        63
-      ]
-    },
-    {
-      "Index": 62,
       "Node": "{ \"BattleFactorTargetDestroy\" : \"in33012\"} ",
-      "Next": 59,
+      "Next": 58,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 63,
+      "Index": 62,
       "Node": "{ \"BattleResultTalk\" : \"t1010307_904\"} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 64,
+      "Index": 63,
       "Node": "{ \"ExecuteOnceNode\" } ",
+      "Next": 67,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 64,
+      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
+      "Next": 65,
+      "Prallel": -1,
+      "Child": [
+        65
+      ]
+    },
+    {
+      "Index": 65,
+      "Node": "{ \"StepByStepNode\" : [ ]} ",
+      "Next": 66,
+      "Prallel": -1,
+      "Child": [
+        66,
+        63,
+        67,
+        68
+      ]
+    },
+    {
+      "Index": 66,
+      "Node": "{ \"BattleFactorTargetDestroy\" : \"in33001\"} ",
+      "Next": 63,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 67,
+      "Node": "{ \"BattleResultTalk\" : \"t1010307_922\"} ",
       "Next": 68,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 65,
-      "Node": "{ \"BattleEventNode\" : 400, 0, [ ]} ",
-      "Next": 66,
-      "Prallel": -1,
-      "Child": [
-        66
-      ]
-    },
-    {
-      "Index": 66,
-      "Node": "{ \"StepByStepNode\" : [ ]} ",
-      "Next": 67,
-      "Prallel": -1,
-      "Child": [
-        67,
-        64,
-        68,
-        69
-      ]
-    },
-    {
-      "Index": 67,
-      "Node": "{ \"BattleFactorTargetDestroy\" : \"in33001\"} ",
-      "Next": 64,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
       "Index": 68,
-      "Node": "{ \"BattleResultTalk\" : \"t1010307_922\"} ",
-      "Next": 69,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 69,
       "Node": "{ \"BattleResultWin\" : \"\"} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 70,
+      "Index": 69,
       "Node": "{ \"BattlChanageFaction\" : 1, \"in33011\"} ",
-      "Next": 71,
+      "Next": 70,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 70,
+      "Node": "{ \"BattlChanageFaction\" : 1, \"in33012\"} ",
+      "Next": 72,
       "Prallel": -1,
       "Child": []
     },
     {
       "Index": 71,
-      "Node": "{ \"BattlChanageFaction\" : 1, \"in33012\"} ",
-      "Next": 73,
-      "Prallel": -1,
-      "Child": []
-    },
-    {
-      "Index": 72,
       "Node": "{ \"ExecuteOnceNode\" } ",
       "Next": 8,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 73,
+      "Index": 72,
       "Node": "{ \"BattleResultAddBuff\" : True, \"in33001\", \"bt1010307_in33001\", False} ",
       "Next": -1,
       "Prallel": -1,
       "Child": []
     },
     {
-      "Index": 74,
+      "Index": 73,
       "Node": "{ \"StepByStepNode\" : [ ]} ",
       "Next": 7,
       "Prallel": -1,
       "Child": [
         7,
-        72,
+        71,
         8,
         9,
         10,
@@ -610,6 +604,20 @@
         15,
         16
       ]
+    },
+    {
+      "Index": 74,
+      "Node": "{ \"BattleResultUnitHP\" : 1, 100, \"in0103\"} ",
+      "Next": -1,
+      "Prallel": -1,
+      "Child": []
+    },
+    {
+      "Index": 75,
+      "Node": "{ \"BattleResultAddBuff\" : True, \"in0103\", \"\", True} ",
+      "Next": 74,
+      "Prallel": -1,
+      "Child": []
     }
   ],
   "Remark": "锺若昕七＿第二战斗胜利VER",
