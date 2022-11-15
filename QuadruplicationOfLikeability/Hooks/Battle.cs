@@ -36,25 +36,25 @@ namespace QoL.Hooks
     //    }
     //}
 
-    ////Hooks to handle Unit Skill Movement speed
-    //[HarmonyPatch(typeof(WuxiaUnit), "SkillMovement")]
-    //public class WuxiaUnit_SkillMovement_Hook
-    //{
-    //    public static void Prefix(ref WuxiaCell endCell, ref float moveTime)
-    //    {
-    //        moveTime /= QoLMod.GetInstance().GetBattleMovementSpeed();
-    //    }
-    //}
+    //Hooks to handle Unit Skill Movement speed
+    [HarmonyPatch(typeof(WuxiaUnit), "SkillMovement")]
+    public class WuxiaUnit_SkillMovement_Hook
+    {
+        public static void Prefix(ref WuxiaCell endCell, ref float moveTime)
+        {
+            moveTime /= QoLMod.GetInstance().GetBattleMovementSpeed();
+        }
+    }
 
-    ////Hooks to handle Unit Movement speed
-    //[HarmonyPatch(typeof(WuxiaBattleUnit), "create_unit")]
-    //public class WuxiaUnit_Ctor_Hook
-    //{
-    //    public static void Postfix(ref WuxiaUnit __result)
-    //    {
-    //        __result.MovementSpeed *= QoLMod.GetInstance().GetBattleMovementSpeed();
-    //    }
-    //}
+    //Hooks to handle Unit Movement speed
+    [HarmonyPatch(typeof(WuxiaBattleUnit), "create_unit")]
+    public class WuxiaUnit_Ctor_Hook
+    {
+        public static void Postfix(ref WuxiaUnit __result)
+        {
+            __result.MovementSpeed *= QoLMod.GetInstance().GetBattleMovementSpeed();
+        }
+    }
 
 
     //BattleProcessStrategy has a ProcessAnimation function that returns the time of the clip, rather than the time the animator will need.
