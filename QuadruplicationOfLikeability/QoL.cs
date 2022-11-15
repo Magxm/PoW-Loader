@@ -29,8 +29,8 @@ namespace QoL
         public QoLMod()
         {
             //QoLs
-            Config_BattleAnimationSpeed = Config.Bind<float>("QoL", "Battle Animation Speed", 1.5f, "The speed at which game animations are played in battle. (Game Default is 1.0, Mod Default is 1.5)");
-            Config_BattleMovementSpeed = Config.Bind<float>("QoL", "Battle Movement Speed", 1.5f, "The speed at which characters move in battle. (Game Default is 1.0, Mod Default is 1.5)");
+            //Config_BattleAnimationSpeed = Config.Bind<float>("QoL", "Battle Animation Speed", 1.5f, "The speed at which game animations are played in battle. (Game Default is 1.0, Mod Default is 1.5)");
+            //Config_BattleMovementSpeed = Config.Bind<float>("QoL", "Battle Movement Speed", 1.5f, "The speed at which characters move in battle. (Game Default is 1.0, Mod Default is 1.5)");
             Config_SmoothBattles = Config.Bind<bool>("QoL", "Smooth Battles", true, "If enabled, Game animations, Transitions and movement is aggressively smoothed out. (Default is true)");
 
             //Cheaty QoLs
@@ -50,15 +50,15 @@ namespace QoL
             return Chainloader.PluginInfos["plugins.quadruplicationoflikeability"].Instance as QoLMod;
         }
 
-        public float GetBattleAnimationSpeed()
-        {
-            return Config_BattleAnimationSpeed.Value;
-        }
+        //public float GetBattleAnimationSpeed()
+        //{
+        //    return Config_BattleAnimationSpeed.Value;
+        //}
 
-        public float GetBattleMovementSpeed()
-        {
-            return Config_BattleMovementSpeed.Value;
-        }
+        //public float GetBattleMovementSpeed()
+        //{
+        //    return Config_BattleMovementSpeed.Value;
+        //}
 
         public bool GetSmoothBattlesEnabled()
         {
