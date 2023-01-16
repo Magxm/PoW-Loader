@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Grpc.Net.Common</name>
+    </assembly>
+    <members>
+        <member name="T:Grpc.Net.Compression.GzipCompressionProvider">
+            <summary>
+            GZIP compression provider.
+            </summary>
+        </member>
+        <member name="M:Grpc.Net.Compression.GzipCompressionProvider.#ctor(System.IO.Compression.CompressionLevel)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Grpc.Net.Compression.GzipCompressionProvider"/> class with the specified <see cref="T:System.IO.Compression.CompressionLevel"/>.
+            </summary>
+            <param name="defaultCompressionLevel">The default compression level to use when compressing data.</param>
+        </member>
+        <member name="P:Grpc.Net.Compression.GzipCompressionProvider.EncodingName">
+            <summary>
+            The encoding name used in the 'grpc-encoding' and 'grpc-accept-encoding' request and response headers.
+            </summary>
+        </member>
+        <member name="M:Grpc.Net.Compression.GzipCompressionProvider.CreateCompressionStream(System.IO.Stream,System.Nullable{System.IO.Compression.CompressionLevel})">
+            <summary>
+            Create a new compression stream.
+            </summary>
+            <param name="stream">The stream that compressed data is written to.</param>
+            <param name="compressionLevel">The compression level.</param>
+            <returns>A stream used to compress data.</returns>
+        </member>
+        <member name="M:Grpc.Net.Compression.GzipCompressionProvider.CreateDecompressionStream(System.IO.Stream)">
+            <summary>
+            Create a new decompression stream.
+            </summary>
+            <param name="stream">The stream that compressed data is copied from.</param>
+            <returns>A stream used to decompress data.</returns>
+        </member>
+        <member name="T:Grpc.Net.Compression.ICompressionProvider">
+            <summary>
+            Provides a specific compression implementation to compress gRPC messages.
+            </summary>
+        </member>
+        <member name="P:Grpc.Net.Compression.ICompressionProvider.EncodingName">
+            <summary>
+            The encoding name used in the 'grpc-encoding' and 'grpc-accept-encoding' request and response headers.
+            </summary>
+        </member>
+        <member name="M:Grpc.Net.Compression.ICompressionProvider.CreateCompressionStream(System.IO.Stream,System.Nullable{System.IO.Compression.CompressionLevel})">
+            <summary>
+            Create a new compression stream.
+            </summary>
+            <param name="stream">The stream that compressed data is written to.</param>
+            <param name="compressionLevel">The compression level.</param>
+            <returns>A stream used to compress data.</returns>
+        </member>
+        <member name="M:Grpc.Net.Compression.ICompressionProvider.CreateDecompressionStream(System.IO.Stream)">
+            <summary>
+            Create a new decompression stream.
+            </summary>
+            <param name="stream">The stream that compressed data is copied from.</param>
+            <returns>A stream used to decompress data.</returns>
+        </member>
+    </members>
+</doc>
