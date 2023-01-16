@@ -37,7 +37,7 @@ namespace EnglishPatch
 
         public void Unload()
         {
-            _HM.UnpatchSelf();
+            _HM.UnpatchAll("EnglishPatch");
         }
 
         private void Awake()

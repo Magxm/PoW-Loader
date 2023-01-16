@@ -164,7 +164,7 @@ namespace ModAPI
             //Cleaning up in reverse order in which we set everything up.
             UI.Console.Unload();
 
-            _HM.UnpatchSelf();
+            _HM.UnpatchAll("ModAPI");
         }
     }
 
