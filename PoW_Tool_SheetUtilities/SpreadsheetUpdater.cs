@@ -51,6 +51,8 @@ namespace PoW_Tool_SheetUtilities
         new RegistrationBonusAssetHandler(),
         new NurturanceIdleAssetHandler(),
         new TalkAssetHandler(),
+        new EndingIdsAssetHandler(),
+        new EndingTranslationsAssetHandler(),
         };
 
         public static void UpdateSpreadsheetsFromGameFiles()

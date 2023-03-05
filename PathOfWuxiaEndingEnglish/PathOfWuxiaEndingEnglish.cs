@@ -49,7 +49,7 @@ namespace PathOfWuxiaEndingEnglish
             endingIds = new List<string>();
             try
             {
-                StreamReader reader = new StreamReader($"ModResources{directorySeparatorChar}EnglishModExtras{directorySeparatorChar}EndingIds.txt");
+                StreamReader reader = new StreamReader($"ModResources{directorySeparatorChar}EnglishTranslate{directorySeparatorChar}Config{directorySeparatorChar}chs{directorySeparatorChar}textfiles{directorySeparatorChar}EndingIds.txt");
                 string endingId;
                 while ((endingId = reader.ReadLine()) != null)
                 {
@@ -65,7 +65,7 @@ namespace PathOfWuxiaEndingEnglish
             Dictionary<string, string> endingTranslationDict = new Dictionary<string, string>();
             try
             {
-                StreamReader reader = new StreamReader($"ModResources{directorySeparatorChar}EnglishModExtras{directorySeparatorChar}EndingTranslations.csv");
+                StreamReader reader = new StreamReader($"ModResources{directorySeparatorChar}EnglishTranslate{directorySeparatorChar}Config{directorySeparatorChar}chs{directorySeparatorChar}textfiles{directorySeparatorChar}EndingTranslations.csv");
                 string translationLine;
                 bool translationFirstLine = true;
                 while ((translationLine = reader.ReadLine()) != null)
@@ -175,7 +175,7 @@ namespace PathOfWuxiaEndingEnglish
             if (developerMode && Input.GetKeyDown(KeyCode.J))
             {
                 // write the ending text into a file
-                StreamWriter writer = new StreamWriter($"ModResources{directorySeparatorChar}EnglishModExtras{directorySeparatorChar}EndingTranslations.csv");
+                StreamWriter writer = new StreamWriter($"ModResources{directorySeparatorChar}EnglishTranslate{directorySeparatorChar}Config{directorySeparatorChar}chs{directorySeparatorChar}textfiles{directorySeparatorChar}EndingTranslations.csv");
                 writer.WriteLine("TextId,Translated,Original");
 
                 foreach(string endingIdIter in endingIds)
