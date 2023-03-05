@@ -259,45 +259,25 @@ namespace PathOfWuxiaEndingEnglish
          * Parse <endingTranslationLine> and add the translation into <endingTranslationDict>
          * 
          * The csv is read line by line creating <endingTranslationLine>
-         * <endingTranslationLine> holds certain properties, notably, it always contains 3 columns in the csv.
+         * <endingTranslationLine> should be in tsv format where:
          * Column 1 contains the identifier
          * Column 2 contains the translated text
-         * Column 3 contains the original text
-         * Note that column 2 often contains special characters such as " and ,
          */
         private static void ParseCsvEndingTranslation(Dictionary<string, string> endingTranslationDict, string endingTranslationLine)
         {
-            string[] columns = endingTranslationLine.Split(',');
+            string[] columns = endingTranslationLine.Split('\t');
             int columnNum = columns.Length;
 
-            // if there are less than 3 split elements, the <endingTranslationLine> is guaranteed to be invalid.
-            if (columnNum < 3)
+            // if there are not 2 columns, guaranteed invalid
+            if (columnNum != 2)
             {
                 return;
             }
 
-            // craft the 2nd column by merging all excess splits. This is based off the assumption that column 2 is the only column that may contain commas
             string textId = columns[0];
-            string textTranslation = "";
+            string textTranslation = columns[1];
 
-            for(int columnCurrent = 1; columnCurrent < columnNum - 1; columnCurrent++)
-            {
-                textTranslation += columns[columnCurrent];
-                if(columnCurrent != columnNum - 2)
-                {
-                    textTranslation += ",";
-                }
-            }
-
-            // in csv, " denotes that the cell contains special characters. Here is an example: "He says, ""You're finally here.""".
-            // the below code processes the special characters. Using the above example, it produces: He says, "You're finally here."
             // NEWLINE substitutes for a new line character.
-            if (textTranslation.StartsWith("\""))
-            {
-                textTranslation = textTranslation.Substring(1, textTranslation.Length - 2);
-                textTranslation = textTranslation.Replace("\"\"", "\"");
-            }
-
             textTranslation = textTranslation.Replace("NEWLINE", "\n");
 
             endingTranslationDict.Add(textId, textTranslation);
