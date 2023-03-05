@@ -13,7 +13,7 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
     {
         public EndingTranslationsAssetHandler()
         {
-            SheetId = "1FBrzsHGaGfHO7jVHpD1roQRS7Rqbl2Ia";
+            SheetId = "1tk7OHn9G6nevJ4D7xKBe-5eiYJx1X6CkD3A8ia-fsj8";
             AssetName = "EndingTranslations";
             SheetRange = "A2:C";
             FilePathWithoutExtension = "chs" + Path.DirectorySeparatorChar + "textfiles" + Path.DirectorySeparatorChar + "EndingTranslations";
