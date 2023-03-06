@@ -168,7 +168,7 @@ namespace PathOfWuxiaEndingEnglish
             if (developerMode && Input.GetKeyDown(KeyCode.J))
             {
                 // write the ending text into a file
-                StreamWriter writer = new StreamWriter($"ModResources{directorySeparatorChar}EnglishTranslateRaw{directorySeparatorChar}Config{directorySeparatorChar}chs{directorySeparatorChar}textfiles{directorySeparatorChar}EndingTranslations.csv");
+                StreamWriter writer = new StreamWriter($"ModResources{directorySeparatorChar}EnglishTranslateRaw{directorySeparatorChar}EndingTranslations.csv");
                 writer.WriteLine("TextId,Translated,Original");
 
                 foreach(string endingIdIter in endingIds)
