@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using PoW_Tool_SheetUtilities.Handler;
 using PoW_Tool_SheetUtilities.MachineTranslator;
 
+using Google.Apis.Sheets.v4.Data;
+
 namespace PoW_Tool_SheetUtilities
 {
     internal class Program
@@ -181,6 +183,75 @@ namespace PoW_Tool_SheetUtilities
             }
         }
 
+        private static void ExportTranslatedToCSV()
+        {
+			List<Color> acceptableColors = new List<Color>();
+
+			acceptableColors.Add(AssetVariable.ProofReadColor);
+			acceptableColors.Add(new Google.Apis.Sheets.v4.Data.Color() //Cyan
+			{
+				Alpha = 1.0f,
+				Red = 0.0f / 255,
+				Green = 0xFF / 255,
+				Blue = 0xFF / 255,
+			});
+			acceptableColors.Add(new Google.Apis.Sheets.v4.Data.Color()
+			{
+				Alpha = 1.0f,
+				Red = 0xC9 / 255,
+				Green = 0xDA / 255,
+				Blue = 0xF8 / 255,
+			});
+			acceptableColors.Add(new Google.Apis.Sheets.v4.Data.Color()
+			{
+				Alpha = 1.0f,
+				Red = 0xA4 / 255,
+				Green = 0xC2 / 255,
+				Blue = 0xF4 / 255,
+			});
+			acceptableColors.Add(new Google.Apis.Sheets.v4.Data.Color()
+			{
+				Alpha = 1.0f,
+				Red = 0x6D / 255,
+				Green = 0x9E / 255,
+				Blue = 0xEB / 255,
+			});
+			acceptableColors.Add(new Google.Apis.Sheets.v4.Data.Color()
+			{
+				Alpha = 1.0f,
+				Red = 0x3C / 255,
+				Green = 0x78 / 255,
+				Blue = 0xD8 / 255,
+			});
+
+			acceptableColors.Add(AssetVariable.TranslatedColor);
+			acceptableColors.Add(new Google.Apis.Sheets.v4.Data.Color()
+			{
+				Alpha = 1.0f,
+				Red = 0x93 / 255,
+				Green = 0xC4 / 255,
+				Blue = 0x7D / 255,
+			});
+			acceptableColors.Add(new Google.Apis.Sheets.v4.Data.Color()
+			{
+				Alpha = 1.0f,
+				Red = 0xD9 / 255,
+				Green = 0xEA / 255,
+				Blue = 0xD3 / 255,
+			});
+			acceptableColors.Add(new Google.Apis.Sheets.v4.Data.Color()
+			{
+				Alpha = 1.0f,
+				Red = 0x34 / 255,
+				Green = 0xA8 / 255,
+				Blue = 0x53 / 255,
+			});
+
+			string workingDirectory = Environment.CurrentDirectory;
+			string outPath = workingDirectory + Path.DirectorySeparatorChar + "ExportOutput";
+            SpreadsheetUpdater.ExportTranslatedLinesToCSV(outPath, ref acceptableColors);
+        }
+
         private static void TestTranslation()
         {
             string PreContext = "凭你那点Cheap Tricks，也敢做我们的对手？哈哈哈！一边凉快去吧！";
@@ -226,6 +297,7 @@ namespace PoW_Tool_SheetUtilities
             Console.WriteLine("     2: Build English Mod data");
             Console.WriteLine("     3: Get Asset Formats");
             Console.WriteLine("     4: Get Translation Stats");
+            Console.WriteLine("     5: Export to CSV");
 
             var input = Console.ReadKey().KeyChar;
             Console.WriteLine("\r          \n");
@@ -249,6 +321,11 @@ namespace PoW_Tool_SheetUtilities
                 case '4':
                     Console.WriteLine("Getting Translation Stats...");
                     GetTranslationStats();
+                    break;
+                
+                case '5':
+                    Console.WriteLine("Exporting to CSV...");
+                    ExportTranslatedToCSV();
                     break;
 
                 default:
