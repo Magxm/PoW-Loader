@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Threading;
-
+using Google.Apis.Sheets.v4.Data;
 using PoW_Tool_SheetUtilities.Handler;
 using PoW_Tool_SheetUtilities.Handler.BattleAssets;
 using PoW_Tool_SheetUtilities.Handler.BufferAssets;
@@ -83,6 +83,30 @@ namespace PoW_Tool_SheetUtilities
                 handler.GetTranslationStats(ref stats);
                 Thread.Sleep(10000);
             }
+        }
+
+        internal static void ExportTranslatedLinesToCSV(string outPath, ref List<Color> acceptableColors)
+        {
+	        foreach (IFileHandler handler in _Handlers)
+	        {
+		        bool success = false;
+                while (!success)
+                {
+	                try
+		            {
+			            handler.ExportTranslatedLinesToCSV(outPath, ref acceptableColors);
+			            success = true;
+			            
+			            
+		            }
+		            catch (Exception e)
+		            {
+						Console.WriteLine(e);
+		            }
+
+		            Thread.Sleep(60000);
+                }
+	        }
         }
     }
 }

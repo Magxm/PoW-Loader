@@ -4,6 +4,7 @@ using Google.Apis.Sheets.v4.Data;
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Threading;
 
 namespace PoW_Tool_SheetUtilities.Handler.TextAssets
 {
@@ -108,5 +109,82 @@ namespace PoW_Tool_SheetUtilities.Handler.TextAssets
                 }
             }
         }
+
+        public override void ExportTranslatedLinesToCSV(string outPath, ref List<Color> acceptableColors)
+        {
+            string outFilePath = outPath + Path.DirectorySeparatorChar + FilePathWithoutExtension + ".csv";
+            Console.WriteLine("Getting " + AssetName + " Spreadsheet content");
+
+            SpreadsheetsResource.ValuesResource.GetRequest request = GoogleSheetConnector.GetInstance().Service.Spreadsheets.Values.Get(SheetId, SheetRange);
+            ValueRange response = request.Execute();
+            List<IList<object>> values = (List<IList<object>>)response.Values;
+
+            //Clearing Asset File
+            string outDirectory = Path.GetDirectoryName(outFilePath);
+            if (!Directory.Exists(outDirectory))
+            {
+                Directory.CreateDirectory(outDirectory);
+            }
+            //Resetting file
+            File.WriteAllText(outFilePath, "");
+
+            Console.WriteLine("Extracting to " + FilePathWithoutExtension + ".csv");
+            StreamWriter sw = File.AppendText(outFilePath);
+
+            //Write header
+            sw.Write("Translated");
+            sw.Write('\t');
+            sw.Write("Original");
+
+            sw.Write('\n');
+
+            int rI = 0;
+            for (int k = 0; k < 7; k++)
+            {
+                SpreadsheetsResource.GetRequest request2 = GoogleSheetConnector.GetInstance().Service.Spreadsheets.Get(SheetId);
+                request2.Ranges = "A" + (k * 10000 + 2) + ":O" + ((k + 1) * 10000 + 2);
+                request2.IncludeGridData = true;
+                Spreadsheet sheet = request2.Execute();
+                IList<GridData> grid = sheet.Sheets[0].Data;
+
+                if (values != null && values.Count > 0)
+                {
+                    for (int gridI = 0; gridI < grid.Count; gridI++)
+                    {
+                        var gridData = grid[gridI];
+                        //For each row
+                        for (int rowI = 0; rowI < gridData.RowData.Count; rowI++)
+                        {
+                            var row = gridData.RowData[rowI];
+
+                            SheetCellWithColor[] rowRaw = new SheetCellWithColor[row.Values.Count];
+                            for (int i = 0; i < row.Values.Count; i++)
+                            {
+                                rowRaw[i] = new SheetCellWithColor(row.Values[i]);
+                            }
+
+                            if (rI >= values.Count)
+                            {
+								break;
+							}
+
+                            var rowValues = values[rI];
+                            AssetEntry thisEntry = new AssetEntry(VariableDefinitions);
+                            thisEntry.PopulateBySheetRow(rowValues);
+                            thisEntry.AppendToCSV(sw, thisEntry, rowRaw, ref acceptableColors);
+
+                            rI++;
+                        }
+                    }
+                }
+
+                Thread.Sleep(3000);
+
+            }
+
+            sw.Close();
+        }
+
+        
     }
 }
