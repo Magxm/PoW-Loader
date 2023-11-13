@@ -233,5 +233,9 @@ namespace PoW_Tool_SheetUtilities.Handler
             Console.WriteLine("Done!");
             Console.WriteLine("");
         }
+
+        public override void ExportTranslatedLinesToCSV(string outPath, ref List<Color> acceptableColors)
+        {
+        }
     }
 }

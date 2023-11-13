@@ -321,5 +321,9 @@ namespace PoW_Tool_SheetUtilities.Handler.BattleAssets
             Console.WriteLine("Done!");
             Console.WriteLine("");
         }
+
+        public override void ExportTranslatedLinesToCSV(string outPath, ref List<Color> acceptableColors)
+        {
+        }
     }
 }

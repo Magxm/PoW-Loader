@@ -51,25 +51,28 @@ namespace PoW_Tool_SheetUtilities.Handler
         }
     }
 
+    public class ColorHelper
+    {
+	    public static bool IsSameColor(Color a, Color b)
+	    {
+		    if (a == null || b == null)
+		    {
+			    return a == null && b == null;
+		    }
+		    if (a.Red == null) a.Red = 0;
+		    if (a.Green == null) a.Green = 0;
+		    if (a.Blue == null) a.Blue = 0;
+		    if (b.Red == null) b.Red = 0;
+		    if (b.Green == null) b.Green = 0;
+		    if (b.Blue == null) b.Blue = 0;
+
+		    return a.Blue == b.Blue && a.Red == b.Red && a.Green == b.Green;
+	    }
+    }
+
     public class AssetVariable
     {
-        private static bool IsSameColor(Color a, Color b)
-        {
-            if (a == null || b == null)
-            {
-                return a == null && b == null;
-            }
-            if (a.Red == null) a.Red = 0;
-            if (a.Green == null) a.Green = 0;
-            if (a.Blue == null) a.Blue = 0;
-            if (b.Red == null) b.Red = 0;
-            if (b.Green == null) b.Green = 0;
-            if (b.Blue == null) b.Blue = 0;
-
-            return a.Blue == b.Blue && a.Red == b.Red && a.Green == b.Green;
-        }
-
-        public static Color NeedsCheckColor = new Color()
+	    public static Color NeedsCheckColor = new Color()
         {
             Alpha = 1.0f,
             Red = 0.8f,
@@ -563,6 +566,32 @@ namespace PoW_Tool_SheetUtilities.Handler
             return wordCount;
         }
 
+        public bool IsTranslated(SheetCellWithColor[] rowRaw, ref int columnIndex, ref List<Color> acceptableColors)
+        {
+	        if (Definition.VariableType == AssetVariableType.NoTranslate)
+	        {
+		        columnIndex++; //Original
+		        return true;
+	        }
+	        else if (Definition.VariableType == AssetVariableType.MachineTL)
+	        {
+		        columnIndex++; //MTL
+		        columnIndex++; //Original
+		        return true;
+	        }
+	        else
+	        {
+		        Color colorOfEntry = rowRaw[columnIndex].Color;
+                foreach (var color in acceptableColors)
+                {
+	                if (ColorHelper.IsSameColor(color, colorOfEntry))
+		                return true;
+                }
+
+                return false;
+	        }
+        }
+
         public void CalculateTranslationStats(SheetCellWithColor[] rowRaw, ref int columnIndex, ref List<TranslationStatEntry> stats)
         {
             if (Definition.VariableType == AssetVariableType.NoTranslate)
@@ -593,7 +622,7 @@ namespace PoW_Tool_SheetUtilities.Handler
                     for (int cI = 0; cI < stats[i].AcceptableColors.Count; cI++)
                     {
                         Color acceptableColor = stats[i].AcceptableColors[cI];
-                        if (stats[i].MatchAll || IsSameColor(colorOfEntry, acceptableColor))
+                        if (stats[i].MatchAll || ColorHelper.IsSameColor(colorOfEntry, acceptableColor))
                         {
                             stats[i].LineCount += 1;
                             stats[i].WordCount += _GetWordCount(value);
@@ -711,6 +740,24 @@ namespace PoW_Tool_SheetUtilities.Handler
             sw.Write('\n');
         }
 
+        public void AppendToCSV(StreamWriter sw, AssetEntry thisEntry, SheetCellWithColor[] rowRaw, ref List<Color> acceptableColors)
+        {
+	        int columnIndex = 0;
+	        for (int i = 0; i < VariableDefinitions.Count; i++)
+	        {
+                if (Variables[i].IsTranslated(rowRaw, ref columnIndex, ref acceptableColors))
+                {
+			        if (VariableDefinitions[i].VariableType == AssetVariableType.Translate && !VariableDefinitions[i].IsScriptField_FilterNoText)
+			        {
+				        sw.Write(Variables[i].Translation);
+				        sw.Write('\t');
+				        sw.Write(Variables[i].OriginalValue);
+				        sw.Write('\n');
+			        }
+                }
+	        }
+        }
+
         public void CalculateTranslationStats(SheetCellWithColor[] rowRaw, ref List<TranslationStatEntry> stats)
         {
             int columnIndex = 0;
@@ -718,6 +765,24 @@ namespace PoW_Tool_SheetUtilities.Handler
             {
                 Variables[i].CalculateTranslationStats(rowRaw, ref columnIndex, ref stats);
             }
+        }
+
+        public bool IsFullyTranslated(SheetCellWithColor[] rowRaw, ref List<Color> acceptableColors)
+        {
+	        int columnIndex = 0;
+	        bool hasATranslatedLine = false;
+	        for (int i = 0; i < Variables.Length; i++)
+	        {
+		        if (!Variables[i].IsTranslated(rowRaw, ref columnIndex, ref acceptableColors))
+		        {
+			        return false;
+		        }
+
+                if (Variables[i].Definition.VariableType == AssetVariableType.Translate && !Variables[i].Definition.IsScriptField_FilterNoText)
+					hasATranslatedLine = true;
+	        }
+
+	        return hasATranslatedLine;
         }
 
         internal void PopulateKnownTranslations()
@@ -801,6 +866,72 @@ namespace PoW_Tool_SheetUtilities.Handler
             }
 
             sw.Close();
+        }
+
+        public virtual void ExportTranslatedLinesToCSV(string outPath, ref List<Color> acceptableColors)
+        {
+	        string outFilePath = outPath + Path.DirectorySeparatorChar + FilePathWithoutExtension + ".csv";
+	        Console.WriteLine("Getting " + AssetName + " Spreadsheet content");
+
+	        SpreadsheetsResource.ValuesResource.GetRequest request = GoogleSheetConnector.GetInstance().Service.Spreadsheets.Values.Get(SheetId, SheetRange);
+	        ValueRange response = request.Execute();
+	        List<IList<object>> values = (List<IList<object>>)response.Values;
+
+	        SpreadsheetsResource.GetRequest request2 = GoogleSheetConnector.GetInstance().Service.Spreadsheets.Get(SheetId);
+	        request2.Ranges = SheetRange;
+	        request2.IncludeGridData = true;
+	        Spreadsheet sheet = request2.Execute();
+	        IList<GridData> grid = sheet.Sheets[0].Data;
+
+	        //Clearing Asset File
+	        string outDirectory = Path.GetDirectoryName(outFilePath);
+	        if (!Directory.Exists(outDirectory))
+	        {
+		        Directory.CreateDirectory(outDirectory);
+	        }
+	        //Resetting file
+	        File.WriteAllText(outFilePath, "");
+
+	        //Getting all Sheet entries and dumping them into output text asset in right format
+	        Console.WriteLine("Extracting to " + FilePathWithoutExtension  + ".csv");
+	        StreamWriter sw = File.AppendText(outFilePath);
+
+
+            //Write header
+
+            sw.Write("Translated");
+            sw.Write('\t');
+            sw.Write("Original");
+            
+            sw.Write('\n');
+
+            if (values != null && values.Count > 0)
+	        {
+		        for (int gridI = 0; gridI < grid.Count; gridI++)
+		        {
+                    var gridData = grid[gridI];
+			        //For each row
+			        for (int rowI = 0; rowI < values.Count; rowI++)
+			        {
+                        var row = gridData.RowData[rowI];
+				        
+
+				        SheetCellWithColor[] rowRaw = new SheetCellWithColor[row.Values.Count];
+				        for (int i = 0; i < row.Values.Count; i++)
+				        {
+					        rowRaw[i] = new SheetCellWithColor(row.Values[i]);
+				        }
+
+
+                        var rowValues = values[rowI];
+                        AssetEntry thisEntry = new AssetEntry(VariableDefinitions);
+                        thisEntry.PopulateBySheetRow(rowValues);
+                        thisEntry.AppendToCSV(sw, thisEntry, rowRaw, ref acceptableColors);
+			        }
+		        }
+	        }
+
+	        sw.Close();
         }
 
         public void HandleUpdateRequests(ref List<Request> updateRequests)
