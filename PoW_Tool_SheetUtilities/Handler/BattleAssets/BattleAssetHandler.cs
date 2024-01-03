@@ -255,8 +255,8 @@ namespace PoW_Tool_SheetUtilities.Handler.BattleAssets
                 }
             }
 
-            patches.Sort(delegate (AssetEntry a, AssetEntry b) { return b.Variables[0].Translation.Length.CompareTo(a.Variables[0].Translation.Length); });
-
+            patches.Sort(delegate (AssetEntry a, AssetEntry b) { return b.Variables[0].OriginalValue.Length.CompareTo(a.Variables[0].OriginalValue.Length); });
+            
             //Clearing Asset File
             string scheduleRelativeFolderPath = Path.DirectorySeparatorChar + "chs" + Path.DirectorySeparatorChar + "battle" + Path.DirectorySeparatorChar + "schedule";
             string scheduleFolderPath = outRootPath + Path.DirectorySeparatorChar + scheduleRelativeFolderPath;
