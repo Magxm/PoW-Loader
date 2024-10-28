@@ -1,41 +1,69 @@
 ![](Resources/Mods/EnglishTranslate/Image/ui/uimain/Main_title.png?raw=true)
 # Path Of Wuxia ModLoader + English Patch + Mods
 
-Join our discord!  
-https://discord.com/invite/PH4Z4Dn  
+# Path of Wuxia ModLoader + English Patch + Mods
 
-Update notifications, direct contact to report issues and a great community to chat about the game with.  
+Join our [Discord community](https://discord.com/invite/PH4Z4Dn) for update notifications, direct issue reporting, and to chat with other fans of the game.
 
-# How to Install
-Grab the latest release and just extract the content of the PoW_English.zip file into the games folder.
-Same installation method for mods.  
-If you installed steam and the game in their default locations the path should be:  
-```C:\Program Files (x86)\Steam\steamapps\common\PathOfWuxia```.
+## Installation Guide
+
+1. Download the latest release.
+2. Extract the contents of `PoW_English.zip` into the game’s directory.
+
+> If you installed Steam and Path of Wuxia in their default locations, your game folder should be:
+> 
+> ```plaintext
+> C:\Program Files (x86)\Steam\steamapps\common\PathOfWuxia
+> ```
 
 ![](InstallationGuide.gif)
 
-Your folder should now look like this:  
+Your folder should resemble the following structure:
 
 ![](InstallationExample.png?raw=true)
 
-Now just start the game over Steam and enjoy!  
+Once everything is in place, simply launch the game through Steam and enjoy!
 
-# Technical
+## Technical Details
 
-If you want to build the mod yourself you can just clone this repository and build it by opening the .sln file with Visual Studio and just pressing F5.  
-You will find a working release ready build in Output/Mod.  
-To get the newest Translation as well as updating the translation sheet to the newest game version, the PoW_Tool_SheetUtils Tool automates everything.  
-To use it you need access to the translation sheets as well as a configured google cloud account.  
-Access is given over our discord, so if you want to contribute contact us in the discord server and we will be happy to help setting it up.  
+### Building the Mod
 
-BepInEx is used as the actual underlying ModLoader.  
-This repository contains a ModAPI plugin containing base functionalities for other Mods and Plugins.  
-It currently allows dynamic registration of external Asset folders, which allows several mods to register asset overrides.  
-It also supports modifying textures inside prefabs.  
+To build the mod yourself:
 
-Additionally this repository contains the EnglishPatch Plugin, which registers Mods/EnglishTranslate as a resource folder (So place the translated Asset files into Mods/EnglishTranslate) as well as fixing several issues with displaying the English Text in the game.  
+1. Clone the repository:
 
-If BepInEx is updated/replaced by a new version it is important to update the BepInEx.cfg and replace the following Entry.  
+    ```bash
+    git clone https://github.com/Magxm/PoW-Loader
+    ```
+
+2. Open the solution file and compile. A ready-to-use build will be located in `Output/Mod`.
+
+
+### Translation and Update Automation
+
+To get the latest translations or update the translation sheet to match the current game version, use the `PoW_Tool_SheetUtils` tool, which automates these tasks. 
+
+> **Requirements**:
+> - Access to the translation sheets
+> - A configured Google Cloud account
+
+For access and setup support, join our Discord server and reach out to us!
+
+---
+
+### Mod Loader and Plugins
+
+This repository leverages **BepInEx** as the underlying mod loader and includes a `ModAPI` plugin offering core functionality for other mods and plugins. Key features include:
+
+- **Dynamic Asset Overrides**: Support for multiple external asset folders, enabling several mods to register asset overrides.
+- **Prefab Texture Modification**: Ability to modify textures within game prefabs.
+
+Additionally, the `EnglishPatch` plugin is included to support English translations. Place translated asset files into the `Mods/EnglishTranslate` folder, and the plugin will handle loading these resources and resolve display issues.
+
+---
+### Important Configuration Note for BepInEx
+
+When updating or replacing BepInEx, ensure you update the `BepInEx.cfg` file and replace the `[Preloader.Entrypoint]` section as follows:
 
 ```ini
 [Preloader.Entrypoint]
@@ -56,9 +84,9 @@ Type = Object
 Method = .cctor
 ```
 
-otherwise the Entrypoint will be too late and some language files are already loaded.  
+This adjustment ensures the entrypoint is set correctly, allowing all necessary assets to load before the game fully starts.
 
 -------------------------------------------
 
-The dependency folder contains parts of the game and unitys assembly since they are needed for plugins.  
-I do not hold any copyright to any file inside the Dependency folder.  
+The Dependencies folder contains components from the games, Unity assemblies and compiled BepInEx and Harmony binaries required for plugins. All rights to these files belong to their respective copyright holders.
+I am aware that we should have contributor provide these files locally, however I am honestly too lazy to change this
