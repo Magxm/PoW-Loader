@@ -1,5 +1,4 @@
 ![](Resources/Mods/EnglishTranslate/Image/ui/uimain/Main_title.png?raw=true)
-# Path Of Wuxia ModLoader + English Patch + Mods
 
 # Path of Wuxia ModLoader + English Patch + Mods
 
