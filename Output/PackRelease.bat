@@ -21,4 +21,4 @@ if "%errorlevel%" == "9009" (
 
 :end
 echo Done!
-START https://github.com/AndrasMumm/PoW-Loader/releases/new
+START https://github.com/magxm/PoW-Loader/releases/new

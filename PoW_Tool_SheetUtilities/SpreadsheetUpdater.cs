@@ -87,26 +87,24 @@ namespace PoW_Tool_SheetUtilities
 
         internal static void ExportTranslatedLinesToCSV(string outPath, ref List<Color> acceptableColors)
         {
-	        foreach (IFileHandler handler in _Handlers)
-	        {
-		        bool success = false;
+            foreach (IFileHandler handler in _Handlers)
+            {
+                bool success = false;
                 while (!success)
                 {
-	                try
-		            {
-			            handler.ExportTranslatedLinesToCSV(outPath, ref acceptableColors);
-			            success = true;
-			            
-			            
-		            }
-		            catch (Exception e)
-		            {
-						Console.WriteLine(e);
-		            }
+                    try
+                    {
+                        handler.ExportTranslatedLinesToCSV(outPath, ref acceptableColors);
+                        success = true;
+                    }
+                    catch (Exception e)
+                    {
+                        Console.WriteLine(e);
+                    }
 
-		            Thread.Sleep(60000);
+                    Thread.Sleep(60000);
                 }
-	        }
+            }
         }
     }
 }

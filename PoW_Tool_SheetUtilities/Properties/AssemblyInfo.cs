@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("PoW_Tool_SheetUtilities")]
-[assembly: AssemblyCopyright("Copyright © András Mumm 2020")]
+[assembly: AssemblyCopyright("Copyright © Magxm 2026")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
